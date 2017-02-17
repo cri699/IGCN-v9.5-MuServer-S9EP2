@@ -1,0 +1,448 @@
+﻿[v1.06.01.04]
+	-> [FIX] SQL: case-sensitivity issue with IGC_PeriodItemInfo and UserGUID
+
+[v1.06.01.03]
+	-> [MOD] DupeScanner: option to set if dupe item requires full match (serial + group + index) or serial only.
+	-> [FIX] DupeScanner: errors if using multi-vaults
+
+[v1.06.01.02]
+	-> [FIX] General: crash on some cases
+
+[v1.06.01.01]
+	-> [FIX] dump copy of notification bar icon sometimes still visible after app exit
+	-> [FIX] Character Manager: Game Master data save error in some cases
+	-> [FIX] Character Manager: crash in some cases
+	-> [MOD] Account Manager: removed min limit from Personal ID value
+	-> [ADD] Section for showing the selected value in the item/character/account selector
+	
+[v1.06.01.00]
+	-> [NEW] Account/Character finder in every editor that has Account or Character choice
+	-> [NEW] Guild Editor: Guild Rename feature
+	-> [NEW] Guild Editor: Guild Master change feature
+	-> [NEW] InGameShop Editor: editor for account's CashShop Inbox items (and Gifting)
+	-> [FIX] Location Editor: very long loading times in case of very big Characters database
+	-> [FIX] Ban Manager: very long loading times in case of very big Accounts / HWID database
+	-> [FIX] long loading time of any editor that has Character or Account list in case of very big Accounts database
+	-> [FIX] DB connection errors when running (heavy task operations) dupe scanner / item finder
+	-> [FIX] general bugs / improvements
+	-> [FIX] BattleCore mode is updating values in normal MuOnline DB instead of BattleCore DB	
+	-> [MOD] DupeScanner: option for generating serial for all duped items
+	-> [MOD] redisigned some Editors
+	-> [MOD] Gens Editor: removed (moved into Character Manager)
+	-> [MOD] Marriage Editor: removed (moved into Character Manager)
+	-> [MOD] Account Manager: added Ban and VIP info & edit options
+	-> [MOD] Character Manager: added Guild, Gens, Marriage, Banishment, GameMaster info & edit options
+	-> [MOD->FILE] removed 'Data\DatabaseTablesConfigurations.ini' file
+	-> [MOD->FILE] added 'Data\DatabaseSpecification.xml' file
+
+[v1.06.00.06]
+	-> [FIX] 'Data\DatabaseTablesConfigurations.ini': removed incorrect entry
+
+[v1.06.00.05]
+	-> [FIX] ItemEditor / BuffManager: issue with Period and Buffs items
+	-> [FIX] ItemFinder: sometimes freeze
+
+[v1.06.00.04]
+	-> [MOD->FILE] 'Data\DatabaseTablesConfigurations.ini': updated according to server version 9.5.1.5
+	-> [MOD->FILE] 'Data\IGC_HarmonyItem_Option.xml': removed +14 and +15 values to avoid user confusion 
+	-> [MOD] Buff Manager/ItemEditor: added check and note for duplicated PeriodItemInfo 
+
+[v1.06.00.03]
+	-> [FIX] Item Editor, GremoryCase Editor, Item Finder: possible crash with custom items
+	-> [FIX] Item Editor, GremoryCase Editor, Item Finder: possible crash with excllent items with index > 255 (wings of conqueror etc..)
+
+[v1.06.00.02]
+	-> [FIX] ItemEditor: possible crash when trying to update selected item
+	-> [FIX] ItemEditor Tooltip: showing incorrect Harmony option is item is socket type
+	-> [FIX] ItemEditor: incorrect warning if selecting Socket item
+
+[v1.06.00.01]
+	-> [NEW-HOT] General: Removed restriction to run Essential Tools from Registered IGCN Machine only (now you can run remotely from your PC)
+	-> [FIX] ItemEditor: crash in case of invalid socket item bonus option
+	-> [ADD] Config: enable/disable Item's Glow in ItemEditor (see config.ini file)
+	-> [MOD] Database Connectivity: possible improvement in connection speed (experimental - need more feedback)
+
+[v1.06.00.00]
+	-> [FIX] General: various fixes
+	-> [FIX] Item Editor: various fixes
+	-> [FIX] Banishment Manager: HardwareID Ban System doesnt work correctly if using MeMuOnline database
+	-> [NEW] General: BattleCore Mode (editors will be disabled accordingly) - Menu -> click "BattleCore Database Mode: OFF" to Enable/Disable mode
+	-> [NEW] Account Manager: 'Change Account Name' feature
+	-> [NEW] Database Maintenance -> 'Account/Character Cleaner': 'Delete all of the accounts and characters in database' feature
+	-> [NEW] Item Finder: search items with ancient, refinery, socket, excellent, harmony, durability and expiry specific options
+	-> [NEW] Item Editor: Interactive Items Options Preview (tooltip)
+	-> [NEW] Item Editor: Interactive Items Preview (glow, excllent, ancient, etc)
+	-> [NEW] Item Editor: Period Items (Expiry items) and Pet Items support
+	-> [NEW] GremoryCase Editor
+	-> [NEW] Buffs Manager
+	-> [ADD] General: Map Images of Season 9 Episode 2 Maps ('Urk Montain' and 'Tormented Square')
+	-> [ADD] Game Master Editor: 'Invisible to Monsters' authority
+	-> [MOD] Item Editor: redisigned UI
+	-> [MOD] General: Increased maximum map count to 150
+	-> [MOD] Accounts Manager: extended password to maximum 20 chars
+	-> [MOD->FILE] ItemListInfo.txt: Thanks to Wishdream for contributing updated files with corrected value for items and adding new Ancient items configs
+	-> [MOD->FILE] 'Data\MapList.xml': added Season 9 Episode 2 Maps ('Urk Montain' and 'Tormented Square') records
+	-> [MOD->FILE] 'Data\IGC_MuunInfo.xml': updated according to server files Update 9.5.0.13 - [RC] - Season 9 Episode 2
+	-> [MOD->FILE] 'Data\ItemList.xml': updated according to server files Update 9.5.0.13 - [RC] - Season 9 Episode 2
+	-> [MOD->FILE] 'Data\IGC_BuffEffectManager.xml': updated according to server files Update 9.5.0.13 - [RC] - Season 9 Episode 2
+	-> [MOD->FILE] 'Data\IGC_ItemOptionManager.xml': updated according to server files Update 9.1.0.37
+	-> [MOD->FILE] 'Data\DatabaseTablesConfigurations.ini' updated according to server files Update 9.5.0.13 - [RC] - Season 9 Episode 2
+	-> [MOD->FILE]  Renamed 'Data\ItemList.xml' to 'Data\IGC_ItemList.xml'
+	-> [MOD->FILE]  Renamed 'Data\ItemList_s6.xml' to 'Data\ItemList_s6.xml'
+	-> [DEL->FILE] 'Data\AncientItemOption.ini'
+	-> [DEL->FILE] 'Data\SkillList.txt'
+	-> [DEL->FILE] 'Data\SocketOptionSettings.ini'
+	-> [DEL->FILE] 'Data\HarmonyItemOption.ini'
+	-> [DEL->FILE] 'Data\ItemListSettings_s6.ini'
+	-> [DEL->FILE] 'Data\ItemListSettings_ex700.ini'
+	-> [DEL->FILE] 'Data\ItemListSettings.ini'
+	-> [ADD->FILE] 'Data\IGC_BuffEffectManager_s6.xml'
+	-> [ADD->FILE] 'Data\IGC_ItemList_s6.xml'
+	-> [ADD->FILE] 'Data\IGC_ItemSetOption_s6.xml'
+	-> [ADD->FILE] 'Data\IGC_SkillList_s6.xml'
+	-> [ADD->FILE] 'Data\MapList_s6.xml'
+	-> [ADD->FILE] 'Data\IGC_ItemSetOption.xml'
+	-> [ADD->FILE] 'Data\IGC_SkillList.xml'
+	-> [ADD->FILE] 'Data\IGC_SocketOption.xml'
+	-> [ADD->FILE] 'Data\IGC_Item380Option.xml'
+	-> [ADD->FILE] 'Data\IGC_HarmonyItem_Option.xml'
+	-> [MOD->File] 'config.ini' -> REVIEW AND MODIFY ACCORDING TO YOUR SERVER
+
+[v1.05.01.07]
+	-> [FIX] Item Converter (TT/MUE): fixed issue with reversed serials
+
+[v1.05.01.06]
+	-> [FIX] VIP Manager: possible error
+
+[v1.05.01.05]
+	-> [FIX] VIP Manager: possible error
+
+[v1.05.01.04]
+	-> [FIX] possible issues with reading TEXT files
+
+[v1.05.01.03]
+	-> [FIX] possible issues with reading TEXT files
+	
+[v1.05.01.02]
+	-> [MOD] Files: 'ItemList.xml', 'ItemList_S6.xml', 'IGC_MuunInfo.xml' updated from latest server package (9.1.0.11)
+	-> [ADD] File: 'Data\MapList.xml'
+	-> [FIX] Location Editor: crash in case character is located in unknown map
+	-> [ADD] Location Editor: Season 8 Episode 8 Maps
+	-> [FIX] Banishment Manager: HardwareID Ban System disabled if no records exist in IGC_MachineID_Banned table
+	-> [FIX] Converter (Items): Expended Vault / Inventory not being converted
+
+[v1.05.01.01]
+	-> [FIX] config.ini file load: possible bug if database name is not encapsulated with [ ]
+	-> [FIX] Account Editor: crash if Lock Code is greater than 32767
+	-> [NOTE] New Season 6 Episode 3 ItemList_S6.xml is supported, just make sure to direct to correct file name, and set type to 2
+	-> [MOD] IGC_MuunInfo.xml file updated from latest server package (9.1.0.5)
+	-> [FIX] ItemList.xml (season 8) file values corrected
+
+[v1.05.01.00]
+	-> [FIX] General: possible crashes and other issues
+	-> [FIX] ItemEditor: non-harmony items are generated with reinforcement error
+	-> [MOD] File: 'Data\AncientItemOption.ini' updated according to latest season 8.3 release (9.1.0.0)
+	-> [MOD] File: 'Data\SkillList.txt' updated according to latest season 8.3 release (9.1.0.0)
+	-> [ADD] File: 'Data\IGC_MuunOption.xml'
+	-> [MOD] Removed File: 'Data\PentagramOptionSettings.ini'
+	-> [ADD] File: 'Data\IGC_PentagramJewelOptionValue.xml'
+	-> [ADD] File: 'Data\ItemList.xml' (used by Season 8 Episode 3 - (9.1.0.0))
+	-> [MOD] File: 'Data\DatabaseTablesConfigurations.ini.ini' -> updated to match with server files release 9.1.0.0
+	-> [ADD] General: support for Season 8 Episode 3 (9.1.0.0) (set 'Type = 2' and 'FileName = ItemList.xml' in config.ini file, ItemListSettings section) - MUST BE NEW XML FILE TYPE
+	-> [ADD] ItemEditor -> Event Inventory (enabled only if table T_Event_Inventory exists in your database - 9.1.0.0)
+	-> [ADD] ItemEditor -> Muun Inventory (enabled only if table PetWarehouse exists in your database - 9.1.0.0)
+	-> [ADD] Item Search: will be searching for items in Muun Inventory and Event Inventory - 9.1.0.0
+	-> [ADD] Dupe Finder: will be searching for duplicated items in Muun Inventory and Event Inventory - 9.1.0.0
+
+[v1.05.00.02]
+	-> [MOD/FIX] 'Data\SpecialItemList.dat' : added Durability and Skill parameters, also corrected current values
+	-> [FIX] Item Editor : possible crashes
+
+[v1.05.00.00]
+	-> [MOD] General: much of the code has been rewritten
+	-> [FIX] General: various fixes / crash fixes
+	-> [ADD] VIP Manager: addedRefresh button
+	-> [ADD] 'Data\VIPList.xml' : in this file you can specify your own VIP Types in accordance with IGC_VipSettings.xml
+	-> [ADD] Gens Editor: added option to remove character from gens
+	-> [ADD] Log Viewer: option to show/hide SQL command logs
+	-> [ADD] Castle Siege Manager: option to remove guild from registered list
+	-> [MOD] 'Data\ItemListInfo.txt' : changed (14, 23) and (14, 24) quest items to be able to change their level
+	-> [ADD] 'Data\SpecialItemList.dat' : this file purpose is for defining items which are based on combination of other item's options
+	-> [MOD] Item Editor: code base completely rewritten, it is much more efficient now, including asynchronous loading of character items
+	-> [FIX] Item Editor: crashes / previous mistakes
+	-> [ADD] Item Editor: highlighting box / item
+	-> [MOD] Location Editor: part of code is now async so it will not freeze on long loading operations
+
+[v1.04.16.16]
+	-> [ADD] VIP Manager: added Refresh button
+
+[v1.04.16.15]
+	-> [ADD] 'Data\ExpCalc_MOD.lua': in this file you can customize the exp table that Essential will be using for Experience Fixer and Stats Editor (NOTE: change 'MaxNormalLevel' value to your own Max normal level)
+	-> [FIX] Stats Editor / Database Manager -> Exp Fixer: incorrect Experience 
+	-> [MOD] Item Finder: results will show as 'AccountName (CharacterName)'
+
+[v1.04.16.12]
+	-> [FIX] Item Finder: sometimes progress not showing after click "Find"
+	-> [FIX] Item Editor: crash with custom items with ancient option
+
+[v1.04.16.11]
+	-> [FIX] Guild Editor: Guild Gens settings is always disabled
+	-> [FIX] Guild Editor: Editing Guild Mark causes crash
+
+[v1.04.16.10]
+	-> [FIX] Character Editor: 'Invalid coumn name mlNextExperience' error
+	-> [FIX] General: editor is not accessing Ranking and Events database correctly
+	-> [MOD] 'DatabaseTablesConfigurations.ini': removed KillName column record from 'Gens' table
+	-> [ADD] AutoUpdater (AUH.dll)
+
+[v1.04.16.08]
+	-> [FIX] Character Editor: mlNextExperience is not being updated to correct value
+	-> [MOD] Character Editor: updated Experience to support BigInt (Int64) datatype (must use server version 8.0.4.14 or newer)
+
+[v1.04.16.07]
+	-> [FIX] Character Experience Fixer: fixer does not change the mlNextExp value if selecting Master class
+
+[v1.04.16.06]
+	-> [FIX] crashes on some editors if database is empty of accounts/characters
+
+[v1.04.16.05]
+	-> [MOD] Moved all logs to dedicated Log Window, which pops out on new logs
+	-> [MOD] UI: some UI of editors has been changed
+	-> [FIX] Sometimes when opening Character from Account Editor etc, selected character is not correct
+	-> [FIX] some other fixes
+	-> [FIX] errors if doing 2 operations in same time (for example creating account while dupe scanner is running)
+
+[v1.04.16.00]
+	-> [FIX] Item Converter: some issues with converting from SCF items
+	-> [FIX] Account Editor: on account creations, sometimes irrelevant error is showed
+	-> [MOD] Item Editor-> Sockets: now each sockets displays its type (fire, water etc..)
+	-> [MOD] Data\SkillList.txt: updated with latest file from latest server package
+	-> [ADD] Database Management-> Inactive Accounts Cleaner
+	-> [ADD] Database Management-> Character Experience Fixer
+
+[v1.04.15.02]
+	-> [FIX] Dupe finder: sometimes crashes after scan is completed
+	-> [FIX] Skill Editor: RageFighter Master skills saved corrupted
+	-> [MOD] Skill Editor: Event, Master, and Normal skills are more orginized now together ([E] for Event, [M] for Master and [N] for Normal skill)
+
+[v1.04.15.01]
+	-> [MOD] Banishment Manager: Changed Chat Ban system according to server 8.0.4.9 update
+
+[v1.04.15.00]
+	-> [FIX] Item 32b Converter / DupeFinder -> sometimes failes to fix bad table data lengh
+	-> [FIX] Item 32b Converter / DupeFinder -> some issues
+	-> [FIX] General fixes and improvements
+	-> [MOD] Data\SkillList.txt updated from latest Server Package (8.0.4.7)
+	-> [MOD] Data\DatabaseTablesConfigurations.ini updated to match latest values from 8.0.4.7 Database
+	-> [ADD] Item 32b Converter -> Convert from SCF Team Database option
+	-> [ADD] Item 32b Converter -> Item Fixer: running this converter will also  fix all issues with bad length of Inventory and ItemsX tables
+	-> [MOD] Skill Editor: editor has been improved significantly. its much more convenient to use and also contains skill's images
+
+[v1.04.14.04]
+	-> [FIX] Pentagram Converter: JewelLevel incorrect value
+	-> [FIX] Item Editor -> Pentagram/Errtel Creation: JewelLevel incorrect value
+
+[v1.04.14.03]
+	-> [FIX] Pentagram Converter: "Index outside of range" error
+	-> [ADD] Account Information Reload -> reloads account list
+	-> [ADD] Character Information Reload -> reloads character list
+
+[v1.04.14.01]
+	-> [FIX] Pentagram Converter: "Object reference not set to an instance of an object" error
+
+[v1.04.14.00]
+	-> [ADD] Item Finder: option to delete found items
+	-> [ADD] Pentagram Converter: to convert old Element System to new Element system introduced on update 8.0.4.4 (BETA 2)
+	-> [ADD] Item Editor: support for new s8 pentagram items
+	-> [MOD] Item Editor: changed Errtel/Pentagram structure to new system introduced on update 8.0.4.4 (BETA 2)
+	-> [FIX] Item Finder: not all found items are added to result view
+
+[v1.04.13.00]
+	-> [FIX] Item Editor: #3 socket text is not visible
+	-> [FIX] Skill Editor: some fixes
+	-> [MOD] Skill Editor: supports now the new Skill System only ! (introduced on update 8.0.4.4 (BETA 1))
+	-> [ADD] MagicList Converter: to convert old Skill System to new one
+	-> [FIX] Item Finder: showing results from Vault only
+
+[v1.4.10.0]
+	-> [FIX] General: various bug fixes
+	-> [ADD] Item Editor: function which will create and fix account vault in case that vault was not yet created for this account (for example if account is created by essential tools or if the player never clicked the vault NPC in-game)
+	-> [FIX] Location Editor: sometimes crash of using mouse scroll on map
+	-> [MOD] Location Editor: improved and changed a bit
+	-> [MOD] Main Form: UI removed. now always shows in tray.
+	-> [FIX] General: DateTime format issues and errors on non-english SQL servers
+	-> [MOD] Account Finder: account name and search value will be shown in search results
+	-> [MOD] Account Finder: no need to write exact character / IP match. all results which contains search value will be shown
+	-> [ADD] Account Finder: search account by email
+	-> [ADD] Account Manager: account email field
+	-> [ADD] Item Finder: added possiblity to search items with any option, level, skill, luck (required fields are Group and Index)
+	-> [ADD] Item Editor: enabled possibility to edit Pentagram 5th option (Errtal of Gale)
+	-> [ADD] General: support for Season 8 ItemListSettings file (check config file)
+
+[v1.4.4.11]
+	-> [FIX] Character Editor: Char Name Change doesnt work
+
+[v1.4.4.10]
+	-> [ADD] DatabaseTablesConfigurations.ini File: added more locations for Character Name based on 8.0.4.0 DB scripts
+	-> [ADD] DatabaseTablesConfigurations.ini File: added locations setup of Account Name for purpose of "Delete Account" function in Account Editor
+	-> [ADD] DatabaseTablesConfigurations.ini File: added locations setup of Guild Name for purpose of guild deletion function in Guild Editor
+	-> [FIX] Item Editor: crash clicking on custom added item which does not exist in ItemListInfo
+	-> [FIX] Character Editor: incorrect Quest information is used for RF/MG/DL
+	-> [FIX] General: some other fixes..
+
+[v1.4.4.1]
+	-> [FIX] Dupe Finder: accout vault sometimes erased
+
+[v1.4.4.0]
+	-> [MOD] Dupe Scanner: faster scan
+	-> [MOD] Character Status Checker: the result is more accurate.. based on GameIDC value in AccountCharacter table (will be accurate as long as the player is in not currently in Character Selection window and the character you are currently checking is not the last character logged to game from this account)
+	-> [FIX] Item Editor: some bugs related to socket Bonus option
+	-> [FIX] Dupe Finder: search stops if there is character with NULL "Inventory" column
+	-> [FIX] Dupe Finder: other fixes
+	-> [ADD] Database Management -> Character Cleaner: now you can clean "empty" characters based on rules from file "Data\CharacterRemovalOptions.ini"
+	-> [ADD] File: Data\DatabaseTablesConfigurations.ini ; in that file you should add all the custom locations of characters names in your database (those locations are used by the character Delete function, character Cleaner and Renaming function)
+	-> [ADD] File: Data\CharacterRemovalOptions.ini ; in that file you can specify the deletion conditions of the character cleaner
+	
+
+[v1.4.3.20]
+	-> [MOD] improved the way multi vaults are detected
+	-> [FIX] Dupe Scanner: possible crash
+	-> [FIX] many minor fixes
+	-> [FIX] 32b Item Conversion: possible crash
+
+[v1.4.3.11]
+	-> [FIX] Character Editor: bad column name "Reset"
+
+[v1.4.3.10]
+	-> [FIX] General: possible crashes
+	-> [FIX] General: corrected some mistakes
+	-> [MOD] General: Reduces open times for editors
+	-> [MOD] General: Account list and Chars list is loaded in first open of the tool
+	-> [ADD] Character Editor: Max Zen button
+	-> [ADD] Character Editor: Refresh button to refresh the current character stats read from Database
+
+[v1.4.3.1]
+	-> [FIX] Dupe Finder: scan is stuck when searching in vault
+
+[v1.4.3.0]
+	-> [MOD] Dupe Finder: changed file name [\Data\DupeFinder_ExcludedItemsList.txt] to [\Data\DupeFinderExclusionsList.txt]
+	-> [MOD] Dupe Finder: changed constuction of file [\Data\DupeFinderExclusionsList.txt]
+	-> [ADD] Dupe Finder: in file DupeFinderExclusionsList.txt you can now add serials which will be ignored in scan
+	-> [ADD] Item Editor: Option to change the selected item serial - CHANGE SERIAL OF EXISTING ITEM ONLY IF U KNOW WHAT U ARE DOING
+	-> [FIX] Item Editor: Durability sometimes disabled
+	-> [FIX] Item Editr: other various fixes
+
+[v1.4.2.0]
+	-> [FIX] minor issues like spelling / UI
+	-> [ADD] Item Editor: Edit pentagram's errtels directly with tool. means you can create a pentagram with all errtels mounted into it already..
+	-> [ADD] Location Editor: accurate low quality map images
+
+[v1.4.1.1]
+	-> [FIX] HWID Ban: manuall HWID ban throws error
+
+[v1.4.1.0]
+	-> [MOD] HWID Banning system input support for first 5 values of HardwareID
+	-> [FIX] Item Finder: does not find any items
+
+
+[v1.4.0.0]
+	-> [CRITIAL FIX] Item Editor: Serial Generation
+	-> [FIX] Item Editor: some bug fixes
+	-> [ADD] Item Editor: Pentagram Edit (currently you cannot mount errtels into the pentagram using the editor. NOTE: FOR NOW, DO NOT USE THE "Update selected item" FUNCTION ON PENTAGRAMS WHICH ALREADY HAVE ERRTELS MOUNTED - YOU IT WITH EMPTY PENTAGRAMS ONLY)
+	-> [ADD] Item Editor: Errtels Edit
+	-> [ADD] Item Editor: Elemental Items Edit
+	-> [ADD] Ban Manager: New HWID Banning System management
+	-> [MOD] Location Editor: Changed resulotion on most map to 1024x1024
+	-> [MOD] Location Editor: You can resize/drag the shwon Map
+	-> [MOD] Dupe Finder: code rewritten. faster search. fixed bugs. shows now more info
+	-> [ADD] Dupe Finder: "Data\DupeFinder_ExcludedItemsList.txt" file where you can set items which dupe finder will skip when checking for dupes
+
+
+[v1.3.8.5]
+	-> [MOD] cannot create characters with empty names
+	-> [ADD] can set Database name with Spaces
+	-> [ADD] can select multiple skills in Skill Editor
+	-> [ADD] each line that will be written to log, will include time of logged line
+	-> [ADD] Database Manager: backup Rankings, Events and Me_MuOnline databases
+	-> [FIX] Item Editor: crash if selecting item which does not exist or moved to other location in game.
+	-> [FIX] Item Editor: Ancient name not showing in list
+	-> [CRITICAL FIX] Item Editor: All items created by editor shows in game with error "Reinforcement Error"
+	-> [FIX] grammer corrections
+	-> [FIX] general fixes
+
+
+[v1.3.8.0]
+	-> [FIX] Item Editor: Instead of double axe it shows helical sword
+	-> [FIX] Item Editor: Fixed serial generations
+	-> [MOD] Item Editor: Disabled option to create items with socket+harmony
+	-> [MOD] Item Editor: now you can search for any items in any group
+	-> [ADD] Item Editor: Socket Bonus Option configurable
+	-> [ADD] Item Editor: Items's durability will be automatically and precicly calculated (to disable auto calculation check "Lock")
+	-> [ADD] Character Editor: Noraml !base! Exp and Master !base! Exp will be automatically calculated by Level and Master Level in case that Level or Master Level will be manually changed
+	-> [ADD] General: Dump files will be generated in case of crash
+	-> [MOD] General: code fixes and improvements
+
+[v1.3.7.0]
+	-> [FIX] DupeFinder: crash
+	-> [FIX] ItemEditor: bug with Free socket loading
+	-> [MOD] General: Application will always run as administrator
+	-> [ADD] DupeFinder: you can now chose if to delete the duped items, delete all, or leave 1 duped
+
+[v1.3.6.10]
+	-> [FIX] Character Editor: character name change function (NOTE: IS DESIGNED TO BE COMPATIBALE WITH LATEST FILES VERSION, NOT GUARANTEED TO WORK PROPERLY WITH OUTDATED VERSION OF SERVER FILES)
+	-> [MOD] config.ini : added new values to be set up
+
+[v1.3.6.9]
+	-> [FIX] Item Images: items images changed to match ex702 (WZ changed existing 1 staff and 1 set)
+	-> [FIX] General: dates Hour incorrect
+
+[v1.3.6.8]
+	-> [FIX] ItemEditor: ItemListSettings file read
+
+[v1.3.6.7]
+	-> [FIX] GM Manager: 'convert var to smalldatetime' error (need to test)
+
+[v1.3.6.6]
+	-> [FIX] CastleSeige Manager: SQL Procedure error when registering guild for CS
+
+[v1.3.6.5]
+	-> [FIX] Item Editor: Various fixes for Ancient items edit and modify
+	-> [FIX] Item Editor: small fixes
+	-> [FIX] Item Editor: Harmony options did not load correctly
+	-> [FIX] Data\ItemListInfo.txt ; Corrected mistakes
+	-> [FIX] Data\HarmonyItemOption.ini ; Corrected the bad english translation
+	-> [ADD] Item Editor: Added option to chose Stamina for Ancient items
+	-> [ADD] Database Manager: Find accounts using IP / Character name
+	-> [MOD] Item Editor: Improvements
+	
+
+
+[v1.3.6.0]
+	-> [ADD] VIP Manager: VIP Panel with remaining time etc
+	-> [ADD] Item Editor: Confirmation box for Reset function in players' invetory/vault etc
+	-> [ADD] Item Images: Thanks to forum member Martaino who sent me some Images for missing items images. (might be some mistakes, need feedback)
+	-> [ADD] Item Editor: Each item info is now loaded from ItemListInfo.txt (is can be Excellent, socket etc) - can be disabled by unchecking "Use ItemListInfo.txt"
+	-> [ADD] Item Editor: Slot check
+	-> [MOD] General: File read functions rewitten for better performance
+	-> [MOD] DB Manager: Dupe item finder log now shows the Duped item Name
+	-> [FIX] Item Editor: Socket incorrect sequence
+	-> [FIX] Guild Editor: Symbol saved incorrectly
+
+[v1.3.5.1]
+	-> [FIX] Database Management - Dupe Scanner: Duped items not deleted	
+
+[v1.3.5.0]
+	-> [FIX] Character Editor: bad Class Code
+	-> [FIX] Account Editor: MEMB_INFO not found with Me_MuOnline Database
+		-> *Note: MEMB_STAT table also must exist in Me_MuOnline Database !
+	-> [ADD] Now application will verify and correct Database DateTime format automatically
+	-> [ADD] Gens Editor: Added support for new Gens system
+	-> [ADD] new Config file
+
+[v1.3.0.0]
+	-> [FIX] ItemEditor: Improved performance
+	-> [FIX] CharacterEditor: Crash if quest data is null
+	-> [FIX] Other: General fixes and imrovements
+	-> [ADD] ItemEditr: Changed UI
+	-> [ADD] ItemEditor: Now you can Modify existing item options (using mouse left click on item)
+	-> [ADD] AccountEditor: If you are using NON-MD5 passwords, you can view password of accounts

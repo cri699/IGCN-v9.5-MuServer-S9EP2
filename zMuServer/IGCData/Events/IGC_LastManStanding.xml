@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### LastManStanding ###
+//	Enable: Determines whether the event is active or not, 0/1
+//	DieCount: Count of deaths during the event to get kicked out from it
+//	MinPlayers: Minimum count of players participating the event to start it
+//	MaxPlayers: Maximum count of players per room that can participate the event
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Minimum level to participate the event is 7
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// 
+// ### LastManStanding::Event ###
+//	Duration: Event play time, minutes
+//	MapNumber: The map number the event runs on
+//	StartX: The Start X coordinate of entire event area
+//	StartY: The Start Y coordinate of entire event area
+//	EndX: The End X coordinate of entire event area
+//	EndY: The End Y coordinate of entire event area
+//
+// ### LastMandStanding::Registration ###
+//	Time: The time to register for the event from the initial announce, minutes
+//	MapNumber: Map Number to spawn the registration NPC on
+//	NPCIndex: Index of Event Registration NPC
+//	PosX: The X coordinate of the Registration NPC
+//	PosY: The Y coordinate of the Registration NPC
+//	Dir: Direction the Registration NPC looks at after spawn
+//		~ 0: Central
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//
+//	ReqMoney: Amount of Money (Zen) to register for the event
+//	ReqSpecialItem: Defines if a special item is required prior to register to the event, 0/1
+//	SpecialItemCount: Count of special items required, ignored if ReqSpecialItem is set to 0
+//	ItemCat: Category of the special item required for registration, refer to IGC_ItemLisr.xml, ignored if ReqSpecialItem is set to 0
+//	ItemIndex: Index of the special item required for registration, refer to IGC_ItemLisr.xml, ignored if ReqSpecialItem is set to 0
+//
+// ### LastManStanding::Schedule::Start ###
+//	Hour: Start hour of the event, 0-23
+//	Minute: Start minute of the event, 0-59
+//
+// ### LastManStanding::RoomSettings::Room ###
+//	MinReset: Minimum count of resets to qualify for specified room
+//	MaxReset: Maximum count of resets to qualify for specified room
+//	MapNumber: Map number the room is located on
+//	StartX: The Start X coordinate of specified room
+//	StartY: The Start Y coordinate of specified room
+//	EndX: The End X coordinate of specified room
+//	EndY: The End Y coordinate of specified room
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->	
+
+<LastManStanding Enable="1" DieCount="2" MinPlayers="2" MaxPlayers="500">
+	<Event Duration="15" MapNumber="6" StartX="146" StartY="78" EndX="160" EndY="60" />
+	<Registration Time="15" MapNumber="0" NPCIndex="258" PosX="145" PosY="140" Dir="-1" ReqMoney="1000000" ReqSpecialItem="0" SpecialItemCount="1" ItemCat="14" ItemIndex="160" />
+
+	<Schedule>
+		<Start Hour="12" Minute="0" />
+		<Start Hour="14" Minute="0" />
+		<Start Hour="16" Minute="0" />
+		<Start Hour="18" Minute="0" />
+		<Start Hour="22" Minute="0" />
+	</Schedule>
+
+	<RoomSettings>
+		<Room MinReset="0"  MaxReset="10" MapNumber="6" StartX="63"  StartY="204" EndX="64"  EndY="220" /> <!-- Arena Room 1 -->
+		<Room MinReset="11" MaxReset="20" MapNumber="6" StartX="99"  StartY="205" EndX="105" EndY="222" /> <!-- Arena Room 2 -->
+		<Room MinReset="21" MaxReset="30" MapNumber="6" StartX="136" StartY="203" EndX="142" EndY="221" /> <!-- Arena Room 3 -->
+		<Room MinReset="31" MaxReset="35" MapNumber="6" StartX="171" StartY="202" EndX="177" EndY="220" /> <!-- Arena Room 4 -->
+		<Room MinReset="36" MaxReset="40" MapNumber="6" StartX="209" StartY="202" EndX="215" EndY="221" /> <!-- Arena Room 5 -->
+		<Room MinReset="41" MaxReset="45" MapNumber="6" StartX="209" StartY="161" EndX="214" EndY="179" /> <!-- Arena Room 6 -->
+		<Room MinReset="46" MaxReset="50" MapNumber="6" StartX="136" StartY="160" EndX="142" EndY="179" /> <!-- Arena Room 7 -->
+		<Room MinReset="51" MaxReset="60" MapNumber="6" StartX="209" StartY="120" EndX="215" EndY="138" /> <!-- Arena Room 8 -->
+		<Room MinReset="61" MaxReset="70" MapNumber="6" StartX="98"  StartY="161" EndX="105" EndY="180" /> <!-- Arena Room 9 -->
+		<Room MinReset="71" MaxReset="80" MapNumber="6" StartX="171" StartY="160" EndX="178" EndY="179" /> <!-- Arena Room 10 -->
+	</RoomSettings>
+</LastManStanding>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ImperialGuardian::LevelRangeSettings::Section ###
+//	ID: Defines ID of section, starts from 0, range: 0-9
+//	PlayerMinLevel: Minimum (total) level of player to apply rules of the section
+//	PlayerMaxLevel: Maximum (total) level of player to apply rules of the section
+//
+// ### ImperialGuardian::MoneyDropSettings::Section ###
+//	ID: Defines ID of section, starts from 0, range: 0-9
+//	MoneyCount: Defines amount of money drop (Zen) for player who meets condition of section level range
+//
+// ### ImperialGuardian::ExcItemDropSettings::Section ###
+//	ID: Defines ID of section, starts from 0, range: 0-9
+//	SuccessRate: Defines success rate of Excellent item drop from bag of specified section ID, n/1000000
+//
+// ### ImperialGuardian::Section ###
+//	ID: Refers to ID defined in previous sections and apply the settings on it
+//	ItemDropCount: Count of items to drop from specified section
+//
+// ### ImperialGuardian::Section::Item ###
+//	Cat: Category of the item to drop, refer to ItemList.xml
+//	Index: Index of the item to drop, refer to ItemList.xml
+//	MinLevel: Minimum level of item to drop, 0~15, must be lower or equal to maximum item level 
+//	MaxLevel: Maximum level of item to drop, 0~15, must be greater to equal to minimum item level
+//	Skill: 
+//	Luck: 
+//	Option: 
+//	Exc: 
+//	SetItem: Drop the item as Ancient (Set Item), 0/1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ The item must be previously defines as set item in IGC_ItemSetType.xml and IGC_ItemSetOption.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	DropRate: Drop rate for the item, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of all rates per section must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ImperialGuardian>
+	<LevelRangeSettings> <!-- Allowed index range is 0~9 -->
+		<Section ID="0" PlayerMinLevel="1"   PlayerMaxLevel="100" />
+		<Section ID="1" PlayerMinLevel="101" PlayerMaxLevel="200" />
+		<Section ID="2" PlayerMinLevel="201" PlayerMaxLevel="300" />
+		<Section ID="3" PlayerMinLevel="301" PlayerMaxLevel="400" />
+		<Section ID="4" PlayerMinLevel="401" PlayerMaxLevel="800" />
+		<!-- <Section ID="5" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
+		<!-- <Section ID="6" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
+		<!-- <Section ID="7" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
+		<!-- <Section ID="8" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
+		<!-- <Section ID="9" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
+	</LevelRangeSettings>
+
+	<MoneyDropSettings> <!-- Allowed index range is 0~9 -->
+		<Section ID="0" MoneyCount="1000" />
+		<Section ID="1" MoneyCount="10000" />
+		<Section ID="2" MoneyCount="50000" />
+		<Section ID="3" MoneyCount="80000" />
+		<Section ID="4" MoneyCount="100000" />
+		<!-- <Section ID="5" MoneyCount="0 / /> -->
+		<!-- <Section ID="6" MoneyCount="0"  /> -->
+		<!-- <Section ID="7" MoneyCount="0"  /> -->
+		<!-- <Section ID="8" MoneyCount="0"  /> -->
+		<!-- <Section ID="9" MoneyCount="0" /> -->
+	</MoneyDropSettings>
+
+	<ExcItemDropSettings> <!-- Allowed index range is 0~9 -->
+		<Section ID="0" SuccessRate="10000" />
+		<Section ID="1" SuccessRate="10000" />
+		<Section ID="2" SuccessRate="10000" />
+		<Section ID="3" SuccessRate="10000" />
+		<Section ID="4" SuccessRate="10000" />
+		<!-- <Section ID="5" SuccessRate="0 / /> -->
+		<!-- <Section ID="6" SuccessRate="0"  /> -->
+		<!-- <Section ID="7" SuccessRate="0"  /> -->
+		<!-- <Section ID="8" SuccessRate="0"  /> -->
+		<!-- <Section ID="9" SuccessRate="0" /> -->
+	</ExcItemDropSettings>
+
+<!-- DropRate is n/1000000 ~ e.g. 10000 = 1% chance ~ sum of all rates per section must be equal to 1000000 -->
+	<Section ID="0" ItemDropCount="1"> <!-- 1~100 -->
+		<Item Cat="12" Index="30" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="1" /> <!-- Bundle of Jewel of Bless -->
+		<Item Cat="12" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="2" /> <!-- Bundle of Jewel of Soul -->
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="1000" /> <!-- Jewel of Bless -->
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="2000" /> <!-- Jewel of Life -->
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="3000" /> <!-- Jewel of Soul -->
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="4000" /> <!-- Jewel of Creation -->
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="10000" /> <!-- Jewel of Chaos -->
+		<Item Cat="13" Index="1"  MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="979997" /> <!-- Guardian Angel -->
+	</Section>
+	<Section ID="1" ItemDropCount="1"> <!-- 101~200 -->
+		<Item Cat="12" Index="30" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="2" /> <!-- Bundle of Jewel of Bless -->
+		<Item Cat="12" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="4" /> <!-- Bundle of Jewel of Soul -->
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="2000" /> <!-- Jewel of Bless -->
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="4000" /> <!-- Jewel of Life -->
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="6000" /> <!-- Jewel of Soul -->
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="8000" /> <!-- Jewel of Creation -->
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="20000" /> <!-- Jewel of Chaos -->
+		<Item Cat="13" Index="1"  MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="959994" /> <!-- Guardian Angel -->
+	</Section>
+	<Section ID="2" ItemDropCount="1"> <!-- 201~300 -->
+		<Item Cat="12" Index="30" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="3" /> <!-- Bundle of Jewel of Bless -->
+		<Item Cat="12" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="6" /> <!-- Bundle of Jewel of Soul -->
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="3000" /> <!-- Jewel of Bless -->
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="6000" /> <!-- Jewel of Life -->
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="9000" /> <!-- Jewel of Soul -->
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="12000" /> <!-- Jewel of Creation -->
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="30000" /> <!-- Jewel of Chaos -->
+		<Item Cat="13" Index="1"  MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="939991" /> <!-- Guardian Angel -->
+	</Section>
+	<Section ID="3" ItemDropCount="1"> <!-- 301~400 -->
+		<Item Cat="12" Index="30" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="4" /> <!-- Bundle of Jewel of Bless -->
+		<Item Cat="12" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="8" /> <!-- Bundle of Jewel of Soul -->
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="4000" /> <!-- Jewel of Bless -->
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="8000" /> <!-- Jewel of Life -->
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="12000" /> <!-- Jewel of Soul -->
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="16000" /> <!-- Jewel of Creation -->
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="40000" /> <!-- Jewel of Chaos -->
+		<Item Cat="13" Index="1"  MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="919988" /> <!-- Guardian Angel -->
+	</Section>
+	<Section ID="4" ItemDropCount="1"> <!-- 401~800 -->
+		<Item Cat="12" Index="30" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="5" /> <!-- Bundle of Jewel of Bless -->
+		<Item Cat="12" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="10" /> <!-- Bundle of Jewel of Soul -->
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="5000" /> <!-- Jewel of Bless -->
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="10000" /> <!-- Jewel of Life -->
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="15000" /> <!-- Jewel of Soul -->
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="20000" /> <!-- Jewel of Creation -->
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="50000" /> <!-- Jewel of Chaos -->
+		<Item Cat="13" Index="1"  MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" DropRate="899985" /> <!-- Guardian Angel -->
+	</Section>
+</ImperialGuardian>

@@ -1,0 +1,27 @@
+; iDev.Games - MuOnline S9EP2 IGC9.5 - TRONG.WIN - Dao Van Trong
+
+[Connection]
+IP="192.168.0.168"
+Port=44405
+ChatPort=56980
+
+[Main]
+Version="1.05.25"
+Serial="PoweredByIGCN800"
+SingleInstance=0
+
+[Gameplay]
+Codepage=1258
+BlockVirtualMachine=0
+
+[Launcher]
+Enabled=0
+ExeName=""
+
+
+[Patcher]
+Enabled=0
+ExeName=""
+
+;[File]
+;Password="D03E9C779313211DD0503F908B8DC6BA6762B05CBA90DEE65DB40E436C341BA7"

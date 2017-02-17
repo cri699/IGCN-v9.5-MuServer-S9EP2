@@ -1,0 +1,22 @@
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//	Appearance		- delay time in seconds in which Selupan will appear after killing all the eggs
+//	BossZoneClose	- delay time in seconds in which gates will be closed after Selupan appeared
+//	Event Start		- delay time in seconds to start the event after killing Selupan/server start
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<RaklionEvent Enable="1">
+	<Time SelupanSkillHitDelay="1500" BossAppearance="5" BossZoneClose="300" EventStart="43200" />
+	<EggCount Half="5" Max="15" />
+	<SkillPatterns Pattern1="80" Pattern2="60" Pattern3="50" Pattern4="40" Pattern5="20" Pattern6="10" />
+</RaklionEvent>

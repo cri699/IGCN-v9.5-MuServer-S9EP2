@@ -1,0 +1,27 @@
+////////////////////
+// Section: 0
+// In this Section just write the ~~items~~ which you dont want DupeFinder to check
+// The items i already added to the list are the items which the players automatically gets to his inventory when he creates a character, problem is that sometimes GS gives the same serial for this items, so dupe finder will detect them as duplicated
+////////////////////
+0 // DO NOT REMOVE THIS VALUE
+//	Group	Index
+	0	1	//short sword
+	1	0	//small axe
+	4	0	//short bow
+	4	15	//arrow
+	6	0	//small shield
+	13	20	//wizards ring
+end
+
+////////////////////
+// Section: 1
+// In this Section just write the ~~serials~~ which you dont want DupeFinder to check
+// NOTE: Serial value must be 16 chars in length and constucted of chars: 0-9 or A-F
+////////////////////
+1 // DO NOT REMOVE THIS VALUE
+//	Serial
+	FFFFFFFFFFFFFFFF
+	0000000000000000
+	FFFFFFFF00000000
+end
+////////////////////

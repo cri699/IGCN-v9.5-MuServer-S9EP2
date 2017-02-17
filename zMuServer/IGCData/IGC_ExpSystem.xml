@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ExpSystem ###
+//	CalcType: Defines a type of exp calculation to be used
+//		0: Static exp only
+//			~ NormalExp + EventExp + VipExp + MapBonusExp
+//			~ MasterExp + EventExp + VipExp + MapBonusExp
+//		1: Static + Dynamic
+//			~ NormalExp + DynamicExp + EventExp + VipExp + MapBonusExp
+//			~ MasterExp + DynamicExp + EventExp + VipExp + MapBonusExp
+//		2: Static * Dynamic
+//			~ NormalExp * DynamicExp + EventExp + VipExp + MapBonusExp
+//			~ MasterExp * DynamicExp + EventExp + VipExp + MapBonusExp
+//		3: Dynamic only
+//			~ DynamicExp + EventExp + VipExp + MapBonusExp
+//			~ DynamicExp + EventExp + VipExp + MapBonusExp
+//	DebugMode: If enables will display a log in Game Server, 0/1
+//
+// ### ExpSystem::StaticExp ###
+//	Normal: The normal experience multiplier, float 
+//	Master: The master experience multiplier, float
+//	Event: The event experience bonus, float
+//	Quest: The quest experience multiplier (quests received from Quests System), float
+//
+// ### ExpSystem::DynamicExpRangeList ###
+//	MinReset: Start range of resets count to apply the rule
+//	MaxReset: End range of resets count to apply the rule
+//	MinLevel: Start range of level to apply the rule
+//	MaxLevel: End range of level to apply the rule
+//	NormalExp: Regular experience multiplier
+//	MasterExp: Master experience multiplier
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+//
+-->
+
+<ExpSystem CalcType="0" DebugMode="0">
+	<StaticExp Normal="1.0" Master="1.0" Event="0.0" Quest="1.0" />
+	
+	<DynamicExpRangeList> <!-- First rule match a player requirements will be applied, therefore order of entries matters -->
+		<Range MinReset="0" MaxReset="0" MinLevel="1" MaxLevel="50" NormalExp="1.1" MasterExp="1.0" />
+		<Range MinReset="0" MaxReset="0" MinLevel="51" MaxLevel="100" NormalExp="1.3" MasterExp="1.0" />
+		<Range MinReset="0" MaxReset="0" MinLevel="101" MaxLevel="200" NormalExp="1.5" MasterExp="1.0" />
+		<Range MinReset="0" MaxReset="0" MinLevel="201" MaxLevel="400" NormalExp="1.8" MasterExp="1.0" />
+		<Range MinReset="0" MaxReset="0" MinLevel="401" MaxLevel="550" NormalExp="1.0" MasterExp="1.8" />
+		<Range MinReset="0" MaxReset="0" MinLevel="551" MaxLevel="702" NormalExp="1.0" MasterExp="2.2" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Range MinReset="1" MaxReset="2" MinLevel="1" MaxLevel="50" NormalExp="1.1" MasterExp="1.0" />
+		<Range MinReset="1" MaxReset="2" MinLevel="51" MaxLevel="100" NormalExp="1.1" MasterExp="1.0" />
+		<Range MinReset="1" MaxReset="2" MinLevel="101" MaxLevel="200" NormalExp="1.1" MasterExp="1.0" />
+		<Range MinReset="1" MaxReset="2" MinLevel="201" MaxLevel="400" NormalExp="1.1" MasterExp="1.0" />
+		<Range MinReset="1" MaxReset="2" MinLevel="401" MaxLevel="550" NormalExp="1.0" MasterExp="1.2" />
+		<Range MinReset="1" MaxReset="2" MinLevel="551" MaxLevel="702" NormalExp="1.0" MasterExp="1.4" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Range MinReset="3" MaxReset="4" MinLevel="1" MaxLevel="50" NormalExp="1.2" MasterExp="1.0" />
+		<Range MinReset="3" MaxReset="4" MinLevel="51" MaxLevel="100" NormalExp="1.2" MasterExp="1.0" />
+		<Range MinReset="3" MaxReset="4" MinLevel="101" MaxLevel="200" NormalExp="1.2" MasterExp="1.0" />
+		<Range MinReset="3" MaxReset="4" MinLevel="201" MaxLevel="400" NormalExp="1.2" MasterExp="1.0" />
+		<Range MinReset="3" MaxReset="4" MinLevel="401" MaxLevel="550" NormalExp="1.0" MasterExp="1.3" />
+		<Range MinReset="3" MaxReset="4" MinLevel="551" MaxLevel="702" NormalExp="1.0" MasterExp="1.5" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Range MinReset="5" MaxReset="6" MinLevel="1" MaxLevel="50" NormalExp="1.3" MasterExp="1.0" />
+		<Range MinReset="5" MaxReset="6" MinLevel="51" MaxLevel="100" NormalExp="1.3" MasterExp="1.0" />
+		<Range MinReset="5" MaxReset="6" MinLevel="101" MaxLevel="200" NormalExp="1.3" MasterExp="1.0" />
+		<Range MinReset="5" MaxReset="6" MinLevel="201" MaxLevel="400" NormalExp="1.3" MasterExp="1.0" />
+		<Range MinReset="5" MaxReset="6" MinLevel="401" MaxLevel="550" NormalExp="1.0" MasterExp="1.4" />
+		<Range MinReset="5" MaxReset="6" MinLevel="551" MaxLevel="702" NormalExp="1.0" MasterExp="1.5" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Range MinReset="7" MaxReset="8" MinLevel="1" MaxLevel="50" NormalExp="1.4" MasterExp="1.0" />
+		<Range MinReset="7" MaxReset="8" MinLevel="51" MaxLevel="100" NormalExp="1.4" MasterExp="1.0" />
+		<Range MinReset="7" MaxReset="8" MinLevel="101" MaxLevel="200" NormalExp="1.4" MasterExp="1.0" />
+		<Range MinReset="7" MaxReset="8" MinLevel="201" MaxLevel="400" NormalExp="1.4" MasterExp="1.0" />
+		<Range MinReset="7" MaxReset="8" MinLevel="401" MaxLevel="550" NormalExp="1.0" MasterExp="1.5" />
+		<Range MinReset="7" MaxReset="8" MinLevel="551" MaxLevel="702" NormalExp="1.0" MasterExp="1.6" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Range MinReset="9" MaxReset="6" MinLevel="1" MaxLevel="50" NormalExp="1.4" MasterExp="1.0" />
+		<Range MinReset="9" MaxReset="6" MinLevel="51" MaxLevel="100" NormalExp="1.4" MasterExp="1.0" />
+		<Range MinReset="9" MaxReset="6" MinLevel="101" MaxLevel="200" NormalExp="1.4" MasterExp="1.0" />
+		<Range MinReset="9" MaxReset="6" MinLevel="201" MaxLevel="400" NormalExp="1.4" MasterExp="1.0" />
+		<Range MinReset="9" MaxReset="6" MinLevel="401" MaxLevel="550" NormalExp="1.0" MasterExp="1.6" />
+		<Range MinReset="9" MaxReset="6" MinLevel="551" MaxLevel="702" NormalExp="1.0" MasterExp="1.7" />
+	</DynamicExpRangeList>
+</ExpSystem>

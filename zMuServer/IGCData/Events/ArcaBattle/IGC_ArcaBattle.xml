@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ArcaBattleEvent ###
+//	Enable: Deactivates or Activates the event, 0/1
+//	MinGuildMember:
+//	MasterRegTime: Time to register guild by Guild Master, minutes
+//	MemberRegTime: Time to register by Guild Members after guild is registered by Guild Master, minutes
+//	ProgressWait:
+//	PartyWait:
+//	Duration: Event duration, minutes
+//	ChannelClose: Time of automated move from event map after event finish, minutes
+//
+//	### ArcaBattleEvent::ActiveDay ###
+//	Sun: Activates event on Sunday, 0/1
+//	Mon: Activates event on Monday, 0/1
+//	Tue: Activates event on Tuesday, 0/1
+//	Wed: Activates event on Wednesday, 0/1
+//	Thur: Activates event on Thursday, 0/1
+//	Fri: Activates Event on Friday, 0/1
+//	Sat: Activates event on Saturday, 0/1
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	~ NOTE ~ The event must stay disabled on Acheron Guardian event day
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ActiveDay::Schedule::Start ###
+//	Hour: Hour of event start, 0-23
+//	Minute: Minute of event start, 0-60
+//	Unk:
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	~ NOTE ~ Section accepts extra schedule entries
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ArcaBattleEvent::ObeliskInformation::Obelisk ###
+//	Index: Index of event obelisk, unique in section, starting from 1
+//	MapNumber: Map Number obelisk is placed on
+//	Type: Type of Obelisk - see MonsterList.xml -> Index
+//	PosX: X coordinate of the obelisk
+//	PosY: Y coordinate of the obelisk
+//	HP: Health of Obelisk at start of the event
+//	OccupyHP: Health of occupied Obelisk
+//	RegenTime: Time in which destroyed Obelisk will respawn after, milliseconds
+//	Name: Name of the obelisk, used for in-file description only
+//
+// ### ArcaBattleEvent::AuraPositionSettings::Aura ###
+//	Index: Index of event obelisk, see definitions in ObeliskInformation section
+//	MapNumber: Map Number the obelisk is located on
+//	PosX: The X Coordinate of the obelisk
+//	PosY:  The Y coordinate of the obelisk
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	~ NOTE ~ Required three obelisks to be defined per group
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ArcaBattleEvent::MonsterGroupInformation::Monster ###
+//	Group: Number of a group of monsters bunch, starting from 0
+//	MapNumber: Map Number the monsters group is assigned to
+//	Count: A number of time to spawn the monster group - for better understanding it is MonsterGroupMember * Count
+//	RegenTime: Respawn time for the group of monsters, minutes
+//
+// ### ArcaBattleEvent::MonsterGroupSpot::Spot ###
+//	MonsterGroup: Monsters group number to spawn - refer to MonsterGroupInformation section
+//	StartX: Start X coordinate for the monster group spawn, must be greater than EndX
+//	StartY: Start Y coordinate for the monster group spawn, must be greater than EndY
+//	EndX: End X coordinate for the monster group spawn, must be lower then StartX
+//	EndY: End Y coordinate for the monster group spawn, must be lower than StartY
+//
+// ### ArcaBattleEvent::MonsterGroupMember::Monster ###
+//	Group: Monster group number - refer to MonsterGroupInformation section
+//	Index: Index of a monster to be defined as a member of a group, see MonsterList.xml
+//	Name: Name of a Monster, used for in-file description purpose only
+//
+// ### ArcaBattleEvent::PlayerSpawnSettings::Spawn ###
+//	Group: Number of players group, starting from 0
+//	MapNumber: Map number the players group will be spawned on
+//	StartX: Start X coordinate the players group will be spawned
+//	StartY: Start Y coordinate the players group will be spawned
+//	EndX: EndX coordinate the players group will be spawned
+//	EndY: EndY coordinate the players group will be spawned
+//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	~ INFO ~ Reward for the item can be configured in Buff_AkeronTower_Drop.xml
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<ArcaBattleEvent Enable="1" MinGuildMember="10" MasterRegTime="10" MemberRegTime="10" ProgressWait="3" PartyWait="5" Duration="30" ChannelClose="10">
+	<ActiveDay Sun="0" Mon="0" Tue="0" Wed="1" Thu="0" Fri="0" Sat="0" />
+
+	<Schedule>
+		<Start Hour="22" Minute="0" Unk="0" />
+	</Schedule>
+
+	<ObeliskInformation>
+		<Obelisk Index="1" MapNumber="92" Type="598" PosX="89"  PosY="41"  HP="500000" OccupyHP="300000" RegenTime="20000" Name="Fire Tower" /> <!-- Alkmaar Area -->	
+		<Obelisk Index="2" MapNumber="92" Type="598" PosX="188" PosY="101" HP="500000" OccupyHP="300000" RegenTime="20000" Name="Fire Tower" /> <!-- Ubaid Area -->	
+		<Obelisk Index="3" MapNumber="96" Type="598" PosX="162" PosY="54"  HP="500000" OccupyHP="300000" RegenTime="20000" Name="Fire Tower" /> <!-- Debenter Area -->
+	</ObeliskInformation>
+
+	<AuraPositionSettings>
+		<Aura Index="1" MapNumber="92" PosX="89"  PosY="58" />
+		<Aura Index="1" MapNumber="92" PosX="84"  PosY="30" />
+		<Aura Index="1" MapNumber="92" PosX="104" PosY="36" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Aura Index="2" MapNumber="92" PosX="175" PosY="102" />
+		<Aura Index="2" MapNumber="92" PosX="192" PosY="110" />
+		<Aura Index="2" MapNumber="92" PosX="200" PosY="96" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Aura Index="3" MapNumber="96" PosX="154" PosY="60" />
+		<Aura Index="3" MapNumber="96" PosX="162" PosY="45" />
+		<Aura Index="3" MapNumber="96" PosX="165" PosY="67" />
+	</AuraPositionSettings>
+
+	<MonsterGroupInformation>
+		<Monster Group="0" MapNumber="92" Count="10" RegenTime="10" /> <!-- Alkmaar Area -->	
+		<Monster Group="1" MapNumber="92" Count="10" RegenTime="10" /> <!-- Ubaid Area -->	
+		<Monster Group="2" MapNumber="96" Count="10" RegenTime="10" /> <!-- Debenter Area -->
+	</MonsterGroupInformation>
+
+	<MonsterGroupSpot>
+		<Spot MonsterGroup="0" StartX="77"  StartY="31"	 EndX="87"  EndY="38" />
+		<Spot MonsterGroup="0" StartX="84"  StartY="43"	 EndX="98"  EndY="45" />
+		<Spot MonsterGroup="0" StartX="90"  StartY="39"	 EndX="97"  EndY="45" />
+		<Spot MonsterGroup="0" StartX="87"  StartY="48"	 EndX="98"  EndY="55" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Spot MonsterGroup="1" StartX="178" StartY="101" EndX="190" EndY="100" />
+		<Spot MonsterGroup="1" StartX="188" StartY="94"  EndX="201" EndY="98" />
+		<Spot MonsterGroup="1" StartX="173" StartY="101" EndX="188" EndY="105" />
+		<Spot MonsterGroup="1" StartX="186" StartY="89"	 EndX="195" EndY="99" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Spot MonsterGroup="2" StartX="152" StartY="58"	 EndX="156" EndY="62" />																							
+		<Spot MonsterGroup="2" StartX="161" StartY="43"	 EndX="164" EndY="46" />																							
+		<Spot MonsterGroup="2" StartX="164" StartY="65"	 EndX="167" EndY="68" />																							
+		<Spot MonsterGroup="2" StartX="160" StartY="52"	 EndX="164" EndY="56" />
+	</MonsterGroupSpot>
+
+	<MonsterGroupMember>
+		<Monster Group="0" Index="592" Name="Undine" />
+		<Monster Group="0" Index="593" Name="Salamander" />
+		<Monster Group="0" Index="594" Name="Sylphid" />
+		<Monster Group="0" Index="595" Name="Gnome" />
+		<Monster Group="0" Index="596" Name="Hellraiser" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Monster Group="1" Index="592" Name="Undine" />
+		<Monster Group="1" Index="593" Name="Salamander" />
+		<Monster Group="1" Index="594" Name="Sylphid" />
+		<Monster Group="1" Index="595" Name="Gnome" />
+		<Monster Group="1" Index="596" Name="Hellraiser" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Monster Group="2" Index="611" Name="Sellihoden" />
+		<Monster Group="2" Index="612" Name="Ukanva" />
+		<Monster Group="2" Index="613" Name="Silla" />
+		<Monster Group="2" Index="614" Name="Normus" />
+		<Monster Group="2" Index="615" Name="Muff" />
+	</MonsterGroupMember>
+
+	<PlayerSpawnSettings>
+		<Spawn Group="0" MapNumber="92" StartX="77"  StartY="118" EndX="87"  EndY="130" /> <!-- To the left of the road -->
+		<Spawn Group="0" MapNumber="92" StartX="110" StartY="153" EndX="123" EndY="163" /> <!-- Entrance -->
+		<Spawn Group="0" MapNumber="92" StartX="133" StartY="139" EndX="145" EndY="150" /> <!-- Right Side -->
+		<Spawn Group="0" MapNumber="92" StartX="169" StartY="37"  EndX="179" EndY="47" /> <!-- Bottom-Right -->
+		<Spawn Group="0" MapNumber="92" StartX="12"  StartY="18"  EndX="25"  EndY="34" /> <!-- Bottom-Left -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Spawn Group="1" MapNumber="92" StartX="237" StartY="42"  EndX="246" EndY="53" /> <!-- Bottom-Right -->
+		<Spawn Group="1" MapNumber="92" StartX="207" StartY="205" EndX="218" EndY="214" /> <!-- Top-Right Corner -->
+		<Spawn Group="1" MapNumber="92" StartX="167" StartY="199" EndX="175" EndY="211" /> <!-- Right in the Middle -->
+		<Spawn Group="1" MapNumber="92" StartX="151" StartY="198" EndX="156" EndY="200" /> <!-- Entrance -->
+		<Spawn Group="1" MapNumber="92" StartX="185" StartY="148" EndX="194" EndY="157" /> <!-- Center -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Spawn Group="2" MapNumber="96" StartX="57"  StartY="80" EndX="77"  EndY="94" /> <!-- Debenter Entrance -->
+		<Spawn Group="2" MapNumber="96" StartX="109" StartY="47" EndX="126" EndY="64" /> <!-- Debenter Top-Left -->
+		<Spawn Group="2" MapNumber="96" StartX="60"  StartY="26" EndX="84"  EndY="37" /> <!-- Debenter Bottom-Left -->
+		<Spawn Group="2" MapNumber="96" StartX="143" StartY="89" EndX="163" EndY="104" /> <!-- Debenter Bottom-Middle -->
+		<Spawn Group="2" MapNumber="96" StartX="169" StartY="15" EndX="187" EndY="28" /> <!-- Debenter Bottom-Right -->
+	</PlayerSpawnSettings>
+</ArcaBattleEvent>

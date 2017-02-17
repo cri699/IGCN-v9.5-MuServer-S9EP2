@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### SocketSystem ###
+//	SphereDrop: Enables or disables spheres drop, 0/1
+//	TetraDrop: Enables or disables Tetra drop, 0/1
+//
+// ### SocketSystem::SphereDrop::Rate ###
+//	Level1: Drop Rate of Sphere Level 1, n/10000
+//	Level2: Drop Rate of Sphere Level 3, n/10000
+//	Level3: Drop Rate of Sphere Level 3, n/10000
+//	Level4: Drop Rate of Sphere Level 4, n/10000
+//	Level5: Drop Rate of Sphere Level 5, n/10000
+//
+// ### SocketSystem::SphereDrop::Level ###
+//	Level1: Minimum monster level to drop Sphere Level 1
+//	Level2: Minimum monster level to drop Sphere Level 2
+//	Level3: Minimum monster level to drop Sphere Level 3
+//	Level4: Minimum monster level to drop Sphere Level 4
+//	Level5: Minimum monster level to drop Sphere Level 5
+//
+// ### SocketSystem::TetraDrop::Bronze ###
+//	Rate: Tetra drop Rate chance, n/10000
+//	LevelMin: Minimum monster level to drop the Tetra item
+//	LevelMax: Maximum monster level to drop the Tetra item
+//
+// ### SocketSystem::TetraDrop::Silver ###
+//	Rate: Tetra drop Rate chance, n/10000
+//	LevelMin: Minimum monster level to drop the Tetra item
+//	LevelMax: Maximum monster level to drop the Tetra item
+//
+// ### SocketSystem::TetraDrop::Gold ###
+//	Rate: Tetra drop Rate chance, n/10000
+//	LevelMin: Minimum monster level to drop the Tetra item
+//	LevelMax: Maximum monster level to drop the Tetra item
+//
+// ### SocketSystem::Seed ###
+//	ExtractMoney: Seed extraction cost in Zen
+//
+// ### SocketSystem::Seed::Sphere ###
+//	CompositeMoney: Seed Sphere compose cost in Zen
+//	SetMoney: Seed Sphere set cost in Zen
+//	RemoveMoney: Seed Sphere removal cost in Zen
+//
+// ### SocketSystem::SocketRateSettings::Socket ### - one hand weapons only
+//	CatID: ID of category from ItemList.xml
+//	Count1: Success rate for 1 slot, n/10000, can be 0
+//	Count2: Success rate for 2 slots, n/10000, can be 0
+//	Count3: Success rate for 3 slots, n/10000, can be 0
+//	Count4: Success rate for 4 slots, n/10000, can be 0
+//	Count5: Success rate for 5 slots, n/10000, can be 0
+//
+// ### SocketSystem::SocketRateSettings::TwoHandWeapons ### - two hands weapons only
+//	Count1: Success rate for 1 slot, n/10000, can be 0
+//	Count2: Success rate for 2 slots, n/10000, can be 0
+//	Count3: Success rate for 3 slots, n/10000, can be 0
+//	Count4: Success rate for 4 slots, n/10000, can be 0
+//	Count5: Success rate for 5 slots, n/10000, can be 0
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<SocketSystem SphereDrop="1" TetraDrop="1">
+
+	<SphereDrop>
+		<Rate Level1="50" Level2="40" Level3="30" Level4="20" Level5="10" />
+		<Level Level1="40" Level2="60" Level3="80" Level4="100" Level5="120" />
+	</SphereDrop>
+	
+	<TetraDrop>
+		<Bronze Rate="100" LevelMin="50" LevelMax="300" />
+		<Silver Rate="1" LevelMin="50" LevelMax="300" />
+		<Gold Rate="0" LevelMin="50" LevelMax="300" />
+	</TetraDrop>
+
+	<Seed ExtractMoney="1000000">
+		<Sphere CompositeMoney="1000000" SetMoney="1000000" RemoveMoney="1000000" />
+	</Seed>
+	
+	<SocketRateSettings>
+		<Socket CatID="0" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Swords -->
+		<Socket CatID="1" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Axes -->
+		<Socket CatID="2" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Maces -->
+		<Socket CatID="3" Count1="4000" Count2="2000" Count3="1500" Count4="300" Count5="150" /> <!-- Spears -->
+		<Socket CatID="4" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Bows & Cross Bows -->
+		<Socket CatID="5" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Staffs -->
+		<Socket CatID="6" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Shield -->
+		<Socket CatID="7" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Helmets -->
+		<Socket CatID="8" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Armors -->
+		<Socket CatID="9" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Pants -->
+		<Socket CatID="10" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Gloves -->
+		<Socket CatID="11" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Boots -->
+		
+		<TwoHandWeapons Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" />
+	</SocketRateSettings>
+</SocketSystem>

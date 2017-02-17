@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MapAttribute::Config::Map ###
+//	Number: Number of a Map
+//	PvPConfig: Allows to set specified map a PvP or Non-PvP
+//		0: PVP
+//		1: Non-PVP
+//	ItemDropRateBonus: Bonus of drop rate added to base server drop value
+//	ExpBonus: Bonus of experience added to general base server experience value
+//	MasterExpBonus: Bonus of master experience added to general base server experience value
+//	VipLevel: Minimum Vip Level to allow entry to the map, 0 for no Vip required
+//	PkLevelIncrease: Allows to define behaviour of PK Level Increment upon kill
+//		0: PK Level does not increase
+//		1: PK Level increases
+//	RegenOnSamePlace: Determines whether to spawn player in the location of his death
+//		0: character re-spawns in town location
+//		1: character re-spawns in death location
+//	BlockEntry: Blocks entry to the map, 0/1
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->	
+
+<MapAttribute>
+	<Config>
+		<Map Number="0"  PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Lorencia -->
+		<Map Number="1"  PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Dungeon (1 ~ 3) -->
+		<Map Number="2"  PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Devias -->
+		<Map Number="3"  PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Noria -->
+		<Map Number="4"  PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Lost Tower (1 ~ 7) -->
+		<Map Number="5"  PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Exile - does not exist by default in newer game versions -->
+		<Map Number="6"  PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Arena -->
+		<Map Number="7"  PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Atlans (1 ~ 3) -->
+		<Map Number="8"  PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Tarkan (1 ~ 2) -->
+		<Map Number="9"  PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Devil Square (1 ~ 4) -->
+		<Map Number="10" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Icarus -->
+		<Map Number="11" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Blood Castle 1 -->
+		<Map Number="12" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Blood Castle 2 -->
+		<Map Number="13" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Blood Castle 3 -->
+		<Map Number="14" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Blood Castle 4 -->
+		<Map Number="15" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Blood Castle 5 -->
+		<Map Number="16" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Blood Castle 6 -->
+		<Map Number="17" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Blood Castle 7 -->
+		<Map Number="18" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Chaos Castle 1 -->
+		<Map Number="19" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Chaos Castle 2 -->
+		<Map Number="20" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Chaos Castle 3 -->
+		<Map Number="21" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Chaos Castle 4 -->
+		<Map Number="22" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Chaos Castle 5 -->
+		<Map Number="23" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Chaos Castle 6 -->
+		<Map Number="24" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Kalima 1 -->
+		<Map Number="25" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Kalima 2 -->
+		<Map Number="26" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Kalima 3 -->
+		<Map Number="27" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Kalima 4 -->
+		<Map Number="28" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Kalima 5 -->
+		<Map Number="29" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Kalima 6 -->
+		<Map Number="30" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Valley of Loren -->
+		<Map Number="31" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Land of Trials -->
+		<Map Number="32" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Devil Square (5 ~ 7) -->
+		<Map Number="33" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Aida (1 ~ 2) -->
+		<Map Number="34" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Crywolf Fortress (First Zone) -->
+		<Map Number="35" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Crywolf (Second Zone) -->
+		<Map Number="36" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Kalima 7 (Lost) -->
+		<Map Number="37" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Kanturu Ruins -->
+		<Map Number="38" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Kanturu 1 (Remain) -->
+		<Map Number="39" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Kanturu 2 (Refinery Tower) -->
+		<Map Number="40" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Silent Map -->
+		<Map Number="41" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Barracks of Balgass -->
+		<Map Number="42" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Balgass Refuge -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Map Number="45" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Illusion Temple (Classic/Renewal) 1 -->
+		<Map Number="46" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Illusion Temple (Classic/Renewal) 2 -->
+		<Map Number="47" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Illusion Temple (Classic/Renewal) 3 -->
+		<Map Number="48" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Illusion Temple (Classic/Renewal) 4 -->
+		<Map Number="49" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Illusion Temple (Classic/Renewal) 5 -->
+		<Map Number="50" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Illusion Temple (Classic/Renewal) 6 -->
+		<Map Number="51" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Elbeland -->
+		<Map Number="52" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Blood Castle 8 -->
+		<Map Number="53" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Chaos Castle 7 -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Map Number="56" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Swamp of Calmness -->
+		<Map Number="57" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Raklion -->
+		<Map Number="58" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Hatchery (Raklion Boss) -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Map Number="62" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Santa Village -->
+		<Map Number="63" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Vulcanus -->
+		<Map Number="64" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Duel Arena -->
+		<Map Number="65" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="2.0" MasterExpBonus="2.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Dopple Ganger Snow -->
+		<Map Number="66" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="2.0" MasterExpBonus="2.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Dopple Ganger Volcan -->
+		<Map Number="67" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="2.0" MasterExpBonus="2.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Dopple Ganger Sea -->
+		<Map Number="68" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="2.0" MasterExpBonus="2.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Dopple Ganger Crystals -->
+		<Map Number="69" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Imperial Fortress 1 -->
+		<Map Number="70" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Imperial Fortress 2 -->
+		<Map Number="71" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Imperial Fortress 3 -->
+		<Map Number="72" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Imperial Fortress 4 -->
+		<Map Number="79" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Loren Market -->
+		<Map Number="80" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Karutan 1 -->
+		<Map Number="81" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Karutan 2 -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Map Number="91" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Acheron -->
+		<Map Number="92" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Acheron (Arca Battle) -->
+		<Map Number="95" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Debenter -->
+		<Map Number="96" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Debenter (ArcaBattle) -->
+		<Map Number="97" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- ChaosCastleSurvival -->
+		<Map Number="98" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- IllusionTempleLeague -->
+		<Map Number="99" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- IllusionTempleLeague -->
+		<Map Number="100" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Urk Mountain -->
+		<Map Number="101" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Urk Mountain Event -->
+		<Map Number="102" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" /> <!-- Tormented Square -->
+	</Config>
+</MapAttribute>

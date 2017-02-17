@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MiniMapObjects::TypeOne::Tag ###
+//	Id: Unique ID per MapNumber
+//	MapNumber: Number of a map
+//	NPCIndex: Index of NPC (Monster.xml)
+//	X - Coordinate X
+//	Y - Coordinate Y
+//	DisplayType:
+//		~ 1: Shield Icon
+//		~ 2: Conversation Icon (three dots in cloud)
+//		~ 3: Hammer Icon
+//		~ 4: Elixir Icon
+//		~ 5: Locker Icon
+//		~ 6: UNK
+//	SyncType:
+//		~ 0: Tag is not displayed
+//		~ 1: Tag displayed always
+//		~ 2: Tag displayed only if Monster/NPC present in-Game
+//	Name: Name of Tag to display on Mini Map
+//
+// ### MiniMapObjects::TypeTwo::Tag ###
+//	Id: Unique ID per MapNumber
+//	MapNumber: Number of a map
+//	X - Coordinate X
+//	Y - Coordinate Y
+//	Name: Name of Tag to display on Mini Map
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+
+<MiniMapObjects>
+	<TypeOne>
+<!-- Loren Market -->
+		<!-- <Tag Id="0" MapNumber="79"	NPCIndex="240"	X="115"	Y="144"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" /> -->
+		<!-- <Tag Id="1" MapNumber="79"	NPCIndex="240"	X="147"	Y="115"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" /> -->
+		<Tag Id="2"	 MapNumber="79"	NPCIndex="546"	X="131"	Y="109"	 DisplayType="4"  SyncType="1"  Name="Jeweller Raul" />
+		<Tag Id="3"	 MapNumber="79"	NPCIndex="545"	X="113"	Y="116"	 DisplayType="4"  SyncType="1"  Name="Christine the Merchant" />
+		<Tag Id="4"	 MapNumber="79"	NPCIndex="547"	X="123"	Y="140"	 DisplayType="2"  SyncType="1"  Name="Market Union Member Julia" />
+		<Tag Id="5"	 MapNumber="79"	NPCIndex="651"	X="108"	Y="134"	 DisplayType="2"  SyncType="1"  Name="Private Store Bulletin Board" />
+		<Tag Id="6"	 MapNumber="79"	NPCIndex="651"	X="138"	Y="143"	 DisplayType="2"  SyncType="1"  Name="Private Store Bulletin Board" />
+		<Tag Id="7"	 MapNumber="79"	NPCIndex="643"	X="85"	Y="136"	 DisplayType="2"  SyncType="1"  Name="Mait" />
+		<!-- <Tag Id="8" MapNumber="79"	NPCIndex="540"	X="84"	Y="129"	 DisplayType="2"  SyncType="1"  Name="Lugard" /> -->
+		<Tag Id="9"	 MapNumber="79"	NPCIndex="385"	X="94"	Y="137"  DisplayType="2"  SyncType="1"  Name="Mirage" />
+		<Tag Id="10" MapNumber="79"	NPCIndex="669"	X="113"	Y="132"	 DisplayType="2"  SyncType="1"  Name="Ellin" />
+<!-- Lorencia -->
+		<Tag Id="0"	 MapNumber="0"	NPCIndex="226"	X="122"	Y="110"	 DisplayType="2"  SyncType="1"  Name="Trainer" />
+		<Tag Id="1"	 MapNumber="0"	NPCIndex="230"	X="62"	Y="130"	 DisplayType="4"  SyncType="1"  Name="Wandering Merchant Alex" />
+		<Tag Id="2"	 MapNumber="0"	NPCIndex="250"	X="183"	Y="137"	 DisplayType="4"  SyncType="1"  Name="Wandering Merchant Herald" />
+		<Tag Id="3"	 MapNumber="0"	NPCIndex="253"	X="127"	Y="86"	 DisplayType="4"  SyncType="1"  Name="Potion Girl Amy" />
+		<Tag Id="4"	 MapNumber="0"	NPCIndex="251"	X="116"	Y="141"	 DisplayType="3"  SyncType="1"  Name="Hanzo the Blacksmith" />
+		<Tag Id="5"	 MapNumber="0"	NPCIndex="255"	X="123"	Y="135"	 DisplayType="4"  SyncType="1"  Name="Lumen the Barmaid" />
+		<Tag Id="6"	 MapNumber="0"	NPCIndex="254"	X="118"	Y="113"	 DisplayType="4"  SyncType="1"  Name="Pasi the Mage" />
+		<Tag Id="7"	 MapNumber="0"	NPCIndex="547"	X="139"	Y="138"	 DisplayType="2"  SyncType="1"  Name="Market Union Member Julia" />
+		<Tag Id="8"	 MapNumber="0"	NPCIndex="240"	X="146"	Y="110"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" />
+		<Tag Id="9"	 MapNumber="0"	NPCIndex="257"	X="96"	Y="129"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="10" MapNumber="0"	NPCIndex="257"	X="132"	Y="165"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="11" MapNumber="0"	NPCIndex="257"	X="132"	Y="90"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="12" MapNumber="0"	NPCIndex="257"	X="170"	Y="129"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="13" MapNumber="0"	NPCIndex="543"	X="144"	Y="127"	 DisplayType="2"  SyncType="1"  Name="Gens Duprian Steward" />
+		<Tag Id="14" MapNumber="0"	NPCIndex="375"	X="130"	Y="161"	 DisplayType="2"  SyncType="1"  Name="Chaos Card Master" />
+		<Tag Id="15" MapNumber="0"	NPCIndex="240"	X="147"	Y="145"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" />
+		<Tag Id="16" MapNumber="0"	NPCIndex="584"	X="114"	Y="132"	 DisplayType="2"  SyncType="1"  Name="Sir Lesnar" />
+		<Tag Id="17" MapNumber="0"	NPCIndex="568"	X="0"	Y="0"	 DisplayType="2"  SyncType="2"  Name="Wandering Merchant Zyro" />
+		<Tag Id="18" MapNumber="0"	NPCIndex="229"	X="137"	Y="87"	 DisplayType="2"  SyncType="2"  Name="Marlon" />
+<!-- Devias -->
+		<Tag Id="0"	 MapNumber="2"	NPCIndex="233"	X="209"	Y="30"	 DisplayType="2"  SyncType="1"  Name="Messenger of Archangel" />
+		<Tag Id="1"	 MapNumber="2"	NPCIndex="235"	X="219"	Y="9"	 DisplayType="2"  SyncType="1"  Name="Messenger of Archangel" />
+		<Tag Id="2"	 MapNumber="2"	NPCIndex="244"	X="226"	Y="25"	 DisplayType="4"  SyncType="1"  Name="Caren the Barmaid" />
+		<Tag Id="3"	 MapNumber="2"	NPCIndex="245"	X="225"	Y="41"	 DisplayType="2"  SyncType="1"  Name="Wizard Izabel" />
+		<Tag Id="4"	 MapNumber="2"	NPCIndex="246"	X="186"	Y="47"	 DisplayType="3"  SyncType="1"  Name="Weapons Merchant Zienna" />
+		<Tag Id="5"	 MapNumber="2"	NPCIndex="241"	X="215"	Y="45"	 DisplayType="2"  SyncType="1"  Name="Royal Guard Captain Lorence" />
+		<Tag Id="6"	 MapNumber="2"	NPCIndex="240"	X="218"	Y="63"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" />
+		<Tag Id="7"	 MapNumber="2"	NPCIndex="257"	X="219"	Y="73"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="8"	 MapNumber="2"	NPCIndex="257"	X="172"	Y="44"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="9"	 MapNumber="2"	NPCIndex="522"	X="229"	Y="221"	 DisplayType="2"  SyncType="1"  Name="Jerint the Assistant" />
+		<Tag Id="10" MapNumber="2"	NPCIndex="379"	X="32"	Y="31"	 DisplayType="4"  SyncType="1"  Name="Natasha Firecracker Merchant" />
+		<Tag Id="11" MapNumber="2"	NPCIndex="566"	X="204"	Y="61"	 DisplayType="2"  SyncType="1"  Name="Mercenary Guild Manager" />
+		<Tag Id="12" MapNumber="2"	NPCIndex="584"	X="240"	Y="53"	 DisplayType="2"  SyncType="1"  Name="Sir Lesnar" />
+		<Tag Id="13" MapNumber="2"	NPCIndex="568"	X="0"	Y="0"	 DisplayType="2"  SyncType="2"  Name="Wandering Merchant Zyro" />
+		<Tag Id="14" MapNumber="2"	NPCIndex="229"	X="183"	Y="30"	 DisplayType="2"  SyncType="2"  Name="Marlon" />
+		<Tag Id="15" MapNumber="2"	NPCIndex="235"	X="183"	Y="32"	 DisplayType="2"  SyncType="1"  Name="Sebina the Priest" />
+<!-- Noria -->
+		<Tag Id="0"	 MapNumber="3"	NPCIndex="237"	X="171"	Y="105"	 DisplayType="2"  SyncType="1"  Name="Charon" />
+		<Tag Id="1"	 MapNumber="3"	NPCIndex="242"	X="173"	Y="125"	 DisplayType="4"  SyncType="1"  Name="Elf Lala" />
+		<Tag Id="2"	 MapNumber="3"	NPCIndex="243"	X="195"	Y="124"	 DisplayType="3"  SyncType="1"  Name="Eo the Craftsman" />
+		<Tag Id="3"	 MapNumber="3"	NPCIndex="240"	X="172"	Y="96"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" />
+		<Tag Id="4"	 MapNumber="3"	NPCIndex="238"	X="180"	Y="103"	 DisplayType="2"  SyncType="1"  Name="Chaos Goblin" />
+		<Tag Id="5"	 MapNumber="3"	NPCIndex="257"	X="167"	Y="118"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="6"	 MapNumber="3"	NPCIndex="257"	X="166"	Y="85"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="7"	 MapNumber="3"	NPCIndex="257"	X="201"	Y="129"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="8"	 MapNumber="3"	NPCIndex="544"	X="167"	Y="100"	 DisplayType="2"  SyncType="1"  Name="Gens Vanert Steward" />
+		<Tag Id="9"	 MapNumber="3"	NPCIndex="580"	X="196"	Y="113"	 DisplayType="2"  SyncType="1"  Name="Captain Slough" />
+		<Tag Id="10" MapNumber="3"	NPCIndex="584"	X="183"	Y="126"	 DisplayType="2"  SyncType="1"  Name="Sir Lesnar" />
+		<Tag Id="11" MapNumber="3"	NPCIndex="568"	X="0"	Y="0"	 DisplayType="2"  SyncType="2"  Name="Wandering Merchant Zyro" />
+		<Tag Id="12" MapNumber="3"	NPCIndex="229"	X="169"	Y="89"	 DisplayType="2"  SyncType="2"  Name="Marlon" />
+<!-- Aida 1 ~ 2 -->
+		<Tag Id="0"	 MapNumber="33"	NPCIndex="369"	X="78"	Y="13"	 DisplayType="2"  SyncType="1"  Name="Osbourne" />
+		<Tag Id="1"	 MapNumber="33"	NPCIndex="370"	X="86"	Y="13"	 DisplayType="2"  SyncType="1"  Name="Jerridon" />
+<!-- Crywolf Fortress (First Zone) -->
+		<Tag Id="0"	 MapNumber="34"	NPCIndex="406"	X="228"	Y="48"	 DisplayType="2"  SyncType="1"  Name="Apostle Devin" />
+		<Tag Id="1"	 MapNumber="34"	NPCIndex="407"	X="62"	Y="239"	 DisplayType="2"  SyncType="1"  Name="Werewolf Quarrel" />
+		<Tag Id="2"	 MapNumber="34"	NPCIndex="226"	X="135"	Y="47"	 DisplayType="2"  SyncType="1"  Name="Trainer" />
+		<Tag Id="3"	 MapNumber="34"	NPCIndex="248"	X="99"	Y="40"	 DisplayType="3"  SyncType="1"  Name="Wandering Merchant Martin" />
+		<Tag Id="4"	 MapNumber="34"	NPCIndex="256"	X="96"	Y="25"	 DisplayType="2"  SyncType="1"  Name="Lahap" />
+		<Tag Id="5"	 MapNumber="34"	NPCIndex="251"	X="145"	Y="14"	 DisplayType="3"  SyncType="1"  Name="Hanzo the Blacksmith" />
+		<Tag Id="6"	 MapNumber="34"	NPCIndex="240"	X="113"	Y="56"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" />
+		<!-- <Tag Id="7" MapNumber="34"	NPCIndex="224"	X="118"	Y="11"	 DisplayType="2"  SyncType="1"  Name="Guardsman" /> -->
+<!-- Barracks of Balgass -->
+		<Tag Id="0"	 MapNumber="41"	NPCIndex="408"	X="119"	Y="168"	 DisplayType="2"  SyncType="1"  Name="Gatekeeper" />
+<!-- Elbeland -->
+		<Tag Id="0"	 MapNumber="51"	NPCIndex="256"	X="37"	Y="241"	 DisplayType="2"  SyncType="1"  Name="Lahap" />
+		<Tag Id="1"	 MapNumber="51"	NPCIndex="415"	X="44"	Y="229"	 DisplayType="4"  SyncType="1"  Name="Potion Merchant Silvia" />
+		<Tag Id="2"	 MapNumber="51"	NPCIndex="416"	X="29"	Y="236"	 DisplayType="3"  SyncType="1"  Name="Weapons Merchant Rhea" />
+		<Tag Id="3"	 MapNumber="51"	NPCIndex="417"	X="36"	Y="219"	 DisplayType="4"  SyncType="1"  Name="Magic Store Marce" />
+		<Tag Id="4"	 MapNumber="51"	NPCIndex="257"	X="43"	Y="191"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="5"	 MapNumber="51"	NPCIndex="257"	X="57"	Y="232"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="6"	 MapNumber="51"	NPCIndex="257"	X="73"	Y="220"	 DisplayType="1"  SyncType="1"  Name="Shadow Phantom Soldier" />
+		<Tag Id="7"	 MapNumber="51"	NPCIndex="240"	X="50"	Y="229"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" />
+		<Tag Id="8"	 MapNumber="51"	NPCIndex="385"	X="55"	Y="243"	 DisplayType="2"  SyncType="1"  Name="Mirage" />
+		<Tag Id="9"	 MapNumber="51"	NPCIndex="452"	X="46"	Y="243"	 DisplayType="2"  SyncType="1"  Name="Seed Master" />
+		<Tag Id="10" MapNumber="51"	NPCIndex="453"	X="50"	Y="243"	 DisplayType="2"  SyncType="1"  Name="Seed Researcher" />
+		<Tag Id="11" MapNumber="51"	NPCIndex="492"	X="22"	Y="225"	 DisplayType="2"  SyncType="1"  Name="Moss" />
+		<Tag Id="12" MapNumber="51"	NPCIndex="540"	X="48"	Y="216"	 DisplayType="2"  SyncType="1"  Name="Lugard" />
+		<Tag Id="13" MapNumber="51"	NPCIndex="568"	X="55"	Y="199"	 DisplayType="2"  SyncType="2"  Name="Wandering Merchant Zyro" />
+		<Tag Id="14" MapNumber="51"	NPCIndex="579"	X="20"	Y="214"	 DisplayType="2"  SyncType="1"  Name="David" />
+		<Tag Id="15" MapNumber="51" NPCIndex="682"  X="24"  Y="229"  DisplayType="2"  SyncType="1"  Name="Monica" />
+<!-- Vulcanus -->
+		<Tag Id="0"	 MapNumber="63"	NPCIndex="479"	X="122"	Y="135"	 DisplayType="2"  SyncType="1"  Name="Doorkeeper Titus" />
+<!-- Karutan 1 -->
+		<Tag Id="0"	 MapNumber="80"	NPCIndex="577"	X="121"	Y="102"	 DisplayType="4"  SyncType="1"  Name="Leina the Merchant" />
+		<Tag Id="1"	 MapNumber="80"	NPCIndex="578"	X="117"	Y="126"	 DisplayType="3"  SyncType="1"  Name="Weapons Merchant Bolo" />
+		<Tag Id="2"	 MapNumber="80"	NPCIndex="240"	X="123"	Y="132"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" />
+		<Tag Id="3"	 MapNumber="80"	NPCIndex="240"	X="122"	Y="96"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" />
+		<Tag Id="4"	 MapNumber="80"	NPCIndex="240"	X="157"	Y="127"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" />
+<!-- Acheron -->
+		<Tag Id="0"	 MapNumber="91"	NPCIndex="581"	X="29"	Y="210"	 DisplayType="2"  SyncType="1"  Name="Acheron Quest Deruvish" />
+		<Tag Id="1"	 MapNumber="91"	NPCIndex="582"	X="38"	Y="216"	 DisplayType="2"  SyncType="1"  Name="Errtel Combiner Adniel" />
+		<Tag Id="2"	 MapNumber="91"	NPCIndex="583"	X="56"	Y="202"	 DisplayType="4"  SyncType="1"  Name="Potion Merchant Jin" />
+		<!-- <Tag Id="3" MapNumber="91"	NPCIndex="195"	X="52"	Y="52"	 DisplayType="3"  SyncType="1"  Name="Weapons Merchant Dre" /> -->
+		<Tag Id="4"	 MapNumber="91"	NPCIndex="240"	X="50"	Y="184"	 DisplayType="5"  SyncType="1"  Name="Safety Guardian" />
+<!-- Atlans (1 ~ 3) -->
+		<Tag Id="0"	 MapNumber="7"	NPCIndex="229"	X="17"	Y="25"	 DisplayType="2"  SyncType="2"  Name="Marlon" />
+<!--  Illusion Template League 1 -->
+		<Tag Id="0"	 MapNumber="98"	NPCIndex="658"	X="169"	Y="84"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="1"	 MapNumber="98"	NPCIndex="659"	X="136"	Y="100"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="2"	 MapNumber="98"	NPCIndex="660"	X="150"	Y="117"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="3"	 MapNumber="98"	NPCIndex="661"	X="149"	Y="88"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="4"	 MapNumber="98"	NPCIndex="662"	X="165"	Y="101"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="5"	 MapNumber="98"	NPCIndex="663"	X="173"	Y="65"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="6"	 MapNumber="98"	NPCIndex="664"	X="186"	Y="79"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="7"	 MapNumber="98"	NPCIndex="665"	X="186"	Y="51"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="8"	 MapNumber="98"	NPCIndex="666"	X="202"	Y="66"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="9"	 MapNumber="98"	NPCIndex="667"	X="134"	Y="121"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="10" MapNumber="98"	NPCIndex="668"	X="207"	Y="47"	 DisplayType="6"  SyncType="0"  Name=" " />
+<!-- Illusion Temple League 2 -->
+		<Tag Id="0"	 MapNumber="99"	NPCIndex="658"	X="169"	Y="84"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="1"	 MapNumber="99"	NPCIndex="659"	X="136"	Y="100"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="2"	 MapNumber="99"	NPCIndex="660"	X="150"	Y="117"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="3"	 MapNumber="99"	NPCIndex="661"	X="149"	Y="88"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="4"	 MapNumber="99"	NPCIndex="662"	X="165"	Y="101"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="5"	 MapNumber="99"	NPCIndex="663"	X="173"	Y="65"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="6"	 MapNumber="99"	NPCIndex="664"	X="186"	Y="79"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="7"	 MapNumber="99"	NPCIndex="665"	X="186"	Y="51"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="8"	 MapNumber="99"	NPCIndex="666"	X="202"	Y="66"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="9"	 MapNumber="99"	NPCIndex="667"	X="134"	Y="121"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="10" MapNumber="99"	NPCIndex="668"	X="207"	Y="47"	 DisplayType="6"  SyncType="0"  Name=" " />
+<!-- Illusion Temple 1 -->
+		<Tag Id="0"	 MapNumber="45"	NPCIndex="658"	X="169"	Y="84"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="1"	 MapNumber="45"	NPCIndex="659"	X="136"	Y="100"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="2"	 MapNumber="45"	NPCIndex="660"	X="150"	Y="117"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="3"	 MapNumber="45"	NPCIndex="661"	X="149"	Y="88"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="4"	 MapNumber="45"	NPCIndex="662"	X="165"	Y="101"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="5"	 MapNumber="45"	NPCIndex="663"	X="173"	Y="65"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="6"	 MapNumber="45"	NPCIndex="664"	X="186"	Y="79"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="7"	 MapNumber="45"	NPCIndex="665"	X="186"	Y="51"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="8"	 MapNumber="45"	NPCIndex="666"	X="202"	Y="66"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="9"	 MapNumber="45"	NPCIndex="667"	X="134"	Y="121"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="10" MapNumber="45"	NPCIndex="668"	X="207"	Y="47"	 DisplayType="6"  SyncType="0"  Name=" " />
+<!-- Illusion Temple 2 -->
+		<Tag Id="0"	 MapNumber="46"	NPCIndex="658"	X="169"	Y="84"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="1"	 MapNumber="46"	NPCIndex="659"	X="136"	Y="100"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="2"	 MapNumber="46"	NPCIndex="660"	X="150"	Y="117"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="3"	 MapNumber="46"	NPCIndex="661"	X="149"	Y="88"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="4"	 MapNumber="46"	NPCIndex="662"	X="165"	Y="101"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="5"	 MapNumber="46"	NPCIndex="663"	X="173"	Y="65"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="6"	 MapNumber="46"	NPCIndex="664"	X="186"	Y="79"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="7"	 MapNumber="46"	NPCIndex="665"	X="186"	Y="51"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="8"	 MapNumber="46"	NPCIndex="666"	X="202"	Y="66"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="9"	 MapNumber="46"	NPCIndex="667"	X="134"	Y="121"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="10" MapNumber="46"	NPCIndex="668"	X="207"	Y="47"	 DisplayType="6"  SyncType="0"  Name=" " />
+<!-- Illusion Temple 3 -->
+		<Tag Id="0"	 MapNumber="47"	NPCIndex="658"	X="169"	Y="84"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="1"	 MapNumber="47"	NPCIndex="659"	X="136"	Y="100"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="2"	 MapNumber="47"	NPCIndex="660"	X="150"	Y="117"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="3"	 MapNumber="47"	NPCIndex="661"	X="149"	Y="88"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="4"	 MapNumber="47"	NPCIndex="662"	X="165"	Y="101"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="5"	 MapNumber="47"	NPCIndex="663"	X="173"	Y="65"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="6"	 MapNumber="47"	NPCIndex="664"	X="186"	Y="79"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="7"	 MapNumber="47"	NPCIndex="665"	X="186"	Y="51"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="8"	 MapNumber="47"	NPCIndex="666"	X="202"	Y="66"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="9"	 MapNumber="47"	NPCIndex="667"	X="134"	Y="121"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="10" MapNumber="47"	NPCIndex="668"	X="207"	Y="47"	 DisplayType="6"  SyncType="0"  Name=" " />
+<!-- Illusion Temple 4 -->
+		<Tag Id="0"	 MapNumber="48"	NPCIndex="658"	X="169"	Y="84"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="1"	 MapNumber="48"	NPCIndex="659"	X="136"	Y="100"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="2"	 MapNumber="48"	NPCIndex="660"	X="150"	Y="117"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="3"	 MapNumber="48"	NPCIndex="661"	X="149"	Y="88"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="4"	 MapNumber="48"	NPCIndex="662"	X="165"	Y="101"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="5"	 MapNumber="48"	NPCIndex="663"	X="173"	Y="65"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="6"	 MapNumber="48"	NPCIndex="664"	X="186"	Y="79"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="7"	 MapNumber="48"	NPCIndex="665"	X="186"	Y="51"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="8"	 MapNumber="48"	NPCIndex="666"	X="202"	Y="66"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="9"	 MapNumber="48"	NPCIndex="667"	X="134"	Y="121"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="10" MapNumber="48"	NPCIndex="668"	X="207"	Y="47"	 DisplayType="6"  SyncType="0"  Name=" " />
+<!-- Illusion Temple 5 -->
+		<Tag Id="0"	 MapNumber="49"	NPCIndex="658"	X="169"	Y="84"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="1"	 MapNumber="49"	NPCIndex="659"	X="136"	Y="100"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="2"	 MapNumber="49"	NPCIndex="660"	X="150"	Y="117"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="3"	 MapNumber="49"	NPCIndex="661"	X="149"	Y="88"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="4"	 MapNumber="49"	NPCIndex="662"	X="165"	Y="101"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="5"	 MapNumber="49"	NPCIndex="663"	X="173"	Y="65"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="6"	 MapNumber="49"	NPCIndex="664"	X="186"	Y="79"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="7"	 MapNumber="49"	NPCIndex="665"	X="186"	Y="51"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="8"	 MapNumber="49"	NPCIndex="666"	X="202"	Y="66"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="9"	 MapNumber="49"	NPCIndex="667"	X="134"	Y="121"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="10" MapNumber="49"	NPCIndex="668"	X="207"	Y="47"	 DisplayType="6"  SyncType="0"  Name=" " />
+<!-- Illusion Temple 6 -->
+		<Tag Id="0"	 MapNumber="50"	NPCIndex="658"	X="169"	Y="84"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="1"	 MapNumber="50"	NPCIndex="659"	X="136"	Y="100"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="2"	 MapNumber="50"	NPCIndex="660"	X="150"	Y="117"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="3"	 MapNumber="50"	NPCIndex="661"	X="149"	Y="88"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="4"	 MapNumber="50"	NPCIndex="662"	X="165"	Y="101"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="5"	 MapNumber="50"	NPCIndex="663"	X="173"	Y="65"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="6"	 MapNumber="50"	NPCIndex="664"	X="186"	Y="79"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="7"	 MapNumber="50"	NPCIndex="665"	X="186"	Y="51"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="8"	 MapNumber="50"	NPCIndex="666"	X="202"	Y="66"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="9"	 MapNumber="50"	NPCIndex="667"	X="134"	Y="121"	 DisplayType="6"  SyncType="0"  Name=" " />
+		<Tag Id="10" MapNumber="50"	NPCIndex="668"	X="207"	Y="47"	 DisplayType="6"  SyncType="0"  Name=" " />
+<!-- Kalima 1 -->
+		<Tag Id="0"	 MapNumber="24"	NPCIndex="259"	X="7"	Y="19"	 DisplayType="4"  SyncType="1"  Name="Oracle Layla" />
+<!-- Kalima 2 -->
+		<Tag Id="0"	 MapNumber="25"	NPCIndex="259"	X="7"	Y="19"	 DisplayType="4"  SyncType="1"  Name="Oracle Layla" />
+<!-- Kalima 3 -->
+		<Tag Id="0"	 MapNumber="26"	NPCIndex="259"	X="7"	Y="19"	 DisplayType="4"  SyncType="1"  Name="Oracle Layla" />
+<!-- Kalima 4 -->
+		<Tag Id="0"	 MapNumber="27"	NPCIndex="259"	X="7"	Y="19"	 DisplayType="4"  SyncType="1"  Name="Oracle Layla" />
+<!-- Kalima 5 -->
+		<Tag Id="0"	 MapNumber="28"	NPCIndex="259"	X="7"	Y="19"	 DisplayType="4"  SyncType="1"  Name="Oracle Layla" />
+<!-- Kalima 6 -->
+		<Tag Id="0"	 MapNumber="29"	NPCIndex="259"	X="7"	Y="19"	 DisplayType="4"  SyncType="1"  Name="Oracle Layla" />
+		<Tag Id="1"	 MapNumber="29"	NPCIndex="567"	X="10"	Y="28"	 DisplayType="2"  SyncType="1"  Name="Priestess Veina" />
+<!-- Kalima 7 (Lost) -->
+		<Tag Id="0"	 MapNumber="36"	NPCIndex="259"	X="7"	Y="19"	 DisplayType="4"  SyncType="1"  Name="Oracle Layla" />
+	</TypeOne>
+	<TypeTwo>
+<!-- Lorencia -->
+		<Tag Id="0"	 MapNumber="0"	X="121"	 Y="232"  Name="Dungeon Entrance" />
+		<Tag Id="1"	 MapNumber="0"	X="1"	 Y="38"	  Name="Devias Entrance" />
+		<Tag Id="2"	 MapNumber="0"	X="216"	 Y="248"  Name="Noria Entrance" />
+		<Tag Id="3"	 MapNumber="0"	X="242"	 Y="15"	  Name="Valley of Loren Entrance" />
+<!-- Dungeon (1 ~ 3) -->                              
+		<Tag Id="0"	 MapNumber="1"	X="108"	 Y="249"  Name="Lorencia Entrance" />
+		<Tag Id="1"	 MapNumber="1"	X="238"	 Y="150"  Name="Dungeon Level 2 Entrance" />
+		<Tag Id="2"	 MapNumber="1"	X="232"	 Y="128"  Name="Dungeon Level 1 Entrance" />
+		<Tag Id="3"	 MapNumber="1"	X="1"	 Y="18"	  Name="Dungeon Level 3 West Entrance" />
+		<Tag Id="4"	 MapNumber="1"	X="5"	 Y="35"	  Name="Dungeon Level 3 East Entrance" />
+		<Tag Id="5"	 MapNumber="1"	X="1"	 Y="85"	  Name="Dungeon Level 2 West Entrance" />
+		<Tag Id="6"	 MapNumber="1"	X="29"	 Y="127"  Name="Dungeon Level 2 East Entrance" />
+<!-- Devias -->                                       
+		<Tag Id="0"	 MapNumber="2"	X="244"	 Y="34"	  Name="Lorencia Entrance" />
+		<Tag Id="1"	 MapNumber="2"	X="162"	 Y="248"  Name="Elveland Entrance" />
+		<Tag Id="2"	 MapNumber="2"	X="0"	 Y="250"  Name="Lost Tower Entrance" />
+		<Tag Id="3"	 MapNumber="2"	X="51"	 Y="92"	  Name="La Cleon Entrance" />
+<!-- Noria -->                                        
+		<Tag Id="0"	 MapNumber="3"	X="151"	 Y="2"	  Name="Lorencia Entrance" />
+		<Tag Id="1"	 MapNumber="3"	X="222"	 Y="29"	  Name="Aida Entrance" />
+		<Tag Id="2"	 MapNumber="3"	X="242"	 Y="241"  Name="Atlans Entrance" />
+<!-- Lost Tower (1 ~ 7) -->                           
+		<Tag Id="0"	 MapNumber="4"	X="164"	 Y="0"	  Name="Devias Entrance" />
+		<Tag Id="1"	 MapNumber="4"	X="190"	 Y="5"	  Name="Lost Tower Level 2 Entrance" />
+		<Tag Id="2"	 MapNumber="4"	X="165"	 Y="165"  Name="Lost Tower Level 3 Entrance" />
+		<Tag Id="3"	 MapNumber="4"	X="133"	 Y="246"  Name="Lost Tower Level 4 Entrance" />
+		<Tag Id="4"	 MapNumber="4"	X="133"	 Y="136"  Name="Lost Tower Level 5 Entrance" />
+		<Tag Id="5"	 MapNumber="4"	X="129"	 Y="14"	  Name="Lost Tower Level 6 Entrance" />
+		<Tag Id="6"	 MapNumber="4"	X="4"	 Y="7"	  Name="Lost Tower Level 7 Entrance" />
+		<Tag Id="7"	 MapNumber="4"	X="16"	 Y="250"  Name="Icarus Entrance" />
+<!-- Atlans (1 ~ 3) -->
+		<Tag Id="0"	 MapNumber="7"	X="8"	 Y="8"	  Name="Noria Entrance" />
+		<Tag Id="1"	 MapNumber="7"	X="9"	 Y="18"	  Name="Elveland Entrance" />
+		<Tag Id="2"	 MapNumber="7"	X="10"	 Y="228"  Name="Tarkan Entrance" />
+<!-- Tarkan (1 ~ 2) -->
+		<Tag Id="0"	 MapNumber="8"	X="250"	 Y="40"	  Name="Atlans Entrance" />
+		<Tag Id="1"	 MapNumber="8"	X="3"	 Y="199"  Name="Kanturu Ruins Entrance" />
+<!-- Icarus -->
+		<Tag Id="0"	 MapNumber="10" X="13"	 Y="8"	  Name="Lost Tower Entrance" />
+<!-- Land of Trials -->
+		<Tag Id="0"	 MapNumber="31" X="60"	 Y="8"	  Name="Valley of Loren Entrance" />
+<!-- Aida (1 ~ 2) -->
+		<Tag Id="0"	 MapNumber="33" X="72"	 Y="10"	  Name="Noria Entrance" />
+		<Tag Id="1"	 MapNumber="33" X="238"	 Y="165"  Name="Karutan Entrance" />
+<!-- Crywolf Fortress (First Zone) -->
+		<Tag Id="0"	 MapNumber="34" X="238"	 Y="42"	  Name="Valley of Loren Entrance" />
+<!-- Kanturu Ruins -->
+		<Tag Id="0"  MapNumber="37" X="16"   Y="222"  Name="Tarkan Entrance" />
+		<Tag Id="1"	 MapNumber="37" X="89"	 Y="91"	  Name="Kanturu Relics Entrance" />
+<!-- Kanturu 1 (Remain) -->
+		<Tag Id="0"  MapNumber="38" X="66"	 Y="105"  Name="Kanturu Ruins Entrance" />
+		<Tag Id="1"	 MapNumber="38" X="141"	 Y="186"  Name="Gateway Machine" />
+<!-- Elbeland -->
+		<Tag Id="0"	 MapNumber="51" X="248"	 Y="149"  Name="Atlans Entrance" />
+		<Tag Id="1"	 MapNumber="51" X="19"	 Y="27"	  Name="Devias Entrance" />
+<!-- Swamp of Calmness -->
+		<Tag Id="0"	 MapNumber="56" X="139"	 Y="125"  Name="Hunting Grounds Entrance (1)" />
+		<Tag Id="1"	 MapNumber="56" X="124"	 Y="109"  Name="Hunting Grounds Entrance (2)" />
+		<Tag Id="2"	 MapNumber="56" X="140"	 Y="95"	  Name="Hunting Grounds Entrance (3)" />
+		<Tag Id="3"	 MapNumber="56" X="150"	 Y="109"  Name="Hunting Grounds Entrance (4)" />
+		<Tag Id="4"	 MapNumber="56" X="185"	 Y="188"  Name="Safe Zone Entrance" />
+		<Tag Id="5"	 MapNumber="56" X="56"	 Y="177"  Name="Safe Zone Entrance" />
+		<Tag Id="6"	 MapNumber="56" X="68" 	 Y="52"	  Name="Safe Zone Entrance" />
+		<Tag Id="7"	 MapNumber="56" X="197"	 Y="13"	  Name="Safe Zone Entrance" />
+<!-- Elbeland -->
+		<Tag Id="0"	 MapNumber="57" X="224"	 Y="214"  Name="Devias Entrance" />
+		<Tag Id="1"	 MapNumber="57" X="169"	 Y="22"	  Name="Hatchery Entrance" />
+<!-- Karutan 1 -->
+		<Tag Id="0"	 MapNumber="80" X="115"	 Y="45"	  Name="Aida Entrance" />
+		<Tag Id="1"	 MapNumber="80" X="187"	 Y="212"  Name="Karutan North Entrance" />
+<!-- Karutan 2 -->
+		<Tag Id="0"	 MapNumber="81" X="162"	 Y="9"	  Name="Karutan South Entrance" />
+<!-- Acheron -->
+		<Tag Id="0"	 MapNumber="91" X="28"	 Y="169"  Name="Alkmar Entrance" />
+		<Tag Id="1"	 MapNumber="91" X="80"	 Y="205"  Name="Ubaid Entrance" />
+		<Tag Id="2"	 MapNumber="91" X="52"	 Y="162"  Name="Debenter Entrance" />
+		<Tag Id="3"	 MapNumber="91" X="64"	 Y="220"  Name="Uruk Mountain Entrance" />
+		<Tag Id="4"	 MapNumber="91" X="115"	 Y="168"  Name="Acheron Village Entrance" />
+		<Tag Id="5"	 MapNumber="91" X="146"	 Y="206"  Name="Acheron Village Entrance" />
+<!-- Debenter -->
+		<Tag Id="0"	 MapNumber="95" X="17"	 Y="107"  Name="Acheron Village Entrance" />
+<!-- Uruk Mountain -->
+		<Tag Id="0"	 MapNumber="100" X="24"	 Y="90"   Name="Acheron Village Entrance" />
+		<Tag Id="1"	 MapNumber="100" X="40"	 Y="82"	  Name="Portal Field A (Blue)" />
+		<Tag Id="2"	 MapNumber="100" X="212" Y="32"	  Name="Portal Field B (Blue)" />
+		<Tag Id="3"	 MapNumber="100" X="41"	 Y="98"	  Name="Portal Field A (Red)" />
+		<Tag Id="4"	 MapNumber="100" X="109" Y="230"  Name="Portal Field B (Red)" />
+
+
+
+
+
+
+	</TypeTwo>
+</MiniMapObjects>

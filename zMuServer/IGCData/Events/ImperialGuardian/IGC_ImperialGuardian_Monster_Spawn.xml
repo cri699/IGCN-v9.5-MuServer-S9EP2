@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ImperialGuardian::Map ###
+//	Number: Number of map to apply the monster spawn to, allowed range is 69-72, not recommended to modify it
+//	Day: Day of the event cycle the monsters applies to:
+//		~ 0: Sunday
+//		~ 1: Monday
+//		~ 2: Tuesday
+//		~ 3: Wednesday
+//		~ 4: Thursday
+//		~ 5: Friday
+//		~ 6: Saturday
+//	Description: Used for in-file description and log purpose
+//
+//
+// ### ImperialGuardian::Map::Spawn ###
+//	Index: Index of the monster to spawn, refer to IGC_MonsterLisr.xml
+//	Distance: Distance to spawn the monster from defines start location
+//	StartX: Coordinate X to spawn the monster at, 1-255
+//	StartY: Coordinate Y to spawn the monster at, 1-255
+//	Dir: Direction the monster looks at after spawn:
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//	Zone: The area the monsters spawn at
+//		~ 0: 
+//		~ 1:
+//		~ 2:
+//		~ 3:
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+<ImperialGuardian>
+	<Map Number="69" Day="1" Description="Monday"> <!-- Monsters -->
+		<Spawn Index="520" Distance="0" StartX="225" StartY="40" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="232" StartY="40" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="239" StartY="40" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="225" StartY="48" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="232" StartY="48" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="239" StartY="48" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="512" Distance="0" StartX="232" StartY="45" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="187" StartY="21" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="185" StartY="26" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="187" StartY="31" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="179" StartY="19" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="177" StartY="26" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="179" StartY="33" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="513" Distance="0" StartX="173" StartY="26" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="174" StartY="89" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="186" StartY="90" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="180" StartY="91" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="508" Distance="0" StartX="180" StartY="95" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="174" StartY="95" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="178" StartY="95" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="186" StartY="95" Dir="1" Zone="2" /> <!-- -->
+	<!-- -->
+		<Spawn Index="525" Distance="0" StartX="234" StartY=" 28" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="216" StartY=" 80" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="233" StartY=" 55" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="217" StartY=" 72" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="218" StartY=" 85" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="194" StartY=" 25" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="154" StartY=" 53" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="166" StartY=" 26" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="152" StartY=" 30" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="157" StartY=" 30" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="180" StartY=" 79" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="174" StartY=" 99" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="186" StartY=" 100" Dir="1" Zone="2" /> <!-- -->
+	<!-- Traps -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="48" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="44" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="40" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="36" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="32" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="28" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="24" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="157" StartY="26" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="161" StartY="26" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="233" StartY="60" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="233" StartY="64" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="233" StartY="68" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="230" StartY="66" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="226" StartY="66" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="66" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="218" StartY="66" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="220" StartY="70" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="220" StartY="74" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="220" StartY="78" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="220" StartY="82" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="220" StartY="86" Dir="8" Zone="0" /> <!-- -->
+	</Map>
+
+	<Map Number="69" Day="4" Description="Thursday"> <!-- Monsters -->
+		<Spawn Index="520" Distance="0" StartX="225" StartY="40" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="232" StartY="40" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="239" StartY="40" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="225" StartY="48" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="232" StartY="48" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="239" StartY="48" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="512" Distance="0" StartX="232" StartY="45" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="187" StartY="21" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="185" StartY="26" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="187" StartY="31" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="179" StartY="19" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="177" StartY="26" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="179" StartY="33" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="513" Distance="0" StartX="173" StartY="26" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="174" StartY="89" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="186" StartY="90" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="180" StartY="91" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="511" Distance="0" StartX="180" StartY="95" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="174" StartY="95" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="178" StartY="95" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="186" StartY="95" Dir="1" Zone="2" /> <!-- -->
+	<!-- -->
+		<Spawn Index="525" Distance="0" StartX="234" StartY="28" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="216" StartY="80" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="233" StartY="55" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="217" StartY="72" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="218" StartY="85" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="194" StartY="25" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="154" StartY="53" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="166" StartY="26" Dir="3" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="152" StartY="30" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="157" StartY="30" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="180" StartY="79" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="174" StartY="99" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="186" StartY="100" Dir="1" Zone="2" /> <!-- -->
+	<!-- Traps -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="48" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="44" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="40" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="36" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="32" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="28" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="154" StartY="24" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="157" StartY="26" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="161" StartY="26" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="233" StartY="60" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="233" StartY="64" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="233" StartY="68" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="230" StartY="66" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="226" StartY="66" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="66" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="218" StartY="66" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="220" StartY="70" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="220" StartY="74" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="220" StartY="78" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="220" StartY="82" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="220" StartY="86" Dir="8" Zone="0" /> <!-- -->
+	</Map>
+
+	<Map Number="70" Day="2" Description="Tuesday"> <!-- Monsters -->
+		<Spawn Index="520" Distance="0" StartX="66" StartY="59" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="64" StartY="65" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="66" StartY="70" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="56" StartY="58" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="56" StartY="65" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="56" StartY="71" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="514" Distance="0" StartX="59" StartY="65" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="32" StartY="99" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="42" StartY="99" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="38" StartY="101" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="33" StartY="107" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="44" StartY="107" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="39" StartY="110" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="515" Distance="0" StartX="38" StartY="106" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="98" StartY="107" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="96" StartY="112" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="98" StartY="117" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="93" StartY="105" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="92" StartY="112" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="93" StartY="118" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="509" Distance="0" StartX="89" StartY="111" Dir="3" Zone="2" /> <!-- -->
+	<!-- -->
+		<Spawn Index="525" Distance="0" StartX="75" StartY="67" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="19" StartY="65" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="50" StartY="65" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="24" StartY="67" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="24" StartY="62" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="37" StartY="93" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="55" StartY="154" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="41" StartY="117" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="53" StartY="152" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="56" StartY="152" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="107" StartY="112" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="85" StartY="113" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="85" StartY="107" Dir="3" Zone="2" /> <!-- -->
+	<!-- Traps -->
+		<Spawn Index="523" Distance="0" StartX="45" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="42" StartY="62" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="39" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="35" StartY="62" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="32" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="29" StartY="62" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="26" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="24" StartY="62" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="22" StartY="66" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="41" StartY="122" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="41" StartY="126" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="41" StartY="130" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="45" StartY="128" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="50" StartY="128" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="55" StartY="129" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="55" StartY="134" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="55" StartY="139" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="55" StartY="144" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="55" StartY="149" Dir="8" Zone="1" /> <!-- -->
+	</Map>
+
+	<Map Number="70" Day="5" Description="Friday"> <!-- Monsters -->
+		<Spawn Index="520" Distance="0" StartX="66" StartY="59" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="64" StartY="65" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="66" StartY="70" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="56" StartY="58" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="56" StartY="65" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="56" StartY="71" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="514" Distance="0" StartX="59" StartY="65" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="32" StartY="99" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="42" StartY="99" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="38" StartY="101" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="33" StartY="107" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="44" StartY="107" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="39" StartY="110" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="515" Distance="0" StartX="38" StartY="106" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="98" StartY="107" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="96" StartY="112" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="98" StartY="117" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="93" StartY="105" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="92" StartY="112" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="93" StartY="118" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="507" Distance="0" StartX="89" StartY="111" Dir="3" Zone="2" /> <!-- -->
+	<!-- -->
+		<Spawn Index="525" Distance="0" StartX="75" StartY="67" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="19" StartY="65" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="50" StartY="65" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="24" StartY="67" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="24" StartY="62" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="37" StartY="93" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="55" StartY="154" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="41" StartY="117" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="53" StartY="152" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="56" StartY="152" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="107" StartY="112" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="85" StartY="113" Dir="3" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="85" StartY="107" Dir="3" Zone="2" /> <!-- -->
+	<!-- Traps -->
+		<Spawn Index="523" Distance="0" StartX="45" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="42" StartY="62" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="39" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="35" StartY="62" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="32" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="29" StartY="62" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="26" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="24" StartY="62" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="22" StartY="66" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="41" StartY="122" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="41" StartY="126" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="41" StartY="130" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="45" StartY="128" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="50" StartY="128" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="55" StartY="129" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="55" StartY="134" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="55" StartY="139" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="55" StartY="144" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="55" StartY="149" Dir="8" Zone="1" /> <!-- -->
+	</Map>
+
+	<Map Number="71" Day="3" Description="Wednesday"> <!-- Monsters -->
+		<Spawn Index="520" Distance="0" StartX="132" StartY="185" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="131" StartY="192" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="132" StartY="199" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="126" StartY="185" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="124" StartY="192" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="126" StartY="199" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="516" Distance="0" StartX="127" StartY="192" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="217" StartY="140" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="228" StartY="140" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="222" StartY="142" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="218" StartY="148" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="222" StartY="152" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="227" StartY="148" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="517" Distance="0" StartX="222" StartY="147" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="162" StartY="226" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="166" StartY="228" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="171" StartY="226" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="161" StartY="231" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="164" StartY="233" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="171" StartY="233" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="510" Distance="0" StartX="166" StartY="233" Dir="1" Zone="2" /> <!-- -->
+	<!-- -->
+		<Spawn Index="525" Distance="0" StartX="146" StartY="191" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="89" StartY="195" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="119" StartY="192" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="111" StartY="197" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="111" StartY="192" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="222" StartY="134" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="223" StartY="193" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="222" StartY="160" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="220" StartY="173" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="224" StartY="173" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="167" StartY="217" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="158" StartY="236" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="175" StartY="238" Dir="1" Zone="2" /> <!-- -->
+	<!-- Traps -->
+		<Spawn Index="523" Distance="0" StartX="113" StartY="193" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="112" StartY="198" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="112" StartY="203" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="107" StartY="203" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="102" StartY="203" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="97" StartY="203" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="93" StartY="203" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="93" StartY="198" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="93" StartY="192" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="93" StartY="187" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="97" StartY="186" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="102" StartY="186" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="107" StartY="186" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="112" StartY="187" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="165" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="170" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="175" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="180" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="185" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="190" Dir="8" Zone="1" /> <!-- -->
+	</Map>
+
+	<Map Number="71" Day="6" Description="Saturday"> <!-- Monsters -->
+		<Spawn Index="520" Distance="0" StartX="132" StartY="185" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="131" StartY="192" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="520" Distance="0" StartX="132" StartY="199" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="126" StartY="185" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="124" StartY="192" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="126" StartY="199" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="516" Distance="0" StartX="127" StartY="192" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="217" StartY="140" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="228" StartY="140" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="222" StartY="142" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="218" StartY="148" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="222" StartY="152" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="227" StartY="148" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="517" Distance="0" StartX="222" StartY="147" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="162" StartY="226" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="166" StartY="228" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="171" StartY="226" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="161" StartY="231" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="164" StartY="233" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="171" StartY="233" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="506" Distance="0" StartX="166" StartY="233" Dir="1" Zone="2" /> <!-- -->
+	<!-- -->
+		<Spawn Index="525" Distance="0" StartX="146" StartY="191" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="89" StartY="195" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="119" StartY="192" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="111" StartY="197" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="111" StartY="192" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="222" StartY="134" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="223" StartY="193" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="524" Distance="0" StartX="222" StartY="160" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="220" StartY="173" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="224" StartY="173" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="525" Distance="0" StartX="167" StartY="217" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="158" StartY="236" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="175" StartY="238" Dir="1" Zone="2" /> <!-- -->
+	<!-- Traps -->		
+		<Spawn Index="523" Distance="0" StartX="113" StartY="193" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="112" StartY="198" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="112" StartY="203" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="107" StartY="203" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="102" StartY="203" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="97" StartY="203" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="93" StartY="203" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="93" StartY="198" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="93" StartY="192" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="93" StartY="187" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="97" StartY="186" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="102" StartY="186" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="107" StartY="186" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="112" StartY="187" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="165" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="170" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="175" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="180" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="185" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="190" Dir="8" Zone="1" /> <!-- -->
+	</Map>
+	
+	<Map Number="72" Day="0" Description="Sunday"> <!-- Monsters -->								
+		<Spawn Index="518" Distance="0" StartX="64" StartY="65" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="64" StartY="69" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="64" StartY="73" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="61" StartY="64" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="61" StartY="69" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="61" StartY="74" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="55" StartY="71" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="55" StartY="66" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="54" StartY="68" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="507" Distance="0" StartX="57" StartY="69" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="29" StartY="186" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="34" StartY="187" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="39" StartY="186" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="34" StartY="194" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="29" StartY="192" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="39" StartY="192" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="26" StartY="191" Dir="2" Zone="1" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="32" StartY="195" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="39" StartY="196" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="506" Distance="0" StartX="36" StartY="191" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="173" StartY="129" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="170" StartY="133" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="173" StartY="137" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="181" StartY="129" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="181" StartY="133" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="181" StartY="137" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="184" StartY="129" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="184" StartY="133" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="184" StartY="137" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="505" Distance="0" StartX="177" StartY="133" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="183" StartY="29" Dir="3" Zone="3" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="183" StartY="21" Dir="3" Zone="3" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="187" StartY="32" Dir="1" Zone="3" /> <!-- -->
+		<Spawn Index="521" Distance="0" StartX="187" StartY="20" Dir="5" Zone="3" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="192" StartY="31" Dir="3" Zone="3" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="192" StartY="21" Dir="3" Zone="3" /> <!-- -->
+		<Spawn Index="518" Distance="0" StartX="194" StartY="26" Dir="3" Zone="3" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="189" StartY="21" Dir="3" Zone="3" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="189" StartY="26" Dir="3" Zone="3" /> <!-- -->
+		<Spawn Index="519" Distance="0" StartX="189" StartY="31" Dir="3" Zone="3" /> <!-- -->
+		<Spawn Index="504" Distance="0" StartX="183" StartY="24" Dir="3" Zone="3" /> <!-- -->
+	<!-- -->
+		<Spawn Index="528" Distance="0" StartX="81" StartY="69" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="528" Distance="0" StartX="32" StartY="90" Dir="1" Zone="0" /> <!-- -->
+		<Spawn Index="527" Distance="0" StartX="50" StartY="69" Dir="3" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="52" StartY="77" Dir="2" Zone="0" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="53" StartY="61" Dir="4" Zone="0" /> <!-- -->
+		<Spawn Index="528" Distance="0" StartX="34" StartY="176" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="528" Distance="0" StartX="69" StartY="166" Dir="5" Zone="1" /> <!-- -->
+		<Spawn Index="527" Distance="0" StartX="52" StartY="191" Dir="7" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="21" StartY="198" Dir="2" Zone="1" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="47" StartY="199" Dir="1" Zone="1" /> <!-- -->
+		<Spawn Index="528" Distance="0" StartX="156" StartY="132" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="528" Distance="0" StartX="224" StartY="159" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="527" Distance="0" StartX="197" StartY="132" Dir="7" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="161" StartY="139" Dir="1" Zone="2" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="161" StartY="127" Dir="5" Zone="2" /> <!-- -->
+		<Spawn Index="528" Distance="0" StartX="214" StartY="24" Dir="3" Zone="3" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="207" StartY="32" Dir="1" Zone="3" /> <!-- -->
+		<Spawn Index="526" Distance="0" StartX="207" StartY="20" Dir="5" Zone="3" /> <!-- -->
+	<!-- Traps -->							
+		<Spawn Index="523" Distance="0" StartX="45" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="45" StartY="74" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="41" StartY="74" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="41" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="37" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="37" StartY="74" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="33" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="33" StartY="74" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="29" StartY="67" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="29" StartY="74" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="31" StartY="78" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="31" StartY="83" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="31" StartY="87" Dir="8" Zone="0" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="57" StartY="191" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="61" StartY="191" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="65" StartY="191" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="69" StartY="191" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="68" StartY="186" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="68" StartY="181" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="68" StartY="176" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="68" StartY="171" Dir="8" Zone="1" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="202" StartY="133" Dir="8" Zone="2" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="206" StartY="133" Dir="8" Zone="2" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="210" StartY="133" Dir="8" Zone="2" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="214" StartY="133" Dir="8" Zone="2" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="218" StartY="133" Dir="8" Zone="2" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="222" StartY="133" Dir="8" Zone="2" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="226" StartY="133" Dir="8" Zone="2" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="224" StartY="137" Dir="8" Zone="2" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="224" StartY="142" Dir="8" Zone="2" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="224" StartY="147" Dir="8" Zone="2" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="224" StartY="152" Dir="8" Zone="2" /> <!-- -->
+		<Spawn Index="523" Distance="0" StartX="224" StartY="155" Dir="8" Zone="2" /> <!-- -->
+	</Map>
+</ImperialGuardian>

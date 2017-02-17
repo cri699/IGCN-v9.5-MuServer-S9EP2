@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MiningSystem::SuccessInfo ###
+//	ChanceStartValue: A sort of denominator in formula RateX/ChanceStartValue)
+//
+// ### MiningSystem::SuccessInfo::Twinkle ### - section does not allow defining other mining holes than already defined
+//	Type: Mining hole type, Type is a item index from MonsterList.xml
+//	DurabilityDec: Amount of durability the Pandora Pick (0, 41) will be decreased by every mining attempt
+//	Rate1: Success Rate for a reward from mining Stage 1, formula Rate1/ChanceStartValue
+//	Rate2: Success Rate for a reward from mining Stage 2, formula Rate2/ChanceStartValue
+//	Rate3: Success Rate for a reward from mining Stage 3, formula Rate3/ChanceStartValue
+//	Rate4: Success Rate for a reward from mining Stage 4, formula Rate4/ChanceStartValue
+//	Rate5: Success Rate for a reward from mining Stage 5, formula Rate5/ChanceStartValue
+//
+// ### MiningSystem::RewardInfo::Twinkle ###
+//	Type: Mining hole type the reward will be issued for, Type is a item index from MonsterList.xml
+//	Stage: Defines Stage of mining on the Twinkle type to receive defined rewards
+//	NitifyItemCat: Expected Item Reward Category from ItemList.xml
+//	NotifyItemIndex: Expected Item Reward Index from ItemList.xml
+//	JewelCount: Reward Item Count
+//
+// ### MiningSystem::RewardInfo::Twinkle::Reward ### - defines output reward depending of JewelCount value declared in higher section 
+//	ItemCat: Output reward Item Category (ItemList.xml), if JewelCount configured in MiningSystem::RewardInfo::Twinkle section is higher or equal to 10
+//	  it is necessary to setup output reward in bundles of Jewels, e.g. Reward item is Jewel of Bless and JewelCount is 20, then in Reward section configure ItemCat
+//	  and ItemIndex of Jewel of Bless Bundle with appropriate level and count, see description below:
+//		+ Jewel of Bless (14,13) - NotifyItem
+//			~ Bundle of Jewel of Bless 10 (12,30,0)
+//			~ Bundle of Jewel of Bless 20 (12,30,1)
+//			~ Bundle of Jewel of Bless 30 (12,30,2)
+//		+ Jewel of Soul (14,14) - NotifyItem
+//			~ Bundle of Jewel of Soul 10 (12,31,0)
+//			~ Bundle of Jewel of Soul 20 (12,31,1)
+//			~ Bundle of Jewel of Soul 30 (12,31,2)
+//		+ Jewel of Life (14,16) - NotifyItem
+//			~ Bundle of Jewel of Life 10 (12,136,0)
+//			~ Bundle of Jewel of Life 20 (12,136,1)
+//			~ Bundle of Jewel of Life 30 (12,136,2)
+//		+ Jewel of Creation (14,22) - NotifyItem
+//			~ Bundle of Jewel of Creation 10 (12,137,0)
+//			~ Bundle of Jewel of Creation 20 (12,137,1)
+//			~ Bundle of Jewel of Creation 30 (12,137,2)
+//	ItemIndex: see ItemCat description
+//	ItemLevel: Output reward Item Level
+//	ItemCount: Output Reward Item Count
+// 
+// ### MiningSystem::PandoraSuccessInfo::Twinkle ### - special prize reward for mining of the specified hole twinkle type
+//	Type: Mining hole type, Type is a item index from MonsterList.xml
+//	Stage: Defines Stage of mining on the Twinkle type to receive defined rewards
+//	Rate: Success Rate for the reward from mining on the hole, formula Rate/ChanceStartValue
+//
+// ### MiningSysten::PandoraRewardInfo ###
+//	See description of MiningSystem::RewardInfo::Twinkle::Reward section above, functionality is same
+//
+// ### MiningSystem::MapName ### - used for display purpose in notices of Pandora Rewards
+// Number: Map Number
+// Name: Display name for notice purpose
+//
+// ## MiningSystem::RepairValue ### - defines values the Pandora Pick durability will be increase by on putting into it Jewel of Bless of Jewel of Bless Bundles
+//  MaxValue: Protection, maximum value for Value property, if Value will be set to higher than defined in MaxValue then MaxValue value will be used
+//
+// ## MiningSystem::RepairValue::Repair ###
+//	ItemCat: Category of Jewel of Bless or Bless Bundles
+//		+ Jewel of Bless (14,13) - NotifyItem
+//			~ Bundle of Jewel of Bless 10 (12,30,0)
+//			~ Bundle of Jewel of Bless 20 (12,30,1)
+//			~ Bundle of Jewel of Bless 30 (12,30,2)
+//	ItemIndex: See above ItemCat description
+//	ItemLevel: Item Level, see ItemCat description for values
+//	Value: Durability the Pandora Pick durability will be increased by on Jewel of Bless or Jewel of Bless Bundle put
+//
+// ### MiningSystem::Spot::Spawn ###
+//	Index: Mining area spot index, refer to IGC_MonsterList.xml (605~607) 
+//	MapNumber: Map number the spot is located on
+//	Distance: Range within which the mining spots area spawned from start coordinates
+//	StartX: Start X coordinate of the mining area
+//	StartY: Start Y coordinate of the mining area
+//	Dir: Direction the spot turned at after the spawn
+//		~ 0: Central
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MiningSystem>
+ <SuccessInfo ChanceStartValue="1000000">
+    <Twinkle Type="605" DurabilityDec="2" Rate1="475000" Rate2="491667" Rate3="496429" Rate4="467188" Rate5="475126" />
+    <Twinkle Type="606" DurabilityDec="4" Rate1="475000" Rate2="491667" Rate3="463333" Rate4="469118" Rate5="476632" />
+    <Twinkle Type="607" DurabilityDec="8" Rate1="475000" Rate2="491667" Rate3="479310" Rate4="475385" Rate5="475311" />
+ </SuccessInfo>
+ <RewardInfo>
+	<Twinkle Type="605" Stage="1" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="1">
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="1" />
+	</Twinkle> 
+	<Twinkle Type="605" Stage="2" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="3">
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="3"/>
+	</Twinkle> 
+	<Twinkle Type="605" Stage="3" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="7">
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="7" />
+	</Twinkle> 
+	<Twinkle Type="605" Stage="4" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="16">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="0" ItemCount="1" />
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="6" />
+	</Twinkle> 
+	<Twinkle Type="605" Stage="5" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="33">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="2" ItemCount="1" />
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="3" />
+	</Twinkle> 
+	<Twinkle Type="606" Stage="1" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="2">
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="2" />
+	</Twinkle> 
+	<Twinkle Type="606" Stage="2" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="6">
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="6" />
+	</Twinkle> 
+	<Twinkle Type="606" Stage="3" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="15">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="0" ItemCount="1" />
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="5" />
+	</Twinkle> 
+	<Twinkle Type="606" Stage="4" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="34">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="2" ItemCount="1" />
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="4" />
+		</Twinkle> 
+	<Twinkle Type="606" Stage="5" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="67">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="2" ItemCount="2" />
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="7" />
+	</Twinkle> 
+	<Twinkle Type="607" Stage="1" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="4">
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="4" />
+	</Twinkle> 
+	<Twinkle Type="607" Stage="2" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="12">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="0" ItemCount="1" />
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="2" />
+	</Twinkle> 
+	<Twinkle Type="607" Stage="3" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="29">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="1" ItemCount="1" />
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="9" />
+	</Twinkle> 
+	<Twinkle Type="607" Stage="4" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="65">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="2" ItemCount="2" />
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="5" />
+	</Twinkle>
+	<Twinkle Type="607" Stage="5" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="125">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="2" ItemCount="4" />
+		<Reward ItemCat="14" ItemIndex="13" ItemLevel="0" ItemCount="5" />
+	</Twinkle>
+ </RewardInfo>
+ <PandoraSuccessInfo>
+	<Twinkle Type="605"	Stage="5" Rate="25000" />
+	<Twinkle Type="606"	Stage="5" Rate="19000" />
+	<Twinkle Type="607"	Stage="5" Rate="18000" />
+ </PandoraSuccessInfo>
+ <PandoraRewardInfo>
+	<Twinkle Type="605"	Stage="5" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="100">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="2" ItemCount="3" />
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="0" ItemCount="1" />
+	</Twinkle>
+ 	<Twinkle Type="606"	Stage="5" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="400">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="2" ItemCount="13" />
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="0" ItemCount="1" />
+	</Twinkle>
+ 	<Twinkle Type="607"	Stage="5" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="1000">
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="2" ItemCount="33" />
+		<Reward ItemCat="12" ItemIndex="30" ItemLevel="0" ItemCount="1" />
+	</Twinkle>
+ </PandoraRewardInfo>
+ <MapName>
+	<Map Number="4" Name="Lost Tower" />
+	<Map Number="8" Name="Tarkan" />
+	<Map Number="33" Name="Aida" />
+	<Map Number="56" Name="Swamp of Peace" />
+	<Map Number="57" Name="La Cleon" />
+ </MapName>
+ <RepairValue MaxValue="120">
+	<Repair ItemCat="14" ItemIndex="13" ItemLevel="0" Value="4" />
+	<Repair ItemCat="12" ItemIndex="30" ItemLevel="0" Value="40" />
+	<Repair ItemCat="12" ItemIndex="30" ItemLevel="1" Value="80" />
+	<Repair ItemCat="12" ItemIndex="30" ItemLevel="2" Value="120" />
+ </RepairValue>
+ <Spot>
+	<Spawn Index="605" MapNumber="4"  Distance="3" StartX="202" StartY="75" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="4"  Distance="3" StartX="206" StartY="80" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="4"  Distance="3" StartX="211" StartY="80" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="4"  Distance="3" StartX="212" StartY="76" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="4"  Distance="3" StartX="208" StartY="72" Dir="-1" /> <!-- -->
+	<Spawn Index="607" MapNumber="4"  Distance="3" StartX="207" StartY="76" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="8"  Distance="5" StartX="188" StartY="54" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="8"  Distance="5" StartX="198" StartY="64" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="8"  Distance="5" StartX="206" StartY="72" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="8"  Distance="5" StartX="206" StartY="55" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="8"  Distance="5" StartX="186" StartY="60" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="8"  Distance="5" StartX="164" StartY="58" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="8"  Distance="5" StartX="197" StartY="57" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="8"  Distance="5" StartX="192" StartY="73" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="8"  Distance="5" StartX="203" StartY="65" Dir="-1" /> <!-- -->
+	<Spawn Index="607" MapNumber="8"  Distance="5" StartX="205" StartY="59" Dir="-1" /> <!-- -->
+	<Spawn Index="607" MapNumber="8"  Distance="5" StartX="201" StartY="70" Dir="-1" /> <!-- -->
+	<Spawn Index="607" MapNumber="8"  Distance="5" StartX="199" StartY="56" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="33" Distance="3" StartX="83" StartY="15" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="33" Distance="3" StartX="76" StartY="9" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="33" Distance="3" StartX="88" StartY="7" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="33" Distance="3" StartX="91" StartY="12" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="33" Distance="3" StartX="83" StartY="12" Dir="-1" /> <!-- -->
+	<Spawn Index="607" MapNumber="33" Distance="3" StartX="79" StartY="10" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="56" Distance="5" StartX="139" StartY="113" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="56" Distance="5" StartX="145" StartY="109" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="56" Distance="5" StartX="143" StartY="99" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="56" Distance="5" StartX="135" StartY="100" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="56" Distance="5" StartX="130" StartY="111" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="56" Distance="5" StartX="134" StartY="105" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="56" Distance="5" StartX="142" StartY="105" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="56" Distance="5" StartX="138" StartY="109" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="56" Distance="5" StartX="137" StartY="101" Dir="-1" /> <!-- -->
+	<Spawn Index="607" MapNumber="56" Distance="5" StartX="141" StartY="105" Dir="-1" /> <!-- -->
+	<Spawn Index="607" MapNumber="56" Distance="5" StartX="145" StartY="119" Dir="-1" /> <!-- -->
+	<Spawn Index="607" MapNumber="56" Distance="5" StartX="142" StartY="109" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="57" Distance="3" StartX="211" StartY="208" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="57" Distance="3" StartX="220" StartY="203" Dir="-1" /> <!-- -->
+	<Spawn Index="605" MapNumber="57" Distance="3" StartX="222" StartY="208" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="57" Distance="3" StartX="223" StartY="203" Dir="-1" /> <!-- -->
+	<Spawn Index="606" MapNumber="57" Distance="3" StartX="217" StartY="208" Dir="-1" /> <!-- -->
+	<Spawn Index="607" MapNumber="57" Distance="3" StartX="224" StartY="221" Dir="-1" /> <!-- -->
+ </Spot>
+</MiningSystem>

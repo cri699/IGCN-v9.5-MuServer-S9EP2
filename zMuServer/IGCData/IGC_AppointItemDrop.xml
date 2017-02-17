@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### AppointItemDrop::MonsterList::Monster ###
+//	ID: Index of a monster, refer to ItemLisr.xml
+//	DropGroup: ID of group from ItemDrop section the monster belongs to
+//	Name: Name of a monster, used for in-file description purpose
+//
+// ### AppointItemDrop::ItemDrop::DropGroup ###
+//	ID: ID of drop group
+//	Denominator: Drop denominator value (max) used as [Sum of DropRate(s) / Denominator]
+//
+// ### AppointItemDrop::ItemDrop::DropGroup::Item ###
+//	Cat: Category of an item, refer to ItemList.xml
+//	Index: Index of an item, refer to ItemList.xml
+//  MinLevel: Minimum level of an item, 0-15 - must be lower or equal to MaxLevel
+//	MaxLevel: Maximum level of an item, 0-15 - must be higher or equal to MinLevel
+//	Skill: Applies Skill on an item, 0/1
+//	Luck: Applies Luck on an item, 0/1
+//	Option: Applies Options on item, 0/1
+//	Exc: Applies exc options on an item, 0/1
+//	DropRate: Drop Rate on an item, formula DropRate/Denominator
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of DropRate per DropGroup MUST be equal or lower than denominator
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+
+<AppointItemDrop>
+	<MonsterList>
+		<Monster ID="35" DropGroup="0" Name="Death Gorgon" />
+		<Monster ID="40" DropGroup="0" Name="Death Knight" />
+		<Monster ID="55" DropGroup="0" Name="Death King" />
+		<Monster ID="58" DropGroup="1" Name="Tantalos" />
+		<Monster ID="61" DropGroup="1" Name="Beam Knight" />
+		<Monster ID="63" DropGroup="1" Name="Death Beam Knight" />
+		<Monster ID="72" DropGroup="2" Name="Phantom Knight" />
+		<Monster ID="75" DropGroup="2" Name="Great Drakan" />
+		<Monster ID="77" DropGroup="2" Name="Phoenix of Darkness" />
+		<Monster ID="304" DropGroup="3" Name="Witch Queen" />
+		<Monster ID="305" DropGroup="3" Name="Blue Golem" />
+		<Monster ID="309" DropGroup="3" Name="Hell Maine" />
+		<Monster ID="454" DropGroup="4" Name="Ice Walker" />
+		<Monster ID="455" DropGroup="5" Name="Giant Mammoth" />
+		<Monster ID="456" DropGroup="6" Name="Ice Giant" />
+		<Monster ID="457" DropGroup="7" Name="Coolutin" />
+		<Monster ID="458" DropGroup="8" Name="Iron Knight" />
+		<Monster ID="562" DropGroup="9" Name="Dark Mammoth" />
+		<Monster ID="563" DropGroup="10" Name="Dark Giant" />
+		<Monster ID="564" DropGroup="11" Name="Dark Coolutin" />
+		<Monster ID="565" DropGroup="12" Name="Dark Iron Knight" />
+		<Monster ID="193" DropGroup="13" Name="Aegis4" />
+		<Monster ID="194" DropGroup="13" Name="Rogue Centurion4" />
+		<Monster ID="192" DropGroup="14" Name="Blood Soldier4" />
+		<Monster ID="190" DropGroup="14" Name="Death Angel4" />
+		<Monster ID="195" DropGroup="15" Name="Necron4" />
+		<Monster ID="191" DropGroup="15" Name="Death Centurion4" />
+		<Monster ID="196" DropGroup="16" Name="Schriker4" />
+		<Monster ID="197" DropGroup="16" Name="Illusion of Kundun4" />
+		<Monster ID="263" DropGroup="17" Name="Aegis5" />
+		<Monster ID="264" DropGroup="17" Name="Rogue Centurion5" />
+		<Monster ID="262" DropGroup="18" Name="Blood Soldier5" />
+		<Monster ID="260" DropGroup="18" Name="Death Angel5" />
+		<Monster ID="265" DropGroup="19" Name="Necron5" />
+		<Monster ID="261" DropGroup="19" Name="Death Centurion5" />
+		<Monster ID="266" DropGroup="20" Name="Schriker5" />
+		<Monster ID="267" DropGroup="20" Name="Illusion of Kundun5" />
+		<Monster ID="271" DropGroup="21" Name="Aegis6" />
+		<Monster ID="272" DropGroup="21" Name="Rogue Centurion6" />
+		<Monster ID="270" DropGroup="21" Name="Blood Soldier6" />
+		<Monster ID="268" DropGroup="21" Name="Death Angel6" />
+		<Monster ID="273" DropGroup="21" Name="Necron6" />
+		<Monster ID="269" DropGroup="21" Name="Death Centurion6" />
+		<Monster ID="274" DropGroup="21" Name="Schriker6" />
+		<Monster ID="338" DropGroup="21" Name="Illusion of Kundun6" />
+		<Monster ID="331" DropGroup="22" Name="Aegis7" />
+		<Monster ID="332" DropGroup="22" Name="Rogue Centurion7" />
+		<Monster ID="333" DropGroup="22" Name="Blood Soldier7" />
+		<Monster ID="334" DropGroup="22" Name="Death Angel7" />
+		<Monster ID="335" DropGroup="22" Name="Necron7" />
+		<Monster ID="336" DropGroup="22" Name="Death Centurion7" />
+		<Monster ID="337" DropGroup="22" Name="Schriker7" />
+		<Monster ID="275" DropGroup="23" Name="Kundun" />
+		<Monster ID="561" DropGroup="23" Name="Medusa" />
+	</MonsterList>
+ 
+	<ItemDrop>
+		<DropGroup ID="0" Denominator="10000000">
+			<Item Cat="14" Index="176" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="5000" />
+		</DropGroup>
+		<DropGroup ID="1" Denominator="10000000">
+			<Item Cat="14" Index="179" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="5000" />
+		</DropGroup>
+		<DropGroup ID="2" Denominator="10000000">
+			<Item Cat="14" Index="178" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="5000" />
+		</DropGroup>
+		<DropGroup ID="3" Denominator="10000000">
+			<Item Cat="14" Index="177" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="5000" />
+		</DropGroup>
+		<DropGroup ID="4" Denominator="10000000">
+			<Item Cat="14" Index="180" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="1450" />
+			<Item Cat="14" Index="191" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<Item Cat="14" Index="192" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<Item Cat="14" Index="193" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<Item Cat="14" Index="194" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<Item Cat="14" Index="195" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<Item Cat="14" Index="196" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<Item Cat="14" Index="197" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<Item Cat="14" Index="198" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<Item Cat="14" Index="199" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<Item Cat="14" Index="200" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<Item Cat="14" Index="201" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<Item Cat="14" Index="202" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" />
+			<!-- <Item Cat="14" Index="203" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="360" /> -->
+		</DropGroup>
+		<DropGroup ID="5" Denominator="10000000">
+			<Item Cat="14" Index="181" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="1630" />
+			<Item Cat="14" Index="191" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<Item Cat="14" Index="192" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<Item Cat="14" Index="193" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<Item Cat="14" Index="194" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<Item Cat="14" Index="195" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<Item Cat="14" Index="196" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<Item Cat="14" Index="197" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<Item Cat="14" Index="198" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<Item Cat="14" Index="199" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<Item Cat="14" Index="200" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<Item Cat="14" Index="201" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<Item Cat="14" Index="202" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" />
+			<!-- <Item Cat="14" Index="203" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="450" /> -->
+		</DropGroup>
+		<DropGroup ID="6" Denominator="10000000">
+			<Item Cat="14" Index="182" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2040" />
+			<Item Cat="14" Index="191" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<Item Cat="14" Index="192" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<Item Cat="14" Index="193" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<Item Cat="14" Index="194" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<Item Cat="14" Index="195" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<Item Cat="14" Index="196" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<Item Cat="14" Index="197" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<Item Cat="14" Index="198" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<Item Cat="14" Index="199" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<Item Cat="14" Index="200" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<Item Cat="14" Index="201" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<Item Cat="14" Index="202" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" />
+			<!-- <Item Cat="14" Index="203" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="540" /> -->
+		</DropGroup>
+		<DropGroup ID="7" Denominator="10000000">
+			<Item Cat="14" Index="183" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="191" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<Item Cat="14" Index="192" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<Item Cat="14" Index="193" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<Item Cat="14" Index="194" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<Item Cat="14" Index="195" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<Item Cat="14" Index="196" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<Item Cat="14" Index="197" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<Item Cat="14" Index="198" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<Item Cat="14" Index="199" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<Item Cat="14" Index="200" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<Item Cat="14" Index="201" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<Item Cat="14" Index="202" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" />
+			<!-- <Item Cat="14" Index="203" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="630" /> -->
+		</DropGroup>
+		<DropGroup ID="8" Denominator="10000000">
+			<Item Cat="14" Index="184" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="3450" />
+			<Item Cat="14" Index="191" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="192" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="193" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="194" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="195" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="196" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="197" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="198" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="199" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="200" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="201" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<Item Cat="14" Index="202" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" />
+			<!-- <Item Cat="14" Index="203" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="720" /> -->
+		</DropGroup>
+		<DropGroup ID="9" Denominator="10000000">
+			<Item Cat="14" Index="185" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="1810" />
+			<Item Cat="14" Index="191" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<Item Cat="14" Index="192" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<Item Cat="14" Index="193" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<Item Cat="14" Index="194" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<Item Cat="14" Index="195" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<Item Cat="14" Index="196" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<Item Cat="14" Index="197" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<Item Cat="14" Index="198" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<Item Cat="14" Index="199" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<Item Cat="14" Index="200" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<Item Cat="14" Index="201" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<Item Cat="14" Index="202" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" />
+			<!-- <Item Cat="14" Index="203" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="680" /> -->
+		</DropGroup>
+		<DropGroup ID="10" Denominator="10000000">
+			<Item Cat="14" Index="186" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="900" />
+			<Item Cat="14" Index="191" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<Item Cat="14" Index="192" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<Item Cat="14" Index="193" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<Item Cat="14" Index="194" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<Item Cat="14" Index="195" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<Item Cat="14" Index="196" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<Item Cat="14" Index="197" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<Item Cat="14" Index="198" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<Item Cat="14" Index="199" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<Item Cat="14" Index="200" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<Item Cat="14" Index="201" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<Item Cat="14" Index="202" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" />
+			<!-- <Item Cat="14" Index="203" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="770" /> -->
+		</DropGroup>
+		<DropGroup ID="11" Denominator="10000000">
+			<Item Cat="14" Index="187" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="650" />
+			<Item Cat="14" Index="191" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<Item Cat="14" Index="192" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<Item Cat="14" Index="193" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<Item Cat="14" Index="194" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<Item Cat="14" Index="195" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<Item Cat="14" Index="196" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<Item Cat="14" Index="197" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<Item Cat="14" Index="198" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<Item Cat="14" Index="199" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<Item Cat="14" Index="200" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<Item Cat="14" Index="201" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<Item Cat="14" Index="202" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" />
+			<!-- <Item Cat="14" Index="203" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="810" /> -->
+		</DropGroup>
+		<DropGroup ID="12" Denominator="10000000">
+			<Item Cat="14" Index="188" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="1180" />
+			<Item Cat="14" Index="191" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<Item Cat="14" Index="192" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<Item Cat="14" Index="193" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<Item Cat="14" Index="194" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<Item Cat="14" Index="195" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<Item Cat="14" Index="196" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<Item Cat="14" Index="197" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<Item Cat="14" Index="198" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<Item Cat="14" Index="199" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<Item Cat="14" Index="200" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<Item Cat="14" Index="201" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<Item Cat="14" Index="202" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" />
+			<!-- <Item Cat="14" Index="203" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="860" /> -->
+		</DropGroup>
+		<DropGroup ID="13" Denominator="10000000">
+			<Item Cat="13" Index="173" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="173" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<!-- <Item Cat="13" Index="174" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" /> -->
+			<!-- <Item Cat="13" Index="174" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" /> -->
+			<Item Cat="13" Index="175" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="175" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<Item Cat="13" Index="176" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="176" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+		</DropGroup>
+		<DropGroup ID="14" Denominator="10000000">
+			<Item Cat="13" Index="173" MinLevel="1" MaxLevel="1" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="173" MinLevel="1" MaxLevel="1" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<!-- <Item Cat="13" Index="174" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" /> -->
+			<!-- <Item Cat="13" Index="174" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" /> -->
+			<Item Cat="13" Index="175" MinLevel="1" MaxLevel="1" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="175" MinLevel="1" MaxLevel="1" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<Item Cat="13" Index="176" MinLevel="1" MaxLevel="1" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="176" MinLevel="1" MaxLevel="1" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+		</DropGroup>
+		<DropGroup ID="15" Denominator="10000000">
+			<Item Cat="13" Index="173" MinLevel="2" MaxLevel="2" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="173" MinLevel="2" MaxLevel="2" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<!-- <Item Cat="13" Index="174" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" /> -->
+			<!-- <Item Cat="13" Index="174" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" /> -->
+			<Item Cat="13" Index="175" MinLevel="2" MaxLevel="2" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="175" MinLevel="2" MaxLevel="2" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<Item Cat="13" Index="176" MinLevel="2" MaxLevel="2" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="176" MinLevel="2" MaxLevel="2" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+		</DropGroup>
+		<DropGroup ID="16" Denominator="10000000">
+			<Item Cat="13" Index="173" MinLevel="3" MaxLevel="3" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="173" MinLevel="3" MaxLevel="3" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<!-- <Item Cat="13" Index="174" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" /> -->
+			<!-- <Item Cat="13" Index="174" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" /> -->
+			<Item Cat="13" Index="175" MinLevel="3" MaxLevel="3" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="175" MinLevel="3" MaxLevel="3" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<Item Cat="13" Index="176" MinLevel="3" MaxLevel="3" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="176" MinLevel="3" MaxLevel="3" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+		</DropGroup>
+		<DropGroup ID="17" Denominator="10000000">
+			<Item Cat="13" Index="171" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="171" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<Item Cat="13" Index="172" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="172" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+		</DropGroup>
+		<DropGroup ID="18" Denominator="10000000">
+			<Item Cat="13" Index="171" MinLevel="1" MaxLevel="1" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="171" MinLevel="1" MaxLevel="1" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<Item Cat="13" Index="172" MinLevel="1" MaxLevel="1" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="172" MinLevel="1" MaxLevel="1" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+		</DropGroup>
+		<DropGroup ID="19" Denominator="10000000">
+			<Item Cat="13" Index="171" MinLevel="2" MaxLevel="2" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="171" MinLevel="2" MaxLevel="2" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<Item Cat="13" Index="172" MinLevel="2" MaxLevel="2" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="172" MinLevel="2" MaxLevel="2" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+		</DropGroup>
+		<DropGroup ID="20" Denominator="10000000">
+			<Item Cat="13" Index="171" MinLevel="3" MaxLevel="3" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="171" MinLevel="3" MaxLevel="3" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+			<Item Cat="13" Index="172" MinLevel="3" MaxLevel="3" Skill="0" Luck="0" Option="0" Exc="0" DropRate="2000" />
+			<Item Cat="13" Index="172" MinLevel="3" MaxLevel="3" Skill="0" Luck="0" Option="1" Exc="0" DropRate="900" />
+		</DropGroup>
+		<DropGroup ID="21" Denominator="10000000">
+			<Item Cat="13" Index="173" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="1" DropRate="4" />
+			<!-- <Item Cat="13" Index="174" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="1" DropRate="4" /> -->
+			<Item Cat="13" Index="175" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="1" DropRate="4" />
+			<Item Cat="13" Index="176" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="1" DropRate="4" />
+		</DropGroup>
+		<DropGroup ID="22" Denominator="10000000">
+			<Item Cat="13" Index="171" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="1" DropRate="4" />
+			<Item Cat="13" Index="172" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="1" DropRate="4" />
+		</DropGroup>
+		<DropGroup ID="23" Denominator="10000000">
+			<Item Cat="13" Index="171" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="1" DropRate="5000" />
+			<Item Cat="13" Index="172" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="1" DropRate="5000" />
+			<Item Cat="13" Index="173" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="1" DropRate="5000" />
+			<!-- <Item Cat="13" Index="174" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="1" DropRate="5000" /> -->
+			<Item Cat="13" Index="175" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="1" DropRate="5000" />
+			<Item Cat="13" Index="176" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="1" DropRate="5000" />
+		</DropGroup>
+	</ItemDrop>
+</AppointItemDrop>
+		

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<HarmonySystem>
+	<Section ID="0" Name="Swords">
+		<Item Index="1" ReqLevel="4" Name="Short Sword" />
+		<Item Index="0" ReqLevel="4" Name="Kris" />
+		<Item Index="2" ReqLevel="4" Name="Rapier" />	
+		<Item Index="4" ReqLevel="4" Name="Sword of Assassin" />
+	</Section>
+	
+	<Section ID="1" Name="Swords">
+		<Item Index="0" ReqLevel="4" Name="Small Axe" />	
+		<Item Index="1" ReqLevel="4" Name="Hand Axe" />	
+		<Item Index="2" ReqLevel="4" Name="Double Axe" />
+	</Section>
+	
+	<Section ID="2" Name="Swords">
+		<Item Index="0" ReqLevel="4" Name="Mace" />
+		<Item Index="1" ReqLevel="4" Name="Morning Star" />
+		<Item Index="2" ReqLevel="4" Name="Flail" />
+	</Section>
+	
+	<Section ID="3" Name="Axes">
+		<Item Index="5" ReqLevel="4" Name="Double Axe" />
+		<Item Index="2" ReqLevel="4" Name="Dragon Lance" />
+		<Item Index="6" ReqLevel="4" Name="Halberd" />	
+		<Item Index="1" ReqLevel="4" Name="Spear" />
+		<Item Index="3" ReqLevel="4" Name="Giant Trident" />
+	</Section>
+	
+	<Section ID="4" Name="Bows &#38; Crossbows">
+		<Item Index="0" ReqLevel="4" Name="Short Bow" />	
+		<Item Index="8" ReqLevel="4" Name="Crossbow" />	
+		<Item Index="1" ReqLevel="4" Name="Bow" />
+		<Item Index="9" ReqLevel="4" Name="Golden Crossbow" />
+		<Item Index="2" ReqLevel="4" Name="Elven Bow" />	
+		<Item Index="10" ReqLevel="4" Name="Arquebus" />	
+		<Item Index="3" ReqLevel="4" Name="Battle Bow" />
+		<Item Index="11" ReqLevel="4" Name="Light Crossbow" />
+	</Section>
+	
+	<Section ID="5" Name="Staffs">
+		<Item Index="0" ReqLevel="4" Name="Skull Staff" />
+		<Item Index="1" ReqLevel="4" Name="Angelic Staff" />
+		<Item Index="2" ReqLevel="4" Name="Serpent Staff" />
+	</Section>
+	
+	<Section ID="6" Name="Shields">
+		<Item Index="0" ReqLevel="4" Name="Round Shield" />
+		<Item Index="4" ReqLevel="4" Name="Buckler" />	
+		<Item Index="1" ReqLevel="4" Name="Horn Shield" />
+		<Item Index="2" ReqLevel="4" Name="Kite Shield" />
+		<Item Index="6" ReqLevel="4" Name="Skull Shield" />
+		<Item Index="10" ReqLevel="4" Name="Large Round Shield" />
+		<Item Index="3" ReqLevel="4" Name="Elven Shield" />
+		<Item Index="9" ReqLevel="4" Name="Plate Shield" />
+		<Item Index="7" ReqLevel="4" Name="Spiked Shield" />
+	</Section>
+	
+	<Section ID="7" Name="Helmets">
+		<Item Index="5" ReqLevel="4" Name="Leather Helm" />
+		<Item Index="0" ReqLevel="4" Name="Bronze Helm" />
+		<Item Index="6" ReqLevel="4" Name="Scale Helm" />
+		<Item Index="8" ReqLevel="4" Name="Brass Helm" />
+		<Item Index="2" ReqLevel="4" Name="Pad Helm" />	
+		<Item Index="4" ReqLevel="4" Name="Bone Helm" />	
+		<Item Index="7" ReqLevel="4" Name="Sphinx Helm" />
+		<Item Index="10" ReqLevel="4" Name="Vine Helm" />	
+		<Item Index="11" ReqLevel="4" Name="Silk Helm" />	
+		<Item Index="12" ReqLevel="4" Name="Helm of Wind" />
+	</Section>
+	
+	<Section ID="8" Name="Armors">
+		<Item Index="5" ReqLevel="4" Name="Leather Armor" />
+		<Item Index="0" ReqLevel="4" Name="Bronze Armor" />
+		<Item Index="6" ReqLevel="4" Name="Scale Armor" />
+		<Item Index="8" ReqLevel="4" Name="Brass Armor" />
+		<Item Index="2" ReqLevel="4" Name="Pad Armor" />	
+		<Item Index="4" ReqLevel="4" Name="Bone Armor" />
+		<Item Index="7" ReqLevel="4" Name="Sphinx Armor" />
+		<Item Index="10" ReqLevel="4" Name="Vine Armor" />
+		<Item Index="11" ReqLevel="4" Name="Silk Armor" />
+		<Item Index="12" ReqLevel="4" Name="Armor of Wind" />
+	</Section>
+	
+	<Section ID="9" Name="Pants">
+		<Item Index="5" ReqLevel="4" Name="Leather Pants" />
+		<Item Index="0" ReqLevel="4" Name="Bronze Pants" />
+		<Item Index="6" ReqLevel="4" Name="Scale Pants" />
+		<Item Index="8" ReqLevel="4" Name="Brass Pants" />
+		<Item Index="2" ReqLevel="4" Name="Pad Pants" />	
+		<Item Index="4" ReqLevel="4" Name="Bone Pants" />
+		<Item Index="7" ReqLevel="4" Name="Sphinx Pants" />
+		<Item Index="10" ReqLevel="4" Name="Vine Pants" />
+		<Item Index="11" ReqLevel="4" Name="Silk Pants" />
+		<Item Index="12" ReqLevel="4" Name="Pants of Wind" />
+	</Section>
+	
+	<Section ID="10" Name="Gloves">
+		<Item Index="5" ReqLevel="4" Name="Leather Gloves" />
+		<Item Index="0" ReqLevel="4" Name="Bronze Gauntlets" />
+		<Item Index="6" ReqLevel="4" Name="Scale Gauntlets" />
+		<Item Index="8" ReqLevel="4" Name="Brass Gauntlets" />
+		<Item Index="2" ReqLevel="4" Name="Pad Gloves" />
+		<Item Index="4" ReqLevel="4" Name="Bone Gloves" />
+		<Item Index="7" ReqLevel="4" Name="Sphinx Gauntlets" />
+		<Item Index="10" ReqLevel="4" Name="Vine Gloves" />
+		<Item Index="11" ReqLevel="4" Name="Silk Gloves" />
+		<Item Index="12" ReqLevel="4" Name="Gauntlets of Wind" />
+	</Section>
+	
+	<Section ID="11" Name="Boots">
+		<Item Index="5" ReqLevel="4" Name="Leather Boots" />
+		<Item Index="0" ReqLevel="4" Name="Bronze Boots" />
+		<Item Index="6" ReqLevel="4" Name="Scale Boots" />
+		<Item Index="8" ReqLevel="4" Name="Brass Boots" />
+		<Item Index="2" ReqLevel="4" Name="Pad Boots" />	
+		<Item Index="4" ReqLevel="4" Name="Bone Boots" />
+		<Item Index="7" ReqLevel="4" Name="Sphinx Boots" />
+		<Item Index="10" ReqLevel="4" Name="Vine Boots" />
+		<Item Index="11" ReqLevel="4" Name="Silk Boots" />
+		<Item Index="12" ReqLevel="4" Name="Boots of Wind" />
+	</Section>
+</HarmonySystem>

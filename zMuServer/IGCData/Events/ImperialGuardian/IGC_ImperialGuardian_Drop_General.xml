@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ImperialGuardian::LevelRangeSettings::Section ###
+//	ID: Defines ID of section, starts from 0, range: 0-9
+//	PlayerMinLevel: Minimum (total) level of player to apply rules of the section
+//	PlayerMaxLevel: Maximum (total) level of player to apply rules of the section
+//
+// ### ImperialGuardian::MoneyDropSettings::Section ###
+//	ID: Defines ID of section, starts from 0, range: 0-9
+//	MoneyCount: Defines amount of money drop (Zen) for player who meets condition of section level range
+//
+// ### ImperialGuardian::ExcItemDropSettings::Section ###
+//	ID: Defines ID of section, starts from 0, range: 0-9
+//	SuccessRate: Defines success rate of Excellent item drop from bag of specified section ID, n/1000000
+//
+// ### ImperialGuardian::Section ###
+//	ID: Refers to ID defined in previous sections and apply the settings on it
+//	ItemDropCount: Count of items to drop from specified section
+//
+// ### ImperialGuardian::Section::Item ###
+//	Cat: Category of the item to drop, refer to ItemList.xml
+//	Index: Index of the item to drop, refer to ItemList.xml
+//	MinLevel: Minimum level of item to drop, 0~15, must be lower or equal to maximum item level 
+//	MaxLevel: Maximum level of item to drop, 0~15, must be greater to equal to minimum item level
+//	Skill: 
+//	Luck: 
+//	Option: 
+//	Exc: 
+//	SetItem: Drop the item as Ancient (Set Item), 0/1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ The item must be previously defines as set item in IGC_ItemSetType.xml and IGC_ItemSetOption.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	DropRate: Drop rate for the item, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of all rates per section must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ImperialGuardian>
+	<LevelRangeSettings> <!-- Allowed index range is 0~9 -->
+		<Section ID="0" PlayerMinLevel="1"   PlayerMaxLevel="100" />
+		<Section ID="1" PlayerMinLevel="101" PlayerMaxLevel="200" />
+		<Section ID="2" PlayerMinLevel="201" PlayerMaxLevel="300" />
+		<Section ID="3" PlayerMinLevel="301" PlayerMaxLevel="400" />
+		<Section ID="4" PlayerMinLevel="401" PlayerMaxLevel="800" />
+		<!-- <Section ID="5" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
+		<!-- <Section ID="6" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
+		<!-- <Section ID="7" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
+		<!-- <Section ID="8" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
+		<!-- <Section ID="9" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
+	</LevelRangeSettings>
+
+	<MoneyDropSettings> <!-- Allowed index range is 0~9 -->
+		<Section ID="0" MoneyCount="100000" />
+		<Section ID="1" MoneyCount="200000" />
+		<Section ID="2" MoneyCount="300000" />
+		<Section ID="3" MoneyCount="400000" />
+		<Section ID="4" MoneyCount="500000" />
+		<!-- <Section ID="5" MoneyCount="0 / /> -->
+		<!-- <Section ID="6" MoneyCount="0"  /> -->
+		<!-- <Section ID="7" MoneyCount="0"  /> -->
+		<!-- <Section ID="8" MoneyCount="0"  /> -->
+		<!-- <Section ID="9" MoneyCount="0" /> -->
+	</MoneyDropSettings>
+
+	<ExcItemDropSettings> <!-- Allowed index range is 0~9 -->
+		<Section ID="0" SuccessRate="100000" />
+		<Section ID="1" SuccessRate="100000" />
+		<Section ID="2" SuccessRate="100000" />
+		<Section ID="3" SuccessRate="100000" />
+		<Section ID="4" SuccessRate="100000" />
+		<!-- <Section ID="5" SuccessRate="0 / /> -->
+		<!-- <Section ID="6" SuccessRate="0"  /> -->
+		<!-- <Section ID="7" SuccessRate="0"  /> -->
+		<!-- <Section ID="8" SuccessRate="0"  /> -->
+		<!-- <Section ID="9" SuccessRate="0" /> -->
+	</ExcItemDropSettings>
+	
+<!-- DropRate is n/1000000 ~ e.g. 10000 = 1% chance ~ sum of all rates per section must be equal to 1000000 -->
+	<Section ID="0" ItemDropCount="1"> <!-- 1~100 -->
+	<!-- Jewellery -->
+		<Item Cat="12" Index="30" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="1" /> <!-- --> 
+		<Item Cat="12" Index="31" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="2" /> <!-- --> 
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="1000" /> <!-- --> 
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="1500" /> <!-- --> 
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="2000" /> <!-- --> 
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="2500" /> <!-- --> 
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="3000" /> <!-- --> 
+	<!-- Swords -->
+		<Item Cat="0" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="1990" /> <!-- --> 
+		<Item Cat="0" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="2200" /> <!-- --> 
+		<Item Cat="0" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="3400" /> <!-- --> 
+		<Item Cat="0" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4600" /> <!-- --> 
+		<Item Cat="0" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4800" /> <!-- --> 
+		<Item Cat="0" Index="7" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4000" /> <!-- --> 
+		<Item Cat="0" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4200" /> <!-- --> 
+		<Item Cat="0" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5300" /> <!-- --> 
+		<Item Cat="0" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5200" /> <!-- --> 
+		<Item Cat="0" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5100" /> <!-- --> 
+		<Item Cat="0" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5000" /> <!-- --> 
+	<!-- Axes-->
+		<Item Cat="1" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5110" /> <!-- --> 
+		<Item Cat="1" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5210" /> <!-- --> 
+		<Item Cat="1" Index="7" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6410" /> <!-- --> 
+		<Item Cat="1" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6310" /> <!-- --> 
+	<!-- Maces -->
+		<Item Cat="2" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6110" /> <!-- --> 
+		<Item Cat="2" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6210" /> <!-- --> 
+	<!-- Spears -->
+		<Item Cat="3" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6100" /> <!-- --> 
+		<Item Cat="3" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6200" /> <!-- --> 
+	<!-- Shields -->
+		<Item Cat="6" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8000" /> <!-- --> 
+		<Item Cat="6" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8200" /> <!-- --> 
+		<Item Cat="6" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8400" /> <!-- --> 
+		<Item Cat="6" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8600" /> <!-- --> 
+		<Item Cat="6" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8800" /> <!-- --> 
+		<Item Cat="6" Index="0" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="e" Exc="1" SetItem="0" DropRate="9779" /> <!-- --> 
+		<Item Cat="6" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11000" /> <!-- --> 
+		<Item Cat="6" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10900" /> <!-- --> 
+		<Item Cat="6" Index="7" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10800" /> <!-- --> 
+		<Item Cat="6" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10700" /> <!-- --> 
+		<Item Cat="6" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10600" /> <!-- --> 
+	<!-- Bows and Crossbows -->
+		<Item Cat="4" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5120" /> <!-- --> 
+		<Item Cat="4" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5220" /> <!-- --> 
+		<Item Cat="4" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5320" /> <!-- --> 
+		<Item Cat="4" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5420" /> <!-- --> 
+		<Item Cat="4" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5520" /> <!-- --> 
+	<!-- Staffs -->
+		<Item Cat="5" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="1890" /> <!-- --> 
+		<Item Cat="5" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="3290" /> <!-- --> 
+		<Item Cat="5" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4090" /> <!-- --> 
+		<Item Cat="5" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5090" /> <!-- --> 
+	<!-- Secondary Weapons (books etc) -->
+		<Item Cat="5" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6080" /> <!-- --> 
+		<Item Cat="5" Index="21" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6280" /> <!-- --> 
+		<Item Cat="5" Index="23" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6480" /> <!-- --> 
+	<!-- Scepters -->
+		<Item Cat="2" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6150" /> <!-- --> 
+	<!-- Sticks -->
+		<Item Cat="5" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6550" /> <!-- --> 
+		<Item Cat="5" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6450" /> <!-- --> 
+		<Item Cat="5" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6350" /> <!-- --> 
+	<!-- Helmets and Masks -->
+		<Item Cat="7" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8003" /> <!-- --> 
+		<Item Cat="7" Index="0" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7903" /> <!-- --> 
+		<Item Cat="7" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7803" /> <!-- --> 
+		<Item Cat="7" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7703" /> <!-- --> 
+		<Item Cat="7" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7603" /> <!-- --> 
+		<Item Cat="7" Index="1" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7503" /> <!-- --> 
+		<Item Cat="7" Index="2" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8013" /> <!-- --> 
+		<Item Cat="7" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7913" /> <!-- --> 
+		<Item Cat="7" Index="7" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7813" /> <!-- --> 
+		<Item Cat="7" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7713" /> <!-- --> 
+		<Item Cat="7" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8023" /> <!-- --> 
+		<Item Cat="7" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7923" /> <!-- --> 
+		<Item Cat="7" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7823" /> <!-- --> 
+		<Item Cat="7" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7723" /> <!-- --> 
+		<Item Cat="7" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7623" /> <!-- --> 
+		<Item Cat="7" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8033" /> <!-- --> 
+		<Item Cat="7" Index="40" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7933" /> <!-- --> 
+		<Item Cat="7" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8041" /> <!-- --> 
+	<!-- Armors -->
+		<Item Cat="8" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8001" /> <!-- --> 
+		<Item Cat="8" Index="0" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7901" /> <!-- --> 
+		<Item Cat="8" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7801" /> <!-- --> 
+		<Item Cat="8" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7701" /> <!-- --> 
+		<Item Cat="8" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7601" /> <!-- --> 
+		<Item Cat="8" Index="1" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7501" /> <!-- --> 
+		<Item Cat="8" Index="2" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8011" /> <!-- --> 
+		<Item Cat="8" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7911" /> <!-- --> 
+		<Item Cat="8" Index="7" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7811" /> <!-- --> 
+		<Item Cat="8" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7711" /> <!-- --> 
+		<Item Cat="8" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8021" /> <!-- --> 
+		<Item Cat="8" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7921" /> <!-- --> 
+		<Item Cat="8" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7821" /> <!-- --> 
+		<Item Cat="8" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7721" /> <!-- --> 
+		<Item Cat="8" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7621" /> <!-- --> 
+		<Item Cat="8" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8031" /> <!-- --> 
+		<Item Cat="8" Index="40" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7931" /> <!-- --> 
+		<Item Cat="8" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8041" /> <!-- --> 
+	<!-- Pants -->
+		<Item Cat="9" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8002" /> <!-- --> 
+		<Item Cat="9" Index="0" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7902" /> <!-- --> 
+		<Item Cat="9" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7802" /> <!-- --> 
+		<Item Cat="9" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7702" /> <!-- --> 
+		<Item Cat="9" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7602" /> <!-- --> 
+		<Item Cat="9" Index="1" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7502" /> <!-- --> 
+		<Item Cat="9" Index="2" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8012" /> <!-- --> 
+		<Item Cat="9" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7912" /> <!-- --> 
+		<Item Cat="9" Index="7" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7812" /> <!-- --> 
+		<Item Cat="9" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7712" /> <!-- --> 
+		<Item Cat="9" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8022" /> <!-- --> 
+		<Item Cat="9" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7922" /> <!-- --> 
+		<Item Cat="9" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7822" /> <!-- --> 
+		<Item Cat="9" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7722" /> <!-- --> 
+		<Item Cat="9" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7622" /> <!-- --> 
+		<Item Cat="9" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8032" /> <!-- --> 
+		<Item Cat="9" Index="40" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7932" /> <!-- --> 
+		<Item Cat="9" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8042" /> <!-- --> 
+	<!-- Gloves -->
+		<Item Cat="10" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8004" /> <!-- --> 
+		<Item Cat="10" Index="0" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7904" /> <!-- --> 
+		<Item Cat="10" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7804" /> <!-- --> 
+		<Item Cat="10" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7704" /> <!-- --> 
+		<Item Cat="10" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7604" /> <!-- --> 
+		<Item Cat="10" Index="1" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7504" /> <!-- --> 
+		<Item Cat="10" Index="2" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8014" /> <!-- --> 
+		<Item Cat="10" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7914" /> <!-- --> 
+		<Item Cat="10" Index="7" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7814" /> <!-- --> 
+		<Item Cat="10" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7714" /> <!-- --> 
+		<Item Cat="10" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8024" /> <!-- --> 
+		<Item Cat="10" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7924" /> <!-- --> 
+		<Item Cat="10" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7824" /> <!-- --> 
+		<Item Cat="10" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7724" /> <!-- --> 
+		<Item Cat="10" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7624" /> <!-- --> 
+		<Item Cat="10" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8034" /> <!-- --> 
+		<Item Cat="10" Index="40" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7934" /> <!-- --> 
+		<Item Cat="10" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8044" /> <!-- --> 
+	<!-- Boots -->
+		<Item Cat="11" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8005" /> <!-- --> 
+		<Item Cat="11" Index="0" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7905" /> <!-- --> 
+		<Item Cat="11" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7805" /> <!-- --> 
+		<Item Cat="11" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7705" /> <!-- --> 
+		<Item Cat="11" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7605" /> <!-- --> 
+		<Item Cat="11" Index="1" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7505" /> <!-- --> 
+		<Item Cat="11" Index="2" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8015" /> <!-- --> 
+		<Item Cat="11" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7915" /> <!-- --> 
+		<Item Cat="11" Index="7" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7815" /> <!-- --> 
+		<Item Cat="11" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7715" /> <!-- --> 
+		<Item Cat="11" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8025" /> <!-- --> 
+		<Item Cat="11" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7925" /> <!-- --> 
+		<Item Cat="11" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7825" /> <!-- --> 
+		<Item Cat="11" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7725" /> <!-- --> 
+		<Item Cat="11" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7625" /> <!-- --> 
+		<Item Cat="11" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8035" /> <!-- --> 
+		<Item Cat="11" Index="40" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7935" /> <!-- --> 
+		<Item Cat="11" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8045" /> <!-- --> 
+	</Section>
+	<Section ID="1" ItemDropCoun="1"> <!-- 101~200 -->
+	<!-- Jewellery -->
+		<Item Cat="12" Index="30" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10" /> <!-- --> 
+		<Item Cat="12" Index="31" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="20" /> <!-- --> 
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="2000" /> <!-- --> 
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="3000" /> <!-- --> 
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4000" /> <!-- --> 
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5000" /> <!-- --> 
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6000" /> <!-- --> 
+	<!-- Swords -->
+		<Item Cat="0" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="1135" /> <!-- --> 
+		<Item Cat="0" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="3998" /> <!-- --> 
+		<Item Cat="0" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5208" /> <!-- --> 
+		<Item Cat="0" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5578" /> <!-- --> 
+	<!-- Axes-->
+		<Item Cat="1" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10311" /> <!-- --> 
+	<!-- Maces -->
+		<Item Cat="2" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12033" /> <!-- --> 
+		<Item Cat="2" Index="7" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10533" /> <!-- --> 
+		<Item Cat="2" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10033" /> <!-- --> 
+	<!-- Spears -->
+		<Item Cat="3" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6522" /> <!-- --> 
+		<Item Cat="3" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12022" /> <!-- --> 
+	<!-- Shields -->
+		<Item Cat="6" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9511" /> <!-- --> 
+		<Item Cat="6" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9011" /> <!-- --> 
+		<Item Cat="6" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9111" /> <!-- --> 
+		<Item Cat="6" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9311" /> <!-- --> 
+	<!-- Bows and Crossbows -->
+		<Item Cat="4" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7523" /> <!-- --> 
+		<Item Cat="4" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7811" /> <!-- --> 
+		<Item Cat="4" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7903" /> <!-- --> 
+		<Item Cat="4" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8100" /> <!-- --> 
+	<!-- Staffs -->
+		<Item Cat="5" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4128" /> <!-- --> 
+		<Item Cat="5" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4032" /> <!-- --> 
+		<Item Cat="5" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7118" /> <!-- --> 
+	<!-- Secondary Weapons (books etc) -->
+		<Item Cat="5" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10012" /> <!-- --> 
+		<Item Cat="5" Index="21" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10111" /> <!-- --> 
+		<Item Cat="5" Index="23" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11231" /> <!-- --> 
+	<!-- Scepters -->
+		<Item Cat="2" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5811" /> <!-- --> 
+		<Item Cat="2" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12980" /> <!-- --> 
+		<Item Cat="2" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="14040" /> <!-- --> 
+	<!-- Sticks -->
+		<Item Cat="5" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12090" /> <!-- --> 
+	<!-- Helmets and Masks -->
+		<Item Cat="7" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7303" /> <!-- --> 
+		<Item Cat="7" Index="34" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9403" /> <!-- --> 
+		<Item Cat="7" Index="1" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7503" /> <!-- --> 
+		<Item Cat="7" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7513" /> <!-- --> 
+		<Item Cat="7" Index="35" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9613" /> <!-- --> 
+		<Item Cat="7" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7713" /> <!-- --> 
+		<Item Cat="7" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7423" /> <!-- --> 
+		<Item Cat="7" Index="36" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8523" /> <!-- --> 
+		<Item Cat="7" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7623" /> <!-- --> 
+		<Item Cat="7" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7823" /> <!-- --> 
+		<Item Cat="7" Index="41" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7903" /> <!-- --> 
+		<Item Cat="7" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8033" /> <!-- --> 
+		<Item Cat="7" Index="40" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9533" /> <!-- --> 
+		<Item Cat="7" Index="26" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9943" /> <!-- --> 
+		<Item Cat="7" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9043" /> <!-- --> 
+	<!-- Armors -->
+		<Item Cat="8" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7301" /> <!-- --> 
+		<Item Cat="8" Index="34" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9401" /> <!-- --> 
+		<Item Cat="8" Index="1" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7501" /> <!-- --> 
+		<Item Cat="8" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7511" /> <!-- --> 
+		<Item Cat="8" Index="35" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9611" /> <!-- --> 
+		<Item Cat="8" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7711" /> <!-- --> 
+		<Item Cat="8" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7421" /> <!-- --> 
+		<Item Cat="8" Index="36" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8521" /> <!-- --> 
+		<Item Cat="8" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7621" /> <!-- --> 
+		<Item Cat="8" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7821" /> <!-- --> 
+		<Item Cat="8" Index="41" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7901" /> <!-- --> 
+		<Item Cat="8" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8031" /> <!-- --> 
+		<Item Cat="8" Index="40" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9531" /> <!-- --> 
+		<Item Cat="8" Index="26" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9941" /> <!-- --> 
+		<Item Cat="8" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9041" /> <!-- --> 
+		<Item Cat="8" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6501" /> <!-- --> 
+	<!-- Pants -->
+		<Item Cat="9" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7302" /> <!-- --> 
+		<Item Cat="9" Index="34" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9402" /> <!-- --> 
+		<Item Cat="9" Index="1" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7502" /> <!-- --> 
+		<Item Cat="9" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7512" /> <!-- --> 
+		<Item Cat="9" Index="35" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9612" /> <!-- --> 
+		<Item Cat="9" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7712" /> <!-- --> 
+		<Item Cat="9" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7422" /> <!-- --> 
+		<Item Cat="9" Index="36" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8522" /> <!-- --> 
+		<Item Cat="9" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7622" /> <!-- --> 
+		<Item Cat="9" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7822" /> <!-- --> 
+		<Item Cat="9" Index="41" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7902" /> <!-- --> 
+		<Item Cat="9" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8032" /> <!-- --> 
+		<Item Cat="9" Index="40" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9532" /> <!-- --> 
+		<Item Cat="9" Index="26" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9942" /> <!-- --> 
+		<Item Cat="9" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9042" /> <!-- --> 
+		<Item Cat="9" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6502" /> <!-- --> 
+	<!-- Gloves -->
+		<Item Cat="10" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7304" /> <!-- --> 
+		<Item Cat="10" Index="34" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9404" /> <!-- --> 
+		<Item Cat="10" Index="1" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7504" /> <!-- --> 
+		<Item Cat="10" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7514" /> <!-- --> 
+		<Item Cat="10" Index="35" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9614" /> <!-- --> 
+		<Item Cat="10" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7714" /> <!-- --> 
+		<Item Cat="10" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7424" /> <!-- --> 
+		<Item Cat="10" Index="36" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8524" /> <!-- --> 
+		<Item Cat="10" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7624" /> <!-- --> 
+		<Item Cat="10" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7824" /> <!-- --> 
+		<Item Cat="10" Index="41" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7904" /> <!-- --> 
+		<Item Cat="10" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8034" /> <!-- --> 
+		<Item Cat="10" Index="40" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9534" /> <!-- --> 
+		<Item Cat="10" Index="26" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9944" /> <!-- --> 
+		<Item Cat="10" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9044" /> <!-- --> 
+		<Item Cat="10" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6504" /> <!-- --> 
+	<!-- Boots -->
+		<Item Cat="11" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7305" /> <!-- --> 
+		<Item Cat="11" Index="34" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9405" /> <!-- --> 
+		<Item Cat="11" Index="1" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7505" /> <!-- --> 
+		<Item Cat="11" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7515" /> <!-- --> 
+		<Item Cat="11" Index="35" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9615" /> <!-- --> 
+		<Item Cat="11" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7715" /> <!-- --> 
+		<Item Cat="11" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7425" /> <!-- --> 
+		<Item Cat="11" Index="36" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8525" /> <!-- --> 
+		<Item Cat="11" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7625" /> <!-- --> 
+		<Item Cat="11" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7825" /> <!-- --> 
+		<Item Cat="11" Index="41" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7905" /> <!-- --> 
+		<Item Cat="11" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8035" /> <!-- --> 
+		<Item Cat="11" Index="40" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9535" /> <!-- --> 
+		<Item Cat="11" Index="26" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9945" /> <!-- --> 
+		<Item Cat="11" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9045" /> <!-- --> 
+		<Item Cat="11" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6505" /> <!-- --> 
+	<!-- Ancient (Set Items) -->
+		<Item Cat="11" Index="5" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4001" /> <!-- --> 
+		<Item Cat="10" Index="5" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4002" /> <!-- --> 
+		<Item Cat="7" Index="5" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4003" /> <!-- --> 
+		<Item Cat="9" Index="5" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4004" /> <!-- --> 
+		<Item Cat="8" Index="5" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4005" /> <!-- --> 
+		<Item Cat="2" Index="1" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4006" /> <!-- --> 
+		<Item Cat="13" Index="8" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4007" /> <!-- --> 
+		<Item Cat="6" Index="0" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4008" /> <!-- --> 
+		<Item Cat="10" Index="2" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4009" /> <!-- --> 
+		<Item Cat="9" Index="2" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4010" /> <!-- --> 
+		<Item Cat="8" Index="2" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4011" /> <!-- --> 
+		<Item Cat="7" Index="2" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4012" /> <!-- --> 
+		<Item Cat="5" Index="0" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4013" /> <!-- --> 
+		<Item Cat="13" Index="25" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4014" /> <!-- --> 
+		<Item Cat="13" Index="24" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4015" /> <!-- --> 
+		<Item Cat="11" Index="2" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4016" /> <!-- --> 
+		<Item Cat="11" Index="10" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4017" /> <!-- --> 
+		<Item Cat="10" Index="10" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4018" /> <!-- --> 
+		<Item Cat="9" Index="10" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4019" /> <!-- --> 
+		<Item Cat="7" Index="10" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4020" /> <!-- --> 
+		<Item Cat="0" Index="2" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4021" /> <!-- --> 
+		<Item Cat="13" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4022" /> <!-- --> 
+		<Item Cat="8" Index="10" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4023" /> <!-- --> 
+	</Section>
+	<Section ID="2" ItemDropCoun="2"> <!-- 201~300 -->
+	<!-- Jewellery -->
+		<Item Cat="12" Index="30" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="100" /> <!-- --> 	
+		<Item Cat="12" Index="31" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="200" /> <!-- --> 	
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="3000" /> <!-- --> 
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4000" /> <!-- --> 
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5000" /> <!-- --> 
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6000" /> <!-- --> 
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7000" /> <!-- --> 
+	<!-- Swords -->
+		<Item Cat="0" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5111" /> <!-- --> 
+		<Item Cat="0" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5211" /> <!-- --> 
+		<Item Cat="0" Index="31" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6311" /> <!-- --> 
+		<Item Cat="0" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6411" /> <!-- --> 
+		<Item Cat="0" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6511" /> <!-- --> 
+	<!-- Axes-->
+		<Item Cat="1" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12333" /> <!-- --> 
+	<!-- Maces -->
+		<Item Cat="2" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12044" /> <!-- --> 
+		<Item Cat="2" Index="7" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12544" /> <!-- --> 
+		<Item Cat="2" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12044" /> <!-- --> 
+	<!-- Spears -->
+		<Item Cat="3" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10566" /> <!-- --> 
+		<Item Cat="3" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12066" /> <!-- --> 
+	<!-- Shields -->
+		<Item Cat="6" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12577" /> <!-- --> 
+		<Item Cat="6" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9077" /> <!-- --> 
+		<Item Cat="6" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11177" /> <!-- --> 
+		<Item Cat="6" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11377" /> <!-- --> 
+	<!-- Bows and Crossbows -->
+		<Item Cat="4" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9655" /> <!-- --> 
+		<Item Cat="4" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8755" /> <!-- --> 
+		<Item Cat="4" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11163" /> <!-- --> 
+		<Item Cat="4" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12955" /> <!-- --> 
+		<Item Cat="4" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12055" /> <!-- --> 
+	<!-- Staffs -->
+		<Item Cat="5" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5022" /> <!-- --> 
+		<Item Cat="5" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6122" /> <!-- --> 
+		<Item Cat="5" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4222" /> <!-- --> 
+		<Item Cat="5" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6322" /> <!-- --> 
+	<!-- Scepters -->
+		<Item Cat="5" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="15095" /> <!-- --> 
+		<Item Cat="5" Index="21" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="15195" /> <!-- --> 
+		<Item Cat="5" Index="23" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="15295" /> <!-- --> 
+	<!-- Secondary Weapons (books etc) -->
+		<Item Cat="2" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6788" /> <!-- --> 
+		<Item Cat="2" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7888" /> <!-- --> 
+		<Item Cat="2" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11988" /> <!-- --> 
+		<Item Cat="2" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11088" /> <!-- --> 
+	<!-- Sticks -->
+		<Item Cat="5" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10999" /> <!-- --> 
+		<Item Cat="5" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12099" /> <!-- --> 
+	<!-- Helmets and Masks -->
+		<Item Cat="7" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8203" /> <!-- --> 
+		<Item Cat="7" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8303" /> <!-- --> 
+		<Item Cat="7" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8503" /> <!-- --> 
+		<Item Cat="7" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9403" /> <!-- --> 
+		<Item Cat="7" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8803" /> <!-- --> 
+		<Item Cat="7" Index="41" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8903" /> <!-- --> 
+		<Item Cat="7" Index="26" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9913" /> <!-- --> 
+	<!-- Armors -->
+		<Item Cat="8" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8201" /> <!-- --> 
+		<Item Cat="8" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8301" /> <!-- --> 
+		<Item Cat="8" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8501" /> <!-- --> 
+		<Item Cat="8" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9401" /> <!-- --> 
+		<Item Cat="8" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8811" /> <!-- --> 
+		<Item Cat="8" Index="41" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8901" /> <!-- --> 
+		<Item Cat="8" Index="38" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7801" /> <!-- --> 
+		<Item Cat="8" Index="27" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7901" /> <!-- --> 
+		<Item Cat="8" Index="26" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9921" /> <!-- --> 
+		<Item Cat="8" Index="37" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7511" /> <!-- --> 
+		<Item Cat="8" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7521" /> <!-- --> 
+	<!-- Pants -->
+		<Item Cat="9" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8202" /> <!-- --> 
+		<Item Cat="9" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8302" /> <!-- --> 
+		<Item Cat="9" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8502" /> <!-- --> 
+		<Item Cat="9" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9402" /> <!-- --> 
+		<Item Cat="9" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8812" /> <!-- --> 
+		<Item Cat="9" Index="41" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8902" /> <!-- --> 
+		<Item Cat="9" Index="38" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7802" /> <!-- --> 
+		<Item Cat="9" Index="27" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7902" /> <!-- --> 
+		<Item Cat="9" Index="26" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9922" /> <!-- --> 
+		<Item Cat="9" Index="37" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7512" /> <!-- --> 
+		<Item Cat="9" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7522" /> <!-- --> 
+	<!-- Gloves -->
+		<Item Cat="10" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8204" /> <!-- --> 
+		<Item Cat="10" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8304" /> <!-- --> 
+		<Item Cat="10" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8504" /> <!-- --> 
+		<Item Cat="10" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9404" /> <!-- --> 
+		<Item Cat="10" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8814" /> <!-- --> 
+		<Item Cat="10" Index="41" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8904" /> <!-- --> 
+		<Item Cat="10" Index="38" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7804" /> <!-- --> 
+		<Item Cat="10" Index="27" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7904" /> <!-- --> 
+		<Item Cat="10" Index="26" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9924" /> <!-- --> 
+		<Item Cat="10" Index="37" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7514" /> <!-- --> 
+		<Item Cat="10" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7524" /> <!-- --> 
+	<!-- Boots -->
+		<Item Cat="11" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8205" /> <!-- --> 
+		<Item Cat="11" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8305" /> <!-- --> 
+		<Item Cat="11" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8505" /> <!-- --> 
+		<Item Cat="11" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9405" /> <!-- --> 
+		<Item Cat="11" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8815" /> <!-- --> 
+		<Item Cat="11" Index="41" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8905" /> <!-- --> 
+		<Item Cat="11" Index="38" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7805" /> <!-- --> 
+		<Item Cat="11" Index="27" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7905" /> <!-- --> 
+		<Item Cat="11" Index="26" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9925" /> <!-- --> 
+		<Item Cat="11" Index="37" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7515" /> <!-- --> 
+		<Item Cat="11" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7525" /> <!-- --> 
+	<!-- Ancient (Set Items) -->
+		<Item Cat="11" Index="0" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4001" /> <!-- --> 
+		<Item Cat="9" Index="0" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4002" /> <!-- --> 
+		<Item Cat="8" Index="0" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4003" /> <!-- --> 
+		<Item Cat="7" Index="0" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4004" /> <!-- --> 
+		<Item Cat="10" Index="0" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4005" /> <!-- --> 
+		<Item Cat="6" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4006" /> <!-- --> 
+		<Item Cat="9" Index="6" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4007" /> <!-- --> 
+		<Item Cat="7" Index="6" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4008" /> <!-- --> 
+		<Item Cat="8" Index="6" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4009" /> <!-- --> 
+		<Item Cat="13" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4010" /> <!-- --> 
+		<Item Cat="10" Index="6" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4011" /> <!-- --> 
+		<Item Cat="11" Index="6" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4012" /> <!-- --> 
+		<Item Cat="11" Index="8" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4013" /> <!-- --> 
+		<Item Cat="10" Index="8" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4014" /> <!-- --> 
+		<Item Cat="9" Index="8" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4015" /> <!-- --> 
+		<Item Cat="8" Index="8" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4016" /> <!-- --> 
+		<Item Cat="13" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4017" /> <!-- --> 
+		<Item Cat="7" Index="8" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4018" /> <!-- --> 
+		<Item Cat="11" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4019" /> <!-- --> 
+		<Item Cat="10" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4020" /> <!-- --> 
+		<Item Cat="8" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4021" /> <!-- --> 
+		<Item Cat="13" Index="23" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4022" /> <!-- --> 
+		<Item Cat="13" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4023" /> <!-- --> 
+		<Item Cat="7" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4024" /> <!-- --> 
+		<Item Cat="9" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4025" /> <!-- --> 
+		<Item Cat="11" Index="4" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4026" /> <!-- --> 
+		<Item Cat="9" Index="4" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4027" /> <!-- --> 
+		<Item Cat="8" Index="4" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4028" /> <!-- --> 
+		<Item Cat="13" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4029" /> <!-- --> 
+		<Item Cat="7" Index="4" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4030" /> <!-- --> 
+		<Item Cat="10" Index="4" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4031" /> <!-- --> 
+		<Item Cat="6" Index="6" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4032" /> <!-- --> 
+		<Item Cat="11" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4033" /> <!-- --> 
+		<Item Cat="10" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4034" /> <!-- --> 
+		<Item Cat="9" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4035" /> <!-- --> 
+		<Item Cat="8" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4036" /> <!-- --> 
+		<Item Cat="7" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4037" /> <!-- --> 
+		<Item Cat="10" Index="11" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4038" /> <!-- --> 
+		<Item Cat="9" Index="11" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4039" /> <!-- --> 
+		<Item Cat="8" Index="11" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4040" /> <!-- --> 
+		<Item Cat="7" Index="11" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4041" /> <!-- --> 
+		<Item Cat="4" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4042" /> <!-- --> 
+		<Item Cat="11" Index="11" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4043" /> <!-- --> 
+		<Item Cat="11" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4044" /> <!-- --> 
+		<Item Cat="10" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4045" /> <!-- --> 
+		<Item Cat="9" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4046" /> <!-- --> 
+		<Item Cat="8" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4047" /> <!-- --> 
+		<Item Cat="7" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4048" /> <!-- --> 
+		<Item Cat="10" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4049" /> <!-- --> 
+		<Item Cat="9" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4050" /> <!-- --> 
+		<Item Cat="8" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4051" /> <!-- --> 
+		<Item Cat="7" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4052" /> <!-- --> 
+		<Item Cat="11" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4053" /> <!-- --> 
+	</Section>
+	<Section ID="3" ItemDropCoun="2"> <!-- 301~400 -->
+	<!-- Jewellery -->
+		<Item Cat="12" Index="30" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="3000" /> <!-- --> 
+		<Item Cat="12" Index="31" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6000" /> <!-- --> 
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12000" /> <!-- --> 
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10000" /> <!-- --> 
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="15000" /> <!-- --> 
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="18000" /> <!-- --> 
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="20000" /> <!-- --> 
+	<!-- Swords -->
+		<Item Cat="0" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8011" /> <!-- --> 
+		<Item Cat="0" Index="24" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8111" /> <!-- --> 
+		<Item Cat="0" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8211" /> <!-- --> 
+		<Item Cat="0" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8311" /> <!-- --> 
+		<Item Cat="0" Index="31" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11411" /> <!-- --> 
+		<Item Cat="0" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7511" /> <!-- --> 
+	<!-- Bows and Crossbows -->
+		<Item Cat="4" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="13155" /> <!-- --> 
+		<Item Cat="4" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="13055" /> <!-- --> 
+	<!-- Staffs -->
+		<Item Cat="5" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9222" /> <!-- --> 
+		<Item Cat="5" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11333" /> <!-- --> 
+		<Item Cat="5" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6261" /> <!-- --> 
+		<Item Cat="6" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8177" /> <!-- --> 
+	<!-- Secondary Weapons (books etc) -->
+		<Item Cat="5" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="17096" /> <!-- --> 
+	<!-- Scepters -->
+		<Item Cat="2" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="15188" /> <!-- --> 
+		<Item Cat="2" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="15088" /> <!-- --> 
+	<!-- Sticks -->
+		<Item Cat="5" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="15099" /> <!-- --> 
+	<!-- Helmets and Masks -->
+		<Item Cat="7" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10203" /> <!-- --> 
+		<Item Cat="7" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10303" /> <!-- --> 
+		<Item Cat="7" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10503" /> <!-- --> 
+		<Item Cat="7" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10403" /> <!-- --> 
+		<Item Cat="7" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10803" /> <!-- --> 
+		<Item Cat="7" Index="41" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10903" /> <!-- --> 
+		<Item Cat="8" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9801" /> <!-- --> 
+		<Item Cat="8" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10911" /> <!-- --> 
+		<Item Cat="7" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10903" /> <!-- --> 
+	<!-- Armors -->
+		<Item Cat="8" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10201" /> <!-- --> 
+		<Item Cat="8" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10301" /> <!-- --> 
+		<Item Cat="8" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10501" /> <!-- --> 
+		<Item Cat="8" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10401" /> <!-- --> 
+		<Item Cat="8" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10801" /> <!-- --> 
+		<Item Cat="8" Index="41" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10901" /> <!-- --> 
+		<Item Cat="8" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9801" /> <!-- --> 
+		<Item Cat="8" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10911" /> <!-- --> 
+		<Item Cat="8" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10921" /> <!-- --> 
+		<Item Cat="8" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9501" /> <!-- --> 
+		<Item Cat="8" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10511" /> <!-- --> 
+	<!-- Pants -->
+		<Item Cat="9" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10202" /> <!-- --> 
+		<Item Cat="9" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10302" /> <!-- --> 
+		<Item Cat="9" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10502" /> <!-- --> 
+		<Item Cat="9" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10402" /> <!-- --> 
+		<Item Cat="9" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10802" /> <!-- --> 
+		<Item Cat="9" Index="41" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10902" /> <!-- --> 
+		<Item Cat="9" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9802" /> <!-- --> 
+		<Item Cat="9" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10912" /> <!-- --> 
+		<Item Cat="9" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10922" /> <!-- --> 
+		<Item Cat="9" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9502" /> <!-- --> 
+		<Item Cat="9" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10512" /> <!-- --> 
+	<!-- Gloves -->
+		<Item Cat="10" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10204" /> <!-- --> 
+		<Item Cat="10" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10304" /> <!-- --> 
+		<Item Cat="10" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10504" /> <!-- --> 
+		<Item Cat="10" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10404" /> <!-- --> 
+		<Item Cat="10" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10804" /> <!-- --> 
+		<Item Cat="10" Index="41" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10904" /> <!-- --> 
+		<Item Cat="10" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9804" /> <!-- --> 
+		<Item Cat="10" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10914" /> <!-- --> 
+		<Item Cat="10" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10924" /> <!-- --> 
+		<Item Cat="10" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9504" /> <!-- --> 
+		<Item Cat="10" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10514" /> <!-- --> 
+	<!-- Boots -->
+		<Item Cat="11" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10205" /> <!-- --> 
+		<Item Cat="11" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10305" /> <!-- --> 
+		<Item Cat="11" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10505" /> <!-- --> 
+		<Item Cat="11" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10405" /> <!-- --> 
+		<Item Cat="11" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10805" /> <!-- --> 
+		<Item Cat="11" Index="41" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10905" /> <!-- --> 
+		<Item Cat="11" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9805" /> <!-- --> 
+		<Item Cat="11" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10915" /> <!-- --> 
+		<Item Cat="11" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10925" /> <!-- --> 
+		<Item Cat="11" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9505" /> <!-- --> 
+		<Item Cat="11" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10515" /> <!-- --> 
+	<!-- Ancient (Set Items) -->
+		<Item Cat="11" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4019" /> <!-- --> 
+		<Item Cat="10" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4020" /> <!-- --> 
+		<Item Cat="8" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4021" /> <!-- --> 
+		<Item Cat="13" Index="23" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4022" /> <!-- --> 
+		<Item Cat="13" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4023" /> <!-- --> 
+		<Item Cat="7" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4024" /> <!-- --> 
+		<Item Cat="9" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4025" /> <!-- --> 
+		<Item Cat="11" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4033" /> <!-- --> 
+		<Item Cat="10" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4034" /> <!-- --> 
+		<Item Cat="9" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4035" /> <!-- --> 
+		<Item Cat="8" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4036" /> <!-- --> 
+		<Item Cat="7" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4037" /> <!-- --> 
+		<Item Cat="10" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4049" /> <!-- --> 
+		<Item Cat="9" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4050" /> <!-- --> 
+		<Item Cat="8" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4051" /> <!-- --> 
+		<Item Cat="7" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4052" /> <!-- --> 
+		<Item Cat="11" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4053" /> <!-- --> 
+		<Item Cat="11" Index="1" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4026" /> <!-- --> 
+		<Item Cat="10" Index="1" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4025" /> <!-- --> 
+		<Item Cat="7" Index="1" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4024" /> <!-- --> 
+		<Item Cat="0" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4023" /> <!-- --> 
+		<Item Cat="9" Index="1" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4022" /> <!-- --> 
+		<Item Cat="8" Index="1" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4021" /> <!-- --> 
+		<Item Cat="13" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4020" /> <!-- --> 
+		<Item Cat="10" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4019" /> <!-- --> 
+		<Item Cat="8" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4018" /> <!-- --> 
+		<Item Cat="7" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4017" /> <!-- --> 
+		<Item Cat="13" Index="21" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4016" /> <!-- --> 
+		<Item Cat="11" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4015" /> <!-- --> 
+		<Item Cat="9" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4014" /> <!-- --> 
+		<Item Cat="11" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="6013" /> <!-- --> 
+		<Item Cat="10" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="6012" /> <!-- --> 
+		<Item Cat="8" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="6011" /> <!-- --> 
+		<Item Cat="4" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="6010" /> <!-- --> 
+		<Item Cat="13" Index="28" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="6009" /> <!-- --> 
+		<Item Cat="9" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="6008" /> <!-- --> 
+		<Item Cat="7" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="6007" /> <!-- --> 
+		<Item Cat="11" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4006" /> <!-- --> 
+		<Item Cat="9" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4005" /> <!-- --> 
+		<Item Cat="8" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4004" /> <!-- --> 
+		<Item Cat="13" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4003" /> <!-- --> 
+		<Item Cat="10" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4002" /> <!-- --> 
+		<Item Cat="13" Index="21" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4001" /> <!-- --> 
+	</Section>
+	<Section ID="4" ItemDropCoun="2"> <!-- 401~800 -->
+	<!-- Jewellery -->
+		<Item Cat="12" Index="30" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8000" /> <!-- --> 
+		<Item Cat="12" Index="31" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10000" /> <!-- --> 
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="14000" /> <!-- --> 
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12000" /> <!-- --> 
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="17000" /> <!-- --> 
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="19000" /> <!-- --> 
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="20000" /> <!-- --> 
+	<!-- Swords -->
+		<Item Cat="0" Index="21" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4311" /> <!-- --> 
+		<Item Cat="0" Index="20" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="4411" /> <!-- --> 
+		<Item Cat="0" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7511" /> <!-- --> 
+		<Item Cat="0" Index="24" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7611" /> <!-- --> 
+		<Item Cat="0" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7711" /> <!-- --> 
+		<Item Cat="0" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="8811" /> <!-- --> 
+		<Item Cat="0" Index="31" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7911" /> <!-- --> 
+		<Item Cat="0" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="5011" /> <!-- --> 
+	<!-- Bows and Crossbows -->
+		<Item Cat="4" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10155" /> <!-- --> 
+		<Item Cat="4" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="10055" /> <!-- --> 
+	<!-- Staffs -->
+		<Item Cat="5" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="7222" /> <!-- --> 
+		<Item Cat="5" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11122" /> <!-- --> 
+		<Item Cat="5" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="6022" /> <!-- --> 
+	<!-- Scepters -->
+		<Item Cat="5" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11096" /> <!-- --> 
+	<!-- Sticks -->
+		<Item Cat="2" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11188" /> <!-- --> 
+		<Item Cat="2" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="11088" /> <!-- --> 
+	<!-- Secondary Weapons (books etc) -->
+		<Item Cat="5" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="12410" /> <!-- --> 
+	<!-- Helmets and Masks -->
+		<Item Cat="7" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9203" /> <!-- --> 
+		<Item Cat="7" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9503" /> <!-- --> 
+		<Item Cat="7" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9403" /> <!-- --> 
+		<Item Cat="7" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9803" /> <!-- --> 
+		<Item Cat="7" Index="41" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9903" /> <!-- --> 
+		<Item Cat="7" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9803" /> <!-- --> 
+		<Item Cat="7" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9903" /> <!-- --> 
+	<!-- Armors -->
+		<Item Cat="8" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9201" /> <!-- --> 
+		<Item Cat="8" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9501" /> <!-- --> 
+		<Item Cat="8" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9401" /> <!-- --> 
+		<Item Cat="8" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9801" /> <!-- --> 
+		<Item Cat="8" Index="41" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9901" /> <!-- --> 
+		<Item Cat="8" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9801" /> <!-- --> 
+		<Item Cat="8" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9901" /> <!-- --> 
+		<Item Cat="8" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9501" /> <!-- --> 
+	<!-- Pants -->
+		<Item Cat="9" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9202" /> <!-- --> 
+		<Item Cat="9" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9502" /> <!-- --> 
+		<Item Cat="9" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9402" /> <!-- --> 
+		<Item Cat="9" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9802" /> <!-- --> 
+		<Item Cat="9" Index="41" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9902" /> <!-- --> 
+		<Item Cat="9" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9802" /> <!-- --> 
+		<Item Cat="9" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9902" /> <!-- --> 
+		<Item Cat="9" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9502" /> <!-- --> 
+	<!-- Gloves -->
+		<Item Cat="10" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9204" /> <!-- --> 
+		<Item Cat="10" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9504" /> <!-- --> 
+		<Item Cat="10" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9404" /> <!-- --> 
+		<Item Cat="10" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9804" /> <!-- --> 
+		<Item Cat="10" Index="41" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9904" /> <!-- --> 
+		<Item Cat="10" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9804" /> <!-- --> 
+		<Item Cat="10" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9904" /> <!-- --> 
+		<Item Cat="10" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9504" /> <!-- --> 
+	<!-- Boots -->
+		<Item Cat="11" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9205" /> <!-- --> 
+		<Item Cat="11" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9505" /> <!-- --> 
+		<Item Cat="11" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9405" /> <!-- --> 
+		<Item Cat="11" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9805" /> <!-- --> 
+		<Item Cat="11" Index="41" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9905" /> <!-- --> 
+		<Item Cat="11" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9805" /> <!-- --> 
+		<Item Cat="11" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9905" /> <!-- --> 
+		<Item Cat="11" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="1" SetItem="0" DropRate="9505" /> <!-- --> 
+	<!-- 380 Level Items -->
+		<Item Cat="0" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6091" /> <!-- --> 
+		<Item Cat="0" Index="23" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6092" /> <!-- --> 
+		<Item Cat="2" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6092" /> <!-- --> 
+		<Item Cat="4" Index="21" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6093" /> <!-- --> 
+		<Item Cat="5" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6094" /> <!-- --> 
+		<Item Cat="5" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="8090" /> <!-- --> 
+		<Item Cat="7" Index="29" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="8" Index="29" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="9" Index="29" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="10" Index="29" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="11" Index="29" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="7" Index="30" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="8" Index="30" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="9" Index="30" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="10" Index="30" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="11" Index="30" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="7" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="8" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="9" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="10" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="11" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="7" Index="33" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="8" Index="33" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="9" Index="33" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="10" Index="33" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="11" Index="33" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="7" Index="43" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="8" Index="43" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="9" Index="43" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="10" Index="43" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+		<Item Cat="11" Index="43" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" DropRate="6090" /> <!-- --> 
+	<!-- Ancient (Set Items) -->
+		<Item Cat="11" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5019" /> <!-- --> 
+		<Item Cat="10" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5020" /> <!-- --> 
+		<Item Cat="8" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5021" /> <!-- --> 
+		<Item Cat="13" Index="23" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5022" /> <!-- --> 
+		<Item Cat="13" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5023" /> <!-- --> 
+		<Item Cat="7" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5024" /> <!-- --> 
+		<Item Cat="9" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5025" /> <!-- --> 
+		<Item Cat="11" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5033" /> <!-- --> 
+		<Item Cat="10" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5034" /> <!-- --> 
+		<Item Cat="9" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5035" /> <!-- --> 
+		<Item Cat="8" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5036" /> <!-- --> 
+		<Item Cat="7" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5037" /> <!-- --> 
+		<Item Cat="10" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5049" /> <!-- --> 
+		<Item Cat="9" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5050" /> <!-- --> 
+		<Item Cat="8" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5051" /> <!-- --> 
+		<Item Cat="7" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5052" /> <!-- --> 
+		<Item Cat="11" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="5053" /> <!-- --> 
+		<Item Cat="11" Index="1" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4026" /> <!-- --> 
+		<Item Cat="10" Index="1" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4025" /> <!-- --> 
+		<Item Cat="7" Index="1" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4024" /> <!-- --> 
+		<Item Cat="0" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4023" /> <!-- --> 
+		<Item Cat="9" Index="1" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4022" /> <!-- --> 
+		<Item Cat="8" Index="1" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4021" /> <!-- --> 
+		<Item Cat="13" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4020" /> <!-- --> 
+		<Item Cat="10" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4019" /> <!-- --> 
+		<Item Cat="8" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4018" /> <!-- --> 
+		<Item Cat="7" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4017" /> <!-- --> 
+		<Item Cat="13" Index="21" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4016" /> <!-- --> 
+		<Item Cat="11" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4015" /> <!-- --> 
+		<Item Cat="9" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4014" /> <!-- --> 
+		<Item Cat="11" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4013" /> <!-- --> 
+		<Item Cat="10" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4012" /> <!-- --> 
+		<Item Cat="8" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4011" /> <!-- --> 
+		<Item Cat="4" Index="5" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4010" /> <!-- --> 
+		<Item Cat="13" Index="28" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4009" /> <!-- --> 
+		<Item Cat="9" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4008" /> <!-- --> 
+		<Item Cat="7" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4007" /> <!-- --> 
+		<Item Cat="11" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4006" /> <!-- --> 
+		<Item Cat="9" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4005" /> <!-- --> 
+		<Item Cat="8" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4004" /> <!-- --> 
+		<Item Cat="13" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4003" /> <!-- --> 
+		<Item Cat="10" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4002" /> <!-- --> 
+		<Item Cat="13" Index="21" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="0" SetItem="1" DropRate="4001" /> <!-- --> 
+	</Section>
+</ImperialGuardian>

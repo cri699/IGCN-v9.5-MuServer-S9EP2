@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2016 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MonsterGroupRegenSystem ###
+//	SpawnNotice: Enables or disabled the spawn notice configurable in GroupSettings section, 0/1
+//
+// ### MonsterGroupRegenSystem::GroupSettings::Group ###
+//	Index: Group number definition, unique in the section
+//	Duration: Time after which monsters will be deleted if not killed, minutes - not used at the moment
+//	MapNumber: Map to spawn the Monster Group on
+//	BossMonsterIndex: Index of Boss Monster for the Group
+//	BossMonsterName: Name of Boss Monster, used for in-file information only
+//	SpawnNotice: Notice to display in-game upon spawn of the monsters group
+//
+// ### MonsterGroupRegenSystem::SpotSettings::Group ###
+//	Index: Index of Group number, references to setting from GroupSettings section
+//	StartX: Start X coordinate of spot spawn location for the Monster of the Group (StartX must be greater than EndX)
+//	StartY: Start Y coordinate of spot spawn location for the Monster of the Group (StartY must be greater than EndY)
+//	EndX: End X coordinate of spot spawn location for the Monster of the Group
+//	EndY: End Y coordinate of spot spawn location for the Monster of the Group
+//
+// ### MonsterGroupRegenSystem::MonsterSettings::Group ###
+//	Index: Index of Group number, references to setting from GroupSettings section
+//
+// ### MonsterGroupRegenSystem::MonsterSettings::Group::Monster ###
+//	Index: Index of a monster belonging to the group, refer to IGC_MonsterList.xml
+//	Count: Count of monsters of specified type to spawn
+//	OverrideDefaultSettings: Determines whether to use monster attributes from IGC_MonsterList.xml or overrride them with attributes defined from this file, 0/1
+//	EventID: ID of event item bag type defined in ItemBagScript.lua
+//	HP: Value of health to set for specified monster
+//	DamageMin: Value of minimum damage to set for specified monster
+//	DamageMax: Value of maxumum damage to set for specified monster
+//	Defense: Value of defense to set for specified monster
+//	AttackRate: Value of Attack Rate to set for specified monster
+//	DefenseRate: Value of Defense Rate to set for specified monster
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Override values of monster attributes applies only if OverrideDefaultSettings is set to 1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### MonsterGroupRegenSystem::SpawnSettings::Group ###
+//	Index: Index of Group number, references to setting from GroupSettings section
+//
+// ### MonsterGroupRegenSystem::SpawnSettings::Group::Spawn ###
+//	StartHour: Start hour for the spawn (0-23)
+//	StartMinute: Start minute for the spawn (0-23)
+//	AppearanceRate: Chance to process specified spawn, expressed in percent, 0-100
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MonsterGroupRegenSystem SpawnNotice="1">
+	<GroupSettings>
+		<Group Index="0" Duration="60" MapNumber="56" BossMonsterIndex="561" BossMonsterName="Medusa" SpawnNotice="Medusa and her assistants has invaded Swamp of Clamness!!!" />
+	</GroupSettings>
+ 
+	<SpotSettings>
+		<Group Index="0">
+			<Area StartX="50"  StartY="103" EndX="57"  EndY="114" />
+			<Area StartX="127" StartY="162" EndX="136" EndY="171" />
+			<Area StartX="149" StartY="10"  EndX="162" EndY="19" />
+			<Area StartX="178" StartY="114" EndX="184" EndY="129" />
+		</Group>
+	</SpotSettings>
+ 
+	<MonsterSettings>
+		<Group Index="0">
+			<Monster Index="560" Count="7" OverrideDefaultSettings="0" EventID="151" HP="150000" DamageMin="100" DamageMax="150" Defense="150" AttackRate="1000" DefenseRate="1000" />
+			<Monster Index="561" Count="1" OverrideDefaultSettings="0" EventID="150" HP="15000000" DamageMin="1000" DamageMax="1500" Defense="550" AttackRate="2000" DefenseRate="2000" />
+		</Group>
+	</MonsterSettings>
+ 
+	<SpawnSettings>
+		<Group Index="0">
+			<Spawn StartHour="15" StarMinute="0" AppearanceRate="100" />
+		</Group> 
+	</SpawnSettings>
+</MonsterGroupRegenSystem>

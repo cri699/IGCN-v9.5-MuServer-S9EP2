@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<MonsterAI>
+	<Unit Number="1"  DelayTime="1700" Automata="1"  AIClassNormal="1"  AIClassMove="8"  AIClassAttack="3"  AIClassHeal="5"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Normal Monster" />
+	<Unit Number="2"  DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="2"  AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="Dark Elf" />
+	<Unit Number="3"  DelayTime="2000" Automata="3"  AIClassNormal="1"  AIClassMove="-1" AIClassAttack="9"  AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Tanker" />
+	<Unit Number="4"  DelayTime="1000" Automata="1"  AIClassNormal="1"  AIClassMove="2"  AIClassAttack="3"  AIClassHeal="5"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Balgass" />
+	<Unit Number="10" DelayTime="5000" Automata="10" AIClassNormal="1"  AIClassMove="-1" AIClassAttack="-1" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Dummy AI" />
+	<Unit Number="11" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="11" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 1-1" />
+	<Unit Number="12" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="12" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 1-2" />
+	<Unit Number="13" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="13" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 1-3" />
+	<Unit Number="14" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="14" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 1-4" />
+	<Unit Number="15" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="15" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 2-1" />
+	<Unit Number="16" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="16" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 2-2" />
+	<Unit Number="17" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="17" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 2-3" />
+	<Unit Number="18" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="18" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 2-4" />
+	<Unit Number="19" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="19" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 3-1" />
+	<Unit Number="20" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="20" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 3-2" />
+	<Unit Number="21" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="21" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 3-3" />
+	<Unit Number="22" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="22" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="1 Dark Elf 3-4" />
+	<Unit Number="31" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="31" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 1-1" />
+	<Unit Number="32" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="32" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 1-2" />
+	<Unit Number="33" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="33" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 1-3" />
+	<Unit Number="34" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="34" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 1-4" />
+	<Unit Number="35" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="35" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 2-1" />
+	<Unit Number="36" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="36" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 2-2" />
+	<Unit Number="37" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="37" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 2-3" />
+	<Unit Number="38" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="38" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 2-4" />
+	<Unit Number="39" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="39" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 3-1" />
+	<Unit Number="40" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="40" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 3-2" />
+	<Unit Number="41" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="41" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 3-3" />
+	<Unit Number="42" DelayTime="1700" Automata="2"  AIClassNormal="1"  AIClassMove="42" AIClassAttack="3"  AIClassHeal="7"  AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="6"  AIClassEvent="-1" Name="2 Dark Elf 3-4" />
+	<Unit Number="51" DelayTime="2000" Automata="3"  AIClassNormal="1"  AIClassMove="-1" AIClassAttack="51" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Tanker 1-1" />
+	<Unit Number="52" DelayTime="2000" Automata="3"  AIClassNormal="1"  AIClassMove="-1" AIClassAttack="52" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Tanker 1-2" />
+	<Unit Number="53" DelayTime="2000" Automata="3"  AIClassNormal="1"  AIClassMove="-1" AIClassAttack="53" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Tanker 2-1" />
+	<Unit Number="54" DelayTime="2000" Automata="3"  AIClassNormal="1"  AIClassMove="-1" AIClassAttack="54" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Tanker 2-2" />
+	<Unit Number="55" DelayTime="2000" Automata="3"  AIClassNormal="1"  AIClassMove="-1" AIClassAttack="55" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Tanker 3-1" />
+	<Unit Number="56" DelayTime="2000" Automata="3"  AIClassNormal="1"  AIClassMove="-1" AIClassAttack="56" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Tanker 3-2" />
+	<Unit Number="60" DelayTime="1000" Automata="7"  AIClassNormal="1"  AIClassMove="-1" AIClassAttack="-1" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="60" AIClassEvent="-1" Name="Maya Hand - Invisible" />
+	<Unit Number="61" DelayTime="2000" Automata="4"  AIClassNormal="1"  AIClassMove="65" AIClassAttack="61" AIClassHeal="-1" AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Maya Hand - General Attack" />
+	<Unit Number="62" DelayTime="2000" Automata="6"  AIClassNormal="1"  AIClassMove="65" AIClassAttack="64" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Maya Hand - Skill Fury" />
+	<Unit Number="63" DelayTime="800"  Automata="5"  AIClassNormal="1"  AIClassMove="65" AIClassAttack="62" AIClassHeal="-1" AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Maya Hand - Fast Attack" />
+	<Unit Number="64" DelayTime="2000" Automata="4"  AIClassNormal="1"  AIClassMove="65" AIClassAttack="61" AIClassHeal="-1" AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Maya Hand - General Attack" />
+	<Unit Number="65" DelayTime="800"  Automata="6"  AIClassNormal="1"  AIClassMove="65" AIClassAttack="64" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Maya Hand - Skill Fury" />
+	<Unit Number="66" DelayTime="1000" Automata="5"  AIClassNormal="1"  AIClassMove="65" AIClassAttack="62" AIClassHeal="-1" AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Maya Hand - Fast Attack" />
+	<Unit Number="67" DelayTime="300"  Automata="6"  AIClassNormal="1"  AIClassMove="65" AIClassAttack="63" AIClassHeal="-1" AIClassAvoid="4"  AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Maya Hand - Very Fast" />
+	<Unit Number="68" DelayTime="300"  Automata="8"  AIClassNormal="67" AIClassMove="67" AIClassAttack="73" AIClassHeal="-1" AIClassAvoid="70" AIClassHelp="66" AIClassSpecial="69" AIClassEvent="77" Name="Nightmare - State 1" />
+	<Unit Number="69" DelayTime="300"  Automata="9"  AIClassNormal="67" AIClassMove="67" AIClassAttack="74" AIClassHeal="-1" AIClassAvoid="71" AIClassHelp="66" AIClassSpecial="69" AIClassEvent="78" Name="Nightmare - State 2" />
+	<Unit Number="70" DelayTime="300"  Automata="12" AIClassNormal="67" AIClassMove="67" AIClassAttack="75" AIClassHeal="-1" AIClassAvoid="72" AIClassHelp="66" AIClassSpecial="69" AIClassEvent="79" Name="Nightmare - State 3" />
+	<Unit Number="71" DelayTime="300"  Automata="11" AIClassNormal="67" AIClassMove="67" AIClassAttack="76" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Nightmare - State 4" />
+	<Unit Number="72" DelayTime="300"  Automata="13" AIClassNormal="80" AIClassMove="81" AIClassAttack="82" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" Name="Normal Monster - State 1" />
+	<Unit Number="73" DelayTime="300"  Automata="14" AIClassNormal="80" AIClassMove="81" AIClassAttack="82" AIClassHeal="83" AIClassAvoid="-1" AIClassHelp="84" AIClassSpecial="-1" AIClassEvent="-1" Name="Healing - State 1" />
+</MonsterAI>

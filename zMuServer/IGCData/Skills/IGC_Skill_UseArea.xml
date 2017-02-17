@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// System designed to exclude special areas from general blockade of using skill, e.g. event waiting areas or safe zones
+// NOTE: System does not work for skills and areas blocked by game client side
+//
+// ### SkillUseArea::Skill ###
+//	ID: ID of a skill, refer to IGC_SkillList.xml (Index)
+//
+// ### SkillUseArea::Skill::Area ###
+//	MapNumber: Number of a map
+//	StartX: The Start X coordinate of area to allow usage of a skill
+//	StartY: The Start Y coordinate of area to allow usage of a skill
+//	EndX: The End X coordinate of area to allow usage of a skill
+//	EndY: The End Y coordinate of area to allow usage of a skill
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<SkillUseArea>
+	<Skill ID="26" Name="Heal">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="27" Name="Greater Defense">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="48" Name="Swell Life">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="63" Name="Summon">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="28" Name="Greater Damage">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="266" Name="Ignore Defense">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="267" Name="Increase Health">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="268" Name="Increase Block">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="16" Name="Soul Barrier">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+		<Skill ID="356" Name="Swell Life Strengthener">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="360" Name="Swell Life Proficiency">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="363" Name="Swell Life Mastery">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="403" Name="Soul Barrier Strengthener">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="404" Name="Soul Barrier Proficiency">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="413" Name="Heal Strengthener">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="426" Name="Party Healing">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+	<Skill ID="429" Name="Party Healing Strengthener">
+		<Area MapNumber="11" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 1 -->
+		<Area MapNumber="12" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 2 -->
+		<Area MapNumber="13" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 3 -->
+		<Area MapNumber="14" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 4 -->
+		<Area MapNumber="15" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 5 -->
+		<Area MapNumber="16" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 6 -->
+		<Area MapNumber="17" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 7 -->
+		<Area MapNumber="52" StartX="8" StartY="3" EndX="19" EndY="14" /> <!-- Blood Castle 8 -->
+		<Area MapNumber="18" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 1 -->
+		<Area MapNumber="19" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 2 -->
+		<Area MapNumber="20" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 3 -->
+		<Area MapNumber="21" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 4 -->
+		<Area MapNumber="22" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 5 -->
+		<Area MapNumber="23" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 6 -->
+		<Area MapNumber="53" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle 7 -->
+		<Area MapNumber="97" StartX="21" StartY="73" EndX="45" EndY="109" /> <!-- Chaos Castle Survival -->
+		<Area MapNumber="9" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 1-4 -->
+		<Area MapNumber="32" StartX="45" StartY="60" EndX="160" EndY="190" /> <!-- Devil Square 5-8 -->
+		<Area MapNumber="102" StartX="150" StartY="91" EndX="96" EndY="155" /> <!-- Tormented Square -->
+		<Area MapNumber="65" StartX="195" StartY="34" EndX="199" EndY="40" />  <!-- Double Goer Ice -->
+		<Area MapNumber="66" StartX="134" StartY="78" EndX="139" EndY="84" />  <!-- Double Goer Fire -->
+		<Area MapNumber="67" StartX="106" StartY="65" EndX="111" EndY="71" />  <!-- Double Goer Water -->
+		<Area MapNumber="68" StartX="93"  StartY="23" EndX="97"  EndY="25" /> <!-- Double Goer Ground -->
+		<Area MapNumber="45" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 1 ~ General waiting Zone -->
+		<Area MapNumber="46" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 2 ~ General waiting Zone -->
+		<Area MapNumber="47" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 3 ~ General waiting Zone -->
+		<Area MapNumber="48" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 4 ~ General waiting Zone -->
+		<Area MapNumber="49" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 5 ~ General waiting Zone -->
+		<Area MapNumber="50" StartX="94" StartY="126" EndX="110" EndY="141" /> <!-- Illusion Temple 6 ~ General waiting Zone -->
+		<Area MapNumber="45" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 1 ~ Team_1 waiting Zone -->
+		<Area MapNumber="46" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 2 ~ Team_1 waiting Zone -->
+		<Area MapNumber="47" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 3 ~ Team_1 waiting Zone -->
+		<Area MapNumber="48" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 4 ~ Team_1 waiting Zone -->
+		<Area MapNumber="49" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 5 ~ Team_1 waiting Zone -->
+		<Area MapNumber="50" StartX="189" StartY="122" EndX="202" EndY="130" /> <!-- Illusion Temple 6 ~ Team_1 waiting Zone -->
+		<Area MapNumber="45" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  1 ~ Team_2 waiting Zone -->
+		<Area MapNumber="46" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  2 ~ Team_2 waiting Zone -->
+		<Area MapNumber="47" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  3 ~ Team_2 waiting Zone -->
+		<Area MapNumber="48" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  4 ~ Team_2 waiting Zone -->
+		<Area MapNumber="49" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  5 ~ Team_2 waiting Zone -->
+		<Area MapNumber="50" StartX="138" StartY="37"  EndX="149" EndY="49" /> <!-- Illusion Temple  6 ~ Team_2 waiting Zone -->
+		<Area MapNumber="91" StartX="18" StartY="156" EndX="98" EndY="232" /> <!-- Arca Battle/Acheron Guardian waiting areas -->
+	</Skill>
+</SkillUseArea>

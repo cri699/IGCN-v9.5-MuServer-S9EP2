@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MonsterGPInfo::Monster ###
+//	Index: Index of a monster, refer to IGC_MonsterList.xml
+//	MapNumber: Map number a kill of specified monster will result in award of configured coin type and value, -1 for all maps
+//	CoinType:
+//		0: WCoin(C) - WCoin for Season 8 and later
+//		1: WCoin(P) - available for Season 6 only
+//		2: Goblin Point
+//	CoinValue: Amount of coins to award with
+//	Enable: Defines whether the configured entry is enabled or not, 0/1
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MonsterGPInfo>
+	<Monster Index="3" MapNumber="-1" CoinType="2" CoinValue="12" Enable="0" /> <!-- Example entry -->
+</MonsterGPInfo>

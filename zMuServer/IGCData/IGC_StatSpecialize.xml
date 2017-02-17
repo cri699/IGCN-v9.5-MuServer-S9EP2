@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### StatSpecialize::Option ###
+//	ID: Option ID
+//		~ 1: STAT_OPTION_INC_ATTACK_POWER
+//		~ 2: STAT_OPTION_INC_ATTACK_RATE
+//		~ 3: STAT_OPTION_INC_ATTACK_RATE_PVP
+//		~ 4: STAT_OPTION_INC_DEFENSE
+//		~ 5: STAT_OPTION_INC_ATTACK_SPEED
+//		~ 6: STAT_OPTION_INC_DEFENSE_RATE
+//		~ 7: STAT_OPTION_INC_DEFENSE_RATE_PVP
+//		~ 8: STAT_OPTION_INC_LIFE
+//		~ 9: STAT_OPTION_INC_MAGIC_DAMAGE
+//		~ 10: STAT_OPTION_INC_CURSE_DAMAGE
+//		~ 11: STAT_OPTION_INC_MANA
+//		~ 12: STAT_OPTION_INC_PET_DAMAGE
+//	DK: Defines if option of statistic specialize applies on specified class, Dark Knight, 0/1
+//	DW: Defines if option of statistic specialize applies on specified class, Dark Wizard, 0/1 
+//	Elf: Defines if option of statistic specialize applies on specified class, Fairy Elf, 0/1
+//	MG: Defines if option of statistic specialize applies on specified class, Magic Gladiator, 0/1
+//	DL: Defines if option of statistic specialize applies on specified class, Dark Lord, 0/1
+//	SU: Defines if option of statistic specialize applies on specified class, Summoner, 0/1
+//	RF: Defines if option of statistic specialize applies on specified class, Rage Fighter, 0/1
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ For extended configuration, formula and statistic type specialization refer to StatSpec.lua
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<StatSpecialize>
+	<Option ID="1" DK="1" DW="0" Elf="1" MG="1" DL="1" SU="0" RF="1" GL="1" />
+	<Option ID="2" DK="0" DW="1" Elf="0" MG="0" DL="0" SU="0" RF="0" GL="0" />
+	<Option ID="3" DK="0" DW="1" Elf="0" MG="0" DL="0" SU="0" RF="0" GL="0" />
+	<Option ID="4" DK="1" DW="0" Elf="0" MG="0" DL="1" SU="0" RF="0" GL="1" />
+	<Option ID="5" DK="0" DW="0" Elf="0" MG="0" DL="1" SU="0" RF="0" GL="0" />
+	<Option ID="6" DK="0" DW="0" Elf="1" MG="0" DL="0" SU="0" RF="0" GL="0" />
+	<Option ID="7" DK="0" DW="0" Elf="1" MG="0" DL="0" SU="0" RF="0" GL="0" />
+	<Option ID="8" DK="0" DW="0" Elf="0" MG="0" DL="0" SU="0" RF="0" GL="0" />
+	<Option ID="9" DK="0" DW="1" Elf="0" MG="1" DL="0" SU="1" RF="0" GL="0" />
+	<Option ID="10" DK="0" DW="0" Elf="0" MG="0" DL="0" SU="1" RF="0" GL="0" />
+	<Option ID="11" DK="0" DW="0" Elf="0" MG="0" DL="0" SU="0" RF="0" GL="0" />
+	<Option ID="12" DK="0" DW="0" Elf="0" MG="0" DL="0" SU="0" RF="0" GL="0" />
+</StatSpecialize>

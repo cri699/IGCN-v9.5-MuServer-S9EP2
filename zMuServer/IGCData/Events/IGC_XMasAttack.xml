@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### XMasAttack ###
+//	Enable: Activates or deactivates the event, 0/1
+//
+// ### XMasAttack::Time ###
+//	ToOpen: minutes
+//	PlayDuration: minutes
+//	ToClose: minutes
+//
+// ### XMasAttack::Move ###
+//	RandomSize: 
+//	Radius: 
+//	MaxRadius: 
+//
+// ### XMasAttack::Reward ###
+//	DropRate: 
+//	SantaBuffDuration:
+//	RestBuffDuration: 
+//
+// ### XMasAttack::Schedule::Start ###
+//	Hour: Start hour of the event, 0-23
+//	Minute: Start minute of the event: 0-59
+//
+// ### XMasAttack::SpawnSettings::Monster ###
+//	Index: Index of the monster, see MonsterList.xml
+//	Respawn: Determines if monster is re-spawning after kill, 0/1
+//	AttackFirst: Determines if monster attacks first or keeps walking until player hits him, 0/1
+//	Name: Name of the monster, used for logging and in-file description purpose
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<XMasAttack Enable="0">
+	<Time ToOpen="3" PlayDuration="10" ToClose="5" />
+	<Move RandomSize="5" MinRadius="3" MaxRadius="6" />
+	<Reward DropRate="10" SantaBuffDuration="1800" RestBuffDuration="1800" />
+
+	<Schedule>
+		<Start Hour="1"  Minute="20" />
+		<Start Hour="3"  Minute="20" />
+		<Start Hour="5"  Minute="20" />
+		<Start Hour="7"  Minute="20" />
+		<Start Hour="9"  Minute="20" />
+		<Start Hour="11" Minute="20" />
+		<Start Hour="13" Minute="20" />
+		<Start Hour="15" Minute="20" />
+		<Start Hour="17" Minute="20" />
+		<Start Hour="19" Minute="20" />
+		<Start Hour="21" Minute="20" />
+		<Start Hour="23" Minute="20" />
+	</Schedule>
+
+	<SpawnSettings>
+		<Monster Index="476" Respawn="0" AttackFirst="1" Name="Cursed Santa" />
+		<Monster Index="466" Respawn="0" AttackFirst="1" Name="Cursed Goblin" />
+		<Monster Index="466" Respawn="0" AttackFirst="1" Name="Cursed Goblin" />
+		<Monster Index="466" Respawn="0" AttackFirst="1" Name="Cursed Goblin" />
+		<Monster Index="466" Respawn="0" AttackFirst="1" Name="Cursed Goblin" />
+		<Monster Index="466" Respawn="0" AttackFirst="1" Name="Cursed Goblin" />
+		<Monster Index="466" Respawn="0" AttackFirst="1" Name="Cursed Goblin" />
+		<Monster Index="466" Respawn="0" AttackFirst="1" Name="Cursed Goblin" />
+		<Monster Index="466" Respawn="0" AttackFirst="1" Name="Cursed Goblin" />
+		<Monster Index="466" Respawn="0" AttackFirst="1" Name="Cursed Goblin" />
+		<Monster Index="466" Respawn="0" AttackFirst="1" Name="Cursed Goblin" />
+	</SpawnSettings>
+</XMasAttack>

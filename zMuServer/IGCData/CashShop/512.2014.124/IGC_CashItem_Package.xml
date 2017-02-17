@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### CashItemPackage::Package ###
+//	GUID: Order value, same as ItemSequence, starting from 0
+//	ID: ID of package, unique per ItemSequence sequence value
+//	ItemSequence: Value defining sequence of items in package, starting from 0
+//	UniqueID1: An identifier of item to be added to specified package, refer to UniqueID1 attribute from IGC_CashItem_List.xml
+//	UniqueID2: An identifier of item to be added to specified package, refer to UniqueID2 attribute from IGC_CashItem_List.xml
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<CashItemPackage>
+	<Package GUID="0" ID="8" ItemSequence="0" UniqueID1="229" UniqueID2="289" /> <!-- Rare Item Ticket 8_BLUE -->
+	<Package GUID="1" ID="8" ItemSequence="1" UniqueID1="239" UniqueID2="299" /> <!-- Seed (Lightning)_BLUE -->
+	<Package GUID="2" ID="8" ItemSequence="2" UniqueID1="240" UniqueID2="300" /> <!-- Seed (Earth)_BLUE -->
+	<Package GUID="3" ID="8" ItemSequence="3" UniqueID1="242" UniqueID2="302" /> <!-- Seed (Ice Mana)_BLUE -->
+	<Package GUID="4" ID="8" ItemSequence="4" UniqueID1="349" UniqueID2="418" /> <!-- Jewel of Chaos Bundle (30)_BLUE -->
+	<Package GUID="5" ID="8" ItemSequence="5" UniqueID1="350" UniqueID2="419" /> <!-- Jewel of Life Bundle (30)_BLUE -->
+	<Package GUID="0" ID="9" ItemSequence="0" UniqueID1="535" UniqueID2="622" /> <!-- Chaos Card GOLD_Bonus(1) -->
+	<Package GUID="1" ID="9" ItemSequence="1" UniqueID1="541" UniqueID2="628" /> <!-- Chaos Card GOLD_5 -->
+	<Package GUID="2" ID="9" ItemSequence="2" UniqueID1="542" UniqueID2="629" /> <!-- Chaos Card GOLD_4 -->
+	<Package GUID="3" ID="9" ItemSequence="3" UniqueID1="543" UniqueID2="630" /> <!-- Chaos Card GOLD_3 -->
+	<Package GUID="4" ID="9" ItemSequence="4" UniqueID1="544" UniqueID2="631" /> <!-- Chaos Card GOLD_2 -->
+	<Package GUID="5" ID="9" ItemSequence="5" UniqueID1="545" UniqueID2="632" /> <!-- Chaos Card GOLD_1 -->
+	<Package GUID="0" ID="10" ItemSequence="0" UniqueID1="530" UniqueID2="612" /> <!-- Chaos Card GOLD_Bonus(3) -->
+	<Package GUID="1" ID="10" ItemSequence="1" UniqueID1="534" UniqueID2="621" /> <!-- Chaos Card GOLD_Bonus(2) -->
+	<Package GUID="2" ID="10" ItemSequence="2" UniqueID1="535" UniqueID2="622" /> <!-- Chaos Card GOLD_Bonus(1) -->
+	<Package GUID="3" ID="10" ItemSequence="3" UniqueID1="536" UniqueID2="623" /> <!-- Chaos Card GOLD_10 -->
+	<Package GUID="4" ID="10" ItemSequence="4" UniqueID1="537" UniqueID2="624" /> <!-- Chaos Card GOLD_9 -->
+	<Package GUID="5" ID="10" ItemSequence="5" UniqueID1="538" UniqueID2="625" /> <!-- Chaos Card GOLD_8 -->
+	<Package GUID="6" ID="10" ItemSequence="6" UniqueID1="539" UniqueID2="626" /> <!-- Chaos Card GOLD_7 -->
+	<Package GUID="7" ID="10" ItemSequence="7" UniqueID1="540" UniqueID2="627" /> <!-- Chaos Card GOLD_6 -->
+	<Package GUID="8" ID="10" ItemSequence="8" UniqueID1="541" UniqueID2="628" /> <!-- Chaos Card GOLD_5 -->
+	<Package GUID="9" ID="10" ItemSequence="9" UniqueID1="542" UniqueID2="629" /> <!-- Chaos Card GOLD_4 -->
+	<Package GUID="10" ID="10" ItemSequence="10" UniqueID1="543" UniqueID2="630" /> <!-- Chaos Card GOLD_3 -->
+	<Package GUID="11" ID="10" ItemSequence="11" UniqueID1="544" UniqueID2="631" /> <!-- Chaos Card GOLD_2 -->
+	<Package GUID="12" ID="10" ItemSequence="12" UniqueID1="545" UniqueID2="632" /> <!-- Chaos Card GOLD_1 -->
+	<Package GUID="0" ID="11" ItemSequence="0" UniqueID1="548" UniqueID2="635" /> <!-- Chaos Card  Mini_Bonus(1) -->
+	<Package GUID="1" ID="11" ItemSequence="1" UniqueID1="554" UniqueID2="641" /> <!-- Chaos Card  Mini_5 -->
+	<Package GUID="2" ID="11" ItemSequence="2" UniqueID1="555" UniqueID2="642" /> <!-- Chaos Card  Mini_4 -->
+	<Package GUID="3" ID="11" ItemSequence="3" UniqueID1="556" UniqueID2="643" /> <!-- Chaos Card  Mini_3 -->
+	<Package GUID="4" ID="11" ItemSequence="4" UniqueID1="557" UniqueID2="644" /> <!-- Chaos Card  Mini_2 -->
+	<Package GUID="5" ID="11" ItemSequence="5" UniqueID1="558" UniqueID2="645" /> <!-- Chaos Card  Mini_1 -->
+	<Package GUID="0" ID="12" ItemSequence="0" UniqueID1="546" UniqueID2="633" /> <!-- Chaos Card  Mini_Bonus(3) -->
+	<Package GUID="1" ID="12" ItemSequence="1" UniqueID1="547" UniqueID2="634" /> <!-- Chaos Card  Mini_Bonus(2) -->
+	<Package GUID="2" ID="12" ItemSequence="2" UniqueID1="548" UniqueID2="635" /> <!-- Chaos Card  Mini_Bonus(1) -->
+	<Package GUID="3" ID="12" ItemSequence="3" UniqueID1="549" UniqueID2="636" /> <!-- Chaos Card  Mini_10 -->
+	<Package GUID="4" ID="12" ItemSequence="4" UniqueID1="550" UniqueID2="637" /> <!-- Chaos Card  Mini_9 -->
+	<Package GUID="5" ID="12" ItemSequence="5" UniqueID1="551" UniqueID2="638" /> <!-- Chaos Card  Mini_8 -->
+	<Package GUID="6" ID="12" ItemSequence="6" UniqueID1="552" UniqueID2="639" /> <!-- Chaos Card  Mini_7 -->
+	<Package GUID="7" ID="12" ItemSequence="7" UniqueID1="553" UniqueID2="640" /> <!-- Chaos Card  Mini_6 -->
+	<Package GUID="8" ID="12" ItemSequence="8" UniqueID1="554" UniqueID2="641" /> <!-- Chaos Card  Mini_5 -->
+	<Package GUID="9" ID="12" ItemSequence="9" UniqueID1="555" UniqueID2="642" /> <!-- Chaos Card  Mini_4 -->
+	<Package GUID="10" ID="12" ItemSequence="10" UniqueID1="556" UniqueID2="643" /> <!-- Chaos Card  Mini_3 -->
+	<Package GUID="11" ID="12" ItemSequence="11" UniqueID1="557" UniqueID2="644" /> <!-- Chaos Card  Mini_2 -->
+	<Package GUID="12" ID="12" ItemSequence="12" UniqueID1="558" UniqueID2="645" /> <!-- Chaos Card  Mini_1 -->
+	<Package GUID="0" ID="13" ItemSequence="0" UniqueID1="431" UniqueID2="500" /> <!-- Pet Panda (7 Day)_P -->
+	<Package GUID="1" ID="13" ItemSequence="1" UniqueID1="432" UniqueID2="501" /> <!-- Seal of Healing (7 Day)_P -->
+	<Package GUID="2" ID="13" ItemSequence="2" UniqueID1="433" UniqueID2="502" /> <!-- Bundle of Jewel of Bless (10)_P -->
+	<Package GUID="3" ID="13" ItemSequence="3" UniqueID1="434" UniqueID2="503" /> <!-- Bundle of Jewel of Soul (10)_P -->
+	<Package GUID="4" ID="13" ItemSequence="4" UniqueID1="439" UniqueID2="508" /> <!-- Scroll of Evil Spirit_P -->
+	<Package GUID="5" ID="13" ItemSequence="5" UniqueID1="455" UniqueID2="524" /> <!-- Scroll of Gigantic Storm_P -->
+	<Package GUID="6" ID="13" ItemSequence="6" UniqueID1="456" UniqueID2="525" /> <!-- Scroll of Cometfall_P -->
+	<Package GUID="7" ID="13" ItemSequence="7" UniqueID1="457" UniqueID2="526" /> <!-- Scroll of Flame Strike_P -->
+	<Package GUID="0" ID="14" ItemSequence="0" UniqueID1="431" UniqueID2="500" /> <!-- Pet Panda (7 Day)_P -->
+	<Package GUID="1" ID="14" ItemSequence="1" UniqueID1="432" UniqueID2="501" /> <!-- Seal of Healing (7 Day)_P -->
+	<Package GUID="2" ID="14" ItemSequence="2" UniqueID1="433" UniqueID2="502" /> <!-- Bundle of Jewel of Bless (10)_P -->
+	<Package GUID="3" ID="14" ItemSequence="3" UniqueID1="434" UniqueID2="503" /> <!-- Bundle of Jewel of Soul (10)_P -->
+	<Package GUID="4" ID="14" ItemSequence="4" UniqueID1="451" UniqueID2="520" /> <!-- Scroll of Multi Shot_P -->
+	<Package GUID="5" ID="14" ItemSequence="5" UniqueID1="452" UniqueID2="521" /> <!-- Orb of Ice Arrow_P -->
+	<Package GUID="6" ID="14" ItemSequence="6" UniqueID1="453" UniqueID2="522" /> <!-- Orb of Penetration_P -->
+	<Package GUID="7" ID="14" ItemSequence="7" UniqueID1="454" UniqueID2="523" /> <!-- Orb of Recovery_P -->
+	<Package GUID="0" ID="15" ItemSequence="0" UniqueID1="431" UniqueID2="500" /> <!-- Pet Panda (7 Day)_P -->
+	<Package GUID="1" ID="15" ItemSequence="1" UniqueID1="432" UniqueID2="501" /> <!-- Seal of Healing (7 Day)_P -->
+	<Package GUID="2" ID="15" ItemSequence="2" UniqueID1="433" UniqueID2="502" /> <!-- Bundle of Jewel of Bless (10)_P -->
+	<Package GUID="3" ID="15" ItemSequence="3" UniqueID1="434" UniqueID2="503" /> <!-- Bundle of Jewel of Soul (10)_P -->
+	<Package GUID="4" ID="15" ItemSequence="4" UniqueID1="447" UniqueID2="516" /> <!-- Increase Health Parchment_P -->
+	<Package GUID="5" ID="15" ItemSequence="5" UniqueID1="448" UniqueID2="517" /> <!-- Dark Side Parchment_P -->
+	<Package GUID="6" ID="15" ItemSequence="6" UniqueID1="449" UniqueID2="518" /> <!-- Dragon Slasher Parchment_P -->
+	<Package GUID="7" ID="15" ItemSequence="7" UniqueID1="450" UniqueID2="519" /> <!-- Increase Block Parchment_P -->
+	<Package GUID="0" ID="16" ItemSequence="0" UniqueID1="431" UniqueID2="500" /> <!-- Pet Panda (7 Day)_P -->
+	<Package GUID="1" ID="16" ItemSequence="1" UniqueID1="432" UniqueID2="501" /> <!-- Seal of Healing (7 Day)_P -->
+	<Package GUID="2" ID="16" ItemSequence="2" UniqueID1="433" UniqueID2="502" /> <!-- Bundle of Jewel of Bless (10)_P -->
+	<Package GUID="3" ID="16" ItemSequence="3" UniqueID1="434" UniqueID2="503" /> <!-- Bundle of Jewel of Soul (10)_P -->
+	<Package GUID="4" ID="16" ItemSequence="4" UniqueID1="443" UniqueID2="512" /> <!-- Chain Lightning Parchment_P -->
+	<Package GUID="5" ID="16" ItemSequence="5" UniqueID1="444" UniqueID2="513" /> <!-- Damage Reflection Parchment_P -->
+	<Package GUID="6" ID="16" ItemSequence="6" UniqueID1="445" UniqueID2="514" /> <!-- Berserker Parchment_P -->
+	<Package GUID="7" ID="16" ItemSequence="7" UniqueID1="446" UniqueID2="515" /> <!-- Lightning Shock Parchment_P -->
+	<Package GUID="0" ID="17" ItemSequence="0" UniqueID1="431" UniqueID2="500" /> <!-- Pet Panda (7 Day)_P -->
+	<Package GUID="1" ID="17" ItemSequence="1" UniqueID1="432" UniqueID2="501" /> <!-- Seal of Healing (7 Day)_P -->
+	<Package GUID="2" ID="17" ItemSequence="2" UniqueID1="433" UniqueID2="502" /> <!-- Bundle of Jewel of Bless (10)_P -->
+	<Package GUID="3" ID="17" ItemSequence="3" UniqueID1="434" UniqueID2="503" /> <!-- Bundle of Jewel of Soul (10)_P -->
+	<Package GUID="4" ID="17" ItemSequence="4" UniqueID1="439" UniqueID2="508" /> <!-- Scroll of Evil Spirit_P -->
+	<Package GUID="5" ID="17" ItemSequence="5" UniqueID1="440" UniqueID2="509" /> <!-- Scroll of Expansion of Wizardry_P -->
+	<Package GUID="6" ID="17" ItemSequence="6" UniqueID1="441" UniqueID2="510" /> <!-- Scroll of Nova_P -->
+	<Package GUID="7" ID="17" ItemSequence="7" UniqueID1="442" UniqueID2="511" /> <!-- Scroll of Soul Barrior_P -->
+	<Package GUID="0" ID="18" ItemSequence="0" UniqueID1="431" UniqueID2="500" /> <!-- Pet Panda (7 Day)_P -->
+	<Package GUID="1" ID="18" ItemSequence="1" UniqueID1="432" UniqueID2="501" /> <!-- Seal of Healing (7 Day)_P -->
+	<Package GUID="2" ID="18" ItemSequence="2" UniqueID1="433" UniqueID2="502" /> <!-- Bundle of Jewel of Bless (10)_P -->
+	<Package GUID="3" ID="18" ItemSequence="3" UniqueID1="434" UniqueID2="503" /> <!-- Bundle of Jewel of Soul (10)_P -->
+	<Package GUID="4" ID="18" ItemSequence="4" UniqueID1="435" UniqueID2="504" /> <!-- Orb of Strike of Destruction_P -->
+	<Package GUID="5" ID="18" ItemSequence="5" UniqueID1="436" UniqueID2="505" /> <!-- Orb of Rageful Blow_P -->
+	<Package GUID="6" ID="18" ItemSequence="6" UniqueID1="437" UniqueID2="506" /> <!-- Orb of Death Stab_P -->
+	<Package GUID="7" ID="18" ItemSequence="7" UniqueID1="438" UniqueID2="507" /> <!-- Orb of Swell Life_P -->
+</CashItemPackage>

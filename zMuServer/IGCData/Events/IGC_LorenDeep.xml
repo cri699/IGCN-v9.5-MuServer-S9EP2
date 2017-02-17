@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### LorenDeepEvent ###
+//	Enable: Activates or deactivates the event, 0/1
+//
+// ### LorenDeepEvent::Schedule::Start ###
+//	Hour: Start hour of the event, 0-23
+//	Minute: Start minute of the event, 0-60
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ section accepts multiple schedules
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### LorenDeepEvent::AssaultTypeSettings::Assault ###
+//	Type: Type of Assault, starting from 1
+//	AppearanceRate: Chance of appearance of the assault type
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ AppearanceRate value is 1-100.
+//~~ Total of all AppearanceRate must be equal to 100
+//~~ Section accepts own type definitions
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### LorenDeepEvent::AssaultGroupSettings::Assault ###
+//	Type: Type of assault the Monster Group refers to
+//	MonsterGroup: Monster Group number (per assault type), starting from 1
+//	SpawnTime: Time of the event to spawn the Monster Group, 
+//
+// ### LorenDeepEvent::AssaultGroupMember::Assault ###
+//	Type: Type of assault referring to (defined in previous section)
+//	MonsterGroup: Monster Group referring to (defined in previous section)
+//	MonsterIndex: Index of a Monster to define for the MonsterGroup (MonsterList.xml)
+//	MonsterCount: Count of the monsters to spawn
+//	StartX: Start X coordinate for the monster spawn area 
+//	StartY: Start Y coordinate for the monster spawn area 
+//	EndX: End X coordinate for the monster spawn area 
+//	EndY: End Y coordinate for the monster spawn area 
+//	
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<LorenDeepEvent Enable="1">
+	<Schedule>
+		<Start Hour="20" Minute="0" />
+	</Schedule>
+
+	<AssaultTypeSettings>
+		<Assault Type="1" AppearanceRate="50" /> <!-- Common Assault -->
+		<Assault Type="2" AppearanceRate="50" /> <!-- Special Raid -->
+	</AssaultTypeSettings>
+
+	<AssaultGroupSettings>
+		<Assault Type="1" MonsterGroup="1" SpawnTime="0" />
+		<Assault Type="1" MonsterGroup="2" SpawnTime="10" />
+		<Assault Type="1" MonsterGroup="3" SpawnTime="20" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Assault Type="2" MonsterGroup="1" SpawnTime="0" />
+		<Assault Type="2" MonsterGroup="2" SpawnTime="10" />
+		<Assault Type="2" MonsterGroup="3" SpawnTime="20" />
+	</AssaultGroupSettings>
+
+	<AssaultGroupMember>
+		<Assault Type="1" MonsterGroup="1" MonsterIndex="39"  MonsterCount="40" StartX="60" StartY="28" EndX="132" EndY="73" />
+		<Assault Type="1" MonsterGroup="1" MonsterIndex="34"  MonsterCount="40" StartX="60" StartY="28" EndX="132" EndY="73" />
+		<Assault Type="1" MonsterGroup="1" MonsterIndex="41"  MonsterCount="40" StartX="60" StartY="28" EndX="132" EndY="73" />
+		<Assault Type="1" MonsterGroup="1" MonsterIndex="37"  MonsterCount="40" StartX="60" StartY="28" EndX="132" EndY="73" />
+		<Assault Type="1" MonsterGroup="1" MonsterIndex="40"  MonsterCount="40" StartX="60" StartY="28" EndX="132" EndY="73" />
+		<Assault Type="1" MonsterGroup="1" MonsterIndex="35"  MonsterCount="40" StartX="60" StartY="28" EndX="132" EndY="73" />
+		<Assault Type="1" MonsterGroup="1" MonsterIndex="48"  MonsterCount="40" StartX="60" StartY="28" EndX="132" EndY="73" />
+		<Assault Type="1" MonsterGroup="1" MonsterIndex="62"  MonsterCount="40" StartX="60" StartY="28" EndX="132" EndY="73" />
+		<Assault Type="1" MonsterGroup="1" MonsterIndex="300" MonsterCount="1"  StartX="60" StartY="28" EndX="132" EndY="73" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Assault Type="1" MonsterGroup="2" MonsterIndex="69"  MonsterCount="40" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="2" MonsterIndex="60"  MonsterCount="40" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="2" MonsterIndex="71"  MonsterCount="40" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="2" MonsterIndex="57"  MonsterCount="40" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="2" MonsterIndex="70"  MonsterCount="40" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="2" MonsterIndex="58"  MonsterCount="40" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="2" MonsterIndex="61"  MonsterCount="40" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="2" MonsterIndex="73"  MonsterCount="40" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="2" MonsterIndex="74"  MonsterCount="40" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="2" MonsterIndex="72"  MonsterCount="40" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="2" MonsterIndex="301" MonsterCount="1"  StartX="60" StartY="58" EndX="132" EndY="101" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Assault Type="1" MonsterGroup="3" MonsterIndex="49"  MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="3" MonsterIndex="139" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="3" MonsterIndex="123" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="3" MonsterIndex="59"  MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="3" MonsterIndex="74"  MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="3" MonsterIndex="63"  MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="3" MonsterIndex="293" MonsterCount="50" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="3" MonsterIndex="292" MonsterCount="50" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="3" MonsterIndex="291" MonsterCount="50" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="1" MonsterGroup="3" MonsterIndex="303" MonsterCount="1"  StartX="60" StartY="58" EndX="132" EndY="101" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Assault Type="2" MonsterGroup="1" MonsterIndex="39"  MonsterCount="30" StartX="60" StartY="28" EndX="132" EndY="73 " />
+		<Assault Type="2" MonsterGroup="1" MonsterIndex="34"  MonsterCount="30" StartX="60" StartY="28" EndX="132" EndY="73 " />
+		<Assault Type="2" MonsterGroup="1" MonsterIndex="41"  MonsterCount="30" StartX="60" StartY="28" EndX="132" EndY="73 " />
+		<Assault Type="2" MonsterGroup="1" MonsterIndex="37"  MonsterCount="30" StartX="60" StartY="28" EndX="132" EndY="73 " />
+		<Assault Type="2" MonsterGroup="1" MonsterIndex="40"  MonsterCount="30" StartX="60" StartY="28" EndX="132" EndY="73 " />
+		<Assault Type="2" MonsterGroup="1" MonsterIndex="35"  MonsterCount="30" StartX="60" StartY="28" EndX="132" EndY="73 " />
+		<Assault Type="2" MonsterGroup="1" MonsterIndex="48"  MonsterCount="30" StartX="60" StartY="28" EndX="132" EndY="73 " />
+		<Assault Type="2" MonsterGroup="1" MonsterIndex="62"  MonsterCount="30" StartX="60" StartY="28" EndX="132" EndY="73 " />
+		<Assault Type="2" MonsterGroup="1" MonsterIndex="300" MonsterCount="1"  StartX="60" StartY="28" EndX="132" EndY="73 " />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Assault Type="2" MonsterGroup="2" MonsterIndex="294" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="2" MonsterIndex="290" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="2" MonsterIndex="193" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="2" MonsterIndex="194" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="2" MonsterIndex="192" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="2" MonsterIndex="190" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="2" MonsterIndex="195" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="2" MonsterIndex="61"  MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="2" MonsterIndex="73"  MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="2" MonsterIndex="127" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="2" MonsterIndex="302" MonsterCount="1"  StartX="60" StartY="58" EndX="132" EndY="101" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Assault Type="2" MonsterGroup="3" MonsterIndex="49"  MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="3" MonsterIndex="139" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="3" MonsterIndex="123" MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="3" MonsterIndex="59"  MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="3" MonsterIndex="74"  MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="3" MonsterIndex="63"  MonsterCount="30" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="3" MonsterIndex="293" MonsterCount="50" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="3" MonsterIndex="292" MonsterCount="50" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="3" MonsterIndex="291" MonsterCount="50" StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="3" MonsterIndex="303" MonsterCount="1"  StartX="60" StartY="58" EndX="132" EndY="101" />
+		<Assault Type="2" MonsterGroup="3" MonsterIndex="295" MonsterCount="1"  StartX="60" StartY="58" EndX="132" EndY="101" />
+	</AssaultGroupMember>
+</LorenDeepEvent>

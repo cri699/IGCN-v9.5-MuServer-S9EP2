@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<MonsterAI>
+	<Group Number="1"  GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="11" AI02="31" AI03="2" CreateType="0" MapNumber="34" StartX="110" StartY="77" Dir="-1" RegenType="1" />
+	<Group Number="1"  GUID="1" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="108" StartY="73" Dir="-1" RegenType="1" />
+	<Group Number="1"  GUID="2" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="110" StartY="73" Dir="-1" RegenType="1" />
+	<Group Number="1"  GUID="3" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="112" StartY="73" Dir="-1" RegenType="1" />
+	<Group Number="1"  GUID="4" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="109" StartY="75" Dir="-1" RegenType="1" />
+	<Group Number="1"  GUID="5" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="111" StartY="75" Dir="-1" RegenType="1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="2"  GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="12" AI02="32" AI03="2" CreateType="0" MapNumber="34" StartX="125" StartY="77" Dir="-1" RegenType="1" />
+	<Group Number="2"  GUID="1" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="125" StartY="73" Dir="-1" RegenType="1" />
+	<Group Number="2"  GUID="2" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="123" StartY="73" Dir="-1" RegenType="1" />
+	<Group Number="2"  GUID="3" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="127" StartY="73" Dir="-1" RegenType="1" />
+	<Group Number="2"  GUID="4" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="124" StartY="75" Dir="-1" RegenType="1" />
+	<Group Number="2"  GUID="5" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="126" StartY="75" Dir="-1" RegenType="1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="3"  GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="13" AI02="33" AI03="2" CreateType="0" MapNumber="34" StartX="119" StartY="83" Dir="-1" RegenType="1" />
+	<Group Number="3"  GUID="1" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="119" StartY="77" Dir="-1" RegenType="1" />
+	<Group Number="3"  GUID="2" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="117" StartY="77" Dir="-1" RegenType="1" />
+	<Group Number="3"  GUID="3" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="121" StartY="77" Dir="-1" RegenType="1" />
+	<Group Number="3"  GUID="4" MonsterIndex="344" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="118" StartY="79" Dir="-1" RegenType="1" />
+	<Group Number="3"  GUID="5" MonsterIndex="344" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="120" StartY="79" Dir="-1" RegenType="1" />
+	<Group Number="3"  GUID="6" MonsterIndex="345" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="116" StartY="81" Dir="-1" RegenType="1" />
+	<Group Number="3"  GUID="7" MonsterIndex="345" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="119" StartY="81" Dir="-1" RegenType="1" />
+	<Group Number="3"  GUID="8" MonsterIndex="345" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="122" StartY="81" Dir="-1" RegenType="1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="4"  GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="14" AI02="34" AI03="2" CreateType="0" MapNumber="34" StartX="119" StartY="87" Dir="-1" RegenType="1" />
+	<Group Number="4"  GUID="1" MonsterIndex="344" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="119" StartY="90" Dir="-1" RegenType="1" />
+	<Group Number="4"  GUID="2" MonsterIndex="348" Rank="-1" StartAI="10" AI01="51" AI02="51" AI03="51" CreateType="0" MapNumber="34" StartX="122" StartY="90" Dir="-1" RegenType="-1" />
+	<Group Number="4"  GUID="3" MonsterIndex="348" Rank="-1" StartAI="10" AI01="52" AI02="52" AI03="52" CreateType="0" MapNumber="34" StartX="116" StartY="90" Dir="-1" RegenType="-1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="5"  GUID="0" MonsterIndex="349" Rank="0" StartAI="4" AI01="4" AI02="4" AI03="4" CreateType="0" MapNumber="34" StartX="110" StartY="79" Dir="-1" RegenType="1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="6"  GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="15" AI02="35" AI03="2" CreateType="0" MapNumber="34" StartX="77" StartY="28" Dir="-1" RegenType="1" />
+	<Group Number="6"  GUID="1" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="81" StartY="25" Dir="-1" RegenType="1" />
+	<Group Number="6"  GUID="2" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="81" StartY="27" Dir="-1" RegenType="1" />
+	<Group Number="6"  GUID="3" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="81" StartY="29" Dir="-1" RegenType="1" />
+	<Group Number="6"  GUID="4" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="79" StartY="26" Dir="-1" RegenType="1" />
+	<Group Number="6"  GUID="5" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="79" StartY="28" Dir="-1" RegenType="1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="7"  GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="16" AI02="36" AI03="2" CreateType="0" MapNumber="34" StartX="77" StartY="42" Dir="-1" RegenType="1" />
+	<Group Number="7"  GUID="1" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="79" StartY="38" Dir="-1" RegenType="1" />
+	<Group Number="7"  GUID="2" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="81" StartY="37" Dir="-1" RegenType="1" />
+	<Group Number="7"  GUID="3" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="81" StartY="39" Dir="-1" RegenType="1" />
+	<Group Number="7"  GUID="4" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="81" StartY="41" Dir="-1" RegenType="1" />
+	<Group Number="7"  GUID="5" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="79" StartY="40" Dir="-1" RegenType="1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="8"  GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="17" AI02="37" AI03="2" CreateType="0" MapNumber="34" StartX="70" StartY="34" Dir="-1" RegenType="1" />
+	<Group Number="8"  GUID="1" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="77" StartY="31" Dir="-1" RegenType="1" />
+	<Group Number="8"  GUID="2" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="77" StartY="33" Dir="-1" RegenType="1" />
+	<Group Number="8"  GUID="3" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="77" StartY="35" Dir="-1" RegenType="1" />
+	<Group Number="8"  GUID="4" MonsterIndex="344" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="75" StartY="32" Dir="-1" RegenType="1" />
+	<Group Number="8"  GUID="5" MonsterIndex="344" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="75" StartY="34" Dir="-1" RegenType="1" />
+	<Group Number="8"  GUID="6" MonsterIndex="345" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="73" StartY="33" Dir="-1" RegenType="1" />
+	<Group Number="8"  GUID="7" MonsterIndex="345" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="73" StartY="29" Dir="-1" RegenType="1" />
+	<Group Number="8"  GUID="8" MonsterIndex="345" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="73" StartY="37" Dir="-1" RegenType="1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="9"  GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="18" AI02="38" AI03="2" CreateType="0" MapNumber="34" StartX="65" StartY="34" Dir="-1" RegenType="1" />
+	<Group Number="9"  GUID="1" MonsterIndex="344" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="62" StartY="34" Dir="-1" RegenType="1" />
+	<Group Number="9"  GUID="2" MonsterIndex="348" Rank="-1" StartAI="10" AI01="53" AI02="53" AI03="53" CreateType="0" MapNumber="34" StartX="62" StartY="37" Dir="-1" RegenType="-1" />
+	<Group Number="9"  GUID="3" MonsterIndex="348" Rank="-1" StartAI="10" AI01="54" AI02="54" AI03="54" CreateType="0" MapNumber="34" StartX="62" StartY="31" Dir="-1" RegenType="-1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="10" GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="19" AI02="39" AI03="2" CreateType="0" MapNumber="34" StartX="167" StartY="27" Dir="-1" RegenType="1" />
+	<Group Number="10" GUID="1" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="163" StartY="29" Dir="-1" RegenType="1" />
+	<Group Number="10" GUID="2" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="163" StartY="27" Dir="-1" RegenType="1" />
+	<Group Number="10" GUID="3" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="163" StartY="25" Dir="-1" RegenType="1" />
+	<Group Number="10" GUID="4" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="165" StartY="26" Dir="-1" RegenType="1" />
+	<Group Number="10" GUID="5" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="165" StartY="28" Dir="-1" RegenType="1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="11" GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="20" AI02="40" AI03="2" CreateType="0" MapNumber="34" StartX="167" StartY="39" Dir="-1" RegenType="1" />
+	<Group Number="11" GUID="1" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="165" StartY="38" Dir="-1" RegenType="1" />
+	<Group Number="11" GUID="2" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="163" StartY="37" Dir="-1" RegenType="1" />
+	<Group Number="11" GUID="3" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="163" StartY="39" Dir="-1" RegenType="1" />
+	<Group Number="11" GUID="4" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="165" StartY="40" Dir="-1" RegenType="1" />
+	<Group Number="11" GUID="5" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="163" StartY="41" Dir="-1" RegenType="1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="12" GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="21" AI02="41" AI03="2" CreateType="0" MapNumber="34" StartX="174" StartY="33" Dir="-1" RegenType="1" />
+	<Group Number="12" GUID="1" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="167" StartY="35" Dir="-1" RegenType="1" />
+	<Group Number="12" GUID="2" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="167" StartY="33" Dir="-1" RegenType="1" />
+	<Group Number="12" GUID="3" MonsterIndex="341" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="167" StartY="31" Dir="-1" RegenType="1" />
+	<Group Number="12" GUID="4" MonsterIndex="344" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="169" StartY="32" Dir="-1" RegenType="1" />
+	<Group Number="12" GUID="5" MonsterIndex="344" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="169" StartY="34" Dir="-1" RegenType="1" />
+	<Group Number="12" GUID="6" MonsterIndex="345" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="171" StartY="33" Dir="-1" RegenType="1" />
+	<Group Number="12" GUID="7" MonsterIndex="345" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="171" StartY="30" Dir="-1" RegenType="1" />
+	<Group Number="12" GUID="8" MonsterIndex="345" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="171" StartY="36" Dir="-1" RegenType="1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="13" GUID="0" MonsterIndex="340" Rank="0" StartAI="10" AI01="22" AI02="42" AI03="2" CreateType="0" MapNumber="34" StartX="179" StartY="33" Dir="-1" RegenType="1" />
+	<Group Number="13" GUID="1" MonsterIndex="344" Rank="-1" StartAI="10" AI01="1" AI02="1" AI03="1" CreateType="0" MapNumber="34" StartX="183" StartY="33" Dir="-1" RegenType="1" />
+	<Group Number="13" GUID="2" MonsterIndex="348" Rank="-1" StartAI="10" AI01="55" AI02="55" AI03="55" CreateType="0" MapNumber="34" StartX="183" StartY="36" Dir="-1" RegenType="-1" />
+	<Group Number="13" GUID="3" MonsterIndex="348" Rank="-1" StartAI="10" AI01="56" AI02="56" AI03="56" CreateType="0" MapNumber="34" StartX="183" StartY="30" Dir="-1" RegenType="-1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="20" GUID="0" MonsterIndex="362" Rank="0" StartAI="60" AI01="61" AI02="62" AI03="63" CreateType="0" MapNumber="39" StartX="202" StartY="83" Dir="2" RegenType="-1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="21" GUID="0" MonsterIndex="363" Rank="0" StartAI="60" AI01="61" AI02="62" AI03="63" CreateType="0" MapNumber="39" StartX="189" StartY="82" Dir="2" RegenType="-1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="22" GUID="0" MonsterIndex="362" Rank="0" StartAI="60" AI01="64" AI02="65" AI03="67" CreateType="0" MapNumber="39" StartX="202" StartY="83" Dir="2" RegenType="-1" />
+	<Group Number="22" GUID="1" MonsterIndex="363" Rank="-1" StartAI="60" AI01="64" AI02="66" AI03="67" CreateType="0" MapNumber="39" StartX="189" StartY="82" Dir="2" RegenType="-1" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Group Number="23" GUID="0" MonsterIndex="361" Rank="0" StartAI="68" AI01="69" AI02="70" AI03="71" CreateType="0" MapNumber="39" StartX="78" StartY="141" Dir="2" RegenType="-1" />
+</MonsterAI>

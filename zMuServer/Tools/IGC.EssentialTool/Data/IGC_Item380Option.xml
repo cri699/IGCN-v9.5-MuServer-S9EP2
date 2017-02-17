@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ItemOptionManager::Section ###
+//	ID: ID a section.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Section 0 is always used for 380 item options only. Items stored within single section cannot be used simultaneously
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ItemOptionManager::Section::Item ###
+//	Cat: Category of an item, refer to ItemList.xml
+//	Index: Index of an item, refer to ItemList.xml
+//	Option1: Index/Number of first option, refer to BuffEffectManager.cfg and in-file description
+//	Value1: Value for Option1
+//	Option2: Index/Number of second option, refer to BuffEffectManager.cfg and in-file description
+//	Value2: Value for Option2
+//	Time: Time/Duration of option effect. Not used in section 0, expressed in seconds
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<Item380Option>
+	<Mix Enable="1" JewelOfHarmonyCount="1" JewelOfGuardianCount="1" ReqMoney="10000000">
+		<SuccessRate Grade1="50" Grade2="60" Grade3="70" Grade4="80" /> <!-- Grade1: Level 1-6, Grade2: Level 7-9, Grade3: Level 10-13, Grade4: Level 14-15 -->
+	</Mix>
+<!--
+// Options for 380 Level Items :
+//	0: No Option
+//	1: Attack Success Rate increase +%d (PvP)
+//	2: Additional Damage +%d (PvP)
+//	3: Defense Success Rate increase +%d (PvP)
+//	4: Defensive Skill +%d (PvP)
+//	5: Max HP increase +%d
+//	6: Max SD increase +%d
+//	7: SD Auto Recovery
+//	8: SD Recovery Rate increase +%d
+-->
+	<ItemOption> <!-- Used to define 380 level item options only, time is unused in this section -->
+		<Item Cat="0" Index="22" Option1="2" Value1="200" Option2="1" Value2="10" Time="0" /> <!-- Explosion Blade -->
+		<Item Cat="0" Index="23" Option1="2" Value1="200" Option2="1" Value2="10" Time="0" /> <!-- Daybreak -->
+		<Item Cat="4" Index="21" Option1="2" Value1="200" Option2="1" Value2="10" Time="0" /> <!-- Sylph Wind Bow -->
+		<Item Cat="5" Index="12" Option1="2" Value1="200" Option2="1" Value2="10" Time="0" /> <!-- Grand Viper Staff -->
+		<Item Cat="2" Index="14" Option1="2" Value1="200" Option2="1" Value2="10" Time="0" /> <!-- Soleil Scepter -->
+		<Item Cat="7" Index="29" Option1="8" Value1="20" Option2="3" Value2="10" Time="0" /> <!-- Dragon Knight Helm -->
+		<Item Cat="7" Index="30" Option1="8" Value1="20" Option2="3" Value2="10" Time="0" /> <!-- Venom Mist Helm -->
+		<Item Cat="7" Index="31" Option1="8" Value1="20" Option2="3" Value2="10" Time="0" /> <!-- Sylphid Ray Helm -->
+		<Item Cat="7" Index="33" Option1="8" Value1="20" Option2="3" Value2="10" Time="0" /> <!-- Sunlight Mask -->
+		<Item Cat="8" Index="29" Option1="7" Value1="0" Option2="3" Value2="10" Time="0" /> <!-- Dragon Knight Armor -->
+		<Item Cat="8" Index="30" Option1="7" Value1="0" Option2="3" Value2="10" Time="0" /> <!-- Venom Mist Armor -->
+		<Item Cat="8" Index="31" Option1="7" Value1="0" Option2="3" Value2="10" Time="0" /> <!-- Sylphid Ray Armor -->
+		<Item Cat="8" Index="32" Option1="7" Value1="0" Option2="3" Value2="10" Time="0" /> <!-- Volcano Armor -->
+		<Item Cat="8" Index="33" Option1="7" Value1="0" Option2="3" Value2="10" Time="0" /> <!-- Sunlight Armor -->
+		<Item Cat="9" Index="29" Option1="4" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Dragon Knight Pants -->
+		<Item Cat="9" Index="30" Option1="4" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Venom Mist Pants -->
+		<Item Cat="9" Index="31" Option1="4" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Sylphid Ray Pants -->
+		<Item Cat="9" Index="32" Option1="4" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Volcano Pants -->
+		<Item Cat="9" Index="33" Option1="4" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Sunlight Pants -->
+		<Item Cat="10" Index="29" Option1="5" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Dragon Knight Gloves -->
+		<Item Cat="10" Index="30" Option1="5" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Venom Mist Gloves -->
+		<Item Cat="10" Index="31" Option1="5" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Sylphid Ray Gloves -->
+		<Item Cat="10" Index="32" Option1="5" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Volcano Gloves -->
+		<Item Cat="10" Index="33" Option1="5" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Sunlight Gloves -->
+		<Item Cat="11" Index="29" Option1="6" Value1="700" Option2="3" Value2="10" Time="0" /> <!-- Dragon Knight Boots -->
+		<Item Cat="11" Index="30" Option1="6" Value1="700" Option2="3" Value2="10" Time="0" /> <!-- Venom Mist Boots -->
+		<Item Cat="11" Index="31" Option1="6" Value1="700" Option2="3" Value2="10" Time="0" /> <!-- Sylphid Ray Boots -->
+		<Item Cat="11" Index="32" Option1="6" Value1="700" Option2="3" Value2="10" Time="0" /> <!-- Volcano Boots -->
+		<Item Cat="11" Index="33" Option1="6" Value1="700" Option2="3" Value2="10" Time="0" /> <!-- Sunlight Boots -->
+		<Item Cat="5" Index="19" Option1="2" Value1="200" Option2="1" Value2="10" Time="0" /> <!-- Storm Blitz Stick -->
+		<Item Cat="7" Index="43" Option1="8" Value1="20" Option2="3" Value2="10" Time="0" /> <!-- Storm Blitz Helm -->
+		<Item Cat="8" Index="43" Option1="7" Value1="0" Option2="3" Value2="10" Time="0" /> <!-- Storm Blitz Armor -->
+		<Item Cat="9" Index="43" Option1="4" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Storm Blitz Pants -->
+		<Item Cat="10" Index="43" Option1="5" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Storm Blitz Gloves -->
+		<Item Cat="11" Index="43" Option1="6" Value1="700" Option2="3" Value2="10" Time="0" /> <!-- Storm Blitz Boots -->
+		<Item Cat="0" Index="35" Option1="2" Value1="200" Option2="1" Value2="10" Time="0" /> <!-- Phoenix Soul Star -->
+		<Item Cat="7" Index="73" Option1="8" Value1="20" Option2="3" Value2="10" Time="0" /> <!-- Phoenix Soul Helmet -->
+		<Item Cat="8" Index="73" Option1="7" Value1="0" Option2="3" Value2="10" Time="0" /> <!-- Phoenix Soul Armor -->
+		<Item Cat="9" Index="73" Option1="4" Value1="200" Option2="3" Value2="10" Time="0" /> <!-- Phoenix Soul Pants -->
+		<Item Cat="11" Index="73" Option1="6" Value1="700" Option2="3" Value2="10" Time="0" /> <!-- Phoenix Soul Boots -->
+	</ItemOption>
+</Item380Option>

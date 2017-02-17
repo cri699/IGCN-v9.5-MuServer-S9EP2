@@ -1,0 +1,3500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Monster Indexes affected with settings below
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//		~ 529-539
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Do not modify Doppel Ganger event monsters settings via
+//~~ IGC_MonsterList.xml, use multipliers below. All values for
+//~~ the above defined indexes are set to 1 in IGC_MonsterList.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### DoppelGanger::Range ###
+//	MaxPlayerLevel: Maximum player level (total) the settings of the range will be applied to
+//
+// ### DoppelGanger::Range::MonsterLevel::Player ###
+//	Count: Count of players participating the event, 1-5
+//	Multiplier: Multiplier of monster level
+//
+// ### DoppelGanger::Range::MonsterHP::Player ###
+//	Count: Count of players participating the event, 1-5
+//	Multiplier: Multiplier of monster health point
+//
+// ### DoppelGanger::Range::MonsterDamage::Player ###
+//	Count: Count of players participating the event, 1-5
+//	Multiplier: Multiplier of monster damage
+//
+// ### DoppelGanger::Range::Defense::Player ###
+//	Count: Count of players participating the event, 1-5
+//	Multiplier: Multiplier of monster defense
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Each multiplier record applies to specified count of players participating the event
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### DoppelGanger::Range::InterimChest ###
+//	ItemDropCount: Count of items to drop from specified bag (section)
+//
+// ### DoppelGanger::Range::InterimChest:Chest ###
+//	Number: Number of the chest that is appearing on the event, 1-3 (count of chests cannot be changed)
+//	SectionID: ID of section from IGC_DoppelGanger_DropInfo.xml file the drop is performed from
+//	RewardRate: Chance rate of getting reward from the bag (section), n/1000000
+//
+// ### DoppelGanger::Range::FinalChest:Chest ###
+//	Number: Number of the chest that is appearing on the event, 1-6 (count of chests cannot be changed)
+//	SectionID: ID of section from IGC_DoppelGanger_DropInfo.xml file the drop is performed from
+//	RewardRate: Chance rate of getting reward from the bag (section), n/1000000
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<DoppelGanger>
+	<Range MaxPlayerLevel="10">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="1" />
+			<Player Count="2" Multiplier="1" />
+			<Player Count="3" Multiplier="1" />
+			<Player Count="4" Multiplier="1" />
+			<Player Count="5" Multiplier="1" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="1" />
+			<Player Count="2" Multiplier="2" />
+			<Player Count="3" Multiplier="3" />
+			<Player Count="4" Multiplier="3.8" />
+			<Player Count="5" Multiplier="4.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="1" />
+			<Player Count="2" Multiplier="2" />
+			<Player Count="3" Multiplier="3" />
+			<Player Count="4" Multiplier="3.7" />
+			<Player Count="5" Multiplier="4.7" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="1" />
+			<Player Count="2" Multiplier="2" />
+			<Player Count="3" Multiplier="3" />
+			<Player Count="4" Multiplier="3.7" />
+			<Player Count="5" Multiplier="4.5" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="1" RewardRate="600000" />
+			<Chest Number="2" SectionID="5" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="20">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="1.2" />
+			<Player Count="2" Multiplier="1.2" />
+			<Player Count="3" Multiplier="1.2" />
+			<Player Count="4" Multiplier="1.2" />
+			<Player Count="5" Multiplier="1.2" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="2" />
+			<Player Count="2" Multiplier="2.2" />
+			<Player Count="3" Multiplier="3.2" />
+			<Player Count="4" Multiplier="4" />
+			<Player Count="5" Multiplier="5" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="1.15" />
+			<Player Count="2" Multiplier="2.05" />
+			<Player Count="3" Multiplier="3.05" />
+			<Player Count="4" Multiplier="3.75" />
+			<Player Count="5" Multiplier="4.75" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="1.35" />
+			<Player Count="2" Multiplier="2.15" />
+			<Player Count="3" Multiplier="3.15" />
+			<Player Count="4" Multiplier="3.85" />
+			<Player Count="5" Multiplier="4.65" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="1" RewardRate="600000" />
+			<Chest Number="2" SectionID="5" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="30">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="1.6" />
+			<Player Count="2" Multiplier="1.6" />
+			<Player Count="3" Multiplier="1.6" />
+			<Player Count="4" Multiplier="1.6" />
+			<Player Count="5" Multiplier="1.6" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="2.7" />
+			<Player Count="2" Multiplier="2.4" />
+			<Player Count="3" Multiplier="3.4" />
+			<Player Count="4" Multiplier="4.2" />
+			<Player Count="5" Multiplier="5.2" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="1.2" />
+			<Player Count="2" Multiplier="2.1" />
+			<Player Count="3" Multiplier="3.1" />
+			<Player Count="4" Multiplier="3.8" />
+			<Player Count="5" Multiplier="4.8" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="1.5" />
+			<Player Count="2" Multiplier="2.3" />
+			<Player Count="3" Multiplier="3.3" />
+			<Player Count="4" Multiplier="4" />
+			<Player Count="5" Multiplier="4.8" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="1" RewardRate="600000" />
+			<Chest Number="2" SectionID="5" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="40">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="1.9" />
+			<Player Count="2" Multiplier="1.9" />
+			<Player Count="3" Multiplier="1.9" />
+			<Player Count="4" Multiplier="1.9" />
+			<Player Count="5" Multiplier="1.9" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="3.4" />
+			<Player Count="2" Multiplier="2.6" />
+			<Player Count="3" Multiplier="3.6" />
+			<Player Count="4" Multiplier="4.4" />
+			<Player Count="5" Multiplier="5.4" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="1.23" />
+			<Player Count="2" Multiplier="2.15" />
+			<Player Count="3" Multiplier="3.15" />
+			<Player Count="4" Multiplier="3.85" />
+			<Player Count="5" Multiplier="4.85" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="1.65" />
+			<Player Count="2" Multiplier="2.45" />
+			<Player Count="3" Multiplier="3.45" />
+			<Player Count="4" Multiplier="4.15" />
+			<Player Count="5" Multiplier="4.95" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="1" RewardRate="600000" />
+			<Chest Number="2" SectionID="5" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="50">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="2.2" />
+			<Player Count="2" Multiplier="2.2" />
+			<Player Count="3" Multiplier="2.2" />
+			<Player Count="4" Multiplier="2.2" />
+			<Player Count="5" Multiplier="2.2" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="4.1" />
+			<Player Count="2" Multiplier="2.8" />
+			<Player Count="3" Multiplier="3.8" />
+			<Player Count="4" Multiplier="4.6" />
+			<Player Count="5" Multiplier="5.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="1.43" />
+			<Player Count="2" Multiplier="2.18" />
+			<Player Count="3" Multiplier="3.18" />
+			<Player Count="4" Multiplier="3.88" />
+			<Player Count="5" Multiplier="4.88" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="1.8" />
+			<Player Count="2" Multiplier="2.6" />
+			<Player Count="3" Multiplier="3.6" />
+			<Player Count="4" Multiplier="4.3" />
+			<Player Count="5" Multiplier="5.1" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="1" RewardRate="600000" />
+			<Chest Number="2" SectionID="5" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="60">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="2.5" />
+			<Player Count="2" Multiplier="2.5" />
+			<Player Count="3" Multiplier="2.5" />
+			<Player Count="4" Multiplier="2.5" />
+			<Player Count="5" Multiplier="2.5" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="4.8" />
+			<Player Count="2" Multiplier="3.5" />
+			<Player Count="3" Multiplier="4.5" />
+			<Player Count="4" Multiplier="5.3" />
+			<Player Count="5" Multiplier="6.3" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="1.63" />
+			<Player Count="2" Multiplier="2.38" />
+			<Player Count="3" Multiplier="3.38" />
+			<Player Count="4" Multiplier="4.08" />
+			<Player Count="5" Multiplier="5.08" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="1.95" />
+			<Player Count="2" Multiplier="2.75" />
+			<Player Count="3" Multiplier="3.75" />
+			<Player Count="4" Multiplier="4.45" />
+			<Player Count="5" Multiplier="5.25" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="1" RewardRate="600000" />
+			<Chest Number="2" SectionID="5" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="70">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="2.7" />
+			<Player Count="2" Multiplier="2.7" />
+			<Player Count="3" Multiplier="2.7" />
+			<Player Count="4" Multiplier="2.7" />
+			<Player Count="5" Multiplier="2.7" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="5.5" />
+			<Player Count="2" Multiplier="4" />
+			<Player Count="3" Multiplier="5" />
+			<Player Count="4" Multiplier="5.8" />
+			<Player Count="5" Multiplier="6.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="1.83" />
+			<Player Count="2" Multiplier="2.58" />
+			<Player Count="3" Multiplier="3.58" />
+			<Player Count="4" Multiplier="4.28" />
+			<Player Count="5" Multiplier="5.28" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="2.1" />
+			<Player Count="2" Multiplier="2.9" />
+			<Player Count="3" Multiplier="3.9" />
+			<Player Count="4" Multiplier="4.6" />
+			<Player Count="5" Multiplier="5.4" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="1" RewardRate="600000" />
+			<Chest Number="2" SectionID="5" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="80">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3" />
+			<Player Count="2" Multiplier="3" />
+			<Player Count="3" Multiplier="3" />
+			<Player Count="4" Multiplier="3" />
+			<Player Count="5" Multiplier="3" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="6.2" />
+			<Player Count="2" Multiplier="4.5" />
+			<Player Count="3" Multiplier="5.5" />
+			<Player Count="4" Multiplier="6.3" />
+			<Player Count="5" Multiplier="7.3" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="2.1" />
+			<Player Count="2" Multiplier="2.78" />
+			<Player Count="3" Multiplier="3.78" />
+			<Player Count="4" Multiplier="4.48" />
+			<Player Count="5" Multiplier="5.48" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="2.25" />
+			<Player Count="2" Multiplier="3.05" />
+			<Player Count="3" Multiplier="4.05" />
+			<Player Count="4" Multiplier="4.75" />
+			<Player Count="5" Multiplier="5.55" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="1" RewardRate="600000" />
+			<Chest Number="2" SectionID="5" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="90">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3.3" />
+			<Player Count="2" Multiplier="3.3" />
+			<Player Count="3" Multiplier="3.3" />
+			<Player Count="4" Multiplier="3.3" />
+			<Player Count="5" Multiplier="3.3" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="6.9" />
+			<Player Count="2" Multiplier="5" />
+			<Player Count="3" Multiplier="6" />
+			<Player Count="4" Multiplier="6.8" />
+			<Player Count="5" Multiplier="7.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="2.31" />
+			<Player Count="2" Multiplier="2.98" />
+			<Player Count="3" Multiplier="3.98" />
+			<Player Count="4" Multiplier="4.68" />
+			<Player Count="5" Multiplier="5.68" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="2.4" />
+			<Player Count="2" Multiplier="3.2" />
+			<Player Count="3" Multiplier="4.2" />
+			<Player Count="4" Multiplier="4.9" />
+			<Player Count="5" Multiplier="5.8" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="1" RewardRate="600000" />
+			<Chest Number="2" SectionID="5" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="100">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3.6" />
+			<Player Count="2" Multiplier="3.6" />
+			<Player Count="3" Multiplier="3.6" />
+			<Player Count="4" Multiplier="3.6" />
+			<Player Count="5" Multiplier="3.6" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="7.6" />
+			<Player Count="2" Multiplier="6" />
+			<Player Count="3" Multiplier="7" />
+			<Player Count="4" Multiplier="7.8" />
+			<Player Count="5" Multiplier="8.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="2.51" />
+			<Player Count="2" Multiplier="3.28" />
+			<Player Count="3" Multiplier="4.28" />
+			<Player Count="4" Multiplier="4.98" />
+			<Player Count="5" Multiplier="5.98" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="2.55" />
+			<Player Count="2" Multiplier="3.35" />
+			<Player Count="3" Multiplier="4.35" />
+			<Player Count="4" Multiplier="5.05" />
+			<Player Count="5" Multiplier="6.85" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="2" RewardRate="600000" />
+			<Chest Number="2" SectionID="6" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="110">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3.65" />
+			<Player Count="2" Multiplier="3.65" />
+			<Player Count="3" Multiplier="3.65" />
+			<Player Count="4" Multiplier="3.65" />
+			<Player Count="5" Multiplier="3.65" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="8.3" />
+			<Player Count="2" Multiplier="6.5" />
+			<Player Count="3" Multiplier="7.5" />
+			<Player Count="4" Multiplier="8.3" />
+			<Player Count="5" Multiplier="9.3" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="2.71" />
+			<Player Count="2" Multiplier="3.48" />
+			<Player Count="3" Multiplier="4.48" />
+			<Player Count="4" Multiplier="5.18" />
+			<Player Count="5" Multiplier="6.18" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="2.7" />
+			<Player Count="2" Multiplier="3.5" />
+			<Player Count="3" Multiplier="4.5" />
+			<Player Count="4" Multiplier="5.2" />
+			<Player Count="5" Multiplier="6" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="2" RewardRate="600000" />
+			<Chest Number="2" SectionID="6" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="120">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3.69" />
+			<Player Count="2" Multiplier="3.69" />
+			<Player Count="3" Multiplier="3.69" />
+			<Player Count="4" Multiplier="3.69" />
+			<Player Count="5" Multiplier="3.69" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="9" />
+			<Player Count="2" Multiplier="6.7" />
+			<Player Count="3" Multiplier="7.7" />
+			<Player Count="4" Multiplier="8.5" />
+			<Player Count="5" Multiplier="9.5" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="2.91" />
+			<Player Count="2" Multiplier="3.68" />
+			<Player Count="3" Multiplier="4.68" />
+			<Player Count="4" Multiplier="5.38" />
+			<Player Count="5" Multiplier="6.38" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="2.85" />
+			<Player Count="2" Multiplier="3.65" />
+			<Player Count="3" Multiplier="4.65" />
+			<Player Count="4" Multiplier="5.35" />
+			<Player Count="5" Multiplier="6.15" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="2" RewardRate="600000" />
+			<Chest Number="2" SectionID="6" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="130">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3.73" />
+			<Player Count="2" Multiplier="3.73" />
+			<Player Count="3" Multiplier="3.73" />
+			<Player Count="4" Multiplier="3.73" />
+			<Player Count="5" Multiplier="3.73" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="9.7" />
+			<Player Count="2" Multiplier="6.9" />
+			<Player Count="3" Multiplier="7.9" />
+			<Player Count="4" Multiplier="8.7" />
+			<Player Count="5" Multiplier="9.7" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="3.11" />
+			<Player Count="2" Multiplier="3.88" />
+			<Player Count="3" Multiplier="4.88" />
+			<Player Count="4" Multiplier="5.58" />
+			<Player Count="5" Multiplier="6.58" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="3" />
+			<Player Count="2" Multiplier="3.8" />
+			<Player Count="3" Multiplier="4.8" />
+			<Player Count="4" Multiplier="5.5" />
+			<Player Count="5" Multiplier="6.3" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="2" RewardRate="600000" />
+			<Chest Number="2" SectionID="6" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="140">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3.77" />
+			<Player Count="2" Multiplier="3.77" />
+			<Player Count="3" Multiplier="3.77" />
+			<Player Count="4" Multiplier="3.77" />
+			<Player Count="5" Multiplier="3.77" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="10.4" />
+			<Player Count="2" Multiplier="7.1" />
+			<Player Count="3" Multiplier="8.1" />
+			<Player Count="4" Multiplier="8.9" />
+			<Player Count="5" Multiplier="9.9" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="3.31" />
+			<Player Count="2" Multiplier="4.08" />
+			<Player Count="3" Multiplier="5.08" />
+			<Player Count="4" Multiplier="5.78" />
+			<Player Count="5" Multiplier="6.78" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="3.15" />
+			<Player Count="2" Multiplier="3.95" />
+			<Player Count="3" Multiplier="4.95" />
+			<Player Count="4" Multiplier="5.65" />
+			<Player Count="5" Multiplier="6.45" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="2" RewardRate="600000" />
+			<Chest Number="2" SectionID="6" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="150">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3.81" />
+			<Player Count="2" Multiplier="3.81" />
+			<Player Count="3" Multiplier="3.81" />
+			<Player Count="4" Multiplier="3.81" />
+			<Player Count="5" Multiplier="3.81" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="11.1" />
+			<Player Count="2" Multiplier="7.3" />
+			<Player Count="3" Multiplier="8.3" />
+			<Player Count="4" Multiplier="9.1" />
+			<Player Count="5" Multiplier="10.1" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="3.51" />
+			<Player Count="2" Multiplier="4.28" />
+			<Player Count="3" Multiplier="5.28" />
+			<Player Count="4" Multiplier="5.98" />
+			<Player Count="5" Multiplier="6.98" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="3.3" />
+			<Player Count="2" Multiplier="4.1" />
+			<Player Count="3" Multiplier="5.1" />
+			<Player Count="4" Multiplier="5.8" />
+			<Player Count="5" Multiplier="6.6" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="2" RewardRate="600000" />
+			<Chest Number="2" SectionID="6" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="160">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3.85" />
+			<Player Count="2" Multiplier="3.85" />
+			<Player Count="3" Multiplier="3.85" />
+			<Player Count="4" Multiplier="3.85" />
+			<Player Count="5" Multiplier="3.85" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="11.8" />
+			<Player Count="2" Multiplier="8" />
+			<Player Count="3" Multiplier="9" />
+			<Player Count="4" Multiplier="9.8" />
+			<Player Count="5" Multiplier="10.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="3.71" />
+			<Player Count="2" Multiplier="4.48" />
+			<Player Count="3" Multiplier="5.48" />
+			<Player Count="4" Multiplier="6.18" />
+			<Player Count="5" Multiplier="7.18" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="3.45" />
+			<Player Count="2" Multiplier="4.25" />
+			<Player Count="3" Multiplier="5.25" />
+			<Player Count="4" Multiplier="5.95" />
+			<Player Count="5" Multiplier="6.75" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="2" RewardRate="600000" />
+			<Chest Number="2" SectionID="6" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="170">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3.89" />
+			<Player Count="2" Multiplier="3.89" />
+			<Player Count="3" Multiplier="3.89" />
+			<Player Count="4" Multiplier="3.89" />
+			<Player Count="5" Multiplier="3.89" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="12.5" />
+			<Player Count="2" Multiplier="9" />
+			<Player Count="3" Multiplier="10" />
+			<Player Count="4" Multiplier="10.8" />
+			<Player Count="5" Multiplier="11.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="3.81" />
+			<Player Count="2" Multiplier="4.68" />
+			<Player Count="3" Multiplier="5.68" />
+			<Player Count="4" Multiplier="6.38" />
+			<Player Count="5" Multiplier="7.38" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="4.6" />
+			<Player Count="2" Multiplier="4.4" />
+			<Player Count="3" Multiplier="5.4" />
+			<Player Count="4" Multiplier="6.1" />
+			<Player Count="5" Multiplier="6.9" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="2" RewardRate="600000" />
+			<Chest Number="2" SectionID="6" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="180">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3.93" />
+			<Player Count="2" Multiplier="3.93" />
+			<Player Count="3" Multiplier="3.93" />
+			<Player Count="4" Multiplier="3.93" />
+			<Player Count="5" Multiplier="3.93" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="13.2" />
+			<Player Count="2" Multiplier="11" />
+			<Player Count="3" Multiplier="12" />
+			<Player Count="4" Multiplier="11.8" />
+			<Player Count="5" Multiplier="12.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="3.91" />
+			<Player Count="2" Multiplier="6" />
+			<Player Count="3" Multiplier="6.4" />
+			<Player Count="4" Multiplier="6.5" />
+			<Player Count="5" Multiplier="6.9" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="4.65" />
+			<Player Count="2" Multiplier="5.3" />
+			<Player Count="3" Multiplier="6.3" />
+			<Player Count="4" Multiplier="6.7" />
+			<Player Count="5" Multiplier="7" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="2" RewardRate="600000" />
+			<Chest Number="2" SectionID="6" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="190">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="3.97" />
+			<Player Count="2" Multiplier="3.97" />
+			<Player Count="3" Multiplier="3.97" />
+			<Player Count="4" Multiplier="3.97" />
+			<Player Count="5" Multiplier="3.97" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="13.5" />
+			<Player Count="2" Multiplier="12" />
+			<Player Count="3" Multiplier="13" />
+			<Player Count="4" Multiplier="12.8" />
+			<Player Count="5" Multiplier="13.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="4.08" />
+			<Player Count="2" Multiplier="6.4" />
+			<Player Count="3" Multiplier="6.8" />
+			<Player Count="4" Multiplier="6.7" />
+			<Player Count="5" Multiplier="7.18" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="4.7" />
+			<Player Count="2" Multiplier="5.8" />
+			<Player Count="3" Multiplier="6.4" />
+			<Player Count="4" Multiplier="6.7" />
+			<Player Count="5" Multiplier="7.3" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="2" RewardRate="600000" />
+			<Chest Number="2" SectionID="6" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="200">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="4.01" />
+			<Player Count="2" Multiplier="4.01" />
+			<Player Count="3" Multiplier="4.01" />
+			<Player Count="4" Multiplier="4.01" />
+			<Player Count="5" Multiplier="4.01" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="15" />
+			<Player Count="2" Multiplier="15" />
+			<Player Count="3" Multiplier="15" />
+			<Player Count="4" Multiplier="14.8" />
+			<Player Count="5" Multiplier="14.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="4.28" />
+			<Player Count="2" Multiplier="6.8" />
+			<Player Count="3" Multiplier="7" />
+			<Player Count="4" Multiplier="6.9" />
+			<Player Count="5" Multiplier="7.28" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="4.85" />
+			<Player Count="2" Multiplier="6.4" />
+			<Player Count="3" Multiplier="7" />
+			<Player Count="4" Multiplier="7.1" />
+			<Player Count="5" Multiplier="7.5" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="3" RewardRate="600000" />
+			<Chest Number="2" SectionID="7" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="210">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="4.05" />
+			<Player Count="2" Multiplier="4.05" />
+			<Player Count="3" Multiplier="4.05" />
+			<Player Count="4" Multiplier="4.05" />
+			<Player Count="5" Multiplier="4.05" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="16" />
+			<Player Count="2" Multiplier="17" />
+			<Player Count="3" Multiplier="18" />
+			<Player Count="4" Multiplier="18.8" />
+			<Player Count="5" Multiplier="18.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="4.48" />
+			<Player Count="2" Multiplier="7" />
+			<Player Count="3" Multiplier="7.2" />
+			<Player Count="4" Multiplier="7.1" />
+			<Player Count="5" Multiplier="7.38" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="5" />
+			<Player Count="2" Multiplier="7" />
+			<Player Count="3" Multiplier="7.5" />
+			<Player Count="4" Multiplier="7.5" />
+			<Player Count="5" Multiplier="7.8" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="5">
+			<Chest Number="1" SectionID="3" RewardRate="600000" />
+			<Chest Number="2" SectionID="7" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="220">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5" />
+			<Player Count="2" Multiplier="4.09" />
+			<Player Count="3" Multiplier="4.09" />
+			<Player Count="4" Multiplier="4.09" />
+			<Player Count="5" Multiplier="4.09" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="17.8" />
+			<Player Count="2" Multiplier="18" />
+			<Player Count="3" Multiplier="19" />
+			<Player Count="4" Multiplier="19.8" />
+			<Player Count="5" Multiplier="20.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="4.68" />
+			<Player Count="2" Multiplier="7.01" />
+			<Player Count="3" Multiplier="6.8" />
+			<Player Count="4" Multiplier="6.58" />
+			<Player Count="5" Multiplier="7.58" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="6.4" />
+			<Player Count="2" Multiplier="7.2" />
+			<Player Count="3" Multiplier="7.7" />
+			<Player Count="4" Multiplier="7.7" />
+			<Player Count="5" Multiplier="7.9" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="3" RewardRate="600000" />
+			<Chest Number="2" SectionID="7" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="230">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.05" />
+			<Player Count="2" Multiplier="4.13" />
+			<Player Count="3" Multiplier="4.13" />
+			<Player Count="4" Multiplier="4.13" />
+			<Player Count="5" Multiplier="4.13" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="18.8" />
+			<Player Count="2" Multiplier="19" />
+			<Player Count="3" Multiplier="20" />
+			<Player Count="4" Multiplier="20.8" />
+			<Player Count="5" Multiplier="21.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="4.88" />
+			<Player Count="2" Multiplier="7.02" />
+			<Player Count="3" Multiplier="7" />
+			<Player Count="4" Multiplier="6.78" />
+			<Player Count="5" Multiplier="7.78" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="6.6" />
+			<Player Count="2" Multiplier="7.4" />
+			<Player Count="3" Multiplier="7.9" />
+			<Player Count="4" Multiplier="7.9" />
+			<Player Count="5" Multiplier="8.1" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="3" RewardRate="600000" />
+			<Chest Number="2" SectionID="7" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="240">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.1" />
+			<Player Count="2" Multiplier="4.17" />
+			<Player Count="3" Multiplier="4.17" />
+			<Player Count="4" Multiplier="4.17" />
+			<Player Count="5" Multiplier="4.17" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="19.8" />
+			<Player Count="2" Multiplier="20" />
+			<Player Count="3" Multiplier="21" />
+			<Player Count="4" Multiplier="21.8" />
+			<Player Count="5" Multiplier="22.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="5.08" />
+			<Player Count="2" Multiplier="7.03" />
+			<Player Count="3" Multiplier="7.1" />
+			<Player Count="4" Multiplier="6.98" />
+			<Player Count="5" Multiplier="7.98" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="6.8" />
+			<Player Count="2" Multiplier="7.6" />
+			<Player Count="3" Multiplier="8.1" />
+			<Player Count="4" Multiplier="8.1" />
+			<Player Count="5" Multiplier="8.3" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="3" RewardRate="600000" />
+			<Chest Number="2" SectionID="7" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="250">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.15" />
+			<Player Count="2" Multiplier="4.21" />
+			<Player Count="3" Multiplier="4.21" />
+			<Player Count="4" Multiplier="4.21" />
+			<Player Count="5" Multiplier="4.21" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="20.8" />
+			<Player Count="2" Multiplier="21" />
+			<Player Count="3" Multiplier="22" />
+			<Player Count="4" Multiplier="22.8" />
+			<Player Count="5" Multiplier="23.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="5.28" />
+			<Player Count="2" Multiplier="7.04" />
+			<Player Count="3" Multiplier="7.28" />
+			<Player Count="4" Multiplier="7.18" />
+			<Player Count="5" Multiplier="8.18" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="7.2" />
+			<Player Count="2" Multiplier="7.8" />
+			<Player Count="3" Multiplier="8.3" />
+			<Player Count="4" Multiplier="8.3" />
+			<Player Count="5" Multiplier="8.5" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="3" RewardRate="600000" />
+			<Chest Number="2" SectionID="7" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="260">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.2" />
+			<Player Count="2" Multiplier="4.25" />
+			<Player Count="3" Multiplier="4.25" />
+			<Player Count="4" Multiplier="4.25" />
+			<Player Count="5" Multiplier="4.25" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="21.8" />
+			<Player Count="2" Multiplier="22" />
+			<Player Count="3" Multiplier="23" />
+			<Player Count="4" Multiplier="23.8" />
+			<Player Count="5" Multiplier="24.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="5.48" />
+			<Player Count="2" Multiplier="7.05" />
+			<Player Count="3" Multiplier="7.48" />
+			<Player Count="4" Multiplier="7.38" />
+			<Player Count="5" Multiplier="8.38" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="7.6" />
+			<Player Count="2" Multiplier="8" />
+			<Player Count="3" Multiplier="8.5" />
+			<Player Count="4" Multiplier="8.5" />
+			<Player Count="5" Multiplier="8.7" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="3" RewardRate="600000" />
+			<Chest Number="2" SectionID="7" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="270">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.25" />
+			<Player Count="2" Multiplier="4.29" />
+			<Player Count="3" Multiplier="4.29" />
+			<Player Count="4" Multiplier="4.29" />
+			<Player Count="5" Multiplier="4.29" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="22.8" />
+			<Player Count="2" Multiplier="23" />
+			<Player Count="3" Multiplier="24" />
+			<Player Count="4" Multiplier="24.8" />
+			<Player Count="5" Multiplier="25.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="5.68" />
+			<Player Count="2" Multiplier="7.06" />
+			<Player Count="3" Multiplier="7.68" />
+			<Player Count="4" Multiplier="7.58" />
+			<Player Count="5" Multiplier="8.58" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="8" />
+			<Player Count="2" Multiplier="8.2" />
+			<Player Count="3" Multiplier="8.7" />
+			<Player Count="4" Multiplier="8.7" />
+			<Player Count="5" Multiplier="8.9" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="3" RewardRate="600000" />
+			<Chest Number="2" SectionID="7" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="280">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.3" />
+			<Player Count="2" Multiplier="4.33" />
+			<Player Count="3" Multiplier="4.33" />
+			<Player Count="4" Multiplier="4.33" />
+			<Player Count="5" Multiplier="4.33" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="23.8" />
+			<Player Count="2" Multiplier="24" />
+			<Player Count="3" Multiplier="25" />
+			<Player Count="4" Multiplier="25.8" />
+			<Player Count="5" Multiplier="26.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="5.88" />
+			<Player Count="2" Multiplier="7.07" />
+			<Player Count="3" Multiplier="7.88" />
+			<Player Count="4" Multiplier="7.78" />
+			<Player Count="5" Multiplier="8.78" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="8.2" />
+			<Player Count="2" Multiplier="8.4" />
+			<Player Count="3" Multiplier="8.9" />
+			<Player Count="4" Multiplier="8.9" />
+			<Player Count="5" Multiplier="9.1" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="3" RewardRate="600000" />
+			<Chest Number="2" SectionID="7" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="290">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.35" />
+			<Player Count="2" Multiplier="4.37" />
+			<Player Count="3" Multiplier="4.37" />
+			<Player Count="4" Multiplier="4.37" />
+			<Player Count="5" Multiplier="4.37" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="25.8" />
+			<Player Count="2" Multiplier="25" />
+			<Player Count="3" Multiplier="26" />
+			<Player Count="4" Multiplier="26.8" />
+			<Player Count="5" Multiplier="27.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="6.18" />
+			<Player Count="2" Multiplier="7.08" />
+			<Player Count="3" Multiplier="8.08" />
+			<Player Count="4" Multiplier="7.98" />
+			<Player Count="5" Multiplier="8.98" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="8.6" />
+			<Player Count="2" Multiplier="8.6" />
+			<Player Count="3" Multiplier="9.1" />
+			<Player Count="4" Multiplier="9.1" />
+			<Player Count="5" Multiplier="9.3" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="3" RewardRate="600000" />
+			<Chest Number="2" SectionID="7" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="300">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.4" />
+			<Player Count="2" Multiplier="4.41" />
+			<Player Count="3" Multiplier="4.41" />
+			<Player Count="4" Multiplier="4.41" />
+			<Player Count="5" Multiplier="4.41" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="26.2" />
+			<Player Count="2" Multiplier="26" />
+			<Player Count="3" Multiplier="27" />
+			<Player Count="4" Multiplier="27.8" />
+			<Player Count="5" Multiplier="28.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="6.28" />
+			<Player Count="2" Multiplier="7.28" />
+			<Player Count="3" Multiplier="8.28" />
+			<Player Count="4" Multiplier="8.18" />
+			<Player Count="5" Multiplier="9.18" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="8.7" />
+			<Player Count="2" Multiplier="8.8" />
+			<Player Count="3" Multiplier="9.3" />
+			<Player Count="4" Multiplier="9.3" />
+			<Player Count="5" Multiplier="9.5" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="310">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.45" />
+			<Player Count="2" Multiplier="4.45" />
+			<Player Count="3" Multiplier="4.45" />
+			<Player Count="4" Multiplier="4.45" />
+			<Player Count="5" Multiplier="4.45" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="26.8" />
+			<Player Count="2" Multiplier="27" />
+			<Player Count="3" Multiplier="28" />
+			<Player Count="4" Multiplier="28.8" />
+			<Player Count="5" Multiplier="29.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="6.48" />
+			<Player Count="2" Multiplier="7.48" />
+			<Player Count="3" Multiplier="8.48" />
+			<Player Count="4" Multiplier="8.38" />
+			<Player Count="5" Multiplier="9.38" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="8.8" />
+			<Player Count="2" Multiplier="9" />
+			<Player Count="3" Multiplier="9.5" />
+			<Player Count="4" Multiplier="9.5" />
+			<Player Count="5" Multiplier="9.7" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="320">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.5" />
+			<Player Count="2" Multiplier="4.49" />
+			<Player Count="3" Multiplier="4.49" />
+			<Player Count="4" Multiplier="4.49" />
+			<Player Count="5" Multiplier="4.49" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="27.8" />
+			<Player Count="2" Multiplier="28" />
+			<Player Count="3" Multiplier="29" />
+			<Player Count="4" Multiplier="29.8" />
+			<Player Count="5" Multiplier="30.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="6.68" />
+			<Player Count="2" Multiplier="7.68" />
+			<Player Count="3" Multiplier="8.68" />
+			<Player Count="4" Multiplier="8.58" />
+			<Player Count="5" Multiplier="9.58" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="9" />
+			<Player Count="2" Multiplier="9.2" />
+			<Player Count="3" Multiplier="9.7" />
+			<Player Count="4" Multiplier="9.7" />
+			<Player Count="5" Multiplier="9.9" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="330">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.55" />
+			<Player Count="2" Multiplier="4.53" />
+			<Player Count="3" Multiplier="4.53" />
+			<Player Count="4" Multiplier="4.53" />
+			<Player Count="5" Multiplier="4.53" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="29.8" />
+			<Player Count="2" Multiplier="29.5" />
+			<Player Count="3" Multiplier="30" />
+			<Player Count="4" Multiplier="30.8" />
+			<Player Count="5" Multiplier="31.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="6.98" />
+			<Player Count="2" Multiplier="7.88" />
+			<Player Count="3" Multiplier="8.88" />
+			<Player Count="4" Multiplier="8.78" />
+			<Player Count="5" Multiplier="9.78" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="9.4" />
+			<Player Count="2" Multiplier="9.4" />
+			<Player Count="3" Multiplier="9.9" />
+			<Player Count="4" Multiplier="9.9" />
+			<Player Count="5" Multiplier="10.1" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="340">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.6" />
+			<Player Count="2" Multiplier="4.57" />
+			<Player Count="3" Multiplier="4.57" />
+			<Player Count="4" Multiplier="4.57" />
+			<Player Count="5" Multiplier="4.57" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="30.8" />
+			<Player Count="2" Multiplier="30.5" />
+			<Player Count="3" Multiplier="31" />
+			<Player Count="4" Multiplier="31.8" />
+			<Player Count="5" Multiplier="32.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="7.18" />
+			<Player Count="2" Multiplier="8.08" />
+			<Player Count="3" Multiplier="9.08" />
+			<Player Count="4" Multiplier="9.05" />
+			<Player Count="5" Multiplier="10.05" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="9.6" />
+			<Player Count="2" Multiplier="9.6" />
+			<Player Count="3" Multiplier="10.1" />
+			<Player Count="4" Multiplier="10.1" />
+			<Player Count="5" Multiplier="10.3" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="350">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.65" />
+			<Player Count="2" Multiplier="4.61" />
+			<Player Count="3" Multiplier="4.61" />
+			<Player Count="4" Multiplier="4.61" />
+			<Player Count="5" Multiplier="4.61" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="31.8" />
+			<Player Count="2" Multiplier="31.5" />
+			<Player Count="3" Multiplier="32" />
+			<Player Count="4" Multiplier="32.8" />
+			<Player Count="5" Multiplier="33.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="7.38" />
+			<Player Count="2" Multiplier="8.35" />
+			<Player Count="3" Multiplier="9.35" />
+			<Player Count="4" Multiplier="9.18" />
+			<Player Count="5" Multiplier="10.18" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="9.8" />
+			<Player Count="2" Multiplier="9.8" />
+			<Player Count="3" Multiplier="10.3" />
+			<Player Count="4" Multiplier="10.3" />
+			<Player Count="5" Multiplier="10.5" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="360">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.7" />
+			<Player Count="2" Multiplier="4.65" />
+			<Player Count="3" Multiplier="4.65" />
+			<Player Count="4" Multiplier="4.65" />
+			<Player Count="5" Multiplier="4.65" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="32.8" />
+			<Player Count="2" Multiplier="32.5" />
+			<Player Count="3" Multiplier="33" />
+			<Player Count="4" Multiplier="33.8" />
+			<Player Count="5" Multiplier="34.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="7.58" />
+			<Player Count="2" Multiplier="8.48" />
+			<Player Count="3" Multiplier="9.48" />
+			<Player Count="4" Multiplier="9.38" />
+			<Player Count="5" Multiplier="10.38" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="10" />
+			<Player Count="2" Multiplier="10" />
+			<Player Count="3" Multiplier="10.5" />
+			<Player Count="4" Multiplier="10.5" />
+			<Player Count="5" Multiplier="10.7" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="370">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.75" />
+			<Player Count="2" Multiplier="4.69" />
+			<Player Count="3" Multiplier="4.69" />
+			<Player Count="4" Multiplier="4.69" />
+			<Player Count="5" Multiplier="4.69" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="33.8" />
+			<Player Count="2" Multiplier="33.5" />
+			<Player Count="3" Multiplier="34" />
+			<Player Count="4" Multiplier="34.8" />
+			<Player Count="5" Multiplier="35.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="7.78" />
+			<Player Count="2" Multiplier="8.68" />
+			<Player Count="3" Multiplier="9.68" />
+			<Player Count="4" Multiplier="9.58" />
+			<Player Count="5" Multiplier="10.58" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="10.2" />
+			<Player Count="2" Multiplier="10.2" />
+			<Player Count="3" Multiplier="10.7" />
+			<Player Count="4" Multiplier="10.7" />
+			<Player Count="5" Multiplier="10.9" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="380">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.8" />
+			<Player Count="2" Multiplier="4.73" />
+			<Player Count="3" Multiplier="4.73" />
+			<Player Count="4" Multiplier="4.73" />
+			<Player Count="5" Multiplier="4.73" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="34.8" />
+			<Player Count="2" Multiplier="34.5" />
+			<Player Count="3" Multiplier="35" />
+			<Player Count="4" Multiplier="35.8" />
+			<Player Count="5" Multiplier="36.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="7.98" />
+			<Player Count="2" Multiplier="8.88" />
+			<Player Count="3" Multiplier="9.88" />
+			<Player Count="4" Multiplier="9.78" />
+			<Player Count="5" Multiplier="10.78" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="10.4" />
+			<Player Count="2" Multiplier="10.4" />
+			<Player Count="3" Multiplier="10.9" />
+			<Player Count="4" Multiplier="10.9" />
+			<Player Count="5" Multiplier="11.1" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="390">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="5.85" />
+			<Player Count="2" Multiplier="4.77" />
+			<Player Count="3" Multiplier="4.77" />
+			<Player Count="4" Multiplier="4.77" />
+			<Player Count="5" Multiplier="4.77" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="35.8" />
+			<Player Count="2" Multiplier="35.5" />
+			<Player Count="3" Multiplier="36" />
+			<Player Count="4" Multiplier="36.8" />
+			<Player Count="5" Multiplier="37.6" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="8.18" />
+			<Player Count="2" Multiplier="9.08" />
+			<Player Count="3" Multiplier="10.08" />
+			<Player Count="4" Multiplier="9.98" />
+			<Player Count="5" Multiplier="10.98" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="10.6" />
+			<Player Count="2" Multiplier="10.6" />
+			<Player Count="3" Multiplier="11.1" />
+			<Player Count="4" Multiplier="11.1" />
+			<Player Count="5" Multiplier="11.3" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="6">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="400">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="38" />
+			<Player Count="2" Multiplier="37" />
+			<Player Count="3" Multiplier="38" />
+			<Player Count="4" Multiplier="38.8" />
+			<Player Count="5" Multiplier="39.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="8.48" />
+			<Player Count="2" Multiplier="9.28" />
+			<Player Count="3" Multiplier="10.28" />
+			<Player Count="4" Multiplier="10.18" />
+			<Player Count="5" Multiplier="11.18" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="11.6" />
+			<Player Count="2" Multiplier="11.5" />
+			<Player Count="3" Multiplier="11.4" />
+			<Player Count="4" Multiplier="11.4" />
+			<Player Count="5" Multiplier="11.5" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="410">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="39" />
+			<Player Count="2" Multiplier="41" />
+			<Player Count="3" Multiplier="42" />
+			<Player Count="4" Multiplier="42.8" />
+			<Player Count="5" Multiplier="43.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="8.58" />
+			<Player Count="2" Multiplier="9.68" />
+			<Player Count="3" Multiplier="10.78" />
+			<Player Count="4" Multiplier="10.38" />
+			<Player Count="5" Multiplier="11.38" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="12" />
+			<Player Count="2" Multiplier="12.5" />
+			<Player Count="3" Multiplier="12.8" />
+			<Player Count="4" Multiplier="12.5" />
+			<Player Count="5" Multiplier="12.3" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="420">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="42" />
+			<Player Count="2" Multiplier="50" />
+			<Player Count="3" Multiplier="52" />
+			<Player Count="4" Multiplier="61.8" />
+			<Player Count="5" Multiplier="66.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="8.68" />
+			<Player Count="2" Multiplier="9.88" />
+			<Player Count="3" Multiplier="10.78" />
+			<Player Count="4" Multiplier="10.58" />
+			<Player Count="5" Multiplier="11.58" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="12.3" />
+			<Player Count="2" Multiplier="13.5" />
+			<Player Count="3" Multiplier="15" />
+			<Player Count="4" Multiplier="15.7" />
+			<Player Count="5" Multiplier="17.5" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="430">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="47" />
+			<Player Count="2" Multiplier="52" />
+			<Player Count="3" Multiplier="57" />
+			<Player Count="4" Multiplier="66.8" />
+			<Player Count="5" Multiplier="71.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="8.88" />
+			<Player Count="2" Multiplier="9.98" />
+			<Player Count="3" Multiplier="10.88" />
+			<Player Count="4" Multiplier="10.78" />
+			<Player Count="5" Multiplier="11.78" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="12.6" />
+			<Player Count="2" Multiplier="14" />
+			<Player Count="3" Multiplier="15.5" />
+			<Player Count="4" Multiplier="16.2" />
+			<Player Count="5" Multiplier="18" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="440">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="53" />
+			<Player Count="2" Multiplier="58" />
+			<Player Count="3" Multiplier="63" />
+			<Player Count="4" Multiplier="72.8" />
+			<Player Count="5" Multiplier="77.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="9.08" />
+			<Player Count="2" Multiplier="10.08" />
+			<Player Count="3" Multiplier="11.08" />
+			<Player Count="4" Multiplier="10.98" />
+			<Player Count="5" Multiplier="11.98" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="12.9" />
+			<Player Count="2" Multiplier="14.3" />
+			<Player Count="3" Multiplier="16.3" />
+			<Player Count="4" Multiplier="17" />
+			<Player Count="5" Multiplier="18.8" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="450">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="59" />
+			<Player Count="2" Multiplier="64" />
+			<Player Count="3" Multiplier="69" />
+			<Player Count="4" Multiplier="78.8" />
+			<Player Count="5" Multiplier="83.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="9.38" />
+			<Player Count="2" Multiplier="10.28" />
+			<Player Count="3" Multiplier="11.28" />
+			<Player Count="4" Multiplier="11.18" />
+			<Player Count="5" Multiplier="12.18" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="13.1" />
+			<Player Count="2" Multiplier="15.1" />
+			<Player Count="3" Multiplier="17.1" />
+			<Player Count="4" Multiplier="17.8" />
+			<Player Count="5" Multiplier="19.6" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="460">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="69" />
+			<Player Count="2" Multiplier="70" />
+			<Player Count="3" Multiplier="75" />
+			<Player Count="4" Multiplier="84.8" />
+			<Player Count="5" Multiplier="89.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="9.98" />
+			<Player Count="2" Multiplier="11" />
+			<Player Count="3" Multiplier="12" />
+			<Player Count="4" Multiplier="12.38" />
+			<Player Count="5" Multiplier="13.38" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="14" />
+			<Player Count="2" Multiplier="15.9" />
+			<Player Count="3" Multiplier="17.9" />
+			<Player Count="4" Multiplier="18.6" />
+			<Player Count="5" Multiplier="20.4" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="470">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="76" />
+			<Player Count="2" Multiplier="76" />
+			<Player Count="3" Multiplier="81" />
+			<Player Count="4" Multiplier="90.8" />
+			<Player Count="5" Multiplier="95.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="10.28" />
+			<Player Count="2" Multiplier="12" />
+			<Player Count="3" Multiplier="13" />
+			<Player Count="4" Multiplier="13.1" />
+			<Player Count="5" Multiplier="13.7" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="14.7" />
+			<Player Count="2" Multiplier="16.7" />
+			<Player Count="3" Multiplier="18.7" />
+			<Player Count="4" Multiplier="19.4" />
+			<Player Count="5" Multiplier="21.2" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="480">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="82" />
+			<Player Count="2" Multiplier="82" />
+			<Player Count="3" Multiplier="87" />
+			<Player Count="4" Multiplier="96.8" />
+			<Player Count="5" Multiplier="100.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="10.58" />
+			<Player Count="2" Multiplier="12.5" />
+			<Player Count="3" Multiplier="13.5" />
+			<Player Count="4" Multiplier="13.5" />
+			<Player Count="5" Multiplier="14" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="15.2" />
+			<Player Count="2" Multiplier="17.5" />
+			<Player Count="3" Multiplier="19.5" />
+			<Player Count="4" Multiplier="20.2" />
+			<Player Count="5" Multiplier="22" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="490">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="88" />
+			<Player Count="2" Multiplier="88" />
+			<Player Count="3" Multiplier="93" />
+			<Player Count="4" Multiplier="101.8" />
+			<Player Count="5" Multiplier="106.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="10.88" />
+			<Player Count="2" Multiplier="13" />
+			<Player Count="3" Multiplier="13.8" />
+			<Player Count="4" Multiplier="13.7" />
+			<Player Count="5" Multiplier="14.3" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="16" />
+			<Player Count="2" Multiplier="18.3" />
+			<Player Count="3" Multiplier="20.3" />
+			<Player Count="4" Multiplier="21" />
+			<Player Count="5" Multiplier="22.8" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="500">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="93" />
+			<Player Count="2" Multiplier="94" />
+			<Player Count="3" Multiplier="99" />
+			<Player Count="4" Multiplier="107.8" />
+			<Player Count="5" Multiplier="112.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="11.18" />
+			<Player Count="2" Multiplier="13.4" />
+			<Player Count="3" Multiplier="14.1" />
+			<Player Count="4" Multiplier="14" />
+			<Player Count="5" Multiplier="14.6" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="16.7" />
+			<Player Count="2" Multiplier="19.1" />
+			<Player Count="3" Multiplier="21.1" />
+			<Player Count="4" Multiplier="21.8" />
+			<Player Count="5" Multiplier="23.6" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="510">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="95" />
+			<Player Count="2" Multiplier="100" />
+			<Player Count="3" Multiplier="105" />
+			<Player Count="4" Multiplier="113.8" />
+			<Player Count="5" Multiplier="118.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="11.38" />
+			<Player Count="2" Multiplier="13.7" />
+			<Player Count="3" Multiplier="14.4" />
+			<Player Count="4" Multiplier="14.3" />
+			<Player Count="5" Multiplier="14.9" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="17.4" />
+			<Player Count="2" Multiplier="19.9" />
+			<Player Count="3" Multiplier="21.9" />
+			<Player Count="4" Multiplier="22.6" />
+			<Player Count="5" Multiplier="24.4" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="520">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="101" />
+			<Player Count="2" Multiplier="106" />
+			<Player Count="3" Multiplier="111" />
+			<Player Count="4" Multiplier="119.8" />
+			<Player Count="5" Multiplier="124.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="11.48" />
+			<Player Count="2" Multiplier="14" />
+			<Player Count="3" Multiplier="14.7" />
+			<Player Count="4" Multiplier="14.6" />
+			<Player Count="5" Multiplier="15.2" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="17.7" />
+			<Player Count="2" Multiplier="20.7" />
+			<Player Count="3" Multiplier="22.7" />
+			<Player Count="4" Multiplier="23.4" />
+			<Player Count="5" Multiplier="25.2" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="530">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="107" />
+			<Player Count="2" Multiplier="112" />
+			<Player Count="3" Multiplier="117" />
+			<Player Count="4" Multiplier="125.8" />
+			<Player Count="5" Multiplier="130.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="11.78" />
+			<Player Count="2" Multiplier="14.3" />
+			<Player Count="3" Multiplier="15" />
+			<Player Count="4" Multiplier="14.9" />
+			<Player Count="5" Multiplier="15.5" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="18.5" />
+			<Player Count="2" Multiplier="21.5" />
+			<Player Count="3" Multiplier="23.5" />
+			<Player Count="4" Multiplier="24.2" />
+			<Player Count="5" Multiplier="26" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="540">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="113" />
+			<Player Count="2" Multiplier="118" />
+			<Player Count="3" Multiplier="123" />
+			<Player Count="4" Multiplier="131.8" />
+			<Player Count="5" Multiplier="136.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="12.08" />
+			<Player Count="2" Multiplier="14.6" />
+			<Player Count="3" Multiplier="15.3" />
+			<Player Count="4" Multiplier="15.2" />
+			<Player Count="5" Multiplier="15.8" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="19.3" />
+			<Player Count="2" Multiplier="22.3" />
+			<Player Count="3" Multiplier="24.3" />
+			<Player Count="4" Multiplier="25" />
+			<Player Count="5" Multiplier="26.8" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="550">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="119" />
+			<Player Count="2" Multiplier="124" />
+			<Player Count="3" Multiplier="129" />
+			<Player Count="4" Multiplier="137.8" />
+			<Player Count="5" Multiplier="142.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="12.38" />
+			<Player Count="2" Multiplier="14.9" />
+			<Player Count="3" Multiplier="15.6" />
+			<Player Count="4" Multiplier="15.5" />
+			<Player Count="5" Multiplier="16.1" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="20.1" />
+			<Player Count="2" Multiplier="23.1" />
+			<Player Count="3" Multiplier="25.1" />
+			<Player Count="4" Multiplier="25.8" />
+			<Player Count="5" Multiplier="27.6" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="560">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="125" />
+			<Player Count="2" Multiplier="130" />
+			<Player Count="3" Multiplier="135" />
+			<Player Count="4" Multiplier="143.8" />
+			<Player Count="5" Multiplier="148.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="12.68" />
+			<Player Count="2" Multiplier="15.2" />
+			<Player Count="3" Multiplier="15.9" />
+			<Player Count="4" Multiplier="15.8" />
+			<Player Count="5" Multiplier="16.4" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="20.9" />
+			<Player Count="2" Multiplier="23.9" />
+			<Player Count="3" Multiplier="25.9" />
+			<Player Count="4" Multiplier="26.6" />
+			<Player Count="5" Multiplier="28.4" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="570">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="131" />
+			<Player Count="2" Multiplier="136" />
+			<Player Count="3" Multiplier="141" />
+			<Player Count="4" Multiplier="149.8" />
+			<Player Count="5" Multiplier="154.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="12.98" />
+			<Player Count="2" Multiplier="15.5" />
+			<Player Count="3" Multiplier="16.2" />
+			<Player Count="4" Multiplier="16.1" />
+			<Player Count="5" Multiplier="16.7" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="21.7" />
+			<Player Count="2" Multiplier="24.7" />
+			<Player Count="3" Multiplier="26.7" />
+			<Player Count="4" Multiplier="27.4" />
+			<Player Count="5" Multiplier="29.2" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="580">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="137" />
+			<Player Count="2" Multiplier="142" />
+			<Player Count="3" Multiplier="147" />
+			<Player Count="4" Multiplier="155.8" />
+			<Player Count="5" Multiplier="160.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="13.28" />
+			<Player Count="2" Multiplier="15.8" />
+			<Player Count="3" Multiplier="16.5" />
+			<Player Count="4" Multiplier="16.4" />
+			<Player Count="5" Multiplier="17" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="22.5" />
+			<Player Count="2" Multiplier="25.5" />
+			<Player Count="3" Multiplier="27.5" />
+			<Player Count="4" Multiplier="28.2" />
+			<Player Count="5" Multiplier="30" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="590">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="143" />
+			<Player Count="2" Multiplier="148" />
+			<Player Count="3" Multiplier="153" />
+			<Player Count="4" Multiplier="161.8" />
+			<Player Count="5" Multiplier="166.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="13.58" />
+			<Player Count="2" Multiplier="16.1" />
+			<Player Count="3" Multiplier="16.8" />
+			<Player Count="4" Multiplier="16.7" />
+			<Player Count="5" Multiplier="17.3" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="23.3" />
+			<Player Count="2" Multiplier="26.3" />
+			<Player Count="3" Multiplier="28.3" />
+			<Player Count="4" Multiplier="29" />
+			<Player Count="5" Multiplier="30.8" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="600">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="149" />
+			<Player Count="2" Multiplier="157" />
+			<Player Count="3" Multiplier="162" />
+			<Player Count="4" Multiplier="167.8" />
+			<Player Count="5" Multiplier="172.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="13.88" />
+			<Player Count="2" Multiplier="16.6" />
+			<Player Count="3" Multiplier="17.2" />
+			<Player Count="4" Multiplier="17" />
+			<Player Count="5" Multiplier="17.6" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="24.1" />
+			<Player Count="2" Multiplier="28.1" />
+			<Player Count="3" Multiplier="29.1" />
+			<Player Count="4" Multiplier="29.8" />
+			<Player Count="5" Multiplier="31.6" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="610">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="39" />
+			<Player Count="2" Multiplier="41" />
+			<Player Count="3" Multiplier="42" />
+			<Player Count="4" Multiplier="42.8" />
+			<Player Count="5" Multiplier="43.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="8.58" />
+			<Player Count="2" Multiplier="9.68" />
+			<Player Count="3" Multiplier="10.78" />
+			<Player Count="4" Multiplier="10.38" />
+			<Player Count="5" Multiplier="11.38" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="12" />
+			<Player Count="2" Multiplier="12.5" />
+			<Player Count="3" Multiplier="12.8" />
+			<Player Count="4" Multiplier="12.5" />
+			<Player Count="5" Multiplier="12.3" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="620">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="42" />
+			<Player Count="2" Multiplier="50" />
+			<Player Count="3" Multiplier="52" />
+			<Player Count="4" Multiplier="61.8" />
+			<Player Count="5" Multiplier="66.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="8.68" />
+			<Player Count="2" Multiplier="9.88" />
+			<Player Count="3" Multiplier="10.78" />
+			<Player Count="4" Multiplier="10.58" />
+			<Player Count="5" Multiplier="11.58" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="12.3" />
+			<Player Count="2" Multiplier="13.5" />
+			<Player Count="3" Multiplier="15" />
+			<Player Count="4" Multiplier="15.7" />
+			<Player Count="5" Multiplier="17.5" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="630">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="47" />
+			<Player Count="2" Multiplier="52" />
+			<Player Count="3" Multiplier="57" />
+			<Player Count="4" Multiplier="66.8" />
+			<Player Count="5" Multiplier="71.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="8.88" />
+			<Player Count="2" Multiplier="9.98" />
+			<Player Count="3" Multiplier="10.88" />
+			<Player Count="4" Multiplier="10.78" />
+			<Player Count="5" Multiplier="11.78" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="12.6" />
+			<Player Count="2" Multiplier="14" />
+			<Player Count="3" Multiplier="15.5" />
+			<Player Count="4" Multiplier="16.2" />
+			<Player Count="5" Multiplier="18" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="640">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="53" />
+			<Player Count="2" Multiplier="58" />
+			<Player Count="3" Multiplier="63" />
+			<Player Count="4" Multiplier="72.8" />
+			<Player Count="5" Multiplier="77.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="9.08" />
+			<Player Count="2" Multiplier="10.08" />
+			<Player Count="3" Multiplier="11.08" />
+			<Player Count="4" Multiplier="10.98" />
+			<Player Count="5" Multiplier="11.98" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="12.9" />
+			<Player Count="2" Multiplier="14.3" />
+			<Player Count="3" Multiplier="16.3" />
+			<Player Count="4" Multiplier="17" />
+			<Player Count="5" Multiplier="18.8" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="650">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="59" />
+			<Player Count="2" Multiplier="64" />
+			<Player Count="3" Multiplier="69" />
+			<Player Count="4" Multiplier="78.8" />
+			<Player Count="5" Multiplier="83.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="9.38" />
+			<Player Count="2" Multiplier="10.28" />
+			<Player Count="3" Multiplier="11.28" />
+			<Player Count="4" Multiplier="11.18" />
+			<Player Count="5" Multiplier="12.18" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="13.1" />
+			<Player Count="2" Multiplier="15.1" />
+			<Player Count="3" Multiplier="17.1" />
+			<Player Count="4" Multiplier="17.8" />
+			<Player Count="5" Multiplier="19.6" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="660">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="69" />
+			<Player Count="2" Multiplier="70" />
+			<Player Count="3" Multiplier="75" />
+			<Player Count="4" Multiplier="84.8" />
+			<Player Count="5" Multiplier="89.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="9.98" />
+			<Player Count="2" Multiplier="11" />
+			<Player Count="3" Multiplier="12" />
+			<Player Count="4" Multiplier="12.38" />
+			<Player Count="5" Multiplier="13.38" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="14" />
+			<Player Count="2" Multiplier="15.9" />
+			<Player Count="3" Multiplier="17.9" />
+			<Player Count="4" Multiplier="18.6" />
+			<Player Count="5" Multiplier="20.4" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="670">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="76" />
+			<Player Count="2" Multiplier="76" />
+			<Player Count="3" Multiplier="81" />
+			<Player Count="4" Multiplier="90.8" />
+			<Player Count="5" Multiplier="95.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="10.28" />
+			<Player Count="2" Multiplier="12" />
+			<Player Count="3" Multiplier="13" />
+			<Player Count="4" Multiplier="13.1" />
+			<Player Count="5" Multiplier="13.7" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="14.7" />
+			<Player Count="2" Multiplier="16.7" />
+			<Player Count="3" Multiplier="18.7" />
+			<Player Count="4" Multiplier="19.4" />
+			<Player Count="5" Multiplier="21.2" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="680">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="82" />
+			<Player Count="2" Multiplier="82" />
+			<Player Count="3" Multiplier="87" />
+			<Player Count="4" Multiplier="96.8" />
+			<Player Count="5" Multiplier="100.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="10.58" />
+			<Player Count="2" Multiplier="12.5" />
+			<Player Count="3" Multiplier="13.5" />
+			<Player Count="4" Multiplier="13.5" />
+			<Player Count="5" Multiplier="14" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="15.2" />
+			<Player Count="2" Multiplier="17.5" />
+			<Player Count="3" Multiplier="19.5" />
+			<Player Count="4" Multiplier="20.2" />
+			<Player Count="5" Multiplier="22" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="690">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="88" />
+			<Player Count="2" Multiplier="88" />
+			<Player Count="3" Multiplier="93" />
+			<Player Count="4" Multiplier="101.8" />
+			<Player Count="5" Multiplier="106.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="10.88" />
+			<Player Count="2" Multiplier="13" />
+			<Player Count="3" Multiplier="13.8" />
+			<Player Count="4" Multiplier="13.7" />
+			<Player Count="5" Multiplier="14.3" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="16" />
+			<Player Count="2" Multiplier="18.3" />
+			<Player Count="3" Multiplier="20.3" />
+			<Player Count="4" Multiplier="21" />
+			<Player Count="5" Multiplier="22.8" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="700">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="93" />
+			<Player Count="2" Multiplier="94" />
+			<Player Count="3" Multiplier="99" />
+			<Player Count="4" Multiplier="107.8" />
+			<Player Count="5" Multiplier="112.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="11.18" />
+			<Player Count="2" Multiplier="13.4" />
+			<Player Count="3" Multiplier="14.1" />
+			<Player Count="4" Multiplier="14" />
+			<Player Count="5" Multiplier="14.6" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="16.7" />
+			<Player Count="2" Multiplier="19.1" />
+			<Player Count="3" Multiplier="21.1" />
+			<Player Count="4" Multiplier="21.8" />
+			<Player Count="5" Multiplier="23.6" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="710">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="95" />
+			<Player Count="2" Multiplier="100" />
+			<Player Count="3" Multiplier="105" />
+			<Player Count="4" Multiplier="113.8" />
+			<Player Count="5" Multiplier="118.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="11.38" />
+			<Player Count="2" Multiplier="13.7" />
+			<Player Count="3" Multiplier="14.4" />
+			<Player Count="4" Multiplier="14.3" />
+			<Player Count="5" Multiplier="14.9" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="17.4" />
+			<Player Count="2" Multiplier="19.9" />
+			<Player Count="3" Multiplier="21.9" />
+			<Player Count="4" Multiplier="22.6" />
+			<Player Count="5" Multiplier="24.4" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="720">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="101" />
+			<Player Count="2" Multiplier="106" />
+			<Player Count="3" Multiplier="111" />
+			<Player Count="4" Multiplier="119.8" />
+			<Player Count="5" Multiplier="124.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="11.48" />
+			<Player Count="2" Multiplier="14" />
+			<Player Count="3" Multiplier="14.7" />
+			<Player Count="4" Multiplier="14.6" />
+			<Player Count="5" Multiplier="15.2" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="17.7" />
+			<Player Count="2" Multiplier="20.7" />
+			<Player Count="3" Multiplier="22.7" />
+			<Player Count="4" Multiplier="23.4" />
+			<Player Count="5" Multiplier="25.2" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="730">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="107" />
+			<Player Count="2" Multiplier="112" />
+			<Player Count="3" Multiplier="117" />
+			<Player Count="4" Multiplier="125.8" />
+			<Player Count="5" Multiplier="130.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="11.78" />
+			<Player Count="2" Multiplier="14.3" />
+			<Player Count="3" Multiplier="15" />
+			<Player Count="4" Multiplier="14.9" />
+			<Player Count="5" Multiplier="15.5" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="18.5" />
+			<Player Count="2" Multiplier="21.5" />
+			<Player Count="3" Multiplier="23.5" />
+			<Player Count="4" Multiplier="24.2" />
+			<Player Count="5" Multiplier="26" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="740">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="113" />
+			<Player Count="2" Multiplier="118" />
+			<Player Count="3" Multiplier="123" />
+			<Player Count="4" Multiplier="131.8" />
+			<Player Count="5" Multiplier="136.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="12.08" />
+			<Player Count="2" Multiplier="14.6" />
+			<Player Count="3" Multiplier="15.3" />
+			<Player Count="4" Multiplier="15.2" />
+			<Player Count="5" Multiplier="15.8" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="19.3" />
+			<Player Count="2" Multiplier="22.3" />
+			<Player Count="3" Multiplier="24.3" />
+			<Player Count="4" Multiplier="25" />
+			<Player Count="5" Multiplier="26.8" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="750">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="119" />
+			<Player Count="2" Multiplier="124" />
+			<Player Count="3" Multiplier="129" />
+			<Player Count="4" Multiplier="137.8" />
+			<Player Count="5" Multiplier="142.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="12.38" />
+			<Player Count="2" Multiplier="14.9" />
+			<Player Count="3" Multiplier="15.6" />
+			<Player Count="4" Multiplier="15.5" />
+			<Player Count="5" Multiplier="16.1" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="20.1" />
+			<Player Count="2" Multiplier="23.1" />
+			<Player Count="3" Multiplier="25.1" />
+			<Player Count="4" Multiplier="25.8" />
+			<Player Count="5" Multiplier="27.6" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="760">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="125" />
+			<Player Count="2" Multiplier="130" />
+			<Player Count="3" Multiplier="135" />
+			<Player Count="4" Multiplier="143.8" />
+			<Player Count="5" Multiplier="148.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="12.68" />
+			<Player Count="2" Multiplier="15.2" />
+			<Player Count="3" Multiplier="15.9" />
+			<Player Count="4" Multiplier="15.8" />
+			<Player Count="5" Multiplier="16.4" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="20.9" />
+			<Player Count="2" Multiplier="23.9" />
+			<Player Count="3" Multiplier="25.9" />
+			<Player Count="4" Multiplier="26.6" />
+			<Player Count="5" Multiplier="28.4" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="770">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="131" />
+			<Player Count="2" Multiplier="136" />
+			<Player Count="3" Multiplier="141" />
+			<Player Count="4" Multiplier="149.8" />
+			<Player Count="5" Multiplier="154.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="12.98" />
+			<Player Count="2" Multiplier="15.5" />
+			<Player Count="3" Multiplier="16.2" />
+			<Player Count="4" Multiplier="16.1" />
+			<Player Count="5" Multiplier="16.7" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="21.7" />
+			<Player Count="2" Multiplier="24.7" />
+			<Player Count="3" Multiplier="26.7" />
+			<Player Count="4" Multiplier="27.4" />
+			<Player Count="5" Multiplier="29.2" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="780">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="137" />
+			<Player Count="2" Multiplier="142" />
+			<Player Count="3" Multiplier="147" />
+			<Player Count="4" Multiplier="155.8" />
+			<Player Count="5" Multiplier="160.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="13.28" />
+			<Player Count="2" Multiplier="15.8" />
+			<Player Count="3" Multiplier="16.5" />
+			<Player Count="4" Multiplier="16.4" />
+			<Player Count="5" Multiplier="17" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="22.5" />
+			<Player Count="2" Multiplier="25.5" />
+			<Player Count="3" Multiplier="27.5" />
+			<Player Count="4" Multiplier="28.2" />
+			<Player Count="5" Multiplier="30" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="790">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="143" />
+			<Player Count="2" Multiplier="148" />
+			<Player Count="3" Multiplier="153" />
+			<Player Count="4" Multiplier="161.8" />
+			<Player Count="5" Multiplier="166.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="13.58" />
+			<Player Count="2" Multiplier="16.1" />
+			<Player Count="3" Multiplier="16.8" />
+			<Player Count="4" Multiplier="16.7" />
+			<Player Count="5" Multiplier="17.3" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="23.3" />
+			<Player Count="2" Multiplier="26.3" />
+			<Player Count="3" Multiplier="28.3" />
+			<Player Count="4" Multiplier="29" />
+			<Player Count="5" Multiplier="30.8" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+	<Range MaxPlayerLevel="800">
+		<MonsterLevel>
+			<Player Count="1" Multiplier="6.79" />
+			<Player Count="2" Multiplier="6.79" />
+			<Player Count="3" Multiplier="6.79" />
+			<Player Count="4" Multiplier="6.79" />
+			<Player Count="5" Multiplier="6.79" />
+		</MonsterLevel>
+		<MonsterHP>
+			<Player Count="1" Multiplier="149" />
+			<Player Count="2" Multiplier="157" />
+			<Player Count="3" Multiplier="162" />
+			<Player Count="4" Multiplier="167.8" />
+			<Player Count="5" Multiplier="172.8" />
+		</MonsterHP>
+		<MonsterDamage>
+			<Player Count="1" Multiplier="13.88" />
+			<Player Count="2" Multiplier="16.6" />
+			<Player Count="3" Multiplier="17.2" />
+			<Player Count="4" Multiplier="17" />
+			<Player Count="5" Multiplier="17.6" />
+		</MonsterDamage>
+		<MonsterDefense>
+			<Player Count="1" Multiplier="24.1" />
+			<Player Count="2" Multiplier="28.1" />
+			<Player Count="3" Multiplier="29.1" />
+			<Player Count="4" Multiplier="29.8" />
+			<Player Count="5" Multiplier="31.6" />
+		</MonsterDefense>
+		<InterimChest ItemDropCount="1">
+			<Chest Number="1" SectionID="9" RewardRate="1000000" />
+			<Chest Number="2" SectionID="10" RewardRate="1000000" />
+			<Chest Number="3" SectionID="11" RewardRate="100000" />
+		</InterimChest>
+		<FinalChest ItemDropCount="7">
+			<Chest Number="1" SectionID="4" RewardRate="600000" />
+			<Chest Number="2" SectionID="8" RewardRate="600000" />
+			<Chest Number="3" SectionID="10" RewardRate="100000" />
+			<Chest Number="4" SectionID="11" RewardRate="1000" />
+			<Chest Number="5" SectionID="12" RewardRate="100" />
+			<Chest Number="6" SectionID="13" RewardRate="10" />
+		</FinalChest>
+	</Range>
+</DoppelGanger>

@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### CashItemInfo::Item ###
+//	GUID: An order value, same value can be used multiple times for same item just different ID, e.g. same item but different option
+//	ID: Unique ID in the file, aka Index
+//	Cat: Category of an item, refer to IGC_ItemList.xml
+//	Index: Index of an item, refer to IGC_ItemList.xml
+//	Level: Level of an item, 0-15
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// For VIP Cards (e.g. Gold Channel Ticket) the Level attribute is a VIP Type:
+//		0: No-VIP
+//		1: Bronze
+//		2: Silver
+//		3: Gold
+//		4: Platinum
+//		or any other value depending on individual configuration of IGC_VIPSettings.xml
+//
+// 	VIP Card (Gold Channel Ticket) with Level set to 0 will only extend period of current VIP status but will not set it
+// 	VIP Card (Gold Channel Ticket) with Level 1-4 or other will set specified VIP Type and extend subscription period
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//	Durability: Durability of an item, 0-255
+//	Skill: Defines whether item comes with skill or not, 0/1
+//	Luck: Defines whether item comes with luck or not, 0/1
+//	Option: Defines whether item comes with and option
+//		0: +0
+//		1: +4
+//		2: +8
+//		3: +12
+//		4: +16
+//		5: +20
+//		6: +24
+//		7: +28
+//	Exc: Defines whether item comes with exc option of specified type or not
+//		0: No Exc options, or sum of below values (63 - Full of Excellent):
+//		1: Mana recovery after Monster hunt +Mana/8
+//		2: Health recovery after Monster hunt +HP/8
+//		4: +7 Speed
+//		8: More Damage +2%
+//		16: More Damage +Level/20
+//		32: Excellent Damage Rate +10%
+//	Set:  Defines whether item is an Ancient and its type - item must be added as set items in IGC_ItemSetType.xml otherwise setting will be ignored
+//		0: No Ancient
+//		5: First Set type (+5 Stamina)
+//		6: Second Set type (+5 Stamina)
+//		9: First Set type (+10 Stamina)
+//		10: Second Set type (+10 Stamina)
+//	Socket: Defines a socket count for socket items or slots count for Pentagram items
+//	Element: Defines an element type for Elemental Items: 0: None, 1: Fire, 2: Water, 3: Earth, 4: Wind, 5: Darkness, NOTE: Errtels are not supported
+//	Type:
+//		1: Seal/Scroll
+//		2: Pet/Item with Expiry Date
+//		3: Character Card
+//		4: VIP Card
+// Duration: Defines a duration of item effect or item expiration date, expression of the value depends on configuration of item type
+//		Type 1: Minutes
+//		Type 2: Minutes
+//		Type 3: Always 0
+//		Type 4: Days
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<CashItemInfo>
+	<Item GUID="1" ID="1" Cat="2" Index="176" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="testddd" />
+	<Item GUID="2" ID="2" Cat="2" Index="176" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="testddd" />
+	<Item GUID="3" ID="3" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="4320" Description="Seal of Wealth(3day)" />
+	<Item GUID="4" ID="4" Cat="14" Index="75" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="4320" Description="Scroll of Wizardry(3Day)" />
+	<Item GUID="5" ID="5" Cat="14" Index="74" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="4320" Description="Scroll of Wrath(3Day)" />
+	<Item GUID="6" ID="6" Cat="13" Index="80" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="2" Description="Pet Panda(3Day)" />
+	<Item GUID="7" ID="7" Cat="13" Index="110" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="7200" Description="Ruby Ring(5Day)" />
+	<Item GUID="8" ID="8" Cat="13" Index="111" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="7200" Description="Topaz Ring(5Day)" />
+	<Item GUID="9" ID="9" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Seal of Ascension" />
+	<Item GUID="9" ID="10" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="4320" Description="Seal of Ascension" />
+	<Item GUID="9" ID="11" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Seal of Ascension" />
+	<Item GUID="9" ID="12" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="Seal of Ascension" />
+	<Item GUID="10" ID="13" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Seal of Wealth" />
+	<Item GUID="10" ID="14" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="4320" Description="Seal of Wealth" />
+	<Item GUID="10" ID="15" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Seal of Wealth" />
+	<Item GUID="10" ID="16" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="Seal of Wealth" />
+	<Item GUID="11" ID="17" Cat="13" Index="45" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Seal of Sustenance" />
+	<Item GUID="11" ID="18" Cat="13" Index="45" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="14400" Description="Seal of Sustenance" />
+	<Item GUID="11" ID="19" Cat="13" Index="45" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="Seal of Sustenance" />
+	<Item GUID="12" ID="20" Cat="13" Index="46" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Devil Square Ticket" />
+	<Item GUID="12" ID="21" Cat="13" Index="46" Level="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Devil Square Ticket" />
+	<Item GUID="13" ID="22" Cat="13" Index="47" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Blood Castle Ticket" />
+	<Item GUID="13" ID="23" Cat="13" Index="47" Level="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Blood Castle Ticket" />
+	<Item GUID="14" ID="24" Cat="13" Index="54" Level="0" Durability="20" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Reset Fruit Strength" />
+	<Item GUID="15" ID="25" Cat="13" Index="55" Level="0" Durability="20" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Reset Fruit Quickness" />
+	<Item GUID="16" ID="26" Cat="13" Index="56" Level="0" Durability="20" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Reset Fruit Health" />
+	<Item GUID="17" ID="27" Cat="13" Index="57" Level="0" Durability="20" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Reset Fruit Energy" />
+	<Item GUID="18" ID="28" Cat="13" Index="58" Level="0" Durability="20" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Reset Fruit Control" />
+	<Item GUID="19" ID="29" Cat="13" Index="61" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Illusion Temple Ticket" />
+	<Item GUID="19" ID="30" Cat="13" Index="61" Level="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Illusion Temple Ticket" />
+	<Item GUID="20" ID="31" Cat="13" Index="64" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Demon" />
+	<Item GUID="20" ID="32" Cat="13" Index="64" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Demon" />
+	<Item GUID="20" ID="33" Cat="13" Index="64" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="43200" Description="Demon" />
+	<Item GUID="21" ID="34" Cat="13" Index="65" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Spirit of Guardian" />
+	<Item GUID="21" ID="35" Cat="13" Index="65" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Spirit of Guardian" />
+	<Item GUID="21" ID="36" Cat="13" Index="65" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="43200" Description="Spirit of Guardian" />
+	<Item GUID="22" ID="37" Cat="14" Index="53" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Luck" />
+	<Item GUID="22" ID="38" Cat="14" Index="53" Level="0" Durability="5" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Luck" />
+	<Item GUID="23" ID="39" Cat="14" Index="70" Level="0" Durability="20" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Elite Healing Potion" />
+	<Item GUID="24" ID="40" Cat="14" Index="71" Level="0" Durability="20" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Elite Mana Potion" />
+	<Item GUID="25" ID="41" Cat="14" Index="72" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Quickness" />
+	<Item GUID="25" ID="42" Cat="14" Index="72" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Quickness" />
+	<Item GUID="26" ID="43" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Protection" />
+	<Item GUID="26" ID="44" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Protection" />
+	<Item GUID="27" ID="45" Cat="14" Index="74" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Wrath" />
+	<Item GUID="27" ID="46" Cat="14" Index="74" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Wrath" />
+	<Item GUID="28" ID="47" Cat="14" Index="75" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Wizardry" />
+	<Item GUID="28" ID="48" Cat="14" Index="75" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Wizardry" />
+	<Item GUID="29" ID="49" Cat="14" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Health" />
+	<Item GUID="29" ID="50" Cat="14" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Health" />
+	<Item GUID="30" ID="51" Cat="14" Index="77" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Mana" />
+	<Item GUID="30" ID="52" Cat="14" Index="77" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Mana" />
+	<Item GUID="31" ID="53" Cat="14" Index="91" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="3" Duration="0" Description="Summoner Character Card" />
+	<Item GUID="32" ID="54" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold" />
+	<Item GUID="33" ID="55" Cat="14" Index="93" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Rare" />
+	<Item GUID="34" ID="56" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini" />
+	<Item GUID="35" ID="57" Cat="14" Index="96" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Chaos Assembly" />
+	<Item GUID="36" ID="58" Cat="14" Index="97" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Battle" />
+	<Item GUID="36" ID="59" Cat="14" Index="97" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Battle" />
+	<Item GUID="37" ID="60" Cat="14" Index="98" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Strengthener" />
+	<Item GUID="37" ID="61" Cat="14" Index="98" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Strengthener" />
+	<Item GUID="38" ID="62" Cat="13" Index="62" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Seal of Healing" />
+	<Item GUID="38" ID="63" Cat="13" Index="62" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Seal of Healing" />
+	<Item GUID="39" ID="64" Cat="13" Index="63" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Seal of Divinity" />
+	<Item GUID="39" ID="65" Cat="13" Index="63" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Seal of Divinity" />
+	<Item GUID="40" ID="66" Cat="13" Index="69" Level="0" Durability="2" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Resurrection" />
+	<Item GUID="41" ID="67" Cat="13" Index="70" Level="0" Durability="2" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Mobility" />
+	<Item GUID="42" ID="68" Cat="14" Index="78" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Leap of Strength" />
+	<Item GUID="43" ID="69" Cat="14" Index="79" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Leap of Quickness" />
+	<Item GUID="44" ID="70" Cat="14" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Leap of Health" />
+	<Item GUID="45" ID="71" Cat="14" Index="81" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Leap of Energy" />
+	<Item GUID="46" ID="72" Cat="14" Index="82" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Leap of Control" />
+	<Item GUID="47" ID="73" Cat="13" Index="48" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Kalima Ticket" />
+	<Item GUID="47" ID="74" Cat="13" Index="48" Level="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Kalima Ticket" />
+	<Item GUID="48" ID="75" Cat="13" Index="81" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Guardian" />
+	<Item GUID="49" ID="76" Cat="13" Index="82" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Item Protection" />
+	<Item GUID="50" ID="77" Cat="13" Index="93" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Master Seal of Ascension" />
+	<Item GUID="50" ID="78" Cat="13" Index="93" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Master Seal of Ascension" />
+	<Item GUID="50" ID="79" Cat="13" Index="93" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="Master Seal of Ascension" />
+	<Item GUID="51" ID="80" Cat="13" Index="94" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Master Seal of Wealth" />
+	<Item GUID="51" ID="81" Cat="13" Index="94" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Master Seal of Wealth" />
+	<Item GUID="51" ID="82" Cat="13" Index="94" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="Master Seal of Wealth" />
+	<Item GUID="52" ID="83" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="4" Duration="7" Description="Gold Channel Ticket" />
+	<Item GUID="52" ID="84" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="4" Duration="30" Description="Gold Channel Ticket" />
+	<Item GUID="53" ID="85" Cat="12" Index="131" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Small Wings of Disaster" />
+	<Item GUID="53" ID="86" Cat="12" Index="131" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Small Wings of Disaster" />
+	<Item GUID="54" ID="87" Cat="12" Index="132" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Small Wings of Fairy" />
+	<Item GUID="54" ID="88" Cat="12" Index="132" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Small Wings of Fairy" />
+	<Item GUID="55" ID="89" Cat="12" Index="133" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Small Wings of Heaven" />
+	<Item GUID="55" ID="90" Cat="12" Index="133" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Small Wings of Heaven" />
+	<Item GUID="56" ID="91" Cat="12" Index="134" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Small Wings of Satan" />
+	<Item GUID="56" ID="92" Cat="12" Index="134" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Small Wings of Satan" />
+	<Item GUID="57" ID="93" Cat="13" Index="76" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Panda Ring" />
+	<Item GUID="57" ID="94" Cat="13" Index="76" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Panda Ring" />
+	<Item GUID="58" ID="95" Cat="13" Index="20" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Wizard Ring" />
+	<Item GUID="58" ID="96" Cat="13" Index="20" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Wizard Ring" />
+	<Item GUID="59" ID="97" Cat="13" Index="122" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Skeleton Transformation Ring" />
+	<Item GUID="59" ID="98" Cat="13" Index="122" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Skeleton Transformation Ring" />
+	<Item GUID="60" ID="99" Cat="13" Index="80" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Pet Panda" />
+	<Item GUID="60" ID="100" Cat="13" Index="80" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Pet Panda" />
+	<Item GUID="61" ID="101" Cat="13" Index="123" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Pet Skeleton" />
+	<Item GUID="61" ID="102" Cat="13" Index="123" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Pet Skeleton" />
+	<Item GUID="62" ID="103" Cat="13" Index="109" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Sapphire Ring" />
+	<Item GUID="62" ID="104" Cat="13" Index="109" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Sapphire Ring" />
+	<Item GUID="63" ID="105" Cat="13" Index="110" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Ruby Ring" />
+	<Item GUID="63" ID="106" Cat="13" Index="110" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Ruby Ring" />
+	<Item GUID="64" ID="107" Cat="13" Index="111" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Topaz Ring" />
+	<Item GUID="64" ID="108" Cat="13" Index="111" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Topaz Ring" />
+	<Item GUID="65" ID="109" Cat="13" Index="112" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Amethyst Ring" />
+	<Item GUID="65" ID="110" Cat="13" Index="112" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Amethyst Ring" />
+	<Item GUID="66" ID="111" Cat="13" Index="113" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Ruby Necklace" />
+	<Item GUID="66" ID="112" Cat="13" Index="113" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Ruby Necklace" />
+	<Item GUID="67" ID="113" Cat="13" Index="114" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Emerald Necklace" />
+	<Item GUID="67" ID="114" Cat="13" Index="114" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Emerald Necklace" />
+	<Item GUID="68" ID="115" Cat="13" Index="115" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Sapphire Necklace" />
+	<Item GUID="68" ID="116" Cat="13" Index="115" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Sapphire Necklace" />
+	<Item GUID="69" ID="117" Cat="14" Index="112" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Silver Key" />
+	<Item GUID="70" ID="118" Cat="14" Index="113" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Key" />
+	<Item GUID="71" ID="119" Cat="13" Index="107" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Critical Ring of Wizard" />
+	<Item GUID="71" ID="120" Cat="13" Index="107" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Critical Ring of Wizard" />
+	<Item GUID="72" ID="121" Cat="13" Index="106" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Pet Unicorn" />
+	<Item GUID="72" ID="122" Cat="13" Index="106" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Pet Unicorn" />
+	<Item GUID="73" ID="123" Cat="13" Index="104" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="AG Boost Aura" />
+	<Item GUID="73" ID="124" Cat="13" Index="104" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="AG Boost Aura" />
+	<Item GUID="74" ID="125" Cat="13" Index="105" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="SD Boost Aura" />
+	<Item GUID="74" ID="126" Cat="13" Index="105" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="SD Boost Aura" />
+	<Item GUID="75" ID="127" Cat="13" Index="103" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Party EXP Increase" />
+	<Item GUID="75" ID="128" Cat="13" Index="103" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Party EXP Increase" />
+	<Item GUID="76" ID="129" Cat="14" Index="133" Level="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Elite SD Potion" />
+	<Item GUID="77" ID="130" Cat="13" Index="125" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Open Access Ticket to Doppelganger" />
+	<Item GUID="77" ID="131" Cat="13" Index="125" Level="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Open Access Ticket to Doppelganger" />
+	<Item GUID="78" ID="132" Cat="13" Index="126" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Open Access Ticket to Varka" />
+	<Item GUID="78" ID="133" Cat="13" Index="126" Level="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Open Access Ticket to Varka" />
+	<Item GUID="79" ID="134" Cat="13" Index="127" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Open Access Ticket to Varka 7" />
+	<Item GUID="79" ID="135" Cat="13" Index="127" Level="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Open Access Ticket to Varka 7" />
+	<Item GUID="80" ID="136" Cat="13" Index="81" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Guardian" />
+	<Item GUID="80" ID="137" Cat="13" Index="81" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Guardian" />
+	<Item GUID="81" ID="138" Cat="13" Index="82" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Item Protection" />
+	<Item GUID="81" ID="139" Cat="13" Index="82" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Item Protection" />
+	<Item GUID="82" ID="140" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket*" />
+	<Item GUID="83" ID="141" Cat="14" Index="74" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="G-Scroll of Wrath" />
+	<Item GUID="84" ID="142" Cat="14" Index="75" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="G-Scroll of Wizardry" />
+	<Item GUID="85" ID="143" Cat="14" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="G-Scroll of Health" />
+	<Item GUID="86" ID="144" Cat="14" Index="77" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="G-Scroll of Mana" />
+	<Item GUID="87" ID="145" Cat="14" Index="72" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="G-Scroll of Quickness" />
+	<Item GUID="88" ID="146" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="G-Scroll of Protection" />
+	<Item GUID="89" ID="147" Cat="14" Index="94" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="G-Medium Elite Healing Potion" />
+	<Item GUID="90" ID="148" Cat="13" Index="46" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="G-Devil Square Ticket" />
+	<Item GUID="91" ID="149" Cat="13" Index="47" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="G-Blood Castle Ticket" />
+	<Item GUID="92" ID="150" Cat="13" Index="61" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="G-Illusion Temple Ticket" />
+	<Item GUID="93" ID="151" Cat="0" Index="1" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Test_GB" />
+	<Item GUID="94" ID="152" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Seal of Wealth*" />
+	<Item GUID="95" ID="153" Cat="13" Index="94" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Master Seal of Wealth*" />
+	<Item GUID="96" ID="154" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold*" />
+	<Item GUID="97" ID="155" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Protection*" />
+	<Item GUID="98" ID="156" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="4" Duration="7" Description="Gold Channel Ticket**" />
+	<Item GUID="99" ID="157" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold**" />
+	<Item GUID="100" ID="158" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold***" />
+	<Item GUID="101" ID="159" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda*" />
+	<Item GUID="102" ID="160" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda**" />
+	<Item GUID="103" ID="162" Cat="14" Index="112" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Silver Key_Day" />
+	<Item GUID="104" ID="163" Cat="14" Index="113" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Key_7Days" />
+	<Item GUID="105" ID="164" Cat="14" Index="70" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Elite Healing Potion_7Days" />
+	<Item GUID="106" ID="165" Cat="13" Index="122" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Skeleton Transformation Ring_7Days" />
+	<Item GUID="107" ID="166" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda_30Days" />
+	<Item GUID="108" ID="167" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold_30Days" />
+	<Item GUID="109" ID="168" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Ascension_30Days" />
+	<Item GUID="110" ID="169" Cat="13" Index="93" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Master Seal of Ascension_30Days" />
+	<Item GUID="111" ID="170" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_3Days" />
+	<Item GUID="112" ID="171" Cat="12" Index="64" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Lightning)" />
+	<Item GUID="113" ID="172" Cat="12" Index="60" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Fire)" />
+	<Item GUID="114" ID="173" Cat="12" Index="62" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Ice)" />
+	<Item GUID="115" ID="174" Cat="14" Index="72" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="D-Scroll of Quickness" />
+	<Item GUID="116" ID="175" Cat="14" Index="133" Level="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="D-Elite SD Potion" />
+	<Item GUID="117" ID="176" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="B-Chaos Card  Mini" />
+	<Item GUID="118" ID="177" Cat="13" Index="107" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="D-Critical Ring of Wizard" />
+	<Item GUID="119" ID="178" Cat="13" Index="64" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="D-Demon" />
+	<Item GUID="120" ID="179" Cat="14" Index="98" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="D-Scroll of Strengthener" />
+	<Item GUID="121" ID="180" Cat="13" Index="105" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="D-SD Boost Aura" />
+	<Item GUID="122" ID="181" Cat="13" Index="113" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="D-Ruby Necklace" />
+	<Item GUID="123" ID="182" Cat="14" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="B-Talisman of Luck" />
+	<Item GUID="124" ID="183" Cat="14" Index="112" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="B-Silver Key" />
+	<Item GUID="125" ID="184" Cat="14" Index="112" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="B-1 Silver Key" />
+	<Item GUID="126" ID="185" Cat="14" Index="112" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="B-2 Silver Key" />
+	<Item GUID="128" ID="187" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket" />
+	<Item GUID="129" ID="188" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket-Limited" />
+	<Item GUID="129" ID="189" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket-Limited" />
+	<Item GUID="130" ID="190" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda-1Day" />
+	<Item GUID="131" ID="191" Cat="14" Index="113" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Key-1EA" />
+	<Item GUID="132" ID="192" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold_BUG Event" />
+	<Item GUID="133" ID="193" Cat="12" Index="61" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Water) DEF Accuracy" />
+	<Item GUID="134" ID="194" Cat="12" Index="61" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Water) DEF Increase" />
+	<Item GUID="135" ID="195" Cat="12" Index="63" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Wind)" />
+	<Item GUID="136" ID="196" Cat="12" Index="65" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Earth)" />
+	<Item GUID="137" ID="197" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_Nov_Event" />
+	<Item GUID="138" ID="198" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold_Nov_Event" />
+	<Item GUID="139" ID="199" Cat="14" Index="72" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Quickness-ALL" />
+	<Item GUID="140" ID="200" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Protection-ALL" />
+	<Item GUID="141" ID="201" Cat="14" Index="74" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Wrath-ALL" />
+	<Item GUID="142" ID="202" Cat="14" Index="75" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Wizardry-ALL" />
+	<Item GUID="143" ID="203" Cat="14" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Health-ALL" />
+	<Item GUID="144" ID="204" Cat="14" Index="77" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Mana-ALL" />
+	<Item GUID="145" ID="205" Cat="14" Index="118" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Charater Transfer" />
+	<Item GUID="146" ID="206" Cat="14" Index="118" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Server Transfe" />
+	<Item GUID="147" ID="207" Cat="14" Index="117" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Character Name Change" />
+	<Item GUID="148" ID="208" Cat="14" Index="114" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Master Skill Initialization" />
+	<Item GUID="149" ID="209" Cat="14" Index="137" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Premium Service" />
+	<Item GUID="150" ID="210" Cat="14" Index="118" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Server Transfer" />
+	<Item GUID="151" ID="211" Cat="14" Index="117" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Character Transfer" />
+	<Item GUID="152" ID="212" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda-7day_Event" />
+	<Item GUID="154" ID="214" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_1Day" />
+	<Item GUID="155" ID="215" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="GP-500" />
+	<Item GUID="156" ID="216" Cat="14" Index="77" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Mana-P" />
+	<Item GUID="157" ID="217" Cat="14" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Health-P" />
+	<Item GUID="158" ID="218" Cat="14" Index="75" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Wizardry-P" />
+	<Item GUID="159" ID="219" Cat="14" Index="74" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Wrath-P" />
+	<Item GUID="160" ID="220" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Protection-P" />
+	<Item GUID="161" ID="221" Cat="14" Index="72" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Quickness-P" />
+	<Item GUID="162" ID="222" Cat="14" Index="97" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="1440" Description="Scroll of Battle-P" />
+	<Item GUID="163" ID="223" Cat="14" Index="112" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Silver Key - 1th day" />
+	<Item GUID="164" ID="224" Cat="14" Index="113" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Key - 5th day" />
+	<Item GUID="165" ID="225" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Mini - 9th day" />
+	<Item GUID="166" ID="226" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold - 13th day" />
+	<Item GUID="167" ID="227" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda_1Day - 17th day" />
+	<Item GUID="168" ID="228" Cat="13" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Panda Ring_1Day - 17th day" />
+	<Item GUID="169" ID="229" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_3Days - 20th day" />
+	<Item GUID="170" ID="230" Cat="14" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Luck_1% Increases - 20th day" />
+	<Item GUID="171" ID="231" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_3Days_Event" />
+	<Item GUID="172" ID="232" Cat="13" Index="123" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Skeleton_7Day_Event" />
+	<Item GUID="173" ID="233" Cat="13" Index="122" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Skeleton Transformation Ring_7Day_Event" />
+	<Item GUID="174" ID="234" Cat="14" Index="169" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="3" Duration="0" Description="Rage Fighter Character Card_Event" />
+	<Item GUID="175" ID="235" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_7Day_Event" />
+	<Item GUID="176" ID="236" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda_7Day_Event" />
+	<Item GUID="177" ID="237" Cat="13" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Panda Ring_7Day_Event" />
+	<Item GUID="178" ID="238" Cat="13" Index="70" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Mobility_Event" />
+	<Item GUID="179" ID="239" Cat="13" Index="69" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Resurrection_Event" />
+	<Item GUID="180" ID="240" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Protection_7Day_Event" />
+	<Item GUID="181" ID="241" Cat="14" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Health_7Day_Event" />
+	<Item GUID="182" ID="242" Cat="14" Index="77" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Mana_7Day_Event" />
+	<Item GUID="183" ID="243" Cat="14" Index="118" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Charater transfer_Event" />
+	<Item GUID="184" ID="244" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Ascension_Reward for DC" />
+	<Item GUID="185" ID="245" Cat="13" Index="93" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Master Seal of Ascension_Reward for DC" />
+	<Item GUID="186" ID="246" Cat="14" Index="118" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Charater transfer_Event" />
+	<Item GUID="187" ID="247" Cat="14" Index="112" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Silver Key_Event" />
+	<Item GUID="188" ID="248" Cat="14" Index="113" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Key_Event" />
+	<Item GUID="189" ID="249" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Mini_Event" />
+	<Item GUID="190" ID="250" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold_Event" />
+	<Item GUID="191" ID="251" Cat="13" Index="63" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Divinity_Event" />
+	<Item GUID="192" ID="252" Cat="13" Index="62" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Healing_Event" />
+	<Item GUID="193" ID="253" Cat="13" Index="122" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Skeleton Transformation Ring_Event" />
+	<Item GUID="194" ID="254" Cat="13" Index="123" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Skeleton_Event" />
+	<Item GUID="195" ID="255" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_Event" />
+	<Item GUID="196" ID="256" Cat="14" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Luck 1%_Event" />
+	<Item GUID="197" ID="257" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_7Day_Event" />
+	<Item GUID="198" ID="258" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Wealth(Normal)_7Day_Event" />
+	<Item GUID="199" ID="259" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Protection_1Day_Event" />
+	<Item GUID="200" ID="260" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold_Event*" />
+	<Item GUID="201" ID="261" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold_Event**" />
+	<Item GUID="202" ID="262" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold_Event***" />
+	<Item GUID="203" ID="263" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Protection_Red" />
+	<Item GUID="204" ID="264" Cat="14" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Health_Red" />
+	<Item GUID="205" ID="265" Cat="14" Index="77" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Mana_Red" />
+	<Item GUID="206" ID="266" Cat="14" Index="97" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Battle_Red" />
+	<Item GUID="207" ID="267" Cat="14" Index="98" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Strengthener_Red" />
+	<Item GUID="208" ID="268" Cat="14" Index="72" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Quickness_Red" />
+	<Item GUID="209" ID="269" Cat="14" Index="74" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Wrath_Red" />
+	<Item GUID="210" ID="270" Cat="14" Index="75" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Wizardry_Red" />
+	<Item GUID="211" ID="271" Cat="13" Index="122" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Skeleton Transformation Ring_Red" />
+	<Item GUID="212" ID="272" Cat="13" Index="123" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Skeleton_Red" />
+	<Item GUID="213" ID="273" Cat="13" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Panda Ring_Red" />
+	<Item GUID="214" ID="274" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda_Red" />
+	<Item GUID="215" ID="275" Cat="14" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Luck 1%_Red" />
+	<Item GUID="216" ID="276" Cat="14" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Luck 5%_Red" />
+	<Item GUID="217" ID="277" Cat="14" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Luck 10%_Red" />
+	<Item GUID="218" ID="278" Cat="12" Index="30" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Bless (30)_Red" />
+	<Item GUID="219" ID="279" Cat="12" Index="31" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Soul (30)_Red" />
+	<Item GUID="220" ID="280" Cat="14" Index="96" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Chaos Assembly_Red" />
+	<Item GUID="221" ID="281" Cat="14" Index="61" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 4_Red" />
+	<Item GUID="222" ID="282" Cat="14" Index="85" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cherry Blossom Wine (3)" />
+	<Item GUID="223" ID="283" Cat="14" Index="86" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cherry Blossom Rice Cake (2)" />
+	<Item GUID="224" ID="284" Cat="14" Index="87" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cherry Blossom Petal (3)" />
+	<Item GUID="225" ID="285" Cat="14" Index="62" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 5" />
+	<Item GUID="226" ID="286" Cat="14" Index="83" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 6" />
+	<Item GUID="227" ID="287" Cat="14" Index="145" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 7" />
+	<Item GUID="228" ID="288" Cat="14" Index="146" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 8" />
+	<Item GUID="229" ID="289" Cat="14" Index="146" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 8_BLUE" />
+	<Item GUID="230" ID="290" Cat="14" Index="145" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 7_BLUE" />
+	<Item GUID="231" ID="291" Cat="12" Index="39" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Ruin_BLUE" />
+	<Item GUID="232" ID="292" Cat="12" Index="36" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Storm_BLUE" />
+	<Item GUID="233" ID="293" Cat="12" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Dimension_BLUE" />
+	<Item GUID="234" ID="294" Cat="12" Index="40" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cape of Emperor_BLUE" />
+	<Item GUID="235" ID="295" Cat="12" Index="38" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Illusion_BLUE" />
+	<Item GUID="236" ID="296" Cat="12" Index="37" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Eternal_BLUE" />
+	<Item GUID="237" ID="297" Cat="12" Index="30" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Bless (30)_BLUE" />
+	<Item GUID="238" ID="298" Cat="12" Index="31" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Soul (30)_BLUE" />
+	<Item GUID="239" ID="299" Cat="12" Index="64" Level="1" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Lightning)_BLUE" />
+	<Item GUID="240" ID="300" Cat="12" Index="65" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Earth)_BLUE" />
+	<Item GUID="241" ID="301" Cat="12" Index="60" Level="5" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Fire)_BLUE" />
+	<Item GUID="242" ID="302" Cat="12" Index="62" Level="1" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Ice Mana)_BLUE" />
+	<Item GUID="243" ID="303" Cat="12" Index="62" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Ice Skill)_BLUE" />
+	<Item GUID="244" ID="304" Cat="12" Index="61" Level="3" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Water DR)_BLUE" />
+	<Item GUID="245" ID="305" Cat="12" Index="61" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed (Water BR)_BLUE" />
+	<Item GUID="246" ID="306" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Protection_S" />
+	<Item GUID="246" ID="307" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Protection_S" />
+	<Item GUID="247" ID="308" Cat="14" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Health_S" />
+	<Item GUID="247" ID="309" Cat="14" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Health_S" />
+	<Item GUID="248" ID="310" Cat="14" Index="77" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Mana_S" />
+	<Item GUID="248" ID="311" Cat="14" Index="77" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Mana_S" />
+	<Item GUID="249" ID="312" Cat="14" Index="97" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Battle_S" />
+	<Item GUID="249" ID="313" Cat="14" Index="97" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Battle_S" />
+	<Item GUID="250" ID="314" Cat="14" Index="98" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Strengthener_S" />
+	<Item GUID="250" ID="315" Cat="14" Index="98" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Strengthener_S" />
+	<Item GUID="251" ID="316" Cat="14" Index="72" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Quickness_S" />
+	<Item GUID="251" ID="317" Cat="14" Index="72" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Quickness_S" />
+	<Item GUID="252" ID="318" Cat="14" Index="74" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Wrath_S" />
+	<Item GUID="252" ID="319" Cat="14" Index="74" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Wrath_S" />
+	<Item GUID="253" ID="320" Cat="14" Index="75" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Wizardry_S" />
+	<Item GUID="253" ID="321" Cat="14" Index="75" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Wizardry_S" />
+	<Item GUID="254" ID="322" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Protection_P" />
+	<Item GUID="255" ID="323" Cat="14" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Health_P" />
+	<Item GUID="256" ID="324" Cat="14" Index="77" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Mana_P" />
+	<Item GUID="257" ID="325" Cat="14" Index="97" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Battle_P" />
+	<Item GUID="258" ID="326" Cat="14" Index="72" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Quickness_P" />
+	<Item GUID="259" ID="327" Cat="14" Index="74" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Wrath_P" />
+	<Item GUID="260" ID="328" Cat="14" Index="75" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Wizardry_P" />
+	<Item GUID="261" ID="329" Cat="7" Index="46" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Brave ITEM" />
+	<Item GUID="262" ID="330" Cat="13" Index="37" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Penrill" />
+	<Item GUID="263" ID="331" Cat="14" Index="169" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="3" Duration="0" Description="Rage Fighter Character Card" />
+	<Item GUID="264" ID="332" Cat="14" Index="146" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 8_Red" />
+	<Item GUID="265" ID="333" Cat="14" Index="61" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 4_Red" />
+	<Item GUID="266" ID="334" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_Red" />
+	<Item GUID="267" ID="335" Cat="14" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Luck 10%_Red" />
+	<Item GUID="268" ID="336" Cat="12" Index="141" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Chaos (30)_Red" />
+	<Item GUID="269" ID="337" Cat="12" Index="31" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Soul (30)_Red" />
+	<Item GUID="270" ID="338" Cat="12" Index="30" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Bless (30)_Red" />
+	<Item GUID="271" ID="339" Cat="13" Index="144" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="2nd Lucky Boots Ticket_Red" />
+	<Item GUID="272" ID="340" Cat="13" Index="143" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="2nd Lucky Gloves Ticket_Red" />
+	<Item GUID="273" ID="341" Cat="13" Index="142" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="2nd Lucky Helm Ticket_Red" />
+	<Item GUID="274" ID="342" Cat="13" Index="141" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="2nd Lucky Pants Ticket_Red" />
+	<Item GUID="275" ID="343" Cat="13" Index="140" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="2nd Lucky Armor Ticket_Red" />
+	<Item GUID="276" ID="344" Cat="13" Index="139" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="1st Lucky Boots Ticket_Red" />
+	<Item GUID="277" ID="345" Cat="13" Index="138" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="1st Lucky Gloves Ticket_Red" />
+	<Item GUID="278" ID="346" Cat="13" Index="137" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="1st Lucky Helm Ticket_Red" />
+	<Item GUID="279" ID="347" Cat="13" Index="136" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="1st Lucky Pants Ticket_Red" />
+	<Item GUID="280" ID="348" Cat="13" Index="135" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="1st Lucky Armor Ticket_Red" />
+	<Item GUID="281" ID="349" Cat="14" Index="162" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Magic Backpack" />
+	<Item GUID="282" ID="350" Cat="14" Index="163" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Vault Expansion Certificate" />
+	<Item GUID="283" ID="351" Cat="12" Index="135" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Little Warrior's Cloak" />
+	<Item GUID="283" ID="352" Cat="12" Index="135" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Little Warrior's Cloak" />
+	<Item GUID="284" ID="353" Cat="14" Index="169" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="3" Duration="0" Description="Rage Fighter Character Card" />
+	<Item GUID="285" ID="354" Cat="14" Index="112" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Silver Key_Time Attack" />
+	<Item GUID="286" ID="355" Cat="14" Index="113" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Key_Time Attack" />
+	<Item GUID="287" ID="356" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold_Time Attack" />
+	<Item GUID="288" ID="357" Cat="14" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Luck 10%_Time Attack" />
+	<Item GUID="289" ID="358" Cat="12" Index="64" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seed of Lightning_Time Attack" />
+	<Item GUID="290" ID="359" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold_Time Attack_" />
+	<Item GUID="291" ID="360" Cat="7" Index="1" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Dragon Helm" />
+	<Item GUID="292" ID="361" Cat="8" Index="1" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Dragon Armor" />
+	<Item GUID="293" ID="362" Cat="10" Index="1" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Dragon Gloves" />
+	<Item GUID="294" ID="363" Cat="11" Index="1" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Dragon Boots" />
+	<Item GUID="295" ID="364" Cat="7" Index="3" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Legendary Helm" />
+	<Item GUID="296" ID="365" Cat="8" Index="3" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Legendary Armor" />
+	<Item GUID="297" ID="366" Cat="11" Index="3" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Legendary Boots" />
+	<Item GUID="298" ID="367" Cat="9" Index="3" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Legendary Pants" />
+	<Item GUID="299" ID="368" Cat="10" Index="3" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Legendary Gloves" />
+	<Item GUID="300" ID="369" Cat="9" Index="1" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Dragon Pants" />
+	<Item GUID="301" ID="370" Cat="7" Index="40" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Redwing Helm" />
+	<Item GUID="302" ID="371" Cat="8" Index="40" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Redwing Armor" />
+	<Item GUID="303" ID="372" Cat="10" Index="40" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Redwing Gloves" />
+	<Item GUID="304" ID="373" Cat="9" Index="40" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Redwing Pants" />
+	<Item GUID="305" ID="374" Cat="11" Index="40" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Redwing Boots" />
+	<Item GUID="306" ID="375" Cat="7" Index="14" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Guardian Helm" />
+	<Item GUID="307" ID="376" Cat="8" Index="14" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Guardian Armor" />
+	<Item GUID="308" ID="377" Cat="10" Index="14" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Guardian Gloves" />
+	<Item GUID="309" ID="378" Cat="9" Index="14" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Guardian Pants" />
+	<Item GUID="310" ID="379" Cat="11" Index="14" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Guardian Boots" />
+	<Item GUID="311" ID="380" Cat="7" Index="21" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Great Dragon Helm" />
+	<Item GUID="312" ID="381" Cat="8" Index="21" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Great Dragon Armor" />
+	<Item GUID="313" ID="382" Cat="9" Index="21" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Great Dragon Pants" />
+	<Item GUID="314" ID="383" Cat="10" Index="21" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Great Dragon Gloves" />
+	<Item GUID="315" ID="384" Cat="11" Index="21" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Great Dragon Boots" />
+	<Item GUID="316" ID="385" Cat="7" Index="22" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Black Soul Helm" />
+	<Item GUID="317" ID="386" Cat="8" Index="22" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Black Soul Armor" />
+	<Item GUID="318" ID="387" Cat="9" Index="22" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Black Soul Pants" />
+	<Item GUID="319" ID="388" Cat="10" Index="22" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Black Soul Gloves" />
+	<Item GUID="320" ID="389" Cat="11" Index="22" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Black Soul Boots" />
+	<Item GUID="321" ID="390" Cat="7" Index="43" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Storm Blitz Helm" />
+	<Item GUID="322" ID="391" Cat="8" Index="43" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Storm Blitz Armor" />
+	<Item GUID="323" ID="392" Cat="9" Index="43" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Storm Blitz Pants" />
+	<Item GUID="324" ID="393" Cat="10" Index="43" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Storm Blitz Gloves" />
+	<Item GUID="325" ID="394" Cat="11" Index="43" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Storm Blitz Boots" />
+	<Item GUID="326" ID="395" Cat="7" Index="24" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Red Spirit Helm" />
+	<Item GUID="327" ID="396" Cat="8" Index="24" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Red Spirit Armor" />
+	<Item GUID="328" ID="397" Cat="9" Index="24" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Red Spirit Pants" />
+	<Item GUID="329" ID="398" Cat="10" Index="24" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Red Spirit Gloves" />
+	<Item GUID="330" ID="399" Cat="11" Index="24" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Red Spirit Boots" />
+	<Item GUID="331" ID="400" Cat="7" Index="59" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Sacred Fire Helm" />
+	<Item GUID="332" ID="401" Cat="8" Index="59" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Sacred Fire Armor" />
+	<Item GUID="333" ID="402" Cat="9" Index="59" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Sacred Fire Pants" />
+	<Item GUID="334" ID="403" Cat="0" Index="32" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Sacred Fire Gloves" />
+	<Item GUID="335" ID="404" Cat="11" Index="59" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Sacred Fire Boots" />
+	<Item GUID="336" ID="405" Cat="7" Index="61" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Piercing Groove Helm" />
+	<Item GUID="337" ID="406" Cat="8" Index="61" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Piercing Groove Armor" />
+	<Item GUID="338" ID="407" Cat="9" Index="61" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Piercing Groove Pants" />
+	<Item GUID="339" ID="408" Cat="11" Index="61" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Piercing Groove Boots" />
+	<Item GUID="340" ID="409" Cat="0" Index="34" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Piercing Groove Gloves" />
+	<Item GUID="341" ID="410" Cat="12" Index="5" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Wings of Dragon" />
+	<Item GUID="342" ID="411" Cat="12" Index="4" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Wings of Soul " />
+	<Item GUID="343" ID="412" Cat="12" Index="42" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Wings of Despair " />
+	<Item GUID="344" ID="413" Cat="12" Index="3" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Wings of Spirits " />
+	<Item GUID="345" ID="414" Cat="12" Index="6" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Wings of Darkness " />
+	<Item GUID="346" ID="415" Cat="13" Index="30" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Cape of Lord " />
+	<Item GUID="347" ID="416" Cat="12" Index="49" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Cape of Fighter" />
+	<Item GUID="348" ID="417" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Ascension 3Days" />
+	<Item GUID="349" ID="418" Cat="12" Index="141" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Jewel of Chaos Bundle (30)_BLUE" />
+	<Item GUID="350" ID="419" Cat="12" Index="136" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Jewel of Life Bundle (30)_BLUE" />
+	<Item GUID="351" ID="420" Cat="13" Index="37" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Horn of Fenrir_Platinum" />
+	<Item GUID="352" ID="421" Cat="13" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Feather of Condor_Platinum" />
+	<Item GUID="353" ID="422" Cat="14" Index="58" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 1_Platinum" />
+	<Item GUID="354" ID="423" Cat="14" Index="59" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 2_Platinum" />
+	<Item GUID="355" ID="424" Cat="14" Index="60" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 3_Platinum" />
+	<Item GUID="356" ID="425" Cat="14" Index="61" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 4_Platinum" />
+	<Item GUID="357" ID="426" Cat="14" Index="145" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 7_Platinum" />
+	<Item GUID="358" ID="427" Cat="14" Index="146" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 8_Platinum" />
+	<Item GUID="359" ID="428" Cat="14" Index="96" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Chaos Assembly_Platinum" />
+	<Item GUID="360" ID="429" Cat="12" Index="136" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Jewel of Life Bundle (30)_Platinum" />
+	<Item GUID="361" ID="430" Cat="12" Index="141" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Jewel of Chaos Bundle (30)_Platinum" />
+	<Item GUID="362" ID="431" Cat="13" Index="62" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Healing 7DAYS" />
+	<Item GUID="363" ID="432" Cat="14" Index="169" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="3" Duration="0" Description="Rage Fighter Character Card_Event" />
+	<Item GUID="364" ID="433" Cat="14" Index="91" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="3" Duration="0" Description="Summoner Character Card_Event" />
+	<Item GUID="365" ID="434" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_7day_Event" />
+	<Item GUID="366" ID="435" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Wealth_7day_Event" />
+	<Item GUID="367" ID="436" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda_7day_Event" />
+	<Item GUID="368" ID="437" Cat="13" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Feather of Condor_Event" />
+	<Item GUID="369" ID="438" Cat="7" Index="28" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Dark Master Mask" />
+	<Item GUID="370" ID="439" Cat="8" Index="28" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward - Dark Master Armor" />
+	<Item GUID="371" ID="440" Cat="9" Index="28" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Dark Master Pants" />
+	<Item GUID="372" ID="441" Cat="10" Index="28" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Dark Master Gloves" />
+	<Item GUID="373" ID="442" Cat="11" Index="28" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Dark Master Boots" />
+	<Item GUID="374" ID="443" Cat="8" Index="20" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Thunder Hawk Armor" />
+	<Item GUID="375" ID="444" Cat="9" Index="20" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Thunder Hawk Pants" />
+	<Item GUID="376" ID="445" Cat="10" Index="20" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Thunder Hawk Gloves" />
+	<Item GUID="377" ID="446" Cat="11" Index="20" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Event Reward -Thunder Hawk Boots" />
+	<Item GUID="378" ID="447" Cat="13" Index="122" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Skeleton Transformation Ring [3Days]" />
+	<Item GUID="379" ID="448" Cat="13" Index="123" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Skeleton [3Days]" />
+	<Item GUID="380" ID="449" Cat="13" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Panda Ring [3Days]" />
+	<Item GUID="381" ID="450" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda [3Days]" />
+	<Item GUID="382" ID="451" Cat="14" Index="147" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 9" />
+	<Item GUID="383" ID="452" Cat="14" Index="148" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 10" />
+	<Item GUID="384" ID="453" Cat="14" Index="149" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 11" />
+	<Item GUID="385" ID="454" Cat="14" Index="150" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 12" />
+	<Item GUID="386" ID="455" Cat="13" Index="37" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Horn of Fenrir_Event" />
+	<Item GUID="387" ID="456" Cat="12" Index="3" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wings of Spirits_Event" />
+	<Item GUID="388" ID="457" Cat="12" Index="5" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wings of Dragon_Event" />
+	<Item GUID="389" ID="458" Cat="12" Index="6" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wings of Darkness_Event" />
+	<Item GUID="390" ID="459" Cat="12" Index="4" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wings of Soul_Event" />
+	<Item GUID="391" ID="460" Cat="12" Index="42" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wings of Despair_Event" />
+	<Item GUID="392" ID="461" Cat="13" Index="30" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cape of Lord_Event" />
+	<Item GUID="393" ID="462" Cat="12" Index="49" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cape of Fighter_Event" />
+	<Item GUID="394" ID="463" Cat="12" Index="136" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Jewel of Life Bundle (10)" />
+	<Item GUID="395" ID="464" Cat="12" Index="136" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Jewel of Life Bundle (30)" />
+	<Item GUID="396" ID="465" Cat="12" Index="31" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Soul (10)" />
+	<Item GUID="397" ID="466" Cat="12" Index="31" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Soul (30)" />
+	<Item GUID="398" ID="467" Cat="12" Index="30" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Bless (10)" />
+	<Item GUID="399" ID="468" Cat="12" Index="30" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Bless (30)" />
+	<Item GUID="400" ID="469" Cat="12" Index="140" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Harmony (10)" />
+	<Item GUID="401" ID="470" Cat="12" Index="140" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Harmony (30)" />
+	<Item GUID="402" ID="471" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda [28 Day]" />
+	<Item GUID="403" ID="472" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda_28 Day_Event" />
+	<Item GUID="404" ID="473" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda_7Day" />
+	<Item GUID="405" ID="474" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Panda_28Day_Event" />
+	<Item GUID="406" ID="475" Cat="12" Index="31" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Soul (20)" />
+	<Item GUID="407" ID="476" Cat="12" Index="30" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Bless (20)" />
+	<Item GUID="408" ID="477" Cat="12" Index="141" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Chaos (20)" />
+	<Item GUID="409" ID="478" Cat="12" Index="136" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Jewel of Life Bundle (20)" />
+	<Item GUID="410" ID="479" Cat="13" Index="14" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Feather of Loch" />
+	<Item GUID="411" ID="480" Cat="12" Index="137" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Creation (20)" />
+	<Item GUID="412" ID="481" Cat="12" Index="137" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Creation (10)" />
+	<Item GUID="413" ID="482" Cat="12" Index="141" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Chaos (10)" />
+	<Item GUID="414" ID="483" Cat="14" Index="96" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Chaos Assembly_CARD" />
+	<Item GUID="415" ID="484" Cat="13" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Feather of Condor_CARD" />
+	<Item GUID="416" ID="485" Cat="13" Index="37" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Horn of Fenrir_CARD" />
+	<Item GUID="417" ID="486" Cat="12" Index="37" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Eternal_CARD" />
+	<Item GUID="418" ID="487" Cat="12" Index="38" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Illusion_CARD" />
+	<Item GUID="419" ID="488" Cat="12" Index="40" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cape of Emperor_CARD" />
+	<Item GUID="420" ID="489" Cat="12" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Dimension_CARD" />
+	<Item GUID="421" ID="490" Cat="12" Index="36" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Storm_CARD" />
+	<Item GUID="422" ID="491" Cat="12" Index="39" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Ruin_CARD" />
+	<Item GUID="423" ID="492" Cat="12" Index="50" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cape of Overrule_CARD" />
+	<Item GUID="424" ID="493" Cat="14" Index="58" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 1_CARD" />
+	<Item GUID="425" ID="494" Cat="14" Index="59" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 2_CARD" />
+	<Item GUID="426" ID="495" Cat="14" Index="60" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 3_CARD" />
+	<Item GUID="427" ID="496" Cat="14" Index="61" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 4_CARD" />
+	<Item GUID="428" ID="497" Cat="14" Index="146" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 8_CARD" />
+	<Item GUID="429" ID="498" Cat="14" Index="147" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 9_CARD" />
+	<Item GUID="430" ID="499" Cat="14" Index="149" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 11_CARD" />
+	<Item GUID="431" ID="500" Cat="13" Index="80" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Pet Panda (7 Day)_P" />
+	<Item GUID="432" ID="501" Cat="13" Index="62" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Seal of Healing (7 Day)_P" />
+	<Item GUID="433" ID="502" Cat="12" Index="30" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Bless (10)_P" />
+	<Item GUID="434" ID="503" Cat="12" Index="31" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Soul (10)_P" />
+	<Item GUID="435" ID="504" Cat="12" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Orb of Strike of Destruction_P" />
+	<Item GUID="436" ID="505" Cat="12" Index="12" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Orb of Rageful Blow_P" />
+	<Item GUID="437" ID="506" Cat="12" Index="19" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Orb of Death Stab_P" />
+	<Item GUID="438" ID="507" Cat="12" Index="14" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Orb of Swell Life_P" />
+	<Item GUID="439" ID="508" Cat="15" Index="8" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Evil Spirit_P" />
+	<Item GUID="440" ID="509" Cat="15" Index="28" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Expansion of Wizardry_P" />
+	<Item GUID="441" ID="510" Cat="15" Index="18" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Nova_P" />
+	<Item GUID="442" ID="511" Cat="15" Index="15" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Soul Barrior_P" />
+	<Item GUID="443" ID="512" Cat="15" Index="19" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chain Lightning Parchment_P" />
+	<Item GUID="444" ID="513" Cat="15" Index="22" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Damage Reflection Parchment_P" />
+	<Item GUID="445" ID="514" Cat="15" Index="23" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Berserker Parchment_P" />
+	<Item GUID="446" ID="515" Cat="15" Index="21" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Lightning Shock Parchment_P" />
+	<Item GUID="447" ID="516" Cat="15" Index="35" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Increase Health Parchment_P" />
+	<Item GUID="448" ID="517" Cat="15" Index="31" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Dark Side Parchment_P" />
+	<Item GUID="449" ID="518" Cat="15" Index="33" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Dragon Slasher Parchment_P" />
+	<Item GUID="450" ID="519" Cat="15" Index="36" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Increase Block Parchment_P" />
+	<Item GUID="451" ID="520" Cat="12" Index="45" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Multi Shot_P" />
+	<Item GUID="452" ID="521" Cat="12" Index="18" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Orb of Ice Arrow_P" />
+	<Item GUID="453" ID="522" Cat="12" Index="17" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Orb of Penetration_P" />
+	<Item GUID="454" ID="523" Cat="12" Index="46" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Orb of Recovery_P" />
+	<Item GUID="455" ID="524" Cat="15" Index="29" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Gigantic Storm_P" />
+	<Item GUID="456" ID="525" Cat="15" Index="12" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Cometfall_P" />
+	<Item GUID="457" ID="526" Cat="12" Index="47" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Scroll of Flame Strike_P" />
+	<Item GUID="458" ID="527" Cat="12" Index="50" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cape of Overrule_BLUE" />
+	<Item GUID="459" ID="528" Cat="13" Index="128" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Statue of Hawk" />
+	<Item GUID="459" ID="529" Cat="13" Index="128" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Statue of Hawk" />
+	<Item GUID="459" ID="530" Cat="13" Index="128" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="43200" Description="Statue of Hawk" />
+	<Item GUID="460" ID="531" Cat="13" Index="129" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Statue of Goral" />
+	<Item GUID="460" ID="532" Cat="13" Index="129" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Statue of Goral" />
+	<Item GUID="460" ID="533" Cat="13" Index="129" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="43200" Description="Statue of Goral" />
+	<Item GUID="461" ID="534" Cat="13" Index="130" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Oak Charm" />
+	<Item GUID="461" ID="535" Cat="13" Index="130" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Oak Charm" />
+	<Item GUID="461" ID="536" Cat="13" Index="130" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="43200" Description="Oak Charm" />
+	<Item GUID="462" ID="537" Cat="13" Index="132" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Golden Oak Charm" />
+	<Item GUID="462" ID="538" Cat="13" Index="132" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Golden Oak Charm" />
+	<Item GUID="462" ID="539" Cat="13" Index="132" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="43200" Description="Golden Oak Charm" />
+	<Item GUID="463" ID="540" Cat="13" Index="134" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="1440" Description="Worn Horseshoe" />
+	<Item GUID="463" ID="541" Cat="13" Index="134" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="10080" Description="Worn Horseshoe" />
+	<Item GUID="463" ID="542" Cat="13" Index="134" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="2" Duration="43200" Description="Worn Horseshoe" />
+	<Item GUID="464" ID="543" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="10000 GP" />
+	<Item GUID="465" ID="544" Cat="13" Index="135" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="1st Lucky Armor Ticket" />
+	<Item GUID="466" ID="545" Cat="13" Index="136" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="1st Lucky Pants Ticket" />
+	<Item GUID="467" ID="546" Cat="13" Index="137" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="1st Lucky Helm Ticket" />
+	<Item GUID="468" ID="547" Cat="13" Index="138" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="1st Lucky Gloves Ticket" />
+	<Item GUID="469" ID="548" Cat="13" Index="139" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="1st Lucky Boots Ticket" />
+	<Item GUID="470" ID="549" Cat="13" Index="140" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="2nd Lucky Armor Ticket" />
+	<Item GUID="471" ID="550" Cat="13" Index="141" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="2nd Lucky Pants Ticket" />
+	<Item GUID="472" ID="551" Cat="13" Index="142" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="2nd Lucky Helm Ticket" />
+	<Item GUID="473" ID="552" Cat="13" Index="143" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="2nd Lucky Gloves Ticket" />
+	<Item GUID="474" ID="553" Cat="13" Index="144" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="2nd Lucky Boots Ticket" />
+	<Item GUID="475" ID="554" Cat="14" Index="53" Level="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Luck 10%_BLUE" />
+	<Item GUID="476" ID="555" Cat="14" Index="160" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Jewel of Extension_BLUE" />
+	<Item GUID="477" ID="556" Cat="12" Index="31" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Soul (30)_BLUE" />
+	<Item GUID="478" ID="557" Cat="12" Index="30" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Bless (30))_BLUE" />
+	<Item GUID="479" ID="558" Cat="12" Index="37" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wing of Eternal_BLUE" />
+	<Item GUID="480" ID="559" Cat="12" Index="38" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wing of Illusion_BLUE" />
+	<Item GUID="481" ID="560" Cat="12" Index="40" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Cape of Emperor_BLUE" />
+	<Item GUID="482" ID="561" Cat="12" Index="43" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wing of Dimension_BLUE" />
+	<Item GUID="483" ID="562" Cat="12" Index="36" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wing of Storm_BLUE" />
+	<Item GUID="484" ID="563" Cat="12" Index="39" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wing of Ruin_BLUE" />
+	<Item GUID="485" ID="564" Cat="12" Index="50" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Cape of Overrule" />
+	<Item GUID="486" ID="565" Cat="14" Index="61" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 4_BLUE" />
+	<Item GUID="487" ID="566" Cat="12" Index="141" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Jewel of Chaos Bundle (30)_Event" />
+	<Item GUID="488" ID="567" Cat="14" Index="87" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cherry Blossom Petal" />
+	<Item GUID="489" ID="568" Cat="14" Index="85" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cherry Blossom Wine" />
+	<Item GUID="490" ID="569" Cat="14" Index="86" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cherry Blossom Rice Cake" />
+	<Item GUID="491" ID="570" Cat="14" Index="73" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Protection_7 Day" />
+	<Item GUID="492" ID="571" Cat="14" Index="76" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Health_7 Day" />
+	<Item GUID="493" ID="572" Cat="14" Index="77" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Mana_7 Day" />
+	<Item GUID="494" ID="573" Cat="14" Index="97" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Battle_7 Day" />
+	<Item GUID="495" ID="574" Cat="14" Index="98" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Strengthener_7 Day" />
+	<Item GUID="496" ID="575" Cat="14" Index="72" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Quickness_7 Day" />
+	<Item GUID="497" ID="576" Cat="14" Index="74" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Wrath_7 Day" />
+	<Item GUID="498" ID="577" Cat="14" Index="75" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="Scroll of Wizardry_7 Day" />
+	<Item GUID="499" ID="578" Cat="12" Index="30" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Bless (30)" />
+	<Item GUID="500" ID="579" Cat="12" Index="31" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Soul (30)" />
+	<Item GUID="501" ID="580" Cat="12" Index="141" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Jewel of Chaos Bundle (10)" />
+	<Item GUID="502" ID="581" Cat="12" Index="136" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Jewel of Life Bundle (10)" />
+	<Item GUID="503" ID="582" Cat="12" Index="140" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Bundle of Jewel of Harmony (10)" />
+	<Item GUID="504" ID="583" Cat="14" Index="53" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Talisman of Luck 10%" />
+	<Item GUID="505" ID="584" Cat="14" Index="149" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 11" />
+	<Item GUID="506" ID="585" Cat="14" Index="146" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rare Item Ticket 8" />
+	<Item GUID="507" ID="586" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="8 Goblin Point" />
+	<Item GUID="508" ID="587" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="20 Goblin Point" />
+	<Item GUID="509" ID="588" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="25 Goblin Point" />
+	<Item GUID="510" ID="589" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="30 Goblin Point" />
+	<Item GUID="511" ID="590" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="35 Goblin Point" />
+	<Item GUID="512" ID="591" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="40 Goblin Point" />
+	<Item GUID="513" ID="592" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="60 Goblin Point" />
+	<Item GUID="514" ID="593" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="70 Goblin Point" />
+	<Item GUID="515" ID="594" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="90 Goblin Point" />
+	<Item GUID="516" ID="595" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="105 Goblin Point" />
+	<Item GUID="517" ID="596" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="115 Goblin Point" />
+	<Item GUID="518" ID="597" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Wealth_7 Day" />
+	<Item GUID="519" ID="598" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Wealth_30 Day" />
+	<Item GUID="520" ID="599" Cat="13" Index="94" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Master Seal of Wealth_7 Day" />
+	<Item GUID="521" ID="600" Cat="13" Index="94" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Master Seal of Wealth_30 Day" />
+	<Item GUID="522" ID="601" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Ascension_7 Day" />
+	<Item GUID="523" ID="602" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Ascension_30 Day" />
+	<Item GUID="524" ID="603" Cat="13" Index="93" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Master Seal of Ascension_7 Day" />
+	<Item GUID="525" ID="604" Cat="13" Index="93" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Master Seal of Ascension_30 Day" />
+	<Item GUID="526" ID="605" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_7 Day" />
+	<Item GUID="527" ID="606" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_30 Day" />
+	<Item GUID="528" ID="607" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket" />
+	<Item GUID="528" ID="608" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket" />
+	<Item GUID="528" ID="609" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket" />
+	<Item GUID="528" ID="610" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket" />
+	<Item GUID="529" ID="611" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Seal of Ascension_30 Day" />
+	<Item GUID="530" ID="612" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_Bonus(3)" />
+	<Item GUID="531" ID="613" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_Bonus" />
+	<Item GUID="533" ID="620" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card Gold_6 Bundle" />
+	<Item GUID="534" ID="621" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_Bonus(2)" />
+	<Item GUID="535" ID="622" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_Bonus(1)" />
+	<Item GUID="536" ID="623" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_10" />
+	<Item GUID="537" ID="624" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_9" />
+	<Item GUID="538" ID="625" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_8" />
+	<Item GUID="539" ID="626" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_7" />
+	<Item GUID="540" ID="627" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_6" />
+	<Item GUID="541" ID="628" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_5" />
+	<Item GUID="542" ID="629" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_4" />
+	<Item GUID="543" ID="630" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_3" />
+	<Item GUID="544" ID="631" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_2" />
+	<Item GUID="545" ID="632" Cat="14" Index="92" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card GOLD_1" />
+	<Item GUID="546" ID="633" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_Bonus(3)" />
+	<Item GUID="547" ID="634" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_Bonus(2)" />
+	<Item GUID="548" ID="635" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_Bonus(1)" />
+	<Item GUID="549" ID="636" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_10" />
+	<Item GUID="550" ID="637" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_9" />
+	<Item GUID="551" ID="638" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_8" />
+	<Item GUID="552" ID="639" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_7" />
+	<Item GUID="553" ID="640" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_6" />
+	<Item GUID="554" ID="641" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_5" />
+	<Item GUID="555" ID="642" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_4" />
+	<Item GUID="556" ID="643" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_3" />
+	<Item GUID="557" ID="644" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_2" />
+	<Item GUID="558" ID="645" Cat="14" Index="95" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Chaos Card  Mini_1" />
+	<Item GUID="559" ID="646" Cat="14" Index="11" Level="8" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Box of Kundun +1 " />
+	<Item GUID="560" ID="647" Cat="14" Index="11" Level="9" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Box of kundun +2" />
+	<Item GUID="561" ID="648" Cat="14" Index="11" Level="10" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Box of kundun +3" />
+	<Item GUID="562" ID="649" Cat="14" Index="11" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Box of kundun +4" />
+	<Item GUID="563" ID="650" Cat="14" Index="11" Level="12" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Box of kundun +5" />
+	<Item GUID="564" ID="651" Cat="14" Index="52" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="GM Gift Box" />
+	<Item GUID="565" ID="652" Cat="13" Index="67" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Pet Rudolph" />
+	<Item GUID="566" ID="653" Cat="13" Index="68" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Snowman Transformation Ring" />
+	<Item GUID="567" ID="654" Cat="13" Index="114" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Emerald Necklace" />
+	<Item GUID="568" ID="655" Cat="13" Index="115" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Sapphire Necklace" />
+	<Item GUID="569" ID="656" Cat="13" Index="111" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Topaz Ring" />
+	<Item GUID="570" ID="657" Cat="13" Index="110" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Ruby Ring" />
+	<Item GUID="571" ID="658" Cat="13" Index="109" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Sapphire Ring" />
+	<Item GUID="572" ID="659" Cat="13" Index="48" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Kalima Ticket " />
+	<Item GUID="573" ID="660" Cat="13" Index="46" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Devil Square Ticket" />
+	<Item GUID="574" ID="661" Cat="13" Index="47" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Blood Castle Ticket" />
+	<Item GUID="575" ID="662" Cat="13" Index="61" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Illusion Temple Ticket" />
+	<Item GUID="576" ID="663" Cat="13" Index="127" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Open Access Ticket to Varka 7" />
+	<Item GUID="577" ID="664" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Gold Channel Ticket_Compensation" />
+	<Item GUID="578" ID="665" Cat="12" Index="37" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wing of Eternal_CARD" />
+	<Item GUID="579" ID="666" Cat="12" Index="38" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wing of Illusion_CARD" />
+	<Item GUID="580" ID="667" Cat="12" Index="40" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Cape of Emperor_CARD" />
+	<Item GUID="581" ID="668" Cat="12" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wing of Dimension_CARD" />
+	<Item GUID="582" ID="669" Cat="12" Index="36" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wing of Storm_CARD" />
+	<Item GUID="583" ID="670" Cat="12" Index="39" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wing of Ruin_CARD" />
+	<Item GUID="584" ID="671" Cat="12" Index="50" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Cape of Overrule_CARD" />
+	<Item GUID="585" ID="672" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="4" Duration="1" Description="[Discount][Gold Channel Ticket]" />
+	<Item GUID="585" ID="673" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="4" Duration="3" Description="[Discount][Gold Channel Ticket]" />
+	<Item GUID="585" ID="674" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="4" Duration="7" Description="[Discount][Gold Channel Ticket]" />
+	<Item GUID="585" ID="675" Cat="13" Index="124" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="4" Duration="30" Description="[Discount][Gold Channel Ticket]" />
+	<Item GUID="586" ID="676" Cat="12" Index="3" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wings of Spirits_Event" />
+	<Item GUID="587" ID="677" Cat="12" Index="5" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wings of Dragon_Event" />
+	<Item GUID="588" ID="678" Cat="12" Index="6" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wings of Darkness_Event" />
+	<Item GUID="589" ID="679" Cat="12" Index="4" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wings of Soul_Event" />
+	<Item GUID="590" ID="680" Cat="12" Index="42" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Wings of Despair_Event" />
+	<Item GUID="591" ID="681" Cat="13" Index="30" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Cape of Lord_Event" />
+	<Item GUID="592" ID="682" Cat="12" Index="49" Level="11" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="+11 Cape of Fighter_Event" />
+	<Item GUID="593" ID="683" Cat="13" Index="37" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Horn of Fenrir_Event" />
+	<Item GUID="594" ID="684" Cat="12" Index="37" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Eternal_Event" />
+	<Item GUID="595" ID="685" Cat="12" Index="38" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Illusion_Event" />
+	<Item GUID="596" ID="686" Cat="12" Index="40" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cape of Emperor_Event" />
+	<Item GUID="597" ID="687" Cat="12" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Dimension_Event" />
+	<Item GUID="598" ID="688" Cat="12" Index="36" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Storm_Event" />
+	<Item GUID="599" ID="689" Cat="12" Index="39" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Wing of Ruin_Event" />
+	<Item GUID="600" ID="690" Cat="12" Index="50" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Cape of Overrule_Event" />
+	<Item GUID="601" ID="691" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="15 Goblin Point" />
+	<Item GUID="602" ID="692" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="50 Goblin Point" />
+	<Item GUID="603" ID="693" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="80 Goblin Point" />
+	<Item GUID="604" ID="694" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="100 Goblin Point" />
+	<Item GUID="605" ID="695" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="240 Goblin Point" />
+	<Item GUID="606" ID="696" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="280 Goblin Point" />
+	<Item GUID="607" ID="697" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="360 Goblin Point" />
+	<Item GUID="608" ID="698" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="420 Goblin Point" />
+	<Item GUID="609" ID="699" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="460 Goblin Point" />
+	<Item GUID="610" ID="700" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="[+GP_EVENT] Seal of Wealth_7 Day" />
+	<Item GUID="611" ID="701" Cat="13" Index="44" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="[+GP_EVENT] Seal of Wealth_30 Day" />
+	<Item GUID="612" ID="702" Cat="13" Index="94" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="[+GP_EVENT] Master Seal of Wealth_7 Day" />
+	<Item GUID="613" ID="703" Cat="13" Index="94" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="[+GP_EVENT] Master Seal of Wealth_30 Day" />
+	<Item GUID="614" ID="704" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="[+GP_EVENT] Seal of Ascension_7 Day" />
+	<Item GUID="615" ID="705" Cat="13" Index="43" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="[+GP_EVENT] Seal of Ascension_30 Day" />
+	<Item GUID="616" ID="706" Cat="13" Index="93" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="[+GP_EVENT] Master Seal of Ascension_7 Day" />
+	<Item GUID="617" ID="707" Cat="13" Index="93" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="[+GP_EVENT] Master Seal of Ascension_30 Day" />
+	<Item GUID="618" ID="708" Cat="13" Index="128" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="[+GP_EVENT] Statue of Hawk 7 Day" />
+	<Item GUID="619" ID="709" Cat="13" Index="128" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="[+GP_EVENT] Statue of Hawk 30 Day" />
+	<Item GUID="620" ID="710" Cat="13" Index="129" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="[+GP_EVENT] Statue of Goral 7 Day" />
+	<Item GUID="621" ID="711" Cat="13" Index="129" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="[+GP_EVENT] Statue of Goral 30 Day" />
+	<Item GUID="622" ID="712" Cat="13" Index="130" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="[+GP_EVENT] Oak Charm 7 Day" />
+	<Item GUID="623" ID="713" Cat="13" Index="130" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="[+GP_EVENT] Oak Charm 30 Day" />
+	<Item GUID="624" ID="714" Cat="13" Index="132" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="[+GP_EVENT] Golden Oak Charm 7 Day" />
+	<Item GUID="625" ID="715" Cat="13" Index="132" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="[+GP_EVENT] Golden Oak Charm 30 Day" />
+	<Item GUID="626" ID="716" Cat="13" Index="134" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="10080" Description="[+GP_EVENT] Worn Horseshoe 7 Day" />
+	<Item GUID="627" ID="717" Cat="13" Index="134" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="1" Duration="43200" Description="[+GP_EVENT] Worn Horseshoe 30 Day" />
+	<Item GUID="628" ID="718" Cat="12" Index="135" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Rage Fighters Small Wing" />
+	<Item GUID="629" ID="719" Cat="14" Index="120" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="100000 Goblin Point" />
+	<Item GUID="893" ID="1094" Cat="13" Index="66" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Set="0" SocketCount="0" Element="0" Type="0" Duration="0" Description="Invitation Ticket to Santa Village" />
+</CashItemInfo>

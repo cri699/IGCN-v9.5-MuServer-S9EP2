@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ImperialGuardian::Range ###
+//	PlayerMinLevel: Defines a start range of player levels to apply settings of the record
+//	PlayerMaxLevel: Defines a end range of player levels to apply settings of the record
+//	ExpReward: Defines experience reward for completing the final stage of the Imperial Fort event (Sunday)
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ImperialGuardian>	
+	<Range PlayerMinLevel="0"   PlayerMaxLevel="10"  ExpReward="2500" />
+	<Range PlayerMinLevel="11"  PlayerMaxLevel="20"  ExpReward="5000" />
+	<Range PlayerMinLevel="21"  PlayerMaxLevel="30"  ExpReward="10000" />
+	<Range PlayerMinLevel="31"  PlayerMaxLevel="40"  ExpReward="20000" />
+	<Range PlayerMinLevel="41"  PlayerMaxLevel="50"  ExpReward="40000" />
+	<Range PlayerMinLevel="51"  PlayerMaxLevel="60"  ExpReward="60000" />
+	<Range PlayerMinLevel="61"  PlayerMaxLevel="70"  ExpReward="80000" />
+	<Range PlayerMinLevel="71"  PlayerMaxLevel="80"  ExpReward="100000" />
+	<Range PlayerMinLevel="81"  PlayerMaxLevel="90"  ExpReward="120000" />
+	<Range PlayerMinLevel="91"  PlayerMaxLevel="100" ExpReward="140000" />
+	<Range PlayerMinLevel="101" PlayerMaxLevel="110" ExpReward="160000" />
+	<Range PlayerMinLevel="111" PlayerMaxLevel="120" ExpReward="180000" />
+	<Range PlayerMinLevel="121" PlayerMaxLevel="130" ExpReward="200000" />
+	<Range PlayerMinLevel="131" PlayerMaxLevel="140" ExpReward="220000" />
+	<Range PlayerMinLevel="141" PlayerMaxLevel="150" ExpReward="240000" />
+	<Range PlayerMinLevel="151" PlayerMaxLevel="160" ExpReward="260000" />
+	<Range PlayerMinLevel="161" PlayerMaxLevel="170" ExpReward="280000" />
+	<Range PlayerMinLevel="171" PlayerMaxLevel="180" ExpReward="300000" />
+	<Range PlayerMinLevel="181" PlayerMaxLevel="190" ExpReward="330000" />
+	<Range PlayerMinLevel="191" PlayerMaxLevel="200" ExpReward="340000" />
+	<Range PlayerMinLevel="201" PlayerMaxLevel="210" ExpReward="350000" />
+	<Range PlayerMinLevel="211" PlayerMaxLevel="220" ExpReward="360000" />
+	<Range PlayerMinLevel="221" PlayerMaxLevel="230" ExpReward="370000" />
+	<Range PlayerMinLevel="231" PlayerMaxLevel="240" ExpReward="380000" />
+	<Range PlayerMinLevel="241" PlayerMaxLevel="250" ExpReward="390000" />
+	<Range PlayerMinLevel="251" PlayerMaxLevel="260" ExpReward="400000" />
+	<Range PlayerMinLevel="261" PlayerMaxLevel="270" ExpReward="410000" />
+	<Range PlayerMinLevel="271" PlayerMaxLevel="280" ExpReward="420000" />
+	<Range PlayerMinLevel="281" PlayerMaxLevel="290" ExpReward="430000" />
+	<Range PlayerMinLevel="291" PlayerMaxLevel="300" ExpReward="440000" />
+	<Range PlayerMinLevel="301" PlayerMaxLevel="310" ExpReward="450000" />
+	<Range PlayerMinLevel="311" PlayerMaxLevel="320" ExpReward="460000" />
+	<Range PlayerMinLevel="321" PlayerMaxLevel="330" ExpReward="470000" />
+	<Range PlayerMinLevel="331" PlayerMaxLevel="340" ExpReward="480000" />
+	<Range PlayerMinLevel="341" PlayerMaxLevel="350" ExpReward="490000" />
+	<Range PlayerMinLevel="351" PlayerMaxLevel="360" ExpReward="500000" />
+	<Range PlayerMinLevel="361" PlayerMaxLevel="370" ExpReward="510000" />
+	<Range PlayerMinLevel="371" PlayerMaxLevel="380" ExpReward="520000" />
+	<Range PlayerMinLevel="381" PlayerMaxLevel="390" ExpReward="530000" />
+	<Range PlayerMinLevel="391" PlayerMaxLevel="400" ExpReward="540000" />
+	<Range PlayerMinLevel="401" PlayerMaxLevel="410" ExpReward="550000" />
+	<Range PlayerMinLevel="411" PlayerMaxLevel="420" ExpReward="560000" />
+	<Range PlayerMinLevel="421" PlayerMaxLevel="430" ExpReward="570000" />
+	<Range PlayerMinLevel="431" PlayerMaxLevel="440" ExpReward="580000" />
+	<Range PlayerMinLevel="441" PlayerMaxLevel="450" ExpReward="590000" />
+	<Range PlayerMinLevel="451" PlayerMaxLevel="460" ExpReward="600000" />
+	<Range PlayerMinLevel="461" PlayerMaxLevel="470" ExpReward="610000" />
+	<Range PlayerMinLevel="471" PlayerMaxLevel="480" ExpReward="620000" />
+	<Range PlayerMinLevel="481" PlayerMaxLevel="490" ExpReward="630000" />
+	<Range PlayerMinLevel="491" PlayerMaxLevel="500" ExpReward="640000" />
+	<Range PlayerMinLevel="501" PlayerMaxLevel="510" ExpReward="650000" />
+	<Range PlayerMinLevel="511" PlayerMaxLevel="520" ExpReward="660000" />
+	<Range PlayerMinLevel="521" PlayerMaxLevel="530" ExpReward="670000" />
+	<Range PlayerMinLevel="531" PlayerMaxLevel="540" ExpReward="680000" />
+	<Range PlayerMinLevel="541" PlayerMaxLevel="550" ExpReward="690000" />
+	<Range PlayerMinLevel="551" PlayerMaxLevel="560" ExpReward="700000" />
+	<Range PlayerMinLevel="561" PlayerMaxLevel="570" ExpReward="710000" />
+	<Range PlayerMinLevel="571" PlayerMaxLevel="580" ExpReward="720000" />
+	<Range PlayerMinLevel="581" PlayerMaxLevel="590" ExpReward="730000" />
+	<Range PlayerMinLevel="591" PlayerMaxLevel="600" ExpReward="740000" />
+	<Range PlayerMinLevel="601" PlayerMaxLevel="610" ExpReward="750000" />
+	<Range PlayerMinLevel="611" PlayerMaxLevel="620" ExpReward="760000" />
+	<Range PlayerMinLevel="621" PlayerMaxLevel="630" ExpReward="770000" />
+	<Range PlayerMinLevel="631" PlayerMaxLevel="640" ExpReward="780000" />
+	<Range PlayerMinLevel="641" PlayerMaxLevel="650" ExpReward="790000" />
+	<Range PlayerMinLevel="651" PlayerMaxLevel="660" ExpReward="800000" />
+	<Range PlayerMinLevel="661" PlayerMaxLevel="670" ExpReward="810000" />
+	<Range PlayerMinLevel="671" PlayerMaxLevel="680" ExpReward="820000" />
+	<Range PlayerMinLevel="681" PlayerMaxLevel="690" ExpReward="830000" />
+	<Range PlayerMinLevel="691" PlayerMaxLevel="700" ExpReward="840000" />
+	<Range PlayerMinLevel="701" PlayerMaxLevel="710" ExpReward="850000" />
+	<Range PlayerMinLevel="711" PlayerMaxLevel="720" ExpReward="860000" />
+	<Range PlayerMinLevel="721" PlayerMaxLevel="730" ExpReward="870000" />
+	<Range PlayerMinLevel="731" PlayerMaxLevel="740" ExpReward="880000" />
+	<Range PlayerMinLevel="741" PlayerMaxLevel="750" ExpReward="890000" />
+	<Range PlayerMinLevel="751" PlayerMaxLevel="760" ExpReward="900000" />
+	<Range PlayerMinLevel="761" PlayerMaxLevel="770" ExpReward="910000" />
+	<Range PlayerMinLevel="771" PlayerMaxLevel="780" ExpReward="920000" />
+	<Range PlayerMinLevel="781" PlayerMaxLevel="790" ExpReward="930000" />
+	<Range PlayerMinLevel="791" PlayerMaxLevel="800" ExpReward="940000" />
+</ImperialGuardian>

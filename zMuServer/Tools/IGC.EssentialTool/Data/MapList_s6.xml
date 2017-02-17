@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MapList>
+    <Map Number="0" Resource="00_Lorencia" Name="Lorencia" />
+    <Map Number="1" Resource="01_Dungeon" Name="Dungeon" />
+    <Map Number="2" Resource="02_Devias" Name="Devias" />
+    <Map Number="3" Resource="03_Noria" Name="Noria" />
+    <Map Number="4" Resource="04_Losttower" Name="Lost Tower" />
+    <Map Number="5" Resource="05_Exile" Name="Exile" />
+    <Map Number="6" Resource="06_Arena" Name="Arena" />
+    <Map Number="7" Resource="07_Atlans" Name="Atlans" />
+    <Map Number="8" Resource="08_Tarkan" Name="Tarkan" />
+    <Map Number="9" Resource="09_DevilSquare" Name="Devil Square 1 - 4" />
+    <Map Number="10" Resource="10_Icarus" Name="Icarus" />
+    <Map Number="11" Resource="11_BloodCastle" Name="Blood Castle 1" />
+    <Map Number="12" Resource="11_BloodCastle" Name="Blood Castle 2" />
+    <Map Number="13" Resource="11_BloodCastle" Name="Blood Castle 3" />
+    <Map Number="14" Resource="11_BloodCastle" Name="Blood Castle 4" />
+    <Map Number="15" Resource="11_BloodCastle" Name="Blood Castle 5" />
+    <Map Number="16" Resource="11_BloodCastle" Name="Blood Castle 6" />
+    <Map Number="17" Resource="11_BloodCastle" Name="Blood Castle 7" />
+    <Map Number="18" Resource="18_ChaosCastle" Name="Chaos Castle 1" />
+    <Map Number="19" Resource="18_ChaosCastle" Name="Chaos Castle 2" />
+    <Map Number="20" Resource="18_ChaosCastle" Name="Chaos Castle 3" />
+    <Map Number="21" Resource="18_ChaosCastle" Name="Chaos Castle 4" />
+    <Map Number="22" Resource="18_ChaosCastle" Name="Chaos Castle 5" />
+    <Map Number="23" Resource="18_ChaosCastle" Name="Chaos Castle 6" />
+    <Map Number="24" Resource="24_Kalima" Name="Kalima 1" />
+    <Map Number="25" Resource="24_Kalima" Name="Kalima 2" />
+    <Map Number="26" Resource="24_Kalima" Name="Kalima 3" />
+    <Map Number="27" Resource="24_Kalima" Name="Kalima 4" />
+    <Map Number="28" Resource="24_Kalima" Name="Kalima 5" />
+    <Map Number="29" Resource="24_Kalima" Name="Kalima 6" />
+    <Map Number="30" Resource="30_ValleyOfLoren" Name="Valley Of Loren" />
+    <Map Number="31" Resource="31_LandOfTrial" Name="Land Of Trials" />
+    <Map Number="32" Resource="32_DevilSquare" Name="Devil Square 5 - 8" />
+    <Map Number="33" Resource="33_Aida" Name="Aida" />
+    <Map Number="34" Resource="34_Crywolf" Name="Crywolf" />
+    <Map Number="35" Resource="35_Reserved" Name="Reserved" />
+    <Map Number="36" Resource="36_Kalima" Name="Kalima 7" />
+    <Map Number="37" Resource="37_Kanturu" Name="Kanturu" />
+    <Map Number="38" Resource="38_KanturuRemain" Name="Kanturu Ruins" />
+    <Map Number="39" Resource="39_KanturuBoss" Name="Kanturu Refinery Tower" />
+    <Map Number="40" Resource="40_Silent" Name="Silent Map" />
+    <Map Number="41" Resource="41_BalgassBarracks" Name="Balgass Barracks" />
+    <Map Number="42" Resource="42_BalgassRefuge" Name="Balgass Refuge" />
+    <Map Number="43" Resource="Null" Name="Null (43)" />
+    <Map Number="44" Resource="Null" Name="Null (44)" />
+    <Map Number="45" Resource="45_IllusionTemple" Name="Illusion Temple 1" />
+    <Map Number="46" Resource="45_IllusionTemple" Name="Illusion Temple 2" />
+    <Map Number="47" Resource="45_IllusionTemple" Name="Illusion Temple 3" />
+    <Map Number="48" Resource="45_IllusionTemple" Name="Illusion Temple 4" />
+    <Map Number="49" Resource="45_IllusionTemple" Name="Illusion Temple 5" />
+    <Map Number="50" Resource="45_IllusionTemple" Name="Illusion Temple 6" />
+    <Map Number="51" Resource="51_Elbeland" Name="Elbeland" />
+    <Map Number="52" Resource="11_BloodCastle" Name="Blood Castle 8" />
+    <Map Number="53" Resource="18_ChaosCastle" Name="Chaos Castle 7" />
+    <Map Number="54" Resource="Null" Name="Null (54)" />
+    <Map Number="55" Resource="Null" Name="Null (55)" />
+    <Map Number="56" Resource="56_SwampOfCalmness" Name="Swamp Of Calmness" />
+    <Map Number="57" Resource="57_Raklion" Name="Raklion" />
+    <Map Number="58" Resource="58_RaklionBoss" Name="Raklion Hatchery" />
+    <Map Number="59" Resource="Null" Name="Null (59)" />
+    <Map Number="60" Resource="Null" Name="Null (60)" />
+    <Map Number="61" Resource="Null" Name="Null (61)" />
+    <Map Number="62" Resource="62_SantaTown" Name="Santa Village" />
+    <Map Number="63" Resource="63_Vulcanus" Name="Vulcanus" />
+    <Map Number="64" Resource="64_DuelArena" Name="Duel Arena" />
+    <Map Number="65" Resource="65_Doppelganger1" Name="Doppelganger Snow" />
+    <Map Number="66" Resource="66_Doppelganger2" Name="Doppelganger Vulcan" />
+    <Map Number="67" Resource="67_Doppelganger3" Name="Doppelganger Sea" />
+    <Map Number="68" Resource="68_Doppelganger4" Name="Doppelganger Crystals" />
+    <Map Number="69" Resource="69_ImperialGuardian1" Name="ImperialGuardian 1" />
+    <Map Number="70" Resource="70_ImperialGuardian2" Name="ImperialGuardian 2" />
+    <Map Number="71" Resource="71_ImperialGuardian3" Name="ImperialGuardian 3" />
+    <Map Number="72" Resource="72_ImperialGuardian4" Name="ImperialGuardian 4" />
+    <Map Number="73" Resource="Null" Name="Null (73)" />
+    <Map Number="74" Resource="Null" Name="Null (74)" />
+    <Map Number="75" Resource="Null" Name="Null (75)" />
+    <Map Number="76" Resource="Null" Name="Null (76)" />
+    <Map Number="77" Resource="Null" Name="Null (77)" />
+    <Map Number="78" Resource="Null" Name="Null (78)" />
+    <Map Number="79" Resource="79_LorenMarket" Name="Loren Market" />
+    <Map Number="80" Resource="80_Karutan1" Name="Karutan 1" />
+    <Map Number="81" Resource="81_Karutan2" Name="Karutan 2" />
+    <Map Number="82" Resource="Null" Name="Null (82)" />
+    <Map Number="83" Resource="Null" Name="Null (83)" />
+    <Map Number="84" Resource="Null" Name="Null (84)" />
+    <Map Number="85" Resource="Null" Name="Null (85)" />
+    <Map Number="86" Resource="Null" Name="Null (86)" />
+    <Map Number="87" Resource="Null" Name="Null (87)" />
+    <Map Number="88" Resource="Null" Name="Null (88)" />
+    <Map Number="89" Resource="Null" Name="Null (89)" />
+    <Map Number="90" Resource="Null" Name="Null (90)" />
+</MapList>

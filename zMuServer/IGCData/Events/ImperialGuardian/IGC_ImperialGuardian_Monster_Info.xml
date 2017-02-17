@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Monster Indexes affected with settings below
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//		~ 504-511: Boss Monsters
+//		~ 512-521: Regular Monsters
+//		~ 523: Trap
+//		~ 524, 525, 527, 528: Gates
+//		~ 526: Statue NPC
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Do not modify Imperial Guardian event monsters settings
+//~~ via IGC_MonsterList.xml, use multipliers below. All values
+//~~ for the above defined indexes are set to 1 in IGC_MonsterList.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ImperialGuardian::Monster ###
+//	PlayerMinLevel: Defines a start range of player levels to apply settings of the record
+//	PlayerMaxLevel: Defines an end range of player levels to apply settings of the record
+//	Level: Monster Level multiplier
+//	HealthPoint: Monster Health Points (HP) multiplier
+//	ManaPoint: Monster Mana Point (MP) multiplier
+//	DamageMin: Monster Minimum Damage multiplier
+//	DamageMax:  Monster Maximum Damage multiplier
+//	Defense: Monster Defense multiplier
+//	MagicDefense: Monster Magic Defense multiplier
+//	AttackRate: Monster Attack Rate multiplier
+//	SuccessfulBlocking: Monster Successful Blocking multiplier
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ImperialGuardian>
+	<Monster PlayerMinLevel="0"   PlayerMaxLevel="10"  Level="45"  HealthPoint="10"   ManaPoint="0" DamageMin="3"  DamageMax="3"  Defense="3"   MagicDefense="0" AttackRate="5"  SuccessfulBlocking="5" />
+	<Monster PlayerMinLevel="11"  PlayerMaxLevel="20"  Level="46"  HealthPoint="10"   ManaPoint="0" DamageMin="4"  DamageMax="4"  Defense="4"   MagicDefense="0" AttackRate="6"  SuccessfulBlocking="6" />
+	<Monster PlayerMinLevel="21"  PlayerMaxLevel="30"  Level="47"  HealthPoint="20"   ManaPoint="0" DamageMin="5"  DamageMax="5"  Defense="4"   MagicDefense="0" AttackRate="6"  SuccessfulBlocking="6" />
+	<Monster PlayerMinLevel="31"  PlayerMaxLevel="40"  Level="48"  HealthPoint="40"   ManaPoint="0" DamageMin="6"  DamageMax="6"  Defense="4"   MagicDefense="0" AttackRate="6"  SuccessfulBlocking="6" />
+	<Monster PlayerMinLevel="41"  PlayerMaxLevel="50"  Level="49"  HealthPoint="50"   ManaPoint="0" DamageMin="7"  DamageMax="7"  Defense="5"   MagicDefense="0" AttackRate="7"  SuccessfulBlocking="7" />
+	<Monster PlayerMinLevel="51"  PlayerMaxLevel="60"  Level="50"  HealthPoint="50"   ManaPoint="0" DamageMin="8"  DamageMax="8"  Defense="5"   MagicDefense="0" AttackRate="7"  SuccessfulBlocking="7" />
+	<Monster PlayerMinLevel="61"  PlayerMaxLevel="70"  Level="51"  HealthPoint="50"   ManaPoint="0" DamageMin="9"  DamageMax="9"  Defense="5"   MagicDefense="0" AttackRate="7"  SuccessfulBlocking="7" />
+	<Monster PlayerMinLevel="71"  PlayerMaxLevel="80"  Level="52"  HealthPoint="60"   ManaPoint="0" DamageMin="10" DamageMax="10" Defense="6"   MagicDefense="0" AttackRate="7"  SuccessfulBlocking="7" />
+	<Monster PlayerMinLevel="81"  PlayerMaxLevel="90"  Level="53"  HealthPoint="60"   ManaPoint="0" DamageMin="11" DamageMax="11" Defense="6"   MagicDefense="0" AttackRate="7"  SuccessfulBlocking="7" />
+	<Monster PlayerMinLevel="91"  PlayerMaxLevel="100" Level="54"  HealthPoint="70"   ManaPoint="0" DamageMin="12" DamageMax="12" Defense="6"   MagicDefense="0" AttackRate="8"  SuccessfulBlocking="8" />
+	<Monster PlayerMinLevel="101" PlayerMaxLevel="110" Level="55"  HealthPoint="70"   ManaPoint="0" DamageMin="13" DamageMax="13" Defense="7"   MagicDefense="0" AttackRate="8"  SuccessfulBlocking="8" />
+	<Monster PlayerMinLevel="111" PlayerMaxLevel="120" Level="56"  HealthPoint="70"   ManaPoint="0" DamageMin="14" DamageMax="14" Defense="7"   MagicDefense="0" AttackRate="8"  SuccessfulBlocking="8" />
+	<Monster PlayerMinLevel="121" PlayerMaxLevel="130" Level="57"  HealthPoint="80"   ManaPoint="0" DamageMin="15" DamageMax="15" Defense="7"   MagicDefense="0" AttackRate="8"  SuccessfulBlocking="8" />
+	<Monster PlayerMinLevel="131" PlayerMaxLevel="140" Level="58"  HealthPoint="80"   ManaPoint="0" DamageMin="16" DamageMax="16" Defense="8"   MagicDefense="0" AttackRate="8"  SuccessfulBlocking="8" />
+	<Monster PlayerMinLevel="141" PlayerMaxLevel="150" Level="59"  HealthPoint="90"   ManaPoint="0" DamageMin="17" DamageMax="17" Defense="8"   MagicDefense="0" AttackRate="9"  SuccessfulBlocking="9" />
+	<Monster PlayerMinLevel="151" PlayerMaxLevel="160" Level="60"  HealthPoint="90"   ManaPoint="0" DamageMin="18" DamageMax="18" Defense="8"   MagicDefense="0" AttackRate="9"  SuccessfulBlocking="9" />
+	<Monster PlayerMinLevel="161" PlayerMaxLevel="170" Level="61"  HealthPoint="90"   ManaPoint="0" DamageMin="19" DamageMax="19" Defense="9"   MagicDefense="0" AttackRate="9"  SuccessfulBlocking="9" />
+	<Monster PlayerMinLevel="171" PlayerMaxLevel="180" Level="62"  HealthPoint="90"   ManaPoint="0" DamageMin="20" DamageMax="20" Defense="9"   MagicDefense="0" AttackRate="9"  SuccessfulBlocking="9" />
+	<Monster PlayerMinLevel="181" PlayerMaxLevel="190" Level="63"  HealthPoint="100"  ManaPoint="0" DamageMin="21" DamageMax="21" Defense="9"   MagicDefense="0" AttackRate="9"  SuccessfulBlocking="9" />
+	<Monster PlayerMinLevel="191" PlayerMaxLevel="200" Level="64"  HealthPoint="500"  ManaPoint="0" DamageMin="22" DamageMax="22" Defense="10"  MagicDefense="0" AttackRate="10" SuccessfulBlocking="10" />
+	<Monster PlayerMinLevel="201" PlayerMaxLevel="210" Level="66"  HealthPoint="600"  ManaPoint="0" DamageMin="23" DamageMax="23" Defense="10"  MagicDefense="0" AttackRate="10" SuccessfulBlocking="10" />
+	<Monster PlayerMinLevel="211" PlayerMaxLevel="220" Level="68"  HealthPoint="600"  ManaPoint="0" DamageMin="24" DamageMax="24" Defense="11"  MagicDefense="0" AttackRate="11" SuccessfulBlocking="11" />
+	<Monster PlayerMinLevel="221" PlayerMaxLevel="230" Level="70"  HealthPoint="700"  ManaPoint="0" DamageMin="25" DamageMax="25" Defense="11"  MagicDefense="0" AttackRate="11" SuccessfulBlocking="11" />
+	<Monster PlayerMinLevel="231" PlayerMaxLevel="240" Level="72"  HealthPoint="700"  ManaPoint="0" DamageMin="26" DamageMax="26" Defense="12"  MagicDefense="0" AttackRate="12" SuccessfulBlocking="12" />
+	<Monster PlayerMinLevel="241" PlayerMaxLevel="250" Level="74"  HealthPoint="800"  ManaPoint="0" DamageMin="27" DamageMax="27" Defense="12"  MagicDefense="0" AttackRate="12" SuccessfulBlocking="12" />
+	<Monster PlayerMinLevel="251" PlayerMaxLevel="260" Level="76"  HealthPoint="800"  ManaPoint="0" DamageMin="28" DamageMax="28" Defense="13"  MagicDefense="0" AttackRate="13" SuccessfulBlocking="13" />
+	<Monster PlayerMinLevel="261" PlayerMaxLevel="270" Level="78"  HealthPoint="900"  ManaPoint="0" DamageMin="29" DamageMax="29" Defense="13"  MagicDefense="0" AttackRate="13" SuccessfulBlocking="13" />
+	<Monster PlayerMinLevel="271" PlayerMaxLevel="280" Level="80"  HealthPoint="900"  ManaPoint="0" DamageMin="30" DamageMax="30" Defense="14"  MagicDefense="0" AttackRate="14" SuccessfulBlocking="14" />
+	<Monster PlayerMinLevel="281" PlayerMaxLevel="290" Level="82"  HealthPoint="900"  ManaPoint="0" DamageMin="31" DamageMax="31" Defense="14"  MagicDefense="0" AttackRate="14" SuccessfulBlocking="14" />
+	<Monster PlayerMinLevel="291" PlayerMaxLevel="300" Level="85"  HealthPoint="1000" ManaPoint="0" DamageMin="32" DamageMax="32" Defense="15"  MagicDefense="0" AttackRate="15" SuccessfulBlocking="15" />
+	<Monster PlayerMinLevel="301" PlayerMaxLevel="310" Level="87"  HealthPoint="1100" ManaPoint="0" DamageMin="33" DamageMax="33" Defense="16"  MagicDefense="0" AttackRate="15" SuccessfulBlocking="15" />
+	<Monster PlayerMinLevel="311" PlayerMaxLevel="320" Level="89"  HealthPoint="1200" ManaPoint="0" DamageMin="34" DamageMax="34" Defense="17"  MagicDefense="0" AttackRate="16" SuccessfulBlocking="16" />
+	<Monster PlayerMinLevel="321" PlayerMaxLevel="330" Level="91"  HealthPoint="1300" ManaPoint="0" DamageMin="35" DamageMax="35" Defense="18"  MagicDefense="0" AttackRate="16" SuccessfulBlocking="16" />
+	<Monster PlayerMinLevel="331" PlayerMaxLevel="340" Level="93"  HealthPoint="1400" ManaPoint="0" DamageMin="36" DamageMax="36" Defense="19"  MagicDefense="0" AttackRate="17" SuccessfulBlocking="17" />
+	<Monster PlayerMinLevel="341" PlayerMaxLevel="350" Level="95"  HealthPoint="1500" ManaPoint="0" DamageMin="37" DamageMax="37" Defense="20"  MagicDefense="0" AttackRate="17" SuccessfulBlocking="17" />
+	<Monster PlayerMinLevel="351" PlayerMaxLevel="360" Level="97"  HealthPoint="1500" ManaPoint="0" DamageMin="38" DamageMax="38" Defense="21"  MagicDefense="0" AttackRate="18" SuccessfulBlocking="18" />
+	<Monster PlayerMinLevel="361" PlayerMaxLevel="370" Level="99"  HealthPoint="1550" ManaPoint="0" DamageMin="39" DamageMax="39" Defense="22"  MagicDefense="0" AttackRate="18" SuccessfulBlocking="18" />
+	<Monster PlayerMinLevel="371" PlayerMaxLevel="380" Level="101" HealthPoint="1600" ManaPoint="0" DamageMin="40" DamageMax="40" Defense="23"  MagicDefense="0" AttackRate="19" SuccessfulBlocking="19" />
+	<Monster PlayerMinLevel="381" PlayerMaxLevel="390" Level="103" HealthPoint="1700" ManaPoint="0" DamageMin="41" DamageMax="41" Defense="24"  MagicDefense="0" AttackRate="19" SuccessfulBlocking="19" />
+	<Monster PlayerMinLevel="391" PlayerMaxLevel="400" Level="105" HealthPoint="1800" ManaPoint="0" DamageMin="42" DamageMax="42" Defense="25"  MagicDefense="0" AttackRate="20" SuccessfulBlocking="20" />
+	<Monster PlayerMinLevel="401" PlayerMaxLevel="410" Level="107" HealthPoint="1810" ManaPoint="0" DamageMin="42" DamageMax="42" Defense="26"  MagicDefense="0" AttackRate="20" SuccessfulBlocking="20" />
+	<Monster PlayerMinLevel="411" PlayerMaxLevel="420" Level="109" HealthPoint="1820" ManaPoint="0" DamageMin="43" DamageMax="43" Defense="27"  MagicDefense="0" AttackRate="21" SuccessfulBlocking="21" />
+	<Monster PlayerMinLevel="421" PlayerMaxLevel="430" Level="111" HealthPoint="1830" ManaPoint="0" DamageMin="43" DamageMax="43" Defense="28"  MagicDefense="0" AttackRate="21" SuccessfulBlocking="21" />
+	<Monster PlayerMinLevel="431" PlayerMaxLevel="440" Level="113" HealthPoint="1840" ManaPoint="0" DamageMin="44" DamageMax="44" Defense="29"  MagicDefense="0" AttackRate="22" SuccessfulBlocking="22" />
+	<Monster PlayerMinLevel="441" PlayerMaxLevel="450" Level="115" HealthPoint="1850" ManaPoint="0" DamageMin="44" DamageMax="44" Defense="30"  MagicDefense="0" AttackRate="22" SuccessfulBlocking="22" />
+	<Monster PlayerMinLevel="451" PlayerMaxLevel="460" Level="117" HealthPoint="1860" ManaPoint="0" DamageMin="45" DamageMax="45" Defense="31"  MagicDefense="0" AttackRate="23" SuccessfulBlocking="23" />
+	<Monster PlayerMinLevel="461" PlayerMaxLevel="470" Level="119" HealthPoint="1870" ManaPoint="0" DamageMin="45" DamageMax="45" Defense="32"  MagicDefense="0" AttackRate="23" SuccessfulBlocking="23" />
+	<Monster PlayerMinLevel="471" PlayerMaxLevel="480" Level="121" HealthPoint="1880" ManaPoint="0" DamageMin="46" DamageMax="46" Defense="33"  MagicDefense="0" AttackRate="24" SuccessfulBlocking="24" />
+	<Monster PlayerMinLevel="481" PlayerMaxLevel="490" Level="123" HealthPoint="1890" ManaPoint="0" DamageMin="46" DamageMax="46" Defense="34"  MagicDefense="0" AttackRate="24" SuccessfulBlocking="24" />
+	<Monster PlayerMinLevel="491" PlayerMaxLevel="500" Level="125" HealthPoint="1900" ManaPoint="0" DamageMin="47" DamageMax="47" Defense="35"  MagicDefense="0" AttackRate="25" SuccessfulBlocking="25" />
+	<Monster PlayerMinLevel="501" PlayerMaxLevel="510" Level="127" HealthPoint="1910" ManaPoint="0" DamageMin="48" DamageMax="48" Defense="36"  MagicDefense="0" AttackRate="25" SuccessfulBlocking="25" />
+	<Monster PlayerMinLevel="511" PlayerMaxLevel="520" Level="129" HealthPoint="1920" ManaPoint="0" DamageMin="48" DamageMax="48" Defense="37"  MagicDefense="0" AttackRate="26" SuccessfulBlocking="26" />
+	<Monster PlayerMinLevel="521" PlayerMaxLevel="530" Level="131" HealthPoint="1930" ManaPoint="0" DamageMin="49" DamageMax="49" Defense="38"  MagicDefense="0" AttackRate="26" SuccessfulBlocking="26" />
+	<Monster PlayerMinLevel="531" PlayerMaxLevel="540" Level="133" HealthPoint="1940" ManaPoint="0" DamageMin="49" DamageMax="49" Defense="39"  MagicDefense="0" AttackRate="27" SuccessfulBlocking="27" />
+	<Monster PlayerMinLevel="541" PlayerMaxLevel="550" Level="135" HealthPoint="1950" ManaPoint="0" DamageMin="50" DamageMax="50" Defense="40"  MagicDefense="0" AttackRate="27" SuccessfulBlocking="27" />
+	<Monster PlayerMinLevel="551" PlayerMaxLevel="560" Level="137" HealthPoint="1960" ManaPoint="0" DamageMin="50" DamageMax="50" Defense="41"  MagicDefense="0" AttackRate="28" SuccessfulBlocking="28" />
+	<Monster PlayerMinLevel="561" PlayerMaxLevel="570" Level="139" HealthPoint="1970" ManaPoint="0" DamageMin="51" DamageMax="51" Defense="42"  MagicDefense="0" AttackRate="28" SuccessfulBlocking="28" />
+	<Monster PlayerMinLevel="571" PlayerMaxLevel="580" Level="141" HealthPoint="1980" ManaPoint="0" DamageMin="51" DamageMax="51" Defense="43"  MagicDefense="0" AttackRate="29" SuccessfulBlocking="29" />
+	<Monster PlayerMinLevel="581" PlayerMaxLevel="590" Level="143" HealthPoint="1990" ManaPoint="0" DamageMin="52" DamageMax="52" Defense="44"  MagicDefense="0" AttackRate="29" SuccessfulBlocking="29" />
+	<Monster PlayerMinLevel="591" PlayerMaxLevel="600" Level="145" HealthPoint="2000" ManaPoint="0" DamageMin="53" DamageMax="53" Defense="45"  MagicDefense="0" AttackRate="30" SuccessfulBlocking="30" />
+	<!-- Master Level Ranges -->
+	<Monster PlayerMinLevel="601" PlayerMaxLevel="610" Level="146" HealthPoint="2010" ManaPoint="0" DamageMin="53" DamageMax="53" Defense="46"  MagicDefense="0" AttackRate="30" SuccessfulBlocking="30" />
+	<Monster PlayerMinLevel="611" PlayerMaxLevel="620" Level="146" HealthPoint="2020" ManaPoint="0" DamageMin="53" DamageMax="53" Defense="46"  MagicDefense="0" AttackRate="30" SuccessfulBlocking="30" />
+	<Monster PlayerMinLevel="621" PlayerMaxLevel="630" Level="147" HealthPoint="2030" ManaPoint="0" DamageMin="53" DamageMax="53" Defense="47"  MagicDefense="0" AttackRate="31" SuccessfulBlocking="31" />
+	<Monster PlayerMinLevel="631" PlayerMaxLevel="640" Level="147" HealthPoint="2040" ManaPoint="0" DamageMin="53" DamageMax="53" Defense="47"  MagicDefense="0" AttackRate="31" SuccessfulBlocking="31" />
+	<Monster PlayerMinLevel="641" PlayerMaxLevel="650" Level="148" HealthPoint="2050" ManaPoint="0" DamageMin="54" DamageMax="54" Defense="48"  MagicDefense="0" AttackRate="32" SuccessfulBlocking="32" />
+	<Monster PlayerMinLevel="651" PlayerMaxLevel="660" Level="148" HealthPoint="2060" ManaPoint="0" DamageMin="54" DamageMax="54" Defense="48"  MagicDefense="0" AttackRate="32" SuccessfulBlocking="32" />
+	<Monster PlayerMinLevel="661" PlayerMaxLevel="670" Level="149" HealthPoint="2070" ManaPoint="0" DamageMin="54" DamageMax="54" Defense="49"  MagicDefense="0" AttackRate="33" SuccessfulBlocking="33" />
+	<Monster PlayerMinLevel="671" PlayerMaxLevel="680" Level="149" HealthPoint="2080" ManaPoint="0" DamageMin="54" DamageMax="54" Defense="49"  MagicDefense="0" AttackRate="33" SuccessfulBlocking="33" />
+	<Monster PlayerMinLevel="681" PlayerMaxLevel="690" Level="150" HealthPoint="2090" ManaPoint="0" DamageMin="54" DamageMax="54" Defense="50"  MagicDefense="0" AttackRate="34" SuccessfulBlocking="34" />
+	<Monster PlayerMinLevel="691" PlayerMaxLevel="700" Level="150" HealthPoint="2100" ManaPoint="0" DamageMin="55" DamageMax="55" Defense="50"  MagicDefense="0" AttackRate="34" SuccessfulBlocking="34" />
+	<Monster PlayerMinLevel="701" PlayerMaxLevel="710" Level="151" HealthPoint="2110" ManaPoint="0" DamageMin="55" DamageMax="55" Defense="51"  MagicDefense="0" AttackRate="35" SuccessfulBlocking="35" />
+	<Monster PlayerMinLevel="711" PlayerMaxLevel="720" Level="151" HealthPoint="2120" ManaPoint="0" DamageMin="55" DamageMax="55" Defense="51"  MagicDefense="0" AttackRate="35" SuccessfulBlocking="35" />
+	<Monster PlayerMinLevel="721" PlayerMaxLevel="730" Level="152" HealthPoint="2130" ManaPoint="0" DamageMin="55" DamageMax="55" Defense="52"  MagicDefense="0" AttackRate="36" SuccessfulBlocking="36" />
+	<Monster PlayerMinLevel="731" PlayerMaxLevel="740" Level="152" HealthPoint="2140" ManaPoint="0" DamageMin="55" DamageMax="55" Defense="52"  MagicDefense="0" AttackRate="36" SuccessfulBlocking="36" />
+	<Monster PlayerMinLevel="741" PlayerMaxLevel="750" Level="153" HealthPoint="2150" ManaPoint="0" DamageMin="56" DamageMax="56" Defense="53"  MagicDefense="0" AttackRate="37" SuccessfulBlocking="37" />
+	<Monster PlayerMinLevel="751" PlayerMaxLevel="760" Level="153" HealthPoint="2160" ManaPoint="0" DamageMin="56" DamageMax="56" Defense="53"  MagicDefense="0" AttackRate="37" SuccessfulBlocking="37" />
+	<Monster PlayerMinLevel="761" PlayerMaxLevel="770" Level="153" HealthPoint="2170" ManaPoint="0" DamageMin="56" DamageMax="56" Defense="54"  MagicDefense="0" AttackRate="38" SuccessfulBlocking="38" />
+	<Monster PlayerMinLevel="771" PlayerMaxLevel="780" Level="154" HealthPoint="2180" ManaPoint="0" DamageMin="56" DamageMax="56" Defense="54"  MagicDefense="0" AttackRate="38" SuccessfulBlocking="38" />
+	<Monster PlayerMinLevel="781" PlayerMaxLevel="790" Level="154" HealthPoint="2190" ManaPoint="0" DamageMin="56" DamageMax="56" Defense="55"  MagicDefense="0" AttackRate="39" SuccessfulBlocking="39" />
+	<Monster PlayerMinLevel="791" PlayerMaxLevel="800" Level="154" HealthPoint="2200" ManaPoint="0" DamageMin="57" DamageMax="57" Defense="55"  MagicDefense="0" AttackRate="39" SuccessfulBlocking="39" />
+</ImperialGuardian>

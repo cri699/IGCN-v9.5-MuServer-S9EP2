@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Webzen\Mu\Config]
+"ConnectIp"=-
+"ID"=-
+"WindowMode"=-
+"SoundOnOff"=-
+"MusicOnOff"=-
+"TextInput"=-
+"Resolution"=-
+"ResolutionA"=-
+"ColorDepth"=-
+"Height"=-
+"Width"=-

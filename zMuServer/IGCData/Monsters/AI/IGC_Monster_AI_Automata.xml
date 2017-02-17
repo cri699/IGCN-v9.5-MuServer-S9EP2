@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<MonsterAI>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Crywolf Monster - General -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="1"  Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Move to" />
+	<Automata Number="1"  Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Move to" />
+	<Automata Number="1"  Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> in Red -> Attack" />
+	<Automata Number="1"  Priority="0" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> in Red -> Attack" />	
+	<Automata Number="1"  Priority="1" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Never -> Move to" />	
+	<Automata Number="1"  Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Enemy only -> Move to" />
+	<Automata Number="1"  Priority="0" CurrentState="2" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never -> Move to" />
+	<Automata Number="1"  Priority="1" CurrentState="2" NextState="4" TransitionType="4" TransitionRate="100" TransitionValueType="-1" TransitionValue="10000" DelayTime="1000" Name="Attack -> HP Decreased -> Evasion" />
+	<Automata Number="1"  Priority="2" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Ever -> Attack" />	
+	<Automata Number="1"  Priority="3" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> Move to" />
+	<Automata Number="1"  Priority="4" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Ever -> Attack" />
+	<Automata Number="1"  Priority="0" CurrentState="4" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> -> Never -> General 1" />
+	<Automata Number="1"  Priority="1" CurrentState="4" NextState="2" TransitionType="7" TransitionRate="70"  TransitionValueType="-1" TransitionValue="3000"  DelayTime="1000" Name="Avoid -> -> AGRO -> Attack" />
+	<Automata Number="1"  Priority="2" CurrentState="4" NextState="1" TransitionType="2" TransitionRate="50"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> Enemy only -> Move to" />
+	<Automata Number="1"  Priority="3" CurrentState="4" NextState="2" TransitionType="1" TransitionRate="50"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> in Red -> Attack" />	
+	<Automata Number="1"  Priority="4" CurrentState="4" NextState="4" TransitionType="1" TransitionRate="80"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> in Red -> Avoid" />	
+	<Automata Number="1"  Priority="5" CurrentState="4" NextState="4" TransitionType="4" TransitionRate="100" TransitionValueType="-1" TransitionValue="2000"  DelayTime="1000" Name="Avoid -> HP Decreased -> Evasion" />
+	<Automata Number="1"  Priority="6" CurrentState="4" NextState="4" TransitionType="4" TransitionRate="80"  TransitionValueType="-1" TransitionValue="10000" DelayTime="1000" Name="Avoid -> HP Decreased -> Avoid" />
+	<Automata Number="1"  Priority="7" CurrentState="4" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> Ever -> General 2" />
+	<Automata Number="1"  Priority="8" CurrentState="4" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> Enemy only -> General 3" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Dark Elf -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="2"  Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="50"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Move to" />
+	<Automata Number="2"  Priority="1" CurrentState="0" NextState="3" TransitionType="0" TransitionRate="10"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Heal" />	
+	<Automata Number="2"  Priority="2" CurrentState="0" NextState="6" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Summon" />
+	<Automata Number="2"  Priority="3" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="80"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Move to" />
+	<Automata Number="2"  Priority="4" CurrentState="0" NextState="6" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Summon" />
+	<Automata Number="2"  Priority="5" CurrentState="0" NextState="3" TransitionType="1" TransitionRate="10"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Ever -> Heal" />	
+	<Automata Number="2"  Priority="6" CurrentState="0" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Ever -> Move to" />
+	<Automata Number="2"  Priority="0" CurrentState="1" NextState="3" TransitionType="1" TransitionRate="20"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Ever -> Heal" />
+	<Automata Number="2"  Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="30"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Ever -> Attack" />	
+	<Automata Number="2"  Priority="2" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> in Red -> Move to" />	
+	<Automata Number="2"  Priority="3" CurrentState="1" NextState="6" TransitionType="0" TransitionRate="20"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Never -> Summon" />	
+	<Automata Number="2"  Priority="4" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Never -> Move to" />	
+	<Automata Number="2"  Priority="5" CurrentState="1" NextState="6" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Enemy only -> Summon" />
+	<Automata Number="2"  Priority="6" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Enemy only -> Move to" />
+	<Automata Number="2"  Priority="0" CurrentState="2" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never -> Move to" />
+	<Automata Number="2"  Priority="1" CurrentState="2" NextState="3" TransitionType="4" TransitionRate="100" TransitionValueType="-1" TransitionValue="10000" DelayTime="1000" Name="Attack -> HP Decreased -> Heal" />
+	<Automata Number="2"  Priority="2" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> Move to" />
+	<Automata Number="2"  Priority="3" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="50"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Ever -> Attack" />	
+	<Automata Number="2"  Priority="4" CurrentState="2" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Ever -> General" />	
+	<Automata Number="2"  Priority="0" CurrentState="3" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Heal -> Never -> General 1" />
+	<Automata Number="2"  Priority="1" CurrentState="3" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Heal -> Enemy only -> General 2" />
+	<Automata Number="2"  Priority="2" CurrentState="3" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Heal -> Ever -> General 3" />	
+	<Automata Number="2"  Priority="0" CurrentState="6" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Summon -> never ->  General 1" />
+	<Automata Number="2"  Priority="1" CurrentState="6" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Summon -> Enemy only -> General 2" />
+	<Automata Number="2"  Priority="2" CurrentState="6" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Summon -> Ever -> General 3" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Tanker -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="3"  Priority="0" CurrentState="0" NextState="2" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Attack" />
+	<Automata Number="3"  Priority="1" CurrentState="0" NextState="2" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Attack" />
+	<Automata Number="3"  Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> in Red -> Attack" />
+	<Automata Number="3"  Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never -> General 1" />
+	<Automata Number="3"  Priority="1" CurrentState="2" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> General 2" />
+	<Automata Number="3"  Priority="2" CurrentState="2" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> in Red -> General 3" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Maya Hand - General Attack -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="4"  Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Move to" />
+	<Automata Number="4"  Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Move to" />
+	<Automata Number="4"  Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> in Red -> Attack" />
+	<Automata Number="4"  Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Never -> Move to" />	
+	<Automata Number="4"  Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="50"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Ever -> Attack" />	
+	<Automata Number="4"  Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Enemy only -> Move to" />
+	<Automata Number="4"  Priority="0" CurrentState="2" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never ->  Move to" />
+	<Automata Number="4"  Priority="1" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> Move to" />
+	<Automata Number="4"  Priority="2" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="30"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Ever -> Attack" />	
+	<Automata Number="4"  Priority="3" CurrentState="2" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Ever -> General" />	
+	<Automata Number="4"  Priority="0" CurrentState="6" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Invisible -> Never -> General 1" />
+	<Automata Number="4"  Priority="1" CurrentState="6" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Invisible -> Ever -> General 2" />
+	<Automata Number="4"  Priority="2" CurrentState="6" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Invisible -> Enemy only -> General 3" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Maya Hand - fast Attack -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="5"  Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Move to" />
+	<Automata Number="5"  Priority="1" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Ever -> Attack" />	
+	<Automata Number="5"  Priority="2" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Move to" />
+	<Automata Number="5"  Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Never -> Move to" />	
+	<Automata Number="5"  Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="80"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Ever -> Attack" />	
+	<Automata Number="5"  Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Enemy only -> Move to" />
+	<Automata Number="5"  Priority="0" CurrentState="2" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never -> Move to" />
+	<Automata Number="5"  Priority="1" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="80"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Ever -> Attack" />	
+	<Automata Number="5"  Priority="2" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> Move to" />
+	<Automata Number="5"  Priority="3" CurrentState="2" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Ever -> General" />	
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Maya Hand - Very Fast Attack -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="6"  Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Move to" />
+	<Automata Number="6"  Priority="1" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> in Red -> Attack" />
+	<Automata Number="6"  Priority="2" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Move to" />
+	<Automata Number="6"  Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Never -> Move" />
+	<Automata Number="6"  Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> in Red -> Attack" />	
+	<Automata Number="6"  Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Enemy only -> Move" />
+	<Automata Number="6"  Priority="0" CurrentState="2" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never -> Move to" />
+	<Automata Number="6"  Priority="1" CurrentState="2" NextState="2" TransitionType="7" TransitionRate="50"  TransitionValueType="-1" TransitionValue="3000"  DelayTime="1000" Name="Attack -> AGRO -> Attack" />	
+	<Automata Number="6"  Priority="2" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Ever -> Attack" />	
+	<Automata Number="6"  Priority="3" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> Move to" />
+	<Automata Number="6"  Priority="4" CurrentState="2" NextState="4" TransitionType="4" TransitionRate="100" TransitionValueType="-1" TransitionValue="10000" DelayTime="1000" Name="Attack -> HP decreased -> Avoid" />
+	<Automata Number="6"  Priority="0" CurrentState="4" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> Never -> General 1" />
+	<Automata Number="6"  Priority="1" CurrentState="4" NextState="2" TransitionType="7" TransitionRate="70"  TransitionValueType="-1" TransitionValue="1000"  DelayTime="1000" Name="Avoid -> AGRO Large -> Attack" />
+	<Automata Number="6"  Priority="2" CurrentState="4" NextState="1" TransitionType="2" TransitionRate="50"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> Enemy only -> Move to" />
+	<Automata Number="6"  Priority="3" CurrentState="4" NextState="2" TransitionType="1" TransitionRate="50"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> Ever -> Attack" />	
+	<Automata Number="6"  Priority="4" CurrentState="4" NextState="4" TransitionType="1" TransitionRate="80"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> in Red -> Avoid" />	
+	<Automata Number="6"  Priority="5" CurrentState="4" NextState="4" TransitionType="4" TransitionRate="100" TransitionValueType="-1" TransitionValue="2000"  DelayTime="1000" Name="Avoid -> HP Decreased -> Avoid" />
+	<Automata Number="6"  Priority="6" CurrentState="4" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> Ever -> General 2" />
+	<Automata Number="6"  Priority="7" CurrentState="4" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Avoid -> Enemy only -> General 3" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Maya Hand - Invisibility -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="7"  Priority="0" CurrentState="0" NextState="6" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Invisible" />
+	<Automata Number="7"  Priority="1" CurrentState="0" NextState="6" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Ever -> Invisible" />
+	<Automata Number="7"  Priority="2" CurrentState="0" NextState="6" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Invisible" />
+	<Automata Number="7"  Priority="0" CurrentState="6" NextState="6" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Invisible -> Never -> Invisible" />
+	<Automata Number="7"  Priority="1" CurrentState="6" NextState="6" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Invisible -> Ever -> Invisible" />
+	<Automata Number="7"  Priority="2" CurrentState="6" NextState="6" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Invisible -> Enemy only -> Invisible" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Nightmare - State 1 - Unit Number 68 -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="8"  Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Move to" />
+	<Automata Number="8"  Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Move to" />
+	<Automata Number="8"  Priority="2" CurrentState="0" NextState="6" TransitionType="5" TransitionRate="100" TransitionValueType="-1" TransitionValue="80"    DelayTime="1000" Name="General -> Fit DD -> Summon" />
+	<Automata Number="8"  Priority="3" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="General -> Ever -> Attack" />	
+	<Automata Number="8"  Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move ->Never -> Move to" />	
+	<Automata Number="8"  Priority="1" CurrentState="1" NextState="6" TransitionType="5" TransitionRate="100" TransitionValueType="-1" TransitionValue="80"    DelayTime="1000" Name="Move -> Fit DD -> Summon" />	
+	<Automata Number="8"  Priority="2" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="Move -> Ever -> Attack" />	
+	<Automata Number="8"  Priority="3" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Enemy only -> Move to" />
+	<Automata Number="8"  Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never -> General 1" />
+	<Automata Number="8"  Priority="1" CurrentState="2" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> General 2" />
+	<Automata Number="8"  Priority="2" CurrentState="2" NextState="6" TransitionType="5" TransitionRate="100" TransitionValueType="-1" TransitionValue="80"    DelayTime="1000" Name="Attack -> Fit DD -> Summon" />
+	<Automata Number="8"  Priority="3" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="Attack -> Ever -> Attack" />	
+	<Automata Number="8"  Priority="0" CurrentState="6" NextState="5" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Summon -> Absolutely -> Invisible" />
+	<Automata Number="8"  Priority="0" CurrentState="5" NextState="4" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Invisible -> Absolutely -> Warp" />
+	<Automata Number="8"  Priority="0" CurrentState="4" NextState="7" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Warp -> Absolutely -> AI" />	
+	<Automata Number="8"  Priority="0" CurrentState="7" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Never -> Move to" />	
+	<Automata Number="8"  Priority="1" CurrentState="7" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Enemy only -> Move" />	
+	<Automata Number="8"  Priority="2" CurrentState="7" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Ever -> Move" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Nightmare - State 2 - Unit Number 69 -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="9"  Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Move to" />
+	<Automata Number="9"  Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Move to" />
+	<Automata Number="9"  Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="General -> Ever -> Attack" />	
+	<Automata Number="9"  Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Never -> Move to" />	
+	<Automata Number="9"  Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="Move -> Ever -> Attack" />	
+	<Automata Number="9"  Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Enemy only -> Move to" />
+	<Automata Number="9"  Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never -> General 1" />
+	<Automata Number="9"  Priority="1" CurrentState="2" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> General 2" />
+	<Automata Number="9"  Priority="2" CurrentState="2" NextState="6" TransitionType="5" TransitionRate="100" TransitionValueType="-1" TransitionValue="50"    DelayTime="1000" Name="Attack -> Fit DD -> Summon" />
+	<Automata Number="9"  Priority="3" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="Attack -> Ever -> Attack" />	
+	<Automata Number="9"  Priority="0" CurrentState="6" NextState="5" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Summon -> Absolutely -> Invisible" />
+	<Automata Number="9"  Priority="0" CurrentState="5" NextState="4" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Invisible -> Absolutely -> Warp" />
+	<Automata Number="9"  Priority="0" CurrentState="4" NextState="7" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Warp -> Absolutely -> AI" />	
+	<Automata Number="9"  Priority="0" CurrentState="7" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Never -> Move to" />	
+	<Automata Number="9"  Priority="1" CurrentState="7" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Enemy only -> Move to" />
+	<Automata Number="9"  Priority="2" CurrentState="7" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Ever -> Move to" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Dummy AI -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="10" Priority="0" CurrentState="0" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> General" />
+	<Automata Number="10" Priority="1" CurrentState="0" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> General" />
+	<Automata Number="10" Priority="2" CurrentState="0" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Ever -> General" />
+	<Automata Number="11" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Move to" />
+	<Automata Number="11" Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Move to" />
+	<Automata Number="11" Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="General -> Ever -> Attack" />
+	<Automata Number="11" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Never -> Move to" />
+	<Automata Number="11" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="Move -> Ever -> Attack" />	
+	<Automata Number="11" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Enemy only -> Move to" />
+	<Automata Number="11" Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never -> General 1" />
+	<Automata Number="11" Priority="1" CurrentState="2" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> General 2" />
+	<Automata Number="11" Priority="2" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="Attack -> Ever -> Attack" />
+	<Automata Number="11" Priority="0" CurrentState="7" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Never -> Move to" />	
+	<Automata Number="11" Priority="1" CurrentState="7" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Enemy only -> Move to" />
+	<Automata Number="11" Priority="2" CurrentState="7" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Ever -> Move to" />	
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Nightmare - State 3 - Unit Number 70 -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="12" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Move to" />
+	<Automata Number="12" Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Move to" />
+	<Automata Number="12" Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="General -> Ever -> Attack" />
+	<Automata Number="12" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Never -> Move to" />
+	<Automata Number="12" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="50"  TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="Move -> in Red -> Attack" />
+	<Automata Number="12" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Ever -> Move to" />	
+	<Automata Number="12" Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never -> General 1" />
+	<Automata Number="12" Priority="1" CurrentState="2" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> General 2" />
+	<Automata Number="12" Priority="2" CurrentState="2" NextState="6" TransitionType="5" TransitionRate="100" TransitionValueType="-1" TransitionValue="20"    DelayTime="1000" Name="Attack -> Fit DD -> Summon" />
+	<Automata Number="12" Priority="3" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="500" Name="Attack -> Ever -> Attack" />
+	<Automata Number="12" Priority="0" CurrentState="6" NextState="5" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Summon -> Absolutely -> Invisible" />
+	<Automata Number="12" Priority="0" CurrentState="5" NextState="4" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Invisible -> Absolutely -> Warp" />
+	<Automata Number="12" Priority="0" CurrentState="4" NextState="7" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Warp -> Absolutely -> AI" />
+	<Automata Number="12" Priority="0" CurrentState="7" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Never -> Move to" />	
+	<Automata Number="12" Priority="1" CurrentState="7" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Enemy only -> Move to" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Kanturu Event - General Monsters - State 1 - Unit Number 72 -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="12" Priority="2" CurrentState="7" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="AI -> Ever -> Move to" />	
+	<Automata Number="13" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Move to" />
+	<Automata Number="13" Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Move to" />
+	<Automata Number="13" Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General in Red -> Attack" />
+	<Automata Number="13" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Never -> Move to" />
+	<Automata Number="13" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Ever -> Attack" />
+	<Automata Number="13" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Enemy only -> Move to" />
+	<Automata Number="13" Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never -> General" />
+	<Automata Number="13" Priority="1" CurrentState="2" NextState="2" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> Attack" />
+	<Automata Number="13" Priority="2" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Ever -> Attack" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~ Kanturu Event - General Monsters (Healing) - State 2 - Unit Number 73 -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<Automata Number="14" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Never -> Move to" />
+	<Automata Number="14" Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> Enemy only -> Move to" />
+	<Automata Number="14" Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="General -> in Red -> Attack" />
+	<Automata Number="14" Priority="3" CurrentState="0" NextState="3" TransitionType="5" TransitionRate="90"  TransitionValueType="-1" TransitionValue="40"    DelayTime="1000" Name="General -> HP Decreased -> Cure" />
+	<Automata Number="14" Priority="4" CurrentState="0" NextState="3" TransitionType="6" TransitionRate="90"  TransitionValueType="-1" TransitionValue="40"    DelayTime="1000" Name="General-> Group Heal -> Cure" />
+	<Automata Number="14" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Never -> Move to" />
+	<Automata Number="14" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Ever -> Attack" />
+	<Automata Number="14" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Move -> Enemy only -> Move to" />
+	<Automata Number="14" Priority="3" CurrentState="1" NextState="3" TransitionType="5" TransitionRate="90"  TransitionValueType="-1" TransitionValue="40"    DelayTime="1000" Name="Move -> HP Decreased -> Heal" />
+	<Automata Number="14" Priority="4" CurrentState="1" NextState="3" TransitionType="6" TransitionRate="90"  TransitionValueType="-1" TransitionValue="40"    DelayTime="1000" Name="Move -> Group Heal -> Heal" />
+	<Automata Number="14" Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Never -> General" />
+	<Automata Number="14" Priority="1" CurrentState="2" NextState="2" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Enemy only -> Attack" />
+	<Automata Number="14" Priority="2" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Attack -> Ever -> Attack" />
+	<Automata Number="14" Priority="3" CurrentState="2" NextState="3" TransitionType="5" TransitionRate="90"  TransitionValueType="-1" TransitionValue="40"    DelayTime="1000" Name="Attack -> HP Decreased -> Heal" />
+	<Automata Number="14" Priority="4" CurrentState="2" NextState="3" TransitionType="6" TransitionRate="90"  TransitionValueType="-1" TransitionValue="40"    DelayTime="1000" Name="Attack -> Group Heal -> Heal" />
+	<Automata Number="14" Priority="0" CurrentState="3" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Heal -> Never -> General" />
+	<Automata Number="14" Priority="1" CurrentState="3" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Heal -> Enemy only -> Move to" />
+	<Automata Number="14" Priority="2" CurrentState="3" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1"    DelayTime="1000" Name="Heal -> in Red -> Attack" />
+	<Automata Number="14" Priority="3" CurrentState="3" NextState="3" TransitionType="6" TransitionRate="90"  TransitionValueType="-1" TransitionValue="40"    DelayTime="1000" Name="Heal -> Groups Heal -> Cure" />
+</MonsterAI>

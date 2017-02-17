@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### AccessoryItems::Item ###
+//	Cat: Category of the item, ItemList.xml
+//	Index: Index of the item, ItemList.xml
+//	OptValue0: Value of the item option at level 0
+//	OptValue1: Value of the item option at level 1
+//	OptValue2: Value of the item option at level 2
+//	OptValue3: Value of the item option at level 3
+//	OptValue4: Value of the item option at level 4
+//	OptValue5: Value of the item option at level 5
+//	OptValue6: Value of the item option at level 6
+//	OptValue7: Value of the item option at level 7
+//	OptValue8: Value of the item option at level 8
+//	OptValue9: Value of the item option at level 9
+//	OptValue10: Value of the item option at level 10
+//	OptValue11: Value of the item option at level 11
+//	OptValue12: Value of the item option at level 12
+//	OptValue13: Value of the item option at level 13
+//	OptValue14: Value of the item option at level 14
+//	OptValue15: Value of the item option at level 15
+//	Name: Name of the item, used for in-file description purpose only
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ OptValueX expressed as percentage, minimum value 1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Accessory Item configuration accepts item defined below only
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<AccessoryItems>
+	<Item Cat="13" Index="171" OptValue0="1" OptValue1="2" OptValue2="3" OptValue3="4" OptValue4="5" OptValue5="6" OptValue6="7" OptValue7="8" OptValue8="9" OptValue9="10" OptValue10="11" OptValue11="12" OptValue12="13" OptValue13="14" OptValue14="15" OptValue15="16" Name="Necklace of Agony" />
+	<Item Cat="13" Index="172" OptValue0="1" OptValue1="2" OptValue2="3" OptValue3="4" OptValue4="5" OptValue5="6" OptValue6="7" OptValue7="8" OptValue8="9" OptValue9="10" OptValue10="11" OptValue11="12" OptValue12="13" OptValue13="14" OptValue14="15" OptValue15="16" Name="Solid Symbol" />
+	<Item Cat="13" Index="173" OptValue0="1" OptValue1="2" OptValue2="3" OptValue3="4" OptValue4="5" OptValue5="6" OptValue6="7" OptValue7="8" OptValue8="9" OptValue9="10" OptValue10="11" OptValue11="12" OptValue12="13" OptValue13="14" OptValue14="15" OptValue15="16" Name="Ring of Ultimatum" />
+	<Item Cat="13" Index="174" OptValue0="1" OptValue1="1" OptValue2="2" OptValue3="3" OptValue4="4" OptValue5="5" OptValue6="6" OptValue7="7" OptValue8="8" OptValue9="9"  OptValue10="10" OptValue11="11" OptValue12="12" OptValue13="13" OptValue14="14" OptValue15="15" Name="Ring of Block" />
+	<Item Cat="13" Index="175" OptValue0="1" OptValue1="2" OptValue2="3" OptValue3="4" OptValue4="5" OptValue5="6" OptValue6="7" OptValue7="8" OptValue8="9" OptValue9="10" OptValue10="11" OptValue11="12" OptValue12="13" OptValue13="14" OptValue14="15" OptValue15="16" Name="Protector Protection Ring" />
+	<Item Cat="13" Index="176" OptValue0="1" OptValue1="2" OptValue2="3" OptValue3="4" OptValue4="5" OptValue5="6" OptValue6="7" OptValue7="8" OptValue8="9" OptValue9="10" OptValue10="11" OptValue11="12" OptValue12="13" OptValue13="14" OptValue14="15" OptValue15="16" Name="Protection Ring" />
+</AccessoryItems>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Updating values display requires editing ExcellentCommonOption_eng.bmd and ExcellentWingOption_eng.bmd (Season 8 only)
+//~~ The Season 6 Episode 3 has the values hard-coded in Game Client ~ value changes below will not have result in display
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ExcellentOptions::Common::Option ###
+//	ID: Unique ID of the Excellent option
+//	Number: Number of the option
+//	Value: Value of the option
+//	ItemKindA_1: ItemKindA the option applies to (ItemList.xml), -1 if not applies
+//	ItemKindA_2: ItemKindA the option applies to (ItemList.xml), -1 if not applies
+//	ItemKindA_3: ItemKindA the option applies to (ItemList.xml), -1 if not applies
+//	Rate: Chance of getting specified option, n/10000
+//	Name: Name of the option (used for in-file description purpose only)
+//
+// ### ExcellentOptions::Wings::Option ###
+//	ID: Unique ID of the Excellent option
+//	Number: Number of the option
+//	Value: Value of the option
+//	ItemKindA: ItemKindA the option applies to (ItemList.xml), -1 if not applies
+//	ItemKindB: ItemKindB the option applies to (ItemList.xml), -1 if not applies
+//	Name: Name of the option (used for in-file description purpose only)
+//
+// ### ExcellentOptions::OptionDropRate::Common ### - drop rate control of common excellent options
+//	One: Chance to drop item with one excellent option
+//	Two: Chance to drop item with two excellent options
+//	Three: Chance to drop item with three excellent options
+//	Four: Chance to drop item with four excellent options
+//	Five: Chance to drop item with five excellent options
+//	Six: Chance to drop item with six excellent options
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of all drop rate attributes must be equal to 10000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<ExcellentOptions>
+	<Common> <!-- Common excellent options -->
+		<Option ID="0" Number="1"  Value="8"  ItemKindA_1="1" ItemKindA_2="2" ItemKindA_3="-1" Rate="5000" Name="Increases the amount of Mana received for hunting monsters" />
+		<Option ID="1" Number="2"  Value="8"  ItemKindA_1="1" ItemKindA_2="2" ItemKindA_3="-1" Rate="5000" Name="Increases the amount of Life received for hunting monsters" />
+		<Option ID="2" Number="4"  Value="7"  ItemKindA_1="1" ItemKindA_2="2" ItemKindA_3="-1" Rate="5000" Name="Increase Attack (Wizardry) Speed" />
+		<Option ID="3" Number="8"  Value="2"  ItemKindA_1="1" ItemKindA_2="2" ItemKindA_3="-1" Rate="5000" Name="Increases Attack" />
+		<Option ID="4" Number="16" Value="20" ItemKindA_1="1" ItemKindA_2="2" ItemKindA_3="-1" Rate="5000" Name="Increase Attack/Level" />
+		<Option ID="5" Number="32" Value="10" ItemKindA_1="1" ItemKindA_2="2" ItemKindA_3="-1" Rate="5000" Name="Chance of doing Excellent damage" />
+		<Option ID="6" Number="1" Value="30" ItemKindA_1="3" ItemKindA_2="4" ItemKindA_3="-1" Rate="5000" Name="Increases the amount of Zen received for hunting monsters" />
+		<Option ID="7" Number="2" Value="10" ItemKindA_1="3" ItemKindA_2="4" ItemKindA_3="-1" Rate="5000" Name="Defense Success Rate" />
+		<Option ID="8" Number="4" Value="5" ItemKindA_1="3" ItemKindA_2="4" ItemKindA_3="-1" Rate="5000" Name="Reflect Damage" />
+		<Option ID="9" Number="8" Value="4" ItemKindA_1="3" ItemKindA_2="4" ItemKindA_3="-1" Rate="5000" Name="Decreases Damage" />
+		<Option ID="10" Number="16" Value="4" ItemKindA_1="3" ItemKindA_2="4" ItemKindA_3="-1" Rate="5000" Name="Increase Maximum Mana" />
+		<Option ID="11" Number="32" Value="4" ItemKindA_1="3" ItemKindA_2="4" ItemKindA_3="-1" Rate="5000" Name="Increase Maximum Life" />
+	</Common>
+	
+	<Wings>
+	<!-- The 2nd Wings options -->
+		<Option ID="0" Number="1" Value="50" ItemKindA="6" ItemKindB="24" Name="Increase Life" />
+		<Option ID="1" Number="2" Value="50" ItemKindA="6" ItemKindB="24" Name="Increase Mana" />
+		<Option ID="2" Number="4" Value="3" ItemKindA="6" ItemKindB="24" Name="Chance of Damage from Breaking Enemy's Defense" />
+		<Option ID="3" Number="8" Value="50" ItemKindA="6" ItemKindB="24" Name="Increase Maximum AG" />
+		<Option ID="4" Number="16" Value="5" ItemKindA="6" ItemKindB="24" Name="Increase Attack (Wizardry) Speed" />
+		
+	<!-- The 3rd Wings options -->
+		<Option ID="5" Number="1" Value="5" ItemKindA="6" ItemKindB="25" Name="Chance of Damage from Breaking Enemy's Defense" />
+		<Option ID="6" Number="2" Value="5" ItemKindA="6" ItemKindB="25" Name="Chance of Returning the Enemy's Attack Power" />
+		<Option ID="7" Number="4" Value="5" ItemKindA="6" ItemKindB="25" Name="Chance of Fully Recovering Life" />
+		<Option ID="8" Number="8" Value="5" ItemKindA="6" ItemKindB="25" Name="Chance of Fully Recovering Mana" />
+	
+	<!-- Cape of Lord options -->
+		<Option ID="9" Number="1" Value="50" ItemKindA="6" ItemKindB="26" Name="Increase Life" />
+		<Option ID="10" Number="2" Value="50" ItemKindA="6" ItemKindB="26" Name="Increase Mana" />
+		<Option ID="11" Number="4" Value="3" ItemKindA="6" ItemKindB="26" Name="Chance of Damage from Breaking Enemy's Defense" />
+		<Option ID="12" Number="8" Value="10" ItemKindA="6" ItemKindB="26" Name="Increase Command" />
+	
+	<!-- Cape of Fighter options -->
+		<Option ID="13" Number="1" Value="50" ItemKindA="6" ItemKindB="27" Name="Increase Life" />
+		<Option ID="14" Number="2" Value="50" ItemKindA="6" ItemKindB="27" Name="Increase Mana" />
+		<Option ID="15" Number="4" Value="3" ItemKindA="6" ItemKindB="27" Name="Chance of Damage from Breaking Enemy's Defense" />
+	
+	<!-- Monster Wings aka 2.5 level options -->
+		<Option ID="16" Number="1" Value="3" ItemKindA="6" ItemKindB="28" Name="Chance of Damage from Breaking Enemy's Defense" />
+		<Option ID="17" Number="2" Value="5" ItemKindA="6" ItemKindB="28" Name="Chance of Fully Recovering Life" />
+	
+	<!-- Wings of Conqueror options -->
+		<Option ID="18" Number="1" Value="5" ItemKindA="6" ItemKindB="60" Name="Chance of Damage from Breaking Enemy's Defense" />
+		<Option ID="19" Number="2" Value="5" ItemKindA="6" ItemKindB="60" Name="Chance of Returning the Enemy's Attack Power" />
+		<Option ID="20" Number="4" Value="5" ItemKindA="6" ItemKindB="60" Name="Chance of Fully Recovering Life" />
+		<Option ID="21" Number="8" Value="5" ItemKindA="6" ItemKindB="60" Name="Chance of Fully Recovering Mana" />
+		
+	<!-- Wings of Angel Devil options -->
+		<Option ID="22" Number="1" Value="4" ItemKindA="6" ItemKindB="62" Name="Chance of Double damage" />
+		<Option ID="23" Number="2" Value="4" ItemKindA="6" ItemKindB="62" Name="Chance of Damage from Breaking Enemy's Defense" />
+		<Option ID="24" Number="4" Value="4" ItemKindA="6" ItemKindB="62" Name="Chance of Fully Recovering Life" />
+	</Wings>
+	
+	<OptionDropRate>
+		<Common One="7500" Two="2500" Three="0" Four="0" Five="0" Six="0" /> <!-- Sum of the values must be equal to 10000 -->
+	</OptionDropRate>
+</ExcellentOptions>

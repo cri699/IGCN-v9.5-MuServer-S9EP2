@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~ General explanation of PK System ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// 	Player will gain points starting from PK level 1. To get rid of the PK status, player will have to hunt monsters and clear points.
+//	Point deduction formula: Monster Level/PointDeductionDivisor). The "General" section below is the chart allowing to configure
+//	accumulation of PK points for each level. Points will continue to accumulate after PK Level 3. (Not Capped). Player can see own
+//	points by visiting "Pasi the Mage" at Lorencia.
+//
+//	Starting from PK level 2, player will automatically start at Lorencia after reconnecting.
+//	Player can now attack or be attacked by both players and monsters at PK level 3.
+//	At PK level 1 or higher, players are restricted from connecting to Non-PVP servers.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// ### PlayerKillSystem ###
+//	DisablePKLevelIncrease: Disables PK Level increase for murder, 0/1
+//	DisablePenalty: Disables any sort of penalties for Murderers, 0/1
+//	PKCanUseshops: Makes PK able to use shops, 0/1
+//	DropExpensiveItems: Defines whether to drop expensive (e.g. exc and ancient) off from PK upon kill (wings, period and lucky items are excluded), 0/1
+//	MaxItemLevelDrop: Item of level above or equal to the value will not drop off from the PK upon kill, 0-15
+//	PointDeductionDivisor: Divisor which will apply on PK Points deduction formula: MonsterLevel/PointDeductionDivisor
+//	MurdererPointIncrease: PK points to increase for each additional kill at murdered level (3)
+//	Description: Used for logs, editors and in-file description purpose only
+//
+// ### PlayerKillSystem::PKClearCommand ###
+//	Enable: Activates the PK Clear COmmand, 0/1
+//	Cost: Usage cost in Zen of PK Clear Command
+//	CostMultiplyByKillCount: Cost multiplier by kill count
+//
+// ### PlayerKillSystem::General::PK ###
+//	Level: Level of PK, do not change the configuration of Level attribute
+//	ReqPoint: Minimum point required to gain specified level of PK
+//	ItemLoseRateOnMonsterKill: Chance of dropping off part of equipment on being killed by Monster at specified PK Level, 0-100 (%)
+//	ItemLoseRateOnPlayerKill: Chance of dropping off part of equipment on being killed by Player at specified PK Level, 0-100 (%)
+//	ZenDeductionRateOnMonsterKill: Amount of Zen to deduct on being killed by Monster, 0-100 (%) - applies to player level greater than 10
+//	ZenDeductionRateOnPlayerKill: Amount of Zen to deduct on being killed by Player, 0-100 (%) - applies to player level greater than 10
+//	WarpChargeMultiplier: Multiplier of warp (M) cost at specified PK Level
+//	CanSummonByDarkLord: Allows to block ability of summoning by Dark Lord, 0/1
+//
+// ### PlayerKillSystem::ExpDeduction::PK ###
+//	Level: Level of PK status the configuration applies to
+//
+// ### PlayerKillSystem::ExpDeduction::PK::LevelRange ###
+//	Start: Start range of level to apply specified deduction rate to
+//	End: End range of level to apply specified deduction rate to
+//	DeductionRate: Amount of Exp to deduct on being killed by Monster, 0-100 (%)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ A "MAX" value can be defined, represents sum of max possible regular and master level configured in IGC_Common.ini
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<PlayerKillSystem DisablePKLevelIncrease="0" DisablePenalty="0" PKCanUseshops="0" DropExpensiveItems="0" MaxItemLevelDrop="8" PointDeductionDivisor="2" MurdererPointIncrease="3600">
+<PKClearCommand Enable="1" Cost="1000000" CostMultiplyByKillCount="1" />
+	<General>
+		<PK Level="3" ReqPoint="0" ItemLoseRateOnMonsterKill="6" ItemLoseRateOnPlayerKill="0" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="1" CanSummonByDarkLord="1" Description="Normal" />
+		<PK Level="4" ReqPoint="21600" ItemLoseRateOnMonsterKill="25" ItemLoseRateOnPlayerKill="25" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="1" CanSummonByDarkLord="1" Description="Warning" />
+		<PK Level="5" ReqPoint="43200" ItemLoseRateOnMonsterKill="50" ItemLoseRateOnPlayerKill="50" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="50" CanSummonByDarkLord="0" Description="PK Level 2" />
+		<PK Level="6" ReqPoint="86400" ItemLoseRateOnMonsterKill="90" ItemLoseRateOnPlayerKill="90" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="50" CanSummonByDarkLord="0" Description="Murderer Level" />
+	</General>
+	
+	<ExpDeduction>
+		<PK Level="3"> <!-- Normal -->
+			<LevelRange Start="11" End="150" DeductionRate="3" />
+			<LevelRange Start="151" End="220" DeductionRate="2" />
+			<LevelRange Start="221" End="MAX" DeductionRate="1" />
+		</PK>
+		<PK Level="4"> <!-- Warning -->
+			<LevelRange Start="11" End="150" DeductionRate="5" />
+			<LevelRange Start="151" End="220" DeductionRate="5" />
+			<LevelRange Start="221" End="MAX" DeductionRate="5" />
+		</PK>
+		<PK Level="5"> <!-- PK Level 2 -->
+			<LevelRange Start="11" End="150" DeductionRate="10" />
+			<LevelRange Start="151" End="220" DeductionRate="10" />
+			<LevelRange Start="221" End="MAX" DeductionRate="10" />
+		</PK>
+		<PK Level="6"> <!-- Murdered Level -->
+			<LevelRange Start="11" End="150" DeductionRate="20" />
+			<LevelRange Start="151" End="220" DeductionRate="20" />
+			<LevelRange Start="221" End="MAX" DeductionRate="20" />
+		</PK>
+	</ExpDeduction>
+</PlayerKillSystem>

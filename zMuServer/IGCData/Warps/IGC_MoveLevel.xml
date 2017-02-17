@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+//########################################################################################################################################
+// INTERNATIONAL GAMING CENTER NETWORK
+// iDev.Games - TRONG.WIN - Dao Van Trong
+// (C) 2010-2015 IGC-Network.com (R)
+//========================================================================================================================================
+// File is a part of IGCN Group MuOnline Server files.
+//========================================================================================================================================
+//
+// MoveSettings::Move
+//
+// Level: Minimum required level for summoning - regular level only
+// MapNumber: Number of Map
+// StartX: Start X Coordinate of the range covered by the restriction
+// StartY: Start Y Coordinate of the range covered by the restriction
+// EndX: End Y Coordinate of the range covered by the restriction
+// EndY: End Y Coordinate of the range covered by the restriction
+// Name: Name of the Map (in-file description purpose only)
+//
+// Map Level move requirements for Summoning other Player (via spell)
+//########################################################################################################################################
+// It is only possible to Summon on Maps listed below (may not apply to certain conditions)
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+//########################################################################################################################################
+-->
+
+<MoveSettings>
+	<Move Level="10"  MapNumber="0"  StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Lorencia" />
+	<Move Level="40"  MapNumber="2"  StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Devias" />
+	<Move Level="10"  MapNumber="3"  StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Noria" />
+	<Move Level="300" MapNumber="6"  StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Stadium" />
+	<Move Level="150" MapNumber="8"  StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Tarkan" />
+	<Move Level="90"  MapNumber="7"  StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Atlans" />
+	<Move Level="150" MapNumber="10" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Icarus" />
+	<Move Level="20"  MapNumber="1"  StartX="1"   StartY="137" EndX="255" EndY="255" Name="Dungeon1" />
+	<Move Level="30"  MapNumber="1"  StartX="1"   StartY="1"   EndX="255" EndY="40"  Name="Dungeon2" />
+	<Move Level="40"  MapNumber="1"  StartX="60"  StartY="43"  EndX="255" EndY="133" Name="Dungeon2" />
+	<Move Level="60"  MapNumber="1"  StartX="1"   StartY="46"  EndX="50"  EndY="131" Name="Dungeon3" />
+	<Move Level="60"  MapNumber="4"  StartX="153" StartY="14"  EndX="255" EndY="145" Name="LostTower1" />
+	<Move Level="65"  MapNumber="4"  StartX="158" StartY="159" EndX="250" EndY="249" Name="LostTower2" />
+	<Move Level="70"  MapNumber="4"  StartX="78"  StartY="161" EndX="139" EndY="251" Name="LostTower3" />
+	<Move Level="75"  MapNumber="4"  StartX="78"  StartY="81"  EndX="139" EndY="142" Name="LostTower4" />
+	<Move Level="80"  MapNumber="4"  StartX="79"  StartY="2"   EndX="138" EndY="61"  Name="LostTower5" />
+	<Move Level="85"  MapNumber="4"  StartX="1"   StartY="2"   EndX="60"  EndY="61"  Name="LostTower6" />
+	<Move Level="90"  MapNumber="4"  StartX="1"   StartY="82"  EndX="61"  EndY="250" Name="LostTower7" />
+	<Move Level="190" MapNumber="33" StartX="72"  StartY="5"   EndX="245" EndY="179" Name="Aida" />
+	<Move Level="180" MapNumber="34" StartX="9"   StartY="10"  EndX="242" EndY="244" Name="CryWolf (1st Zone)" />
+	<Move Level="10"  MapNumber="30" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Valley of Loren" />
+	<Move Level="170" MapNumber="37" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Kanturu" />
+	<Move Level="180" MapNumber="38" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Kanturu Remain" />
+	<Move Level="220" MapNumber="45" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Illusion Temple1" />
+	<Move Level="271" MapNumber="46" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Illusion Temple2" />
+	<Move Level="321" MapNumber="47" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Illusion Temple3" />
+	<Move Level="351" MapNumber="48" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Illusion Temple4" />
+	<Move Level="381" MapNumber="49" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Illusion Temple5" />
+	<Move Level="400" MapNumber="50" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Illusion Temple6" />
+	<Move Level="350" MapNumber="41" StartX="1"   StartY="1"   EndX="1"   EndY="1"   Name="Illusion Temple (waiting Area 1)" />
+	<Move Level="350" MapNumber="42" StartX="1"   StartY="1"   EndX="1"   EndY="1"   Name="Illusion Temple (waiting Area 2)" />
+	<Move Level="10"  MapNumber="51" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Elbeland" />
+	<Move Level="400" MapNumber="56" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Swamp of Calmness" />
+	<Move Level="290" MapNumber="57" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Raklion" />
+	<Move Level="290" MapNumber="58" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Raklion Hatchery" />
+	<Move Level="0"   MapNumber="62" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Santa Village" />
+	<Move Level="180" MapNumber="63" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Vulcanus (Safe Zone)" />
+	<Move Level="50"  MapNumber="64" StartX="1"   StartY="1"   EndX="1"   EndY="1"   Name="Vulcanus (PvP Zone)" />
+	<Move Level="1"   MapNumber="79" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Loren Market" />
+	<Move Level="170" MapNumber="80" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Karutan1" />
+	<Move Level="180" MapNumber="81" StartX="1"   StartY="1"   EndX="255" EndY="255" Name="Karutan2" />
+</MoveSettings>

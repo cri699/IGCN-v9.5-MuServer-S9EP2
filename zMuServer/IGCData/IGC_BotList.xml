@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### BotSystem::List::Bot ###
+//	Type:
+//		~ 1: Buffer
+//		~ 2: Trade (coming soon)
+//		~ 3: Hide and Seek (coming soon)
+//	Class:
+//		~ 0: Dark Wizard
+//		~ 1: Dark Knight
+//		~ 2: Fairy Elf
+//		~ 3: Magic Gladiator
+//		~ 4: Dark Lord
+//		~ 5: Summoner
+//		~ 6: Rage Fighter
+//	Map: Number of a map the bot appears on
+//	PosX: X Coordinate of the Bot
+//	PosY: Y Coordinate of the Bot
+//	Dir: Direction the Bot is looking at
+//		~ 0: Central
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//	VipType: Minimum VIP Type to use the bot, 0 to allow non-vip to use it
+//	Money: Cost of Buff at specified Bot, Zen
+//	Enable: Activates load of specified bot, 0/1
+//	Name: Name of a Bot, max 10 characters
+//	File: Configuration file of Bot
+//
+// ### BotSystem::BotGear ###
+//	Id: Id of Bot the Gear is referring to, see Bot Id
+//	Name: name of a Bot, used for logging and in-file description purpose
+//
+// ### BotSystem::BotGear::Gear ###
+//	Slot: Slot the item is placed on
+//		~ 0: Left Hand
+//		~ 1: Right Hand
+//		~ 2: Helmet
+//		~ 3: Armor
+//		~ 4: Pants
+//		~ 5: Gloves
+//		~ 6: Boots
+//		~ 7: Wings
+//		~ 8: Helper (Pet)
+//		~ 9: Pedant
+//		~ 10: Left Ring
+//		~ 11: Right Ring
+//	ItemCat: Category of the item, see ItemList.xml
+//	ItemIndex: Index of the item, see ItemList.xml
+//	ItemLevel: Level of the item, 0-15
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+	<BotSystem>
+		<List>
+			<Bot Id="0" Type="0" Class="0" Map="0" PosX="122" PosY="114" Dir="3" VipType="0" Money="5000000" Strength="500" Dexterity="500" Vitality="500" Energy="500" Enable="1" Name="SM_Helper" File="Bots\SM_Helper.xml" />
+			<Bot Id="1" Type="0" Class="1" Map="0" PosX="124" PosY="145" Dir="3" VipType="0" Money="3000000" Strength="500" Dexterity="500" Vitality="500" Energy="500" Enable="1" Name="BK_Helper" File="Bots\BK_Helper.xml" />
+			<Bot Id="2" Type="0" Class="2" Map="3" PosX="170" PosY="109" Dir="3" VipType="0" Money="1500000" Strength="500" Dexterity="500" Vitality="500" Energy="500" Enable="0" Name="ELF_Helper" File="Bots\ELF_Helper.xml" />
+			<Bot Id="3" Type="0" Class="3" Map="0" PosX="149" PosY="116" Dir="3" VipType="0" Money="1500000" Strength="500" Dexterity="500" Vitality="500" Energy="500" Enable="0" Name="MG_Helper" File="Bots\MG_Helper.xml" />
+			<Bot Id="4" Type="0" Class="4" Map="0" PosX="130" PosY="127" Dir="3" VipType="0" Money="3000000" Strength="500" Dexterity="500" Vitality="500" Energy="500" Enable="0" Name="DL_Helper" File="Bots\DL_Helper.xml" />
+			<Bot Id="5" Type="0" Class="5" Map="51" PosX="27" PosY="235" Dir="3" VipType="0" Money="3000000" Strength="500" Dexterity="500" Vitality="500" Energy="500" Enable="0" Name="SUM_Helper" File="Bots\SUM_Helper.xml" />
+			<Bot Id="6" Type="0" Class="6" Map="2" PosX="209" PosY="60" Dir="3" VipType="0" Money="5000000" Strength="750" Dexterity="750" Vitality="750" Energy="750" Enable="0" Name="RF_Helper" File="Bots\RF_Helper.xml" />
+		</List>
+		
+		<BotGear Id="0" Name="SM_Helper">
+			<Gear Slot="0" ItemCat="5" ItemIndex="31" ItemLevel="15" />
+			<Gear Slot="1" ItemCat="5" ItemIndex="31" ItemLevel="15" />
+			<Gear Slot="2" ItemCat="7" ItemIndex="52" ItemLevel="15" />
+			<Gear Slot="3" ItemCat="8" ItemIndex="52" ItemLevel="15" />
+			<Gear Slot="4" ItemCat="9" ItemIndex="52" ItemLevel="15" />
+			<Gear Slot="5" ItemCat="10" ItemIndex="52" ItemLevel="15" />
+			<Gear Slot="6" ItemCat="11" ItemIndex="52" ItemLevel="15" />
+		</BotGear>
+		<BotGear Id="1" Name="BK_Helper">
+			<Gear Slot="0" ItemCat="0" ItemIndex="27" ItemLevel="15" />
+			<Gear Slot="1" ItemCat="0" ItemIndex="27" ItemLevel="15" />
+			<Gear Slot="2" ItemCat="7" ItemIndex="46" ItemLevel="15" />
+			<Gear Slot="3" ItemCat="8" ItemIndex="46" ItemLevel="15" />
+			<Gear Slot="4" ItemCat="9" ItemIndex="46" ItemLevel="15" />
+			<Gear Slot="5" ItemCat="10" ItemIndex="46" ItemLevel="15" />
+			<Gear Slot="6" ItemCat="11" ItemIndex="46" ItemLevel="15" />
+		</BotGear>			
+		<BotGear Id="2" Name="ELF_Helper">
+			<Gear Slot="0" ItemCat="4" ItemIndex="15" ItemLevel="1" />
+			<Gear Slot="1" ItemCat="4" ItemIndex="23" ItemLevel="15" />
+			<Gear Slot="2" ItemCat="7" ItemIndex="49" ItemLevel="15" />
+			<Gear Slot="3" ItemCat="8" ItemIndex="49" ItemLevel="15" />
+			<Gear Slot="4" ItemCat="9" ItemIndex="49" ItemLevel="15" />
+			<Gear Slot="5" ItemCat="10" ItemIndex="49" ItemLevel="15" />
+			<Gear Slot="6" ItemCat="11" ItemIndex="49" ItemLevel="15" />
+		</BotGear>
+		<BotGear Id="3" Name="MG_Helper">
+			<Gear Slot="0" ItemCat="5" ItemIndex="30" ItemLevel="15" />
+			<Gear Slot="1" ItemCat="5" ItemIndex="30" ItemLevel="15" />
+			<Gear Slot="3" ItemCat="8" ItemIndex="48" ItemLevel="15" />
+			<Gear Slot="4" ItemCat="9" ItemIndex="48" ItemLevel="15" />
+			<Gear Slot="5" ItemCat="10" ItemIndex="48" ItemLevel="15" />
+			<Gear Slot="6" ItemCat="11" ItemIndex="48" ItemLevel="15" />
+		</BotGear>
+		<BotGear Id="4" Name="DL_Helper">
+			<Gear Slot="0" ItemCat="2" ItemIndex="17" ItemLevel="15" />
+			<Gear Slot="1" ItemCat="2" ItemIndex="17" ItemLevel="15" />
+			<Gear Slot="2" ItemCat="7" ItemIndex="51" ItemLevel="15" />
+			<Gear Slot="3" ItemCat="8" ItemIndex="51" ItemLevel="15" />
+			<Gear Slot="4" ItemCat="9" ItemIndex="51" ItemLevel="15" />
+			<Gear Slot="5" ItemCat="10" ItemIndex="51" ItemLevel="15" />
+			<Gear Slot="6" ItemCat="11" ItemIndex="51" ItemLevel="15" />
+		</BotGear>
+		<BotGear Id="5" Name="SUM_Helper">
+			<Gear Slot="0" ItemCat="5" ItemIndex="32" ItemLevel="15" />
+			<Gear Slot="1" ItemCat="5" ItemIndex="32" ItemLevel="15" />
+			<Gear Slot="2" ItemCat="7" ItemIndex="53" ItemLevel="15" />
+			<Gear Slot="3" ItemCat="8" ItemIndex="53" ItemLevel="15" />
+			<Gear Slot="4" ItemCat="9" ItemIndex="53" ItemLevel="15" />
+			<Gear Slot="5" ItemCat="10" ItemIndex="53" ItemLevel="15" />
+			<Gear Slot="6" ItemCat="11" ItemIndex="53" ItemLevel="15" />
+		</BotGear>
+		<BotGear Id="6" Name="RF_Helper">
+			<Gear Slot="0" ItemCat="0" ItemIndex="35" ItemLevel="15" />
+			<Gear Slot="1" ItemCat="0" ItemIndex="35" ItemLevel="15" />
+			<Gear Slot="2" ItemCat="7" ItemIndex="73" ItemLevel="15" />
+			<Gear Slot="3" ItemCat="8" ItemIndex="73" ItemLevel="15" />
+			<Gear Slot="4" ItemCat="9" ItemIndex="73" ItemLevel="15" />
+			<Gear Slot="6" ItemCat="11" ItemIndex="73" ItemLevel="15" />
+		</BotGear>
+	</BotSystem>

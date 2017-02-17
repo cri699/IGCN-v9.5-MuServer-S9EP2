@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// Arca Battle Combination Rewards Settings
+// If changing RewardSettings section it is necessary to apply changes to \Data\Local\ArcaBattleBootyMix.bmd on Game Client side
+//
+// ### ArcaBattle::RewardSettings::Reward ###
+//	Index: Reward Index, starting from 1, (unique)
+//	MinCount: Minimum reward count
+//	MaxCount: Maximum reward count
+//	BaseRate: Base Success Rate for the Mix
+//	AddRate:  Add Success Rate for the mix
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Changing RewardSettings values requires values update in of Game Client -> ArcaBattleBootyMix.bmd
+//~~ Success Rate formula: BaseRate + (( TrophyOfbattleCount * AddRate ) - RewardItemsCountForCombinationLevel )
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ArcaBattle:::TrophyOfBattleMix::Combination ###
+//	Level (1-10): Defines level of combination
+//
+// ### ArcaBattle:::TrophyOfBattleMix::Combination (1-10)::Item ###
+//	Cat: Category if the reward item, ItemList.xml
+//	Index: Index of the reward item, ItemList.xml
+//	Level: Level of the reward item, 0-15
+//	Durability: Durability of the reward item
+//	Probability: Chance rate for the item
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Probability is n/1000000 but sum of all Probabilities per Combination level must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ArcaBattle>
+	<RewardSettings>
+		<Reward Index="1"  MinCount="1"  MaxCount="10"  BaseRate="55" AddRate="5" />
+		<Reward Index="2"  MinCount="11" MaxCount="20"  BaseRate="55" AddRate="5" />
+		<Reward Index="3"  MinCount="21" MaxCount="30"  BaseRate="55" AddRate="5" />
+		<Reward Index="4"  MinCount="31" MaxCount="40"  BaseRate="55" AddRate="5" />
+		<Reward Index="5"  MinCount="41" MaxCount="50"  BaseRate="50" AddRate="5" />
+		<Reward Index="6"  MinCount="51" MaxCount="60"  BaseRate="50" AddRate="5" />
+		<Reward Index="7"  MinCount="61" MaxCount="70"  BaseRate="50" AddRate="5" />
+		<Reward Index="8"  MinCount="71" MaxCount="80"  BaseRate="45" AddRate="5" />
+		<Reward Index="9"  MinCount="81" MaxCount="90"  BaseRate="45" AddRate="5" />
+		<Reward Index="10" MinCount="91" MaxCount="100" BaseRate="45" AddRate="5" />
+	</RewardSettings>
+
+	<TrophyOfBattleMix>
+		<Combination Level="1">
+			<Item Cat="13" Index="0"   Level="0" Durability="0" Probability="200000" /> <!-- Guardian Angel -->
+			<Item Cat="13" Index="1"   Level="0" Durability="0" Probability="200000" /> <!-- Satan -->
+			<Item Cat="13" Index="2"   Level="0" Durability="0" Probability="200000" /> <!-- Horn of Uniria -->
+			<Item Cat="14" Index="37"  Level="0" Durability="0" Probability="200000" /> <!-- Large SD Potion -->
+			<Item Cat="14" Index="40"  Level="0" Durability="0" Probability="150000" /> <!-- Large Complex Potion -->
+			<Item Cat="12" Index="141" Level="0" Durability="0" Probability="50000" /> <!-- Jewel of Chaos Bundle +1 -->
+		</Combination>
+
+		<Combination Level="2">
+			<Item Cat="14" Index="44"  Level="0" Durability="0"  Probability="200000" /> <!-- Higher Refining Stone -->
+			<Item Cat="14" Index="42"  Level="0" Durability="0"  Probability="200000" /> <!-- Jewel of Harmony -->
+			<Item Cat="14" Index="22"  Level="0" Durability="0"  Probability="200000" /> <!-- Jewel of Creation -->
+			<Item Cat="12" Index="15"  Level="0" Durability="0"  Probability="200000" /> <!-- Jewel of Chaos -->
+			<Item Cat="12" Index="150" Level="0" Durability="0"  Probability="150000" /> <!-- Jewel Combination Frame -->
+			<Item Cat="12" Index="31"  Level="0" Durability="0"  Probability="50000" /> <!-- Bundle of Jewel of Soul +1 -->
+		</Combination>
+
+		<Combination Level="3">
+			<Item Cat="14" Index="13"  Level="0" Durability="0"  Probability="200000" /> <!-- Jewel of Bless -->
+			<Item Cat="14" Index="14"  Level="0" Durability="0"  Probability="250000" /> <!-- Jewel of Soul -->
+			<Item Cat="14" Index="16"  Level="0" Durability="0"  Probability="200000" /> <!-- Jewel of Life -->
+			<Item Cat="14" Index="31"  Level="0" Durability="0"  Probability="250000" /> <!-- Jewel of Guardian -->
+			<Item Cat="12" Index="151" Level="0" Durability="0"  Probability="50000" /> <!-- Spirit Powder -->
+			<Item Cat="12" Index="30"  Level="0" Durability="0"  Probability="50000" /> <!-- Bundle of Jewel of Bless +1 -->
+		</Combination>
+
+		<Combination Level="4">
+			<Item Cat="13" Index="15" Level="0" Durability="0"  Probability="150000" /> <!-- Fruits (Energy) -->
+			<Item Cat="13" Index="15" Level="1" Durability="0"  Probability="200000" /> <!-- Fruits (Health) -->
+			<Item Cat="13" Index="15" Level="2" Durability="0"  Probability="200000" /> <!-- Fruits (Agility) -->
+			<Item Cat="13" Index="15" Level="3" Durability="0"  Probability="200000" /> <!-- Fruits (Strength) -->
+			<Item Cat="13" Index="15" Level="4" Durability="0"  Probability="200000" /> <!-- Fruits (Command) -->
+			<Item Cat="12" Index="30" Level="0" Durability="0"  Probability="50000" /> <!-- Bundle of Jewel of Bless +1 -->
+		</Combination>
+
+		<Combination Level="5">
+			<Item Cat="12" Index="61" Level="0" Durability="0"  Probability="100000" /> <!-- Seed (Water) - Block Rating Increase -->
+			<Item Cat="12" Index="61" Level="1" Durability="0"  Probability="100000" /> <!-- Seed (Water) - Defense Increase -->
+			<Item Cat="12" Index="61" Level="2" Durability="0"  Probability="100000" /> <!-- Seed (Water) - Shield Protection Increase -->
+			<Item Cat="12" Index="61" Level="3" Durability="0"  Probability="50000" /> <!-- Seed (Water) - Damage reduction -->
+			<Item Cat="12" Index="61" Level="4" Durability="0"  Probability="50000" /> <!-- Seed (Water) - Damage reflection -->
+			<Item Cat="12" Index="63" Level="0" Durability="0"  Probability="100000" /> <!-- Seed (Wind) - Automatic Life recovery Increase -->
+			<Item Cat="12" Index="63" Level="1" Durability="0"  Probability="100000" /> <!-- Seed (Wind) - Maximum Life Increase -->
+			<Item Cat="12" Index="63" Level="2" Durability="0"  Probability="100000" /> <!-- Seed (Wind) - Maximum Mana Increase -->
+			<Item Cat="12" Index="63" Level="3" Durability="0"  Probability="50000" /> <!-- Seed (Wind) - Automatic Mana recovery Increase -->
+			<Item Cat="12" Index="63" Level="4" Durability="0"  Probability="100000" /> <!-- Seed (Wind) - Maximum AG Increase -->
+			<Item Cat="12" Index="63" Level="5" Durability="0"  Probability="100000" /> <!-- Seed (Wind) - AG value Increase -->
+			<Item Cat="14" Index="53" Level="0" Durability="10" Probability="50000" /> <!-- Talisman of Luck -->
+		</Combination>
+
+		<Combination Level="6">
+			<Item Cat="12" Index="30"  Level="0" Durability="0"  Probability="100000" /> <!-- Bundle of Jewel of Bless +1 -->
+			<Item Cat="12" Index="31"  Level="0" Durability="0"  Probability="150000" /> <!-- Bundle of Jewel of Soul +1 -->
+			<Item Cat="12" Index="141" Level="0" Durability="0"  Probability="150000" /> <!-- Jewel of Chaos Bundle +1 -->
+			<Item Cat="12" Index="137" Level="0" Durability="0"  Probability="150000" /> <!-- Jewel of Creation Bundle +1 -->
+			<Item Cat="12" Index="136" Level="0" Durability="0"  Probability="150000" /> <!-- Jewel of Life Bundle +1 -->
+			<Item Cat="12" Index="138" Level="0" Durability="0"  Probability="150000" /> <!-- Jewel of Guardian Bundle +1 -->
+			<Item Cat="12" Index="140" Level="0" Durability="0"  Probability="150000" /> <!-- Jewel of Harmony Bundle +1 -->
+		</Combination>
+
+		<Combination Level="7">
+			<Item Cat="12" Index="62" Level="0" Durability="0"  Probability="150000" /> <!-- Seed (Ice) - Monster destruction for the Life Increase -->
+			<Item Cat="12" Index="62" Level="1" Durability="0"  Probability="150000" /> <!-- Seed (Ice) - Monster destruction for the Mana Increase -->
+			<Item Cat="12" Index="62" Level="2" Durability="0"  Probability="150000" /> <!-- Seed (Ice) - Skill Attack Increase  -->
+			<Item Cat="12" Index="62" Level="3" Durability="0"  Probability="150000" /> <!-- Seed (Ice) - Attack rating Increase  -->
+			<Item Cat="12" Index="62" Level="4" Durability="0"  Probability="150000" /> <!-- Seed (Ice) - Item durability Increase -->
+			<Item Cat="12" Index="65" Level="2" Durability="0"  Probability="200000" /> <!-- Seed (Earth) - Health Increase -->
+			<Item Cat="14" Index="53" Level="0" Durability="10" Probability="50000" /> <!-- Talisman of Luck -->
+		</Combination>
+
+		<Combination Level="8">
+			<Item Cat="12" Index="30"  Level="1" Durability="0" Probability="150000" /> <!-- Bundle of Jewel of Bless +2 -->
+			<Item Cat="12" Index="31"  Level="1" Durability="0" Probability="150000" /> <!-- Bundle of Jewel of Soul +2 -->
+			<Item Cat="12" Index="141" Level="1" Durability="0" Probability="150000" /> <!-- Jewel of Chaos Bundle +2 -->
+			<Item Cat="12" Index="137" Level="1" Durability="0" Probability="150000" /> <!-- Jewel of Creation Bundle +2 -->
+			<Item Cat="12" Index="136" Level="1" Durability="0" Probability="100000" /> <!-- Jewel of Life Bundle +2 -->
+			<Item Cat="12" Index="138" Level="1" Durability="0" Probability="150000" /> <!-- Jewel of Guardian Bundle +2 -->
+			<Item Cat="12" Index="140" Level="1" Durability="0" Probability="149000" /> <!-- Jewel of Harmony Bundle +2 -->
+			<Item Cat="13" Index="53"  Level="0" Durability="0" Probability="1000" /> <!-- Condor Feather -->
+		</Combination>
+
+		<Combination Level="9">
+			<Item Cat="12" Index="60" Level="0" Durability="0"  Probability="150000" /> <!-- Seed (Fire) - (Level type)Attack/Wizardry Increase -->
+			<Item Cat="12" Index="60" Level="1" Durability="0"  Probability="150000" /> <!-- Seed (Fire) - Attack speed Increase -->
+			<Item Cat="12" Index="60" Level="2" Durability="0"  Probability="150000" /> <!-- Seed (Fire) - Maximum Attack/Wizardry Increase -->
+			<Item Cat="12" Index="60" Level="3" Durability="0"  Probability="150000" /> <!-- Seed (Fire) - Minimum Attack/Wizardry Increase -->
+			<Item Cat="12" Index="60" Level="4" Durability="0"  Probability="100000" /> <!-- Seed (Fire) - Attack/Wizardry Increase -->
+			<Item Cat="12" Index="60" Level="5" Durability="0"  Probability="100000" /> <!-- Seed (Fire) - AG cost decrease -->
+			<Item Cat="12" Index="64" Level="0" Durability="0"  Probability="50000" /> <!-- Seed (Lightning) - Excellent damage Increase -->
+			<Item Cat="12" Index="64" Level="1" Durability="0"  Probability="50000" /> <!-- Seed (Lightning) - Excellent damage rate Increase -->
+			<Item Cat="12" Index="64" Level="2" Durability="0"  Probability="50000" /> <!-- Seed (Lightning) - Critical damage Increase -->
+			<Item Cat="12" Index="64" Level="3" Durability="0"  Probability="50000" /> <!-- Seed (Lightning) - Critical damage rate Increase -->
+			<Item Cat="14" Index="53" Level="0" Durability="10" Probability="45000" /> <!-- Talisman of Luck -->
+			<Item Cat="13" Index="53" Level="0" Durability="0"  Probability="5000" /> <!-- Condor Feather -->
+		</Combination>
+
+		<Combination Level="10">
+			<Item Cat="12" Index="30"  Level="2" Durability="0"  Probability="150000" /> <!-- Bundle of Jewel of Bless +3 -->
+			<Item Cat="12" Index="31"  Level="2" Durability="0"  Probability="150000" /> <!-- Bundle of Jewel of Soul +3 -->
+			<Item Cat="12" Index="141" Level="2" Durability="0"  Probability="150000" /> <!-- Jewel of Chaos Bundle +3 -->
+			<Item Cat="12" Index="137" Level="2" Durability="0"  Probability="150000" /> <!-- Jewel of Creation Bundle +3 -->
+			<Item Cat="12" Index="136" Level="2" Durability="0"  Probability="100000" /> <!-- Jewel of Life Bundle +3 -->
+			<Item Cat="12" Index="138" Level="2" Durability="0"  Probability="150000" /> <!-- Jewel of Guardian Bundle +3 -->
+			<Item Cat="12" Index="140" Level="2" Durability="0"  Probability="140000" /> <!-- Jewel of Harmony Bundle +3 -->
+			<Item Cat="13" Index="53"  Level="0" Durability="0"  Probability="10000" /> <!-- Condor Feather -->
+		</Combination>
+	</TrophyOfBattleMix>
+</ArcaBattle>

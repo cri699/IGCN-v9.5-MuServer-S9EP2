@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### NewsSystem ###
+//	Enable: Activates or deactivates entire system, 0/1
+//	DisplayInterval: Interval time the news will be displayed, minutes
+//
+// ### NewsSystem::News ###
+//	ID: ID of the news, unique, starts from 0
+//
+// ### NewsSystem::Line ###
+//	Number: Number of news line
+//		~ 0: First line
+//		~ 1: Second line
+//		~ 2: Third line
+//	Text: Message of the news
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<NewsSystem Enable="1" DisplayInterval="10"> <!-- Minutes -->
+
+	<News ID="0">
+		<Line Number="0" Text="Welcome to" />
+		<Line Number="1" Text="Our Newly Opened" />
+		<Line Number="2" Text="~! Server !~" />
+	</News>
+	
+	<News ID="1">
+		<Line Number="0" Text="Remember to" />
+		<Line Number="1" Text="Visit Our" />
+		<Line Number="2" Text="Fantastic Website" />
+	</News>
+</NewsSystem>

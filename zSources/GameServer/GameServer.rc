@@ -1,0 +1,352 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean (Korea) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean (Korea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT_BOX DIALOGEX 22, 17, 225, 50
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "About"
+FONT 8, "System", 0, 0, 0x0
+BEGIN
+    ICON            IDI_NORMAL_V1,2,14,9,48,48
+    CTEXT           "IGC.GameServer x9.5 Series",-1,44,5,136,10,SS_CENTERIMAGE
+    CTEXT           "Developed by IGC-Network © 2010-2016",-1,44,15,136,10,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",1,185,5,35,41,WS_GROUP
+    CTEXT           "Powered by iDev.games - Dao Van Trong",-1,44,30,136,10,SS_CENTERIMAGE
+END
+
+IDD_NOLICENSE_DIALOG DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,156,50,14
+END
+
+IDD_DCMENU DIALOGEX 0, 0, 281, 40
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_CAPTION | WS_SYSMENU
+CAPTION "Disconnect Player"
+FONT 8, "System", 700, 0, 0xEE
+BEGIN
+    LTEXT           "TODO: layout dialog bar",IDC_STATIC,126,-8,77,8
+    EDITTEXT        IDC_DCTEXT,113,7,114,14,ES_AUTOHSCROLL
+    LTEXT           "Ban",IDC_DCTEXT2,126,23,15,10
+    PUSHBUTTON      "Account",IDC_DCACCOUNT,238,7,36,13
+    PUSHBUTTON      "Character",IDC_DCCHARACTER,238,20,36,13
+    CONTROL         "Check1",IDC_DCBAN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,24,9,8
+    LTEXT           "Enter account/character name:",IDC_DCTEXT3,11,8,100,12
+END
+
+IDD_LICENSEINFO DIALOGEX 0, 0, 425, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "License Info"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,84,14,326,19,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,84,35,326,19,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,84,56,326,19,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Silver Edition",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,84,99,57,9
+    CONTROL         "Season VI",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,84,81,57,9
+    CONTROL         "ex700",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,143,81,46,9
+    LTEXT           "Customer Name",IDC_STATIC,18,20,51,15
+    LTEXT           "Server Name",IDC_STATIC,18,40,51,15
+    LTEXT           "License Type",IDC_STATIC,19,80,51,17
+    PUSHBUTTON      "OK",IDC_LICENSECLOSE,363,105,55,18
+    LTEXT           "Hardware ID",IDC_STATIC,18,60,51,15
+    LTEXT           "Active Plugins",IDC_STATIC,19,99,51,15
+    CONTROL         "Launcher",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,143,99,46,9
+    CONTROL         "ex702",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,191,81,46,9
+    EDITTEXT        IDC_EDIT4,288,79,122,19,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Expiry Date",IDC_STATIC,239,82,41,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDA_GAMESERVER ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+IDV_GAMESERVER VERSIONINFO
+ FILEVERSION 9,5,1,15
+ PRODUCTVERSION 9,5,1,15
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "IGC-Network Inc"
+            VALUE "FileDescription", "x9.5 Series Game Server"
+            VALUE "FileVersion", "9.5.1.15"
+            VALUE "InternalName", "IGC.GameServer"
+            VALUE "LegalCopyright", "Copyright © 2010-2016"
+            VALUE "LegalTrademarks", "iDev.Games - TRONG.WIN - Dao Van Trong"
+            VALUE "OriginalFilename", "IGC.GameServer.exe"
+            VALUE "ProductName", "x9.5 Series Game Server"
+            VALUE "ProductVersion", "9.5.1.15"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NORMAL_V1           ICON                    "GameServer.ico"
+IDI_ICON_MINIMIZED      ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUT_BOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 223
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_NOLICENSE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DCMENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 33
+    END
+
+    IDD_LICENSEINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "Players"
+    BEGIN
+        POPUP "Disconnect"
+        BEGIN
+            MENUITEM "With Close",                  ID_DISCONNECT_WITHCLOSE
+            MENUITEM "Without Close",               ID_DISCONNECT_WITHOUTCLOSE
+        END
+        MENUITEM "Disconnect Selected Player",  ID_PLAYERS_DISCONNECTSELECTEDPLAYER
+        POPUP "Disconnect with Message"
+        BEGIN
+            MENUITEM "5 Minutes",                   ID_DISCONNECTWITHMESSAGE_5MINUTES
+            MENUITEM "3 Minutes",                   ID_DISCONNECTWITHMESSAGE_3MINUTES
+            MENUITEM "1 Minute",                    ID_DISCONNECTWITHMESSAGE_1MINUTE
+        END
+        MENUITEM "Disconnect Off-Traders",      ID_PLAYERS_DISCONNECTOFFTRADER
+        MENUITEM "Disconnect Off-Levelers",     ID_PLAYERS_DISCONNECTOFFLEVEL
+    END
+    POPUP "Events"
+    BEGIN
+        MENUITEM "Reload BC",                   ID_EVENTS_RELOADBC
+        MENUITEM "Reload DS",                   ID_EVENTS_RELOADDS
+        MENUITEM "Reload CC",                   ID_EVENTS_RELOADCC
+        MENUITEM "Reload IT",                   ID_EVENTS_RELOADIT
+        POPUP "Castle Siege"
+        BEGIN
+            MENUITEM "Reload",                      ID_CASTLESIEGE_RELOAD
+            MENUITEM "Set Owner",                   ID_CASTLESIEGE_SETOWNER
+            MENUITEM "Get Owner",                   ID_CASTLESIEGE_GETOWNER
+            MENUITEM "Set State",                   ID_CASTLESIEGE_SETSTATE
+        END
+        MENUITEM "Reload Deep Event",           ID_EVENTS_RELOADDEEPEVENT
+        MENUITEM "Reload CW",                   ID_EVENTS_RELOADCRYWOLF
+        POPUP "Kanturu"
+        BEGIN
+            MENUITEM "Reload",                      ID_KANTURU_RELOAD
+            MENUITEM "Set State",                   ID_KANTURU_SETSTATE
+        END
+        MENUITEM "Reload Raklion",              ID_EVENTS_RELOADRAKLION
+        MENUITEM "Reload DG",                   ID_EVENTS_RELOADDG
+        MENUITEM "Reload IF",                   ID_EVENTS_RELOADIF
+        MENUITEM "Reload Arca",                 ID_EVENTS_RELOADARCA
+        MENUITEM "Reload Acheron Guardian",     ID_EVENTS_RELOADACHERONGUARDIAN
+        MENUITEM "Reload Last Man Standing",    ID_EVENTS_RELOADLASTMANSTANDING
+    END
+    POPUP "Data"
+    BEGIN
+        POPUP "Reload Main Data"
+        BEGIN
+            MENUITEM "VIP Settings",                ID_RELOADMAINDATA_VIPSETTINGS
+            MENUITEM "Items",                       ID_RELOADMAINDATA_ITEMS
+            MENUITEM "Skills",                      ID_RELOADMAINDATA_SKILLS
+            MENUITEM "Warps",                       ID_RELOADMAINDATA_WARPS
+            MENUITEM "Event Bags",                  ID_RELOADMAINDATA_EVENTBAGS
+            MENUITEM "Event Manager",               ID_RELOADMAINDATA_EVENTMANAGER
+            MENUITEM "Quests",                      ID_RELOADMAINDATA_QUESTS
+            MENUITEM "Monsters",                    ID_RELOADMAINDATA_MONSTERS
+            MENUITEM "Item Shop",                   ID_RELOADMAINDATA_ITEMSHOP
+            MENUITEM "Item Drop",                   ID_RELOADMAINDATA_ITEMDROP
+            MENUITEM "Shops",                       ID_RELOADMAINDATA_SHOPS
+            MENUITEM "Off Levelling",               ID_RELOADMAINDATA_OFFLEVELLING
+        END
+        POPUP "Reload System Data"
+        BEGIN
+            MENUITEM "Language",                    ID_RELOADMISCDATA_LANGUAGE
+            MENUITEM "MapServer",                   ID_RELOADMISCDATA_MAPSERVER
+            MENUITEM "CheckSum",                    ID_RELOADMISCDATA_CHECKSUM
+            MENUITEM "Anti Swear",                  ID_RELOADMISCDATA_ANTISWEAR
+        END
+        POPUP "Reload Misc Data"
+        BEGIN
+            MENUITEM "Exp Manager",                 ID_RELOADMISCDATA_EXPMANAGER
+            MENUITEM "MapAttribute",                ID_RELOADMISCDATA_MAPATTRIBUTE
+            MENUITEM "Commands",                    ID_RELOADMISCDATA_COMMANDS
+            MENUITEM "News System",                 ID_RELOADMISCDATA_NEWSSYSTEM
+            MENUITEM "Bots (will reload monsters too)", ID_RELOADMISCDATA_BOTS
+        END
+        MENUITEM "Common Data Reload",          ID_DATA_ALLDATARELOAD
+    END
+    MENUITEM "About",                       IDM_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP              BITMAP                  "bitmap.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUT_BOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "GameServer"
+    IDS_HELLO               "Hello World!"
+    IDS_GAMESERVER          "GAMESERVER"
+END
+
+#endif    // English resources
+/////////////////////////////////////////////////////////////////////////////
+
+

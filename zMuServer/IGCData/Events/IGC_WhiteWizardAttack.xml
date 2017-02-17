@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// MonsterID		- monster index from \Data\Monster\Settings\MonsterList.xml
+// is Respawning	- does monster respawn after killing it, values: 0/1
+// isAttackingFirst	- does monster attack first or keeps the walk until you player hits him, values: 0/1
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<WhiteWizard Enable="1">
+	<Time ToOpen="3" PlayDuration="30" ToClose="25" />
+	<Move RandomSize="15" MinRadius="3" MaxRadius="6" />
+
+	<Schedule>
+		<Start Hour="2"  Minute="0" />
+		<Start Hour="14" Minute="0" />
+		<Start Hour="18" Minute="0" />
+		<Start Hour="22" Minute="0" />
+	</Schedule>
+
+	<SpawnSettings>
+		<Monster Index="135" Respawn="0" AttackFirst="1" Name="White Wizard" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="136" Respawn="0" AttackFirst="0" Name="Destructive Ogre Soldier" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+		<Monster Index="137" Respawn="0" AttackFirst="1" Name="Destructive Ogre Archer" />
+	</SpawnSettings>
+</WhiteWizard>

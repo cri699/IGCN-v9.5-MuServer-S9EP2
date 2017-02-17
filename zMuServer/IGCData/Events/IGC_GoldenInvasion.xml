@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Golden Invasions System spawn schedule is managed via IGC_InvasionManager.xml
+//~~ Golden Monsters spawned by the system will remain on map until get killed
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### GoldenInvasion::Spot::Spawn ###
+//	Index: Index of golden monster definition for purpose of spawn location
+//	MapNumber1: Index of map number to spawn the monster on
+//	MapNumber2: Index of map number to spawn the monster on
+//	MapNumber3: Index of map number to spawn the monster on
+//	MapNumber4: Index of map number to spawn the monster on
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ The monsters are spawned in randomly selected map, one of 4
+//~~ Value -1 disables use of possible map location.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//	Distance: Distance to spawn the monsters from start coordinates
+//	Distance: Distance to spawn the monsters from start coordinates
+//	StartX: Start X coordinate to spawn the monsters, must be lower or equal to StartY
+//	StartY: Start Y coordinate to spawn the monsters, must be greater or equal to StartX
+//	EndX: End X coordinate to spawn the monsters, must be lower or equal to EndY
+//	EndY: End Y coordinate to spawn the monsters, must be greater or equal to EndX
+//	Dir: Direction the monster looks at after spawn
+//		~ 0: Central
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//	Count: Count of monsters to spawn
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<GoldenInvasion>
+	<Spot>
+		<Spawn Index="53"  MapNumber1="2" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="50"  StartY="50"  EndX="200" EndY="200" Dir="-1" Count="1" /> <!-- Golden Titan -->
+		<Spawn Index="54"  MapNumber1="2" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="50"  StartY="50"  EndX="200" EndY="200" Dir="-1" Count="2" /> <!-- Golden Soldier -->
+		<Spawn Index="78"  MapNumber1="3" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="50"  StartY="50"  EndX="200" EndY="200" Dir="-1" Count="1" /> <!-- Golden Goblin -->
+		<Spawn Index="79"  MapNumber1="0" MapNumber2="3" MapNumber3="2" MapNumber4="4" 	  Distance="30" StartX="80"  StartY="80"  EndX="170" EndY="170" Dir="-1" Count="2" /> <!-- Golden Dragon -->
+		<Spawn Index="80"  MapNumber1="7" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="50"  StartY="50"  EndX="200" EndY="200" Dir="-1" Count="1" /> <!-- Golden Lizard King -->
+		<Spawn Index="81"  MapNumber1="7" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="50"  StartY="50"  EndX="200" EndY="200"  Dir="-1" Count="2" /> <!-- Golden Vepar -->
+		<Spawn Index="82"  MapNumber1="8" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="50"  StartY="50"  EndX="200" EndY="200" Dir="-1" Count="1" /> <!-- Golden Tantalos -->
+		<Spawn Index="83"  MapNumber1="8" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="50"  StartY="50"  EndX="200" EndY="200"  Dir="-1" Count="2" /> <!-- Golden Wheel -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Spawn Index="493" MapNumber1="1" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1"  Distance="30" StartX="1"  StartY="1"  EndX="255" EndY="255" Dir="-1" Count="1" /> <!-- Golden Dark Knight -->
+		<Spawn Index="494" MapNumber1="4" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1"  Distance="30" StartX="1"  StartY="1"  EndX="255" EndY="255" Dir="-1" Count="1" /> <!-- Golden Devil -->
+		<Spawn Index="495" MapNumber1="33" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="1"  StartY="1"  EndX="255" EndY="255" Dir="-1" Count="1" /> <!-- Golden Stone Golem -->
+		<Spawn Index="496" MapNumber1="10" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="1"  StartY="1"  EndX="255" EndY="255" Dir="-1" Count="1" /> <!-- Golden Crust -->
+		<Spawn Index="497" MapNumber1="37" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="1"  StartY="1"  EndX="255" EndY="255" Dir="-1" Count="1" /> <!-- Golden Satyros -->
+		<Spawn Index="498" MapNumber1="38" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="1"  StartY="1"  EndX="255" EndY="255" Dir="-1" Count="1" /> <!-- Golden Twin Tail -->
+		<Spawn Index="499" MapNumber1="57" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="1"  StartY="1"  EndX="255" EndY="255" Dir="-1" Count="1" /> <!-- Golden Iron Knight -->
+		<Spawn Index="500" MapNumber1="56" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="1"  StartY="1"  EndX="255" EndY="255" Dir="-1" Count="1" /> <!-- Golden Napin -->
+		<Spawn Index="501" MapNumber1="37" MapNumber2="57" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="1"  StartY="1"  EndX="255" EndY="255" Dir="-1" Count="1" /> <!-- Great Golden Dragon -->
+		<Spawn Index="502" MapNumber1="51" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="1"  StartY="1"  EndX="255" EndY="255" Dir="-1" Count="1" /> <!-- Golden Rabbit -->
+	</Spot>
+</GoldenInvasion>

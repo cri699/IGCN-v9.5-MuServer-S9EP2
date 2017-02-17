@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MonsterSpawnEvent::Spot ###
+//	Enable: Activates or deactivates the spawn of the spot, 0/1
+//	StartDay: The start day of the month the spawn is activate, 1-31
+//	EndDay: The end day of the month the spawn is active, 1-31
+//	StartHour: The start hour the spawn is active during the day, 0-23
+//	EndHour: The end hour the spawn is active during the day, 0-23
+//
+// ### MonsterSpawnEvent::Spot::Spawn ###
+//	Index: Index of a monster to spawn, refer to IGC_ItemList.xml
+//	MapNumber: The number of map to spawn the monster on, refer to IGC_MapList.xml
+//	Distance: Distance to spawn monster from start coordinates
+//	StartX: Start X coordinate to spawn the monsters, must be lower or equal to StartY
+//	StartY: Start Y coordinate to spawn the monsters, must be greater or equal to StartX
+//	EndX: End X coordinate to spawn the monsters, must be lower or equal to EndY
+//	EndY: End Y coordinate to spawn the monsters, must be greater or equal to EndX
+//	Dir: Direction the monster looks at after spawn
+//		~ 0: Central
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//	Count: Count of monsters to spawn
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Multiple Spot section can be defined
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<MonsterSpawnEvent>
+<!-- #######################################################################
+// (1) Fortune Pouch Event ~ Kanturu Ruins
+// (2) Fortune Pouch Event ~ Aida (1 ~ 2)
+// (3) Fortune Pouch Event ~ Tarkan (1 ~ 2)
+// (4) Fortune Pouch Event ~ Lost Tower (1 ~ 7)
+// (5) Fortune Pouch Event ~ Atlans (1 ~ 3)
+// ####################################################################### -->
+	<Spot Enable="0" StartDay="1" EndDay="31" StartHour="0" EndHour="23">
+		<Spawn Index="365" MapNumber="37" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fortune Pouch (1) ~ 30 -->
+		<Spawn Index="365" MapNumber="37" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fortune Pouch (1) ~ 50 -->
+		<Spawn Index="365" MapNumber="33" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fortune Pouch (2) ~ 30 -->
+		<Spawn Index="365" MapNumber="33" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fortune Pouch (2) ~ 50 -->
+		<Spawn Index="365" MapNumber="8"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fortune Pouch (3) ~ 30 -->
+		<Spawn Index="365" MapNumber="8"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fortune Pouch (3) ~ 50 -->
+		<Spawn Index="365" MapNumber="4"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fortune Pouch (4) ~ 30 -->
+		<Spawn Index="365" MapNumber="4"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fortune Pouch (4) ~ 50 -->
+		<Spawn Index="365" MapNumber="7"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fortune Pouch (5) ~ 30 -->
+		<Spawn Index="365" MapNumber="7"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fortune Pouch (5) ~ 50 -->
+	</Spot>
+
+<!-- #######################################################################
+// (1) Pouch of Blessing ~ Lost Tower (1 ~ 7)
+// (2) Pouch of Blessing ~ Icarus
+// (3) Pouch of Blessing ~ Kalima 5
+// (4) Pouch of Blessing ~ Aida (1 ~ 2)
+// ####################################################################### -->
+	<Spot Enable="0" StartDay="1" EndDay="31" StartHour="0" EndHour="23">
+		<Spawn Index="675" MapNumber="4"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Pouch of Blessing(1) ~ 10 -->
+		<Spawn Index="675" MapNumber="10" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Pouch of Blessing(2) ~ 10 -->
+		<Spawn Index="675" MapNumber="28" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Pouch of Blessing(3) ~ 10 -->
+		<Spawn Index="675" MapNumber="33" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Pouch of Blessing(4) ~ 10 -->
+	</Spot>
+	
+<!-- #######################################################################
+// (1) Fortune Pouch Event ~ Kanturu Ruins
+// (2) Fortune Pouch Event ~ Aida (1 ~ 2)
+// (3) Fortune Pouch Event ~ Tarkan (1 ~ 2)
+// (4) Fortune Pouch Event ~ Lost Tower (1 ~ 7)
+// (5) Fortune Pouch Event ~ Atlans (1 ~ 3)
+// ####################################################################### -->
+	<Spot Enable="0" StartDay="1" EndDay="31" StartHour="0" EndHour="23">
+		<Spawn Index="365" MapNumber="37" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fortune Pouch (1) ~ 30 -->
+		<Spawn Index="365" MapNumber="37" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fortune Pouch (1) ~ 50 -->
+		<Spawn Index="365" MapNumber="33" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fortune Pouch (2) ~ 30 -->
+		<Spawn Index="365" MapNumber="33" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fortune Pouch (2) ~ 50 -->
+		<Spawn Index="365" MapNumber="8"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fortune Pouch (3) ~ 30 -->
+		<Spawn Index="365" MapNumber="8"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fortune Pouch (3) ~ 50 -->
+		<Spawn Index="365" MapNumber="4"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fortune Pouch (4) ~ 30 -->
+		<Spawn Index="365" MapNumber="4"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fortune Pouch (4) ~ 50 -->
+		<Spawn Index="365" MapNumber="7"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fortune Pouch (5) ~ 30 -->
+		<Spawn Index="365" MapNumber="7"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fortune Pouch (5) ~ 50 -->
+	</Spot>
+
+<!-- #######################################################################
+// (1) Pouch of Blessing - Lost Tower (1 ~ 7)
+// (2) Pouch of Blessing - Icarus
+// (3) Pouch of Blessing - Kalima 5
+// (4) Pouch of Blessing - Aida (1 ~ 2)
+// ####################################################################### -->
+	<Spot Enable="1" StartDay="1" EndDay="31" StartHour="0" EndHour="23">
+		<Spawn Index="675" MapNumber="4"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Pouch of Blessing (1) ~ 10 -->
+		<Spawn Index="675" MapNumber="10" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Pouch of Blessing (2) ~ 10 -->
+		<Spawn Index="675" MapNumber="28" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Pouch of Blessing (3) ~ 10 -->
+		<Spawn Index="675" MapNumber="33" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Pouch of Blessing (4) ~ 10 -->
+	</Spot>
+
+<!-- #######################################################################
+// (1) Lunar Rabbit Event - Kanturu Ruins
+// (2) Lunar Rabbit Event - Aida (1 ~ 2)
+// (3) Lunar Rabbit Event - Tarkan (1 ~ 2)
+// (4) Lunar Rabbit Event - Lost Tower (1 ~ 7)
+// (5) Lunar Rabbit Event - Atlans (1 ~ 3)
+// ####################################################################### -->
+	<Spot Enable="1" StartDay="1" EndDay="31" StartHour="0" EndHour="23">
+		<Spawn Index="413" MapNumber="37" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Lunar Rabbit (1) ~ 50 -->
+		<Spawn Index="413" MapNumber="33" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Lunar Rabbit (2) ~ 50 -->
+		<Spawn Index="413" MapNumber="8"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Lunar Rabbit (3) ~ 50 -->
+		<Spawn Index="413" MapNumber="4"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Lunar Rabbit (4) ~ 50 -->
+		<Spawn Index="413" MapNumber="7"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Lunar Rabbit (5) ~ 50 -->
+	</Spot>
+
+<!-- #######################################################################
+// (1) Fire Flame Ghost Event - Kanturu Ruins
+// (2) Fire Flame Ghost Event - Aida (1 ~ 2)
+// (3) Fire Flame Ghost Event - Tarkan (1 ~ 2)
+// (4) Fire Flame Ghost Event - Lost Tower (1 ~ 7)
+// (5) Fire Flame Ghost Event - Atlans (1 ~ 3)
+// (6) Fire Flame Ghost Event - Raklion
+// ####################################################################### -->
+	<Spot Enable="0" StartDay="1" EndDay="31" StartHour="0" EndHour="23">
+		<Spawn Index="463" MapNumber="37" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fire Flame Ghost (1) ~ 50 -->
+		<Spawn Index="463" MapNumber="33" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fire Flame Ghost (2) ~ 50 -->
+		<Spawn Index="463" MapNumber="8"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fire Flame Ghost (3) ~ 50 -->
+		<Spawn Index="463" MapNumber="4"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="50" /> <!-- Fire Flame Ghost (4) ~ 50 -->
+		<Spawn Index="463" MapNumber="7"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fire Flame Ghost (5) ~ 50 -->
+		<Spawn Index="463" MapNumber="57" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="30" /> <!-- Fire Flame Ghost (6) ~ 50 -->
+	</Spot>
+
+<!-- #######################################################################
+// (1) Fire Flame Ghost Event - Raklion
+// (2) Fire Flame Ghost Event - Swamp of Calmness
+// (3) Fire Flame Ghost Event - Kanturu Ruins
+// (4) Fire Flame Ghost Event - Kalima 7 (Lost)
+// ####################################################################### -->
+	<Spot Enable="1" StartDay="1" EndDay="31" StartHour="0" EndHour="23">
+		<Spawn Index="676" MapNumber="57" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Fire Flame Ghost (1) ~ 10 -->
+		<Spawn Index="676" MapNumber="56" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Fire Flame Ghost (2) ~ 10 -->
+		<Spawn Index="676" MapNumber="37" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Fire Flame Ghost (3) ~ 10 -->
+		<Spawn Index="676" MapNumber="36" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Fire Flame Ghost (4) ~ 10 -->
+	</Spot>
+
+<!-- #######################################################################
+// (1) Golden Goblin - Kanturu Ruins
+// (2) Golden Goblin - Aida (1 ~ 2)
+// (3) Golden Goblin - Tarkan (1 ~ 2)
+// (4) Golden Goblin - Acheron
+// (5) Golden Goblin - Karutan 1
+// (6) Golden Goblin - Karutan 2
+// ####################################################################### -->
+	<Spot Enable="1" StartDay="1" EndDay="31" StartHour="0" EndHour="23">
+		<Spawn Index="652" MapNumber="37" Distance="30" StartX="1" StartY="1"   EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Golden Goblin (1) ~ 10 -->
+		<Spawn Index="652" MapNumber="33" Distance="30" StartX="1" StartY="1"   EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Golden Goblin (2) ~ 10 -->
+		<Spawn Index="652" MapNumber="8"  Distance="30" StartX="1" StartY="114" EndX="137" EndY="251" Dir="-1" Count="10" /> <!-- Golden Goblin (3) ~ 10 -->
+		<Spawn Index="652" MapNumber="91" Distance="30" StartX="1" StartY="1"   EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Golden Goblin (4) ~ 10 -->
+		<Spawn Index="652" MapNumber="80" Distance="30" StartX="1" StartY="1"   EndX="255" EndY="255" Dir="-1" Count="5" /> <!-- Golden Goblin (5) ~ 5 -->
+		<Spawn Index="652" MapNumber="81" Distance="30" StartX="1" StartY="1"   EndX="255" EndY="255" Dir="-1" Count="5" /> <!-- Golden Goblin (6) ~ 5 -->
+	</Spot>
+
+<!-- #######################################################################
+// (1) Moon Rabbit - Lorencia
+// (2) Moon Rabbit - Elbeland
+// (3) Moon Rabbit - Devias
+// (4) Moon Rabbit - Noria
+// ####################################################################### -->
+	<Spot Enable="1" StartDay="1" EndDay="31" StartHour="0" EndHour="23">
+		<Spawn Index="674" MapNumber="0"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Moon Rabbit (1) ~ 10 -->
+		<Spawn Index="674" MapNumber="51" Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Moon Rabbit (4) ~ 10 -->
+		<Spawn Index="674" MapNumber="2"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Moon Rabbit (2) ~ 10 -->
+		<Spawn Index="674" MapNumber="3"  Distance="30" StartX="1" StartY="1" EndX="255" EndY="255" Dir="-1" Count="10" /> <!-- Moon Rabbit (3) ~ 10 -->
+	</Spot>
+</MonsterSpawnEvent>

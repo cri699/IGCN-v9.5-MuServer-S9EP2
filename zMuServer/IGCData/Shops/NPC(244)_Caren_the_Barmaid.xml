@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### Shop::Item ###
+//	Cat: Category of an item - refer to '\IGCData\Items\ItemList.xml'
+//	Index: Index of an Item - refer to '\IGCData\Items\ItemList.xml'
+//	Level: Level of an item, 0-15
+//	Durability: Durability of an item, 0-255 - NOTE: some Items max durability is lower than maximum possible of 255
+//	Skill: Apply skill to item, 0/1
+//	Luck: Apply Luck on item, 0/1
+//	Option: 0-7 (Opt * 4, example, Opt -> 7 * 4 = Item Option +28
+//	Exc:  0:  No Exc options, or sum of below values (63 - Full of Excellent):
+//		~ 1:  Mana recovery after Monster hunt +Mana/8
+//		~ 2:  Health recovery after Monster hunt +HP/8
+//		~ 4:  +7 Speed
+//		~ 8:  More Damage +2%
+//		~ 16: More Damage +Level/20
+//		~ 32: Excellent Damage Rate +10%
+//	SetItem (item must be added to set items (ancients), otherwise option will be ignored:
+//		~ 0:  No Ancient
+//		~ 5:  First Set type (+5 Stamina)
+//		~ 6:  Second Set type (+5 Stamina)
+//		~ 9:  First Set type (+10 Stamina)
+//		~ 10: Second Set type (+10 Stamina)
+//	SocketCount: Count of Sockets for socket item, values: 0-5
+//	Elemental: Element type for elemental items: 0 ~ no Elemental Attribute, 1 ~ Fire, 2 ~ Water, 3 ~ Earth, 4 ~ Wind, 5 ~ Darkness - option ignored for S6E3
+//	Serial: Generate serial for the shop item, 0/1
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<Shop>
+	<Item Cat="14" Index="9" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
+	<Item Cat="14" Index="10" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
+	<Item Cat="13" Index="16" Level="1" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
+	<Item Cat="13" Index="16" Level="2" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
+	<Item Cat="13" Index="17" Level="1" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
+	<Item Cat="13" Index="17" Level="2" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
+	<Item Cat="14" Index="17" Level="1" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
+	<Item Cat="14" Index="17" Level="2" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
+	<Item Cat="14" Index="18" Level="1" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
+	<Item Cat="14" Index="18" Level="2" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
+	<Item Cat="13" Index="29" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
+</Shop>

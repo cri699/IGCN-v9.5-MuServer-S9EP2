@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### DoppelGanger::PositionInfo::Map ###
+//	Number: Number of map the settings apply to
+//	Name: Used for in-file description and logging purpose
+//
+// ### DoppelGanger::PositionInfo::Map::Pos ###
+//	StartX: X Coordinate of start range position of event monsters spawn, StartX must be greater than StartY
+//	StartY: Y Coordinate of start range position of event monsters spawn, EndX must be greater than EndY
+//	EndX: X Coordinate of end range position of event monsters spawn
+//	EndY: Y Coordinate of end range position of event monsters spawn
+//
+// ### DoppelGanger::WaitingZones::Map ###
+//	Number: Number of map the settings applies to
+//	StartX: X Coordinate of start range position of event waiting area, StartX must be greater than StartY
+//	StartY: Y Coordinate of start range position of event waiting area, EndX must be greater than EndY
+//	EndX: X Coordinate of end range position of event waiting area
+//	EndY: Y Coordinate of end range position of event waiting area
+//	Name: Used for in-file description and logging purpose
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	Map Numbers:
+//		~ 65: Ice Map
+//		~ 66: Fire
+//		~ 67: Water
+//		~ 68: Ground
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<DoppelGanger>
+	<PositionInfo>
+		<Map Number="65" Name="Ice">
+			<Pos StartX="220" StartY="99" EndX="230" EndY="107" />
+			<Pos StartX="218" StartY="95" EndX="230" EndY="100" />
+			<Pos StartX="217" StartY="91" EndX="225" EndY="96" />
+			<Pos StartX="217" StartY="87" EndX="224" EndY="92" />
+			<Pos StartX="217" StartY="83" EndX="224" EndY="88" />
+			<Pos StartX="217" StartY="79" EndX="224" EndY="84" />
+			<Pos StartX="217" StartY="75" EndX="224" EndY="80" />
+			<Pos StartX="215" StartY="72" EndX="225" EndY="76" />
+			<Pos StartX="212" StartY="70" EndX="224" EndY="73" />
+			<Pos StartX="209" StartY="67" EndX="222" EndY="71" />
+			<Pos StartX="206" StartY="64" EndX="218" EndY="68" />
+			<Pos StartX="202" StartY="62" EndX="216" EndY="65" />
+			<Pos StartX="200" StartY="59" EndX="213" EndY="63" />
+			<Pos StartX="196" StartY="57" EndX="210" EndY="60" />
+			<Pos StartX="193" StartY="55" EndX="208" EndY="58" />
+			<Pos StartX="192" StartY="51" EndX="203" EndY="56" />
+			<Pos StartX="193" StartY="48" EndX="201" EndY="52" />
+			<Pos StartX="193" StartY="44" EndX="201" EndY="49" />
+			<Pos StartX="193" StartY="40" EndX="201" EndY="45" />
+			<Pos StartX="193" StartY="37" EndX="201" EndY="41" />
+			<Pos StartX="194" StartY="34" EndX="201" EndY="38" />
+			<Pos StartX="192" StartY="30" EndX="202" EndY="35" />
+			<Pos StartX="192" StartY="24" EndX="202" EndY="31" />
+		</Map>
+		<Map Number="66" Name="Fire">
+			<Pos StartX="108" StartY="179" EndX="119" EndY="186" />
+			<Pos StartX="108" StartY="174" EndX="119" EndY="180" />
+			<Pos StartX="109" StartY="169" EndX="117" EndY="175" />
+			<Pos StartX="109" StartY="163" EndX="117" EndY="170" />
+			<Pos StartX="109" StartY="158" EndX="117" EndY="164" />
+			<Pos StartX="109" StartY="153" EndX="117" EndY="159" />
+			<Pos StartX="109" StartY="147" EndX="118" EndY="154" />
+			<Pos StartX="109" StartY="142" EndX="119" EndY="148" />
+			<Pos StartX="110" StartY="137" EndX="120" EndY="143" />
+			<Pos StartX="112" StartY="132" EndX="122" EndY="138" />
+			<Pos StartX="114" StartY="127" EndX="126" EndY="133" />
+			<Pos StartX="116" StartY="123" EndX="131" EndY="128" />
+			<Pos StartX="121" StartY="119" EndX="133" EndY="124" />
+			<Pos StartX="124" StartY="114" EndX="137" EndY="120" />
+			<Pos StartX="127" StartY="109" EndX="139" EndY="115" />
+			<Pos StartX="130" StartY="104" EndX="140" EndY="110" />
+			<Pos StartX="132" StartY="98"  EndX="141" EndY="105" />
+			<Pos StartX="133" StartY="93"  EndX="141" EndY="99" />
+			<Pos StartX="133" StartY="88"  EndX="141" EndY="94" />
+			<Pos StartX="133" StartY="83"  EndX="141" EndY="89" />
+			<Pos StartX="133" StartY="78"  EndX="141" EndY="84" />
+			<Pos StartX="133" StartY="74"  EndX="143" EndY="79" />
+			<Pos StartX="133" StartY="66"  EndX="143" EndY="75" />
+		</Map>
+		<Map Number="67" Name="Water">
+			<Pos StartX="107" StartY="149" EndX="114" EndY="155" />
+			<Pos StartX="105" StartY="144" EndX="114" EndY="150" />
+			<Pos StartX="105" StartY="140" EndX="113" EndY="145" />
+			<Pos StartX="105" StartY="135" EndX="113" EndY="141" />
+			<Pos StartX="105" StartY="131" EndX="113" EndY="136" />
+			<Pos StartX="105" StartY="127" EndX="113" EndY="132" />
+			<Pos StartX="105" StartY="123" EndX="114" EndY="128" />
+			<Pos StartX="105" StartY="119" EndX="113" EndY="124" />
+			<Pos StartX="105" StartY="115" EndX="113" EndY="120" />
+			<Pos StartX="105" StartY="111" EndX="113" EndY="116" />
+			<Pos StartX="105" StartY="107" EndX="113" EndY="112" />
+			<Pos StartX="105" StartY="103" EndX="113" EndY="108" />
+			<Pos StartX="105" StartY="99"  EndX="113" EndY="104" />
+			<Pos StartX="105" StartY="95"  EndX="113" EndY="100" />
+			<Pos StartX="105" StartY="91"  EndX="113" EndY="96" />
+			<Pos StartX="105" StartY="86"  EndX="113" EndY="92" />
+			<Pos StartX="105" StartY="82"  EndX="113" EndY="87" />
+			<Pos StartX="105" StartY="78"  EndX="113" EndY="83" />
+			<Pos StartX="105" StartY="74"  EndX="113" EndY="79" />
+			<Pos StartX="105" StartY="70"  EndX="113" EndY="75" />
+			<Pos StartX="105" StartY="66"  EndX="113" EndY="71" />
+			<Pos StartX="104" StartY="62"  EndX="115" EndY="67" />
+			<Pos StartX="104" StartY="55"  EndX="115" EndY="63" />
+		</Map>
+		<Map Number="68" Name="Ground">
+			<Pos StartX="38" StartY="105" EndX="48"  EndY="113" />
+			<Pos StartX="38" StartY="99"  EndX="47"  EndY="106" />
+			<Pos StartX="38" StartY="94"  EndX="45"  EndY="100" />
+			<Pos StartX="38" StartY="89"  EndX="45"  EndY="95" />
+			<Pos StartX="34" StartY="84"  EndX="51"  EndY="90" />
+			<Pos StartX="40" StartY="80"  EndX="54"  EndY="85" />
+			<Pos StartX="44" StartY="76"  EndX="61"  EndY="81" />
+			<Pos StartX="48" StartY="71"  EndX="65"  EndY="77" />
+			<Pos StartX="53" StartY="66"  EndX="65"  EndY="72" />
+			<Pos StartX="57" StartY="62"  EndX="67"  EndY="67" />
+			<Pos StartX="59" StartY="57"  EndX="66"  EndY="63" />
+			<Pos StartX="59" StartY="50"  EndX="67"  EndY="58" />
+			<Pos StartX="66" StartY="50"  EndX="72"  EndY="57" />
+			<Pos StartX="71" StartY="49"  EndX="77"  EndY="57" />
+			<Pos StartX="76" StartY="49"  EndX="84"  EndY="57" />
+			<Pos StartX="83" StartY="50"  EndX="89"  EndY="57" />
+			<Pos StartX="88" StartY="46"  EndX="98"  EndY="57" />
+			<Pos StartX="90" StartY="41"  EndX="99"  EndY="47" />
+			<Pos StartX="91" StartY="35"  EndX="98"  EndY="42" />
+			<Pos StartX="91" StartY="29"  EndX="98"  EndY="36" />
+			<Pos StartX="91" StartY="23"  EndX="99"  EndY="30" />
+			<Pos StartX="91" StartY="19"  EndX="101" EndY="24" />
+			<Pos StartX="91" StartY="10"  EndX="101" EndY="20" />
+		</Map>
+	</PositionInfo>
+	<WaitingZones>
+		<Map Number="65" StartX="195" StartY="34" EndX="199" EndY="40" Name="Ice" />
+		<Map Number="66" StartX="134" StartY="78" EndX="139" EndY="84" Name="Fire" />
+		<Map Number="67" StartX="106" StartY="65" EndX="111" EndY="71" Name="Water" />
+		<Map Number="68" StartX="93"  StartY="23" EndX="97"  EndY="25" Name="Ground" />
+	</WaitingZones>
+</DoppelGanger>

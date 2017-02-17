@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================										
+//
+// ###MuunSystem::Option ###
+//	Index: Index of the option (unique)
+//	Type: Set Option type
+//	Value0: Option value of Muun after evolution
+//	Value1: Option value at Muun Level 1
+//	Value2: Option value at Muun Level 2
+//	Value3: Option value at Muun Level 3
+//	Value4: Option value at Muun Level 4
+//	Value5: Option value at Muun Level 5
+//	ConditionType: 1 - Map, 2 - Level Range, 3 - Time (Hours), 4 - Day
+//	ConditionValue1:
+//	ConditionValue2:
+//			1) If ConditionType set to 1 then ConditionValue1 is used to define MapNumber
+//			   the Muun Options are active on, ConditionValue2 must be set -1 then
+//			2) If ConditionType set to 2 then ConditionValue1 is used to define minimum player level (regular + master)
+//			   to use the Muun and ConditionValue2 is used to define maximum player level (regular + master)
+//			3) If ConditionType set to 3 then ConditionValue1 is used to define start hour (0-23) and ConditionValue2
+//			   to define end hour (0-23) between which the Muun Options are active
+//			4) If ConditionType set to 4 then ConditionValue1 is used to define day of weeks the Muun Options are active on
+//			   ConditionValue1 is set to -1 then options are active every day, ConditionValue2 should be -1
+//				Days are represented as sum of bits where:
+//					~ 64: Sunday
+//					~ 32: Monday
+//					~ 16: Tuesday
+//					~ 8:  Wednesday
+//					~ 4:  Thursday
+//					~ 2:  Friday
+//					~ 1:  Saturday
+//				Example: Monday, Tuesday and Wednesday will be 32+16+8 = 56  
+//	Name: Name of the option
+//	Description: Description of the option
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<MuunSystem>
+	<Option Index="0" Type="2" Value0="38" Value1="22" Value2="26" Value3="30" Value4="34" Value5="0" ConditionType="3" ConditionValue1="18" ConditionValue2="24" Name="Increase Defense +%d" Description="6 ~ 12PM" />
+	<Option Index="1" Type="1" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="1" ConditionValue1="56" ConditionValue2="-1" Name="Increase Attack Power/Mana/Curse Spells +%d" Description="Swamp of Peace Hunting Field" />
+	<Option Index="2" Type="4" Value0="6" Value1="2" Value2="4" Value3="0" Value4="0" Value5="0" ConditionType="2" ConditionValue1="1" ConditionValue2="200" Name="Increase Critical Damage +%d" Description="Level 1 ~ 200" />
+	<Option Index="3" Type="1" Value0="24" Value1="14" Value2="16" Value3="18" Value4="20" Value5="22" ConditionType="4" ConditionValue1="71" ConditionValue2="-1" Name="Increase Attack Power/Mana/Curse Spells +%d" Description="Thu, Fri, Sat, Sun" />
+	<Option Index="4" Type="3" Value0="10" Value1="4" Value2="6" Value3="8" Value4="0" Value5="0" ConditionType="3" ConditionValue1="1" ConditionValue2="12" Name="Increase Excellent Damage +%d" Description="1 ~ 12AM" />
+	<Option Index="5" Type="3" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="3" ConditionValue1="13" ConditionValue2="24" Name="Increase Excellent Damage +%d" Description="1 ~ 12PM" />
+	<Option Index="6" Type="7" Value0="24" Value1="14" Value2="16" Value3="18" Value4="20" Value5="22" ConditionType="4" ConditionValue1="71" ConditionValue2="-1" Name="Increase Maximum Attack Power/Mana/Curse Spells +%d" Description="Thu, Fri, Sat, Sun" />
+	<Option Index="7" Type="4" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="2" ConditionValue1="201" ConditionValue2="750" Name="Increase Critical Damage +%d" Description="201~Master Level" />
+	<Option Index="8" Type="4" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="2" ConditionValue1="1" ConditionValue2="200" Name="Increase Critical Damage +%d" Description="Level 1 ~ 200" />
+	<Option Index="9" Type="3" Value0="21" Value1="9" Value2="12" Value3="15" Value4="18" Value5="0" ConditionType="4" ConditionValue1="56" ConditionValue2="-1" Name="Increase Excellent Damage +%d" Description="Mon, Tue, Wed" />
+	<Option Index="10" Type="3" Value0="38" Value1="23" Value2="26" Value3="29" Value4="32" Value5="35" ConditionType="4" ConditionValue1="71" ConditionValue2="-1" Name="Increase Excellent Damage +%d" Description="Thu, Fri, Sat, Sun" />
+	<Option Index="11" Type="1" Value0="14" Value1="6" Value2="8" Value3="10" Value4="12" Value5="0" ConditionType="3" ConditionValue1="13" ConditionValue2="24" Name="Increase Attack Power/Mana/Curse Spells +%d" Description="1 ~ 12PM" />
+	<Option Index="12" Type="2" Value0="14" Value1="2" Value2="6" Value3="10" Value4="0" Value5="0" ConditionType="2" ConditionValue1="1" ConditionValue2="200" Name="Increase Defense +%d" Description="Level 1 ~ 200" />
+	<Option Index="13" Type="50" Value0="10" Value1="4" Value2="6" Value3="8" Value4="0" Value5="0" ConditionType="3" ConditionValue1="13" ConditionValue2="24" Name="Attack Skill (%dLevel)" Description="1 ~ 12PM" />
+	<Option Index="14" Type="1" Value0="24" Value1="14" Value2="16" Value3="18" Value4="20" Value5="22" ConditionType="4" ConditionValue1="71" ConditionValue2="-1" Name="Increase Attack Power/Mana/Curse Spells +%d" Description="Thu, Fri, Sat, Sun" />
+	<Option Index="15" Type="7" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="2" ConditionValue1="1" ConditionValue2="300" Name="Increase Maximum Attack Power/Mana/Curse Spells +%d" Description="Level 1 ~ 300" />
+	<Option Index="16" Type="50" Value0="10" Value1="4" Value2="6" Value3="8" Value4="0" Value5="0" ConditionType="4" ConditionValue1="56" ConditionValue2="-1" Name="Attack Skill (%dLevel)" Description="Mon, Tue, Wed" />
+	<Option Index="17" Type="7" Value0="24" Value1="14" Value2="16" Value3="18" Value4="20" Value5="22" ConditionType="4" ConditionValue1="71" ConditionValue2="-1" Name="Increase Maximum Attack Power/Mana/Curse Spells +%d" Description="Thu, Fri, Sat, Sun" />
+	<Option Index="18" Type="50" Value0="10" Value1="4" Value2="6" Value3="8" Value4="0" Value5="0" ConditionType="2" ConditionValue1="201" ConditionValue2="750" Name="Attack Skill (%dLevel)" Description="201~Master Level" />
+	<Option Index="19" Type="1" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="4" ConditionValue1="56" ConditionValue2="-1" Name="Increase Attack Power/Mana/Curse Spells +%d" Description="Mon, Tue, Wed" />
+	<Option Index="20" Type="5" Value0="19" Value1="9" Value2="11" Value3="13" Value4="15" Value5="17" ConditionType="4" ConditionValue1="71" ConditionValue2="-1" Name="Increase Skill Attack Power +%d" Description="Thu, Fri, Sat, Sun" />
+	<Option Index="21" Type="5" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="4" ConditionValue1="56" ConditionValue2="-1" Name="Increase Skill Attack Power +%d" Description="Mon, Tue, Wed" />
+	<Option Index="22" Type="50" Value0="10" Value1="4" Value2="6" Value3="8" Value4="0" Value5="0" ConditionType="3" ConditionValue1="13" ConditionValue2="24" Name="Attack Skill (%dLevel)" Description="1 ~ 12PM" />
+	<Option Index="23" Type="10" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="4" ConditionValue1="60" ConditionValue2="-1" Name="Increases Excellent Damage +%d (non-PVP)" Description="Mon, Tue, Wed, Thu" />
+	<Option Index="24" Type="8" Value0="24" Value1="14" Value2="16" Value3="18" Value4="20" Value5="22" ConditionType="4" ConditionValue1="79" ConditionValue2="-1" Name="Increases Attack Power/Magical Damage/Curse by +%d (non-PVP)" Description="Wed, Thu, Fri, Sat, Sun" />
+	<Option Index="25" Type="53" Value0="10" Value1="4" Value2="6" Value3="8" Value4="0" Value5="0" ConditionType="2" ConditionValue1="201" ConditionValue2="750" Name="Attack Skill (Level %d) (non-PVP)" Description="201~Master Level" />
+	<Option Index="26" Type="14" Value0="24" Value1="14" Value2="16" Value3="18" Value4="20" Value5="22" ConditionType="4" ConditionValue1="79" ConditionValue2="-1" Name="Increases MAX Attack Power/Magical Damage/Curse by +%d (non-PVP)" Description="Wed, Thu, Fri, Sat, Sun" />
+	<Option Index="27" Type="14" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="3" ConditionValue1="13" ConditionValue2="24" Name="Increases MAX Attack Power/Magical Damage/Curse by +%d (non-PVP)" Description="1 ~ 12PM" />
+	<Option Index="28" Type="53" Value0="10" Value1="4" Value2="6" Value3="8" Value4="0" Value5="0" ConditionType="4" ConditionValue1="60" ConditionValue2="-1" Name="Attack Skill (Level %d) (non-PVP)" Description="Mon, Tue, Wed, Thu" />
+	<Option Index="29" Type="1" Value0="22" Value1="14" Value2="16" Value3="18" Value4="20" Value5="0" ConditionType="4" ConditionValue1="60" ConditionValue2="-1" Name="Increases Attack Power/Magical Damage/Curse by +%d" Description="Mon, Tue, Wed, Thu" />
+	<Option Index="30" Type="5" Value0="17" Value1="9" Value2="11" Value3="13" Value4="15" Value5="0" ConditionType="4" ConditionValue1="71" ConditionValue2="-1" Name="Increases Skill Damage +%d" Description="Thur, Fri, Sat, Sun" />
+	<Option Index="31" Type="3" Value0="35" Value1="23" Value2="26" Value3="29" Value4="32" Value5="0" ConditionType="3" ConditionValue1="13" ConditionValue2="24" Name="Increases Excellent Damage +%d" Description="1 ~ 12PM" />
+	<Option Index="32" Type="12" Value0="19" Value1="9" Value2="11" Value3="13" Value4="15" Value5="17" ConditionType="4" ConditionValue1="79" ConditionValue2="-1" Name="Increases Skill Damage by +%d (non-PVP)" Description="Wed, Thu, Fri, Sat, Sun" />
+	<Option Index="33" Type="8" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="2" ConditionValue1="201" ConditionValue2="750" Name="Increases Attack Power/Magical Damage/Curse by +%d (non-PVP)" Description="201~Master Level" />
+	<Option Index="34" Type="53" Value0="10" Value1="4" Value2="6" Value3="8" Value4="0" Value5="0" ConditionType="3" ConditionValue1="13" ConditionValue2="24" Name="Attack Skill (Level %d) (non-PVP)" Description="1 ~ 12PM" />
+	<Option Index="35" Type="11" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="4" ConditionValue1="60" ConditionValue2="-1" Name="Increases Critical Damage Chance +%d (non-PVP)" Description="Mon, Tue, Wed, Thu" />
+	<Option Index="36" Type="12" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="3" ConditionValue1="13" ConditionValue2="24" Name="Increases +%d skill damage (Non-PvP)" Description="1 ~ 12PM" />
+</MuunSystem>

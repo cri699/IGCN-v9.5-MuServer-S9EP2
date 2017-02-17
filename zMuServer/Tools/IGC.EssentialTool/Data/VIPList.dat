@@ -1,0 +1,7 @@
+// in this file you should specify your VIP types defined in IGC_VipSettings.xml
+//	Type	Name
+	0	"Not VIP (Ended)"		// DO NOT REMOVE THIS RECORD
+	1	"Bronze"
+	2	"Silver"
+	3	"Gold"
+	4	"Platinum"

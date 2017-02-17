@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### BattleMapObjects::Tag ###
+//	Id: Unique ID per MapNumber
+//	MapNumber: Number of a map
+//	NPCIndex: Index of NPC (Monster.xml)
+//	X - Coordinate X
+//	Y - Coordinate Y
+//	DisplayType:
+//		~ 1: Shield Icon
+//		~ 2: Conversation Icon (three dots in cloud)
+//		~ 3: Hammer Icon
+//		~ 4: Elixir Icon
+//		~ 5: Locker Icon
+//		~ 6: UNK
+//	SyncType:
+//		~ 0: Tag is not displayed
+//		~ 1: Tag displayed always
+//		~ 2: Tag displayed only if Monster/NPC present in-Game
+//	Name: Name of Tag to display on Mini Map
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MiniMapObjects>
+	<TypeOne>
+		<Tag Id="0" MapNumber="79" NPCIndex="643" X="113" Y="127" DisplayType="2" SyncType="1" Name="Mait" />
+		<Tag Id="1" MapNumber="79" NPCIndex="683" X="128" Y="121" DisplayType="4" SyncType="1" Name="Marce" />
+		<Tag Id="2" MapNumber="79" NPCIndex="684" X="128" Y="133" DisplayType="4" SyncType="1" Name="Silvia" />
+		<Tag Id="3" MapNumber="79" NPCIndex="685" X="139" Y="140" DisplayType="4" SyncType="1" Name="Izabel" />
+		<Tag Id="4" MapNumber="79" NPCIndex="686" X="134" Y="127" DisplayType="3" SyncType="1" Name="Sophia (repair)" />
+		<Tag Id="5" MapNumber="79" NPCIndex="687" X="116" Y="115" DisplayType="3" SyncType="1" Name="Bolo (repair)" />
+		<Tag Id="6" MapNumber="79" NPCIndex="688" X="135" Y="112" DisplayType="4" SyncType="1" Name="Christine" />
+	</TypeOne>
+</MiniMapObjects>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// DROP MANAGER MAX ITEM: NO LIMIT
+//
+// ### DropManager ###
+//	DropUseRate: Chance rate of using drop from the system, n/1000000
+//
+// ### DropManager::Monster ###
+//	Index: Index of monster based on MonsterList.xml
+//	MonsterMinLevel: Monster Minimum Level, 1~150 (must be lower or equal to MonsterMaxLevel), set -1 if monster index is greater than -1
+//	MonsterMaxLevel: Monster Maximum Level, 1~150 (must be greater or equal to MonsterMin Level), set -1 if monster index greater than -1
+//	MapNumber: Map Number the drop of items applies to, -1 for all maps
+//	ItemRate: Item Drop Rate from Monster, n/10000 - actual chance for an item from the specific Monster section
+//	ItemCount: Item count to be dropped at a time from a monster
+//	CoinReward: Awards with configured coin type and count, 0/1
+//	CoinType: 0 - WCoinC, 1 - WCoinP (for Season 8 it is WCoin), 2 - Goblin Point
+//	CoinValue: Points count to award with
+//	PlayerMinLevel: Minimum level of player to apply drop of items from the section (must be lower or equal to PlayerMaxLevel)
+//	PlayerMaxLevel: Maximum level of player to apply drop of items from the section (must be greater or equal to PlayerMinLevel)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ For easier configuration use PlayerMaxLevel="MAX" to configure maximum level available for the server (automated sum of MaxNormalLevel and MaxMasterLevel)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### DropManager::Monster::Item ###
+//	Cat: Item Category, refer to \Data\Items\ItemList.xml
+//	Index: Item index, refer to \Data\Items\ItemList.xml
+//	ItemMinLevel: Minimum level the item should be dropped with, 0~15 (must be lower or equal to ItemMaxLevel)
+//	ItemMaxLevel: Maximum level of the item should be dropped with, 0~15 (must be greater or equal to ItemMinLevel)
+//	Durability: Allow to set desired durability for an item or -1 for automated durability basing on item setting ~ recommended for most of the items
+//	Skill: 0: no skill, -1: random (50/50% chance), 1: with skill
+//	Luck: 0: no luck, -1: random (50/50% chance), 1: with luck
+//	Option: 0: no option, -1: random, 1(+4), 2(+8), 3(+12), 4(+16), 5(+20), 6(+24), 7(+28): with specified option
+//	Exc:
+//	-1 - Random Exc options
+//	0 - No Exc options, or sum of below values (63 - Full of Excellent):
+//	1 - Mana recovery after Monster hunt +Mana/8
+//	2 - Health recovery after Monster hunt +HP/8
+//	4 - +7 Speed
+//	8 - More Damage +2%
+//	16 - More Damage +Level/20
+//	32 - Excellent Damage Rate +10%
+//	SetItem: Makes a draw among available ancient sets for configured item, 0/1
+//	SocketCount: 0: no socket slots, 1: up to one slot, 2: up to two slots, 3: up to three slots, 4: up to four slots, 5: up to five slots - for Season 8 and later item must be set to Type 3 in ItemList.xml
+//	ElementalItem: 0: no elemental attribute, 1: fire, 2: water, 3: earth, 4: wind, 5: darkness, -1: random attribute - option ignored for Season 6
+//	MuunEvolutionItemCat: Attribute used and required for item 13,211 (Evolution Stone) only, defines Muun Item Category
+//	MuunEvolutionItemIndex: Attribute used and required for item 13,211 (Evolution Stone) only, defines Muun Item Index
+//	DropRate: Drop Rate of actual item, max value per item is 2147483647 but sum of all DropRates of Items in single Monster section cannot be greater than 2147483647
+//	Duration: Allows to drop expirable item, seconds (not every item is suitable for period items system, please test before putting on live server)
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ System allows multiple sections of Monster Index -1. In case two or more Monster sections of index -1 present in a file for which Monster level ranges are partly same
+//~~ the system will draw a section to perform drop from on a basis of sections (of index -1) count, e.g. two of such sections will be 50/50%, three will be 33/33/33%, etc
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ System explanation:
+//~~	1. Kill Monster -> Check against actual Monster index existence in file
+//~~		+ if does not exist process with general drop system
+//~~		+ if exist and count of Monster section for actual monster is greater than 1 then makes a draw of Monster section to drop item from basing on count of sections, e.g. 4 for sections for actual monster is equal to 25% chance for each 
+//~~			- if ItemRate lower than 10000 and draw failed then process to regular drop system
+//~~			- if succeeded then continues to select an item from the section
+//~~	2. Making a draw of item to drop basing on a sum of DropRate property of all items in actual Monster section. If section has single item only and DropRate is 1 then max
+//~~	   DropRate is 1, in other meaning 100% - 1/1. If section has e.g. two items and one is DropRate 10 and second is 1000 then max is 1010, what makes a drop rate of first item 10/1010 and second 1000/1010
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// Below settings are meant to be examples to present file structure usage
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+ 
+<DropManager DropUseRate="500000">
+	<!-- <Monster Index="-1" MonsterMinLevel="1" MonsterMaxLevel="150" MapNumber="-1" ItemRate="5000" ItemCount="1" CoinReward="0" CoinType="0" CoinValue="100" PlayerMinLevel="1" PlayerMaxLevel="MAX">
+		<Item Cat="0" Index="0" ItemMinLevel="0" ItemMaxLevel="0" Durability="-1" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" SocketCount="0" ElementalItem="0" DropRate="1" />
+	</Monster>
+	<Monster Index="20" MonsterMinLevel="1" MonsterMaxLevel="150" MapNumber="-1" ItemRate="3000" ItemCount="1" CoinReward="0" CoinType="0" CoinValue="100" PlayerMinLevel="1" PlayerMaxLevel="MAX">
+		<Item Cat="0" Index="1" ItemMinLevel="0" ItemMaxLevel="0" Durability="-1" Skill="1" Luck="1" Option="1" Exc="1" SetItem="0" SocketCount="0" ElementalItem="0" DropRate="1" />
+	</Monster> -->
+</DropManager>

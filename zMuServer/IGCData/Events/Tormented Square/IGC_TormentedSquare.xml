@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//	### TormentedSquare ###
+//	Enable: Enables or disables the event, 0/1
+//	MinUserToStart: Minimum players participating the event to start it
+//	MinUserinParty: Minimum players in party to start the event
+//	MinTeamsToStart: Minimum teams participating the event to start it
+//	MinLevel: Minimum player level to be able to participate the event
+//	MaxEnterCount: Not used at the moment
+//	MonsterUnitNumber: Not used at the moment
+//
+// ### TormentedSquare::Time ###
+//	StartIn: Time to start the event from opening time, minutes
+//	WaitingArea: Time to wait to start the event after close, minutes
+//	Round: Single round duration, minutes
+//	AfterRound: Waiting time after regular round, seconds
+//	AfterBossRound: Waiting time after boss round, seconds
+//	TownSpawn: Time to move players to town after event completion, seconds
+//
+// ### TormentedSquare::TournamentCycleDay ###
+//	EliminationOne: Day of a month, elimination (Stage 1)
+//	EliminationTwo: Day of a month, elimination (Stage 1)
+//	EliminationThree: Day of a month, elimination (Stage 1)
+//	EliminationFour: Day of a month, elimination (Stage 1)
+//	SemiFinalOne: Day of a month, semi-finals (Stage 2)
+//	SemiFinalTwo: Day of a month, semi-finals (Stage 2)
+//	Final: Day of a month, final (Stage 3)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ It is important to configure each stage on different day of a month
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### TormentedSquare::RewardDayRange ###
+//	From: (Start) day of a month to apply rewards for event winners
+//	To: (End) day of a month to apply rewards for event winners
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ It is important to configure the range after event finals day
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### TormentedSquare::RewardMonsterRate ###
+//	Elimination: Not used at the moment
+//	SemiFinal: Not used at the moment
+//	Final: Not used at the moment
+//
+// ### TormentedSquare::EventSchedule::Start ###
+//	Hour: Start hour of specified stage of the event
+//	Minute: Start minute of specified stage of the event
+//	StageType:
+//		~ 1: Eliminations
+//		~ 2: Semi-Finals
+//		~ 3: Final
+//
+// ### TormentedSquare::EventMonsterAppearanceRate::Round ### - refers to EventMonsterSettings in IGC_TormentedSquare_Monsters.xml
+//	Number: Number of a round to spawn monsters
+//	SpawnRate: Chance to spawn specified monsters, n/100
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Monsters for specified round can be configured in IGC_TormentedSquare_Monsters.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### TormentedSquare::RoundExtraPointReward::Round ###
+//	Number: Number of a round settings apply to
+//	PointCount: Point Count reward for completing a round 
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<TormentedSquare Enable="1" MinUserToStart="4" MinUserInParty="2" MinTeamsToStart="2"  MinLevel="1" MaxEnterCount="2" MonsterUnitNumber="200">
+	<Time StartIn="5" WaitingArea="1" Round="2" AfterRound="10" AfterBossRound="20" TownSpawn="10" />
+	<TournamentCycleDay EliminationOne="17" EliminationTwo="18" EliminationThree="19" EliminationFour="20" SemiFinalOne="21" SemiFinalTwo="22" Final="23" />
+	<RewardDayRange From="24" To="25" />
+	<RewardMonsterRate Elimination="10" SemiFinal="50" Final="100" />
+	
+	<EventSchedule>
+	<!-- Eliminations -->
+		<Start Hour="17" Minute="30" StageType="1" />
+		<Start Hour="19" Minute="0" StageType="1" />
+		<Start Hour="20" Minute="30" StageType="1" />
+		<Start Hour="22" Minute="0" StageType="1" />
+		<Start Hour="23" Minute="30" StageType="1" />
+	<!-- Semi-finals -->
+		<Start Hour="17" Minute="30" StageType="2" />
+		<Start Hour="19" Minute="0" StageType="2" />
+		<Start Hour="20" Minute="30" StageType="2" />
+		<Start Hour="22" Minute="0" StageType="2" />
+		<Start Hour="23" Minute="30" StageType="2" />
+	<!-- Final -->
+		<Start Hour="22" Minute="0" StageType="3" />
+	</EventSchedule>
+
+	<EventMonsterAppearanceRate> <!-- SpawnRate is n/100 -->
+		<Round Number="1" SpawnRate="100" />
+		<Round Number="2" SpawnRate="100" />
+		<Round Number="3" SpawnRate="100" />
+		<Round Number="4" SpawnRate="100" />
+		<Round Number="5" SpawnRate="100" />
+		<Round Number="6" SpawnRate="100" />
+		<Round Number="7" SpawnRate="100" />
+		<Round Number="8" SpawnRate="100" />
+		<Round Number="9" SpawnRate="100" />
+		<Round Number="10" SpawnRate="100" />
+		<Round Number="11" SpawnRate="100" />
+		<Round Number="12" SpawnRate="100" />
+		<Round Number="13" SpawnRate="100" />
+		<Round Number="14" SpawnRate="100" />
+		<Round Number="15" SpawnRate="100" />
+	</EventMonsterAppearanceRate>
+
+	<RoundExtraPointReward>
+		<Round Number="1" PointCount="3000" />
+		<Round Number="2" PointCount="6000" />
+		<Round Number="3" PointCount="9000" />
+		<Round Number="4" PointCount="12000" />
+		<Round Number="5" PointCount="15000" />
+		<Round Number="6" PointCount="18000" />
+		<Round Number="7" PointCount="21000" />
+		<Round Number="8" PointCount="24000" />
+		<Round Number="9" PointCount="27000" />
+		<Round Number="10" PointCount="30000" />
+		<Round Number="11" PointCount="33000" />
+		<Round Number="12" PointCount="36000" />
+		<Round Number="13" PointCount="39000" />
+		<Round Number="14" PointCount="42000" />
+		<Round Number="15" PointCount="45000" />
+	</RoundExtraPointReward>
+</TormentedSquare>

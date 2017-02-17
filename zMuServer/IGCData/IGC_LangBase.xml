@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### LanguageSystem ###
+//	DefaultLang: Defines the ID of language to be loaded as main one
+//
+// ### LanguageSystem::Lang ###
+//	ID: Unique ID assigned to language
+//	FileName: name of language file, points to \IGCData\LangBase\
+//	Enable: Allows to activate or deactivate specified language, 0/1
+//	Codepage: Code page for the language (not used at the moment, left for future system extension)
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<LanguageSystem DefaultLang="0">
+	<Lang ID="0" FileName="English.xml" Enable="1" Codepage="1252" />
+	<Lang ID="1" FileName="Spanish.xml" Enable="0" Codepage="1250"/>
+	<Lang ID="2" FileName="Portuguese.xml" Enable="0" Codepage="860"/>
+	<Lang ID="3" FileName="Korean.xml" Enable="0" Codepage="949" />
+	<Lang ID="4" FileName="Chinese.xml" Enable="0" Codepage="950" />
+	<Lang ID="5" FileName="Vietnamese.xml" Enable="0" Codepage="1258" />
+	<Lang ID="6" FileName="Russian.xml" Enable="0" Codepage="1251" />
+</LanguageSystem>

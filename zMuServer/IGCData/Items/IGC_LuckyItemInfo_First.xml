@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### LuckyItem::TicketSettings::Item ###
+//	Cat: Category if the ticket item, see ItemList.xml
+//	Index: Index of the ticket item, see ItemList.xml
+//	List: Defines ID of list the items will be drawn from
+//
+// ### LuckyItem::TicketItemList::List ###
+//	ID: ID of the section, links to ID from TicketSettings section
+//	Name: Name of the list, used for logging and in-file description purpose
+//
+// ### LuckyItem::TicketItemList::List::Item ###
+//	Cat: Category of the reward item, see ItemList.xml
+//	Index: Index of the reward item, see ItemList.xml
+//	Skill: Determines item is coming with skill or not, 0/1
+//	Luck: Determines whether 50% chance for Luck option should be applied, 0/1
+//	Option: 
+//	Exc: 
+//	CharClass: Class of character allowed to get specified item
+//		~ 0: Dark Wizard
+//		~ 1: Dark Knight
+//		~ 2: Fairy Elf
+//		~ 3: Magic Gladiator
+//		~ 4: Dark Lord
+//		~ 5: Summoner
+//		~ 6: Rage Fighter
+//
+// ### LuckyItem::ItemLevelDrawSettings::List ###
+//	ID: ID of the section, links to ID from TicketSettings section
+//	Description: Just a text description to make navigation easier
+//
+// ### LuckyItem::ItemLevelDrawSettings::List::Item ###
+//	Level: Defines level of the item 0-15
+//	SuccessRate: Defines success rate to get item of specified level, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Total sum of SuccessRate(s) in section must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### LuckyItem::ItemOptionDrawSettings::Option ###
+//	ID: ID of the section, links to ID from TicketSettings section
+//	Description: Just a text description to make navigation easier
+//
+// ### LuckyItem::ItemOptionDrawSettings::List::Option ###
+//	Level: Defines level of the option
+//		~ 0: +0
+//		~ 1: +4
+//		~ 2: +8
+//		~ 3: +12
+//		~ 4: +16
+//		~ 5: +20
+//		~ 6: +24
+//		~ 7: +28
+//	SuccessRate: Defines success rate to get item wit specified option, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Total sum of SuccessRate(s) in section must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### LuckyItem::SetItemDrawSettings::List ###
+//	ID: ID of the section, links to ID from TicketSettings section
+//	TierI: Chance rate to get item of Tier I, n/1000000
+//	TierII: Chance rate to get item of Tier II, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of TierI and TierII in a row must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	Description: Just a text description to make navigation easier
+//
+// ### LuckyItem::SmeltDrawSettings::List ###
+//	ID: ID of the section, links to ID from TicketSettings section
+//	Description: Just a text description to make navigation easier
+//
+// ### LuckyItem::SmeltDrawSettings::List::Range ###
+//	MinDurability: Minimum durability range of lucky item
+//	MaxDurability: Maximum durability range of lucky item
+//	SmeltRate: Chance rate of refining the Lucky item, n/100
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Each list can take maximum 10 definitions of ranges
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<LuckyItem>
+	<TicketSettings>
+		<Item Cat="13" Index="137" ListID="1" /> <!-- 1st Lucky Helm Ticket -->
+		<Item Cat="13" Index="135" ListID="2" /> <!-- 1st Lucky Armor Ticket -->
+		<Item Cat="13" Index="136" ListID="3" /> <!-- 1st Lucky Pants Ticket -->
+		<Item Cat="13" Index="138" ListID="4" /> <!-- 1st Lucky Gloves Ticket -->
+		<Item Cat="13" Index="139" ListID="5" /> <!-- 1st Lucky Boots Ticket -->
+	</TicketSettings>
+
+	<TicketItemList>
+		<List ID="1" Name="1st Lucky Helm Ticket">
+			<Item Cat="7" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="1" /> <!-- Scale Helm +Luck +Option (Class 1) -->
+			<Item Cat="7" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="4" /> <!-- Scale Helm +Luck +Option (Class 4) -->
+			<Item Cat="7" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="6" /> <!-- Scale Helm +Luck +Option (Class 6) -->
+			<Item Cat="7" Index="63" Skill="0" Luck="1" Option="1" Exc="0" CharClass="2" /> <!-- Silk Helm +Luck +Option (Class 2) -->
+			<Item Cat="7" Index="64" Skill="0" Luck="1" Option="1" Exc="0" CharClass="0" /> <!-- Sphinx Helm + Luck +Option (Class 0) -->
+			<Item Cat="7" Index="65" Skill="0" Luck="1" Option="1" Exc="0" CharClass="5" /> <!-- Violent Wind Helm +Luck +Option (Class 5) -->
+		</List>
+		<List ID="2" Name="1st Lucky Armor Ticket">
+			<Item Cat="8" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="1" /> <!-- Scale Armor +Luck +Option (Class 1) -->
+			<Item Cat="8" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="4" /> <!-- Scale Armor +Luck +Option (Class 4) -->
+			<Item Cat="8" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="6" /> <!-- Scale Armor +Luck +Option (Class 6) -->
+			<Item Cat="8" Index="63" Skill="0" Luck="1" Option="1" Exc="0" CharClass="2" /> <!-- Silk Armor +Luck +Option (Class 2) -->
+			<Item Cat="8" Index="64" Skill="0" Luck="1" Option="1" Exc="0" CharClass="0" /> <!-- Sphinx Armor +Luck +Option (Class 0) -->
+			<Item Cat="8" Index="64" Skill="0" Luck="1" Option="1" Exc="0" CharClass="3" /> <!-- Sphinx Armor +Luck + Option (Class 3) -->
+			<Item Cat="8" Index="65" Skill="0" Luck="1" Option="1" Exc="0" CharClass="5" /> <!-- Violent Wind Armor +Luck +Option (Class 5) -->
+		</List>
+		<List ID="3" Name="1st Lucky Pants Ticket">
+			<Item Cat="9" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="1" /> <!-- Scale Pants +Luck +Option (Class 1) -->
+			<Item Cat="9" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="4" /> <!-- Scale Pants +Luck +Option (Class 4) -->
+			<Item Cat="9" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="6" /> <!-- Scale Pants +Luck +Option (Class 6) -->
+			<Item Cat="9" Index="63" Skill="0" Luck="1" Option="1" Exc="0" CharClass="2" /> <!-- Silk Pants +Luck +Option (Class 2) -->
+			<Item Cat="9" Index="64" Skill="0" Luck="1" Option="1" Exc="0" CharClass="0" /> <!-- Sphinx Pants +Luck +Option (Class 0) -->
+			<Item Cat="9" Index="64" Skill="0" Luck="1" Option="1" Exc="0" CharClass="3" /> <!-- Sphinx Pants +Luck + Option (Class 3) -->
+			<Item Cat="9" Index="65" Skill="0" Luck="1" Option="1" Exc="0" CharClass="5" /> <!-- Violent Wind Pants +Luck +Option (Class 5) -->
+		</List>
+		<List ID="4" Name="1st Lucky Gloves Ticket">
+			<Item Cat="10" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="1" /> <!-- Scale Gloves +Luck +Option (Class 1) -->
+			<Item Cat="10" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="4" /> <!-- Scale Gloves +Luck +Option (Class 4) -->
+			<Item Cat="10" Index="63" Skill="0" Luck="1" Option="1" Exc="0" CharClass="2" /> <!-- Silk Gloves +Luck +Option (Class 2) -->
+			<Item Cat="10" Index="64" Skill="0" Luck="1" Option="1" Exc="0" CharClass="0" /> <!-- Sphinx Gloves +Luck +Option (Class 0) -->
+			<Item Cat="10" Index="64" Skill="0" Luck="1" Option="1" Exc="0" CharClass="3" /> <!-- Sphinx Gloves +Luck + Option (Class 3) -->
+			<Item Cat="10" Index="65" Skill="0" Luck="1" Option="1" Exc="0" CharClass="5" /> <!-- Violent Wind Gloves +Luck +Option (Class 5) -->
+		</List>
+		<List ID="5" Name="1st Lucky Boots Ticket">
+			<Item Cat="11" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="1" /> <!-- Scale Boots +Luck +Option (Class 1) -->
+			<Item Cat="11" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="4" /> <!-- Scale Boots +Luck +Option (Class 4) -->
+			<Item Cat="11" Index="62" Skill="0" Luck="1" Option="1" Exc="0" CharClass="6" /> <!-- Scale Boots +Luck +Option (Class 6) -->
+			<Item Cat="11" Index="63" Skill="0" Luck="1" Option="1" Exc="0" CharClass="2" /> <!-- Silk Boots +Luck +Option (Class 2) -->
+			<Item Cat="11" Index="64" Skill="0" Luck="1" Option="1" Exc="0" CharClass="0" /> <!-- Sphinx Boots +Luck +Option (Class 0) -->
+			<Item Cat="11" Index="64" Skill="0" Luck="1" Option="1" Exc="0" CharClass="3" /> <!-- Sphinx Boots +Luck + Option (Class 3) -->
+			<Item Cat="11" Index="65" Skill="0" Luck="1" Option="1" Exc="0" CharClass="5" /> <!-- Violent Wind Boots +Luck +Option (Class 5) -->
+		</List>
+	</TicketItemList>
+
+	<ItemLevelDrawSettings>
+		<List ID="1" Description="1st Lucky Helm Ticket"> <!-- Total sum of SuccessRate(s) must be equal to 1000000 -->
+			<Item Level="0"  SuccessRate="34286" />
+			<Item Level="1"  SuccessRate="68571" />
+			<Item Level="2"  SuccessRate="102857" />
+			<Item Level="3"  SuccessRate="205714" />
+			<Item Level="4"  SuccessRate="171429" />
+			<Item Level="5"  SuccessRate="137143" />
+			<Item Level="6"  SuccessRate="117188" />
+			<Item Level="7"  SuccessRate="78125" />
+			<Item Level="8"  SuccessRate="54688" />
+			<Item Level="9"  SuccessRate="9412" />
+			<Item Level="10" SuccessRate="7059" />
+			<Item Level="11" SuccessRate="4706" />
+			<Item Level="12" SuccessRate="3529" />
+			<Item Level="13" SuccessRate="2353" />
+			<Item Level="14" SuccessRate="1765" />
+			<Item Level="15" SuccessRate="1175" />
+		</List>
+		<List ID="2" Description="1st Lucky Armor Ticket"> <!-- Total sum of SuccessRate(s) must be equal to 1000000 -->
+			<Item Level="0"  SuccessRate="34286" />
+			<Item Level="1"  SuccessRate="68571" />
+			<Item Level="2"  SuccessRate="102857" />
+			<Item Level="3"  SuccessRate="205714" />
+			<Item Level="4"  SuccessRate="171429" />
+			<Item Level="5"  SuccessRate="137143" />
+			<Item Level="6"  SuccessRate="117188" />
+			<Item Level="7"  SuccessRate="78125" />
+			<Item Level="8"  SuccessRate="54688" />
+			<Item Level="9"  SuccessRate="9412" />
+			<Item Level="10" SuccessRate="7059" />
+			<Item Level="11" SuccessRate="4706" />
+			<Item Level="12" SuccessRate="3529" />
+			<Item Level="13" SuccessRate="2353" />
+			<Item Level="14" SuccessRate="1765" />
+			<Item Level="15" SuccessRate="1175" />
+		</List>
+		<List ID="3" Description="1st Lucky Pants Ticket"> <!-- Total sum of SuccessRate(s) must be equal to 1000000 -->
+			<Item Level="0"  SuccessRate="34286" />
+			<Item Level="1"  SuccessRate="68571" />
+			<Item Level="2"  SuccessRate="102857" />
+			<Item Level="3"  SuccessRate="205714" />
+			<Item Level="4"  SuccessRate="171429" />
+			<Item Level="5"  SuccessRate="137143" />
+			<Item Level="6"  SuccessRate="117188" />
+			<Item Level="7"  SuccessRate="78125" />
+			<Item Level="8"  SuccessRate="54688" />
+			<Item Level="9"  SuccessRate="9412" />
+			<Item Level="10" SuccessRate="7059" />
+			<Item Level="11" SuccessRate="4706" />
+			<Item Level="12" SuccessRate="3529" />
+			<Item Level="13" SuccessRate="2353" />
+			<Item Level="14" SuccessRate="1765" />
+			<Item Level="15" SuccessRate="1175" />
+		</List>
+		<List ID="4" Description="1st Lucky Gloves Ticket"> <!-- Total sum of SuccessRate(s) must be equal to 1000000 -->
+			<Item Level="0"  SuccessRate="34286" />
+			<Item Level="1"  SuccessRate="68571" />
+			<Item Level="2"  SuccessRate="102857" />
+			<Item Level="3"  SuccessRate="205714" />
+			<Item Level="4"  SuccessRate="171429" />
+			<Item Level="5"  SuccessRate="137143" />
+			<Item Level="6"  SuccessRate="117188" />
+			<Item Level="7"  SuccessRate="78125" />
+			<Item Level="8"  SuccessRate="54688" />
+			<Item Level="9"  SuccessRate="9412" />
+			<Item Level="10" SuccessRate="7059" />
+			<Item Level="11" SuccessRate="4706" />
+			<Item Level="12" SuccessRate="3529" />
+			<Item Level="13" SuccessRate="2353" />
+			<Item Level="14" SuccessRate="1765" />
+			<Item Level="15" SuccessRate="1175" />
+		</List>
+		<List ID="5" Description="1st Lucky Boots Ticket"> <!-- Total sum of SuccessRate(s) must be equal to 1000000 -->
+			<Item Level="0"  SuccessRate="34286" />
+			<Item Level="1"  SuccessRate="68571" />
+			<Item Level="2"  SuccessRate="102857" />
+			<Item Level="3"  SuccessRate="205714" />
+			<Item Level="4"  SuccessRate="171429" />
+			<Item Level="5"  SuccessRate="137143" />
+			<Item Level="6"  SuccessRate="117188" />
+			<Item Level="7"  SuccessRate="78125" />
+			<Item Level="8"  SuccessRate="54688" />
+			<Item Level="9"  SuccessRate="9412" />
+			<Item Level="10" SuccessRate="7059" />
+			<Item Level="11" SuccessRate="4706" />
+			<Item Level="12" SuccessRate="3529" />
+			<Item Level="13" SuccessRate="2353" />
+			<Item Level="14" SuccessRate="1765" />
+			<Item Level="15" SuccessRate="1175" />	
+		</List>
+	</ItemLevelDrawSettings>
+	
+	<ItemOptionDrawSettings>
+		<List ID="1" Description="1st Lucky Helm Ticket"> <!-- Total sum of SuccessRate(s) must be equal to 1000000 -->
+			<Option Level="0" SuccessRate="700000" /> <!-- +0 -->
+			<Option Level="1" SuccessRate="200000" /> <!-- +4 -->
+			<Option Level="2" SuccessRate="100000" /> <!-- +8 -->
+			<Option Level="3" SuccessRate="0" /> <!-- +12 -->
+			<Option Level="4" SuccessRate="0" /> <!-- +16 -->
+			<Option Level="5" SuccessRate="0" /> <!-- +20 -->
+			<Option Level="6" SuccessRate="0" /> <!-- +24 -->
+			<Option Level="7" SuccessRate="0" /> <!-- +28 -->
+		</List>
+		<List ID="2" Description="1st Lucky Armor Ticket"> <!-- Total sum of SuccessRate(s) must be equal to 1000000 -->
+			<Option Level="0" SuccessRate="600000" /> <!-- +0 -->
+			<Option Level="1" SuccessRate="200000" /> <!-- +4 -->
+			<Option Level="2" SuccessRate="100000" /> <!-- +8 -->
+			<Option Level="3" SuccessRate="100000" /> <!-- +12 -->
+			<Option Level="4" SuccessRate="0" /> <!-- +16 -->
+			<Option Level="5" SuccessRate="0" /> <!-- +20 -->
+			<Option Level="6" SuccessRate="0" /> <!-- +24 -->
+			<Option Level="7" SuccessRate="0" /> <!-- +28 -->
+		</List>
+		<List ID="3" Description="1st Lucky Pants Ticket"> <!-- Total sum of SuccessRate(s) must be equal to 1000000 -->
+			<Option Level="0" SuccessRate="500000" /> <!-- +0 -->
+			<Option Level="1" SuccessRate="200000" /> <!-- +4 -->
+			<Option Level="2" SuccessRate="100000" /> <!-- +8 -->
+			<Option Level="3" SuccessRate="200000" /> <!-- +12 -->
+			<Option Level="4" SuccessRate="0" /> <!-- +16 -->
+			<Option Level="5" SuccessRate="0" /> <!-- +20 -->
+			<Option Level="6" SuccessRate="0" /> <!-- +24 -->
+			<Option Level="7" SuccessRate="0" /> <!-- +28 -->
+		</List>
+		<List ID="4" Description="1st Lucky Gloves Ticket"> <!-- Total sum of SuccessRate(s) must be equal to 1000000 -->
+			<Option Level="0" SuccessRate="400000" /> <!-- +0 -->
+			<Option Level="1" SuccessRate="200000" /> <!-- +4 -->
+			<Option Level="2" SuccessRate="100000" /> <!-- +8 -->
+			<Option Level="3" SuccessRate="300000" /> <!-- +12 -->
+			<Option Level="4" SuccessRate="0" /> <!-- +16 -->
+			<Option Level="5" SuccessRate="0" /> <!-- +20 -->
+			<Option Level="6" SuccessRate="0" /> <!-- +24 -->
+			<Option Level="7" SuccessRate="0" /> <!-- +28 -->
+		</List>
+		<List ID="5" Description="1st Lucky Boots Ticket"> <!-- Total sum of SuccessRate(s) must be equal to 1000000 -->
+			<Option Level="0" SuccessRate="300000" /> <!-- +0 -->
+			<Option Level="1" SuccessRate="200000" /> <!-- +4 -->
+			<Option Level="2" SuccessRate="100000" /> <!-- +8 -->
+			<Option Level="3" SuccessRate="400000" /> <!-- +12 -->
+			<Option Level="4" SuccessRate="0" /> <!-- +16 -->
+			<Option Level="5" SuccessRate="0" /> <!-- +20 -->
+			<Option Level="6" SuccessRate="0" /> <!-- +24 -->
+			<Option Level="7" SuccessRate="0" /> <!-- +28 -->
+		</List>
+	</ItemOptionDrawSettings>
+	
+	<SetItemDrawSettings> <!-- Total sum of values in TierI and TierII must be equal to 1000000 per row -->
+		<List ID="1" TierI="700000" TierII="300000" Description="1st Lucky Helm Ticket" />
+		<List ID="2" TierI="700000" TierII="300000" Description="1st Lucky Armor Ticket" />
+		<List ID="3" TierI="700000" TierII="300000" Description="1st Lucky Pants Ticket" />
+		<List ID="4" TierI="700000" TierII="300000" Description="1st Lucky Gloves Ticket" />
+		<List ID="5" TierI="700000" TierII="300000" Description="1st Lucky Boots Ticket" />
+	</SetItemDrawSettings>
+
+	<SmeltDrawSettings> <!-- Max 10 range entries per list -->
+		<List ID="1" Description="1st Lucky Helm Ticket"> <!-- SmeltRate is n/100 -->
+			<Range MinDurability="255" MaxDurability="255" SmeltRate="60" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+		</List>
+		<List ID="2" Description="1st Lucky Armor Ticket"> <!-- SmeltRate is n/100 -->
+			<Range MinDurability="255" MaxDurability="255" SmeltRate="60" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+		</List>
+		<List ID="3" Description="1st Lucky Pants Ticket"> <!-- SmeltRate is n/100 -->
+			<Range MinDurability="255" MaxDurability="255" SmeltRate="60" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+		</List>
+		<List ID="4" Description="1st Lucky Gloves Ticket"> <!-- SmeltRate is n/100 -->
+			<Range MinDurability="255" MaxDurability="255" SmeltRate="60" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+		</List>
+		<List ID="5" Description="1st Lucky Boots Ticket"> <!-- SmeltRate is n/100 -->
+			<Range MinDurability="255" MaxDurability="255" SmeltRate="60" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+			<Range MinDurability="1"   MaxDurability="254" SmeltRate="10" />
+		</List>  
+	</SmeltDrawSettings>
+</LuckyItem>

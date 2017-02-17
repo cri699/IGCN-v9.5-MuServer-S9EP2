@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MuunSystem::EnergyConvertSettings ###
+//	StoneOfEvolutionPoint: Energy points for applying Stone of Evolution
+//
+// ### MuunSystem::EnergyConvertSettings::Muun ###
+//	Rank: Rank of a Muun (max Muun rank defines IGC_MuunInfo.xml), -1 if not applies
+//	RankPoint: Energy points to apply on Wizardy Stone for Muun of specified Rank
+//	Level: Level of a Muun (max Muun level defines IGC_MuunInfo.xml), -1 if not applies
+//	LevelPoint: Energy points to apply on Wizardy Stone for Muun of specified Level
+//
+// ### MuunSystem::RequiredItemsExchange::Item ### - Items required for exchange for a reward
+//	Cat: Category of an item, ItemList.xml
+//	Index: Index of an item, ItemList.xml
+//	InventoryCheck: Inventory to check for required item
+//		~ 0: Regular Inventory
+//		~ 22: Muun Inventory
+//	ItemCount: Count of items required for exchange
+//	ItemBagIndex: Bag index the reward will be issued from, bags defines in BagListSettings section
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Modification of this section requires changes in MuunExchange.bmd file in Game Client
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### MuunSystem::BagListSettings::Bag ###
+//	Index: Index of a Bag 
+//	ItemCat: Category of reward item, ItemList.xml
+//	ItemIndex: Index of reward item, ItemList.xml
+//	ItemMinLevel: Minimum level of an item, 0-15
+//	ItemMaxLevel: Maximum level of an item, 0-15
+//	MuunEvoItemCat: Muun Pet item category, must be defined if reward is set to Evolution Stone (13,211), otherwise -1
+//	MuunEvoItemIndex: Muun Pet item index, must be defined if reward is set to Evolution Stone (13,211), otherwise -1
+//	Skill: 
+//	Luck: 
+//	Option: 
+//	Exc: 
+//	InventoryCheck: Inventory to put the reward to
+//		~ 0: Regular Inventory
+//		~ 22: Muun Inventory
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<MuunSystem>
+	<EnergyConvertSettings StoneOfEvolutionPoint="2">
+		<Muun Rank="1"	RankPoint="1"	Level="0" LevelPoint="4" />
+		<Muun Rank="2"	RankPoint="2"	Level="1" LevelPoint="3" />
+		<Muun Rank="3"	RankPoint="3"	Level="2" LevelPoint="6" />
+		<Muun Rank="4"	RankPoint="4"	Level="3" LevelPoint="9" />
+		<Muun Rank="5"	RankPoint="5"	Level="4" LevelPoint="12" />
+		<Muun Rank="6"	RankPoint="6"	Level="5" LevelPoint="15" />
+		<Muun Rank="-1"	RankPoint="-1"	Level="6" LevelPoint="18" />
+		<Muun Rank="-1"	RankPoint="-1"	Level="7" LevelPoint="21" />
+	</EnergyConvertSettings>
+
+	<RequiredItemsExchange> <!-- Modification of this section requires changes in MuunExchange.bmd file -->
+		<Item Cat="13" Index="240" InventoryCheck="22" ItemCount="2" ItemBagIndex="0" /> <!-- One Stone -->
+		<Item Cat="13" Index="240" InventoryCheck="22" ItemCount="2" ItemBagIndex="1" /> <!-- Two Stones -->
+		<Item Cat="13" Index="240" InventoryCheck="22" ItemCount="3" ItemBagIndex="2" /> <!-- Three Stones -->
+	</RequiredItemsExchange>
+
+	<BagListSettings>
+		<Bag Index="0" ItemCat="13" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="13" MuunEvoItemIndex="270" Skill="0" Luck="0" Option="0" Exc="0" InventoryCheck="22" />
+		<Bag Index="1" ItemCat="13" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="13" MuunEvoItemIndex="272" Skill="0" Luck="0" Option="0" Exc="0" InventoryCheck="22" />
+		<Bag Index="2" ItemCat="13" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="13" MuunEvoItemIndex="274" Skill="0" Luck="0" Option="0" Exc="0" InventoryCheck="22" />
+	</BagListSettings>
+</MuunSystem>

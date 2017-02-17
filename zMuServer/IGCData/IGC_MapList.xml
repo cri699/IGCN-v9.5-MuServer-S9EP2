@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MapList::DefaultMaps::Map ###
+//	Number: Number of a map, server side starts from 0, unique in the file
+//	File: Terrain file to load for the map from \IGCData\MapTerrains folder
+//
+//	### MapList::CrywolfEventAttr::Map ### - special section dedicated for different purpose of some maps, not extendible
+//	Number: Number of a map
+//	File: Terrain file to load for the map from \IGCData\MapTerrains folder
+//	OccupationState: Map State definition
+//
+//	### MapList:::KanturuEventAttr::Map ### - special section dedicated for different purpose of some maps, not extendible
+//	Number: Number of a map
+//	File: Terrain file to load for the map from \IGCData\MapTerrains folder
+//	MayaState: Map State definition
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<MapList>
+	<DefaultMaps>
+		<Map Number="0" File="00_Lorencia.att" />
+		<Map Number="1" File="01_Dungeon.att" />
+		<Map Number="2" File="02_Devias.att" />
+		<Map Number="3" File="03_Noria.att" />
+		<Map Number="4" File="04_Losttower.att" />
+		<Map Number="5" File="05_Exile.att" />
+		<Map Number="6" File="06_Arena.att" />
+		<Map Number="7" File="07_Atlans.att" />
+		<Map Number="8" File="08_Tarkan.att" />
+		<Map Number="9" File="09_DevilSquare.att" />
+		<Map Number="10" File="10_Icarus.att" />
+		<Map Number="11" File="11_BloodCastle.att" />
+		<Map Number="12" File="11_BloodCastle.att" />
+		<Map Number="13" File="11_BloodCastle.att" />
+		<Map Number="14" File="11_BloodCastle.att" />
+		<Map Number="15" File="11_BloodCastle.att" />
+		<Map Number="16" File="11_BloodCastle.att" />
+		<Map Number="17" File="11_BloodCastle.att" />
+		<Map Number="18" File="18_ChaosCastle.att" />
+		<Map Number="19" File="18_ChaosCastle.att" />
+		<Map Number="20" File="18_ChaosCastle.att" />
+		<Map Number="21" File="18_ChaosCastle.att" />
+		<Map Number="22" File="18_ChaosCastle.att" />
+		<Map Number="23" File="18_ChaosCastle.att" />
+		<Map Number="24" File="24_Kalima.att" />
+		<Map Number="25" File="24_Kalima.att" />
+		<Map Number="26" File="24_Kalima.att" />
+		<Map Number="27" File="24_Kalima.att" />
+		<Map Number="28" File="24_Kalima.att" />
+		<Map Number="29" File="24_Kalima.att" />
+		<Map Number="30" File="30_ValleyOfLoren.att" />
+		<Map Number="31" File="31_LandOfTrial.att" />
+		<Map Number="32" File="32_DevilSquare.att" />
+		<Map Number="33" File="33_Aida.att" />
+		<Map Number="34" File="34_Crywolf.att" />
+		<Map Number="35" File="35_Reserved.att" />
+		<Map Number="36" File="36_Kalima.att" />
+		<Map Number="37" File="37_Kanturu.att" />
+		<Map Number="38" File="38_KanturuRemain.att" />
+		<Map Number="39" File="39_KanturuBoss.att" />
+		<Map Number="40" File="40_Silent.att" />
+		<Map Number="41" File="41_BalgassBarracks.att" />
+		<Map Number="42" File="42_BalgassRefuge.att" />
+		<Map Number="43" File="Null.att" />
+		<Map Number="44" File="Null.att" />
+		<Map Number="45" File="45_IllusionTemple.att" />
+		<Map Number="46" File="45_IllusionTemple.att" />
+		<Map Number="47" File="45_IllusionTemple.att" />
+		<Map Number="48" File="45_IllusionTemple.att" />
+		<Map Number="49" File="45_IllusionTemple.att" />
+		<Map Number="50" File="45_IllusionTemple.att" />
+		<Map Number="51" File="51_Elbeland.att" />
+		<Map Number="52" File="11_BloodCastle.att" />
+		<Map Number="53" File="18_ChaosCastle.att" />
+		<Map Number="54" File="Null.att" />
+		<Map Number="55" File="Null.att" />
+		<Map Number="56" File="56_SwampOfCalmness.att" />
+		<Map Number="57" File="57_Raklion.att" />
+		<Map Number="58" File="58_RaklionBoss.att" />
+		<Map Number="59" File="Null.att" />
+		<Map Number="60" File="Null.att" />
+		<Map Number="61" File="Null.att" />
+		<Map Number="62" File="62_SantaTown.att" />
+		<Map Number="63" File="63_Vulcanus.att" />
+		<Map Number="64" File="64_DuelArena.att" />
+		<Map Number="65" File="65_Doppelganger1.att" />
+		<Map Number="66" File="66_Doppelganger2.att" />
+		<Map Number="67" File="67_Doppelganger3.att" />
+		<Map Number="68" File="68_Doppelganger4.att" />
+		<Map Number="69" File="69_ImperialGuardian1.att" />
+		<Map Number="70" File="70_ImperialGuardian2.att" />
+		<Map Number="71" File="71_ImperialGuardian3.att" />
+		<Map Number="72" File="72_ImperialGuardian4.att" />
+		<Map Number="73" File="Null.att" />
+		<Map Number="74" File="Null.att" />
+		<Map Number="75" File="Null.att" />
+		<Map Number="76" File="Null.att" />
+		<Map Number="77" File="Null.att" />
+		<Map Number="78" File="Null.att" />
+		<Map Number="79" File="79_LorenMarket.att" />
+		<Map Number="80" File="80_Karutan1.att" />
+		<Map Number="81" File="81_Karutan2.att" />
+		<Map Number="82" File="Null.att" />
+		<Map Number="83" File="Null.att" />
+		<Map Number="84" File="Null.att" />
+		<Map Number="85" File="Null.att" />
+		<Map Number="86" File="Null.att" />
+		<Map Number="87" File="Null.att" />
+		<Map Number="88" File="Null.att" />
+		<Map Number="89" File="Null.att" />
+		<Map Number="90" File="Null.att" />
+		<Map Number="91" File="91_Acheron.att" />
+		<Map Number="92" File="91_Acheron.att" />
+		<Map Number="93" File="Null.att" />
+		<Map Number="94" File="Null.att" />
+		<Map Number="95" File="95_Debenter.att" />
+		<Map Number="96" File="96_Debenter_ArcaBattle.att" />
+		<Map Number="97" File="97_ChaosCastleSurvival.att" />
+		<Map Number="98" File="98_IllussionTempleLeague1.att" />
+		<Map Number="99" File="99_IllussionTempleLeague2.att" />
+		<Map Number="100" File="100_UrkMontain.att" />
+		<Map Number="101" File="100_UrkMontain.att" />
+		<Map Number="102" File="102_TormentedSquare.att" />
+	</DefaultMaps>
+	
+	<CrywolfEventAttr>
+		<Map Number="34" File="34_Crywolf_Peace.att" OccupationState="0" />
+		<Map Number="34" File="34_Crywolf_Occupied.att" OccupationState="1" />
+		<Map Number="34" File="34_Crywolf_War.att" OccupationState="2" />
+	</CrywolfEventAttr>
+	
+	<KanturuEventAttr>
+		<Map Number="39" File="39_KanturuBoss_Close.att" MayaState="0" />
+		<Map Number="39" File="39_KanturuBoss_Open.att" MayaState="1" />
+	</KanturuEventAttr>
+</MapList>

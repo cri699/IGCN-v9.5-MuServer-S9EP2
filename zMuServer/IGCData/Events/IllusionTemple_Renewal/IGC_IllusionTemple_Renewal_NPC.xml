@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### IllusionTempleRenewal::NPC ###
+//	Index: Index of NPC
+//	MapNumber: Number of Map to spawn the NPC only
+//	Distance: Range to spawn the NPC from StartX and StartY coordinates
+//	StartX: Start X coordinate to spawn NPC
+//	StartY: Start Y coordinate to spawn NPC
+//	Dir: Location the NPC looks at after spawn
+//		~ 0: Central
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<IllusionTempleRenewal>
+<!-- Event Level 1 -->
+	<NPC Index="658" MapNumber="45"	Distance="0" StartX="169" StartY="85"  Dir="0" /> <!-- Cursed Statue -->
+	<NPC Index="659" MapNumber="45"	Distance="0" StartX="136" StartY="101" Dir="0" /> <!-- Captured Stone Statue (1) -->
+	<NPC Index="660" MapNumber="45"	Distance="0" StartX="151" StartY="119" Dir="0" /> <!-- Captured Stone Statue (2) -->
+	<NPC Index="661" MapNumber="45"	Distance="0" StartX="150" StartY="88"  Dir="0" /> <!-- Captured Stone Statue (3) -->
+	<NPC Index="662" MapNumber="45"	Distance="0" StartX="165" StartY="102" Dir="0" /> <!-- Captured Stone Statue (4) -->
+	<NPC Index="663" MapNumber="45"	Distance="0" StartX="173" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (5) -->
+	<NPC Index="664" MapNumber="45"	Distance="0" StartX="187" StartY="81"  Dir="0" /> <!-- Captured Stone Statue (6) -->
+	<NPC Index="665" MapNumber="45"	Distance="0" StartX="187" StartY="51"  Dir="0" /> <!-- Captured Stone Statue (7) -->
+	<NPC Index="666" MapNumber="45"	Distance="0" StartX="203" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (8) -->
+	<NPC Index="667" MapNumber="45"	Distance="0" StartX="133" StartY="121" Dir="0" /> <!-- Captured Stone Statue (9) -->
+	<NPC Index="668" MapNumber="45"	Distance="0" StartX="206" StartY="48"  Dir="0" /> <!-- Captured Stone Statue (10) -->
+<!-- Event Level 2 -->
+	<NPC Index="658" MapNumber="46"	Distance="0" StartX="169" StartY="85"  Dir="0" /> <!-- Cursed Statue -->
+	<NPC Index="659" MapNumber="46"	Distance="0" StartX="136" StartY="101" Dir="0" /> <!-- Captured Stone Statue (1) -->
+	<NPC Index="660" MapNumber="46"	Distance="0" StartX="151" StartY="119" Dir="0" /> <!-- Captured Stone Statue (2) -->
+	<NPC Index="661" MapNumber="46"	Distance="0" StartX="150" StartY="88"  Dir="0" /> <!-- Captured Stone Statue (3) -->
+	<NPC Index="662" MapNumber="46"	Distance="0" StartX="165" StartY="102" Dir="0" /> <!-- Captured Stone Statue (4) -->
+	<NPC Index="663" MapNumber="46"	Distance="0" StartX="173" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (5) -->
+	<NPC Index="664" MapNumber="46"	Distance="0" StartX="187" StartY="81"  Dir="0" /> <!-- Captured Stone Statue (6) -->
+	<NPC Index="665" MapNumber="46"	Distance="0" StartX="187" StartY="51"  Dir="0" /> <!-- Captured Stone Statue (7) -->
+	<NPC Index="666" MapNumber="46"	Distance="0" StartX="203" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (8) -->
+	<NPC Index="667" MapNumber="46"	Distance="0" StartX="133" StartY="121" Dir="0" /> <!-- Captured Stone Statue (9) -->
+	<NPC Index="668" MapNumber="46"	Distance="0" StartX="206" StartY="48"  Dir="0" /> <!-- Captured Stone Statue (10) -->
+<!-- Event Level 3 -->
+	<NPC Index="658" MapNumber="47"	Distance="0" StartX="169" StartY="85"  Dir="0" /> <!-- Cursed Statue -->
+	<NPC Index="659" MapNumber="47"	Distance="0" StartX="136" StartY="101" Dir="0" /> <!-- Captured Stone Statue (1) -->
+	<NPC Index="660" MapNumber="47"	Distance="0" StartX="151" StartY="119" Dir="0" /> <!-- Captured Stone Statue (2) -->
+	<NPC Index="661" MapNumber="47"	Distance="0" StartX="150" StartY="88"  Dir="0" /> <!-- Captured Stone Statue (3) -->
+	<NPC Index="662" MapNumber="47"	Distance="0" StartX="165" StartY="102" Dir="0" /> <!-- Captured Stone Statue (4) -->
+	<NPC Index="663" MapNumber="47"	Distance="0" StartX="173" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (5) -->
+	<NPC Index="664" MapNumber="47"	Distance="0" StartX="187" StartY="81"  Dir="0" /> <!-- Captured Stone Statue (6) -->
+	<NPC Index="665" MapNumber="47"	Distance="0" StartX="187" StartY="51"  Dir="0" /> <!-- Captured Stone Statue (7) -->
+	<NPC Index="666" MapNumber="47"	Distance="0" StartX="203" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (8) -->
+	<NPC Index="667" MapNumber="47"	Distance="0" StartX="133" StartY="121" Dir="0" /> <!-- Captured Stone Statue (9) -->
+	<NPC Index="668" MapNumber="47"	Distance="0" StartX="206" StartY="48"  Dir="0" /> <!-- Captured Stone Statue (10) -->
+<!-- Event Level 4 -->
+	<NPC Index="658" MapNumber="48"	Distance="0" StartX="169" StartY="85"  Dir="0" /> <!-- Cursed Statue -->
+	<NPC Index="659" MapNumber="48"	Distance="0" StartX="136" StartY="101" Dir="0" /> <!-- Captured Stone Statue (1) -->
+	<NPC Index="660" MapNumber="48"	Distance="0" StartX="151" StartY="119" Dir="0" /> <!-- Captured Stone Statue (2) -->
+	<NPC Index="661" MapNumber="48"	Distance="0" StartX="150" StartY="88"  Dir="0" /> <!-- Captured Stone Statue (3) -->
+	<NPC Index="662" MapNumber="48"	Distance="0" StartX="165" StartY="102" Dir="0" /> <!-- Captured Stone Statue (4) -->
+	<NPC Index="663" MapNumber="48"	Distance="0" StartX="173" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (5) -->
+	<NPC Index="664" MapNumber="48"	Distance="0" StartX="187" StartY="81"  Dir="0" /> <!-- Captured Stone Statue (6) -->
+	<NPC Index="665" MapNumber="48"	Distance="0" StartX="187" StartY="51"  Dir="0" /> <!-- Captured Stone Statue (7) -->
+	<NPC Index="666" MapNumber="48"	Distance="0" StartX="203" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (8) -->
+	<NPC Index="667" MapNumber="48"	Distance="0" StartX="133" StartY="121" Dir="0" /> <!-- Captured Stone Statue (9) -->
+	<NPC Index="668" MapNumber="48"	Distance="0" StartX="206" StartY="48"  Dir="0" /> <!-- Captured Stone Statue (10) -->
+<!-- Event Level 5 -->
+	<NPC Index="658" MapNumber="49"	Distance="0" StartX="169" StartY="85"  Dir="0" /> <!-- Cursed Statue -->
+	<NPC Index="659" MapNumber="49"	Distance="0" StartX="136" StartY="101" Dir="0" /> <!-- Captured Stone Statue (1) -->
+	<NPC Index="660" MapNumber="49"	Distance="0" StartX="151" StartY="119" Dir="0" /> <!-- Captured Stone Statue (2) -->
+	<NPC Index="661" MapNumber="49"	Distance="0" StartX="150" StartY="88"  Dir="0" /> <!-- Captured Stone Statue (3) -->
+	<NPC Index="662" MapNumber="49"	Distance="0" StartX="165" StartY="102" Dir="0" /> <!-- Captured Stone Statue (4) -->
+	<NPC Index="663" MapNumber="49"	Distance="0" StartX="173" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (5) -->
+	<NPC Index="664" MapNumber="49"	Distance="0" StartX="187" StartY="81"  Dir="0" /> <!-- Captured Stone Statue (6) -->
+	<NPC Index="665" MapNumber="49"	Distance="0" StartX="187" StartY="51"  Dir="0" /> <!-- Captured Stone Statue (7) -->
+	<NPC Index="666" MapNumber="49"	Distance="0" StartX="203" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (8) -->
+	<NPC Index="667" MapNumber="49"	Distance="0" StartX="133" StartY="121" Dir="0" /> <!-- Captured Stone Statue (9) -->
+	<NPC Index="668" MapNumber="49"	Distance="0" StartX="206" StartY="48"  Dir="0" /> <!-- Captured Stone Statue (10) -->
+<!-- Event Level 6 -->
+	<NPC Index="658" MapNumber="50"	Distance="0" StartX="169" StartY="85"  Dir="0" /> <!-- Cursed Statue -->
+	<NPC Index="659" MapNumber="50"	Distance="0" StartX="136" StartY="101" Dir="0" /> <!-- Captured Stone Statue (1) -->
+	<NPC Index="660" MapNumber="50"	Distance="0" StartX="151" StartY="119" Dir="0" /> <!-- Captured Stone Statue (2) -->
+	<NPC Index="661" MapNumber="50"	Distance="0" StartX="150" StartY="88"  Dir="0" /> <!-- Captured Stone Statue (3) -->
+	<NPC Index="662" MapNumber="50"	Distance="0" StartX="165" StartY="102" Dir="0" /> <!-- Captured Stone Statue (4) -->
+	<NPC Index="663" MapNumber="50"	Distance="0" StartX="173" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (5) -->
+	<NPC Index="664" MapNumber="50"	Distance="0" StartX="187" StartY="81"  Dir="0" /> <!-- Captured Stone Statue (6) -->
+	<NPC Index="665" MapNumber="50"	Distance="0" StartX="187" StartY="51"  Dir="0" /> <!-- Captured Stone Statue (7) -->
+	<NPC Index="666" MapNumber="50"	Distance="0" StartX="203" StartY="67"  Dir="0" /> <!-- Captured Stone Statue (8) -->
+	<NPC Index="667" MapNumber="50"	Distance="0" StartX="133" StartY="121" Dir="0" /> <!-- Captured Stone Statue (9) -->
+	<NPC Index="668" MapNumber="50"	Distance="0" StartX="206" StartY="48"  Dir="0" /> <!-- Captured Stone Statue (10) -->
+</IllusionTempleRenewal>				

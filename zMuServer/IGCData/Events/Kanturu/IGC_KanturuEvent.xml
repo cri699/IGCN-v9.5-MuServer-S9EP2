@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### KanturuEvent ###
+//
+// ### KanturuEvent::Item ###
+//	Enable: Activates or deactivates the event, 0/1
+//	MoonStoneCheck: Require a MoonStone item to enter the event, 0/1
+//	MoonStoneDropRate: Drop rate of Moon Stone item (13,38) at Kanturu Relics, n/10000
+//	JewelOfHarmonyDropRate: Drop rate of Jewel of Harmony (14,42) on every Kanturu maps, n/10000
+//
+// ### KanturuEvent::GeneralStates::Event ###
+//	State: State of the event definition, do not change
+//	SwitchType:
+//			~ 0: Next state can be activated only by GameServer
+//			~ 1: Next state will be activated after time defined in Time attribute
+//	Time: Attribute applies if SwitchType is set to 1, defines time in which next state will be activated, seconds
+//
+// ### KanturuEvent::BattleStandBy::State::Cycle ###
+//	State: Definition of cycles of BattleStandBy stage
+//	SwitchType:
+//			~ 0: Next cycle can be activated only by GameServer
+//			~ 1: Next cycle will be activated after time defined in Time attribute
+//	Time: Attribute applies if SwitchType is set to 1, defines time in which next cycle will be activated, seconds
+//
+// ### KanturuEvent::BattleOfMaya ###
+//	IceStormCastRate: Chance rate of using Ice Storm skill by Maya, n/10000
+//
+// ### KanturuEvent::BattleOfMaya::State::Cycle ###
+//	State: Definition of cycles of BattleOfMaya stage
+//	SwitchType:
+//			~ 0: Next cycle can be activated only by GameServer
+//			~ 1: Next cycle will be activated after time defined in Time attribute
+//	Time: Attribute applies if SwitchType is set to 1, defines time in which next cycle will be activated, seconds
+//
+// ### KanturuEvent::BattleOfMaya::BattleTimes::Battle ###
+//	Type: Number of Battle
+//	SwitchType:
+//			~ 0: Next cycle can be activated only by GameServer
+//			~ 1: Next cycle will be activated after time defined in Time attribute
+//	Time: Attribute applies if SwitchType is set to 1, defines time in which next cycle will be activated, seconds
+//
+// ### KanturuEvent::BattleOfMaya::AISettings ###
+//	LeftHand: AI Group number of Left Hand of Maya
+//	RightHand: AI Group number of Right Hand of Maya
+//	Hands: AI Group number of Hands of Maya
+//
+// ### KanturuEvent::BattleOfMaya::AISettings::AI ###
+//	Change: AI Change number
+//	Time: AI Change time, seconds
+//
+// ### kanturuEvent::BattleOfNightMare ###
+//	AIGroup: AI Group number of Nightmare
+//
+// ### KanturuEvent::BattleOfNightMare::State::Cycle ###
+//	State: Definition of cycles of BattleOfNightMare stage
+//	SwitchType:
+//			~ 0: Next cycle can be activated only by GameServer
+//			~ 1: Next cycle will be activated after time defined in Time attribute
+//	Time: Attribute applies if SwitchType is set to 1, defines time in which next cycle will be activated, seconds
+//
+// ### KanturuEvent::TowerOfRefinement::State::Cycle ###
+//	State: Definition of cycles of TowerOfRefinement stage
+//	SwitchType:
+//			~ 0: Next cycle can be activated only by GameServer
+//			~ 1: Next cycle will be activated after time defined in Time attribute
+//	Time: Attribute applies if SwitchType is set to 1, defines time in which next cycle will be activated, seconds
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->	
+
+<KanturuEvent Enable="1" MoonStoneCheck="1">
+	<Item MoonStoneDropRate="10" JewelOfHarmonyDropRate="20" />
+	
+	<GeneralStates>
+		<Event State="0" SwitchType="0" Time="0" /> <!-- None -->
+		<Event State="1" SwitchType="0" Time="0" /> <!-- Battle Standby -->
+		<Event State="2" SwitchType="0" Time="0" /> <!-- Battle of Maya -->
+		<Event State="3" SwitchType="0" Time="0" /> <!-- Battle of NightMare -->
+		<Event State="4" SwitchType="0" Time="0" /> <!-- Tower of Refinement -->
+		<Event State="5" SwitchType="1" Time="0" /> <!-- End -->
+	</GeneralStates>
+
+	<BattleStandBy>
+		<State>
+			<Cycle State="0" SwitchType="0" Time="0" /> <!-- None -->
+			<Cycle State="1" SwitchType="1" Time="1140" /> <!-- Start -->
+			<Cycle State="2" SwitchType="1" Time="60" /> <!-- Notify -->
+			<Cycle State="3" SwitchType="0" Time="0" /> <!-- End -->
+		</State>
+	</BattleStandBy>
+	
+	<BattleOfMaya IceStormCastRate="60">
+		<State>
+			<Cycle State="0"  SwitchType="0" Time="0" /> <!-- None -->
+			<Cycle State="1"  SwitchType="1" Time="120" /> <!-- Stanby1 -->
+			<Cycle State="2"  SwitchType="1" Time="15" /> <!-- Notify -->
+			<Cycle State="3"  SwitchType="0" Time="0" /> <!-- Start1 -->
+			<Cycle State="4"  SwitchType="0" Time="0" /> <!-- Maya1 -->
+			<Cycle State="5"  SwitchType="1" Time="5" /> <!-- End Maya1 -->
+			<Cycle State="6"  SwitchType="1" Time="3" /> <!-- End-cycle -->
+			<Cycle State="7"  SwitchType="1" Time="60" /> <!-- Stanby2 -->
+			<Cycle State="8"  SwitchType="0" Time="0" /> <!-- Start2 -->
+			<Cycle State="9"  SwitchType="0" Time="0" /> <!-- Maya2 -->
+			<Cycle State="10" SwitchType="1" Time="5" /> <!-- End Maya2 -->
+			<Cycle State="11" SwitchType="1" Time="3" /> <!-- End-cycle -->
+			<Cycle State="12" SwitchType="1" Time="120" /> <!-- Stanby3 -->
+			<Cycle State="13" SwitchType="0" Time="0" /> <!-- Start3 -->
+			<Cycle State="14" SwitchType="0" Time="0" /> <!-- Maya3 -->
+			<Cycle State="15" SwitchType="1" Time="5" /> <!-- End Maya3 -->
+			<Cycle State="16" SwitchType="1" Time="10" /> <!-- End-cycle -->
+			<Cycle State="17" SwitchType="1" Time="3" /> <!-- End -->
+			<Cycle State="18" SwitchType="0" Time="0" /> <!-- End-cycle -->
+		</State>
+		
+		<BattleTimes>
+			<Battle Type="0" SwitchType="1" Time="900" /> <!-- First Battle, one hand -->
+			<Battle Type="1" SwitchType="1" Time="900" /> <!-- Second Battle, second hand-->
+			<Battle Type="2" SwitchType="1" Time="1200" /> <!-- Third Battle, both hands -->
+		</BattleTimes>
+		
+		<AISettings LeftHand="20" RightHand="21" Hands="22">
+			<AI Change="1" Time="3" />
+			<AI Change="2" Time="60" />
+			<AI Change="3" Time="60" />
+			<AI Change="4" Time="900" />
+		</AISettings>
+	</BattleOfMaya>
+	
+	<BattleOfNightMare AIGroup="23">
+		<State>
+			<Cycle State="0" SwitchType="0" Time="0" /> <!-- None -->
+			<Cycle State="1" SwitchType="1" Time="5" /> <!-- Idle -->
+			<Cycle State="2" SwitchType="1" Time="10" /> <!-- Notify -->
+			<Cycle State="3" SwitchType="1" Time="1200" /> <!-- Start -->
+			<Cycle State="4" SwitchType="1" Time="5" /> <!-- End -->
+			<Cycle State="5" SwitchType="0" Time="0" /> <!-- End-Cycle -->
+		</State>
+	</BattleOfNightMare>
+
+	<TowerOfRefinement>
+		<State>
+			<Cycle State="0" SwitchType="0" Time="0" /> <!-- None -->
+			<Cycle State="1" SwitchType="1" Time="82500" />	<!-- Revitalization -->
+			<Cycle State="2" SwitchType="1" Time="300" /> <!-- Notify -->
+			<Cycle State="3" SwitchType="1" Time="2220" /> <!-- Close -->
+			<Cycle State="4" SwitchType="1" Time="180" /> <!-- Notify -->
+			<Cycle State="5" SwitchType="1" Time="5" /> <!-- End -->
+		</State>
+	</TowerOfRefinement>
+</KanturuEvent>

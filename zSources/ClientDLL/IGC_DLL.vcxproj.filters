@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="EncDec.cpp">
+      <Filter>Game\Security\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="DataSendProtocolCore.cpp">
+      <Filter>IOCP\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="HookManager.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Game\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface.cpp">
+      <Filter>Game\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemManagement.cpp">
+      <Filter>Game\In-Game Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="DamageExtension.cpp">
+      <Filter>Game\In-Game Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="ReconnectSystem.cpp">
+      <Filter>Game\ReconnectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiHack.cpp">
+      <Filter>Game\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="WndHook.cpp">
+      <Filter>System Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>Game\Graphics\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemLoad.cpp">
+      <Filter>Game\In-Game Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Glow.cpp">
+      <Filter>Game\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="mdump.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="LogToFile.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="IGC.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Crack.cpp">
+      <Filter>System Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomWings.cpp">
+      <Filter>Game\Custom Items</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerInfo.cpp">
+      <Filter>IOCP\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="Connection.cpp">
+      <Filter>Network\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketEncrypt.cpp">
+      <Filter>Network\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="packetsend_hooks.cpp">
+      <Filter>Network\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="giocp.cpp">
+      <Filter>Network\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol.cpp">
+      <Filter>Network\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="GensExt.cpp" />
+    <ClCompile Include="Exception.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraV2.cpp">
+      <Filter>Game\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="EventEntryLevel.cpp">
+      <Filter>Game\EventEntryLevel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EncDec.h">
+      <Filter>Game\Security\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="DataSendProtocolCore.h">
+      <Filter>IOCP\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="HookManager.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Game\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.h">
+      <Filter>Game\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceLoader.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemManagement.h">
+      <Filter>Game\In-Game Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="DamageExtension.h">
+      <Filter>Game\In-Game Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="ReconnectSystem.h">
+      <Filter>Game\ReconnectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="AntiHack.h">
+      <Filter>Game\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="WndHook.h">
+      <Filter>System Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Game\Graphics\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemLoad.h">
+      <Filter>Game\In-Game Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Glow.h">
+      <Filter>Game\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="distorm.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="mdump.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="offsets.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="LogToFile.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Crack.h">
+      <Filter>System Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="SecureMemory.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomWings.h">
+      <Filter>Game\Custom Items</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerInfo.h">
+      <Filter>IOCP\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.h">
+      <Filter>Network\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketEncrypt.h">
+      <Filter>Network\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="packetsend_hooks.h">
+      <Filter>Network\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="giocp.h">
+      <Filter>Network\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol.h">
+      <Filter>Network\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="GensExt.h" />
+    <ClInclude Include="Exception.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraV2.h">
+      <Filter>Game\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="EventEntryLevel.h">
+      <Filter>Game\EventEntryLevel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="IOCP">
+      <UniqueIdentifier>{f15a7593-a0b2-442d-8d87-1b3b15cfc014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{88dc7991-30c8-45d9-89ac-6ab42b23a565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{ef23bc94-2467-4832-aa5e-a964a098dbf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Graphics">
+      <UniqueIdentifier>{1bc274a7-87d4-450b-ac5f-e3e4fb3fdd8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Security">
+      <UniqueIdentifier>{28d58fb1-6da6-4293-b46b-901282fc81a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Security\Encryption">
+      <UniqueIdentifier>{508d6542-576c-468e-b667-2cdcf3110f5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Graphics\Text">
+      <UniqueIdentifier>{24fcb0e6-ff1e-41ac-b648-a95733894b40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\In-Game Systems">
+      <UniqueIdentifier>{e303bfe0-c61d-434b-9c15-5df6fb07c1b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General">
+      <UniqueIdentifier>{9ab3bd98-b472-46d9-808b-b0f12660138f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Security\Encryption\Network Hooks">
+      <UniqueIdentifier>{47e9f9e9-a5c7-46c4-a7f5-fa260c032e96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IOCP\Core">
+      <UniqueIdentifier>{453bdf70-883b-415e-834f-248ebec5401a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IOCP\Protocol">
+      <UniqueIdentifier>{be72af0d-4477-4e27-9937-072e64197d2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System Hooks">
+      <UniqueIdentifier>{cc0a0f48-719e-4b27-87ff-047f847903b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IOCP\Connection">
+      <UniqueIdentifier>{fa9c7eec-5938-47e2-979e-8896de89312b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Custom Items">
+      <UniqueIdentifier>{b776643f-0b61-4c27-91fa-774eae25d3e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{525b39a3-16b1-4b8f-9515-e0c0d8435709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Connection">
+      <UniqueIdentifier>{334668b8-88c9-45f9-b27a-7b45e0fd917e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Encryption">
+      <UniqueIdentifier>{79100c47-e072-4f35-965f-fdcd0803c584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Hooks">
+      <UniqueIdentifier>{d11c5c23-b4df-4407-a1f7-2d5109eea4a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\IOCP">
+      <UniqueIdentifier>{88e7d10d-95cd-4ed0-9b4b-ea28eafa0a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Protocol">
+      <UniqueIdentifier>{c0511889-cfc3-4654-be03-02c238a36b3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\ReconnectSystem">
+      <UniqueIdentifier>{794009de-c7eb-45f7-b474-0a154b943a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\EventEntryLevel">
+      <UniqueIdentifier>{c18b0d4a-3ca8-4b91-b1c5-011bb177624c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Research\Research.txt">
+      <Filter>General</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>General</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

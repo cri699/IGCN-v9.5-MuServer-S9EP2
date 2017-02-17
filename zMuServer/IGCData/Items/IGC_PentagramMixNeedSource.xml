@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### PentagramSystem::CombinationMaterials::Combination ### - Refine Mixes, Adniel NPC
+//	Index: Index of a Mix (unique)
+//	SuccessRate: Success rate for the mix, n/10000
+//	ItemCat1: First mix material category
+//	ItemIndex1: First mix material index
+//	ItemCount1: Count of item 1 required for the mix
+//	ItemCat2: Second mix material category
+//	ItemIndex2: Second mix material category
+//	ItemCount2: Count of item 2 required for the mix
+//	ItemCat3: Third mix material category
+//	ItemIndex3: Third mix material category
+//	ItemCount3: Count of item 3 required for the mix
+//	ItemCat4: Fourth mix material category
+//	ItemIndex4: Fourth mix material category
+//	ItemCount4: Count of item 4 required for the mix
+//	ReqMoney: Required Money (Zen) for the Mix
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ if material does not apply use -1 value for ItemCat and ItemIndex
+//~~ for ItemCount use 0 value if materials are set to -1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### PentagramSystem::CombinationResult::Result ### - Results (items) of Mixes from CombinationMaterials section
+//	Index: Index of the Mix (must match index of combination defined in CombinationMaterials section)
+//	SuccessRate1: Success Rate for first item, n/10000
+//	ItemCat1: First item result category
+//	ItemIndex1: First item result index
+//	ItemCount1: Count of item 1 result 
+//	SuccessRate2: Success Rate for second item, n/10000
+//	ItemCat2: Second item result category
+//	ItemIndex2: Second item result index
+//	ItemCount2: Count of item 2 result
+//	SuccessRate3: Success Rate for third item, n/10000
+//	ItemCat3: Third item result category
+//	ItemIndex3: Third item result index
+//	ItemCount3: Count of item 3 result
+//	SuccessRate4: Success Rate for fourth item, n/10000
+//	ItemCat4: Fourth item result category
+//	ItemIndex4: Fourth item result index
+//	ItemCount4: Count of item 4 result
+//	SuccessRate5: Success Rate for fifth item, n/10000
+//	ItemCat5: Fifth item result category
+//	ItemIndex5: Fifth item result index
+//	ItemCount5: Count of item 5 result
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ if result does not apply use -1 value for ItemCat and ItemIndex
+//~~ for ItemCount use 0 value if result item is set to -1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### PentagramSystem::LevelUpgradeSettings::Errtel ### - Errtel Level Upgrade
+//	ExpectedLevel: Expected Upgrade Level (level the Errtel should be upgraded to)
+//	InitialLevel:  Current Errtel Level (level of actual item that is going to be upgraded)
+//	Count: Count of Errtel Items (in Chaos Machine)
+//	ItemCat1: Category of Errtel Item 1
+//	ItemIndex1: Index of Errtel item 1
+//	ItemCount1: Count of Errtel Item 1
+//	ItemCat2: Category of Errtel Item 2
+//	ItemIndex2: Index of Errtel item 2
+//	ItemCount2: Count of Errtel Item 2
+//	ItemCat3: Category of Errtel Item 3
+//	ItemIndex3: Index of Errtel item 3
+//	ItemCount3: Count of Errtel Item 3
+//	ItemCat4: Category of Errtel Item 4 
+//	ItemIndex4: Index of Errtel item 4
+//	ItemCount4: Count of Errtel Item 4
+//	ReqMoney: Money required (Zen) to process the upgrade
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Set -1 value for ItemCat and ItemIndex if not applies
+//~~ for ItemCount use 0 value if item is set to -1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### PentagramSystem::RankUpgradeSettings::Errtel ### - Errtel Rank Upgrade
+//	ExpectedRank: Expected Upgrade Rank (rank the Errtel should be upgraded to)
+//	InitialRank: Current Errtel Rank (rank of actual item that is going to be upgraded)
+//	Count: 
+//	ItemCat1: Category of Errtel Item 1
+//	ItemIndex1: Index of Errtel item 1
+//	ItemCount1: Count of Errtel Item 1
+//	ItemCat2: Category of Errtel Item 2
+//	ItemIndex2: Index of Errtel item 2
+//	ItemCount2: Count of Errtel Item 2
+//	ItemCat3: Category of Errtel Item 3
+//	ItemIndex3: Index of Errtel item 3
+//	ItemCount3: Count of Errtel Item 3
+//	ItemCat4: Category of Errtel Item 4
+//	ItemIndex4: Index of Errtel item 4
+//	ItemCount4: Count of Errtel Item 4
+//	ReqMoney: Money required (Zen) to process the upgrade
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Set -1 value for ItemCat and ItemIndex if not applies
+//~~ for ItemCount use 0 value if item is set to -1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### PentagramSystem::RankUpgradeSocketRate::Errtel ### - Errtel Rank Upgrade Success Rates
+//	Rank: Rank of the Errtel
+//	Socket2Rate: Chance rate of Errtel assembly in Pentagram Item, 2nd hole
+//	Socket3Rate: Chance rate of Errtel assembly in Pentagram Item, 3rd hole
+//	Socket4Rate: Chance rate of Errtel assembly in Pentagram Item, 4th hole
+//	Socket5Rate: Chance rate of Errtel assembly in Pentagram Item, 5th hole
+//	RankUpgradeSuccessRate: Chance rate for Rank Upgrade, n/10000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ SocketXRate is n/10000, sum of all SocketXRate in a row must be equal to 10000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<PentagramSystem>
+	<CombinationMaterials>
+		<Combination Index="1"  SuccessRate="8000" ItemCat1="12" ItemIndex1="148" ItemCount1="1" ItemCat2="12" ItemIndex2="15"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Mithril Fragment Bunch -->
+		<Combination Index="2"  SuccessRate="6000" ItemCat1="12" ItemIndex1="149" ItemCount1="1" ItemCat2="12" ItemIndex2="15"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Elixir Fragment Bunch -->
+		<Combination Index="3"  SuccessRate="5000" ItemCat1="12" ItemIndex1="145" ItemCount1="1" ItemCat2="12" ItemIndex2="147" ItemCount2="1" ItemCat3="14" ItemIndex3="13" ItemCount3="1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Mithril -->
+		<Combination Index="4"  SuccessRate="5000" ItemCat1="12" ItemIndex1="200" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Muren's Book of Magic -->
+		<Combination Index="5"  SuccessRate="5000" ItemCat1="12" ItemIndex1="201" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Scroll of Etramu -->
+		<Combination Index="6"  SuccessRate="5000" ItemCat1="12" ItemIndex1="202" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Lorencia Knights` Iron Shield -->
+		<Combination Index="7"  SuccessRate="5000" ItemCat1="12" ItemIndex1="203" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Iron Shield of the Magic -->
+		<Combination Index="8"  SuccessRate="5000" ItemCat1="12" ItemIndex1="204" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Hero Elixir -->
+		<Combination Index="9"  SuccessRate="5000" ItemCat1="12" ItemIndex1="205" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Brave Hero Elixir -->
+		<Combination Index="10"	SuccessRate="5000" ItemCat1="12" ItemIndex1="206" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Gladiator's Dagger -->
+		<Combination Index="11"	SuccessRate="5000" ItemCat1="12" ItemIndex1="207" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Merciless Gladiator's Dagger -->
+		<Combination Index="12"	SuccessRate="5000" ItemCat1="12" ItemIndex1="208" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Kundun's Madness Blade -->
+		<Combination Index="13"	SuccessRate="5000" ItemCat1="12" ItemIndex1="209" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Kundun's Magic Spell Scroll -->
+		<Combination Index="14"	SuccessRate="5000" ItemCat1="12" ItemIndex1="210" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Empire Guardians' Stronghold -->
+		<Combination Index="15"	SuccessRate="5000" ItemCat1="12" ItemIndex1="211" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Ancient Icarus Scroll -->
+		<Combination Index="16"	SuccessRate="5000" ItemCat1="12" ItemIndex1="212" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Arca's Prophecy -->
+		<Combination Index="17"	SuccessRate="5000" ItemCat1="12" ItemIndex1="213" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Antonia's Sword -->
+		<Combination Index="18"	SuccessRate="5000" ItemCat1="12" ItemIndex1="214" ItemCount1="1" ItemCat2="14" ItemIndex2="42"	ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Kundun's Seal Scroll -->
+	</CombinationMaterials>
+
+	<CombinationResult>
+		<Result Index="1"  SuccessRate1="10000" ItemCat1="12" ItemIndex1="145" ItemCount1="1" SuccessRate2="0"	  ItemCat2="-1" ItemIndex2="-1"	 ItemCount2="0" SuccessRate3="0"	ItemCat3="-1" ItemIndex3="-1"  ItemCount3="0" SuccessRate4="0"    ItemCat4="-1" ItemIndex4="-1"	 ItemCount4="0" SuccessRate5="0"   ItemCat5="-1" ItemIndex5="-1"  ItemCount5="0" /> <!-- Mithril Fragment Bunch -->	
+		<Result Index="2"  SuccessRate1="10000" ItemCat1="12" ItemIndex1="147" ItemCount1="1" SuccessRate2="0"	  ItemCat2="-1" ItemIndex2="-1"	 ItemCount2="0" SuccessRate3="0"	ItemCat3="-1" ItemIndex3="-1"  ItemCount3="0" SuccessRate4="0"    ItemCat4="-1" ItemIndex4="-1"	 ItemCount4="0" SuccessRate5="0"   ItemCat5="-1" ItemIndex5="-1"  ItemCount5="0" /> <!-- Elixir Fragment Bunch -->	
+		<Result Index="3"  SuccessRate1="4000"  ItemCat1="12" ItemIndex1="221" ItemCount1="1" SuccessRate2="3000" ItemCat2="12" ItemIndex2="231" ItemCount2="1" SuccessRate3="2000"	ItemCat3="12" ItemIndex3="241" ItemCount3="1" SuccessRate4="1000" ItemCat4="12" ItemIndex4="251" ItemCount4="1" SuccessRate5="0"   ItemCat5="-1" ItemIndex5="-1"  ItemCount5="0" /> <!-- Mithril -->		
+		<Result Index="4"  SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Muren's Book of Magic -->			
+		<Result Index="5"  SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Scroll of Etramu -->			
+		<Result Index="6"  SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Lorencia Knights` Iron Shield -->				
+		<Result Index="7"  SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Iron Shield of the Magic -->				
+		<Result Index="8"  SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Hero Elixir -->	
+		<Result Index="9"  SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Brave Hero Elixir -->			
+		<Result Index="10" SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Gladiator's Dagger -->	
+		<Result Index="11" SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Merciless Gladiator's Dagger -->			
+		<Result Index="12" SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Kundun's Madness Blade -->		
+		<Result Index="13" SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Kundun's Magic Spell Scroll -->		
+		<Result Index="14" SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Empire Guardians' Stronghold -->		
+		<Result Index="15" SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Ancient Icarus Scroll -->		
+		<Result Index="16" SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Arca's Prophecy -->		
+		<Result Index="17" SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Antonia's Sword -->		
+		<Result Index="18" SuccessRate1="5000"  ItemCat1="12" ItemIndex1="144" ItemCount1="1" SuccessRate2="1500" ItemCat2="12" ItemIndex2="145" ItemCount2="1" SuccessRate3="2500"	ItemCat3="12" ItemIndex3="146" ItemCount3="1" SuccessRate4="500"  ItemCat4="12" ItemIndex4="147" ItemCount4="1" SuccessRate5="500" ItemCat5="12" ItemIndex5="150" ItemCount5="1" /> <!-- Kundun's Seal Scroll -->	
+	</CombinationResult>
+
+	<LevelUpgradeSettings>
+		<Errtel ExpectedLevel="1"  InitialLevel="0" Count="1" ItemCat1="12" ItemIndex1="150" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" />
+		<Errtel ExpectedLevel="2"  InitialLevel="1" Count="1" ItemCat1="12" ItemIndex1="150" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" />
+		<Errtel ExpectedLevel="3"  InitialLevel="2" Count="1" ItemCat1="12" ItemIndex1="150" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="150000" />
+		<Errtel ExpectedLevel="4"  InitialLevel="3" Count="1" ItemCat1="12" ItemIndex1="150" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="200000" />
+		<Errtel ExpectedLevel="5"  InitialLevel="4" Count="1" ItemCat1="12" ItemIndex1="150" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="250000" />
+		<Errtel ExpectedLevel="6"  InitialLevel="5" Count="1" ItemCat1="12" ItemIndex1="150" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="300000" />
+		<Errtel ExpectedLevel="7"  InitialLevel="6" Count="1" ItemCat1="12" ItemIndex1="150" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="350000" />
+		<Errtel ExpectedLevel="8"  InitialLevel="7" Count="1" ItemCat1="12" ItemIndex1="150" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="400000" />
+		<Errtel ExpectedLevel="9"  InitialLevel="8" Count="1" ItemCat1="12" ItemIndex1="150" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="450000" />
+		<Errtel ExpectedLevel="10" InitialLevel="9" Count="1" ItemCat1="12" ItemIndex1="150" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="500000" />
+	</LevelUpgradeSettings>
+
+	<RankUpgradeSettings>
+		<Errtel ExpectedRank="2" InitialRank="1" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="14" ItemIndex3="14" ItemCount3="1" ItemCat4="100" ItemIndex4="1" ItemCount4="1"	ReqMoney="100000" />													
+		<Errtel ExpectedRank="3" InitialRank="2" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="2" ItemCat2="14" ItemIndex2="13" ItemCount2="2" ItemCat3="14" ItemIndex3="14" ItemCount3="2" ItemCat4="100" ItemIndex4="1" ItemCount4="1"	ReqMoney="100000" />													
+		<Errtel ExpectedRank="4" InitialRank="3" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="3" ItemCat2="14" ItemIndex2="13" ItemCount2="3" ItemCat3="14" ItemIndex3="14" ItemCount3="3" ItemCat4="100" ItemIndex4="1" ItemCount4="1"	ReqMoney="150000" />													
+		<Errtel ExpectedRank="5" InitialRank="4" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="4" ItemCat2="14" ItemIndex2="13" ItemCount2="4" ItemCat3="14" ItemIndex3="14" ItemCount3="4" ItemCat4="100" ItemIndex4="1" ItemCount4="1"	ReqMoney="200000" />													
+	</RankUpgradeSettings>
+
+	<RankUpgradeSocketRate>
+		<Errtel Rank="2" Socket2Rate="7000" Socket3Rate="3000" Socket4Rate="0"	  Socket5Rate="0"    RankUpgradeSuccessRate="5000" />
+		<Errtel Rank="3" Socket2Rate="5000" Socket3Rate="5000" Socket4Rate="0"	  Socket5Rate="0"    RankUpgradeSuccessRate="5000" />
+		<Errtel Rank="4" Socket2Rate="3000" Socket3Rate="3000" Socket4Rate="2000" Socket5Rate="2000" RankUpgradeSuccessRate="5000" />
+		<Errtel Rank="5" Socket2Rate="2000" Socket3Rate="2000" Socket4Rate="3000" Socket5Rate="3000" RankUpgradeSuccessRate="5000" />
+	</RankUpgradeSocketRate>	
+</PentagramSystem>

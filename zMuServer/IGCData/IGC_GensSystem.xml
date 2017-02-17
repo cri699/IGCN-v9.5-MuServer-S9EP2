@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// Interval hour of updating the ranking can be configured in \DataServer\IGC.ini
+// It is not recommended to configure its update lower than 5h
+//
+// ### GensSystem ###
+//	BlueMuMode: Activates BlueMu mode of Gens, 0/1:
+//		~ 100% chance to loose item if dying as PK on normal map
+//		~ 3% loss of Money (Zen) when dying as PK on normal map
+//		~ Debuff (106) applied when dying on normal map, blocking warring ability for 5 minutes
+//	InitialContributePoint: Count of initial contribute points for character joining Gens
+//	AbusingPenaltyWarning: Number of kills of the same player to receive warning, English.xml: 372
+//	AbusingPenaltyLimit: Number of kills of the same player to stop receiving contribution points for the kill, English.xml: 371
+//	AbusingResetTime: Time after which abusing will be reset, counting from last kill of specified player after reaching the abusing limit, minutes
+//	PkPenaltyAddNeedZenMapMove: Multiplier of the warp price to Battle Zone being PK
+//	BattleZoneAddExperience: Multiplier of Experience in Battle Zone (Normal)
+//	ML_BattleZoneAddExperience: Multiplier of Experience in Battle Zone (Mastering)
+//	DamageReduction: Reduces PvP damage for Gens Battles on Battle Maps
+//
+// ### GensSystem::General ###
+//	CanSeeOppositeGensChat: Allows to see regular chat of the opposite Gens player (not the Gens chat), 0/1
+//	CanJoinPartyWhileOppositeGens: Allows join to the party of which master is opposite Gens member, 0/1
+//	CanJoinGuildWhileOppositeGens: Allows to join to the guild of which master is opposite Gens member, 0/1
+//	CanJoinUnionWhileOppositeGens: Allows to join to the union with guild of which master is opposite Gens member, 0/1
+//	CanCreatePartyOnBattleZone: Allows to create / keep party on Battle Maps, 0/1
+//
+// ### GensSystem::RewardSettings ###
+//	StartDay: The start day of the month the Gens reward will be issue
+//	EndDay: The end day of the month the Gens reward will be issue
+//	MinRankToGainReward: Minimum ranking point position to qualify for Gens reward
+//
+// ### GensSystem::RankingSettings ###
+//	Class: Class of Gens (position type)
+//		~ 1: Grand Duke
+//		~ 2: Duke
+//		~ 3: Marquis
+//		~ 4: Count
+//		~ 5: Viscount
+//		~ 6: Baron
+//		~ 7: Knight Commander
+//		~ 8: Superior Knight
+//		~ 9: Knight
+//		~ 10: Guard Perfect
+//		~ 11: Officer
+//		~ 12: Lieutenant
+//		~ 13: Sergeant
+//		~ 14: Private
+//	ReqContributePoint: Minimum contribute point to gain the Class. If set greater than 0 then RankingPosition must be 0 for the Class
+//	RankingPosition: Defines lowest ranking position (range) to gain specified Class. If set as 0 or greater than 0 then the ReqContributePoint must be 0
+//	RewardItemCat: Reward Item Category, ItemList.xml
+//	RewardItemIndex: Reward Item Index, ItemList.xml
+//	RewardItemCount: Count of reward item
+//
+// ### GensSystem::BattleZoneSettings::MapList::Map ###
+//	Number: Number of Map to be set as BattleZone, refer to IGC_MapList.xml for the number
+//	Enable: Enables specified configuration, 0/1
+//	FamilyAccessType: Defines access to the map by specified Gens Family
+//		~ 0: Access for Duprian and Vanert families
+//		~ 1: Duprian family access only
+//		~ 2: Vanert family access only
+//
+// ### GensSystem::BattleZoneSettings::MapList::Map::Duprian ###
+//	ExpBonus: Exp bonus applied for Duprian family members while hunting on Battle Maps - added to server base exp rate
+//	MLExpBonus: Master Exp bonus applied for Duprian family members while hunting on Battle Maps - added to server base exp rate
+//	ItemDropBonus: Item drop bonus applied for non-master characters for Duprian family members while hunting on Battle Maps - added to server base item drop rate
+//	MLItemDropBonus: Item drop bonus applied for master characters of Duprian family members while hunting on Battle Maps - added to server base item drop rate
+//	ExcItemDropBonus: Exc item drop bonus applied for non-master characters of Duprian family members while hunting on Battle Maps - added to server base excellent item drop rate
+//	MLExcItemDropBonus: Exc item drop bonus applied for master characters of Duprian family members while hunting on Battle Maps - added to server base excellent item drop rate
+//
+// ### GensSystem::BattleZoneSettings::MapList::Map::Vanert ###
+//	ExpBonus: Exp bonus applied for Vanert family members while hunting on Battle Maps - added to server base exp rate
+//	MLExpBonus: Master Exp bonus applied for Vanert family members while hunting on Battle Maps - added to server base exp rate
+//	ItemDropBonus: Item drop bonus applied for non-master characters for Vanert family members while hunting on Battle Maps - added to server base item drop rate
+//	MLItemDropBonus: Item drop bonus applied for master characters of Vanert family members while hunting on Battle Maps - added to server base item drop rate
+//	ExcItemDropBonus: Exc item drop bonus applied for non-master characters of Vanert family members while hunting on Battle Maps - added to server base excellent item drop rate
+//	MLExcItemDropBonus: Exc item drop bonus applied for master characters of Vanert family members while hunting on Battle Maps - added to server base excellent item drop rate
+//
+// ### GensSystem::BattleZoneSettings::WarpList::Warp ###
+//	ID: Warp Index to be as as move to Battle Zone, for value refer to IGC_MoveReq.xml (Index)
+//	Enable: Enables specified configuration, 0/1
+//	
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<GensSystem BlueMuMode="0" InitialContributePoint="10" AbusingPenaltyWarning="3" AbusingPenaltyLimit="6" AbusingResetTime="60" PkPenaltyAddNeedZenMapMove="2" BattleZoneAddExperience="1.0" ML_BattleZoneAddExperience="1.0" DamageReduction="100">
+	<General CanSeeOppositeGensChat="0" CanJoinPartyWhileOppositeGens="0" CanJoinGuildWhileOppositeGens="0" CanJoinUnionWhileOppositeGens="0" CanCreatePartyOnBattleZone="0" />
+	<RewardSettings StartDay="1" EndDay="7" MinRankToGainReward="300" />
+	
+	<RankingSettings>
+		<Gens Class="1"	 ReqContributePoint="0"		RankingPosition="1"	  RewardItemCat="14" RewardItemIndex="141" RewardItemCount="30" Name="Grand Duke" /> <!-- Shinning Jewellery Case x30 -->
+		<Gens Class="2"	 ReqContributePoint="0"		RankingPosition="5"	  RewardItemCat="14" RewardItemIndex="141" RewardItemCount="20" Name="Duke" /> <!-- Shinning Jewellery Case x20 -->
+		<Gens Class="3"	 ReqContributePoint="0"		RankingPosition="10"  RewardItemCat="14" RewardItemIndex="142" RewardItemCount="20" Name="Marquis" /> <!-- Elegant Jewellery Case x20 -->
+		<Gens Class="4"	 ReqContributePoint="0"		RankingPosition="30"  RewardItemCat="14" RewardItemIndex="142" RewardItemCount="10" Name="Count" /> <!-- Elegant Jewellery Case x10 -->
+		<Gens Class="5"	 ReqContributePoint="0"		RankingPosition="50"  RewardItemCat="14" RewardItemIndex="143" RewardItemCount="10" Name="Viscount" /> <!-- Steel Jewellery Case x10 -->
+		<Gens Class="6"	 ReqContributePoint="0"		RankingPosition="100" RewardItemCat="14" RewardItemIndex="143" RewardItemCount="5"  Name="Baron" /> <!-- Steel Jewellery Case x5 -->
+		<Gens Class="7"	 ReqContributePoint="0"		RankingPosition="200" RewardItemCat="14" RewardItemIndex="144" RewardItemCount="5"  Name="Knight Commander" /> <!-- Old Jewellery Case x5 -->
+		<Gens Class="8"	 ReqContributePoint="0"		RankingPosition="300" RewardItemCat="14" RewardItemIndex="144" RewardItemCount="3"  Name="Superior Knight" /> <!-- Old Jewellery Case x3 -->
+		<Gens Class="9"	 ReqContributePoint="10000"	RankingPosition="0"	  RewardItemCat="0"  RewardItemIndex="0"   RewardItemCount="0"  Name="Knight" />
+		<Gens Class="10" ReqContributePoint="6000"	RankingPosition="0"	  RewardItemCat="0"  RewardItemIndex="0"   RewardItemCount="0"  Name="Guard Perfect" />
+		<Gens Class="11" ReqContributePoint="3000"	RankingPosition="0"	  RewardItemCat="0"  RewardItemIndex="0"   RewardItemCount="0"  Name="Officer" />
+		<Gens Class="12" ReqContributePoint="1500"	RankingPosition="0"	  RewardItemCat="0"  RewardItemIndex="0"   RewardItemCount="0"  Name="Lieutenant" />
+		<Gens Class="13" ReqContributePoint="500"	RankingPosition="0"	  RewardItemCat="0"  RewardItemIndex="0"   RewardItemCount="0"  Name="Sergeant" />
+		<Gens Class="14" ReqContributePoint="0"		RankingPosition="0"	  RewardItemCat="0"  RewardItemIndex="0"   RewardItemCount="0"  Name="Private" />
+	</RankingSettings>
+	
+	<BattleZoneSettings>
+		<MapList>
+			<Map Number="7" Enable="0" FamilyAccessType="0"> <!-- Atlans -->
+				<Duprian ExpBonus="0" MLExpBonus="0" ItemDropBonus="0" MLItemDropBonus="0" ExcItemDropBonus="0" MLExcItemDropBonus="0" />
+				<Vanert ExpBonus="0" MLExpBonus="0" ItemDropBonus="0" MLItemDropBonus="0" ExcItemDropBonus="0" MLExcItemDropBonus="0" />
+			</Map>
+			<Map Number="33" Enable="0" FamilyAccessType="0"> <!-- Aida -->
+				<Duprian ExpBonus="0" MLExpBonus="0" ItemDropBonus="0" MLItemDropBonus="0" ExcItemDropBonus="0" MLExcItemDropBonus="0" />
+				<Vanert ExpBonus="0" MLExpBonus="0" ItemDropBonus="0" MLItemDropBonus="0" ExcItemDropBonus="0" MLExcItemDropBonus="0" />
+			</Map>
+			<Map Number="37" Enable="0" FamilyAccessType="0"> <!-- Kanturu -->
+				<Duprian ExpBonus="0" MLExpBonus="0" ItemDropBonus="0" MLItemDropBonus="0" ExcItemDropBonus="0" MLExcItemDropBonus="0" />
+				<Vanert ExpBonus="0" MLExpBonus="0" ItemDropBonus="0" MLItemDropBonus="0" ExcItemDropBonus="0" MLExcItemDropBonus="0" />
+			</Map>
+			<Map Number="56" Enable="0" FamilyAccessType="0"> <!-- Swamp of Calmness -->
+				<Duprian ExpBonus="0" MLExpBonus="0" ItemDropBonus="0" MLItemDropBonus="0" ExcItemDropBonus="0" MLExcItemDropBonus="0" />
+				<Vanert ExpBonus="0" MLExpBonus="0" ItemDropBonus="0" MLItemDropBonus="0" ExcItemDropBonus="0" MLExcItemDropBonus="0" />
+			</Map>
+			<Map Number="63" Enable="1" FamilyAccessType="0"> <!-- Vulcanus -->
+				<Duprian ExpBonus="0" MLExpBonus="0" ItemDropBonus="0" MLItemDropBonus="0" ExcItemDropBonus="0" MLExcItemDropBonus="0" />
+				<Vanert ExpBonus="0" MLExpBonus="0" ItemDropBonus="0" MLItemDropBonus="0" ExcItemDropBonus="0" MLExcItemDropBonus="0" />
+			</Map>
+		</MapList>
+
+		<WarpList>
+			<Warp Index="11" Enable="0" /> <!-- Atlans 1 -->
+			<Warp Index="12" Enable="0" /> <!-- Atlans 2 -->
+			<Warp Index="13" Enable="0" /> <!-- Atlans 3 -->
+			<Warp Index="25" Enable="0" /> <!-- Aida 1 -->
+			<Warp Index="27" Enable="0" /> <!-- Aida 2 -->
+			<Warp Index="28" Enable="0" /> <!-- Kanturu Ruins 1 -->
+			<Warp Index="29" Enable="0" /> <!-- Kanturu Ruins 2 -->
+			<Warp Index="45" Enable="0" /> <!-- Kanturu Ruins 3 -->
+			<Warp Index="30" Enable="0" /> <!-- KanturuRelics -->
+			<Warp Index="33" Enable="0" /> <!-- Swamp of Calmness -->
+			<Warp Index="42" Enable="1" /> <!-- Vulcanus -->
+		</WarpList>
+	</BattleZoneSettings>
+</GensSystem>

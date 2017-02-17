@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Event Start time and other conditions are managed by IGC_InvasionManager.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### AttackEvent ###
+//	Index: Index of a monster to spawn, accepted only 53-54
+//	MapNumber1: Index of map number to spawn the monster on
+//	MapNumber2: Index of map number to spawn the monster on
+//	MapNumber3: Index of map number to spawn the monster on
+//	MapNumber4: Index of map number to spawn the monster on
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ The monsters are spawned in randomly selected map, one of 4.
+//~~ Value -1 disables use of possible map location.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//	Distance: Distance to spawn the monsters from start coordinates
+//	StartX: Start X coordinate to spawn the monsters, must be lower or equal to StartY
+//	StartY: Start Y coordinate to spawn the monsters, must be greater or equal to StartX
+//	EndX: End X coordinate to spawn the monsters, must be lower or equal to EndY
+//	EndY: End Y coordinate to spawn the monsters, must be greater or equal to EndX
+//	Dir: Direction the monster looks at after spawn
+//		~ 0: Central
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//	Count: Count of monsters to spawn
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<AttackEvent>
+	<Spawn Index="53" MapNumber1="2" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="10" StartY="10" EndX="240" EndY="240" Dir="-1" Count="1" /> <!-- Golden Titan ~ must be initialized before Golden Soldier -->
+	<Spawn Index="54" MapNumber1="2" MapNumber2="-1" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="10" StartY="10" EndX="240" EndY="240" Dir="-1" Count="2" /> <!-- Golden Soldier -->
+	<Spawn Index="55" MapNumber1="0" MapNumber2="3" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="10" StartY="10" EndX="240" EndY="240" Dir="-1" Count="1" /> <!-- Death King ~ must be initialized before Death Bone -->
+	<Spawn Index="56" MapNumber1="0" MapNumber2="3" MapNumber3="-1" MapNumber4="-1" Distance="30" StartX="10" StartY="10" EndX="240" EndY="240" Dir="-1" Count="2" /> <!-- Death Bone -->
+</AttackEvent>

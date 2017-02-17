@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ItemOptionManager::Section ###
+//	ID: ID a section.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Section 0 is always used for 380 item options only. Items stored within single section cannot be used simultaneously
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ItemOptionManager::Section::Item ###
+//	Cat: Category of an item, refer to ItemList.xml
+//	Index: Index of an item, refer to ItemList.xml
+//	Option1: Index/Number of first option, refer to BuffEffectManager.cfg and in-file description
+//	Value1: Value for Option1
+//	Option2: Index/Number of second option, refer to BuffEffectManager.cfg and in-file description
+//	Value2: Value for Option2
+//	Time: Time/Duration of option effect. Not used in section 0, expressed in seconds
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemOptionManager>
+<!-- Halloween Event options
+// 0: No Option 
+// 1: Increases Attack Speed ​​+%d
+// 2: Increase Damage and Wizard Damage +%d
+// 3: Increases Defense +%d
+// 4: Increases Maximum HP +%d
+// 5: Increases Maximum Mana +%d
+-->
+	<Section ID="1">
+		<Item Cat="14" Index="46" Option1="1" Value1="10" Option2="0" Value2="10" Time="1800" /> <!-- Jack O'Lantern Blessings -->
+		<Item Cat="14" Index="47" Option1="2" Value1="25" Option2="0" Value2="10" Time="1800" /> <!-- Jack O'Lantern Wrath -->
+		<Item Cat="14" Index="48" Option1="3" Value1="100" Option2="0" Value2="10" Time="1800" /> <!-- Jack O'Lantern Cry -->
+		<Item Cat="14" Index="49" Option1="4" Value1="500" Option2="0" Value2="10" Time="1800" /> <!-- Jack O'Lantern Food -->
+		<Item Cat="14" Index="50" Option1="5" Value1="500" Option2="0" Value2="10" Time="1800" /> <!-- Jack O'Lantern Drink -->
+	</Section>
+	
+<!-- Cash Item option value:
+// 0: No Option
+// 1: Attack Speed Increase +%d
+// 2: Damage Increase +%d (General Damage/HP)
+// 3: Defense +%d
+// 4: Max HP Increase +%d
+// 5: Max Mana Increase +%d
+// 6: Exp Increase +d%
+// 7: Drop Rate Increase %d%
+// 8: Prevents exp from being gained
+// 9: Strength Increase +%d
+// 10: Agility Increase +%d
+// 11: Vitality Increase +%d
+// 12: Energy Increase +%d
+// 13: Command Increase +%d
+// 14: Increased attack power +%d
+// 15: Wizard Damage Increase +%d
+// 16: Free M Menu warping
+// 22: Magic Defense Increase +%d
+// 24: Damage Reflect Increase +%d
+// 26: Attack Rate Decrease +%d
+// 33: Min Wizardy Power Increase +%d
+// 34: Max Wizardy Power Increase +%d
+// 51: Increase Damage and Wizard Damage +%d% (Melee/Magic/Curse)
+// 52: Damage absorption %d%
+// 53: Automatic HP Recovery +%d%
+// 54: Automatic Mana Recovery +%d%
+// 55: Critical Damage +%d%
+// 56: Excellent Damage +%d%
+// 57: Melee/Wizardy/Curse Damage Increase +%d
+// 58: Defense Increase +%d
+// 60: Exp increase by %d% (regular only)
+// 61: Possibility to obtain obtain rare items from monsters in Vulcanus
+// 62: No penalty for dying (no loss of exp or items)
+// 63: Items will not lose durability points for certain amount of time
+// 64: Increase Zen by %d%
+// 65: Maintains HP for certain amount of time (Mu Blue)
+// 66: Increase Maximum AG + level by 10
+// 67: Increase Maximum SD + level by 10
+// 68: Increase Exp gain rate by up to %d% (depending on the number of people in party)
+// 70: Max SD Increase +%d
+// 71: Max AG Increase +%d
+// 74: Defense Rate Increase +%d
+// 75: Defense Rate Decrease +%d
+// 87: Exp gain increase +%d% (Ascension Items, Normal/Master level usable)
+// 88: Exp gain increase +%d% (Bless of Light, Normal/Master level usable)
+-->
+	<Section ID="2">
+		<Item Cat="13" Index="43" Option1="6" Value1="50" Option2="0" Value2="0" Time="0" /> <!-- Seal of Ascension -->
+		<Item Cat="13" Index="44" Option1="6" Value1="200" Option2="7" Value2="150" Time="0" /> <!-- Seal of Wealth -->
+		<Item Cat="13" Index="45" Option1="8" Value1="0" Option2="0" Value2="0" Time="0" /> <!-- Seal of Sustenance -->
+		<Item Cat="13" Index="59" Option1="16" Value1="0" Option2="0" Value2="0" Time="0" /> <!-- Seal of Mobility -->
+	</Section>
+
+	<!--	<Section ID="3"> -->
+	<!-- <Item Cat="13" Index="43" Option1="6" Value1="50" Option2="0" Value2="0" Time="1800" /> --> <!-- Seal of Ascension -->
+	<!-- <Item Cat="13" Index="44" Option1="6" Value1="50" Option2="7" Value2="200" Time="1800" /> --> <!-- Seal of Wealth -->
+	<!-- <Item Cat="13" Index="45" Option1="8" Value1="0" Option2="0" Value2="0" Time="1800" /> --> <!-- Seal of Sustenance -->
+	<!-- <Item Cat="13" Index="59" Option1="16" Value1="0" Option2="0" Value2="0" Time="1800" /> --> <!-- Seal of Mobility -->
+	<!-- <Item Cat="13" Index="116" Option1="7" Value1="150" Option2="0" Value2="0" Time="1800" /> --> <!-- Seal of Wealth -->
+	<!--	</Section> -->	
+
+	<Section ID="4">
+		<Item Cat="14" Index="72" Option1="1" Value1="15" Option2="0" Value2="0" Time="0" /> <!-- Scroll of Quickness -->
+		<Item Cat="14" Index="73" Option1="3" Value1="60" Option2="0" Value2="0" Time="0" /> <!-- Scroll of Defense -->
+		<Item Cat="14" Index="74" Option1="14" Value1="30" Option2="0" Value2="0" Time="0" /> <!-- Scroll of Wrath -->
+		<Item Cat="14" Index="75" Option1="15" Value1="30" Option2="0" Value2="0" Time="0" /> <!-- Scroll of Wizardry -->
+		<Item Cat="14" Index="76" Option1="4" Value1="200" Option2="0" Value2="0" Time="0" /> <!-- Scroll of Health -->
+		<Item Cat="14" Index="77" Option1="5" Value1="300" Option2="0" Value2="0" Time="0" /> <!-- Scroll of Mana -->
+	</Section>
+
+	<Section ID="5">
+		<Item Cat="14" Index="78" Option1="9" Value1="50" Option2="0" Value2="0" Time="864000" /> <!-- Elixir of Strength -->
+		<Item Cat="14" Index="79" Option1="10" Value1="50" Option2="0" Value2="0" Time="864000" /> <!-- Elixir of Agility -->
+		<Item Cat="14" Index="80" Option1="11" Value1="50" Option2="0" Value2="0" Time="864000" /> <!-- Elixir of Health -->
+		<Item Cat="14" Index="81" Option1="12" Value1="50" Option2="0" Value2="0" Time="864000" /> <!-- Elixir of Energy -->
+		<Item Cat="14" Index="82" Option1="13" Value1="50" Option2="0" Value2="0" Time="864000" /> <!-- Elixir of Control -->
+	</Section>
+
+	<Section ID="6">
+		<Item Cat="14" Index="85" Option1="5" Value1="700" Option2="0" Value2="10" Time="1800" /> <!-- Cherry Blossom Wine -->
+		<Item Cat="14" Index="86" Option1="4" Value1="700" Option2="0" Value2="10" Time="1800" /> <!-- Cherry Blossom Rice Cake -->
+		<Item Cat="14" Index="87" Option1="2" Value1="40" Option2="0" Value2="10" Time="1800" /> <!-- Cherry Blossom Flower Petal -->
+	</Section>
+
+	<Section ID="7">
+		<Item Cat="13" Index="64" Option1="51" Value1="40" Option2="1" Value2="10" Time="0" /> <!-- Demon -->
+	</Section>
+
+	<Section ID="8">
+		<Item Cat="13" Index="65" Option1="52" Value1="30" Option2="4" Value2="50" Time="0" /> <!-- Spirit of Guardian -->
+	</Section>
+
+	<Section ID="9">
+		<Item Cat="13" Index="95" Option1="60" Value1="20" Option2="61" Value2="1" Time="3600" /> <!-- Gladiator's Honor -->
+	</Section>
+
+	<Section ID="10">
+		<Item Cat="13" Index="76" Option1="64" Value1="50" Option2="2" Value2="30" Time="0" /> <!-- Panda Ring -->
+	</Section>
+
+	<Section ID="11">
+		<Item Cat="13" Index="80" Option1="6" Value1="50" Option2="3" Value2="50" Time="0" /> <!-- Pet Panda -->
+	</Section>
+
+	<Section ID="12">
+		<Item Cat="13" Index="62" Option1="6" Value1="50" Option2="53" Value2="5" Time="1800" /> <!-- Seal of Healing -->
+		<Item Cat="13" Index="63" Option1="7" Value1="150" Option2="54" Value2="5" Time="1800" /> <!-- Seal of Divinity -->
+	</Section>
+
+	<Section ID="13">
+		<Item Cat="14" Index="97" Option1="55" Value1="20" Option2="0" Value2="0" Time="1800" /> <!-- Scroll of Battle -->
+		<Item Cat="14" Index="98" Option1="56" Value1="20" Option2="0" Value2="0" Time="1800" /> <!-- Scroll of Strength -->
+	</Section>
+
+	<Section ID="14">
+		<Item Cat="13" Index="93" Option1="6" Value1="50" Option2="0" Value2="0" Time="1800" /> <!-- Master Seal of Ascension -->
+		<Item Cat="13" Index="94" Option1="6" Value1="200" Option2="7" Value2="150" Time="1800" /> <!-- Master Seal of Wealth -->
+	</Section>
+
+	<Section ID="15">
+		<Item Cat="13" Index="81" Option1="8" Value1="0" Option2="62" Value2="0" Time="1800" /> <!-- Talisman of Guardian -->
+	</Section>
+
+	<Section ID="16">
+		<Item Cat="13" Index="82" Option1="63" Value1="0" Option2="0" Value2="0" Time="1800" /> <!-- Talisman of Item Protection -->
+	</Section>
+
+	<Section ID="17">
+		<Item Cat="13" Index="96" Option1="2" Value1="50" Option2="3" Value2="60" Time="1800" /> <!-- Seal of Strength -->
+	</Section>
+
+	<!-- MU Blue only as no stamina present on GMO -->
+	<!-- <Section ID="18"> -->
+	<!-- 	<Item Cat="13" Index="117" Option1="65" Value1="100" Option2="0" Value2="0" Time="21600" /> --> <!-- Minimum Vitality Potion -->
+	<!-- 	<Item Cat="13" Index="118" Option1="65" Value1="100" Option2="0" Value2="0" Time="86400" /> --> <!-- Low Vitality Potion -->
+	<!-- 	<Item Cat="13" Index="119" Option1="65" Value1="100" Option2="0" Value2="0" Time="604800" /> --> <!-- Medium Vitality Potion -->
+	<!-- 	<Item Cat="13" Index="120" Option1="65" Value1="100" Option2="0" Value2="0" Time="2592000" /> --> <!-- High Vitality Potion -->
+	<!-- </Section> -->
+
+	<Section ID="19">
+		<Item Cat="13" Index="106" Option1="64" Value1="50" Option2="3" Value2="50" Time="0" /> <!-- Pet Unicorn -->
+	</Section>
+
+	<Section ID="20">
+		<Item Cat="13" Index="104" Option1="66" Value1="1" Option2="0" Value2="0" Time="1800" /> <!-- Max AG Boost Aura -->
+	</Section>
+
+	<Section ID="21">
+		<Item Cat="13" Index="105" Option1="67" Value1="10" Option2="0" Value2="0" Time="1800" /> <!-- Max SD Boost Aura -->
+	</Section>
+
+	<Section ID="22">
+		<Item Cat="13" Index="103" Option1="68" Value1="10" Option2="0" Value2="0" Time="1800" /> <!-- Party EXP Scroll -->
+	</Section>
+
+	<Section ID="23">
+		<Item Cat="14" Index="140" Option1="53" Value1="3" Option2="4" Value2="100" Time="1800" /> <!-- Scroll of Healing -->
+	</Section>
+
+	<Section ID="24">
+		<Item Cat="13" Index="109" Option1="53" Value1="8" Option2="51" Value2="6" Time="0" /> <!-- Sapphire Ring --> 
+	</Section>
+
+	<Section ID="25">
+		<Item Cat="13" Index="110" Option1="53" Value1="8" Option2="4" Value2="6" Time="0" /> <!-- Ruby Ring --> 
+	</Section>
+
+	<Section ID="26">
+		<Item Cat="13" Index="111" Option1="53" Value1="8" Option2="64" Value2="60" Time="0" /> <!-- Topaz Ring --> 
+	</Section>
+
+	<Section ID="27">
+		<Item Cat="13" Index="112" Option1="53" Value1="8" Option2="52" Value2="6" Time="0" /> <!-- Amethyst Ring --> 
+	</Section>
+
+	<Section ID="28">
+		<Item Cat="13" Index="113" Option1="53" Value1="8" Option2="56" Value2="15" Time="0" /> <!-- Ruby Necklace --> 
+	</Section>
+
+	<Section ID="29">
+		<Item Cat="13" Index="114" Option1="53" Value1="8" Option2="1" Value2="10" Time="0" /> <!-- Emerald Necklace --> 
+	</Section>
+
+	<Section ID="30">
+		<Item Cat="13" Index="115" Option1="53" Value1="8" Option2="0" Value2="0" Time="0" /> <!-- Sapphire Necklace --> 
+	</Section>
+
+	<Section ID="31">
+		<Item Cat="13" Index="128" Option1="55" Value1="10" Option2="0" Value2="0" Time="-10" /> <!-- Hawk Figurine -->
+	</Section>
+
+	<Section ID="32">
+		<Item Cat="13" Index="129" Option1="56" Value1="10" Option2="0" Value2="0" Time="-10" /> <!-- Goat Figurine -->
+	</Section>
+
+	<Section ID="33">
+		<Item Cat="13" Index="130" Option1="4" Value1="50" Option2="0" Value2="0" Time="-10" /> <!-- Oak Charm -->
+	</Section>
+
+	<Section ID="34">
+		<Item Cat="13" Index="131" Option1="5" Value1="50" Option2="0" Value2="0" Time="-10" /> <!-- Maple Charm -->
+	</Section>
+
+	<Section ID="35">
+		<Item Cat="13" Index="132" Option1="4" Value1="100" Option2="70" Value2="500" Time="-10" /> <!-- Golden Oak Charm -->
+	</Section>
+
+	<Section ID="36">
+		<Item Cat="13" Index="133" Option1="5" Value1="150" Option2="69" Value2="50" Time="-10" /> <!-- Golden Maple Charm -->
+	</Section>
+
+	<Section ID="37">
+		<Item Cat="13" Index="134" Option1="7" Value1="120" Option2="0" Value2="0" Time="-10" /> <!-- Worn Horseshoe -->
+	</Section>
+
+	<Section ID="38">
+		<Item Cat="63" Index="254" Option1="0" Value1="0" Option2="0" Value2="0" Time="0" /> <!-- Unknown -->
+	</Section>
+
+	<Section ID="50">
+		<Item Cat="14" Index="163" Option1="0" Value1="0" Option2="0" Value2="0" Time="0" /> <!-- Vault Expansion Certificate -->
+	</Section>
+
+	<!-- <Section ID="51"> -->
+	<!-- 	<Item Cat="14" Index="172" Option1="0" Value1="0" Option2="0" Value2="0" Time="0" /> --> <!-- Magic Backpack 1 -->
+	<!-- </Section> -->
+
+	<!-- <Section ID="52"> -->
+	<!--	<Item Cat="14" Index="173" Option1="0" Value1="0" Option2="0" Value2="0" Time="0" /> --> <!-- Magic Backpack 2 -->
+	<!-- </Section> -->
+
+	<!-- <Section ID="53"> -->
+	<!--	<Item Cat="14" Index="174" Option1="0" Value1="0" Option2="0" Value2="0" Time="0" /> --> <!--Magic Backpack 3 -->
+	<!-- </Section> -->
+
+	<!-- <Section ID="54"> -->
+	<!--	<Item Cat="14" Index="175" Option1="0" Value1="0" Option2="0" Value2="0" Time="0" /> --> <!-- Magic Backpack 4 -->
+	<!-- </Section> -->
+
+	<!-- <Section ID="55"> -->
+	<!-- 	<Item Cat="14" Index="204" Option1="0" Value1="0" Option2="0" Value2="0" Time="0" /> --> <!-- Assistant Extension -->
+	<!-- </Section> -->
+
+	<!-- <Section ID="56"> -->
+	<!-- 	<Item Cat="14" Index="205" Option1="0" Value1="0" Option2="0" Value2="0" Time="0" /> --> <!-- Growing Support -->
+	<!-- </Section> -->
+
+	<Section ID="57">
+		<Item Cat="13" Index="177" Option1="87" Value1="50" Option2="0" Value2="0" Time="-10" /> <!-- Talisman of Ascension I -->
+	</Section>
+
+	<Section ID="58">
+		<Item Cat="13" Index="178" Option1="87" Value1="100" Option2="0" Value2="0" Time="-10" /> <!-- Talisman of Ascension II -->
+	</Section>
+
+	<Section ID="59">
+		<Item Cat="13" Index="179" Option1="87" Value1="200" Option2="0" Value2="0" Time="-10" /> <!-- Talisman of Ascension III -->
+	</Section>
+
+	<Section ID="60">
+		<Item Cat="13" Index="180" Option1="6" Value1="100" Option2="0" Value2="0" Time="0" /> <!-- Seal of Ascension II -->
+	</Section>
+
+	<Section ID="61">
+		<Item Cat="13" Index="181" Option1="6" Value1="100" Option2="0" Value2="0" Time="0" /> <!-- Master Seal of Ascension II -->
+	</Section>
+
+	<Section ID="62">
+		<Item Cat="14" Index="224" Option1="88" Value1="200" Option2="0" Value2="0" Time="1800" /> <!-- Blessing of Light -->
+	</Section>
+	
+	<Section ID="63">
+		<Item Cat="14" Index="225" Option1="3"  Value1="120" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Defense -->
+	</Section>
+
+	<Section ID="64">
+		<Item Cat="14" Index="226" Option1="15" Value1="60" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Wizardry -->
+	</Section>
+
+	<Section ID="65">
+		<Item Cat="14" Index="227" Option1="4" Value1="400" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Health -->
+	</Section>
+
+	<Section ID="66">
+		<Item Cat="14" Index="228" Option1="5" Value1="600" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Mana -->
+	</Section>
+
+	<Section ID="67">
+		<Item Cat="14" Index="229" Option1="14" Value1="60" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Wrath -->
+	</Section>
+
+	<Section ID="68">
+		<Item Cat="14" Index="230" Option1="53" Value1="4" Option2="4" Value2="200" Time="1800" /> <!-- Scroll Master of Recovery -->
+	</Section>
+
+	<Section ID="69">
+		<Item Cat="14" Index="231" Option1="55" Value1="25" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Battle -->
+	</Section>
+
+	<Section ID="70">
+		<Item Cat="14" Index="232" Option1="56" Value1="25" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Strengthener -->
+	</Section>
+
+	<!-- <Section ID="71"> -->
+	<!-- 	<Item Cat="14" Index="233" Option1="56" Value1="30" Option2="0" Value2="0" Time="1800" /> --> <!-- Unique Weapon Box -->
+	<!-- </Section> -->
+
+	<Section ID="72">
+		<Item Cat="14" Index="235" Option1="1" Value1="20" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Quickness -->
+	</Section>
+	
+	<Section ID="73">
+		<Item Cat="13" Index="2" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Horn of Uniria -->
+	</Section>
+
+	<Section ID="74">
+		<Item Cat="13" Index="3" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Horn of Dinorant -->
+	</Section>
+
+	<Section ID="75">
+		<Item Cat="13" Index="4" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Dark Horse -->
+	</Section>
+
+	<Section ID="76">
+		<Item Cat="13" Index="37" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Horn of Fenrir -->
+	</Section>
+	
+	<Section ID="77">
+		<Item Cat="14" Index="263" Option1="88" Value1="50" Option2="0" Value2="0"	Time="1800" /> <!-- Bless of Light (Low Grade) -->
+	</Section>
+	
+	<Section ID="78">
+		<Item Cat="14" Index="264" Option1="88" Value1="100" Option2="0" Value2="0"	Time="1800" /> <!-- Bless of Light (Middle Grade) -->
+	</Section>
+</ItemOptionManager>

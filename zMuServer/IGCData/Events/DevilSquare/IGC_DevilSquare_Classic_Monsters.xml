@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Devil Square monsters should be only managed trough this file
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### DevilSquare_Classic::Monster ###
+//	EventLevel: Defines event level the spawn applies to, starts from 0
+//	MapNumber: Map number to spawn the monsters at
+//
+// ### DevilSquare_Classic::Monster::Spawn ###
+//	Index: Index of monster to spawn, refer to IGC_MonsterList.xml
+//	Distance: Distance the monster is spawned from the defined start coordinated
+//	StartX: The start X coordinate of monster spawn area, must be greater or equal StartY
+//	StartY: The start Y coordinate of monster spawn area, must be lower or equal StartX
+//	EndX: The End X coordinate of monster spawn area, must be greater or equal EndY
+//	EndY: The End Y coordinate of monster spawn area, must be lower or equal EndX
+//	Count: Count of monsters to spawn
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<DevilSquare_Classic>
+	<Monster EventLevel="0" MapNumber="9"> <!-- Level 1 -->
+		<Spawn Index="17" Distance="30" StartX="119" StartY="80" EndX="150" EndY="115" Dir="-1" Count="35" /> <!-- Cyclops -->
+		<Spawn Index="15" Distance="30" StartX="119" StartY="80" EndX="150" EndY="115" Dir="-1" Count="35" /> <!-- Skeleton Archer -->
+	</Monster>
+	
+	<Monster EventLevel="1" MapNumber="9"> <!-- Level 2 -->
+		<Spawn Index="10" Distance="30" StartX="121" StartY="152" EndX="151" EndY="184" Dir="-1" Count="35" /> <!-- Dark Knight -->
+		<Spawn Index="39" Distance="30" StartX="121" StartY="152" EndX="151" EndY="184" Dir="-1" Count="35" /> <!-- Poison Shadow -->
+	</Monster>
+	
+	<Monster EventLevel="2" MapNumber="9"> <!-- Level 3 -->
+		<Spawn Index="41" Distance="30" StartX="49" StartY="138" EndX="79" EndY="173" Dir="-1" Count="35" /> <!-- Death Cow -->
+		<Spawn Index="37" Distance="30" StartX="49" StartY="138" EndX="79" EndY="173" Dir="-1" Count="35" /> <!-- Devil -->
+	</Monster>
+	
+	<Monster EventLevel="3" MapNumber="9"> <!-- Level 4 -->
+		<Spawn Index="64" Distance="30" StartX="53" StartY="74" EndX="83" EndY="109" Dir="-1" Count="35" /> <!-- Ogre Archer -->
+		<Spawn Index="65" Distance="30" StartX="53" StartY="74" EndX="83" EndY="109" Dir="-1" Count="35" /> <!-- Elite Ogre -->
+	</Monster>
+	
+	<Monster EventLevel="4" MapNumber="32"> <!-- Level 5 -->
+		<Spawn Index="294" Distance="30" StartX="120" StartY="80" EndX="150" EndY="115" Dir="-1" Count="35" /> <!-- Ax Warrior -->
+		<Spawn Index="60" Distance="30" StartX="120" StartY="80" EndX="150" EndY="115" Dir="-1" Count="35" /> <!-- Bloody Wolf -->
+	</Monster>
+	
+	<Monster EventLevel="5" MapNumber="32"> <!-- Level 6 -->
+		<Spawn Index="290" Distance="30" StartX="122" StartY="152" EndX="151" EndY="184" Dir="-1" Count="35" /> <!-- Lizard Warrior -->
+		<Spawn Index="57" Distance="30" StartX="122" StartY="152" EndX="151" EndY="184" Dir="-1" Count="35" /> <!-- Iron Wheel -->
+	</Monster>
+	
+	<Monster EventLevel="6" MapNumber="32"> <!-- Level 7 -->
+		<Spawn Index="434" Distance="30" StartX="50" StartY="138" EndX="79" EndY="173" Dir="-1" Count="35" /> <!-- Gigantis -->
+		<Spawn Index="435" Distance="30" StartX="50" StartY="138" EndX="79" EndY="173" Dir="-1" Count="35" /> <!-- Berserker -->
+	</Monster>
+</DevilSquare_Classic>

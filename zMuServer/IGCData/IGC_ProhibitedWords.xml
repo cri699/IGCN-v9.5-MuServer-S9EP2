@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ProhobitedWords::Restrict ###
+//	Word: a word to restrict from entire Game Play chatting
+//
+// ~ IMPORTANT ~ File must be saved with UTF-8 Without BOM encoding, one word per line (without any spaces)
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ProhibitedWords>
+	<Restrict Word="fuck" />
+	<Restrict Word="shit" />
+</ProhibitedWords>

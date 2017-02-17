@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// DROP MANAGER MAX ITEM: NO LIMIT
+//
+// ### SetItemDropManager ###
+//	DropUseRate: Chance rate of using drop from the system, n/1000000
+//
+// ### SetItemDropManager::Rule ###
+//	MonsterIndex: Index of monster to drop item from, -1 for all monsters, refer to IGC_MonsterList.xml
+//	MonsterMinLevel: Minimum level of a monster, 1~150 (must be lower or equal to MonsterMaxLevel), set -1 if monster index is greater than -1
+//	MonsterMaxLevel: Maximum level of a monster, 1~150 (must be greater or equal to MonsterMinLevel), set -1 if monster index greater than -1
+//	PlayerMinLevel: Minimum level of player to apply drop of items from the section (must be lower or equal to PlayerMaxLevel)
+//	PlayerMaxLevel: Maximum level of player to apply drop of items from the section (must be greater or equal to PlayerMinLevel)
+//	MapNumber: Map Number the drop of items applies to, -1 for all maps
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ For easier configuration use PlayerMaxLevel="MAX" to configure maximum level available for the server (automated sum of MaxNormalLevel and MaxMasterLevel)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### SetItemDropManager::Rule::ItemDrop ###
+//	Cat: Item category to drop ancients from, -1 to use random among all available item categories, refer to IGC_ItemList.xml
+//	MinLevel: Minimum level the item should be dropped with, 0~15 (must be lower or equal to ItemMaxLevel)
+//	MaxLevel: Maximum level of the item should be dropped with, 0~15 (must be greater or equal to ItemMinLevel)
+//	Count: Item count to drop at a time
+//	Skill: 0: no skill, -1: random (50/50% chance), 1: with skill
+//	Luck: 0: no luck, -1: random (50/50% chance), 1: with luck
+//	Option: 0: no option, -1: random, 1(+4), 2(+8), 3(+12), 4(+16), 5(+20), 6(+24), 7(+28): with specified option
+//	Exc:
+//		~ -1 - Random Exc options
+//		~ 0 - No Exc options, or sum of below values (63 - Full of Excellent):
+//		~ 1 - Mana recovery after Monster hunt +Mana/8
+//		~ 2 - Health recovery after Monster hunt +HP/8
+//		~ 4 - +7 Speed
+//		~ 8 - More Damage +2%
+//		~ 16 - More Damage +Level/20
+//		~ 32 - Excellent Damage Rate +10%
+//	DropRate: Drop Rate of actual item, max value per item is 2147483647 but sum of all DropRates of Items in single Monster section cannot be greater than 2147483647
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ System allows multiple sections of MonsterIndex -1. In case two or more Monster sections of index -1 present in a file for which Monster level ranges are partly same
+//~~ the system will draw a section to perform drop from on a basis of sections (of index -1) count, e.g. two of such sections will be 50/50%, three will be 33/33/33%, etc
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ System explanation:
+//~~	1. Kill Monster -> system makes a draw to decide whether use the drop from file or not, based on DropUseRate
+//~~		+ if draw failed then continues to next drop system in drop hierarchy
+//~~		+ if succeeded then checks against actual Monster index existence in file
+//~~			- if does not exist proceeds to next drop system in drop hierarchy
+//~~			- if exist and count of Monster section for actual monster is greater than 1 then makes a draw of Monster section to drop item from basing on count of sections, e.g. 4 sections for actual monster is equal to 25% chance for each
+//~~	2. Making a draw of item to drop basing on a sum of DropRate property of all items in actual Rule section. If section has single item only and DropRate is 1 then max
+//~~	   DropRate is 1, in other meaning 100% - 1/1. If section has e.g. two items and one is DropRate 10 and second is 1000 then max is 1010, what makes a drop rate of first item 10/1010 and second 1000/1010
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// Below settings are meant to be examples to present file structure usage
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<SetItemDropManager DropUseRate="500000">
+	<!-- <Rule MonsterIndex="-1" MonsterMinLevel="1" MonsterMaxLevel="150" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1"> -->
+	<!--	<ItemDrop Cat="-1" MinLevel="1" MaxLevel="1" Count="10" Skill="-1" Luck="-1" Option="-1" Exc="-1" DropRate="10000" /> -->
+	<!-- </Rule> -->
+</SetItemDropManager>

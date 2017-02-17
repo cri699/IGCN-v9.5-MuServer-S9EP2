@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### SkillCategory::Skill ###
+//	id: Index of skill, refer to SkillList.txt
+//	Type: Defines a skill type
+//		~ 0: Magic Attack (target-able spells)
+//		~ 1: BeAttack
+//		~ 2: Duration Magic (spells with duration, e.g. Twisting Slash)
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<SkillCategory>
+	<Skill Index="5" Type="0" /> <!-- Flame -->
+	<Skill Index="9" Type="1" /> <!-- Evil Spirit -->
+	<Skill Index="13" Type="1" /> <!-- Cometfall -->
+	<Skill Index="22" Type="0" /> <!-- Cyclone -->
+	<Skill Index="23" Type="0" /> <!-- Slash -->
+	<Skill Index="24" Type="1" /> <!-- Triple Shot -->
+	<Skill Index="38" Type="2" /> <!-- Decay -->
+	<Skill Index="39" Type="2" /> <!-- Ice Storm -->
+	<Skill Index="41" Type="2" /> <!-- Twisting Slash -->
+	<Skill Index="42" Type="2" /> <!-- Rageful Blow -->
+	<Skill Index="43" Type="0" /> <!-- Death Stab"-->
+	<Skill Index="51" Type="0" /> <!-- Ice Arrow -->
+	<Skill Index="52" Type="1" /> <!-- Penetration -->
+	<Skill Index="55" Type="2" /> <!-- Fire Slash -->
+	<Skill Index="56" Type="2" /> <!-- Power Slash -->
+	<Skill Index="61" Type="0" /> <!-- Fire Burst -->
+	<Skill Index="62" Type="2" /> <!-- Earthshake -->
+	<Skill Index="78" Type="1" /> <!-- Fire Scream -->
+	<Skill Index="214" Type="2" /> <!-- Drain Life -->
+	<Skill Index="215" Type="1" /> <!-- Chain Lightning -->
+	<Skill Index="221" Type="2" /> <!-- Weakness -->
+	<Skill Index="222" Type="2" /> <!-- Innovation -->
+	<Skill Index="230" Type="1" /> <!-- Lightning Shock -->
+	<Skill Index="232" Type="1" /> <!-- Strike of Destruction -->
+	<Skill Index="235" Type="1" /> <!-- Multi Shot -->
+	<Skill Index="237" Type="1" /> <!-- Gigantic Storm -->
+	<Skill Index="238" Type="1" /> <!-- Chaotic Diseier -->
+	<Skill Index="262" Type="1" /> <!-- Chain Drive -->
+    <Skill Index="263" Type="1" /> <!-- Dark Side -->
+    <Skill Index="264" Type="2" /> <!-- Dragon Roar -->
+    <Skill Index="265" Type="1" /> <!-- Dragon Slasher -->
+    <Skill Index="270" Type="1" /> <!-- Phoenix Shot -->
+</SkillCategory>

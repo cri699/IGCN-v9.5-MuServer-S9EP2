@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ChaosCastleSurvival ###
+//	Enable: Disables or Enables the event, 0/1
+//	MinPlayer: Minimum players participating the event to start it
+//	Minimum level of player to enter the event
+//	ExpMultiplier: General experience multiplier, float
+//
+// ### ChaosCastleSurvival::Time ###
+//	StartIn: Announcement appearance, time to start the event (minutes)
+//	Duration: Event duration time (minutes)
+//	TownSpawn: Time to teleport from event map after finished event (minutes)
+//	Notify: Time to display notification on all sub servers (minutes)
+//
+// ### ChaosCastleSurvival::Tournament ### - day of a month, must be six in a row
+//	EliminationOne: Day of a month, elimination (Stage 1)
+//	EliminationTwo: Day of a month, elimination (Stage 2)
+//	EliminationThree: Day of a month, elimination (Stage 3)
+//	SemiFinalOne: Day of a month, semi-final (Stage 1)
+//	SemiFinalTwo: Day of a month, semi-final (Stage 2)
+//	Final: Day of a month, final
+//
+// ### ChaosCastleSurvival::RewardRate ###
+//	FinalAward: Awards the finals winner with wings item, 0/1 - Item Cat: 12, Item Index: 266
+//
+// ### ChaosCastleSurvival::SingleBattle ### - sum of JoC, JoL and SetItem must be equal to 100
+//	JewelOfCreation: Chance of drop of Jewel of Creation for a winner of a single battle, 0-100%
+//	JoL: Chance of drop of Jewel of Life for a winner of a single battle, 0-100%
+//	SetItem: Chance of drop of Set Item (Ancient) for a winner of a single battle, 0-100%
+//
+// ### ChaosCastleSurvival::Gifts ### - monster may drop a gift item up to 6 at a time based on below rates
+//	First: Chance for a gift drop from a monster, n/100
+//	Second: Chance for a gift drop from a monster, n/100
+//	Third: Chance for a gift drop from a monster, n/100
+//	Fourth: Chance for a gift drop from a monster, n/100
+//	Fifth: Chance for a gift drop from a monster, n/100
+//	Sixth: Chance for a gift drop from a monster, n/100
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Reward selection depends from an event stage:
+//~~	Elimination: 14,254
+//~~	Semi-Finals: 14,256
+//~~	Final: 14,257
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ChaosCastleSurvival::FinalAward ###
+//	Cat: Category of the item, refer to IGC_itemList.xml
+//	Index: Index of the item, refer to IGC_itemList.xml
+//	Level: Level of final reward item, 0-15
+//	Durability: Durability of the item, 0-255
+//	Skill: Sets Skill for final reward, 0/1
+//	Luck: Sets Luck for final reward item, 0/1
+//	Option: Sets option for the final reward item, 0-7
+//	Exc: Mask of excellent options
+//	Duration: Time after which item will expire, seconds
+//
+// ### ChaosCastleSurvival::EventSchedule::Start ### - Final stage can be set only once
+//	Hour: Start Hour (0-23)
+//	Minute: Start Minute (0-59)
+//	Stage1: Battle Stage Type1, if elimination set 1 
+//	Stage2: Battle Stage Type2, if semi-final set 2
+//	Stage3: Battle Stage Type3, if final set 3
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ChaosCastleSurvival Enable="1" MinPlayer="2" MinLevel="280" ExpMultiplier="1.0">
+	<Time StartIn="5" Duration="10" TownSpawn="1" Notify="10" />
+	<TournamentCycleDay EliminationOne="16" EliminationTwo="17" EliminationThree="18" SemiFinalOne="19" SemiFinalTwo="20" Final="21" />
+
+	<RewardRate FinalAward="1">
+		<Gift First="30" Second="45" Third="60" Fourth="75" Fifth="90" Sixth="100" />
+		<FinalAward Cat="13" Index="276" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Exc="0" Duration="0" />
+	</RewardRate>
+	
+	<EventSchedule>
+		<Start Hour="1"  Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="2"  Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="3"  Minute="30" Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="4"  Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="5"  Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="6"  Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="7"  Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="8"  Minute="0"	 Stage1="1" Stage2="2" Stage3="3" />
+		<Start Hour="9"  Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="10" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="11" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="12" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="13" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="14" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="15" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="16" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="17" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="18" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="19" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="20" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="21" Minute="35" Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="22" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="23" Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+		<Start Hour="0"  Minute="0"	 Stage1="1" Stage2="2" Stage3="0" />
+	</EventSchedule>
+</ChaosCastleSurvival>

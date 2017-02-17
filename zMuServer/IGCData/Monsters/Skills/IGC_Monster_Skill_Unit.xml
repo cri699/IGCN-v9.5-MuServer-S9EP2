@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<MonsterSkill>
+	<Unit Number="1"  TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="1" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Thunder Break" />
+	<Unit Number="2"  TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="14" ElementSlot1="7"  ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Bloody Wind" />
+	<Unit Number="3"  TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="11" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Fire Ray" />
+	<Unit Number="4"  TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="17" ElementSlot1="23" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Very" />
+	<Unit Number="5"  TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="3" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Vampires Rick Touch" />
+	<Unit Number="6"  TargetType="2" ScopeType="-1" ScopeValue="6" Delay="300" ElementSlot0="16" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Dark Elf - Group Address" />
+	<Unit Number="7"  TargetType="2" ScopeType="-1" ScopeValue="6" Delay="300" ElementSlot0="13" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Dark Elf - Group Therapy" />
+	<Unit Number="8"  TargetType="1" ScopeType="-1" ScopeValue="6" Delay="300" ElementSlot0="1" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Dark Elf - Geom" />
+	<Unit Number="9"  TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="17" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Balram - The Direction" />
+	<Unit Number="10" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="3" ElementSlot1="4"  ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Death Spirit - Reduce Mana/AG" />
+	<Unit Number="11" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="7" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Soram - Push" />
+	<Unit Number="12" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="7" ElementSlot1="1"  ElementSlot2="17" ElementSlot3="-1" ElementSlot4="-1" Name="Balgass - Direct Land Hit" />
+	<Unit Number="13" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="7" ElementSlot1="1"  ElementSlot2="1"  ElementSlot3="-1" ElementSlot4="-1" Name="Balgass" />
+	<Unit Number="14" TargetType="1" ScopeType="1" ScopeValue="6" Delay="300" ElementSlot0="24" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Kentauros - Multi Shot" />
+	<Unit Number="15" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="25" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Persona - Demon" />
+	<Unit Number="16" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="26" ElementSlot1="27" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Twin Tail - Hair Attack" />
+	<Unit Number="17" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="28" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Dread - 2 times a peer" />
+	<Unit Number="18" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="29" ElementSlot1="30" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Nightmare - Dog Attack" />
+	<Unit Number="19" TargetType="1" ScopeType="1" ScopeValue="6" Delay="300" ElementSlot0="31" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Nightmare - Pot like" />
+	<Unit Number="20" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="-1" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Nightmare - Summon" />
+	<Unit Number="21" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="32" ElementSlot1="33" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Nightmare - Fire Jeans" />
+	<Unit Number="22" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="34" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Nightmare - Warp" />
+	<Unit Number="23" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="35" ElementSlot1="36" ElementSlot2="37" ElementSlot3="-1" ElementSlot4="-1" Name="Maya hand - Pressure" />
+	<Unit Number="24" TargetType="1" ScopeType="1" ScopeValue="6" Delay="300" ElementSlot0="38" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Maya hand - Power Wave" />
+	<Unit Number="25" TargetType="1" ScopeType="-1" ScopeValue="6" Delay="300" ElementSlot0="39" ElementSlot1="40" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Maya - Ice Storm" />
+	<Unit Number="26" TargetType="1" ScopeType="-1" ScopeValue="6" Delay="300" ElementSlot0="41" ElementSlot1="42" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Maya - Broken Shower" />
+	<Unit Number="27" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="1" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Ghosts - Stern" />
+	<Unit Number="28" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="8" ElementSlot1="1"  ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Ghost - dog" />
+	<Unit Number="29" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="43" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Roar" />
+	<Unit Number="30" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="44" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Break period" />
+	<Unit Number="31" TargetType="1" ScopeType="0" ScopeValue="2" Delay="300" ElementSlot0="45" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Anger Strike" />
+	<Unit Number="32" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="46" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Cooler Tin - Dog Ball" />
+	<Unit Number="33" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="47" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Blow" />
+	<Unit Number="34" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="48" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Selupan - Poison Ball" />
+	<Unit Number="35" TargetType="1" ScopeType="0" ScopeValue="8" Delay="300" ElementSlot0="49" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Selupan - Frost Storm" />
+	<Unit Number="36" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="50" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Selupan - Frost Shock" />
+	<Unit Number="37" TargetType="1" ScopeType="0" ScopeValue="4" Delay="300" ElementSlot0="51" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Selupan - Fall" />
+	<Unit Number="38" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="52" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Selupan - Recall" />
+	<Unit Number="39" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="53" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Selupan - Healing" />
+	<Unit Number="40" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="54" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Selupan - Icing" />
+	<Unit Number="41" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="55" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Selupan - Teleportation" /> 
+	<Unit Number="42" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="56" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Selupan - Invincible" />
+	<Unit Number="43" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="57" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Selupan - Berserk" />
+	<Unit Number="44" TargetType="5" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="58" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Shield bottle - Defense" />
+	<Unit Number="45" TargetType="3" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="59" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Shield bottle - Shield" />
+	<Unit Number="46" TargetType="4" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="60" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Healing Disease - Healing" />
+	<Unit Number="47" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="61" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Quartermaster - Skill 01" />
+	<Unit Number="48" TargetType="1" ScopeType="0" ScopeValue="3" Delay="300" ElementSlot0="61" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Quartermaster - Skill 02" />
+	<Unit Number="49" TargetType="1" ScopeType="1" ScopeValue="10" Delay="300" ElementSlot0="61" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Combat Instructor - Skill 03" />
+	<Unit Number="50" TargetType="3" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="61" ElementSlot1="62" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Knight Commander - Skill 04" />
+	<Unit Number="51" TargetType="3" ScopeType="0" ScopeValue="10" Delay="300" ElementSlot0="61" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Archmage - Pillar of Fire" />
+	<Unit Number="52" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" ElementSlot0="61" ElementSlot1="59" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Archmage - Wide Meteorite" />
+	<Unit Number="53" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" ElementSlot0="61" ElementSlot1="65" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Assassinated leader - Skill 06" />
+	<Unit Number="54" TargetType="1" ScopeType="0" ScopeValue="3" Delay="300" ElementSlot0="61" ElementSlot1="64" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Riders GM - Earth Shakes" />
+	<Unit Number="55" TargetType="3" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="61" ElementSlot1="62" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Riders GM - Bite" />
+	<Unit Number="56" TargetType="3" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="61" ElementSlot1="66" ElementSlot2="59" ElementSlot3="-1" ElementSlot4="-1" Name="Riders Director - Head of CEE" />
+	<Unit Number="57" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" ElementSlot0="61" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Dessler - Blade Door" />
+	<Unit Number="58" TargetType="1" ScopeType="1" ScopeValue="5" Delay="300" ElementSlot0="61" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Dessler - Skill 07" />
+	<!-- <Unit Number="59" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="67" ElementSlot1="68" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Berserk" /> -->
+	<Unit Number="60" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" ElementSlot0="61" ElementSlot1="59" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Vermont - Skill 08" />
+	<Unit Number="61" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" ElementSlot0="61" ElementSlot1="69" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Vermont - Skill 09" />
+	<Unit Number="62" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" ElementSlot0="61" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="El kaneu - Skill 14" />
+	<Unit Number="63" TargetType="1" ScopeType="0" ScopeValue="3" Delay="300" ElementSlot0="61" ElementSlot1="64" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="El kaneu - Skill 15" />
+	<Unit Number="64" TargetType="1" ScopeType="1" ScopeValue="3" Delay="300" ElementSlot0="61" ElementSlot1="70" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Ion -Blood Attack" />
+	<Unit Number="65" TargetType="1" ScopeType="0" ScopeValue="5" Delay="300" ElementSlot0="61" ElementSlot1="72" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Ion - Gigantik Storm" />
+	<Unit Number="66" TargetType="1" ScopeType="1" ScopeValue="5" Delay="300" ElementSlot0="61" ElementSlot1="73" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Ion - Flame" />
+	<Unit Number="67" TargetType="3" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="71" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Ion - General" />
+	<Unit Number="68" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="47" ElementSlot1="74" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Bloody Golem - Stern" />
+	<Unit Number="69" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="47" ElementSlot1="9"  ElementSlot2="5"  ElementSlot3="-1" ElementSlot4="-1" Name="Location Queen - Ice" />
+	<Unit Number="70" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="47" ElementSlot1="74" ElementSlot2="6" ElementSlot3="-1" ElementSlot4="-1" Name="Berserker - Stern Ball" />
+	<Unit Number="71" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="47" ElementSlot1="74" ElementSlot2="7" ElementSlot3="-1" ElementSlot4="-1" Name="Zeno Outsider - Stern" />
+	<Unit Number="72" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="47" ElementSlot1="74" ElementSlot2="5" ElementSlot3="-1" ElementSlot4="-1" Name="Safi Queen - Stern Room" />
+	<Unit Number="73" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="47" ElementSlot1="9"  ElementSlot2="7"  ElementSlot3="-1" ElementSlot4="-1" Name="Ice Nail Pin - Ice" />
+	<Unit Number="74" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="47" ElementSlot1="74" ElementSlot2="6" ElementSlot3="-1" ElementSlot4="-1" Name="Shadow Master - Stern" />
+	<Unit Number="75" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="47" ElementSlot1="27" ElementSlot2="6" ElementSlot3="-1" ElementSlot4="-1" Name="The Dark memeodeu - Solitary" />
+	<Unit Number="76" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="47" ElementSlot1="27" ElementSlot2="5" ElementSlot3="-1" ElementSlot4="-1" Name="The Dark Giant - Dokgong" />
+	<Unit Number="77" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="47" ElementSlot1="74" ElementSlot2="27" ElementSlot3="-1" ElementSlot4="-1" Name="Dark Iron Knight - Poison" />
+	<Unit Number="78" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" ElementSlot0="75" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Medusa - Curse Poison" />
+	<Unit Number="79" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" ElementSlot0="76" ElementSlot1="77" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Medusa - Chaotic" />
+	<Unit Number="80" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" ElementSlot0="72" ElementSlot1="77" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Medusa - Gigantik" />
+	<Unit Number="81" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" ElementSlot0="25" ElementSlot1="8"  ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Medusa - Evil" />
+	<Unit Number="82" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="78" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Salamander - 1 Hit Skill" />
+	<Unit Number="83" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="79" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Salamander - 2 Hits Kill" />
+	<Unit Number="84" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="80" ElementSlot1="81" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Salamander - German" />
+	<Unit Number="85" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="82" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Undine - 1 Hit Skill" />
+	<Unit Number="86" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="83" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Undine - Skill Strikes 2" />
+	<Unit Number="87" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="84" ElementSlot1="85" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Undine - Ice" />
+	<Unit Number="88" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="86" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Gnome - skill Hit 1" />
+	<Unit Number="89" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="87" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Gnome - Strike 2 Skill" />
+	<Unit Number="90" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="88" ElementSlot1="89" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Gnome - Stun" />
+	<Unit Number="91" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="90" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Silpideu - 1 Hit Skill" />
+	<Unit Number="92" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="91" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Silpideu - Skill Strikes 2" />
+	<Unit Number="93" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="92" ElementSlot1="93" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Silpideu - Push" />
+	<Unit Number="94" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="94" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Hill Lhasa - Hitting one Skill" />
+	<Unit Number="95" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="95" ElementSlot1="-1" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Hill Lhasa - Hitting Skills 2" />
+	<Unit Number="96" TargetType="1" ScopeType="-1" ScopeValue="0"  Delay="300" ElementSlot0="96" ElementSlot1="97" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Hill Lhasa - HP loss" />
+	<Unit Number="97" TargetType="3" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="98" ElementSlot1="102" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Lord Silvester - General Strike" />
+	<Unit Number="98" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="99" ElementSlot1="104" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Lord Silvester - Wind whirlwind" />
+	<Unit Number="99" TargetType="3" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="100" ElementSlot1="104" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Lord Silvester - Curse of the wind" />
+	<Unit Number="100" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" ElementSlot0="101" ElementSlot1="103" ElementSlot2="-1" ElementSlot3="-1" ElementSlot4="-1" Name="Lord Silvester - Wind called (summoned)" />
+</MonsterSkill>

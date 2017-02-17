@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// How the Shop System works like?
+//	Extended Shops system allowing for creation of in-game shop with any NPC. It is allowed to configure single NPC type in multiple
+//	locations with different store content using configuration below. Shop NPC spawn location is controlled from this file.
+//	Shops NPC spawn has been disabled from MonsterSetBase file. Any Shop NPC added in MSB will appear in game but will not operate as Shop
+//
+// ### ShopList::Shop section ###
+//	NPCIndex: Index of NPC, see MonsterList.xml
+//	PosX: X Coordinate of Shop NPC
+//	PosY: Y Coordinate of Shop NPC
+//	Dir: Position NPC looks at after spawn
+//		~ 0: Central
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//	VipType: Minimum VIP Level to use the shop
+// 		~ 0: Free and any VIP Type
+// 		~ 1: Player with Bronze, Silver, Gold, Platinum VIP can use the shop
+// 		~ 2: Silver, Gold, Platinum
+// 		~ 3: Gold, Platinum
+// 		~ 4: Platinum only 
+//		Or other defined VIP Type according to IGC_VipSettings.xml
+//	GMShop: Enables Game Master access only, 0/1
+//	FileName: Name of Shop file located in \IGCData\Shops\
+//	MossMerchant: defines a Moss Merchant Lottery Shop, only for NPC 492, should always be 1
+//	BattleCore: Defines a shop located on Battle Core server, if so set to 1
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ShopList>
+	<Shop NPCIndex="251" MapNumber="0"  PosX="116" PosY="141" Dir="3" VipType="0" GMShop="0" FileName="NPC(251)_Hanzo_the_Blacksmith.xml" /> <!-- Lorencia -->
+	<Shop NPCIndex="251" MapNumber="34" PosX="145" PosY="14"  Dir="1" VipType="0" GMShop="0" FileName="NPC(251)_Hanzo_the_Blacksmith.xml" /> <!-- CryWolf -->
+	<Shop NPCIndex="255" MapNumber="0"  PosX="123" PosY="135" Dir="1" VipType="0" GMShop="0" FileName="NPC(255)_Lumen_the_Barmaid.xml" /> <!-- Lorencia -->
+	<Shop NPCIndex="254" MapNumber="0"  PosX="118" PosY="113" Dir="3" VipType="0" GMShop="0" FileName="NPC(254)_Pasi_the_Mage.xml" /> <!-- Lorencia -->
+	<Shop NPCIndex="250" MapNumber="0"  PosX="183" PosY="137" Dir="2" VipType="0" GMShop="0" FileName="NPC(250)_Wandering_Merchant.xml" /> <!-- Lorencia -->
+	<Shop NPCIndex="248" MapNumber="0"  PosX="6"   PosY="145" Dir="2" VipType="0" GMShop="0" FileName="NPC(248)_Wandering_Merchant_Martin.xml" /> <!-- Lorencia -->
+	<Shop NPCIndex="253" MapNumber="0"  PosX="127" PosY="86"  Dir="2" VipType="0" GMShop="0" FileName="NPC(253)_Potion_Girl_Amy.xml" /> <!-- Lorencia -->
+	<Shop NPCIndex="244" MapNumber="2"  PosX="226" PosY="25"  Dir="3" VipType="0" GMShop="0" FileName="NPC(244)_Caren_the_Barmaid.xml" /> <!-- Devias -->
+	<Shop NPCIndex="245" MapNumber="2"  PosX="225" PosY="41"  Dir="3" VipType="0" GMShop="0" FileName="NPC(245)_Wizard_Izabel.xml" /> <!-- Devias -->
+	<Shop NPCIndex="246" MapNumber="2"  PosX="186" PosY="47"  Dir="3" VipType="0" GMShop="0" FileName="NPC(246)_Weapons_Merchant_Zienna.xml" /> <!-- Devias -->
+	<Shop NPCIndex="243" MapNumber="3"  PosX="195" PosY="124" Dir="2" VipType="0" GMShop="0" FileName="NPC(243)_Eo_the_Craftsman.xml" /> <!-- Noria -->
+	<Shop NPCIndex="242" MapNumber="3"  PosX="173" PosY="125" Dir="1" VipType="0" GMShop="0" FileName="NPC(242)_Elf_Lala.xml" /> <!-- Noria -->
+	<Shop NPCIndex="230" MapNumber="0"  PosX="62"  PosY="130" Dir="3" VipType="0" GMShop="0" FileName="NPC(230)_Wandering_Merchant_Alex.xml" /> <!-- Lorencia -->
+	<Shop NPCIndex="231" MapNumber="2"  PosX="8"   PosY="77"  Dir="3" VipType="0" GMShop="0" FileName="NPC(231)_Thompson_Kenel.xml" /> <!-- Devias -->
+	<Shop NPCIndex="376" MapNumber="30" PosX="90"  PosY="44"  Dir="1" VipType="0" GMShop="0" FileName="NPC(376)_Pamela_the_Supplier.xml" /> <!-- Valley of Loren -->
+	<Shop NPCIndex="377" MapNumber="30" PosX="89"  PosY="218" Dir="3" VipType="0" GMShop="0" FileName="NPC(377)_Angela the Supplier.xml" /> <!-- Valley of Loren -->
+	<Shop NPCIndex="379" MapNumber="2"  PosX="32"  PosY="31"  Dir="3" VipType="0" GMShop="0" FileName="NPC(379)_Natasha_Firecracker_Merchant.xml" /> <!-- Devias -->
+	<Shop NPCIndex="415" MapNumber="51" PosX="44"  PosY="229" Dir="1" VipType="0" GMShop="0" FileName="NPC(415)_Silvia.xml" /> <!-- Elbeland -->
+	<Shop NPCIndex="416" MapNumber="51" PosX="29"  PosY="236" Dir="2" VipType="0" GMShop="0" FileName="NPC(416)_Rhea.xml" /> <!-- Elbeland -->
+	<Shop NPCIndex="417" MapNumber="51" PosX="36"  PosY="219" Dir="2" VipType="0" GMShop="0" FileName="NPC(417)_Marce.xml" /> <!-- Elbeland -->
+	<Shop NPCIndex="492" MapNumber="51" PosX="22"  PosY="225" Dir="2" VipType="0" GmShop="0" MossMerchant="1" FileName="NPC(492)_Moss.xml" /> <!-- Elbeland -->
+	<Shop NPCIndex="545" MapNumber="79" PosX="113" PosY="116" Dir="3" VipType="0" GMShop="0" FileName="NPC(545)_Christine_the_Merchant.xml" /> <!-- Loren Market -->
+	<Shop NPCIndex="577" MapNumber="80" PosX="121" PosY="102" Dir="3" VipType="0" GMShop="0" FileName="NPC(577)_Leina_the_Merchant.xml" /> <!-- Karutan 1 -->
+	<Shop NPCIndex="578" MapNumber="80" PosX="117" PosY="126" Dir="3" VipType="0" GMShop="0" FileName="NPC(578)_Weapons_Merchant_Bolo.xml" /> <!-- Karutan 1 -->
+	<Shop NPCIndex="583" MapNumber="91" PosX="55"  PosY="195" Dir="2" VipType="0" GmShop="0" FileName="NPC(583)_Jin.xml" /> <!-- Arca Battle ~ Season 8 and later only -->
+	<Shop NPCIndex="604" MapNumber="92" PosX="56"  PosY="202" Dir="2" VipType="0" GmShop="0" FileName="NPC(604)_Jin.xml" /> <!-- Arca Battle ~ Season 8 and later only -->
+	<Shop NPCIndex="259" MapNumber="24" PosX="7"   PosY="19"  Dir="2" VipType="0" GmShop="0" FileName="NPC(259)_Oracle_Layla.xml" /> <!-- Kalima 1 -->
+	<Shop NPCIndex="259" MapNumber="25" PosX="7"   PosY="19"  Dir="2" VipType="0" GmShop="0" FileName="NPC(259)_Oracle_Layla.xml" /> <!-- Kalima 2 -->
+	<Shop NPCIndex="259" MapNumber="26" PosX="7"   PosY="19"  Dir="2" VipType="0" GmShop="0" FileName="NPC(259)_Oracle_Layla.xml" /> <!-- Kalima 3 -->
+	<Shop NPCIndex="259" MapNumber="27" PosX="7"   PosY="19"  Dir="2" VipType="0" GmShop="0" FileName="NPC(259)_Oracle_Layla.xml" /> <!-- Kalima 4 -->
+	<Shop NPCIndex="259" MapNumber="28" PosX="7"   PosY="19"  Dir="2" VipType="0" GmShop="0" FileName="NPC(259)_Oracle_Layla.xml" /> <!-- Kalima 5 -->
+	<Shop NPCIndex="259" MapNumber="29" PosX="7"   PosY="19"  Dir="2" VipType="0" GmShop="0" FileName="NPC(259)_Oracle_Layla.xml" /> <!-- Kalima 6 -->
+	<Shop NPCIndex="259" MapNumber="36" PosX="7"   PosY="19"  Dir="2" VipType="0" GmShop="0" FileName="NPC(259)_Oracle_Layla.xml" /> <!-- Kalima 7 -->
+	<Shop NPCIndex="239" MapNumber="6"	PosX="72"  PosY="164" Dir="1" VIPType="0" GMShop="0" FileName="NPC(239)_Arena_Guard.xml" /> <!-- Arena -->
+	<Shop NPCIndex="683" MapNumber="79"	PosX="128"  PosY="121" Dir="2" VIPType="0" GMShop="0" BattleCore="1" FileName="NPC(683)_Marce_B.xml" /> <!-- Loren Market -->
+	<Shop NPCIndex="684" MapNumber="79"	PosX="128"  PosY="133" Dir="2" VIPType="0" GMShop="0" BattleCore="1" FileName="NPC(684)_Silvia_B.xml" /> <!-- Loren Market -->
+	<Shop NPCIndex="685" MapNumber="79"	PosX="139"  PosY="140" Dir="2" VIPType="0" GMShop="0" BattleCore="1" FileName="NPC(685)_Izabel_B.xml" /> <!-- Loren Market -->
+	<Shop NPCIndex="686" MapNumber="79"	PosX="134"  PosY="127" Dir="2" VIPType="0" GMShop="0" BattleCore="1" FileName="NPC(686)_Sophia_(repair)_B.xml" /> <!-- Loren Market -->
+	<Shop NPCIndex="687" MapNumber="79"	PosX="116"  PosY="115" Dir="2" VIPType="0" GMShop="0" BattleCore="1" FileName="NPC(687)_Bolo_(repair)_B.xml" /> <!-- Loren Market -->
+	<Shop NPCIndex="688" MapNumber="79"	PosX="135"  PosY="112" Dir="2" VIPType="0" GMShop="0" BattleCore="1" FileName="NPC(688)_Christine_B.xml" /> <!-- Loren Market -->
+
+	
+</ShopList>

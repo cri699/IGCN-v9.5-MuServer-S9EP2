@@ -1,0 +1,65 @@
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ NOTE: Monsters count and types should not be modified
+//~~ Modification of the file may lead in range of issues
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### RaklionEvent::Monster ###
+//	Group: Group of the monster, 0-2
+//	Index: Index of the monster, refer to IGC_MonsterList.xml
+//	MapNumber: Map number the monster spawns on, refer to IGC_MapList.xml
+//	Distance: Distance the monsters spawn from start coordinates location
+//	StartX: Start X coordinate of monster spawn
+//	StartY: Start Y coordinate of monster spawn
+//	Dir: Direction the monster looks at after spawn
+//		~ 0: Central
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<RaklionEvent>
+	<Monster Group="0" Index="459" MapNumber="58" Distance="0" StartX="145" StartY="31" Dir="-1" /> <!-- Selupan -->
+	<Monster Group="1" Index="460" MapNumber="58" Distance="0" StartX="141" StartY="27" Dir="0" /> <!-- Spider Eggs 1 -->
+	<Monster Group="1" Index="461" MapNumber="58" Distance="0" StartX="141" StartY="28" Dir="0" /> <!-- Spider Eggs 2 -->
+	<Monster Group="1" Index="462" MapNumber="58" Distance="0" StartX="142" StartY="28" Dir="0" /> <!-- Spider Eggs 3 -->
+	<Monster Group="1" Index="460" MapNumber="58" Distance="0" StartX="146" StartY="34" Dir="0" /> <!-- Spider Eggs 1 -->
+	<Monster Group="1" Index="462" MapNumber="58" Distance="0" StartX="147" StartY="34" Dir="0" /> <!-- Spider Eggs 3 -->
+	<Monster Group="1" Index="461" MapNumber="58" Distance="0" StartX="146" StartY="33" Dir="0" /> <!-- Spider Eggs 2 -->
+	<Monster Group="1" Index="460" MapNumber="58" Distance="0" StartX="152" StartY="31" Dir="0" /> <!-- Spider Eggs 1 -->
+	<Monster Group="1" Index="460" MapNumber="58" Distance="0" StartX="152" StartY="30" Dir="0" /> <!-- Spider Eggs 1 -->
+	<Monster Group="1" Index="461" MapNumber="58" Distance="0" StartX="151" StartY="30" Dir="0" /> <!-- Spider Eggs 2 -->
+	<Monster Group="1" Index="462" MapNumber="58" Distance="0" StartX="146" StartY="29" Dir="0" /> <!-- Spider Eggs 3 -->
+	<Monster Group="1" Index="462" MapNumber="58" Distance="0" StartX="146" StartY="30" Dir="0" /> <!-- Spider Eggs 3 -->
+	<Monster Group="1" Index="461" MapNumber="58" Distance="0" StartX="147" StartY="29" Dir="0" /> <!-- Spider Eggs 2 -->
+	<Monster Group="1" Index="460" MapNumber="58" Distance="0" StartX="145" StartY="24" Dir="0" /> <!-- Spider Eggs 1 -->
+	<Monster Group="1" Index="460" MapNumber="58" Distance="0" StartX="144" StartY="24" Dir="0" /> <!-- Spider Eggs 1 -->
+	<Monster Group="1" Index="461" MapNumber="58" Distance="0" StartX="144" StartY="25" Dir="0" /> <!-- Spider Eggs 2 -->	
+	<Monster Group="2" Index="457" MapNumber="58" Distance="30" StartX="144" StartY="25" Dir="-1" /> <!-- Coolutin -->
+	<Monster Group="2" Index="457" MapNumber="58" Distance="30" StartX="144" StartY="29" Dir="-1" /> <!-- Coolutin -->
+	<Monster Group="2" Index="457" MapNumber="58" Distance="30" StartX="144" StartY="32" Dir="-1" /> <!-- Coolutin -->
+	<Monster Group="2" Index="457" MapNumber="58" Distance="30" StartX="144" StartY="35" Dir="-1" /> <!-- Coolutin -->
+	<Monster Group="2" Index="457" MapNumber="58" Distance="30" StartX="144" StartY="38" Dir="-1" /> <!-- Coolutin -->
+	<Monster Group="2" Index="457" MapNumber="58" Distance="30" StartX="153" StartY="24" Dir="-1" /> <!-- Coolutin -->
+	<Monster Group="2" Index="457" MapNumber="58" Distance="30" StartX="153" StartY="28" Dir="-1" /> <!-- Coolutin -->
+	<Monster Group="2" Index="457" MapNumber="58" Distance="30" StartX="153" StartY="32" Dir="-1" /> <!-- Coolutin -->
+	<Monster Group="2" Index="457" MapNumber="58" Distance="30" StartX="153" StartY="35" Dir="-1" /> <!-- Coolutin -->
+	<Monster Group="2" Index="457" MapNumber="58" Distance="30" StartX="153" StartY="38" Dir="-1" /> <!-- Coolutin -->
+</RaklionEvent>

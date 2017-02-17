@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//
+// Type :  0 [attack]
+//   1 [attack: Attack]
+//   2 [constraint: penetrating defenses]
+//  20 []
+//  10 [treatment]
+//  21 [treatment:]
+//  30 [special treatment groups: subpoena, summons Night Mare]
+//       31 [Special: Shift]
+//  32 [Special: Night Mare recall]
+// Unit :   1 [Thunder]
+//   2 [brake]
+//   3 [wind Bloody Fire vampire Ray]
+//   4 [Rick]
+//   5 [so]
+//   6 [dakeuelpeu touch - so hwansul Group]
+//         7 [dakeuelpeu - Group therapy dakeuelpeu]
+//   8 [-]
+//   9 [Balaam geomgi - Coming off]
+//  10 [Death Spirit - AG reduced mana]
+//  11 [soram - Push]
+//        12 [balgaseu - Direct hit land balgaseu -10 jabegi]
+//  13 []
+//  18 [dokseukil dolgaebaram hwayeomjin]
+//  19 []
+//  20 [summoned] 
+//  21 []
+//  22 [warp]
+//        23 [Maya uison - Maya uison pressure]
+//  24 [-] 
+//  25 [Power Wave Maya - Ice Storm: Shift] 
+//  26 [Maya - Broken shower: All offensive]
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+
+<MonsterSkill>
+<!-- Aida -->
+	<!-- <Skill MonsterIndex="304" Type0="0" Unit0="4" Type1="0" Unit1="1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Witch Queen" /> -->
+	<!-- <Skill MonsterIndex="305" Type0="0" Unit0="5" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Blue Golem" /> -->
+	<Skill MonsterIndex="309" Type0="0" Unit0="2" Type1="0" Unit1="3" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Hell Maine" />
+<!-- Crywolf -->
+	<Skill MonsterIndex="340" Type0="30" Unit0="6" Type1="21" Unit1="7" Type2="0" Unit2="8" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Dark Elf" />
+	<Skill MonsterIndex="341" Type0="0" Unit0="11" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Soram" />
+	<Skill MonsterIndex="344" Type0="0" Unit0="9" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Balram" />
+	<Skill MonsterIndex="345" Type0="0" Unit0="10" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Death Spirit" />
+	<Skill MonsterIndex="349" Type0="0" Unit0="12" Type1="0" Unit1="13" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Balgass" />
+<!-- Kanturu -->
+	<Skill MonsterIndex="355" Type0="-1" Unit0="-1" Type1="0" Unit1="14" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Kentauros" />
+	<Skill MonsterIndex="358" Type0="-1" Unit0="-1" Type1="0" Unit1="15" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Persona" />
+	<Skill MonsterIndex="359" Type0="-1" Unit0="-1" Type1="0" Unit1="16" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Twin Tail" />
+	<Skill MonsterIndex="360" Type0="-1" Unit0="-1" Type1="0" Unit1="17" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Dreadfear" />
+	<Skill MonsterIndex="361" Type0="0" Unit0="18" Type1="1" Unit1="19" Type2="30" Unit2="20" Type3="2" Unit3="21" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Nightmare" />
+	<Skill MonsterIndex="362" Type0="0" Unit0="23" Type1="2" Unit1="24" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Left Hands of Maya" />
+	<Skill MonsterIndex="363" Type0="0" Unit0="23" Type1="2" Unit1="24" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Right Hands of Maya" />
+	<Skill MonsterIndex="364" Type0="31" Unit0="25" Type1="1" Unit1="26" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Maya" />
+<!-- Illusion Temple -->
+	<Skill MonsterIndex="388" Type0="0" Unit0="28" Type1="0" Unit1="27" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Illusion Sorcerer Spirit" />
+	<Skill MonsterIndex="391" Type0="0" Unit0="28" Type1="0" Unit1="27" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Illusion Sorcerer Spirit" />
+	<Skill MonsterIndex="394" Type0="0" Unit0="28" Type1="0" Unit1="27" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Illusion Sorcerer Spirit" />
+	<Skill MonsterIndex="397" Type0="0" Unit0="28" Type1="0" Unit1="27" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Illusion Sorcerer Spirit" />
+	<Skill MonsterIndex="400" Type0="0" Unit0="28" Type1="0" Unit1="27" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Illusion Sorcerer Spirit" />
+	<Skill MonsterIndex="403" Type0="0" Unit0="28" Type1="0" Unit1="27" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Illusion Sorcerer Spirit" />
+<!-- Balgass -->
+	<Skill MonsterIndex="412" Type0="0" Unit0="8" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Dark Elf (Trainee Soldier)" />
+	<Skill MonsterIndex="440" Type0="0" Unit0="8" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Dark Elf" />
+<!-- Raklion -->
+	<Skill MonsterIndex="454" Type0="0" Unit0="29" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Ice Walker" />
+	<Skill MonsterIndex="455" Type0="0" Unit0="30" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Giant Mammoth" />
+	<Skill MonsterIndex="456" Type0="0" Unit0="31" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Ice Giant" />
+	<Skill MonsterIndex="457" Type0="0" Unit0="32" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Coolutin" />
+	<Skill MonsterIndex="458" Type0="0" Unit0="33" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Iron Knight" />
+	<!-- <Skill MonsterIndex="459" Type0="31" Unit0="37" Type1="0" Unit1="34" Type2="0" Unit2="35" Type3="0" Unit3="36" Type4="30" Unit4="38" Type5="20" Unit5="39" Type6="0" Unit6="40" Type7="0" Unit7="41" Type8="10" Unit8="42" Type9="-1" Unit9="-1" Name="Selupan" /> -->
+	<Skill MonsterIndex="459" Type0="31" Unit0="37" Type1="0" Unit1="34" Type2="0" Unit2="35" Type3="0" Unit3="36" Type4="30" Unit4="38" Type5="20" Unit5="39" Type6="0" Unit6="40" Type7="0" Unit7="41" Type8="10" Unit8="42" Type9="1"  Unit9="43" Name="Selupan" />
+<!-- Imperial Fort -->
+	<Skill MonsterIndex="504" Type0="0" Unit0="67" Type1="0" Unit1="64" Type2="0" Unit2="65" Type3="0" Unit3="66" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Gaion Kharein" />
+	<Skill MonsterIndex="505" Type0="-1" Unit0="-1" Type1="0" Unit1="55" Type2="0" Unit2="61" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Jerint" />
+	<Skill MonsterIndex="506" Type0="-1" Unit0="-1" Type1="0" Unit1="60" Type2="0" Unit2="52" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Raymond" />
+	<Skill MonsterIndex="507" Type0="-1" Unit0="-1" Type1="0" Unit1="62" Type2="0" Unit2="63" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Erkanne" />
+	<Skill MonsterIndex="508" Type0="-1" Unit0="-1" Type1="0" Unit1="57" Type2="0" Unit2="58" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Destler" />
+	<Skill MonsterIndex="509" Type0="-1" Unit0="-1" Type1="0" Unit1="60" Type2="0" Unit2="61" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Vermont" />
+	<Skill MonsterIndex="510" Type0="-1" Unit0="-1" Type1="0" Unit1="58" Type2="0" Unit2="60" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Kato" />
+	<Skill MonsterIndex="511" Type0="-1" Unit0="-1" Type1="0" Unit1="58" Type2="0" Unit2="60" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Galia" />
+	<Skill MonsterIndex="512" Type0="-1" Unit0="-1" Type1="0" Unit1="47" Type2="0" Unit2="48" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Quarter Master" />
+	<Skill MonsterIndex="513" Type0="-1" Unit0="-1" Type1="0" Unit1="47" Type2="0" Unit2="49" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Combat Instructor" />
+	<Skill MonsterIndex="514" Type0="-1" Unit0="-1" Type1="0" Unit1="47" Type2="0" Unit2="50" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Knight Commander" />
+	<Skill MonsterIndex="515" Type0="-1" Unit0="-1" Type1="0" Unit1="51" Type2="0" Unit2="52" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Grand Wizard" />
+	<Skill MonsterIndex="516" Type0="-1" Unit0="-1" Type1="0" Unit1="47" Type2="0" Unit2="53" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Master Assassin" />
+	<Skill MonsterIndex="517" Type0="-1" Unit0="-1" Type1="0" Unit1="54" Type2="0" Unit2="55" Type3="0" Unit3="56" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Cavalry Captain" />
+	<Skill MonsterIndex="518" Type0="-1" Unit0="-1" Type1="0" Unit1="44" Type2="0" Unit2="45" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Shield Bearer" />
+	<!-- <Skill MonsterIndex="519" Type0="-1" Unit0="-1" Type1="44" Unit1="46" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Medic" /> -->
+	<Skill MonsterIndex="519" Type0="-1" Unit0="-1" Type1="0" Unit1="46" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Medic" />
+	<!-- <Skill MonsterIndex="520" Type0="-1" Unit0="-1" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Knights" /> -->
+	<!-- <Skill MonsterIndex="521" Type0="-1" Unit0="-1" Type1="-1" Unit1="-1" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Bodyguard" /> -->
+	<Skill MonsterIndex="551" Type0="-1" Unit0="-1" Type1="0" Unit1="68" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Bloody Golem" />
+	<Skill MonsterIndex="552" Type0="-1" Unit0="-1" Type1="0" Unit1="69" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Bloody Witch Queen" />
+	<Skill MonsterIndex="553" Type0="-1" Unit0="-1" Type1="0" Unit1="70" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Berserker Warrior" />
+	<Skill MonsterIndex="556" Type0="-1" Unit0="-1" Type1="0" Unit1="71" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Genocider Warrior" />
+	<Skill MonsterIndex="557" Type0="-1" Unit0="-1" Type1="0" Unit1="72" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Sapi Queen" />
+	<Skill MonsterIndex="558" Type0="-1" Unit0="-1" Type1="0" Unit1="73" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Ice Napin" />
+	<Skill MonsterIndex="559" Type0="-1" Unit0="-1" Type1="0" Unit1="74" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Shadow Master" />
+	<Skill MonsterIndex="560" Type0="-1" Unit0="-1" Type1="0" Unit1="72" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Sapi Queen" />
+	<Skill MonsterIndex="562" Type0="-1" Unit0="-1" Type1="0" Unit1="75" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Dark Mammoth" />
+	<Skill MonsterIndex="563" Type0="-1" Unit0="-1" Type1="0" Unit1="76" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Dark Giant" />
+	<Skill MonsterIndex="565" Type0="-1" Unit0="-1" Type1="0" Unit1="77" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Dark Iron Knight" />
+	<Skill MonsterIndex="566" Type0="0" Unit0="78" Type1="0" Unit1="79" Type2="0" Unit2="80" Type3="0" Unit3="81" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Mercenary Guild Manager Tercia" />
+	<Skill MonsterIndex="592" Type0="-1" Unit0="-1" Type1="0" Unit1="85" Type2="0" Unit2="86" Type3="0" Unit3="87" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Undine" />
+	<Skill MonsterIndex="593" Type0="-1" Unit0="-1" Type1="0" Unit1="82" Type2="0" Unit2="83" Type3="0" Unit3="84" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Salamander" />
+	<Skill MonsterIndex="594" Type0="-1" Unit0="-1" Type1="0" Unit1="91" Type2="0" Unit2="92" Type3="0" Unit3="93" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Sylphid" />
+	<Skill MonsterIndex="595" Type0="-1" Unit0="-1" Type1="0" Unit1="88" Type2="0" Unit2="89" Type3="0" Unit3="90" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Gnome" />
+	<Skill MonsterIndex="596" Type0="-1" Unit0="-1" Type1="0" Unit1="94" Type2="0" Unit2="95" Type3="0" Unit3="96" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Hellraiser" />
+	<Skill MonsterIndex="611" Type0="-1" Unit0="-1" Type1="0" Unit1="82" Type2="0" Unit2="83" Type3="0" Unit3="84" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Sellihoden" />
+	<Skill MonsterIndex="612" Type0="-1" Unit0="-1" Type1="0" Unit1="85" Type2="0" Unit2="86" Type3="0" Unit3="87" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Ukanva" />
+	<Skill MonsterIndex="613" Type0="-1" Unit0="-1" Type1="0" Unit1="91" Type2="0" Unit2="92" Type3="0" Unit3="93" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Silla" />
+	<Skill MonsterIndex="614" Type0="-1" Unit0="-1" Type1="0" Unit1="88" Type2="0" Unit2="89" Type3="0" Unit3="90" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Normus" />
+	<Skill MonsterIndex="615" Type0="-1" Unit0="-1" Type1="0" Unit1="94" Type2="0" Unit2="95" Type3="0" Unit3="96" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Muff" />
+<!-- Acheron Monsters 1 -->
+	<Skill MonsterIndex="632" Type0="-1" Unit0="-1" Type1="0" Unit1="85" Type2="0" Unit2="86" Type3="0" Unit3="87" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Cursed Undine" />
+	<Skill MonsterIndex="633" Type0="-1" Unit0="-1" Type1="0" Unit1="82" Type2="0" Unit2="83" Type3="0" Unit3="84" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Cursed Salamander" />
+	<Skill MonsterIndex="634" Type0="-1" Unit0="-1" Type1="0" Unit1="91" Type2="0" Unit2="92" Type3="0" Unit3="93" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Cursed Sylphid" />
+	<Skill MonsterIndex="635" Type0="-1" Unit0="-1" Type1="0" Unit1="88" Type2="0" Unit2="89" Type3="0" Unit3="90" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Cursed Gnome" />
+	<Skill MonsterIndex="636" Type0="-1" Unit0="-1" Type1="0" Unit1="94" Type2="0" Unit2="95" Type3="0" Unit3="96" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Cursed Hellraiser" />
+<!-- Acheron Monsters 2 -->
+	<Skill MonsterIndex="637" Type0="-1" Unit0="-1" Type1="0" Unit1="82" Type2="0" Unit2="83" Type3="0" Unit3="84" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Cursed Sellihoden" />
+	<Skill MonsterIndex="638" Type0="-1" Unit0="-1" Type1="0" Unit1="85" Type2="0" Unit2="86" Type3="0" Unit3="87" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Cursed Ukanva" />
+	<Skill MonsterIndex="639" Type0="-1" Unit0="-1" Type1="0" Unit1="91" Type2="0" Unit2="92" Type3="0" Unit3="93" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Cursed Silla" />
+	<Skill MonsterIndex="640" Type0="-1" Unit0="-1" Type1="0" Unit1="88" Type2="0" Unit2="89" Type3="0" Unit3="90" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Cursed Normus" />
+	<Skill MonsterIndex="641" Type0="-1" Unit0="-1" Type1="0" Unit1="94" Type2="0" Unit2="95" Type3="0" Unit3="96" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Cursed Muff" />
+	<Skill MonsterIndex="656" Type0="0" Unit0="2" Type1="0" Unit1="3" Type2="-1" Unit2="-1" Type3="-1" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Golden Hell Maine" />
+<!-- Uruk Mountain -->
+	<Skill MonsterIndex="673"  Type0="0" Unit0="97" Type1="0" Unit1="98" Type2="0" Unit2="99" Type3="0" Unit3="-1" Type4="-1" Unit4="-1" Type5="-1" Unit5="-1" Type6="-1" Unit6="-1" Type7="-1" Unit7="-1" Type8="-1" Unit8="-1" Type9="-1" Unit9="-1" Name="Lord Silvester" />
+</MonsterSkill>
+

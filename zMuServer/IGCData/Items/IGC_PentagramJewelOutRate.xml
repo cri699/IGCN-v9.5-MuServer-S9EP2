@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### PentagramSystem::Errtel ###
+//	ID: Incremental and Unique Index
+//	Rank: Rank of Errtel being mounted in the Pentagram
+//	Level: Level of Errtel being mounted in the Pentagram
+//	Rate: Chance for Errtel Extraction from the Pentagram (n/10000)
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<PentagramSystem>
+	<Errtel ID="0"  Rank="1" Level="0"  Rate="10000" />
+	<Errtel ID="1"  Rank="1" Level="1"  Rate="10000" />
+	<Errtel ID="2"  Rank="1" Level="2"  Rate="10000" />
+	<Errtel ID="3"  Rank="1" Level="3"  Rate="9500" />
+	<Errtel ID="4"  Rank="1" Level="4"  Rate="9500" />
+	<Errtel ID="5"  Rank="1" Level="5"  Rate="9500" />
+	<Errtel ID="6"  Rank="1" Level="6"  Rate="9000" />
+	<Errtel ID="7"  Rank="1" Level="7"  Rate="9000" />
+	<Errtel ID="8"  Rank="1" Level="8"  Rate="9000" />
+	<Errtel ID="9"  Rank="1" Level="9"  Rate="8500" />
+	<Errtel ID="10" Rank="1" Level="10" Rate="8500" />
+	<Errtel ID="11" Rank="2" Level="0"  Rate="9000" />
+	<Errtel ID="12" Rank="2" Level="1"  Rate="9000" />
+	<Errtel ID="13" Rank="2" Level="2"  Rate="9000" />
+	<Errtel ID="14" Rank="2" Level="3"  Rate="9000" />
+	<Errtel ID="15" Rank="2" Level="4"  Rate="8500" />
+	<Errtel ID="16" Rank="2" Level="5"  Rate="8500" />
+	<Errtel ID="17" Rank="2" Level="6"  Rate="8500" />
+	<Errtel ID="18" Rank="2" Level="7"  Rate="8000" />
+	<Errtel ID="19" Rank="2" Level="8"  Rate="8000" />
+	<Errtel ID="20" Rank="2" Level="9"  Rate="7500" />
+	<Errtel ID="21" Rank="2" Level="10" Rate="7500" />
+	<Errtel ID="22" Rank="3" Level="0"  Rate="8000" />
+	<Errtel ID="23" Rank="3" Level="1"  Rate="8000" />
+	<Errtel ID="24" Rank="3" Level="2"  Rate="8000" />
+	<Errtel ID="25" Rank="3" Level="3"  Rate="8000" />
+	<Errtel ID="26" Rank="3" Level="4"  Rate="7500" />
+	<Errtel ID="27" Rank="3" Level="5"  Rate="7500" />
+	<Errtel ID="28" Rank="3" Level="6"  Rate="7500" />
+	<Errtel ID="29" Rank="3" Level="7"  Rate="7000" />
+	<Errtel ID="30" Rank="3" Level="8"  Rate="7000" />
+	<Errtel ID="31" Rank="3" Level="9"  Rate="7000" />
+	<Errtel ID="32" Rank="3" Level="10" Rate="7000" />
+	<Errtel ID="33" Rank="4" Level="0"  Rate="8000" />
+	<Errtel ID="34" Rank="4" Level="1"  Rate="8000" />
+	<Errtel ID="35" Rank="4" Level="2"  Rate="8000" />
+	<Errtel ID="36" Rank="4" Level="3"  Rate="8000" />
+	<Errtel ID="37" Rank="4" Level="4"  Rate="7500" />
+	<Errtel ID="38" Rank="4" Level="5"  Rate="7500" />
+	<Errtel ID="39" Rank="4" Level="6"  Rate="7500" />
+	<Errtel ID="40" Rank="4" Level="7"  Rate="7000" />
+	<Errtel ID="41" Rank="4" Level="8"  Rate="7000" />
+	<Errtel ID="42" Rank="4" Level="9"  Rate="7000" />
+	<Errtel ID="43" Rank="4" Level="10" Rate="7000" />
+	<Errtel ID="44" Rank="5" Level="0"  Rate="8000" />
+	<Errtel ID="45" Rank="5" Level="1"  Rate="8000" />
+	<Errtel ID="46" Rank="5" Level="2"  Rate="8000" />
+	<Errtel ID="47" Rank="5" Level="3"  Rate="8000" />
+	<Errtel ID="48" Rank="5" Level="4"  Rate="7500" />
+	<Errtel ID="49" Rank="5" Level="5"  Rate="7500" />
+	<Errtel ID="50" Rank="5" Level="6"  Rate="7500" />
+	<Errtel ID="51" Rank="5" Level="7"  Rate="7000" />
+	<Errtel ID="52" Rank="5" Level="8"  Rate="7000" />
+	<Errtel ID="53" Rank="5" Level="9"  Rate="7000" />
+	<Errtel ID="54" Rank="5" Level="10" Rate="7000" />
+</PentagramSystem>

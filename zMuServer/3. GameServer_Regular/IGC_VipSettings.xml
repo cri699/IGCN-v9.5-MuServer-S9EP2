@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+
+// ### VipSystem ###
+//	LevelType: Type of VIP applied to local Game Server, for values see Type attribute of VipTypes::VIP section. Lower VIP level always allows higher ones to enter
+//	SendRatesChangeMessage: Send notification of rates switch between night and day ranges, 0/1
+//
+// ### VipSystem::Message ###
+//	Day: A notification text to send on rates change from night to day
+//	Night: A notification text to send on rates change from day to night
+//
+// ### VipSystem::VipTypes::Vip ###
+//	Type: In other meaning it is Level of a VIP, only one VIP type can operate on specified VIP Type
+//	Name: Name for the VIP type, used to display in Game for the player
+//	ShopBuyPrice: Multiplier for buy prices from Shops, float
+//	ShopSellPrice: Multiplier for sell prices to shops, float
+//	ML_MonsterMinLevel: Minimum Monster level to gain Master Experience, float
+//	PointPerReset: Amount of point to award per reset, formula: LevelUpPoint = (LevelUpPoint + Resets+1) * PointPerReset
+//	NightStartHour: Start hour of night rates (0-23)
+//	NightStartMinute: Start minute for night rates (0-60)
+//	NightEndHour: End hour of night rates (0-23)
+//	NightEndMinute: End minute of night rates (0-60)
+//
+// ### VipSystem::VipTypes::Vip::Day ### - rates applied during day hours
+//	ExpBonus: Bonus added to base server experience setting, float
+//	DropBonus: Bonus added to base server item drop setting, percentage, max value in total: 100
+//	ExcDropBonus: Bonus added to base server exc item drop setting, n/10000 - max value in total: 1000
+//	MasterExpBonus: Bonus for Master characters added to base server master experience setting, float
+//	MasterDropBonus: Bonus for master characters added to base server item drop setting, max value in total: 100
+//	MasterExcDropBonus: Bonus for master characters added to base server exc item drop setting, n/10000 - max value in total: 1000
+//
+// ### VipSystem::VipTypes::Vip::Night ### - rates applied during night hours
+//	ExpBonus: Bonus added to base server experience setting, float
+//	DropBonus: Bonus added to base server item drop setting, max value in total: 100
+//	ExcDropBonus: Bonus added to base server exc item drop setting, n/10000 - max value in total: 1000
+//	MasterExpBonus: Bonus for Master characters added to base server master experience, float
+//	MasterDropBonus: Bonus for master characters added to base server item drop setting, max value in total: 100
+//	MasterExcDropBonus: Bonus for master characters added to base server exc item drop setting, n/10000 - max value in total: 1000
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Chaos Box rates work as replacements for general settings available from IGC_ChaosBox.ini ~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### VipSystem::VipTypes::ChaosBoxMixRates::Normal ###
+//	Level10: Combination rate of normal items +10
+//	Level11: Combination rate of normal items +11
+//	Level12: Combination rate of normal items +12
+//	Level13: Combination rate of normal items +13
+//	Level14: Combination rate of normal items +14
+//	Level15: Combination rate of normal items +15
+//	AddLuck: Combination bonus rate for Luck option
+//
+// ### VipSystem::VipTypes::ChaosBoxMixRates::Enhanced ###
+//	Level10: Combination rate of enhanced items +10
+//	Level11: Combination rate of enhanced items +11
+//	Level12: Combination rate of enhanced items +12
+//	Level13: Combination rate of enhanced items +13
+//	Level14: Combination rate of enhanced items +14
+//	Level15: Combination rate of enhanced items +15
+//	AddLuck: Combination bonus rate for Luck option
+//
+// ### VipSystem::VipTypes::ChaosBoxMixRates::Socket ###
+//	Level10: Combination rate of socket items +10
+//	Level11: Combination rate of socket items +11
+//	Level12: Combination rate of socket items +12
+//	Level13: Combination rate of socket items +13
+//	Level14: Combination rate of socket items +14
+//	Level15: Combination rate of socket items +15
+//	AddLuck: Combination bonus rate for Luck option
+//
+// ### VipSystem::VipTypes::ChaosBoxMixRates::Pentagram ###
+//	Level10: Combination rate of pentagram items +10
+//	Level11: Combination rate of pentagram items +11
+//	Level12: Combination rate of pentagram items +12
+//	Level13: Combination rate of pentagram items +13
+//	Level14: Combination rate of pentagram items +14
+//	Level15: Combination rate of pentagram items +15
+//	AddLuck: Combination bonus rate for Luck option
+//
+// ### VipSystem::VipTypes::ChaosBoxMixRates::Wing ###
+//	Second: Combination max success rate of second type wings
+//	Monster: Combination max success rate of monster (aka 2.5 level) type wings
+//	Third: Combination max success rate of third type wings
+//	Cape: Combination max success rate of cape
+//	FeatherOfCondor: Combination max success rate of Feather of Condor
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ NOTE:Below configuration is proposed example, system is allowing to define own VIP Types and Names.
+//~~ Modifying VIP types requires to apply the changes in IGC.Essential Tools -> IGC_VipSettings.xml file.
+//~~ 
+//~~ For details of how to configure Gold Channel Tickets refer to \IGCData\CashShop\xxx.xxx.xxx\IGC_CashItem_Info.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<VipSystem LevelType="0" SendRatesChangeMessage="1">
+	<Message Day="[SERVER RATES] Day Rates on going!" Night="[SERVER RATES] Night Rates on going, enjoy!" />
+	
+	<VipTypes>	
+		<Vip Type="1" Name="Bronze" ML_MonsterMinLevel="95" PointPerReset="250" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
+			<Day ExpBonus="0.0" DropBonus="0" ExcDropBonus="10" MasterExpBonus="0.0" MasterDropBonus="0" MasterExcDropBonus="10" />
+			<Night ExpBonus="0" DropBonus="0" ExcDropBonus="10" MasterExpBonus="0" MasterDropBonus="0" MasterExcDropBonus="10" />
+			
+			<ChaosBoxMixRates>
+				<Normal Level10="60" Level11="60" Level12="60" Level13="55" Level14="55" Level15="50" AddLuck="25" />
+				<Enhanced Level10="50" Level11="50" Level12="50" Level13="45" Level14="45" Level15="40" AddLuck="25" />
+				<Socket Level10="40" Level11="40" Level12="40" Level13="35" Level14="35" Level15="30" AddLuck="25" SocketWeapon="40" />
+				<Pentagram Level10="40" Level11="40" Level12="40" Level13="35" Level14="35" Level15="30" AddLuck="25" />
+				<Wing Second="90" Monster="60" Third="40" Cape="90" FeatherOfCondor="60" />
+			</ChaosBoxMixRates>
+		</Vip>
+		<Vip Type="2" Name="Silver" ML_MonsterMinLevel="95" PointPerReset="300" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
+			<Day ExpBonus="0.0" DropBonus="0" ExcDropBonus="10" MasterExpBonus="0.0" MasterDropBonus="0" MasterExcDropBonus="10" />
+			<Night ExpBonus="0" DropBonus="0" ExcDropBonus="10" MasterExpBonus="0" MasterDropBonus="0" MasterExcDropBonus="10" />
+			
+			<ChaosBoxMixRates>
+				<Normal Level10="60" Level11="60" Level12="60" Level13="55" Level14="55" Level15="50" AddLuck="25" />
+				<Enhanced Level10="50" Level11="50" Level12="50" Level13="45" Level14="45" Level15="40" AddLuck="25" />
+				<Socket Level10="40" Level11="40" Level12="40" Level13="35" Level14="35" Level15="30" AddLuck="25" SocketWeapon="40" />
+				<Pentagram Level10="40" Level11="40" Level12="40" Level13="35" Level14="35" Level15="30" AddLuck="25" />
+				<Wing Second="90" Monster="60" Third="40" Cape="90" FeatherOfCondor="60" />
+			</ChaosBoxMixRates>
+		</Vip>
+		<Vip Type="3" Name="Gold" ML_MonsterMinLevel="95" PointPerReset="350" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
+			<Day ExpBonus="0.0" DropBonus="0" ExcDropBonus="10" MasterExpBonus="0.0" MasterDropBonus="0" MasterExcDropBonus="10" />
+			<Night ExpBonus="0" DropBonus="0" ExcDropBonus="10" MasterExpBonus="0" MasterDropBonus="0" MasterExcDropBonus="10" />
+			
+			<ChaosBoxMixRates>
+				<Normal Level10="60" Level11="60" Level12="60" Level13="55" Level14="55" Level15="50" AddLuck="25" />
+				<Enhanced Level10="50" Level11="50" Level12="50" Level13="45" Level14="45" Level15="40" AddLuck="25" />
+				<Socket Level10="40" Level11="40" Level12="40" Level13="35" Level14="35" Level15="30" AddLuck="25" SocketWeapon="40" />
+				<Pentagram Level10="40" Level11="40" Level12="40" Level13="35" Level14="35" Level15="30" AddLuck="25" />
+				<Wing Second="90" Monster="60" Third="40" Cape="90" FeatherOfCondor="60" />
+			</ChaosBoxMixRates>
+		</Vip>
+		<Vip Type="4" Name="Platinum" ML_MonsterMinLevel="95" PointPerReset="400" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
+			<Day ExpBonus="0.0" DropBonus="0" ExcDropBonus="10" MasterExpBonus="0.0" MasterDropBonus="0" MasterExcDropBonus="10" />
+			<Night ExpBonus="0" DropBonus="0" ExcDropBonus="10" MasterExpBonus="0" MasterDropBonus="0" MasterExcDropBonus="10" />
+			
+			<ChaosBoxMixRates>
+				<Normal Level10="60" Level11="60" Level12="60" Level13="55" Level14="55" Level15="50" AddLuck="25" />
+				<Enhanced Level10="50" Level11="50" Level12="50" Level13="45" Level14="45" Level15="40" AddLuck="25" />
+				<Socket Level10="40" Level11="40" Level12="40" Level13="35" Level14="35" Level15="30" AddLuck="25" SocketWeapon="40" />
+				<Pentagram Level10="40" Level11="40" Level12="40" Level13="35" Level14="35" Level15="30" AddLuck="25" />
+				<Wing Second="90" Monster="60" Third="40" Cape="90" FeatherOfCondor="60" />
+			</ChaosBoxMixRates>
+		</Vip>
+	</VipTypes>
+</VipSystem>

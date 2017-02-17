@@ -1,0 +1,25 @@
+// this file purpose is for defining items which are based on combination of other item's options, for example "Start of Xmas" which is actually "Box of luck" with level 1 option and 2 durability
+//	Group	Index	Level	Skill	Durability	ExcOpt	Name
+	14	11	0	0	1	0	"Box of Luck"	//Box of Luck
+	14	11	1	0	2	0	"Star of Xmas"	//Box of Luck
+	14	11	2	0	3	0	"Firecracker"	//Box of Luck
+	14	11	3	0	4	0	"Heart of Love"	//Box of Luck
+	14	11	5	0	7	0	"Silver Medal"	//Box of Luck
+	14	11	6	0	9	0	"Gold Medal"	//Box of Luck
+	14	11	7	0	11	0	"Box of Heaven"	//Box of Luck
+	14	11	8	0	13	0	"Box of Kundun +1"	//Box of Luck
+	14	11	9	0	15	0	"Box of Kundun +2"	//Box of Luck
+	14	11	10	0	18	0	"Box of Kundun +3"	//Box of Luck
+	14	11	11	0	22	0	"Box of Kundun +4"	//Box of Luck
+	14	11	12	0	27	0	"Box of Kundun +5"	//Box of Luck
+	14	31	0	0	1	0	"Pink Chocolate Box" //Pink Chocolate Box
+	14	31	1	0	2	0	"Light Purple Candy Box" //Pink Chocolate Box
+	14	32	0	0	1	0	"Red Chocolate Box" //Red Chocolate Box
+	14	32	1	0	2	0	"Orange Candy Box" //Red Chocolate Box
+	14	33	0	0	1	0	"Blue Chocolate Box" //Blue Chocolate Box
+	14	33	1	0	2	0	"Dark Blue Candy Box" //Blue Chocolate Box
+	13	37	0	1	255	1	"Black Fenrir"	//Red Fenrir
+	13	37	0	1	255	2	"Blue Fenrir"	//Red Fenrir
+	13	37	0	1	255	4	"Golden Fenrir"	//Red Fenrir
+	14	23	1	0	0	0	"Ring of Honor"	//Scroll of the Emperor
+	14	24	1	0	0	0	"Dark Stone"	//Broken Sword

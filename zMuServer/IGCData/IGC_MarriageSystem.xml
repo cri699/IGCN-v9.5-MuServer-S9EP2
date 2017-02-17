@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MarrySystem ###
+//	Enable: Activates or deactivates the system, 0/1
+//	ReqLevel: Minimum level to do Wedding
+//	ReqMoney: Money charged for the Wedding, Zen
+//
+// ### MarrySystem::Location ###
+//	MapNumber: Number of map the Wedding can take a place
+//	StartX: Start X coordinate of the Wedding place
+//	StartY: Start Y coordinate of the Wedding place
+//	EndX: End X coordinate of the Wedding place
+//	EndY: EndY coordinate of the Wedding place
+//
+// ### MarrySystem::WeddingSettings ###
+//	Homosexual: Determines whether accept homo-sexual wedding, 0/1
+//	ReqSpecialItem: Allows to set requirement of special item to be able to do the wedding
+//
+// ### MarrySystem::WeddingSettings::Item ###
+//	Side: Defines sides of character doing the wedding
+//		~ 1: Side which requests
+//		~ 2: Side which accepts
+//	ItemCat: Category of the item that is required, see ItemList.xml
+//	ItemIndex: Index of the item that is required, see ItemList.xml
+//	Count: Count of item that is required, see ItemList.xml
+//
+// ### MarrySystem::WeddingGift ###
+//	Enable: Activates a gift reward for successful marriage, 0/1
+//
+// ### MarrySystem::WeddingGift::Item ###
+//	Side: Defines sides of character doing the wedding
+//		~ 1: Side which requests
+//		~ 2: Side which accepts
+//	ItemCat: Category of the item to award with, see ItemList.xml
+//	ItemIndex: Index of the item to award with, see ItemList.xml
+//	Count: Count of item to award with, see ItemList.xml
+//
+// ### MarrySystem::DivorceSettings ###
+//	Allow: Determines whether allow divorces or no, 0/1
+//	ReqSpecialItem: Determines whether require special item for getting divorced or not from divorcing side, 0/1
+//
+// ### MarrySystem::DivorceSettings::Item ###
+//	ItemCat: Category of the item to process the divorce, see ItemList.xml
+//	ItemIndex: Index of the item to process the divorce, see ItemList.xml
+//	Count: Count of item to process the divorce, see ItemList.xml
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MarrySystem Enable="1" ReqLevel="50" ReqMoney="2000">
+	<Location MapNumber="2" StartX="12" StartY="25" EndX="14" EndY="26" />
+	
+	<WeddingSettings Homosexual="0" ReqSpecialItem="0">
+		<Item Side="1" ItemCat="14" ItemIndex="13" ItemCount="1" /> <!-- Side which requests -->
+		<Item Side="2" ItemCat="14" ItemIndex="13" ItemCount="1" /> <!-- Side which accepts -->
+	</WeddingSettings>
+	
+	<WeddingGift Enable="1">
+		<Item Side="1" ItemCat="14" ItemIndex="13" ItemCount="1" /> <!-- Side which requests -->
+		<Item Side="2" ItemCat="14" ItemIndex="13" ItemCount="1" /> <!-- Side which accepts -->
+	</WeddingGift>
+	
+	<DivorceSettings Allow="1" ReqSpecialItem="1">
+		<Item ItemCat="14" ItemIndex="13" ItemCount="1" />
+	</DivorceSettings>
+</MarrySystem>

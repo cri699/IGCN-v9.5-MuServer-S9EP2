@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// Last Edit: 10/03/2016
+// Compatible* with Server Files Version: (x9.5) 9.5.1.12 - Season 9 Episode 2
+// *mentioned version is supported, but you must make changes according to newer server files version
+// NOTE: YOU MUST EDIT MANUALLY ACCORDING TO CUSTOM CHANGES IN YOUR DATABASE
+// *****
+// Database KeyName can be as such:
+// * MeMuOnline
+// * MuOnline
+// * Events
+// * Ranking
+// * BattleCore
+-->
+<DatabaseSpecification>
+	<!--
+	This section specifies location of Characters names in your Database, to be used when removing/saving name of character.
+	-->
+	<CharacterName>
+		<Database KeyName="MuOnline">
+			<Table Name="AccountCharacter">
+				<Column Name="GameID1" />
+				<Column Name="GameID2" />
+				<Column Name="GameID3" />
+				<Column Name="GameID4" />
+				<Column Name="GameID5" />
+				<Column Name="GameIDC" />
+			</Table>
+			<Table Name="Guild">
+				<Column Name ="G_Master" />
+			</Table>
+			<Table Name="IGC_GensAbuse">
+				<Column Name ="Name" />
+				<Column Name ="KillName" />
+			</Table>
+			<Table Name="IGC_Gens">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="GuildMember">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="OptionData">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_CGuid">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_CurCharName">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_FriendList">
+				<Column Name ="FriendName" />
+			</Table>
+			<Table Name="T_FriendMail">
+				<Column Name ="FriendName" />
+			</Table>
+			<Table Name="T_FriendMain">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_GMSystem">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_WaitFriend">
+				<Column Name ="FriendName" />
+			</Table>
+			<Table Name="T_LUCKY_ITEM_INFO">
+				<Column Name ="CharName" />
+			</Table>
+			<Table Name="C_Monster_KillCount">
+				<Column Name ="name" />
+			</Table>
+			<Table Name="C_PlayerKiller_Info">
+				<Column Name ="Victim" />
+				<Column Name ="Killer" />
+			</Table>
+			<Table Name="IGC_PeriodItemInfo">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="T_PentagramInfo">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="IGC_ARCA_BATTLE_GUILD_JOIN_INFO">
+				<Column Name ="G_Master" />
+			</Table>
+			<Table Name="IGC_PeriodBuffInfo">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="Character">
+				<Column Name ="Name" />
+				<Column Name ="MarryName" />
+			</Table>
+			<Table Name="T_QUEST_EXP_INFO">
+				<Column Name ="CHAR_NAME" />
+			</Table>
+			<Table Name="IGC_ARCA_BATTLE_MEMBER_JOIN_INFO">
+				<Column Name ="CharName" />
+			</Table>
+			<Table Name="IGC_GuildMatching">
+				<Column Name ="GuildMasterName" />
+			</Table>
+			<Table Name="IGC_PartyMatching">
+				<Column Name ="PartyLeaderName" />
+			</Table>
+			<Table Name="IGC_WaitGuildMatching">
+				<Column Name ="GuildMasterName" />
+				<Column Name ="ApplicantName" />
+			</Table>
+			<Table Name="IGC_WaitPartyMatching">
+				<Column Name ="LeaderName" />
+				<Column Name ="MemberName" />
+			</Table>
+			<Table Name="PetWarehouse">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_Event_Inventory">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_MuRummy">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_MuRummyInfo">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_MuRummyLog">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_MineSystem">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="T_PSHOP_ITEMVALUE_INFO">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="IGC_FriendChat_BannedCharacters">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="IGC_FriendChat_MessageLog">
+				<Column Name ="Name" />
+				<Column Name ="FriendName" />
+			</Table>
+			<Table Name="IGC_CancelItemSale">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="IGC_GremoryCase">
+				<Column Name ="Name" />
+			</Table>
+		</Database>
+		<Database KeyName="Events">
+			<Table Name="EVENT_INFO_BC_3RD">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="EVENT_INFO_BC_4TH">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="EVENT_INFO_BC_5TH">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="T_CC_OFFLINE_GIFT">
+				<Column Name ="CharName" />
+			</Table>
+			<Table Name="T_KanturuTimeAttackEvent2006">
+				<Column Name ="Name" />
+			</Table>
+		</Database>
+		<Database KeyName="Ranking">
+			<Table Name="EVENT_INFO">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="EVENT_INFO_BC">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="EVENT_INFO_BC_3RD">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="EVENT_INFO_BC_4TH">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="EVENT_INFO_BC_5TH">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="EVENT_INFO_CC">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="EVENT_INFO_IT">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_ENTER_CHECK_BC">
+				<Column Name ="CharName" />
+			</Table>
+			<Table Name="T_ENTER_CHECK_ILLUSION_TEMPLE">
+				<Column Name ="CharName" />
+			</Table>
+		</Database>
+		<Database KeyName="BattleCore">
+			<Table Name="PetWarehouse">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_GMSystem">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="Character">
+				<Column Name ="Name" />
+				<Column Name ="MarryName" />
+			</Table>
+			<Table Name="AccountCharacter">
+				<Column Name="GameID1" />
+				<Column Name="GameID2" />
+				<Column Name="GameID3" />
+				<Column Name="GameID4" />
+				<Column Name="GameID5" />
+				<Column Name="GameIDC" />
+			</Table>
+			<Table Name="OptionData">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="IGC_PeriodItemInfo">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="T_Event_Inventory">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_LUCKY_ITEM_INFO">
+				<Column Name ="CharName" />
+			</Table>
+			<Table Name="T_MuRummy">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_MuRummyInfo">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_MuRummyLog">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="T_PentagramInfo">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="IGC_DevilSquareFinal_Ranking">
+				<Column Name ="mUserName1" />
+			</Table>
+			<Table Name="IGC_DevilSquareFinal_Rewards">
+				<Column Name ="mName" />
+			</Table>
+			<Table Name="IGC_DevilSquareFinal_Scores">
+				<Column Name ="mName1" />
+				<Column Name ="mUserLevel1" />
+				<Column Name ="mName2" />
+				<Column Name ="mUserLevel2" />
+			</Table>
+			<Table Name="IGC_PeriodBuffInfo">
+				<Column Name ="CharacterName" />
+			</Table>
+			<Table Name="BattleCore_ChaosCastle_KillPoint">
+				<Column Name ="Name" />
+			</Table>
+			<Table Name="BattleCore_ChaosCastle_Reward">
+				<Column Name ="CharName" />
+			</Table>
+			<Table Name="BattleCore_ChaosCastleFinal_Reward">
+				<Column Name ="CharName" />
+			</Table>
+			<Table Name="BattleCore_DevilSquareFinal_Reward">
+				<Column Name ="CharName" />
+			</Table>
+			<Table Name="BattleCoreInfo">
+				<Column Name ="Name" />
+				<Column Name ="UBFName" />
+			</Table>
+		</Database>
+	</CharacterName>
+	<!--
+	This section specifies location of Accounts names in your Database, to be used when removing Accounts.
+	-->
+	<AccountName>
+		<Database KeyName="MeMuOnline">
+			<Table Name="MEMB_INFO">
+				<Column Name="memb___id" />
+			</Table>
+			<Table Name="MEMB_STAT">
+				<Column Name="memb___id" />
+			</Table>
+			<Table Name="T_VIPList">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="ConnectionHistory">
+				<Column Name="AccountID" />
+			</Table>
+		</Database>
+		<Database KeyName="MuOnline">
+			<Table Name="AccountCharacter">
+				<Column Name="Id" />
+			</Table>
+			<Table Name="Character">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="MEMB_CREDITS">
+				<Column Name="memb___id" />
+			</Table>
+			<Table Name="T_PentagramInfo">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_InGameShop_Items">
+				<Column Name="AccountID" />
+				<Column Name="GiftName" />
+			</Table>
+			<Table Name="T_InGameShop_Point">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_MU2003_EVENT">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="warehouse">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="ZenEvent">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="PetWarehouse">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_Event_Inventory">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_MuRummy">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_MuRummyInfo">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_MuRummyLog">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_PSHOP_ITEMVALUE_INFO">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="IGC_CancelItemSale">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="IGC_GremoryCase">
+				<Column Name="AccountID" />
+			</Table>
+		</Database>
+		<Database KeyName="Events">
+			<Table Name="EVENT_INFO_BC_3RD">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="EVENT_INFO_BC_4TH">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="EVENT_INFO_BC_5TH">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_CC_OFFLINE_GIFT">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_KanturuTimeAttackEvent2006">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_LuckyCoin">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_RegCount_Check">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_SantaEvent">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_Serial_Bank">
+				<Column Name="F_Member_Id" />
+			</Table>		
+		</Database>
+		<Database KeyName="Ranking">
+			<Table Name="EVENT_INFO">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="EVENT_INFO_BC">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="EVENT_INFO_BC_3RD">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="EVENT_INFO_BC_4TH">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="EVENT_INFO_BC_5TH">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="EVENT_INFO_CC">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="EVENT_INFO_IT">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_BC_PCROOM_PLAYCOUNT">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_ENTER_CHECK_BC">
+				<Column Name="AccountID" />
+			</Table>	
+			<Table Name="T_ENTER_CHECK_ILLUSION_TEMPLE">
+				<Column Name="AccountID" />
+			</Table>				
+		</Database>
+		<Database KeyName="BattleCore">
+			<Table Name="PetWarehouse">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_Event_Inventory">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_MuRummy">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_MuRummyInfo">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_MuRummyLog">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="T_PentagramInfo">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="IGC_DevilSquareFinal_Rewards">
+				<Column Name="mAccountID" />
+			</Table>
+			<Table Name="IGC_DevilSquareFinal_Scores">
+				<Column Name="mAccountID1" />
+				<Column Name="mAccountID2" />
+			</Table>
+			<Table Name="BattleCoreInfo">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="Character">
+				<Column Name="AccountID" />
+			</Table>
+			<Table Name="AccountCharacter">
+				<Column Name="Id" />
+			</Table>
+		</Database>
+	</AccountName>
+	<!--
+	This section specifies location of Guilds names in your Database, to be used when removing/saving name of Guild.
+	-->	
+	<GuildName>
+		<Database KeyName="MuOnline">
+			<Table Name="Guild">
+				<Column Name="G_Name" />
+			</Table>
+			<Table Name="GuildMember">
+				<Column Name="G_Name" />
+			</Table>
+			<Table Name="IGC_ARCA_BATTLE_GUILD_JOIN_INFO">
+				<Column Name="G_Name" />
+			</Table>
+			<Table Name="IGC_ARCA_BATTLE_GUILDMARK_REG">
+				<Column Name="G_Name" />
+			</Table>
+			<Table Name="IGC_ARCA_BATTLE_MEMBER_JOIN_INFO">
+				<Column Name="G_Name" />
+			</Table>
+			<Table Name="IGC_ARCA_BATTLE_WIN_GUILD_INFO">
+				<Column Name="G_Name" />
+			</Table>
+			<Table Name="MuCastle_REG_SIEGE">
+				<Column Name="REG_SIEGE_GUILD" />
+			</Table>
+			<Table Name="MuCastle_DATA">
+				<Column Name="OWNER_GUILD" />
+			</Table>
+			<Table Name="MuCastle_SIEGE_GUILDLIST">
+				<Column Name="GUILD_NAME" />
+			</Table>
+			<Table Name="IGC_GuildMatching">
+				<Column Name="GuildName" />
+			</Table>
+			<Table Name="IGC_WaitGuildMatching">
+				<Column Name="GuildName" />
+			</Table>
+		</Database>
+	</GuildName>
+	<!--
+	This section specifies location of Guild Master names in your Database, to be used when saving name of Guild Master.
+	-->		
+	<GuildMasterName>
+		<Database KeyName="MuOnline">
+			<Table Name="IGC_ARCA_BATTLE_GUILD_JOIN_INFO">
+				<Column Name="G_Master" />
+			</Table>
+			<Table Name="IGC_ARCA_BATTLE_GUILDMARK_REG">
+				<Column Name="G_Master" />
+			</Table>
+			<Table Name="IGC_ARCA_BATTLE_MEMBER_JOIN_INFO">
+				<Column Name="CharName" />
+			</Table>
+			<Table Name="IGC_GuildMatching">
+				<Column Name="GuildMasterName" />
+			</Table>
+			<Table Name="IGC_WaitGuildMatching">
+				<Column Name="GuildMasterName" />
+			</Table>
+			<Table Name="Guild">
+				<Column Name="G_Master" />
+			</Table>
+			<Table Name="GuildMember">
+				<Column Name="Name" />
+			</Table>
+		</Database>
+	</GuildMasterName>
+</DatabaseSpecification>

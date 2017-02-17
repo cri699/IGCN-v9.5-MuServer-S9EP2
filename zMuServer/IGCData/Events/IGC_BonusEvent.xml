@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//
+// ### BonusEvent ###
+//	Enable: Activates or deactivates event, 0/10
+//	DisplayNotice: Displays notice about the event start (English.ini ~> 1039)
+//
+// ### BonusEvent::Event ###
+//	DayOfWeek: Day of a week the event will run on:
+//		~ 0: Sunday
+//		~ 1: Monday
+//		~ 2: Tuesday
+//		~ 3: Wednesday
+//		~ 4: Thursday
+//		~ 5: Friday
+//		~ 6: Saturday
+//		~ -1: every day
+//	StartHour: Start hour of the event, 0-23
+//	EndHour: End hour of the event, 0-23
+//	ExpMultiplier: Regular experience multiplier
+//	MasterExpMultiplier: Master experience multiplier
+//	ItemDropBonus: Bonus of item drop rate added to server base value of item drop on server
+//	ExcDropBonus: Bonus of exc item drop rate added to server base value of exc drop on server
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<BonusEvent Enable="1" DisplayNotice="1">
+	<Event DayOfWeek="-1" StartHour="8" EndHour="10" ExpMultiplier="1.5" MasterExpMultiplier="1.5" ItemDropBonus="15" ExcDropBonus="5" />
+	<Event DayOfWeek="-1" StartHour="14" EndHour="16" ExpMultiplier="1.5" MasterExpMultiplier="1.5" ItemDropBonus="15" ExcDropBonus="5" />
+	<Event DayOfWeek="-1" StartHour="20" EndHour="22" ExpMultiplier="1.5" MasterExpMultiplier="1.5" ItemDropBonus="15" ExcDropBonus="5" />
+	<Event DayOfWeek="-1" StartHour="2" EndHour="4" ExpMultiplier="1.5" MasterExpMultiplier="1.5" ItemDropBonus="15" ExcDropBonus="5" />
+</BonusEvent>

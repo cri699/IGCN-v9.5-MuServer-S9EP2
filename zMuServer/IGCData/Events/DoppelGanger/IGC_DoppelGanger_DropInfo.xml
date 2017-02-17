@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// To assign drop section to specified levels refer to IGC_DoppelGanger_EventInfo.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### DoppelGanger::SectionRateSettings::Section ###
+//	ID: Defines an ID of section, 1-27
+//	SkillRate: Chance rate of getting item with Skill, n1/1000000
+//	LuckRate: Chance rate of getting item with Luck, n/1000000
+//	OptionRate: Chance rate of getting item with Option, n/1000000
+//	ExcRate: Chance rate of getting item with Excellent Option, n/1000000
+//
+// ### DoppelGanger::ItemOptionDrawSettings ###
+//	Rate1: Chance rate of getting item with Option +4, n/1000000
+//	Rate2: Chance rate of getting item with Option +8, n/1000000
+//	Rate3: Chance rate of getting item with Option +12, n/1000000
+//	Rate4: Chance rate of getting item with Option +16, n/1000000
+//	Rate5: Chance rate of getting item with Option +20, n/1000000
+//	Rate6: Chance rate of getting item with Option +24, n/1000000
+//	Rate7: Chance rate of getting item with Option +28, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of all Rates must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### DoppelGanger::ExcOptionCountDrawSettings ###
+//	Rate1: Chance rate of getting item with (1) excellent option, n/1000000
+//	Rate2: Chance rate of getting item with (2) excellent option, n/1000000
+//	Rate3: Chance rate of getting item with (3) excellent option, n/1000000
+//	Rate4: Chance rate of getting item with (4) excellent option, n/1000000
+//	Rate5: Chance rate of getting item with (5) excellent option, n/1000000
+//	Rate6: Chance rate of getting item with (6) excellent option, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of all Rates must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### DoppelGanger::ExcOptionTypeDrawSettings ###
+//	Rate1: Chance rate of getting item with specified excellent option (1), n/1000000
+//	Rate2: Chance rate of getting item with specified excellent option (2), n/1000000
+//	Rate3: Chance rate of getting item with specified excellent option (3), n/1000000
+//	Rate4: Chance rate of getting item with specified excellent option (4), n/1000000
+//	Rate5: Chance rate of getting item with specified excellent option (5), n/1000000
+//	Rate6: Chance rate of getting item with specified excellent option (6), n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of all Rates must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### DoppelGanger::Section ###
+//	ID: Refers to section ID defines in SectionRateSettings area
+//
+// ### DoppelGanger::Section::Item ###
+//	Cat: Category of the item, refer to IGC_ItemList.xml
+//	Index: Index of the item, refer to IGC_ItemLisr.xml
+//	MinLevel: Minimum level of item to drop, 0~15, must be lower or equal to MaxLevel
+//	MaxLevel: Maximum level of item to drop, 0~15, must be grater of equal to MinLevel
+//	Skill: Defines if item can drop with Skill, 0/1
+//	Luck: Defines if item can drop with Luck, 0/1
+//	Option: Defines if item can drop with Option, 0/1
+//	Exc: Defines if item can drop as Excellent, 0/1
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<DoppelGanger>
+	<SectionRateSettings> <!-- All rates expressed as n/1000000 --> 
+		<Section ID="1"  SkillRate="700000" LuckRate="100000" OptionRate="120000"	ExcRate="40000" />
+		<Section ID="2"  SkillRate="700000" LuckRate="100000" OptionRate="100000"	ExcRate="40000" />
+		<Section ID="3"  SkillRate="700000" LuckRate="100000" OptionRate="50000"	ExcRate="40000" />
+		<Section ID="4"  SkillRate="700000" LuckRate="100000" OptionRate="10000"	ExcRate="40000" />
+		<Section ID="5"  SkillRate="700000" LuckRate="100000" OptionRate="120000"	ExcRate="50000" />
+		<Section ID="6"  SkillRate="700000" LuckRate="100000" OptionRate="100000"	ExcRate="50000" />
+		<Section ID="7"  SkillRate="700000" LuckRate="100000" OptionRate="50000"	ExcRate="50000" />
+		<Section ID="8"  SkillRate="700000" LuckRate="100000" OptionRate="10000"	ExcRate="50000" />
+		<Section ID="9"  SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="10" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="11" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="12" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="13" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="14" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="15" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="16" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="17" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="18" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="19" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="20" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="21" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="22" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="23" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="24" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="25" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+		<Section ID="26" SkillRate="0"      LuckRate="0"      OptionRate="0"        ExcRate="0" />
+	</SectionRateSettings>
+
+	<ItemOptionDrawSettings Rate1="850000" Rate2="100000" Rate3="50000" Rate4="0" Rate5="0" Rate6="0" Rate7="0" /> <!-- Sum of all Rates cannot exceed 1000000 -->
+	
+	<ExcOptionCountDrawSettings Rate1="950000" Rate2="50000" Rate3="0" Rate4="0" Rate5="0" Rate6="0" /> <!-- Sum of all Rates cannot exceed 1000000 -->
+	
+	<ExcOptionTypeDrawSettings Rate1="100000" Rate2="200000" Rate3="200000" Rate4="200000" Rate5="200000" Rate6="100000" /> <!-- Sum of all Rates cannot exceed 1000000 -->
+
+	<Section ID="1"> <!-- Final Chest (1) - Level 10-90 -->
+		<Item Cat="0" Index="5" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="3" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="4" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="4" Index="4" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="2" Index="10" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="15" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+	</Section>
+
+	<Section ID="2"> <!-- Final Chest (1) - Level 110-190 -->
+		<Item Cat="0" Index="14" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="3" Index="9" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="5" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="6" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="8" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="4" Index="5" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="2" Index="11" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="16" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+	</Section>
+
+	<Section ID="3"> <!-- Final Chest (1) - Level 200-290 -->
+		<Item Cat="3" Index="10" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="0" Index="16" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="0" Index="17" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="0" Index="18" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="9" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="11" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="4" Index="16" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="4" Index="17" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="4" Index="19" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="2" Index="12" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="17" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+	</Section>
+
+	<Section ID="4"> <!-- Final Chest (1) - Level 300-800 -->
+		<Item Cat="0" Index="20" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="0" Index="21" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="0" Index="31" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="0" Index="24" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="0" Index="25" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="13" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="4" Index="20" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="4" Index="22" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="2" Index="15" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="5" Index="18" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+	</Section>
+
+	<Section ID="5"> <!-- Final Chest (2) - Level 10-90 -->
+		<Item Cat="7" Index="7" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="7" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="7" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="7" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="7" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="8" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="8" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="8" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="8" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="8" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="13" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="13" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="13" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="13" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="13" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="39" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="39" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="39" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="39" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="39" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="25" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="25" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="25" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="25" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="25" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+	</Section>
+
+	<Section ID="6"> <!-- Final Chest (2) - Level 100-190 -->
+		<Item Cat="7" Index="1" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="1" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="1" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="1" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="1" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="12" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="12" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="12" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="12" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="12" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="14" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="14" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="14" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="14" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="14" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="40" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="40" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="40" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="40" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="40" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="26" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="26" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="26" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="26" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="26" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="34" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="34" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="34" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="34" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="34" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="35" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="35" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="35" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="35" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="35" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="36" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="36" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="36" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="36" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="36" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="37" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="37" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="37" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="37" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="38" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="38" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="38" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="38" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="38" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+	</Section>
+
+	<Section ID="7"> <!-- Final Chest (2) - Level 200-290 -->
+		<Item Cat="7" Index="17" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="17" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="17" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="17" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="17" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="18" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="18" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="18" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="18" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="18" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="19" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="19" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="19" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="19" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="19" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="41" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="41" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="41" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="41" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="41" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="27" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="27" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="27" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="27" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="27" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="15" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="15" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="15" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="15" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+	</Section>
+
+	<Section ID="8"> <!-- Final Chest (2) - Level 300-800 -->
+		<Item Cat="7" Index="21" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="21" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="21" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="21" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="21" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="22" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="22" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="22" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="22" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="22" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="24" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="24" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="24" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="24" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="24" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="7" Index="42" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="42" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="42" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="42" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="42" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="8" Index="20" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="9" Index="20" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="10" Index="20" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+		<Item Cat="11" Index="20" MinLevel="0" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="1" /> <!-- -->
+	</Section>
+
+	<Section ID="9"> <!-- Interim Chest (1) -->
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- -->
+	</Section>
+
+	<Section ID="10"> <!-- Interim Chest (2) and Final Chest (3) -->
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- -->
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- -->
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- -->
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- -->
+	</Section>
+
+	<Section ID="11"> <!-- Interim Chest (3) and Final Chest (4) -->
+		<Item Cat="13" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- -->
+		<Item Cat="13" Index="14" MinLevel="1" MaxLevel="1" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- -->
+	</Section>
+
+	<Section ID="12"> <!-- Final Chest (5) -->
+		<Item Cat="13" Index="52" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- -->
+	</Section>
+
+	<Section ID="13"> <!-- Final Chest (6) -->
+		<Item Cat="13" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- -->
+	</Section>
+
+<!-- Free sections ~ can be activated by setting its number in IGC_DoppelGanger_EventInfo.xml file for desired chest -->
+
+	<Section ID="14">
+	</Section>
+
+	<Section ID="15">
+	</Section>
+
+	<Section ID="16">
+	</Section>
+
+	<Section ID="17">
+	</Section>
+
+	<Section ID="18">
+	</Section>
+
+	<Section ID="19">
+	</Section>
+
+	<Section ID="20">
+	</Section>
+
+	<Section ID="21">
+	</Section>
+
+	<Section ID="22">
+	</Section>
+
+	<Section ID="23">
+	</Section>
+
+	<Section ID="24">
+	</Section>
+
+	<Section ID="25">
+	</Section>
+
+	<Section ID="26">
+	</Section>
+</DoppelGanger>

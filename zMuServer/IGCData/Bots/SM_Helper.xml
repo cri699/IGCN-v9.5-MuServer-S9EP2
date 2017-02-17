@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### BuffList::Buff ###
+//	Id: Index of Buff Effect, refer to IGC_BuffEffectManaher.xml
+//	EffectType: Type of Effect (below list is subject to complete/corrections):
+//		~ 0: No Option
+//		~ 1: Attack Speed Increase +%d
+//		~ 2: Damage Increase +%d (General Damage/HP)
+//		~ 3: Defense +%d
+//		~ 4: Max HP Increase +%d
+//		~ 5: Max Mana Increase +%d
+//		~ 6: Exp Increase +d%
+//		~ 7: Drop Rate Increase %d%
+//		~ 8: Prevents exp from being gained
+//		~ 9: Strength Increase +%d
+//		~ 10: Agility Increase +%d
+//		~ 11: Vitality Increase +%d
+//		~ 12: Energy Increase +%d
+//		~ 13: Command Increase +%d
+//		~ 14: Increased attack power +%d
+//		~ 15: Wizard Damage Increase +%d
+//		~ 16: Free M Menu warping
+//		~ 17: Critical Damage +%d
+//		~ 20: Reduces Move Speed %d
+//		~ 22: Magic Defense Increase +%d
+//		~ 24: Damage Reflect Increase +%d
+//		~ 26: Attack Rate Decrease +%d
+//		~ 31: Berserker Up
+//		~ 32: Berserker Down
+//		~ 33: Min Wizardy Power Increase +%d
+//		~ 34: Max Wizardy Power Increase +%d
+//		~ 51: Increase Damage and Wizard Damage +%d% (Melee/Magic/Curse)
+//		~ 52: Damage absorption %d%
+//		~ 53: Automatic HP Recovery +%d%
+//		~ 54: Automatic Mana Recovery +%d%
+//		~ 55: Critical Damage +%d%
+//		~ 56: Excellent Damage +%d%
+//		~ 57: Melee/Wizardy/Curse Damage Increase +%d
+//		~ 58: Defense Increase +%d
+//		~ 60: Exp increase by %d% (regular only)
+//		~ 61: Possibility to obtain obtain rare items from monsters in Vulcanus
+//		~ 62: No penalty for dying (no loss of exp or items)
+//		~ 63: Items will not lose durability points for certain amount of time
+//		~ 64: Increase Zen by %d%
+//		~ 65: Maintains HP for certain amount of time (Mu Blue)
+//		~ 66: Increase Maximum AG + level by 10
+//		~ 67: Increase Maximum SD + level by 10
+//		~ 68: Increase Exp gain rate by up to %d% (depending on the number of people in party)
+//		~ 70: Max SD Increase +%d
+//		~ 71: Max AG Increase +%d
+//		~ 74: Defense Rate Increase +%d
+//		~ 75: Defense Rate Decrease +%d
+//		~ 80: Fill HP
+//		~ 81: Fill HP Half
+//		~ 82: Fill MP Half
+//		~ 83: Fill SD Half
+//		~ 87: Exp gain increase +%d% (Ascension Items, Normal/Master level usable)
+//		~ 88: Exp gain increase +%d% (Bless of Light, Normal/Master level usable)
+//	EffectValue: Value of applied effect
+//	Duration: Duration of the effect, seconds
+//	Name: Name of Effect/Skill applied, used for logging and in-file description purpose
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<BuffList>
+	<Buff Id="4" EffectType="21" EffectValue="1000" Duration="1800" Name="Mana Shield" />
+</BuffList>

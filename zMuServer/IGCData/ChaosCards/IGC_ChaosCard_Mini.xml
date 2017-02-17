@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ChaosCard::GeneralRateSettings::Section ###
+//	ID: ID of the section, range is 0-19 only
+//	DropRate: Weight of success of receiving reward from specified section, total is sum of all DropRate(s)
+//	SkillRate: Chance of receiving item with skill, n/1000000
+//	LuckRate: Chance of receiving item with luck, n/1000000
+//	OptionRate: Chance of receiving item with option, n/1000000
+//	ExcRate: Chance of receiving excellent item, n/1000000
+//
+// ### ChaosCard::OptionDrawSettings::Option ###
+//	Level: Level of option to apply on item
+//		~ 0: +0
+//		~ 1: +4
+//		~ 2: +8
+//		~ 3: +12
+//		~ 4: +16
+//		~ 5: +20
+//		~ 6: +24
+//		~ 7: +28
+//	SuccessRate: Chance for specified option, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of all SuccessRate(s) must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ChaosCard::ExcOptionDrawRate::Option ###
+//	Type: Type of exc option, range is 0-5
+//	SuccessRate: Chance for specified excellent option, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of all SuccessRate(s) must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ChaosCard::Section ###
+//	ID: ID of section, the ID links to ID from GeneralRateSettings area
+//
+// ### ChaosCard::Section::Item ###
+//	Cat: Category of the item, see ItemLisr.xml
+//	Index: Index of the item, see ItemList.xml
+//	MinLevel: Minimum level of item to reward
+//	MaxLevel: Maximum level of item to reward
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Excellent items are always rewarded with level +0
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	Skill: Determines if the item can be rewarded with skill, 0/1
+//	Luck: Determines if the item can be rewarded with luck, 0/1
+//	Option: Determines if the item can be rewarded with option, 0/1
+//	Exc: Determines if item can be rewarded with excellent option
+//		~ 0: No excellent option
+//		~ 1: One excellent option
+//		~ 2: Two excellent options
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ChaosCard>
+	<GeneralRateSettings>
+		<Section ID="0"  DropRate="160000" SkillRate="1000000" LuckRate="350000" OptionRate="1000000" ExcRate="600000" />
+		<Section ID="1"  DropRate="100000" SkillRate="1000000" LuckRate="500000" OptionRate="1000000" ExcRate="1000000" />
+		<Section ID="2"  DropRate="30000"  SkillRate="1000000" LuckRate="500000" OptionRate="1000000" ExcRate="1000000" />
+		<Section ID="3"  DropRate="160000" SkillRate="0"       LuckRate="350000" OptionRate="1000000" ExcRate="600000" />
+		<Section ID="4"  DropRate="100000" SkillRate="0"       LuckRate="500000" OptionRate="1000000" ExcRate="1000000" />
+		<Section ID="5"  DropRate="120000" SkillRate="0"       LuckRate="0"      OptionRate="1000000" ExcRate="0" />
+		<Section ID="6"  DropRate="100000" SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="7"  DropRate="157000" SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="8"  DropRate="52150"  SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="9"  DropRate="16600"  SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="10" DropRate="2000"   SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="11" DropRate="0"      SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="12" DropRate="0"      SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="13" DropRate="0"      SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="14" DropRate="0"      SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="15" DropRate="0"      SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="16" DropRate="0"      SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="17" DropRate="0"      SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="18" DropRate="0"      SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+		<Section ID="19" DropRate="0"      SkillRate="0"       LuckRate="0"      OptionRate="0"       ExcRate="0" />
+	</GeneralRateSettings>
+
+	<OptionDrawSettings> <!-- Sum of all SuccessRate(s) must be equal to 1000000 -->
+		<Option Level="0" SuccessRate="500000" /> <!-- +0 -->
+		<Option Level="1" SuccessRate="300000" /> <!-- +4 -->
+		<Option Level="2" SuccessRate="150000" /> <!-- +8 -->
+		<Option Level="3" SuccessRate="50000" /> <!-- +12 -->
+		<Option Level="4" SuccessRate="0" /> <!-- +16 -->
+		<Option Level="5" SuccessRate="0" /> <!-- +20 -->
+		<Option Level="6" SuccessRate="0" /> <!-- +24 -->
+		<Option Level="7" SuccessRate="0" /> <!-- +28 -->
+	</OptionDrawSettings>
+
+	<ExcOptionDrawRate> <!-- Sum of all SuccessRate(s) must be equal to 1000000 -->
+		<Option Type="0" SuccessRate="250000" />
+		<Option Type="1" SuccessRate="150000" />
+		<Option Type="2" SuccessRate="150000" />
+		<Option Type="3" SuccessRate="150000" />
+		<Option Type="4" SuccessRate="150000" />
+		<Option Type="5" SuccessRate="150000" />
+	</ExcOptionDrawRate>
+
+	<Section ID="0">
+		<Item Cat="0" Index="0" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Kris -->
+		<Item Cat="0" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Sword of Destruction -->
+		<Item Cat="0" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Dark Breaker -->
+		<Item Cat="0" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Thunder Blade -->
+		<Item Cat="0" Index="31" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Rune Blade -->
+		<Item Cat="2" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Great Scepter -->
+		<Item Cat="2" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Lord Scepter -->
+		<Item Cat="4" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Saint Crossbow -->
+		<Item Cat="4" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Celestial Bow -->
+		<Item Cat="4" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Great Reign Crossbow -->
+		<Item Cat="5" Index="7" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Chaos Lighting Staff -->
+		<Item Cat="5" Index="8" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Staff of Destruction -->
+		<Item Cat="5" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dragon Soul Staff -->
+		<Item Cat="4" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Chaos Nature Bow -->
+		<Item Cat="2" Index="6" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Chaos Dragon Axe -->
+		<Item Cat="0" Index="16" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Sword of Destruction -->
+		<Item Cat="0" Index="17" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Dark Breaker -->
+		<Item Cat="0" Index="18" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Thunder Blade -->
+		<Item Cat="0" Index="31" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Rune Blade -->
+		<Item Cat="2" Index="10" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Great Scepter -->
+		<Item Cat="2" Index="11" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Lord Scepter -->
+		<Item Cat="4" Index="16" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Saint Crossbow -->
+		<Item Cat="4" Index="17" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Celestial Bow -->
+		<Item Cat="4" Index="19" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Great Reign Crossbow -->
+		<Item Cat="5" Index="7" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Chaos Lighting Staff -->
+		<Item Cat="5" Index="8" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Staff of Destruction -->
+		<Item Cat="5" Index="9" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Dragon Soul Staff -->
+		<Item Cat="4" Index="6" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Chaos Nature Bow -->
+		<Item Cat="2" Index="6" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Chaos Dragon Axe -->
+	</Section>
+	<Section ID="1">
+		<Item Cat="0" Index="24" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Daybreak -->
+		<Item Cat="0" Index="25" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Sword Dancer -->
+		<Item Cat="2" Index="15" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Shining Scepter -->
+		<Item Cat="4" Index="22" MinLevel="5" MaxLevel="7" Skill="1" Luck="1" Option="1" Exc="0" /> <!-- Albatross Bow -->
+		<Item Cat="5" Index="13" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Platina Staff -->
+	</Section>
+	<Section ID="2">
+		<Item Cat="0" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Katana -->
+		<Item Cat="1" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Tomahawk -->
+		<Item Cat="2" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Crystal Morning Star -->
+		<Item Cat="2" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Crystal Sword -->
+		<Item Cat="2" Index="7" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Elemental Mace -->
+		<Item Cat="2" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Battle Scepter -->
+		<Item Cat="2" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Master Scepter -->
+		<Item Cat="3" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Bill of Balrog -->
+		<Item Cat="4" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Bluewing Crossbow -->
+		<Item Cat="4" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Aquagold Crossbow -->
+		<Item Cat="5" Index="6" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Staff of Resurrection -->
+	</Section>
+	<Section ID="3">
+		<Item Cat="6" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Elven Shield -->
+		<Item Cat="6" Index="5" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dragon Slayer Shield -->
+		<Item Cat="6" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Tower Shield -->
+		<Item Cat="6" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Plate Shield -->
+		<Item Cat="6" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Serpent Shield -->
+		<Item Cat="6" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Bronze Shield -->
+		<Item Cat="6" Index="13" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Dragon Shield -->
+		<Item Cat="6" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Legendary Shield -->
+		<Item Cat="6" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Grand Soul Shield -->
+		<Item Cat="6" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="1" Exc="2" /> <!-- Elemental Shield -->
+	</Section>
+	<Section ID="4">
+		<Item Cat="8" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Storm Crow Armor -->
+		<Item Cat="9" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Storm Crow Pants -->
+		<Item Cat="10" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Storm Crow Gloves -->
+		<Item Cat="11" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Storm Crow Boots -->
+		<Item Cat="7" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Black Dragon Helm -->
+		<Item Cat="8" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Black Dragon Armor -->
+		<Item Cat="9" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Black Dragon Pants -->
+		<Item Cat="10" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Black Dragon Gloves -->
+		<Item Cat="11" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Black Dragon Boots -->
+		<Item Cat="7" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dark Phoenix Helm -->
+		<Item Cat="8" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dark Phoenix Armor -->
+		<Item Cat="9" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dark Phoenix Pants -->
+		<Item Cat="10" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dark Phoenix Gloves -->
+		<Item Cat="11" Index="17" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dark Phoenix Boots -->
+		<Item Cat="7" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Grand Soul Helm -->
+		<Item Cat="8" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Grand Soul Armor -->
+		<Item Cat="9" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Grand Soul Pants -->
+		<Item Cat="10" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Grand Soul Gloves -->
+		<Item Cat="11" Index="18" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Grand Soul Boots -->
+		<Item Cat="7" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Divine Helm -->
+		<Item Cat="8" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Divine Armor -->
+		<Item Cat="9" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Divine Pants -->
+		<Item Cat="10" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Divine Gloves -->
+		<Item Cat="11" Index="19" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Divine Boots -->
+		<Item Cat="8" Index="20" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Thunder Hawk Armor -->
+		<Item Cat="9" Index="20" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Thunder Hawk Pants -->
+		<Item Cat="10" Index="20" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Thunder Hawk Gloves -->
+		<Item Cat="11" Index="20" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Thunder Hawk Boots -->
+		<Item Cat="7" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dark Steel Helm -->
+		<Item Cat="8" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dark Steel Armor -->
+		<Item Cat="9" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dark Steel Pants -->
+		<Item Cat="10" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dark Steel Gloves -->
+		<Item Cat="11" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Dark Steel Boots -->
+		<Item Cat="7" Index="34" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Ashcrow Helm -->
+		<Item Cat="8" Index="34" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Ashcrow Armor -->
+		<Item Cat="9" Index="34" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Ashcrow Pants -->
+		<Item Cat="10" Index="34" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Ashcrow Gloves -->
+		<Item Cat="11" Index="34" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Ashcrow Boots -->
+		<Item Cat="7" Index="35" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Eclipse Helm -->
+		<Item Cat="8" Index="35" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Eclipse Armor -->
+		<Item Cat="9" Index="35" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Eclipse Pants -->
+		<Item Cat="10" Index="35" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Eclipse Gloves -->
+		<Item Cat="11" Index="35" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Eclipse Boots -->
+		<Item Cat="7" Index="36" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Iris Helm -->
+		<Item Cat="8" Index="36" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Iris Armor -->
+		<Item Cat="9" Index="36" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Iris Pants -->
+		<Item Cat="10" Index="36" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Iris Gloves -->
+		<Item Cat="11" Index="36" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Iris Boots -->
+		<Item Cat="8" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Valiant Armor -->
+		<Item Cat="9" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Valiant Pants -->
+		<Item Cat="10" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Valiant Gloves -->
+		<Item Cat="11" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Valiant Boots -->
+		<Item Cat="7" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Glorious Helm -->
+		<Item Cat="8" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Glorious Armor -->
+		<Item Cat="9" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Glorious Pants -->
+		<Item Cat="10" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Glorious Gloves -->
+		<Item Cat="11" Index="38" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Glorious Boots -->
+		<Item Cat="7" Index="28" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Glorious Boots -->
+		<Item Cat="8" Index="28" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Dark Master Armor -->
+		<Item Cat="9" Index="28" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Dark Master Pants -->
+		<Item Cat="10" Index="28" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Dark Master Gloves -->
+		<Item Cat="11" Index="28" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Dark Master Boots -->
+		<Item Cat="7" Index="21" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Great Dragon Helm -->
+		<Item Cat="8" Index="21" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Great Dragon Armor -->
+		<Item Cat="9" Index="21" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Great Dragon Pants -->
+		<Item Cat="10" Index="21" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Great Dragon Gloves -->
+		<Item Cat="11" Index="21" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Great Dragon Boots -->
+		<Item Cat="7" Index="22" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Dark Soul Helm -->
+		<Item Cat="8" Index="22" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Dark Soul Armor -->
+		<Item Cat="9" Index="22" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Dark Soul Pants -->
+		<Item Cat="10" Index="22" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Dark Soul Gloves -->
+		<Item Cat="11" Index="22" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Dark Soul Boots -->
+		<Item Cat="8" Index="23" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Hurricane Armor -->
+		<Item Cat="9" Index="23" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Hurricane Pants -->
+		<Item Cat="10" Index="23" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Hurricane Gloves -->
+		<Item Cat="11" Index="23" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Hurricane Boots -->
+		<Item Cat="7" Index="24" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Red Spirit Helm -->
+		<Item Cat="8" Index="24" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Red Spirit Armor -->
+		<Item Cat="9" Index="24" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Red Spirit Pants -->
+		<Item Cat="10" Index="24" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Red Spirit Gloves -->
+		<Item Cat="11" Index="24" MinLevel="5" MaxLevel="7" Skill="0" Luck="1" Option="1" Exc="0" /> <!-- Red Spirit Boots -->
+	</Section>
+	<Section ID="5">
+		<Item Cat="7" Index="10" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Vine Helm -->
+		<Item Cat="8" Index="10" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Vine Armor -->
+		<Item Cat="9" Index="10" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Vine Pants -->
+		<Item Cat="10" Index="10" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Vine Gloves -->
+		<Item Cat="11" Index="10" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Vine Boots -->
+		<Item Cat="7" Index="11" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Silk Helm -->
+		<Item Cat="8" Index="11" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Silk Armor -->
+		<Item Cat="9" Index="11" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Silk Pants -->
+		<Item Cat="10" Index="11" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Silk Gloves -->
+		<Item Cat="11" Index="11" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Silk Boots -->
+		<Item Cat="7" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Wind Helm -->
+		<Item Cat="8" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Wind Armor -->
+		<Item Cat="9" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Wind Pants -->
+		<Item Cat="10" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Wind Gloves -->
+		<Item Cat="11" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Wind Boots -->
+		<Item Cat="7" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Spirit Helm -->
+		<Item Cat="8" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Spirit Armor -->
+		<Item Cat="9" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Spirit Pants -->
+		<Item Cat="10" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Spirit Gloves -->
+		<Item Cat="11" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Spirit Boots -->
+		<Item Cat="7" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Guardian Helm -->
+		<Item Cat="8" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Guardian Armor -->
+		<Item Cat="9" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Guardian Pants -->
+		<Item Cat="10" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Guardian Gloves -->
+		<Item Cat="11" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Guardian Boots -->
+		<Item Cat="7" Index="25" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Light Plate Mask -->
+		<Item Cat="8" Index="25" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Light Plate Armor -->
+		<Item Cat="9" Index="25" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Light Plate Pants -->
+		<Item Cat="10" Index="25" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Light Plate Gloves -->
+		<Item Cat="11" Index="25" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Light Plate Boots -->
+		<Item Cat="7" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Adamantine Mask -->
+		<Item Cat="8" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Adamantine Armor -->
+		<Item Cat="9" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Adamantine Pants -->
+		<Item Cat="10" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Adamantine Gloves -->
+		<Item Cat="11" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="1" Exc="2" /> <!-- Adamantine Boots -->
+	</Section>
+	<Section ID="6">
+		<Item Cat="13" Index="8" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Ring of Ice -->
+		<Item Cat="13" Index="9" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Ring of Poison -->
+		<Item Cat="13" Index="21" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Ring of Fire -->
+		<Item Cat="13" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Ring of Earth -->
+		<Item Cat="13" Index="23" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Ring of Wind -->
+		<Item Cat="13" Index="24" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Ring of Magic -->
+		<Item Cat="13" Index="12" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Pendant of Lighting -->
+		<Item Cat="13" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Pendant of Fire -->
+		<Item Cat="13" Index="25" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Pendant of Ice -->
+		<Item Cat="13" Index="26" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Pendant of Wind -->
+		<Item Cat="13" Index="27" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Pendant of Water -->
+		<Item Cat="13" Index="28" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="1" Exc="2" /> <!-- Pendant of Ability -->
+	</Section>
+	<Section ID="7">
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Jewel of Bless -->
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Jewel of Life -->
+		<Item Cat="14" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Jewel of Harmony -->
+	</Section>
+	<Section ID="8">
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Jewel of Chaos -->
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Jewel of Soul -->
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Jewel of Creation -->
+		<Item Cat="14" Index="41" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Gemstone -->
+		<Item Cat="14" Index="43" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Lower refining stone -->
+		<Item Cat="14" Index="44" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Higher refining stone -->
+	</Section>
+	<Section ID="9">
+		<Item Cat="12" Index="30" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Bundled Jewel of Bless -->
+		<Item Cat="12" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Bundled Jewel of Soul -->
+	</Section>
+	<Section ID="10">
+		<Item Cat="13" Index="4" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Dark Horse -->
+		<Item Cat="13" Index="5" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Dark Raven -->
+		<Item Cat="13" Index="37" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="0" /> <!-- Horn of Fenrir -->
+	</Section>
+	<Section ID="11">
+		<!-- Empty -->
+	</Section>
+	<Section ID="12">
+		<!-- Empty -->
+	</Section>
+	<Section ID="13">
+		<!-- Empty -->
+	</Section>
+	<Section ID="14">
+		<!-- Empty -->
+	</Section>
+	<Section ID="15">
+		<!-- Empty -->
+	</Section>
+	<Section ID="16">
+		<!-- Empty -->
+	</Section>
+	<Section ID="17">
+		<!-- Empty -->
+	</Section>
+	<Section ID="18">
+		<!-- Empty -->
+	</Section>
+	<Section ID="19">
+		<!-- Empty -->
+	</Section>
+</ChaosCard>

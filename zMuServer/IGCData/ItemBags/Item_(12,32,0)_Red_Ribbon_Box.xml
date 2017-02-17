@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//	BAG ITEM: NO LIMIT
+//
+// ### ItemBag::BagConfig ###
+//	Name: Name of the Item or Monster
+//	ItemRate: Drop rate of an Item, n/10000
+//	SetItemRate: Drop Rate of random set item, system replicates drawn regular items with random set ancient item, n/10000, can be 0
+//	MoneyDrop: Money amount to drop from bag (must be greater than 0 if ItemRate is lower than 10000)
+//	BagUseEffect:
+//			-1: no effect
+//			 0:  Firecracker effect type
+//			 2:  Silver and Gold Medals effect type, Box of Heaven
+//			58: Cherry Blossom Play Box effect type
+//	BagUseRate: Defines probability to use Bag, n/10000.
+//				If value lower than 10000 (100%) makes a draw between Bag and Regular drop.
+//				If Monster level is greater than 149 always set 10000
+//
+// ### ItemBag:::SummonBook ### - responsible of dropping Summon Books from range - Cat: 14; Index: 217-221
+//	Enable: Activates the system, 0/1
+//	DropRate: Summon Book item drop rate, n/1000000
+//	ItemCat: Category of Summon Book Item: 14
+//	ItemIndex: Index of Summon Book Item: 217-221
+//
+// ### ItemBag::AddCoin ### - awarding with configured coin type and count
+//	Enable: 0 ~ disable, 1 ~ enables 
+//	CoinType: 0 ~ WCoinC (WCoin for Season 8 and later), 1 ~ WCoinP (available for Season 6 only), 2 ~ Goblin Point
+//	CoinValue: Points count to award with
+//
+// ### DropAllow ### - If setting lower class the higher one will automatically get allowed too
+//	Wizard: 0 ~ Disallow, 1 ~ Dark Wizard, 2 ~ Sould Master, 3 ~ Grand Master
+//	Knight: 0 ~ Disallow, 1 ~ Dark Knight, 2 ~ Blade Knight, 3 ~ Blade Master
+//	FairyElf: 0 ~ Disallow, 1 ~ Fairy Elf, 2 ~ Muse Elf, 3 ~ High Elf
+//	MagicGladiator: 0 ~ Disallow, 1 ~ Magic Gladiator, 2 ~ Duel Master
+//	DarkLord: 0 ~ Disallow, 1 ~ Dark Lord, 2 ~ Lord Emperor
+//	Summoner: 0 ~ Disallow, 1 ~ Summoner, 2 ~ Bloody Summoner, 3 ~ Dimension Master
+//	RageFighter: 0 ~ Disallow, 1 ~ Rage Fighter, 2 ~ Fist Master
+//	PlayerMinLevel: Minimum level of player to apply drop of items from the section (must be lower or equal to PlayerMaxLevel)
+//	PlayerMaxLevel: Maximum level of player to apply drop of items from the section (must be greater or equal to PlayerMinLevel)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ For easier configuration use PlayerMaxLevel="MAX" to configure maximum level available for the server (automated sum of MaxNormalLevel and MaxMasterLevel)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	MapNumber: Map Number the drop of items applies to, -1 for all maps
+//
+// ### DropAllow::Drop ###
+//	Rate: Drop rate of items from the section, n/10000
+//	Count: Items count to be dropped at a time from the section - option ignored for MuRuumy reward, always 1
+//
+// ### DropAllow::Drop::Item ###
+//	Cat: Item Category, refer to \IGCData\Items\ItemList.xml
+//	Index: Item index, refer to \IGCData\Items\ItemList.xml
+//	ItemMinLevel: Minimum level the item should drop with (must be lower or equal to ItemMaxLevel)
+//	ItemMaxLevel: Maximum level of the item should drop with (must be greater or equal to ItemMinLevel)
+//	Durability: Durability is optional attribute, if used then defined value will be used, otherwise generated automatically, 0-255
+//	Skill: 0 ~ no Skill, -1 ~ Random (50/50% chance), 1 ~ with Skill
+//	Luck: 0 ~ no Luck, -1 ~ Random (50/50% chance), 1 ~ with Luck
+//	Option: 0 ~ no Option, -1 ~ Random, 1,2,3,4,5,6,7 - with specified option - +4,+8,+12,+16,+20,+24,+28
+//	Exc:
+//		-1: Random Exc options
+//		-2: Lord Mix only, original setting
+//		-3: Random Exc options based on a Common Exc Options rate from IGC_ExcellentOptions.xml
+//		 0: No Exc options, or sum of below values (63 - Full of Excellent):
+//		 	 1: Mana recovery after Monster hunt +Mana/8
+//			 2: Health recovery after Monster hunt +HP/8
+//		 	 4: Speed +7
+//		 	 8: More Damage +2%
+//			16: More Damage +Level/20
+//			32: Excellent Damage Rate +10%
+//	SetItem: 0 ~ no ancient, 1 ~ ancient (random Tier of specified item) - must be added as ancient, otherwise option will be ignored
+//	SocketCount: 0 ~ no Socket slots, 1 ~ up to one slot, 2 ~ up to two slots, 3 ~ up to three slots, 4 ~ up to four slots, 5 ~ up to five slots (for versions later than Season 6item must be of Type 3 in ItemList.xml)
+//	ElementalItem: 0 ~ no Elemental attribute, 1 ~ Fire, 2 ~ Water, 3 ~ Earth, 4 ~ Wind, 5 ~ Darkness, -1 ~ Random attribute (option ignored for S6E3)
+//	MuunEvolutionItemCat: Attribute used and required for item 13,211 (Evolution Stone) only, defines Muun Item Category
+//	MuunEvolutionItemIndex: Attribute used and required for item 13,211 (Evolution Stone) only, defines Muun Item Index
+//	KindA: Attribute automatically assigned on a basis on ItemList.xml configuration, no necessary to be defined in bag
+//
+// Bag Structure Supports multiple DropAllow sections. Each DropAllow section may have multiple Drop sub-sections
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<ItemBag>
+<BagConfig Name="Item_Red_Ribbon_Box" ItemRate="1000" SetItemRate="0" MoneyDrop="30000" BagUseEffect="0" BagUseRate="10000" />
+<SummonBook Enable="0" DropRate="0" ItemCat="0" ItemIndex="0" />
+<AddCount Enable="0" CoinType="0" CoinValue="0" />
+
+<DropAllow Wizard="1" Knight="1" FairyElf="1" MagicGladiator="1" DarkLord="1" Summoner="1" RageFighter="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+	<Drop Rate="10000" Count="1">
+		<Item Cat="0" Index="3" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="0" Index="5" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="0" Index="11" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="1" Index="3" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="2" Index="1" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="4" Index="9" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="4" Index="11" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="5" Index="0" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="5" Index="2" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="7" Index="5" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="8" Index="5" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="9" Index="5" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="10" Index="5" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="11" Index="5" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="7" Index="10" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="8" Index="10" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="9" Index="10" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="10" Index="10" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="11" Index="10" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="7" Index="2" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="8" Index="2" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="9" Index="2" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="10" Index="2" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="11" Index="2" ItemMinLevel="7" ItemMaxLevel="9" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="7" Index="6" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="8" Index="6" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="9" Index="6" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="10" Index="6" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="11" Index="6" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="7" Index="11" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="8" Index="11" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="9" Index="11" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="10" Index="11" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="11" Index="11" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="7" Index="4" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="8" Index="4" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="9" Index="4" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="10" Index="4" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="11" Index="4" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="7" Index="25" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="8" Index="25" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="9" Index="25" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="10" Index="25" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="11" Index="25" ItemMinLevel="6" ItemMaxLevel="8" Skill="0" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="6" Index="9" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="6" Index="3" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="6" Index="6" ItemMinLevel="7" ItemMaxLevel="9" Skill="1" Luck="1" Option="1" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" />
+	</Drop>
+</DropAllow>
+</ItemBag>

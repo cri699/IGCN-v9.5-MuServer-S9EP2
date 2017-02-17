@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// FILE DESCRIPTION TO BE UPDATED SOON
+//
+// ### CryWolf ###
+//	Enable: Activates or deactivates the event, 0/1
+//
+// ### CryWolf::Schedule::Start ###
+//	Mode: Mode of schedule
+//		0: Regular mode
+//			Once finished event state is set to 0 (CRYWOLF_STATE_NONE) and event is started on next schedule
+//			Hour and Minute must be configured for this mode, next schedule runs 
+//		1: Repeat mode
+//			Once finished event state is set automatically to 1 (CRYWOLF_STATE_NOTIFY_1) after ContinuanceTime
+//	State: Defines event state, usually 1 for schedules
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//		1: CRYWOLF_STATE_NOTIFY_1 - Notice ~ Invasion Troops of the Balgass
+//		2: CRYWOLF_STATE_NOTIFY_2 - Call for all to prepare for the attack
+//		3: CRYWOLF_STATE_READY - Notice: Balgass is near CryWolf Fortress
+//		4: CRYWOLF_STATE_START - Top of battle
+//		5: CRYWOLF_STATE_END - Announcement: Winners and Losers
+//		6: CRYWOLF_STATE_ENDCYCLE
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	Month: Month of a year, 1-12, for Regular Mode (0) -1 value defines any month 
+//	Day: Day of a month, 1-31, -1 for Regular Mode (0) -1 value defines any day
+//	DayOfWeek: Day of the weekend the event runs on, 0-6 (starts from Sunday), for Regular Mode (0) -1 value defines any day of the week
+//	Hour: Hour of event (state) start, 0-23
+//	Minute: Minute of event (state) start, 0-59
+//	ContinuanceTime: 
+//
+// ### CryWolf::CycleSettings::Cycle ###
+//	State: Definition of state type in the cycle
+//	Hours: Amount of hours of state duration
+//	Minutes: Amount of minutes of state duration 
+//	Seconds: Amount of seconds of state duration
+//
+// ### CryWolf::MonsterGroupSettings ###
+//	MonsterAIChangeTime: 
+//	BalgassAIGroup: Balgass AI Group, MonsterAIGroup.txt
+//	BalgassTurnUpTime: Time to spawn Balgass, seconds
+//
+// ### CryWolf::MonsterGroupSettings::MonsterAIGroup ###
+//	ID: Id of CryWolf monster groups, MonsterAIGroup.txt
+//
+// ### CryWolf::MvP_ScoreKillReward ###
+//	Balgass: Scores count to award with for killing Balgass
+//	DarkElf: Scores count to award with for killing Dark Elf
+//	Balram: Scores count to award with for killing Balram
+//	Soram: Scores count to award with for killing Soram
+//	DeathSpirit: Scores count to award with for killing Death Spirit
+//	Tanker: Scores count to award with for killing Tanker
+//	Contractor: Scores count to award with for killing Contractor
+//
+// ### CryWolf::MvP_RankScoreReward ###
+//	RankD: Scores count reward for specified rank type (D)
+//	RankC: Scores count reward for specified rank type (C)
+//	RankB: Scores count reward for specified rank type (B)
+//	RankA: Scores count reward for specified rank type (A)
+//	RankS: Scores count reward for specified rank type (S)
+//
+// ### CryWolf::MvP_RankExpReward ###
+//	RankD: Experience amount to award with at specified rank (D)
+//	RankC: Experience amount to award with at specified rank (C)
+//	RankB: Experience amount to award with at specified rank (B)
+//	RankA: Experience amount to award with at specified rank (A)
+//	RankS: Experience amount to award with at specified rank (S)
+//
+// ### CryWolf::Benefits ###
+//	Enable: Enables benefits system for winning the event, 0/1
+//	PlusChaosRate: Chaos machine rate bonus, percentage
+//	MonsterHPRate: Monster HP rate decrease, percentage
+//	KundunHPRefill: Enables or disables Kundun HP Refill, 0/1
+//
+// ### CryWolf::Penalties ###
+//	Enable: Enables penalties system for loosing the event, 0/1
+//	GemDropPenaltyRate: Decreases Jewels drop rate by configured value, percentage ~ 1-100
+//	GettingExpPenaltyRate: Decreases Exp by configured value, percentage ~ 1-100
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<CryWolf Enable="1">
+	<Schedule>
+		<Start Mode="0" State="1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="10" ContinuanceTime="-1" />
+		<Start Mode="0" State="1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="10" ContinuanceTime="-1" />
+	</Schedule>
+
+	<CycleSettings>
+		<Cycle State="1" Hours="0" Minutes="0" Seconds="600" /> <!-- CRYWOLF_STATE_NOTIFY_1 - Notice ~ Invasion Troops of the Balgass -->
+		<Cycle State="2" Hours="0" Minutes="0" Seconds="300" /> <!-- CRYWOLF_STATE_NOTIFY_2 - Call for all to prepare for the attack -->
+		<Cycle State="3" Hours="0" Minutes="0" Seconds="150" /> <!-- CRYWOLF_STATE_READY - Notice: Balgass is near CryWolf Fortress -->
+		<Cycle State="4" Hours="0" Minutes="0" Seconds="900" /> <!-- CRYWOLF_STATE_START - Top of Battle -->
+		<Cycle State="5" Hours="0" Minutes="0" Seconds="15" /> <!-- CRYWOLF_STATE_END - Announcement: Winners and Losers -->
+		<Cycle State="6" Hours="0" Minutes="0" Seconds="10" /> <!-- CRYWOLF_STATE_ENDCYCLE -->
+	</CycleSettings>
+
+	<MonsterGroupSettings MonsterAIChangeTime="300" BalgassAIGroup="5" BalgassTurnUpTime="600">
+		<MonsterAIGroup ID="2" />
+		<MonsterAIGroup ID="3" />
+		<MonsterAIGroup ID="4" />
+		<MonsterAIGroup ID="6" />
+		<MonsterAIGroup ID="7" />
+		<MonsterAIGroup ID="8" />
+		<MonsterAIGroup ID="9" />
+		<MonsterAIGroup ID="10" />
+		<MonsterAIGroup ID="11" />
+		<MonsterAIGroup ID="12" />
+		<MonsterAIGroup ID="13" />
+	</MonsterGroupSettings>
+
+	<MvP_ScoreKillReward Balgass="7000" DarkElf="3000" Balram="600" Soram="700" DeathSpirit="600" Tanker="1000" Contractor="6000" />
+	<MvP_RankScoreReward RankD="0" RankC="1001" RankB="3001" RankA="5001" RankS="10001" />
+	<MvP_RankExpReward RankD="0" RankC="200000" RankB="800000" RankA="1200000" RankS="1800000" />
+	
+	<Benefit Enable="1" PlusChaosRate="5" MonsterHPRate="90" KundunHPRefill="0" /> <!-- KundunHPRefill, 0/1 -->
+	<Penalty Enable="0" GemDropPenaltyRate="70" GettingExpPenaltyRate="100" />
+</CryWolf>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### BloodCastle ###
+//	Enable: Allow to activate or disable the event, 0/1
+//	EarlyFinishRestriction: Allows to activate restriction preventing completing the event before time specified in EarlyFinishMinTime
+//	EarlyFinishMinTime: Minimum event time the event can be completed (weapon can be returned to Archangel), seconds
+//	ScrollofArchangelDropRate: Scroll of Archangel (13,16) item drop, n/10000
+//	BloodBoneDropRate: Blood Bone item (13,17) item drop, n/10000
+//
+// ### BloodCastle::Time ###
+//	ToOpen: Time the event will be opened from event start notification moment, minutes
+//	PlayDuration: Event duration, minutes
+//	ToClose: Time to move players to down after the event is finished, minutes
+//
+// ### BloodCastle::Schedule::Start ###
+//	Hour: Start hour of the event, 0-23
+//	Minute: Start minute of the event, 0-59
+//
+// ### BloodCastle::EventSettings::Castle ###
+//	Level: Level of the event the the configuration applies to
+//	StatueHP: Maximum Health of the Statue
+//	GateHP: Maximum Health of the Gate
+//
+// ### BloodCastle::RewardExpSettings::Castle ###
+//	Level: Level of the event the the configuration applies to
+//	Multiplier: Multiplier of reward exp (received after completing the event)
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<BloodCastle Enable="1" EarlyFinishRestriction="0" EarlyFinishMinTime="300" ScrollofArchangelDropRate="800" BloodBoneDropRate="800">
+<Time ToOpen="5" PlayDuration="15" ToClose="1" />
+	
+	<Schedule>
+		<Start Hour="0" Minute="30" />
+		<Start Hour="2" Minute="30" />
+		<Start Hour="4" Minute="30" />
+		<Start Hour="6" Minute="30" />
+		<Start Hour="8" Minute="30" />
+		<Start Hour="10" Minute="30" />
+		<Start Hour="12" Minute="30" />
+		<Start Hour="14" Minute="30" />
+		<Start Hour="16" Minute="30" />
+		<Start Hour="18" Minute="30" />
+		<Start Hour="20" Minute="30" />
+		<Start Hour="22" Minute="30" />
+	</Schedule>
+	
+	<EventSettings>
+		<Castle Level="0" StatueHP="65000"  GateHP="150000" /> <!-- Blood Castle 1 -->
+		<Castle Level="1" StatueHP="105000" GateHP="205000" /> <!-- Blood Castle 2 -->
+		<Castle Level="2" StatueHP="145000" GateHP="260000" /> <!-- Blood Castle 3 -->
+		<Castle Level="3" StatueHP="185000" GateHP="325000" /> <!-- Blood Castle 4 -->
+		<Castle Level="4" StatueHP="225000" GateHP="400000" /> <!-- Blood Castle 5 -->
+		<Castle Level="5" StatueHP="265000" GateHP="480000" /> <!-- Blood Castle 6 -->
+		<Castle Level="6" StatueHP="305000" GateHP="565000" /> <!-- Blood Castle 7 -->
+		<Castle Level="7" StatueHP="345000" GateHP="665000" /> <!-- Blood Castle 8 -->
+	</EventSettings>
+	
+	<RewardExpSettings>
+		<Castle Level="0" Multiplier="1.0" /> <!-- Blood Castle 1 -->
+		<Castle Level="1" Multiplier="1.0" /> <!-- Blood Castle 2 -->
+		<Castle Level="2" Multiplier="1.0" /> <!-- Blood Castle 3 -->
+		<Castle Level="3" Multiplier="1.0" /> <!-- Blood Castle 4 -->
+		<Castle Level="4" Multiplier="1.0" /> <!-- Blood Castle 5 -->
+		<Castle Level="5" Multiplier="1.0" /> <!-- Blood Castle 6 -->
+		<Castle Level="6" Multiplier="1.0" /> <!-- Blood Castle 7 -->
+		<Castle Level="7" Multiplier="1.0" /> <!-- Blood Castle 8 -->
+	</RewardExpSettings>
+</BloodCastle>

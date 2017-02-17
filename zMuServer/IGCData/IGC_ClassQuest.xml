@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<ClassQuest>
+	<QuestInfo Index="0" Type="2" SubType="235" Name="Find the 'Scroll of Emperor'!">
+		<QuestJob>
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="23" ItemLevel="0" ItemCount="1" MonsterMinLevel="45" MonsterMaxLevel="60" DropRate="10" RewardType="200" RewardSubType="0" RewardCount="10" LinkConditionIndex="0" DarkWizard="1" DarkKnight="1" FairyElf="1" MagicGladiator="0" DarkLord="0" Summoner="1" RageFighter="0" GrowLancer="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="23" ItemLevel="0" ItemCount="1" MonsterMinLevel="45" MonsterMaxLevel="60" DropRate="10" RewardType="200" RewardSubType="0" RewardCount="10" LinkConditionIndex="1" DarkWizard="0" DarkKnight="0" FairyElf="0" MagicGladiator="1" DarkLord="1" Summoner="0" RageFighter="1" GrowLancer="0" />
+		</QuestJob>
+		
+		<QuestCondition>
+			<Condition Type="1"  Index="0"  MinLevel="10000" MaxLevel="10000" ReqStrength="0" ReqMoney="0" StartContext="73" />
+			<Condition Type="-1" Index="-1" MinLevel="0" MaxLevel="0" ReqStrength="0" ReqMoney="1000000" StartContext="51" />
+			<Condition Type="-1" Index="-1" MinLevel="150" MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="50" />
+		</QuestCondition>
+	</QuestInfo>
+
+	<QuestInfo Index="1" Type="2" SubType="235" Name="Four Treasures of Mu">
+		<QuestJob>
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="24" ItemLevel="0" ItemCount="1" MonsterMinLevel="62" MonsterMaxLevel="76" DropRate="10" RewardType="201" RewardSubType="0" RewardCount="10" LinkConditionIndex="0" DarkWizard="0" DarkKnight="1" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="25" ItemLevel="0" ItemCount="1" MonsterMinLevel="62" MonsterMaxLevel="76" DropRate="10" RewardType="201" RewardSubType="0" RewardCount="10" LinkConditionIndex="0" DarkWizard="0" DarkKnight="0" FairyElf="1" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="26" ItemLevel="0" ItemCount="1" MonsterMinLevel="62" MonsterMaxLevel="76" DropRate="10" RewardType="201" RewardSubType="0" RewardCount="10" LinkConditionIndex="0" DarkWizard="1" DarkKnight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="68" ItemLevel="0" ItemCount="1" MonsterMinLevel="62" MonsterMaxLevel="76" DropRate="10" RewardType="201" RewardSubType="0" RewardCount="10" LinkConditionIndex="0" DarkWizard="0" DarkKnight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="1" RageFighter="0" GrowLancer="0" />
+		</QuestJob>
+		
+		<QuestCondition>
+			<Condition Type="-1" Index="0" MinLevel="0" MaxLevel="0" ReqStrength="0" ReqMoney="2000000" StartContext="71" />
+		</QuestCondition>
+	</QuestInfo>
+
+	<QuestInfo Index="2" Type="2" SubType="229" Name="Gain 'Hero status'">
+		<QuestJob>
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="23" ItemLevel="1" ItemCount="1" MonsterMinLevel="72" MonsterMaxLevel="108" DropRate="10" RewardType="202" RewardSubType="0" RewardCount="0" LinkConditionIndex="0" DarkWizard="2" DarkKnight="0" FairyElf="2" MagicGladiator="0" DarkLord="0" Summoner="2" RageFighter="0" GrowLancer="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="23" ItemLevel="1" ItemCount="1" MonsterMinLevel="72" MonsterMaxLevel="108" DropRate="10" RewardType="202" RewardSubType="0" RewardCount="0" LinkConditionIndex="0" DarkWizard="0" DarkKnight="2" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" />
+		</QuestJob>
+		
+		<QuestCondition>
+			<Condition Type="-1" Index="-1" MinLevel="220" MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="100" />
+			<Condition Type="-1" Index="1"  MinLevel="0"   MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="116" />
+			<Condition Type="-1" Index="-1" MinLevel="0"   MaxLevel="0" ReqStrength="0" ReqMoney="3000000" StartContext="118" />
+		</QuestCondition>
+	</QuestInfo>
+
+	<QuestInfo Index="3" Type="2" SubType="229" Name="Secret of 'Dark Stone'">
+		<QuestJob>
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="24" ItemLevel="1" ItemCount="1" MonsterMinLevel="72" MonsterMaxLevel="108" DropRate="10" RewardType="203" RewardSubType="0" RewardCount="0" LinkConditionIndex="0" DarkWizard="0" DarkKnight="2" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" />		
+		</QuestJob>
+		
+		<QuestCondition>
+			<Condition Type="-1" Index="-1" MinLevel="220" MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="115" />
+			<Condition Type="-1" Index="2" MinLevel="0" MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="117" />
+			<Condition Type="-1" Index="-1" MinLevel="0" MaxLevel="0" ReqStrength="0" ReqMoney="2000000" StartContext="119"  />
+		</QuestCondition>
+	</QuestInfo>
+
+	<QuestInfo Index="4" Type="2" SubType="406" Name="Certificate of 'Strength!'">
+		<QuestJob>
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="65" ItemLevel="0" ItemCount="1" MonsterMinLevel="-1" MonsterMaxLevel="63"	DropRate="1000" RewardType="200" RewardSubType="0" RewardCount="0"	LinkConditionIndex="3" DarkWizard="2" DarkKnight="0" FairyElf="2" MagicGladiator="0" DarkLord="0" Summoner="2" RageFighter="0" GrowLancer="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="66" ItemLevel="0" ItemCount="1" MonsterMinLevel="-1" MonsterMaxLevel="309"	DropRate="1000" RewardType="200" RewardSubType="0" RewardCount="0"	LinkConditionIndex="1" DarkWizard="2" DarkKnight="0" FairyElf="2" MagicGladiator="0" DarkLord="0" Summoner="2" RageFighter="0" GrowLancer="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="67" ItemLevel="0" ItemCount="1" MonsterMinLevel="-1" MonsterMaxLevel="77"	DropRate="1000" RewardType="200" RewardSubType="0" RewardCount="10"	LinkConditionIndex="1" DarkWizard="2" DarkKnight="0" FairyElf="2" MagicGladiator="0" DarkLord="0" Summoner="2" RageFighter="0" GrowLancer="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="65" ItemLevel="0" ItemCount="1" MonsterMinLevel="-1" MonsterMaxLevel="63"	DropRate="1000" RewardType="200" RewardSubType="0" RewardCount="0"	LinkConditionIndex="3" DarkWizard="0" DarkKnight="2" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="66" ItemLevel="0" ItemCount="1" MonsterMinLevel="-1" MonsterMaxLevel="309"	DropRate="1000" RewardType="200" RewardSubType="0" RewardCount="0"	LinkConditionIndex="2" DarkWizard="0" DarkKnight="2" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="67" ItemLevel="0" ItemCount="1" MonsterMinLevel="-1" MonsterMaxLevel="77"	DropRate="1000" RewardType="200" RewardSubType="0" RewardCount="10"	LinkConditionIndex="2" DarkWizard="0" DarkKnight="2" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="65" ItemLevel="0" ItemCount="1" MonsterMinLevel="-1" MonsterMaxLevel="63"	DropRate="1000" RewardType="200" RewardSubType="0" RewardCount="0"	LinkConditionIndex="3" DarkWizard="0" DarkKnight="0" FairyElf="0" MagicGladiator="1" DarkLord="1" Summoner="0" RageFighter="1" GrowLancer="1" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="66" ItemLevel="0" ItemCount="1" MonsterMinLevel="-1" MonsterMaxLevel="309"	DropRate="1000" RewardType="200" RewardSubType="0" RewardCount="0"	LinkConditionIndex="0" DarkWizard="0" DarkKnight="0" FairyElf="0" MagicGladiator="1" DarkLord="1" Summoner="0" RageFighter="1" GrowLancer="1" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="67" ItemLevel="0" ItemCount="1" MonsterMinLevel="-1" MonsterMaxLevel="77"	DropRate="1000" RewardType="200" RewardSubType="0" RewardCount="10"	LinkConditionIndex="0" DarkWizard="0" DarkKnight="0" FairyElf="0" MagicGladiator="1" DarkLord="1" Summoner="0" RageFighter="1" GrowLancer="1" />
+		</QuestJob>
+		
+		<QuestCondition>
+			<Condition Type="1" Index="2" MinLevel="0" MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="166" />
+			<Condition Type="2" Index="3" MinLevel="0" MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="166" />
+			<Condition Type="3" Index="-1" MinLevel="0" MaxLevel="0" ReqStrength="0" ReqMoney="5000000" StartContext="146" />
+			<Condition Type="-1" Index="-1" MinLevel="380" MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="144" />
+		</QuestCondition>
+	</QuestInfo>
+
+	<QuestInfo Index="5" Type="2" SubType="406" Name="Infiltration of 'Barrack'">
+		<QuestJob>
+			<Job Type="2" ReqItemCat="409" ReqItemIndex="0" ItemLevel="0" ItemCount="20" MonsterMinLevel="-1" MonsterMaxLevel="409" DropRate="0" RewardType="0"   RewardSubType="0" RewardCount="0"  LinkConditionIndex="1" DarkWizard="2" DarkKnight="2" FairyElf="2" MagicGladiator="1" DarkLord="1" Summoner="2" RageFighter="1" GrowLancer="1" />
+			<Job Type="2" ReqItemCat="410" ReqItemIndex="0" ItemLevel="0" ItemCount="20" MonsterMinLevel="-1" MonsterMaxLevel="410" DropRate="0" RewardType="0"   RewardSubType="0" RewardCount="0"  LinkConditionIndex="0" DarkWizard="2" DarkKnight="2" FairyElf="2" MagicGladiator="1" DarkLord="1" Summoner="2" RageFighter="1" GrowLancer="1" />
+			<Job Type="2" ReqItemCat="411" ReqItemIndex="0" ItemLevel="0" ItemCount="20" MonsterMinLevel="-1" MonsterMaxLevel="411" DropRate="0" RewardType="200" RewardSubType="0" RewardCount="20" LinkConditionIndex="0" DarkWizard="2" DarkKnight="2" FairyElf="2" MagicGladiator="1" DarkLord="1" Summoner="2" RageFighter="1" GrowLancer="1" />
+		</QuestJob>
+		
+		<QuestCondition>
+			<Condition Type="1" Index="-1" MinLevel="0" MaxLevel="0" ReqStrength="0" ReqMoney="7000000" StartContext="157" />
+			<Condition Type="-1" Index="-1" MinLevel="400" MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="144" />
+			<Condition Type="-1" Index="4" MinLevel="0"	MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="145" />
+		</QuestCondition>
+	</QuestInfo>
+
+	<QuestInfo Index="6" Type="2" SubType="406" Name="Infiltration of 'Refuge'">
+		<QuestJob>
+			<Job Type="2" ReqItemCat="412" ReqItemIndex="0" ItemLevel="0" ItemCount="1" MonsterMinLevel="-1" MonsterMaxLevel="412" DropRate="0" RewardType="204" RewardSubType="200" RewardCount="30" LinkConditionIndex="0" DarkWizard="2" DarkKnight="2" FairyElf="2" MagicGladiator="1" DarkLord="1" Summoner="2" RageFighter="1" GrowLancer="1" />
+		</QuestJob>
+		
+		<QuestCondition>
+			<Condition Type="-1" Index="-1" MinLevel="400" MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="144" />
+			<Condition Type="-1" Index="5" MinLevel="0" MaxLevel="0" ReqStrength="0" ReqMoney="0" StartContext="145" />
+			<Condition Type="-1" Index="-1" MinLevel="0" MaxLevel="0" ReqStrength="0" ReqMoney="10000000" StartContext="167" />
+		</QuestCondition>
+	</QuestInfo>
+</ClassQuest>

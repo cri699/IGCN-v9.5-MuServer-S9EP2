@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### CastleSiegeEvent ###
+//	Enable: Deactivates or activates the event, 0/1
+//	FriendlyFire: Allowing to attack self team companions, 0/1
+//	ResetAccumulatedTimeAfterKill: Resets accumulated time after killing Guild Master, 0/1
+//	LordMixDailyLimit: Daily limit of Lord Mixes
+//	TowerEntryWithoutAlliance: Enables ability to enter the Castle Tower without Guild Alliance by Siege winning Guild, 0/1
+//
+// ### CastleSiegeEvent::DamageReduction ###
+//	OppositeTeam: Damage reduction on Opposite Team players during the event, expressed in percent, 0-100
+//	SelfTeam: Damage reduction on Self Team companions during the event, expressed in percent, 0-100
+//
+// ### CastleSiegeEvent::CycleSettings ###
+//	Days: Total amount of days event cycle last
+//	StartYear: Year the event starts on
+//	StartMonth: Month the event starts on, 1-12
+//	StartDay: Day the event starts on, 1-31
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	StartYear, StartMonth and StartDay values configured in the file getting inserted into
+//	[dbo].[MuCatle_DATA].[SIEGE_START_DATE] after GameServer load or option reload and reset back to 0 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### CastleSiegeEvent::CycleSettings::Cycle ### - configuration of stages at specified days of cycle
+//	Stage: Definition of event stage type:
+//		1 ~ Registration for Castle Siege
+//		2 ~ Idle
+//		3 ~ Register Mark Of The Lord
+//		4 ~ Idle
+//		5 ~ Castle Attack Guild Notification
+//		6 ~ Reading the state of Castle Siege
+//		7 ~ Start of Castle Siege event
+//		8 ~ End of Castle Siege event
+//		9 ~ End of Castle Siege cycle
+//	Day: Day of a Cycle to run specified State, 0 is used for registration period before event cycle start
+//	Hour: Hour to run specified state of the cycle, 0-23
+//	Minute: Minute to run specified state of the cycle, 0-60
+//
+// ### CastleSiegeEvent::CycleCorrection ### - used to force start of specified state of the event in case of some fault or a need to speed it up
+//	State: Defines specific State of the event, for a list of states see Stages list above
+//	Year: Year to run the state on
+//	Day: Day to run the state on, 1-31
+//	Hour: Hour to run the state on, 0-23
+//	Minute: Minute to run the state on, 0-60
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	State, Year, Month, Day, Hour and Minute values configured in the file getting inserted into
+//	[dbo].[MuCatle_DATA].[SIEGE_START_DATE] after GameServer load or option reload and reset back to 0 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### CastleSiegeEvent::NPCSettings::NPC ###
+//	Index: Index of NPC (MonsterList.xml)
+//	Number: Sequence Number for specific NPC Type (index), starts from 1
+//	DBSave: Saves NPC (usually gates and statues) in Database for purpose of update of their data (HP, Defense, etc), 0/1
+//	Side: Defines a side for NPC:
+//		1 ~ Attacking Team
+//		2 ~ Defending Team
+//	DefenseLevel: 
+//	HPRecLevel: 
+//	MaxHP: Maximum HP for the NPC
+//	StartX: Spawn location for the NPC, Start X Coordinate
+//	StartY: Spawn location for the NPC, Start Y Coordinate
+//	EndX: Spawn location for the NPC, End X Coordinate, -1 if not applies
+//	EndY: Spawn location for the NPC, End Y Coordinate, -1 if not applies
+//	Dir: Direction a spawned NPC looks at:
+//		~ 0: Central
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//	Name: Name of NPC, used for in-file description purpose only
+//
+// ### CastleSiegeEvent::DefenseUpgrade::Gates::Defense ### - Next level defense upgrade cost
+//	Level: Level of Gates Defense, section does not allow definitions of extra levels
+//	ReqJewelOfGuardian: Required count of Jewel of Guardian for upgrade to next level, must be higher than 0
+//	ReqZen: Required Zen amount to upgrade for the next level, must be higher than 0
+//
+// ### CastleSiegeEvent::DefenseUpgrade::Statues::Defense ### - Next level defense upgrade cost
+//	Level: Level of Statues Defense, section does not allow definitions of extra levels
+//	ReqJewelOfGuardian: Required count of Jewel of Guardian for upgrade to next level, must be higher than 0
+//	ReqZen: Required Zen amount to upgrade for the next level, must be higher than 0
+//
+// ### CastleSiegeEvent::HealthUpgrade::Gates::Health ###
+//	Value: Level of Gates Health, section does not allow definitions of extra levels
+//	ReqJewelOfGuardian: Required count of Jewel of Guardian for upgrade to next level, must be higher than 0
+//	ReqZen: Required Zen amount to upgrade for the next level, must be higher than 0
+//
+// ### CastleSiegeEvent::HealthUpgrade::Statues::Health ###
+//	Value: Level of Statues Health, section does not allow definitions of extra levels
+//	ReqJewelOfGuardian: Required count of Jewel of Guardian for upgrade to next level, must be higher than 0
+//	ReqZen: Required Zen amount to upgrade for the next level, must be higher than 0
+//
+// ### CastleSiegeEvent::StatueHealthRecoveryUpgrade::Recovery ###
+//	Level: Level of Statues HP Recovery level, section does not allow definitions of extra levels
+//	ReqJewelOfGuardian: Required count of Jewel of Guardian for upgrade to next level, must be higher than 0
+//	ReqZen: Required Zen amount to upgrade for the next level, must be higher than 0
+//
+// ### CastleSiegeEvent::DefenseSettings::Gates::Defense ### - defense value on specific Gate Level
+//	Level: Level of Gate, section does not allow definitions of extra levels
+//	Value: Defense Value
+//
+// ### CastleSiegeEvent::DefenseSettings::Statues::Defense ### - defense value on specific Statue Level
+//	Level: Level of Statue, section does not allow definitions of extra levels
+//	Value: Defense Value
+//
+-->
+
+<CastleSiegeEvent Enable="1" FriendlyFire="1" ResetAccumulatedTimeAfterKill="0" LordMixDailyLimit="1" TowerEntryWithoutAlliance="0">
+	<DamageReduction OppositeTeam="40" SelfTeam="20" />
+	
+	<CycleSettings Days="14" StartYear="0" StartMonth="0" StartDay="0">
+		<Cycle Stage="1" Day="0"  Hour="0"  Minute="0" /> <!-- Register Period -->
+		<Cycle Stage="2" Day="1"  Hour="23" Minute="59" /> <!-- Idle -->
+		<Cycle Stage="3" Day="2"  Hour="0"  Minute="0" /> <!-- Register Mark Of The Lord -->
+		<Cycle Stage="4" Day="4"  Hour="0"  Minute="0" /> <!-- Idle -->
+		<Cycle Stage="5" Day="4"  Hour="12" Minute="0" /> <!-- Castle Attack Guild Notification -->
+		<Cycle Stage="6" Day="4"  Hour="19" Minute="0" /> <!-- Ready For Castle Siege -->
+		<Cycle Stage="7" Day="7"  Hour="8"  Minute="0" /> <!-- Castle Siege Start -->
+		<Cycle Stage="8" Day="7"  Hour="10" Minute="0" /> <!-- Castle Siege End -->
+		<Cycle Stage="9" Day="14" Hour="0"  Minute="0" /> <!-- End of Cycle -->
+	</CycleSettings>
+
+	<CycleCorrection State="0" Year="0" Month="0" Day="0" Hour="0" Minute="0" />
+
+	<NPCSettings>
+		<NPC Index="283" Number="1" DBSave="1" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="1500000" StartX="94"  StartY="227" EndX="-1" EndY="-1" Dir="1" Name="Guardian Statue" />
+		<NPC Index="283" Number="2" DBSave="1" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="1500000" StartX="94"  StartY="182" EndX="-1" EndY="-1" Dir="1" Name="Guardian Statue" />
+		<NPC Index="283" Number="3" DBSave="1" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="1500000" StartX="82"  StartY="130" EndX="-1" EndY="-1" Dir="1" Name="Guardian Statue" />
+		<NPC Index="283" Number="4" DBSave="1" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="1500000" StartX="107" StartY="130" EndX="-1" EndY="-1" Dir="1" Name="Guardian Statue" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<NPC Index="277" Number="1" DBSave="1" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="1900000" StartX="93"  StartY="204" EndX="-1" EndY="-1" Dir="1" Name="Castle Gate" />
+		<NPC Index="277" Number="2" DBSave="1" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="1900000" StartX="81"  StartY="161" EndX="-1" EndY="-1" Dir="1" Name="Castle Gate" />
+		<NPC Index="277" Number="3" DBSave="1" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="1900000" StartX="107" StartY="161" EndX="-1" EndY="-1" Dir="1" Name="Castle Gate" />
+		<NPC Index="277" Number="4" DBSave="1" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="1900000" StartX="67"  StartY="114" EndX="-1" EndY="-1" Dir="1" Name="Castle Gate" />
+		<NPC Index="277" Number="5" DBSave="1" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="1900000" StartX="93"  StartY="114" EndX="-1" EndY="-1" Dir="1" Name="Castle Gate" />
+		<NPC Index="277" Number="6" DBSave="1" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="1900000" StartX="119" StartY="114" EndX="-1" EndY="-1" Dir="1" Name="Castle Gate" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<NPC Index="288" Number="1" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="3000000" StartX="75"  StartY="130" EndX="-1" EndY="-1" Dir="1" Name="Canon Tower" />
+		<NPC Index="288" Number="2" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="3000000" StartX="88"  StartY="130" EndX="-1" EndY="-1" Dir="1" Name="Canon Tower" />
+		<NPC Index="288" Number="3" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="3000000" StartX="99"  StartY="130" EndX="-1" EndY="-1" Dir="1" Name="Canon Tower" />
+		<NPC Index="288" Number="4" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="3000000" StartX="114" StartY="130" EndX="-1" EndY="-1" Dir="1" Name="Canon Tower" />
+		<NPC Index="288" Number="5" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="3000000" StartX="94"  StartY="151" EndX="-1" EndY="-1" Dir="1" Name="Canon Tower" />
+		<NPC Index="288" Number="6" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="3000000" StartX="88"  StartY="182" EndX="-1" EndY="-1" Dir="1" Name="Canon Tower" />
+		<NPC Index="288" Number="7" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="3000000" StartX="100" StartY="182" EndX="-1" EndY="-1" Dir="1" Name="Canon Tower" />
+		<NPC Index="288" Number="8" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="3000000" StartX="94"  StartY="221" EndX="-1" EndY="-1" Dir="1" Name="Canon Tower" />
+		<NPC Index="288" Number="9" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="3000000" StartX="94"  StartY="233" EndX="-1" EndY="-1" Dir="1" Name="Canon Tower" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<NPC Index="215" Number="1" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="10000"   StartX="94"  StartY="242" EndX="-1" EndY="-1" Dir="1" Name="Shield" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<NPC Index="222" Number="1" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="10000"   StartX="80"  StartY="188" EndX="-1" EndY="-1" Dir="1" Name="Slingshot Defense" />
+		<NPC Index="222" Number="2" DBSave="0" Side="1" DefenseLevel="0" HPRecLevel="0" MaxHP="10000"   StartX="105" StartY="188" EndX="-1" EndY="-1" Dir="1" Name="Slingshot Defense" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<NPC Index="221" Number="1" DBSave="0" Side="2" DefenseLevel="0" HPRecLevel="0" MaxHP="10000"   StartX="63"  StartY="19"  EndX="-1" EndY="-1" Dir="5" Name="Slingshot Attack" />
+		<NPC Index="221" Number="2" DBSave="0" Side="2" DefenseLevel="0" HPRecLevel="0" MaxHP="10000"   StartX="119" StartY="19"  EndX="-1" EndY="-1" Dir="5" Name="Slingshot Attack" />
+	</NPCSettings>
+	
+	<DefenseUpgrade>	
+		<Gates>
+			<Defense Level="1" ReqJewelOfGuardian="2" ReqZen="3000000" />
+			<Defense Level="2" ReqJewelOfGuardian="3" ReqZen="3000000" />
+			<Defense Level="3" ReqJewelOfGuardian="4" ReqZen="3000000" />
+		</Gates>
+		<Statues>
+			<Defense Level="1" ReqJewelOfGuardian="3" ReqZen="3000000" />
+			<Defense Level="2" ReqJewelOfGuardian="5" ReqZen="3000000" />
+			<Defense Level="3" ReqJewelOfGuardian="7" ReqZen="3000000" />
+		</Statues>
+	</DefenseUpgrade>
+	
+	<HealthUpgrade>
+		<Gates>
+			<Health Value="2500000" ReqJewelOfGuardian="2" ReqZen="1000000" />
+			<Health Value="3500000" ReqJewelOfGuardian="3" ReqZen="1000000" />
+			<Health Value="5200000" ReqJewelOfGuardian="4" ReqZen="1000000" />
+		</Gates>
+		<Statues>
+			<Health Value="2200000" ReqJewelOfGuardian="3" ReqZen="1000000" />
+			<Health Value="3400000" ReqJewelOfGuardian="5" ReqZen="1000000" />
+			<Health Value="5000000" ReqJewelOfGuardian="7" ReqZen="1000000" />
+		</Statues>
+	</HealthUpgrade>
+	
+	<StatueHealthRecoveryUpgrade>
+		<Recovery Level="1" ReqJewelOfGuardian="3" ReqZen="5000000" />
+		<Recovery Level="2" ReqJewelOfGuardian="5" ReqZen="5000000" />
+		<Recovery Level="3" ReqJewelOfGuardian="7" ReqZen="5000000" />
+	</StatueHealthRecoveryUpgrade>
+	
+	<DefenseSettings>
+		<Gates>
+			<Defense Level="0" Value="100" />
+			<Defense Level="1" Value="180" />
+			<Defense Level="2" Value="300" />
+			<Defense Level="3" Value="520" />
+		</Gates>
+		<Statues>
+			<Defense Level="0" Value="80" />
+			<Defense Level="1" Value="180" />
+			<Defense Level="2" Value="340" />
+			<Defense Level="3" Value="550" />
+		</Statues>
+	</DefenseSettings>
+</CastleSiegeEvent>

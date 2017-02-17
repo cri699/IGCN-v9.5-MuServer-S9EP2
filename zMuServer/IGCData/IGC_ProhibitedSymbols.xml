@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2016 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ProhibitedSymbols ###
+//	Mode: Defines mode the system will detect prohibited/allowed symbols
+//		0: Basing on characters defined in Symbols section, disallowed mode
+//		1: Basing on Regular Expression definition, Regex section, allowed mode
+//
+// ### ProhibitedSymbols::Symbols::Restrict ###
+//	Symbol: defines a symbol to restrict
+//	Chat: Restricts Character from entire chat in game, 0/1
+//	CharName: Restricts character from character names, 0/1
+//	GuildName: Restricts character from Guild Name, 0/1
+//
+// ### ProhibitedSymbols::Regex::Type ###
+//	System: Defines part of the game regular expression applies to
+//		0: In-Game Chat
+//		1: Character Names
+//		2: Guild Names
+//	Regex: Regular expression definition of allowed characters
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ For tutorials of how to build own regex refer to http://regexone.com/ or
+//~~ https://www3.ntu.edu.sg/home/ehchua/programming/howto/Regexe.html
+//~~ or any other guide of your choice. System does not have an effect on
+//~~ existing character or guild with prohibited symbol in name, only newly created
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ IMPORTANT ~~ File must be saved with UTF-8 Without BOM encoding
+//~~ Invalid regex syntax will cause Game Server crash
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ProhibitedSymbols Mode="1">
+	<Symbols> <!-- This section works in DISALLOW mode -->
+		<Restrict Symbol="%" Chat="1" CharName="1" GuildName="1" />
+		<Restrict Symbol="'" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="." Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol=";" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol=":" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="." Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="`" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="@" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="#" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="(" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol=")" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="*" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="^" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="=" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="_" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="-" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="~" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="!" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="?" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="|" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="&#92;" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="&#47;" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="&#91;" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="&#93;" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="&#61;" Chat="0" CharName="1" GuildName="1" />
+		<Restrict Symbol="&#60;" Chat="0" CharName="1" GuildName="1" />		
+	</Symbols>
+	<Regex> <!-- Regex works in ALLOW mode -->
+		<Type System="0" Regex="^[\w\d\s\S]+$" /> <!-- In-Game Chat -->
+		<Type System="1" Regex="^[A-Za-z0-9]+$" /> <!-- Character Name -->
+		<Type System="2" Regex="^[A-Za-z0-9]+$" /> <!-- Guild Names -->
+	</Regex>
+</ProhibitedSymbols>

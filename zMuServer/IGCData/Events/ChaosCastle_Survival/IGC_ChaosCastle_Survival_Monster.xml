@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ChaosCastleSurvival::Monster ###
+//	Index: Index of Monster
+//	MapNumber: Number of Map to spawn the Monster
+//	Distance: Range to spawn the monster from StartX and StartY coordinates
+//	StartX: Start X coordinate to spawn Monster
+//	StartY: Start Y coordinate to spawn Monster
+//	Dir: Location the Monster looks at after spawn
+//		~ 0: Central
+//		~ 1: South-West
+//		~ 2: South
+//		~ 3: South-East
+//		~ 4: East
+//		~ 5: North-East
+//		~ 6: North
+//		~ 7: North-West
+//		~ 8: West
+//		~ -1: Random
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<ChaosCastleSurvival>
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="26" StartY="105" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="26" StartY="98"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="28" StartY="90"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="27" StartY="86"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="28" StartY="82"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="26" StartY="79"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="34" StartY="78"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="33" StartY="81"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="39" StartY="78"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="26" StartY="77"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="38" StartY="80"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="43" StartY="77"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="38" StartY="86"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="43" StartY="84"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="41" StartY="82"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="27" StartY="94"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="32" StartY="91"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="29" StartY="84"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="42" StartY="90"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="44" StartY="87"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="30" StartY="78"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="38" StartY="92"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="40" StartY="98"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="29" StartY="101" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="33" StartY="103" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="38" StartY="89"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="42" StartY="105" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="42" StartY="99"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="35" StartY="105" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="29" StartY="93"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="28" StartY="97"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="26" StartY="84"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="28" StartY="79"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="25" StartY="82"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="29" StartY="76"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="33" StartY="76"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="35" StartY="79"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="31" StartY="80"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="41" StartY="79"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="38" StartY="76"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="36" StartY="81"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="39" StartY="82"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="41" StartY="86"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="42" StartY="94"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="35" StartY="92"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="34" StartY="90"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="38" StartY="101" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="30" StartY="105" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="26" StartY="102" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="28" StartY="100" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="38" StartY="106" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="35" StartY="102" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="42" StartY="102" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="43" StartY="96"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="30" StartY="88"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="25" StartY="91"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="29" StartY="91"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="30" StartY="98"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="41" StartY="93"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="41" StartY="89"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="43" StartY="91"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="39" StartY="95"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="32" StartY="101" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="29" StartY="103" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="33" StartY="105" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="25" StartY="97"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="24" StartY="94"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="27" StartY="88"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="32" StartY="94"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="32" StartY="89"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="36" StartY="92"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="37" StartY="89"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="40" StartY="91"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="38" StartY="99"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="40" StartY="101" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="43" StartY="81"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="36" StartY="76"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="42" StartY="75"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="26" StartY="75"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="24" StartY="80"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="30" StartY="82"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="24" StartY="89"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="24" StartY="86"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="24" StartY="101" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="37" StartY="104" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="41" StartY="96"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="39" StartY="87"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="41" StartY="76"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="38" StartY="84"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="38" StartY="96"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="30" StartY="95"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="32" StartY="78"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="29" StartY="86"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="27" StartY="104" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="40" StartY="104" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="44" StartY="102" Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="43" StartY="98"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="644" MapNumber="97" Distance="30" StartX="39" StartY="93"  Dir="6" /> <!-- Chaos Castle 8 -->
+	<Monster Index="645" MapNumber="97" Distance="30" StartX="41" StartY="84"  Dir="6" /> <!-- Chaos Castle 8 -->
+</ChaosCastleSurvival>

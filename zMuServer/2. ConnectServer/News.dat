@@ -1,0 +1,44 @@
+//############################################################
+//# -- INTERNATIONAL GAMING CENTER NETWORK
+//# -- iDev.Games - TRONG.WIN - Dao Van Trong
+//# -- (C) 2010-2014 IGC-Network.com (R)
+//# ---------------------------------------------------------
+//# -- Modify if you know what you do only!
+//# -- File is a part of IGCN Group MuOnline Server files.
+//############################################################
+
+//System available on S6E3 version only (ATM)
+
+// [0] Index
+// [1] Date	R (Color)
+// [2] Date G (Color)
+// [3] Date B (Color)
+// [4] Title R (Color)
+// [5] Title G (Color)
+// [6] Title B (Color)
+// [7] Text R (Color)
+// [8] Text G (Color)
+// [9] Text B (Color)
+// [10] Title (max 40 char)
+// [11] Text
+// [12] Day
+// [13] Month
+// [14] Year
+// NOTE: when no news added below, the News Windows in Game Client will not be displayed
+
+// ================================================================================================================================================================================
+//	[1]		[2]		[3]		[4]		[5]		[6]		[7]		[8]		[9]		[10]		[11]																[12]	[13]	[14]
+// ================================================================================================================================================================================
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 // DO NOT REMOVE SECTION NUMBER
+0	255		0		155		215		0		100		120		0		135		"Info"		"This news info support all languages"								10		12		2013
+1	255		0		155		215		0		100		120		0		135		"Info"		"When no News added News Windows in Client will not be displayed"	10		12		2013
+end
+
+// ====================================
+// Title - on the top of the News Box
+// ====================================
+// ------------------------------------
+1 // DO NOT REMOVE SECTION NUMBER
+"Server News"
+end

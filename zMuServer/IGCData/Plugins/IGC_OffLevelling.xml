@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+
+// ### OffLevellingSystem ###
+//	Enable: Disables or Enables entire system, 0/1
+//
+// ### OffLevellingSystem::General ###
+//	VipType: Type of VIP Off-Levelling is available to, higher type allows lower types automatically
+//	CoinType: Coin Type to charge on Interval, Coin types:
+//		0 - Zen
+//		1 - WCoin(C) - WCoin for S8E3
+//		2 - WCoin(P) - available for S6E3 only
+//		3 - Goblin Point
+//	CoinValue: Amount of coins to charge with
+//	HitInterval: Interval of doing attack, milliseconds
+//	ChargeInterval: Interval to charge for Off-Levelling, seconds
+//	Immortal: Making Character immoral during Off-Levelling, 0/1
+//	MaxDuration: Maximum amount of time the Offline Levelling will be active after activation (regular players), hours, 0 for no limit
+//	MaxVipDuration: Maximum amount of time the Offline Levelling will be active after activation (VIP Players), hours, 0 for no limit
+//	AutoRepairItems: Allows to activate automated repair of equipment (repair will consume Zen as for regular repair), 0/1 
+//
+// ### OffLevellingSystem::PickItems ###
+//	Enable: Allows to activate automated pick up of items, if this is disabled any further options of the section are not active, 0/1
+//	PickUpZen: Defines ability of automated picking up of Zen from the ground, 0/1
+//	PickUpAllExc: Defines ability of automated picking up of all Exc items from the ground, 0/1
+//	PickUpAllSocket: Defines ability of automated picking up of all Socket items from the ground, 0/1
+//	PickUpAllAncient: Defines ability of automated picking up of all Ancient items from the ground, 0/1 
+//
+// ### OffLevellingSystem::PickItems::Item ### ~ section allow to define specified item list to be picked up from ground
+//	Cat: Category of item to pick up from ground, refer to ItemList.xml
+//	Index: Index of item to pick up from ground, refer to ItemList.xml
+//
+// ### OffLevellingSystem::PerMapAdjustments::Map ###
+//	Number: Number of a Map
+//	Disable: Disables Off Levelling on specified map, 0/1
+//	CoinType: Replaces general value of CoinType for specified map, -1 to use General section setting of type and value
+//		0 - Zen
+//		1 - WCoin(C) - WCoin for S8E3
+//		2 - WCoin(P) - available for S6E3 only
+//		3 - Goblin Point
+//	CoinValue: Replaces general value of CoinValue for specified map
+//
+// ### OffLevellingSystem::ClassSkillSettings::Class ###
+//	Type: Type of Class the config refers to
+//	Name: Used for in-file description only
+//
+// ### OffLevellingSystem::ClassSkillSettings::Class ### - defines skills usage priority for specified character type - max 5 per class
+//	ID: Unique ID of Skill per Class section, starts from 0
+//	Index: Index of a Skill, refer to SkillList.xml
+//	Name: Used for in-file description only
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->	
+
+<OffLevellingSystem Enable="0">
+	<General VipType="0" CoinType="0" CoinValue="100" HitInterval="1000" ChargeInterval="3600" Immortal="1" MaxDuration="24" MaxVipDuration="48" AutoRepairItems="1"/>
+
+	<PickItems Enable="1" PickUpZen="1" PickUpAllExc="1" PickUpAllSocket="1" PickUpAllAncient="1">
+		<Item Cat="14" Index="13" />
+		<Item Cat="14" Index="14" />
+	</PickItems>
+
+	<PerMapAdjustments>
+		<Map Number="0"   Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="1"   Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="2"   Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="3"   Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="4"   Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="5"   Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="6"   Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="7"   Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="8"   Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="9"   Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="10"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="11"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="12"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="13"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="14"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="15"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="16"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="17"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="18"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="19"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="20"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="21"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="22"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="23"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="24"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="25"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="26"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="27"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="28"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="29"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="30"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="31"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="32"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="33"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="34"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="35"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="36"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="37"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="38"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="39"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="40"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="41"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="42"  Disable="0" CoinType="-1" CoinValue="100" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Map Number="45"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="46"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="47"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="48"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="49"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="50"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="51"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="52"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="53"  Disable="0" CoinType="-1" CoinValue="100" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Map Number="56"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="57"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="58"  Disable="0" CoinType="-1" CoinValue="100" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Map Number="62"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="63"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="64"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="65"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="66"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="67"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="68"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="69"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="70"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="71"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="72"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="79"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="80"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="81"  Disable="0" CoinType="-1" CoinValue="100" />
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Map Number="91"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="92"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="95"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="96"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="97"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="98"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="99"  Disable="0" CoinType="-1" CoinValue="100" />
+		<Map Number="100" Disable="0" CoinType="-1" CoinValue="100" />
+	</PerMapAdjustments>
+	
+	<ClassSkillSettings>
+		<Class Type="0" Name="Dark Wizard">
+			<Skill ID="0" Index="9" Name="Evil Spirit" />
+			<Skill ID="1" Index="39" Name="Ice Storm" />
+			<Skill ID="2" Index="38" Name="Decay" />
+			<Skill ID="3" Index="5" Name="Flame" />
+			<Skill ID="4" Index="13" Name="Cometfall" />
+		</Class>
+		<Class Type="1" Name="Dark Knight">
+			<Skill ID="0" Index="41" Name="Twisting Slash" />
+			<Skill ID="1" Index="42" Name="Rageful Blow" />
+			<Skill ID="2" Index="43" Name="Death Stab" />
+			<Skill ID="3" Index="232" Name="Strike of Destruction" />
+			<Skill ID="4" Index="23" Name="Slash" />
+		</Class>
+		<Class Type="2" Name="Fairy Elf">
+			<Skill ID="0" Index="235" Name="Multi Shot" />
+			<Skill ID="1" Index="24" Name="Triple Shot" />
+			<Skill ID="2" Index="51" Name="Ice Arrow" />
+			<Skill ID="3" Index="52" Name="Penetration" />
+		</Class>
+		<Class Type="3" Name="Magic Gladiator">
+			<Skill ID="0" Index="9" Name="Evil Spirit" />
+			<Skill ID="1" Index="41" Name="Twisting Slash" />
+			<Skill ID="2" Index="56" Name="Power Slash" />
+			<Skill ID="3" Index="55" Name="Fire Slash" />
+			<Skill ID="4" Index="5" Name="Flame" />
+		</Class>
+		<Class Type="4" Name="Dark Lord">
+			<Skill ID="0" Index="61" Name="Fire Burst" />
+			<Skill ID="1" Index="238" Name="Chaotic Diseier" />
+			<Skill ID="2" Index="78" Name="Fire Scream" />
+		</Class>
+		<Class Type="5" Name="Summoner">
+			<Skill ID="0" Index="230" Name="Lightning Shock" />
+			<Skill ID="1" Index="215" Name="Chain Lightning" />
+			<Skill ID="2" Index="214" Name="Drain Life" />
+			<Skill ID="3" Index="221" Name="Weakness" />
+			<Skill ID="4" Index="222" Name="Innovation" />
+		</Class>
+		<Class Type="6" Name="Rage Fighter">
+			<Skill ID="0" Index="263" Name="Dark Side" />
+			<Skill ID="1" Index="264" Name="Dragon Roar" />
+			<Skill ID="2" Index="262" Name="Chain Drive" />
+			<Skill ID="3" Index="265" Name="Dragon Slasher" />
+			<Skill ID="4" Index="270" Name="Phoenix Shot" />
+		</Class>
+	</ClassSkillSettings>
+</OffLevellingSystem>

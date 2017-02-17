@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### InvasionManager ###
+//	Enable: Activates or deactivates the manager, 0/1
+//
+// ### InvasionManager::Invasion ###
+//	Type: Type of invasion
+//		~ 0: Red Dragon Invasion
+//		~ 1: Skeleton King Invasion
+//		~ 2: Golden Invasion
+//		~ 3: White Wizard Invasion
+//		~ 4: Santa Event
+//	Name: Name of invasion, used for logging and in-file description purpose
+//
+// ### InvasionManager::Invasion::Start ###
+//	DayOfWeek: Day of a week the event will run on:
+//		~ 0: Sunday
+//		~ 1: Monday
+//		~ 2: Tuesday
+//		~ 3: Wednesday
+//		~ 4: Thursday
+//		~ 5: Friday
+//		~ 6: Saturday
+//		~ -1: every day
+//	Hour: Hour of the invasion start, 0-23
+//	Minute: Minute of the invasion start, 0-59
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<InvasionManager Enable="1">
+	<Invasion Type="0" Name="Red Dragon Invasion">
+		<Start DayOfWeek="-1" Hour="1"  Minute="0" />
+		<Start DayOfWeek="-1" Hour="3"  Minute="0" />
+		<Start DayOfWeek="-1" Hour="13" Minute="0" />
+		<Start DayOfWeek="-1" Hour="15" Minute="0" />
+		<Start DayOfWeek="-1" Hour="23" Minute="0" />
+	</Invasion>
+
+	<Invasion Type="1" Name="Skeleton King Invasion">
+		<Start DayOfWeek="-1" Hour="8"  Minute="0" />
+		<Start DayOfWeek="-1" Hour="12" Minute="0" />
+		<Start DayOfWeek="-1" Hour="20" Minute="0" />
+	</Invasion>
+
+	<Invasion Type="2" Name="Golden Invasion">
+		<Start DayOfWeek="-1" Hour="9"  Minute="30" />
+		<Start DayOfWeek="-1" Hour="16" Minute="30" />
+		<Start DayOfWeek="-1" Hour="18" Minute="8" />
+	</Invasion>
+
+	<Invasion Type="3" Name="White Wizard Invasion">
+		<Start DayOfWeek="-1" Hour="3"  Minute="30" />
+		<Start DayOfWeek="-1" Hour="5"  Minute="30" />
+		<Start DayOfWeek="-1" Hour="7"  Minute="30" />
+		<Start DayOfWeek="-1" Hour="11" Minute="30" />
+		<Start DayOfWeek="-1" Hour="15" Minute="30" />
+		<Start DayOfWeek="-1" Hour="19" Minute="30" />
+		<Start DayOfWeek="-1" Hour="23" Minute="30" />
+	</Invasion>
+
+	<Invasion Type="4" Name="Santa Event">
+		<Start DayOfWeek="-1" Hour="21" Minute="56" />
+	</Invasion>
+</InvasionManager>

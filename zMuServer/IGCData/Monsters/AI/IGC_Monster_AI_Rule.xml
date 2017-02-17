@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<MonsterAI>
+	<!-- <Rule Number="1" MonsterIndex="582" MonsterAIUnit="1" Condition="10" WaitTime="10" ContinuanceTime="9" Month="-1" Day="-1" DayOfWeek="-1" Hour="-1" Minute="-1" Name="Rule Activate Text" /> -->
+	<!-- <Rule Number="2" MonsterIndex="583" MonsterAIUnit="1" Condition="25" WaitTime="10" ContinuanceTime="9" Month="-1" Day="-1" DayOfWeek="-1" Hour="-1" Minute="-1" Name="Rule Activate Text 1" /> -->
+	<!-- <Rule Number="3" MonsterIndex="584" MonsterAIUnit="1" Condition="40" WaitTime="10" ContinuanceTime="9" Month="-1" Day="-1" DayOfWeek="-1" Hour="-1" Minute="-1" Name="Rule Activate Text 2" /> -->
+	<!-- <Rule Number="4" MonsterIndex="585" MonsterAIUnit="1" Condition="55" WaitTime="10" ContinuanceTime="9" Month="-1" Day="-1" DayOfWeek="-1" Hour="-1" Minute="-1" Name="Rule Activate Text 3" /> -->
+</MonsterAI>

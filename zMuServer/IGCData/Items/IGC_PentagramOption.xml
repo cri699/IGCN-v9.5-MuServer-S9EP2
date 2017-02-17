@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### PentagramSystem:::OptionList::Pentagram ### - maximum 20 entries
+//	ItemCat: Pentagram Item Category (ItemList.xml)
+//	ItemIndex: Pentagram Item Index (ItemList.xml)
+//	Grade: Grade of Pentagram, 1-3
+//	OptionNum1: Pentagram Option 1 number
+//	OptionNum2: Pentagram Option 2 number
+//	OptionNum3: Pentagram Option 3 number
+//	OptionNum4: Pentagram Option 4 number
+//	OptionNum5: Pentagram Option 5 number
+//	OptionNum6: Pentagram Option 6 number
+//	OptionNum7: Pentagram Option 7 number
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ for OptionNum refer to OptionSettings section
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	Name: Name of Pentagram Item
+//
+// ### PentagramSystem::OptionSettings::Errtel ###
+//	OptionNum: Errtel Option Number definition
+//	Type1: 
+//	Rank1: 
+//	Level1: 
+//	Type2: 
+//	Rank2: 
+//	Level2: 
+//	Type3: 
+//	Rank3: 
+//	Level3: 
+//	Name: Name of Pentagram Option
+//
+// ### Pentagram System::SocketRate::Socket ###
+//	Grade: Grade of Errtels the rates will be applied to
+//	Rate1: Chance rate for Socket count 1
+//	Rate2: Chance rate for Socket count 2
+//	Rate3: Chance rate for Socket count 3
+//	Rate4: Chance rate for Socket count 4
+//	Rate5: Chance rate for Socket count 5
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Rate is n/10000, sum of total per row must be equal to 10000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->	
+
+<PentagramSystem>
+	<OptionList>
+		<Pentagram ItemCat="12" ItemIndex="200"	Grade="1" OptionNum1="0" OptionNum2="0" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Muren's Book of Magic" /> <!-- Common -->
+		<Pentagram ItemCat="12" ItemIndex="201"	Grade="1" OptionNum1="0" OptionNum2="0" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Scroll of Etramu" /> <!-- Common -->
+		<Pentagram ItemCat="12" ItemIndex="202"	Grade="1" OptionNum1="0" OptionNum2="0" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Lorencia Knights' Iron Shield" /> <!-- Common -->
+		<Pentagram ItemCat="12" ItemIndex="203"	Grade="1" OptionNum1="2" OptionNum2="0" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Iron Shield of the Magic" /> <!-- Common -->
+		<Pentagram ItemCat="12" ItemIndex="204"	Grade="1" OptionNum1="0" OptionNum2="0" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Hero Elixir" /> <!-- Common -->
+		<Pentagram ItemCat="12" ItemIndex="205"	Grade="1" OptionNum1="3" OptionNum2="0" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Brave Hero Elixir" /> <!-- Common -->
+		<Pentagram ItemCat="12" ItemIndex="206"	Grade="1" OptionNum1="0" OptionNum2="0" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Gladiator's Dagger" /> <!-- Common -->
+		<Pentagram ItemCat="12" ItemIndex="207"	Grade="1" OptionNum1="1" OptionNum2="0" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Merciless Gladiator's Dagger" /> <!-- Common -->
+		<Pentagram ItemCat="12" ItemIndex="208"	Grade="2" OptionNum1="4" OptionNum2="3" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Kundun's Madness Blade" /> <!-- Unique -->
+		<Pentagram ItemCat="12" ItemIndex="209"	Grade="2" OptionNum1="5" OptionNum2="3" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Kundun's Magic Spell Scroll" /> <!-- Unique -->
+		<Pentagram ItemCat="12" ItemIndex="210"	Grade="2" OptionNum1="4" OptionNum2="6" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Empire Guardians' Stronghold" /> <!-- Unique -->
+		<Pentagram ItemCat="12" ItemIndex="211"	Grade="2" OptionNum1="5" OptionNum2="6" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Ancient Icarus Scroll" /> <!-- Unique -->
+		<Pentagram ItemCat="12" ItemIndex="212"	Grade="3" OptionNum1="7" OptionNum2="3" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Arca's Prophecy" /> <!-- Rare -->
+		<Pentagram ItemCat="12" ItemIndex="213"	Grade="3" OptionNum1="7" OptionNum2="4" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Antonia's Sword" /> <!-- Rare -->
+		<Pentagram ItemCat="12" ItemIndex="214"	Grade="3" OptionNum1="7" OptionNum2="5" OptionNum3="0" OptionNum4="0" OptionNum5="0" OptionNum6="0" OptionNum7="0" Name="Kundun's Seal Scroll" /> <!-- Rare -->
+	</OptionList>
+
+	<OptionSetting>
+		<Errtel OptionNum="1" Type1="0" Rank1="2" Level1="3" Type2="-1"	Rank2="-1" Level2="-1" Type3="-1" Rank3="-1" Level3="-1" Name="Pentagram Damage Increase +10%%" />
+		<Errtel OptionNum="2" Type1="0" Rank1="2" Level1="3" Type2="-1"	Rank2="-1" Level2="-1" Type3="-1" Rank3="-1" Level3="-1" Name="Pentagram Defense Increase +10%%" />
+		<Errtel OptionNum="3" Type1="0" Rank1="2" Level1="3" Type2="-1"	Rank2="-1" Level2="-1" Type3="-1" Rank3="-1" Level3="-1" Name="Elemental Critical Damage Rate Increase +10%%" />
+		<Errtel OptionNum="4" Type1="0" Rank1="3" Level1="5" Type2="1"	Rank2="3"  Level2="5"  Type3="-1" Rank3="-1" Level3="-1" Name="Transfer Defense to elemental defense +5%%" />
+		<Errtel OptionNum="5" Type1="0" Rank1="3" Level1="5" Type2="1"	Rank2="3"  Level2="5"  Type3="-1" Rank3="-1" Level3="-1" Name="Additional Elemental Damage +1%%" />
+		<Errtel OptionNum="6" Type1="1" Rank1="3" Level1="6" Type2="2"	Rank2="3"  Level2="6"  Type3="-1" Rank3="-1" Level3="-1" Name="Strong Element Resistance Increase +5%%" />
+		<Errtel OptionNum="7" Type1="1" Rank1="3" Level1="6" Type2="2"	Rank2="3"  Level2="6"  Type3="3"  Rank3="3"  Level3="6"  Name="Elemental Attack Resistance Increase +5%%" />
+	</OptionSetting>
+
+	<SocketProbabilityRate>
+		<Socket Grade="2" Rate1="0" Rate2="0" Rate3="9950" Rate4="50"    Rate5="0" /> <!-- Rare Chance Socket, Total 10000 -->
+		<Socket Grade="3" Rate1="0" Rate2="0" Rate3="0"    Rate4="10000" Rate5="0" /> <!-- Unique Chance Socket, Total 10000 -->
+	</SocketProbabilityRate>
+</PentagramSystem>

@@ -1,0 +1,280 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,252,156,50,14
+END
+
+IDD_JSDC_DIALOG DIALOG 0, 0, 153, 47
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "JoinServer Disconnect"
+FONT 8, "System"
+BEGIN
+    LTEXT           "Account:",IDC_STATIC,14,11,31,9
+    EDITTEXT        IDC_JSDC_ACCOUNT,47,10,81,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Disconnect",IDC_JSDC_BUTTON,15,29,123,9,BS_FLAT
+END
+
+IDD_DIALOGBAR DIALOGEX 0, 0, 330, 89
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LTEXT           "No active license found. Please activate this software using IGC.GameServer",IDC_STATIC,48,19,260,8
+    EDITTEXT        IDC_EDIT1,80,38,234,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Hardware ID",IDC_STATIC,33,41,44,12
+    PUSHBUTTON      "OK",IDOK,116,60,96,19,0,WS_EX_CLIENTEDGE
+END
+
+IDD_SENDMESSAGEALL DIALOGEX 0, 0, 331, 58
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Send Message to All Servers"
+FONT 8, "MS Shell Dlg", 700, 0, 0xEE
+BEGIN
+    LTEXT           "Message:",IDC_STATIC,13,23,34,12
+    EDITTEXT        IDC_EDIT1,51,22,270,16,ES_AUTOHSCROLL
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 225, 50
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_ICON1,IDC_MYICON,14,9,48,48
+    CTEXT           "IGC DataServer",-1,44,5,136,10,SS_CENTERIMAGE
+    CTEXT           "Developed by IGC-Network © 2010-2016",-1,44,15,136,10,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDOK,185,5,35,41,WS_GROUP
+    CTEXT           "Powered by iDev.games - Dao Van Trong",-1,44,30,136,10,SS_CENTERIMAGE
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_JSDC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_DIALOGBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 323
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_SENDMESSAGEALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "DataServer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_EDATASERVER MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Exit",								IDM_EXIT
+    END
+    POPUP "Options"
+    BEGIN
+		MENUITEM "SQLState Error Status Reset",			ID_OPTIONS_RESETERROR
+        MENUITEM "Join Server Disconnect",				ID_JSDC_MENU
+     // MENUITEM "Player List",							ID_OPTIONS_PLAYERLIST // does nto work
+        MENUITEM "Global Connections Limit Reload",		ID_OPTIONS_RELOADHWIDLIMIT
+    END
+    POPUP "Gens"
+    BEGIN
+        MENUITEM "Refresh Ranking",						ID_GENS_REFRESHRANKING
+		MENUITEM "Gens rejoin delay reload"				ID_GENS_RELOADLEAVEDELAY
+    END
+    MENUITEM "&About ...",							IDM_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_EDATASERVER ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 9,5,1,15
+ PRODUCTVERSION 9,5,1,15
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "IGC-Network Inc"
+            VALUE "FileDescription", "x9.5 Series Data Server"
+            VALUE "FileVersion", "9.5.1.15"
+            VALUE "InternalName", "IGC.DataServer.exe"
+            VALUE "LegalCopyright", "Copyright © 2010-2016"
+            VALUE "LegalTrademarks", "iDev.Games - TRONG.WIN - Dao Van Trong"
+            VALUE "OriginalFilename", "IGC.DataServer.exe"
+            VALUE "ProductName", "x9.5 Series Data Server"
+            VALUE "ProductVersion", "9.5.1.15"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "IGC DataServer"
+    IDS_HELLO               "Hello World!"
+    IDC_EDATASERVER         "DATASERVER"
+END
+
+#endif    // English resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Spain, International Sort) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish (Spain, International Sort) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

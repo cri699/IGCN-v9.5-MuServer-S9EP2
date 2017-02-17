@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == iDev.Games - TRONG.WIN - Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### TormentedSquare::MonsterRoundSettings::Round ###
+//	Number: 
+//	MonsterIndex: 
+//	MonsterCount: 
+//	MonsterType: Type of a Monster
+//		~ 0: Normal Monster
+//		~ 1: Event Monster
+//	PointCount: 
+//	Name: 
+//
+// ### TormentedSquare::MonsterSpawnSettings::Monster ###
+//	Index: 
+//	MapNumber: 
+//	Distance: 
+//	PosX: 
+//	PosY: 
+//	Dir: 
+//	Type: 
+//
+// ### TormentedSquare::EventMonsterSettings::Round ###
+//	Number: 
+//	MonsterIndex: 
+//	MonsterCount: 
+//	MonsterType: 
+//	PointCount: 
+//	Name: 
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<TormentedSquare>
+	<MonsterRoundSettings>
+		<Round Number="1"  MonsterIndex="572" MonsterCount="130" MonsterType="0" PointCount="300" Name="Gollock" />
+		<Round Number="2"  MonsterIndex="344" MonsterCount="130" MonsterType="0" PointCount="600" Name="Balram" />
+		<Round Number="3"  MonsterIndex="549" MonsterCount="130" MonsterType="0" PointCount="900" Name="Bloody Orc" />
+		<Round Number="4"  MonsterIndex="575" MonsterCount="130" MonsterType="0" PointCount="1200" Name="Condra" />
+		<Round Number="5"  MonsterIndex="315" MonsterCount="50" MonsterType="1" PointCount="3000" Name="Werewolf(Hero)" />
+		<Round Number="6"  MonsterIndex="550" MonsterCount="130" MonsterType="0" PointCount="1500" Name="Bloody Death Rider" />
+		<Round Number="7"  MonsterIndex="552" MonsterCount="130" MonsterType="0" PointCount="1800" Name="Bloody Witch Queen" />
+		<Round Number="8"  MonsterIndex="314" MonsterCount="130" MonsterType="0" PointCount="2100" Name="Scout(Hero)" />
+		<Round Number="9"  MonsterIndex="335" MonsterCount="130" MonsterType="0" PointCount="2400" Name="Necron7" />
+		<Round Number="10" MonsterIndex="557" MonsterCount="50" MonsterType="1" PointCount="10000" Name="Sapi Queen" />
+		<Round Number="11" MonsterIndex="554" MonsterCount="130" MonsterType="0" PointCount="2700" Name="Kentauros Warrior" />
+		<Round Number="12" MonsterIndex="336" MonsterCount="130" MonsterType="0" PointCount="3000" Name="Death Centurion7" />
+		<Round Number="13" MonsterIndex="337" MonsterCount="130" MonsterType="0" PointCount="3300" Name="Schriker7" />
+		<Round Number="14" MonsterIndex="556" MonsterCount="130" MonsterType="0" PointCount="5000" Name="Genocider Warrior" />
+		<Round Number="15" MonsterIndex="340" MonsterCount="50" MonsterType="1" PointCount="200000" Name="Dark Elf" />
+	</MonsterRoundSettings>
+	
+	<MonsterSpawnSettings>
+		<Spawn Index="1" MapNumber="102" Distance="30" PosX="99" PosY="105" Dir="0" Type="2" />
+		<Spawn Index="2" MapNumber="102" Distance="30" PosX="99" PosY="127" Dir="0" Type="2" />
+		<Spawn Index="3" MapNumber="102" Distance="30" PosX="100" PosY="150" Dir="0" Type="2" />
+		<Spawn Index="4" MapNumber="102" Distance="30" PosX="118" PosY="106" Dir="0" Type="2" />
+		<Spawn Index="5" MapNumber="102" Distance="30" PosX="118" PosY="120" Dir="0" Type="2" />
+		<Spawn Index="6" MapNumber="102" Distance="30" PosX="118" PosY="119" Dir="0" Type="0" />
+		<Spawn Index="7" MapNumber="102" Distance="30" PosX="118" PosY="136" Dir="0" Type="2" />
+		<Spawn Index="8" MapNumber="102" Distance="30" PosX="118" PosY="150" Dir="0" Type="2" />
+		<Spawn Index="9" MapNumber="102" Distance="30" PosX="137" PosY="105" Dir="0" Type="2" />
+		<Spawn Index="10" MapNumber="102" Distance="30" PosX="138" PosY="129" Dir="0" Type="2" />
+		<Spawn Index="11" MapNumber="102" Distance="30" PosX="137" PosY="151" Dir="0" Type="2" />
+		<Spawn Index="12" MapNumber="102" Distance="30" PosX="107" PosY="116" Dir="0" Type="1" />
+		<Spawn Index="13" MapNumber="102" Distance="30" PosX="107" PosY="115" Dir="0" Type="0" />
+		<Spawn Index="14" MapNumber="102" Distance="30" PosX="107" PosY="140" Dir="0" Type="1" />
+		<Spawn Index="15" MapNumber="102" Distance="30" PosX="131" PosY="116" Dir="0" Type="1" />
+		<Spawn Index="16" MapNumber="102" Distance="30" PosX="131" PosY="115" Dir="0" Type="0" />
+		<Spawn Index="17" MapNumber="102" Distance="30" PosX="132" PosY="140" Dir="0" Type="1" />
+		<Spawn Index="18" MapNumber="102" Distance="30" PosX="118" PosY="127" Dir="0" Type="1" />
+		<Spawn Index="19" MapNumber="102" Distance="30" PosX="128" PosY="128" Dir="0" Type="1" />
+		<Spawn Index="20" MapNumber="102" Distance="30" PosX="109" PosY="128" Dir="0" Type="1" />
+		<Spawn Index="21" MapNumber="102" Distance="30" PosX="109" PosY="127" Dir="0" Type="0" />
+		<Spawn Index="22" MapNumber="102" Distance="30" PosX="109" PosY="106" Dir="0" Type="1" />
+		<Spawn Index="23" MapNumber="102" Distance="30" PosX="110" PosY="149" Dir="0" Type="1" />
+		<Spawn Index="24" MapNumber="102" Distance="30" PosX="128" PosY="149" Dir="0" Type="1" />
+		<Spawn Index="25" MapNumber="102" Distance="30" PosX="128" PosY="148" Dir="0" Type="0" />
+		<Spawn Index="26" MapNumber="102" Distance="30" PosX="127" PosY="106" Dir="0" Type="1" />
+		<Spawn Index="27" MapNumber="102" Distance="30" PosX="142" PosY="117" Dir="0" Type="1" />
+		<Spawn Index="28" MapNumber="102" Distance="30" PosX="143" PosY="142" Dir="0" Type="1" />
+		<Spawn Index="29" MapNumber="102" Distance="30" PosX="143" PosY="141" Dir="0" Type="0" />
+		<Spawn Index="30" MapNumber="102" Distance="30" PosX="97" PosY="140" Dir="0" Type="1" />
+		<Spawn Index="31" MapNumber="102" Distance="30" PosX="96" PosY="116" Dir="0" Type="1" />
+		<Spawn Index="32" MapNumber="102" Distance="30" PosX="147" PosY="105" Dir="0" Type="1" />
+		<Spawn Index="33" MapNumber="102" Distance="30" PosX="147" PosY="129" Dir="0" Type="1" />
+		<Spawn Index="34" MapNumber="102" Distance="30" PosX="147" PosY="128" Dir="0" Type="0" />
+		<Spawn Index="35" MapNumber="102" Distance="30" PosX="148" PosY="150" Dir="0" Type="1" />
+		<Spawn Index="36" MapNumber="102" Distance="30" PosX="123" PosY="115" Dir="0" Type="1" />
+		<Spawn Index="37" MapNumber="102" Distance="30" PosX="124" PosY="142" Dir="0" Type="1" />
+		<Spawn Index="38" MapNumber="102" Distance="30" PosX="124" PosY="141" Dir="0" Type="0" />
+		<Spawn Index="39" MapNumber="102" Distance="30" PosX="114" PosY="142" Dir="0" Type="1" />
+		<Spawn Index="40" MapNumber="102" Distance="30" PosX="113" PosY="114" Dir="0" Type="1" />
+		<Spawn Index="41" MapNumber="102" Distance="30" PosX="150" PosY="117" Dir="0" Type="1" />
+		<Spawn Index="42" MapNumber="102" Distance="30" PosX="150" PosY="141" Dir="0" Type="1" />
+		<Spawn Index="43" MapNumber="102" Distance="30" PosX="150" PosY="140" Dir="0" Type="0" />
+		<Spawn Index="44" MapNumber="102" Distance="30" PosX="94" PosY="152" Dir="0" Type="1" />
+		<Spawn Index="45" MapNumber="102" Distance="30" PosX="93" PosY="101" Dir="0" Type="1" />
+		<Spawn Index="46" MapNumber="102" Distance="30" PosX="114" PosY="100" Dir="0" Type="1" />
+		<Spawn Index="47" MapNumber="102" Distance="30" PosX="130" PosY="100" Dir="0" Type="1" />
+		<Spawn Index="48" MapNumber="102" Distance="30" PosX="130" PosY="99"  Dir="0" Type="0" />
+		<Spawn Index="49" MapNumber="102" Distance="30" PosX="143" PosY="100" Dir="0" Type="1" />
+		<Spawn Index="50" MapNumber="102" Distance="30" PosX="143" PosY="153" Dir="0" Type="1" />
+		<Spawn Index="51" MapNumber="102" Distance="30" PosX="123" PosY="154" Dir="0" Type="1" />
+		<Spawn Index="52" MapNumber="102" Distance="30" PosX="106" PosY="154" Dir="0" Type="1" />
+		<Spawn Index="53" MapNumber="102" Distance="30" PosX="106" PosY="153" Dir="0" Type="0" />
+		<Spawn Index="54" MapNumber="102" Distance="30" PosX="92" PosY="128" Dir="0" Type="1" />
+		<Spawn Index="55" MapNumber="102" Distance="30" PosX="102" PosY="134" Dir="0" Type="1" />
+		<Spawn Index="56" MapNumber="102" Distance="30" PosX="112" PosY="134" Dir="0" Type="1" />
+		<Spawn Index="57" MapNumber="102" Distance="30" PosX="112" PosY="133" Dir="0" Type="0" />
+		<Spawn Index="58" MapNumber="102" Distance="30" PosX="101" PosY="120" Dir="0" Type="1" />
+		<Spawn Index="59" MapNumber="102" Distance="30" PosX="101" PosY="119" Dir="0" Type="0" />
+		<Spawn Index="60" MapNumber="102" Distance="30" PosX="111" PosY="121" Dir="0" Type="1" />
+		<Spawn Index="61" MapNumber="102" Distance="30" PosX="133" PosY="122" Dir="0" Type="1" />
+		<Spawn Index="62" MapNumber="102" Distance="30" PosX="133" PosY="121" Dir="0" Type="0" />
+		<Spawn Index="63" MapNumber="102" Distance="30" PosX="139" PosY="136" Dir="0" Type="1" />
+		<Spawn Index="64" MapNumber="102" Distance="30" PosX="126" PosY="134" Dir="0" Type="1" />
+		<Spawn Index="65" MapNumber="102" Distance="30" PosX="126" PosY="133" Dir="0" Type="0" />
+		<Spawn Index="66" MapNumber="102" Distance="30" PosX="102" PosY="112" Dir="0" Type="0" />
+		<Spawn Index="67" MapNumber="102" Distance="30" PosX="102" PosY="111" Dir="0" Type="0" />
+		<Spawn Index="68" MapNumber="102" Distance="30" PosX="108" PosY="112" Dir="0" Type="0" />
+		<Spawn Index="69" MapNumber="102" Distance="30" PosX="105" PosY="103" Dir="0" Type="0" />
+		<Spawn Index="70" MapNumber="102" Distance="30" PosX="113" PosY="109" Dir="0" Type="0" />
+		<Spawn Index="71" MapNumber="102" Distance="30" PosX="113" PosY="108" Dir="0" Type="0" />
+		<Spawn Index="72" MapNumber="102" Distance="30" PosX="118" PosY="115" Dir="0" Type="0" />
+		<Spawn Index="73" MapNumber="102" Distance="30" PosX="118" PosY="114" Dir="0" Type="0" />
+		<Spawn Index="74" MapNumber="102" Distance="30" PosX="124" PosY="111" Dir="0" Type="0" />
+		<Spawn Index="75" MapNumber="102" Distance="30" PosX="130" PosY="111" Dir="0" Type="0" />
+		<Spawn Index="76" MapNumber="102" Distance="30" PosX="130" PosY="110" Dir="0" Type="0" />
+		<Spawn Index="77" MapNumber="102" Distance="30" PosX="136" PosY="111" Dir="0" Type="0" />
+		<Spawn Index="78" MapNumber="102" Distance="30" PosX="143" PosY="111" Dir="0" Type="0" />
+		<Spawn Index="79" MapNumber="102" Distance="30" PosX="146" PosY="124" Dir="0" Type="0" />
+		<Spawn Index="80" MapNumber="102" Distance="30" PosX="146" PosY="123" Dir="0" Type="0" />
+		<Spawn Index="81" MapNumber="102" Distance="30" PosX="141" PosY="124" Dir="0" Type="0" />
+		<Spawn Index="82" MapNumber="102" Distance="30" PosX="127" PosY="121" Dir="0" Type="0" />
+		<Spawn Index="83" MapNumber="102" Distance="30" PosX="123" PosY="121" Dir="0" Type="0" />
+		<Spawn Index="84" MapNumber="102" Distance="30" PosX="123" PosY="120" Dir="0" Type="0" />
+		<Spawn Index="85" MapNumber="102" Distance="30" PosX="123" PosY="126" Dir="0" Type="0" />
+		<Spawn Index="86" MapNumber="102" Distance="30" PosX="105" PosY="124" Dir="0" Type="0" />
+		<Spawn Index="87" MapNumber="102" Distance="30" PosX="105" PosY="123" Dir="0" Type="0" />
+		<Spawn Index="88" MapNumber="102" Distance="30" PosX="105" PosY="131" Dir="0" Type="0" />
+		<Spawn Index="89" MapNumber="102" Distance="30" PosX="107" PosY="134" Dir="0" Type="0" />
+		<Spawn Index="90" MapNumber="102" Distance="30" PosX="107" PosY="133" Dir="0" Type="0" />
+		<Spawn Index="91" MapNumber="102" Distance="30" PosX="119" PosY="141" Dir="0" Type="0" />
+		<Spawn Index="92" MapNumber="102" Distance="30" PosX="121" PosY="131" Dir="0" Type="0" />
+		<Spawn Index="93" MapNumber="102" Distance="30" PosX="132" PosY="133" Dir="0" Type="0" />
+		<Spawn Index="94" MapNumber="102" Distance="30" PosX="133" PosY="129" Dir="0" Type="0" />
+		<Spawn Index="95" MapNumber="102" Distance="30" PosX="133" PosY="128" Dir="0" Type="0" />
+		<Spawn Index="96" MapNumber="102" Distance="30" PosX="137" PosY="142" Dir="0" Type="0" />
+		<Spawn Index="97" MapNumber="102" Distance="30" PosX="130" PosY="144" Dir="0" Type="0" />
+		<Spawn Index="98" MapNumber="102" Distance="30" PosX="140" PosY="148" Dir="0" Type="0" />
+		<Spawn Index="99" MapNumber="102" Distance="30" PosX="144" PosY="147" Dir="0" Type="0" />
+		<Spawn Index="100" MapNumber="102" Distance="30" PosX="144" PosY="148" Dir="0" Type="0" />
+		<Spawn Index="101" MapNumber="102" Distance="30" PosX="145" PosY="137" Dir="0" Type="0" />
+		<Spawn Index="102" MapNumber="102" Distance="30" PosX="145" PosY="131" Dir="0" Type="0" />
+		<Spawn Index="103" MapNumber="102" Distance="30" PosX="145" PosY="130" Dir="0" Type="0" />
+		<Spawn Index="104" MapNumber="102" Distance="30" PosX="150" PosY="135" Dir="0" Type="0" />
+		<Spawn Index="105" MapNumber="102" Distance="30" PosX="123" PosY="148" Dir="0" Type="0" />
+		<Spawn Index="106" MapNumber="102" Distance="30" PosX="105" PosY="148" Dir="0" Type="0" />
+		<Spawn Index="107" MapNumber="102" Distance="30" PosX="103" PosY="142" Dir="0" Type="0" />
+		<Spawn Index="108" MapNumber="102" Distance="30" PosX="103" PosY="141" Dir="0" Type="0" />
+		<Spawn Index="109" MapNumber="102" Distance="30" PosX="101" PosY="140" Dir="0" Type="0" />
+		<Spawn Index="110" MapNumber="102" Distance="30" PosX="97" PosY="134" Dir="0" Type="0" />
+		<Spawn Index="111" MapNumber="102" Distance="30" PosX="97" PosY="133" Dir="0" Type="0" />
+		<Spawn Index="112" MapNumber="102" Distance="30" PosX="97" PosY="148" Dir="0" Type="0" />
+		<Spawn Index="113" MapNumber="102" Distance="30" PosX="100" PosY="145" Dir="0" Type="0" />
+		<Spawn Index="114" MapNumber="102" Distance="30" PosX="99" PosY="155" Dir="0" Type="0" />
+		<Spawn Index="115" MapNumber="102" Distance="30" PosX="112" PosY="154" Dir="0" Type="0" />
+		<Spawn Index="116" MapNumber="102" Distance="30" PosX="117" PosY="154" Dir="0" Type="0" />
+		<Spawn Index="117" MapNumber="102" Distance="30" PosX="131" PosY="154" Dir="0" Type="0" />
+		<Spawn Index="118" MapNumber="102" Distance="30" PosX="131" PosY="153" Dir="0" Type="0" />
+		<Spawn Index="119" MapNumber="102" Distance="30" PosX="137" PosY="154" Dir="0" Type="0" />
+		<Spawn Index="120" MapNumber="102" Distance="30" PosX="137" PosY="117" Dir="0" Type="0" />
+		<Spawn Index="121" MapNumber="102" Distance="30" PosX="137" PosY="100" Dir="0" Type="0" />
+		<Spawn Index="122" MapNumber="102" Distance="30" PosX="122" PosY="106" Dir="0" Type="0" />
+		<Spawn Index="123" MapNumber="102" Distance="30" PosX="122" PosY="105" Dir="0" Type="0" />
+		<Spawn Index="124" MapNumber="102" Distance="30" PosX="120" PosY="102" Dir="0" Type="0" />
+		<Spawn Index="125" MapNumber="102" Distance="30" PosX="124" PosY="101" Dir="0" Type="0" />
+		<Spawn Index="126" MapNumber="102" Distance="30" PosX="110" PosY="100" Dir="0" Type="0" />
+		<Spawn Index="127" MapNumber="102" Distance="30" PosX="113" PosY="105" Dir="0" Type="0" />
+		<Spawn Index="128" MapNumber="102" Distance="30" PosX="98" PosY="100" Dir="0" Type="0" />
+		<Spawn Index="129" MapNumber="102" Distance="30" PosX="103" PosY="101" Dir="0" Type="0" />
+		<Spawn Index="130" MapNumber="102" Distance="30" PosX="95" PosY="110" Dir="0" Type="0" />
+	</MonsterSpawnSettings>
+
+	<EventMonsterSettings>							
+		<Round Number="1" MonsterIndex="654" MonsterCount="10" MonsterType="2" PointCount="10000" Name="Golden Tantalos" />
+		<Round Number="2" MonsterIndex="654" MonsterCount="10" MonsterType="2" PointCount="10000" Name="Golden Tantalos" />
+		<Round Number="3" MonsterIndex="654" MonsterCount="10" MonsterType="2" PointCount="10000" Name="Golden Tantalos" />
+		<Round Number="4" MonsterIndex="654" MonsterCount="10" MonsterType="2" PointCount="10000" Name="Golden Tantalos" />
+		<Round Number="5" MonsterIndex="654" MonsterCount="10" MonsterType="2" PointCount="10000" Name="Golden Tantalos" />
+		<Round Number="6" MonsterIndex="655" MonsterCount="10" MonsterType="2" PointCount="30000" Name="Golden Erohim" />
+		<Round Number="7" MonsterIndex="655" MonsterCount="10" MonsterType="2" PointCount="30000" Name="Golden Erohim" />
+		<Round Number="8" MonsterIndex="655" MonsterCount="10" MonsterType="2" PointCount="30000" Name="Golden Erohim" />
+		<Round Number="9" MonsterIndex="655" MonsterCount="10" MonsterType="2" PointCount="30000" Name="Golden Erohim" />
+		<Round Number="10" MonsterIndex="655" MonsterCount="10" MonsterType="2" PointCount="30000" Name="Golden Erohim" />
+		<Round Number="11" MonsterIndex="656" MonsterCount="10" MonsterType="2" PointCount="90000" Name="Golden Hell Maine" />
+		<Round Number="12" MonsterIndex="656" MonsterCount="10" MonsterType="2" PointCount="90000" Name="Golden Hell Maine" />
+		<Round Number="13" MonsterIndex="656" MonsterCount="10" MonsterType="2" PointCount="90000" Name="Golden Hell Maine" />
+		<Round Number="14" MonsterIndex="656" MonsterCount="10" MonsterType="2" PointCount="90000" Name="Golden Hell Maine" />
+		<Round Number="15" MonsterIndex="656" MonsterCount="10" MonsterType="2" PointCount="90000" Name="Golden Hell Maine" />
+	</EventMonsterSettings>
+</TormentedSquare>					
