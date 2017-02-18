@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Processes>
+  <Process Run="True" Delay="1000" Path="D:\_MU___\iDev.Games - MuOnline S9EP2 IGC9.5 - TRONG.WIN - Dao Van Trong\_S9.5-IGCN___\zMuServer\1._DataServer\IGC.DataServer.exe" Parameters="" />
+  <Process Run="False" Delay="1000" Path="D:\_MU___\iDev.Games - MuOnline S9EP2 IGC9.5 - TRONG.WIN - Dao Van Trong\_S9.5-IGCN___\zMuServer\1._DataServer_BattleCore\IGC.DataServer_B.exe" Parameters="" />
+  <Process Run="True" Delay="1000" Path="D:\_MU___\iDev.Games - MuOnline S9EP2 IGC9.5 - TRONG.WIN - Dao Van Trong\_S9.5-IGCN___\zMuServer\2._ConnectServer\IGC.ConnectServer.exe" Parameters="" />
+  <Process Run="True" Delay="1000" Path="D:\_MU___\iDev.Games - MuOnline S9EP2 IGC9.5 - TRONG.WIN - Dao Van Trong\_S9.5-IGCN___\zMuServer\3._GameServer_Regular\IGC.GameServer_R.exe" Parameters="" />
+  <Process Run="False" Delay="1000" Path="D:\_MU___\iDev.Games - MuOnline S9EP2 IGC9.5 - TRONG.WIN - Dao Van Trong\_S9.5-IGCN___\zMuServer\4._GameServer_Arca\IGC.GameServer_A.exe" Parameters="" />
+  <Process Run="True" Delay="1000" Path="D:\_MU___\iDev.Games - MuOnline S9EP2 IGC9.5 - TRONG.WIN - Dao Van Trong\_S9.5-IGCN___\zMuServer\5._GameServer_Siege\IGC.GameServer_S.exe" Parameters="" />
+  <Process Run="False" Delay="1000" Path="D:\_MU___\iDev.Games - MuOnline S9EP2 IGC9.5 - TRONG.WIN - Dao Van Trong\_S9.5-IGCN___\zMuServer\6._GameServer_Market\IGC.GameServer_M.exe" Parameters="" />
+  <Process Run="False" Delay="1000" Path="D:\_MU___\iDev.Games - MuOnline S9EP2 IGC9.5 - TRONG.WIN - Dao Van Trong\_S9.5-IGCN___\zMuServer\7._GameServer_BattleCore\IGC.GameServer_B.exe" Parameters="" />
+</Processes>

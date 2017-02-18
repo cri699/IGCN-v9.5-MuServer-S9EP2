@@ -2,7 +2,7 @@
 // resource.h
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
-// Used by DataServer.rc
+// Used by eDataServer.rc
 //
 #define IDC_MYICON                      2
 #define IDD_EDATASERVER_DIALOG          102

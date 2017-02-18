@@ -10,6 +10,7 @@ Version="1.05.25"
 Serial="PoweredByIGCN800"
 SingleInstance=0
 
+;Codepage: Portuguese 860/ Korean.xml 949/ Chinese.xml 950/ Vietnamese 1258/ Russian 1251
 [Gameplay]
 Codepage=1258
 BlockVirtualMachine=0

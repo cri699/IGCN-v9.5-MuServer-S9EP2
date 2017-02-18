@@ -180,7 +180,7 @@ SOURCE=.\DataServer.ico
 # End Source File
 # Begin Source File
 
-SOURCE=.\DataServer.ico
+SOURCE=.\small.ico
 # End Source File
 # End Group
 # Begin Group "Header Files"

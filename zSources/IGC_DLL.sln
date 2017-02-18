@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientDLL", "ClientDLL\IGC_DLL.vcxproj", "{C39B5C65-82F2-4877-BBA1-A856A8F1D087}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IGC.DLL", "ClientDLL\IGC_DLL.vcxproj", "{C39B5C65-82F2-4877-BBA1-A856A8F1D087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

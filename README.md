@@ -7,7 +7,7 @@
 ##################################################################################
 ## System Requirement 
 
-### Minimum Hardware: 2GB RAM - 2 CORE
+### Minimum Hardware: 3GB RAM - 3 CORE
 
 + Server: Windows NT >=6.0 X64  
 + Client: Windows NT >=6.0 x32 or x64  
@@ -17,13 +17,13 @@
 ##########################################################################  
 ## Server setup  
 + List file for edit IP/Password infomation:  
- - zMuServer\1. DataServer_BattleCore\DataServer.ini  
- - zMuServer\1. DataServer\DataServer.ini  
- - zMuServer\2. ConnectServer\IGC_ServerList.xml  
+ - zMuServer\1._DataServer\DataServer.ini  
+ - zMuServer\1._DataServer_BattleCore\DataServer.ini  
+ - zMuServer\2._ConnectServer\IGC_ServerList.xml  
  - zMuServer\IGCData\IGC_MapServerInfo.xml  
- - zMuServer\Tools\IGC.EssentialTool\config.ini  
+ - zMuServer\IGCTools\IGC.EssentialTool\config.ini  
    
-+ Database need restore or Create: MuOnline, Events, Ranking  
++ Database need restore or Create by sql file on zMuServer\Data\Database\: MuOnline, Events, Ranking  
    
  + Default INFO on Server:  
   - IP: 192.168.0.168  
@@ -43,12 +43,16 @@
 ##########################################################################  
 ## Server Start
 + Basic RUN:  
-  - 1. DataServer
-  - 2. ConnectServer
-  - 3. GameServer_Regular
+  - 1._DataServer
+  - 2._ConnectServer
+  - 3._GameServer_Regular
 
-
-
++ Ex:
+  - 1._DataServer_BattleCore
+  - 4._GameServer_Arca
+  - 5._GameServer_Siege
+  - 6._GameServer_Market
+  - 7._GameServer_BattleCore
   
 ###########################################################################
 ## Game Server Types  

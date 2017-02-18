@@ -9,7 +9,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IGC.DataServer", "DataServe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IGC.ConnectServer", "ConnectServer\ConnectServer.vcxproj", "{5890956F-7B09-48CE-A28A-CF14FF9DF40F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IGC", "ClientDLL\IGC_DLL.vcxproj", "{C39B5C65-82F2-4877-BBA1-A856A8F1D087}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IGC.DLL", "ClientDLL\IGC_DLL.vcxproj", "{C39B5C65-82F2-4877-BBA1-A856A8F1D087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,3 @@
+﻿[FontConfig "English"]
+fontlib "fonts/fonts_cn.swf"
+map "$NormalFont" = "微软雅黑"

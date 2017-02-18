@@ -331,7 +331,7 @@ char* ValidateAndResolveIP(char* input)
 
 		if(!host)
 		{
-			g_Log.Add("IP Address %s invalid, please configure WanIP in DataServer.ini with proper hostname or IP address",input);
+			g_Log.Add("IP Address %s invalid, please configure WanIP in IGCDS.ini with proper hostname or IP address",input);
 			return input;
 		}
 

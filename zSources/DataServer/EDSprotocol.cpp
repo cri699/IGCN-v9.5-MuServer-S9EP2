@@ -3089,8 +3089,8 @@ BOOL GensSystem_EDS::InitGensSystem()
 
 	g_Log.AddC(TColor::Yellow, "[Gens System] Initializing Gens...");
 
-	g_GensRankingUpdateTime = GetPrivateProfileInt("GensSystem", "GensRankingUpdateTimeHour", 2, ".\\DataServer.ini");
-	GetPrivateProfileString("GensSystem", "GensRankingPath", "..\\IGCData\\IGC_GensSystem.xml", g_GensRankingPath, sizeof(g_GensRankingPath), ".\\DataServer.ini");
+	g_GensRankingUpdateTime = GetPrivateProfileInt("GensSystem", "GensRankingUpdateTimeHour", 2, ".\\IGCDS.ini");
+	GetPrivateProfileString("GensSystem", "GensRankingPath", "..\\IGCData\\IGC_GensSystem.xml", g_GensRankingPath, sizeof(g_GensRankingPath), ".\\IGCDS.ini");
 
 	this->LoadGensData(g_GensRankingPath);
 	this->m_MainDB->Connect(g_MuOnlineDNS, g_UserID, g_Password, g_ServerName);

@@ -1,4 +1,4 @@
-// DataServer.cpp : Defines the entry point for the application.
+// eDataServer.cpp : Defines the entry point for the application.
 //
 
 #include "stdafx.h"
@@ -26,23 +26,23 @@ HWND ghQueueBar;
 TCHAR szWANIP[150];
 TCHAR szTitle[MAX_LOADSTRING];								// The title bar text
 TCHAR szWindowClass[MAX_LOADSTRING];								// The title bar text
-int g_dwMaxServerGroups=GetPrivateProfileInt("SETTINGS", "MAX_SERVER", 10, ".\\DataServer.ini") * MAX_SERVER_TYPE;	
-WORD g_JoinServerListPort = GetPrivateProfileInt("SETTINGS", "JoinServerPort", 55970, ".\\DataServer.ini");
-WORD g_DataServerListPort = GetPrivateProfileInt("SETTINGS", "DataServerPort", 55960, ".\\DataServer.ini");
-WORD g_ExDataServerListPort = GetPrivateProfileInt("SETTINGS", "ExDataServerPort", 55906, ".\\DataServer.ini");
-BOOL g_PwEncrypt = GetPrivateProfileInt("SQL", "PasswordEncryptType", 1, ".\\DataServer.ini");
-BOOL g_DSMode = GetPrivateProfileInt("SETTINGS", "DataServerOnlyMode", 0, ".\\DataServer.ini");
-BOOL g_UseJoinServer = GetPrivateProfileInt("SETTINGS", "UseJoinServer", 1, ".\\DataServer.ini");
-BOOL g_UseDataServer = GetPrivateProfileInt("SETTINGS", "UseDataServer", 1, ".\\DataServer.ini");
-BOOL g_UseExDataServer = GetPrivateProfileInt("SETTINGS", "UseExDataServer", 1, ".\\DataServer.ini");
+int g_dwMaxServerGroups=GetPrivateProfileInt("SETTINGS", "MAX_SERVER", 10, ".\\IGCDS.ini") * MAX_SERVER_TYPE;	
+WORD g_JoinServerListPort = GetPrivateProfileInt("SETTINGS", "JoinServerPort", 55970, ".\\IGCDS.ini");
+WORD g_DataServerListPort = GetPrivateProfileInt("SETTINGS", "DataServerPort", 55960, ".\\IGCDS.ini");
+WORD g_ExDataServerListPort = GetPrivateProfileInt("SETTINGS", "ExDataServerPort", 55906, ".\\IGCDS.ini");
+BOOL g_PwEncrypt = GetPrivateProfileInt("SQL", "PasswordEncryptType", 1, ".\\IGCDS.ini");
+BOOL g_DSMode = GetPrivateProfileInt("SETTINGS", "DataServerOnlyMode", 0, ".\\IGCDS.ini");
+BOOL g_UseJoinServer = GetPrivateProfileInt("SETTINGS", "UseJoinServer", 1, ".\\IGCDS.ini");
+BOOL g_UseDataServer = GetPrivateProfileInt("SETTINGS", "UseDataServer", 1, ".\\IGCDS.ini");
+BOOL g_UseExDataServer = GetPrivateProfileInt("SETTINGS", "UseExDataServer", 1, ".\\IGCDS.ini");
 DWORD g_GensRankingUpdateTime = 2;
-DWORD g_GensLeaveAfterDays = GetPrivateProfileInt("GensSystem", "GensReJoinDaysLimit", 7, ".\\DataServer.ini");
-DWORD g_MachineIDConnectionLimitPerGroup = GetPrivateProfileInt("SETTINGS", "MachineIDConnectionLimitPerGroup", 3, ".\\DataServer.ini");
-WORD g_MagumsaCreateMinLevel = GetPrivateProfileInt("SETTINGS", "MagicGladiatorCreateMinLevel", 220, ".\\DataServer.ini");
-WORD g_DarkLordCreateMinLevel = GetPrivateProfileInt("SETTINGS", "DarkLordCreateMinLevel", 250, ".\\DataServer.ini");
-WORD g_GrowLancerCreateMinLevel = GetPrivateProfileInt("SETTINGS", "GrowLancerCreateMinLevel", 200, ".\\DataServer.ini");
-int g_iShowAllQueriesInDS  = GetPrivateProfileInt("SETTINGS", "DisplayAllQueries", 1, ".\\DataServer.ini");
-int g_iConnectStatSyncEnable =  GetPrivateProfileInt("SETTINGS", "MembStatSync", 0, ".\\DataServer.ini");;
+DWORD g_GensLeaveAfterDays = GetPrivateProfileInt("GensSystem", "GensReJoinDaysLimit", 7, ".\\IGCDS.ini");
+DWORD g_MachineIDConnectionLimitPerGroup = GetPrivateProfileInt("SETTINGS", "MachineIDConnectionLimitPerGroup", 3, ".\\IGCDS.ini");
+WORD g_MagumsaCreateMinLevel = GetPrivateProfileInt("SETTINGS", "MagicGladiatorCreateMinLevel", 220, ".\\IGCDS.ini");
+WORD g_DarkLordCreateMinLevel = GetPrivateProfileInt("SETTINGS", "DarkLordCreateMinLevel", 250, ".\\IGCDS.ini");
+WORD g_GrowLancerCreateMinLevel = GetPrivateProfileInt("SETTINGS", "GrowLancerCreateMinLevel", 200, ".\\IGCDS.ini");
+int g_iShowAllQueriesInDS  = GetPrivateProfileInt("SETTINGS", "DisplayAllQueries", 1, ".\\IGCDS.ini");
+int g_iConnectStatSyncEnable =  GetPrivateProfileInt("SETTINGS", "MembStatSync", 0, ".\\IGCDS.ini");;
 
 TCHAR g_MuOnlineDNS[64];
 TCHAR g_MeMuOnlineDNS[64];
@@ -105,8 +105,8 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	g_Log.LogDateChange();
 	//GetPrivateProfileString(
 	LoadAllowableIpList("./IGC_AllowedIPList.xml");
-	GetPrivateProfileString("SETTINGS", "MapServerInfoPath", "..\\IGCData\\IGC_MapServerInfo.xml", g_MapSvrFilePath, sizeof(g_MapSvrFilePath), ".\\DataServer.ini");
-	GetPrivateProfileString("SETTINGS","WanIP","127.0.0.1", szWANIP, 150, ".\\DataServer.ini");
+	GetPrivateProfileString("SETTINGS", "MapServerInfoPath", "..\\IGCData\\IGC_MapServerInfo.xml", g_MapSvrFilePath, sizeof(g_MapSvrFilePath), ".\\IGCDS.ini");
+	GetPrivateProfileString("SETTINGS","WanIP","127.0.0.1", szWANIP, 150, ".\\IGCDS.ini");
 	memcpy(szWANIP,ValidateAndResolveIP(szWANIP),15);
 	g_MapServerManager.LoadMapData(g_MapSvrFilePath);
 	SendMessage(ghWnd, WM_TIMER, WM_LOG_PAINT, NULL);
@@ -133,13 +133,13 @@ bool IniteDataServer()
 	SetTimer(ghWnd, WM_LOG_PAINT, 1000, NULL);
 	SetTimer(ghWnd, WM_LOG_DATE_CHANGE, 300, NULL);
 	SetTimer(ghWnd, WM_FIRST_PROC, 1000, NULL);
-	GetPrivateProfileString("SQL", "MuOnlineDB", "MuOnline", g_MuOnlineDNS, sizeof(g_MuOnlineDNS), ".\\DataServer.ini");
-	GetPrivateProfileString("SQL", "MeMuOnlineDB", "MuOnline", g_MeMuOnlineDNS, sizeof(g_MeMuOnlineDNS), ".\\DataServer.ini");
-	GetPrivateProfileString("SQL", "EventDB", "MuEvent", g_EventServerDNS, sizeof(g_EventServerDNS), ".\\DataServer.ini");
-	GetPrivateProfileString("SQL", "RankingDB", "MuRanking", g_RankingServerDNS, sizeof(g_RankingServerDNS), ".\\DataServer.ini");
-	GetPrivateProfileString("SQL", "User", "sa", g_UserID, sizeof(g_UserID), ".\\DataServer.ini");
-	GetPrivateProfileString("SQL", "Pass", "darknes", g_Password, sizeof(g_Password), ".\\DataServer.ini");
-	GetPrivateProfileString("SQL", "SQLServerName", "(local)", g_ServerName, sizeof(g_ServerName), ".\\DataServer.ini");
+	GetPrivateProfileString("SQL", "MuOnlineDB", "MuOnline", g_MuOnlineDNS, sizeof(g_MuOnlineDNS), ".\\IGCDS.ini");
+	GetPrivateProfileString("SQL", "MeMuOnlineDB", "MuOnline", g_MeMuOnlineDNS, sizeof(g_MeMuOnlineDNS), ".\\IGCDS.ini");
+	GetPrivateProfileString("SQL", "EventDB", "MuEvent", g_EventServerDNS, sizeof(g_EventServerDNS), ".\\IGCDS.ini");
+	GetPrivateProfileString("SQL", "RankingDB", "MuRanking", g_RankingServerDNS, sizeof(g_RankingServerDNS), ".\\IGCDS.ini");
+	GetPrivateProfileString("SQL", "User", "sa", g_UserID, sizeof(g_UserID), ".\\IGCDS.ini");
+	GetPrivateProfileString("SQL", "Pass", "SQLpassw0rd", g_Password, sizeof(g_Password), ".\\IGCDS.ini");
+	GetPrivateProfileString("SQL", "SQLServerName", "(local)", g_ServerName, sizeof(g_ServerName), ".\\IGCDS.ini");
 
 	m_DSProtocol.Init();
 	m_JSProtocol.Init();
@@ -363,7 +363,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 					m_EXDSProtocol.GensManualRefreshRanking(0);
 					break;
 				case ID_GENS_RELOADLEAVEDELAY:
-					 g_GensLeaveAfterDays = GetPrivateProfileInt("GensSystem", "GensReJoinDaysLimit", 7, ".\\DataServer.ini");
+					 g_GensLeaveAfterDays = GetPrivateProfileInt("GensSystem", "GensReJoinDaysLimit", 7, ".\\IGCDS.ini");
 					 g_Log.AddC(TColor::Yellow, "Gens rejoin day limit  reloaded");
 					 break;
 				//case ID_OPTIONS_PLAYERLIST:
@@ -371,7 +371,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 					//ShowWindow(ghPlayerWnd, SW_SHOW);
 				//	break;
 				case ID_OPTIONS_RELOADHWIDLIMIT:
-					g_MachineIDConnectionLimitPerGroup = GetPrivateProfileInt("SETTINGS", "MachineIDConnectionLimitPerGroup", 3, ".\\DataServer.ini");
+					g_MachineIDConnectionLimitPerGroup = GetPrivateProfileInt("SETTINGS", "MachineIDConnectionLimitPerGroup", 3, ".\\IGCDS.ini");
 					g_Log.AddC(TColor::Yellow, "Current Global Connections Limit (HWiD) per ServerGroup: %d", g_MachineIDConnectionLimitPerGroup);
 					break;
 				case IDM_EXIT:

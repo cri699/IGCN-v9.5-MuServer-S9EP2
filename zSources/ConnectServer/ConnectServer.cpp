@@ -79,18 +79,18 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 	SetTimer(hWnd, WM_LOG_DATE_CHANGE, 300, NULL);
 	SetTimer(hWnd, WM_SERVER_CHECK, 1000, NULL);
 
-	g_ConnectServerPort = GetPrivateProfileInt("Config", "TCP_PORT", 44405, ".\\ConnectServer.ini");
-	g_ConnectServerUDP = GetPrivateProfileInt("Config", "UDP_PORT", 55667, ".\\ConnectServer.ini");
-	g_MaxConnectionsPerIP = GetPrivateProfileInt("Config", "MaxConnectionsPerIP", 5, ".\\ConnectServer.ini");
-	g_MaxPacketPerSec = GetPrivateProfileInt("Config", "MaxPacketsPerSecond", 50, ".\\ConnectServer.ini");
-	GetPrivateProfileString("Config", "LauncherProxyWhiteListIP", "127.0.0.1", g_WhiteListIP, 16, ".\\ConnectServer.ini");
-	GetPrivateProfileString("AutoUpdate", "Version", "1.05.91", g_ClientVersion, 9, ".\\ConnectServer.ini");
-	GetPrivateProfileString("AutoUpdate", "VersionFile", "version.dat", g_VersionFile, 20, ".\\ConnectServer.ini");
-	GetPrivateProfileString("AutoUpdate", "HostURL", "192.168.1.2", g_HostURL, 100, ".\\ConnectServer.ini");
-	GetPrivateProfileString("AutoUpdate", "FTPLogin", "muonline", g_FTPLogin, 20, ".\\ConnectServer.ini");
-	GetPrivateProfileString("AutoUpdate", "FTPPasswd", "muonline", g_FTPPassword, 20, ".\\ConnectServer.ini");
+	g_ConnectServerPort = GetPrivateProfileInt("Config", "TCP_PORT", 44405, ".\\IGCCS.ini");
+	g_ConnectServerUDP = GetPrivateProfileInt("Config", "UDP_PORT", 55667, ".\\IGCCS.ini");
+	g_MaxConnectionsPerIP = GetPrivateProfileInt("Config", "MaxConnectionsPerIP", 5, ".\\IGCCS.ini");
+	g_MaxPacketPerSec = GetPrivateProfileInt("Config", "MaxPacketsPerSecond", 50, ".\\IGCCS.ini");
+	GetPrivateProfileString("Config", "LauncherProxyWhiteListIP", "127.0.0.1", g_WhiteListIP, 16, ".\\IGCCS.ini");
+	GetPrivateProfileString("AutoUpdate", "Version", "1.05.91", g_ClientVersion, 9, ".\\IGCCS.ini");
+	GetPrivateProfileString("AutoUpdate", "VersionFile", "version.dat", g_VersionFile, 20, ".\\IGCCS.ini");
+	GetPrivateProfileString("AutoUpdate", "HostURL", "192.168.1.2", g_HostURL, 100, ".\\IGCCS.ini");
+	GetPrivateProfileString("AutoUpdate", "FTPLogin", "muonline", g_FTPLogin, 20, ".\\IGCCS.ini");
+	GetPrivateProfileString("AutoUpdate", "FTPPasswd", "muonline", g_FTPPassword, 20, ".\\IGCCS.ini");
 
-	g_FTPPort = GetPrivateProfileInt("AutoUpdate", "FTPPort", 21, ".\\ConnectServer.ini");
+	g_FTPPort = GetPrivateProfileInt("AutoUpdate", "FTPPort", 21, ".\\IGCCS.ini");
 	//g_Log.Add("Current Auto Update Version: %s", g_ClientVersion);
 
 	m_ServerData.LoadServerFile("IGC_ServerList.xml");
@@ -220,18 +220,18 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			g_Log.Add("%s file reloaded", "News.dat");
 			break;
 		case ID_RELOAD_AUTOUPDATE:
-			GetPrivateProfileStringA("AutoUpdate", "Version", "1.05.91", g_ClientVersion, 9, ".\\ConnectServer.ini");
-			GetPrivateProfileStringA("AutoUpdate", "VersionFile", "version.dat", g_VersionFile, 20, ".\\ConnectServer.ini");
-			GetPrivateProfileStringA("AutoUpdate", "HostURL", "192.168.1.2", g_HostURL, 100, ".\\ConnectServer.ini");
-			GetPrivateProfileStringA("AutoUpdate", "FTPLogin", "muonline", g_FTPLogin, 20, ".\\ConnectServer.ini");
-			GetPrivateProfileStringA("AutoUpdate", "FTPPasswd", "muonline", g_FTPPassword, 20, ".\\ConnectServer.ini");
-			g_FTPPort = GetPrivateProfileIntA("AutoUpdate", "FTPPort", 21, ".\\ConnectServer.ini");
+			GetPrivateProfileStringA("AutoUpdate", "Version", "1.05.91", g_ClientVersion, 9, ".\\IGCCS.ini");
+			GetPrivateProfileStringA("AutoUpdate", "VersionFile", "version.dat", g_VersionFile, 20, ".\\IGCCS.ini");
+			GetPrivateProfileStringA("AutoUpdate", "HostURL", "192.168.1.2", g_HostURL, 100, ".\\IGCCS.ini");
+			GetPrivateProfileStringA("AutoUpdate", "FTPLogin", "muonline", g_FTPLogin, 20, ".\\IGCCS.ini");
+			GetPrivateProfileStringA("AutoUpdate", "FTPPasswd", "muonline", g_FTPPassword, 20, ".\\IGCCS.ini");
+			g_FTPPort = GetPrivateProfileIntA("AutoUpdate", "FTPPort", 21, ".\\IGCCS.ini");
 			//g_Log.Add("Current Auto Update Version: %s", g_ClientVersion);
 			break;
 		case ID_RELOAD_ANTIFLOODOPTIONS:
-				g_MaxConnectionsPerIP = GetPrivateProfileInt("Config", "MaxConnectionsPerIP", 5, ".\\ConnectServer.ini");
+				g_MaxConnectionsPerIP = GetPrivateProfileInt("Config", "MaxConnectionsPerIP", 5, ".\\IGCCS.ini");
 				g_Log.Add("Max Connections Per IP - %d", g_MaxConnectionsPerIP);
-				g_MaxPacketPerSec = GetPrivateProfileInt("Config", "MaxPacketsPerSecond", 50, ".\\ConnectServer.ini");
+				g_MaxPacketPerSec = GetPrivateProfileInt("Config", "MaxPacketsPerSecond", 50, ".\\IGCCS.ini");
 				g_Log.Add("Max Packet Per Second - %d", g_MaxPacketPerSec);
 			break;
 

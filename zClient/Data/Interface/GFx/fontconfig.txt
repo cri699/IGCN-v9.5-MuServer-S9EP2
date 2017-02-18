@@ -1,0 +1,3 @@
+﻿[FontConfig "English"]
+fontlib "fonts/fonts_eng.swf"
+map "$NormalFont" = "Arial Unicode MS"

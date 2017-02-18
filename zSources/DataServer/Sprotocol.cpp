@@ -475,7 +475,7 @@ BOOL CLoginServerProtocol::Init()
 		return FALSE;
 	}
 
-	GetPrivateProfileString("SQL","PasswordEncryptSalt", "1234567890", m_Salt, 30, ".\\DataServer.ini");
+	GetPrivateProfileString("SQL","PasswordEncryptSalt", "1234567890", m_Salt, 30, ".\\IGCDS.ini");
 
 	if ( this->m_AccountDB.Connect(g_MeMuOnlineDNS, g_UserID, g_Password, g_ServerName) == FALSE )
 	{

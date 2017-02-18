@@ -70,11 +70,11 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
 CAPTION "About"
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    ICON            IDI_ICON1,IDC_MYICON,14,9,48,48
+    ICON            IDI_ICON1,IDC_MYICON,14,14,48,48
     CTEXT           "IGC DataServer",-1,44,5,136,10,SS_CENTERIMAGE
-    CTEXT           "Developed by IGC-Network © 2010-2016",-1,44,15,136,10,SS_CENTERIMAGE
+    CTEXT           "Developed by IGC-Network © 2010-2016",IDC_STATIC,44,15,136,10,SS_CENTERIMAGE
     DEFPUSHBUTTON   "OK",IDOK,185,5,35,41,WS_GROUP
-    CTEXT           "Powered by iDev.games - Dao Van Trong",-1,44,30,136,10,SS_CENTERIMAGE
+    CTEXT           "Powered by iDev.games - Dao Van Trong",IDC_STATIC,44,30,136,10,SS_CENTERIMAGE
 END
 
 /////////////////////////////////////////////////////////////////////////////
@@ -132,6 +132,8 @@ END
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDI_ICON1               ICON                    "DataServer.ico"
+IDI_SMALL               ICON                    "DataServer.ico"
+IDI_EDATASERVER         ICON                    "DataServer.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //

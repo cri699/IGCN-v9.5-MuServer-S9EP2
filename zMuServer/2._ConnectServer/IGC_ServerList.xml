@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == Dev.game - TRONG.WIN -  Dao Van Trong
+// == (C) 2010-2015 IGC-Network.com (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ServerList::Server ###
+//	Code: Code of Server
+//	IP: WAN IP or DNS (hostname) for the Server, max 15 characters
+//	Port: PORT of the Server
+//	Visible: Hide server on Server Selection List or Show it, 0/1
+//	Name: Name of the Server, used for informational purpose only, max 40 alphanumerical characters
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Server Code for Battle Core server is unmodifiable and must be set to 120)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//	~ IMPORTANT ~ Code, IP and Port must match \Data\MapServer.xml and GameServer.ini configuration
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ServerList>
+	<Server Code="0"  IP="192.168.0.168" Port="56900" Visible="1" Name="Regular" />
+	<Server Code="12" IP="192.168.0.168" Port="56912" Visible="0" Name="Market" />
+	<Server Code="13" IP="192.168.0.168" Port="56913" Visible="0" Name="Arca" />
+	<Server Code="14" IP="192.168.0.168" Port="56914" Visible="0" Name="Siege" />
+	<Server Code="120" IP="192.168.0.168" Port="56120" Visible="0" Name="BattleCore" />
+</ServerList>

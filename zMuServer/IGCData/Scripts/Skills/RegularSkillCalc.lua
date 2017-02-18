@@ -446,11 +446,12 @@ end
 
 -- SkillID: X, Combo Skill - (Dark Knight, Blade Knight, Blade Master)
 function ComboSkillDamage(Strength, Dexterity, Vitality, Energy)
- local Damage = (Strength * 1.5) + Dexterity + Energy
- 
+-- local Damage = (Strength * 1.5) + Dexterity + Energy
+ local Damage = (Strength + Dexterity + Energy) / 2
  return Damage
 end
 
+ 
 -- BuffID: 174, 175, 176, 177, 178 - (Fire, Frost, Tornado, Bind, Darkness)
 function ElementalDebuffGetDuration(ID, CharacterLevel)
 	local Duration = 0

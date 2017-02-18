@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataServer\$(TargetName)", "DataServer.vcxproj", "{A8E578CC-0477-F4F6-F42A-8E8A7A61B1EB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IGC.DataServer", "DataServer\DataServer.vcxproj", "{A8E578CC-0477-F4F6-F42A-8E8A7A61B1EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
