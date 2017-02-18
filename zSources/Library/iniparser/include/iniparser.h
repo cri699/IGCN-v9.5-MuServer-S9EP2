@@ -227,6 +227,7 @@ int iniparser_getint(const dictionary * d, const char * key, int notfound);
   handling.
  */
 /*--------------------------------------------------------------------------*/
+// long int iniparser_getuint(const dictionary * d, const char * key, long int notfound);
 long int iniparser_getlongint(const dictionary * d, const char * key, long int notfound);
 
 

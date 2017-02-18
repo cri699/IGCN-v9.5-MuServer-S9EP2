@@ -451,6 +451,7 @@ const char * iniparser_getstring(const dictionary * d, const char * key, const c
   Credits: Thanks to A. Becker for suggesting strtol()
  */
 /*--------------------------------------------------------------------------*/
+// long int iniparser_getuint(const dictionary * d, const char * key, long int notfound)
 long int iniparser_getlongint(const dictionary * d, const char * key, long int notfound)
 {
     const char * str ;
