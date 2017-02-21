@@ -17,8 +17,9 @@
 ##########################################################################  
 ## Server setup  
 + List file for edit IP/Password infomation:  
- - zMuServer\1._DataServer\DataServer.ini  
- - zMuServer\1._DataServer_BattleCore\DataServer.ini  
+ - zMuServer\1._DataServer\IGCDS.ini  
+ - zMuServer\1._DataServer_BattleCore\IGCDS.ini  
+ - zMuServer\2._ConnectServer\IGCCS.ini 
  - zMuServer\2._ConnectServer\IGC_ServerList.xml  
  - zMuServer\IGCData\IGC_MapServerInfo.xml  
  - zMuServer\IGCTools\IGC.EssentialTool\config.ini  
@@ -69,7 +70,10 @@
 ## Source build   
 IGC.dll :: Release::Win32 :: Visual Studio 2015 v140  
 GameServer/DataServer/ConnectServer :: Release::x64 :: Visual Studio 2015 v140  
-  
+
+Video: https://www.youtube.com/watch?v=N-iwWaNsmKk
+[![Click](https://img.youtube.com/vi/N-iwWaNsmKk/0.jpg)](https://www.youtube.com/watch?v=N-iwWaNsmKk)
+
  
 #### iDev.Games - MuOnline S9EP2 IGCN9.5 - TRONG.WIN - Dao Van Trong  
 ##################################################################################  
