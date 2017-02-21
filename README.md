@@ -71,7 +71,7 @@
 IGC.dll :: Release::Win32 :: Visual Studio 2015 v140  
 GameServer/DataServer/ConnectServer :: Release::x64 :: Visual Studio 2015 v140  
 
-Video: https://www.youtube.com/watch?v=N-iwWaNsmKk
+Video Guide: https://www.youtube.com/watch?v=N-iwWaNsmKk
 [![Click](https://img.youtube.com/vi/N-iwWaNsmKk/0.jpg)](https://www.youtube.com/watch?v=N-iwWaNsmKk)
 
  
