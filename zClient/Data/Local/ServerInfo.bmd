@@ -1,13 +1,13 @@
 ; iDev.Games - MuOnline S9EP2 IGC9.5 - TRONG.WIN - Dao Van Trong
 
 [Connection]
-IP="192.168.0.168"
-Port=44405
+IP="127.127.127.127"
+Port=56900
 ChatPort=56980
 
 [Main]
-Version="1.05.25"
-Serial="PoweredByIGCN800"
+Version="1.78.85"
+Serial="smhWF06xIjyIfMKn"
 SingleInstance=0
 
 ;Codepage: Portuguese 860/ Korean.xml 949/ Chinese.xml 950/ Vietnamese 1258/ Russian 1251
